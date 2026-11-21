@@ -1,0 +1,35 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_dripstone_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_facility_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_lush_normal"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/landmark/filler_6"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_supply"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/ocean/filler_3"
+}

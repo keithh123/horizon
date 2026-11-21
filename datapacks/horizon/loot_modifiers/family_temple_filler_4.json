@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_windmill/illager_windmill_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_system/mining_system_barrels"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/filler_4"
+}

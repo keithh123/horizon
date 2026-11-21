@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/basement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/tower"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/arcane/standard_4"
+}

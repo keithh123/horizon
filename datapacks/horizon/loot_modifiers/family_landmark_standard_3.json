@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_cells"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_potions"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_towers"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/landmark/standard_3"
+}

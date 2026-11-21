@@ -1,0 +1,35 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/obsidian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/greenhouse_secret"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/treasure/quartz"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/crimson/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/nether_bricks/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/warped/treasure"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/nether/vault_1"
+}

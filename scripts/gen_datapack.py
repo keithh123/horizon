@@ -1,12 +1,25 @@
 """Generate the pack's data overrides into datapacks/ (shipped as kubejs/data).
 
-1. Ore unification  - disable duplicate ore generators (biome modifiers -> neoforge:none)
-2. Structure tiers  - re-space selected structure sets (copied from the jar, spacing scaled)
-3. Exploration loot - NeoForge global loot modifiers inject tiered Horizon relics into
-                      chest / boss loot tables, chosen from the real loot-table index.
+Inputs (curated):  manifests/loot_families.json, manifests/legends.json, manifests/ids.json,
+                   manifests/loot_audit.json (scripts/audit_loot.py), manifests/lock.json
+Outputs (owned):   every file listed in datapacks/.generated.json - nothing else under datapacks/
+                   is touched, so hand-written data (datapacks/<ns>/...) survives regeneration.
+                   manifests/loot_report.json, docs/LOOT_BUDGET.md
+
+1. Ore unification   - disable duplicate ore generators (biome modifiers -> neoforge:none)
+2. Structure spacing - re-space selected structure sets (copied from the jar, spacing scaled)
+3. Reward families   - classify every loot table into a curated family + role (vault/standard/filler),
+                       solve per-table chances from per-structure budgets using real container counts,
+                       inject relics/tokens/charts via NeoForge GLMs and family entries into Apotheosis'
+                       own affix/gem injectors (first match wins, so they sit before the defaults)
+4. Legends           - first-kill advancements (relic + trophy, once per player), repeat-kill drops
+5. Atlas             - #horizon:family/<id> structure tags + discovery advancements (retroactive in quests)
+6. Safety            - RS modded-loot import blacklist for Horizon items (RS re-rolls vanilla tables
+                       through GLMs and would otherwise import Starforged Hearts into "common" RS chests)
 Every id is checked against manifests/ids.json; unknown ids abort the build.
 """
-import json, os, re, zipfile
+import json, math, os, re, statistics, zipfile
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -14,10 +27,13 @@ LONG = chr(92) * 2 + '?' + chr(92)  # Windows long-path prefix \?\ - the repo ma
 if os.name == "nt" and not str(ROOT).startswith(LONG):
     ROOT = Path(LONG + str(ROOT))
 OUT = ROOT / "datapacks"
+OWNED = OUT / ".generated.json"
 CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
 IDS = json.loads((ROOT / "manifests/ids.json").read_text())
 LOCK = json.loads((ROOT / "manifests/lock.json").read_text())
-
+FAM = json.loads((ROOT / "manifests/loot_families.json").read_text(encoding="utf-8"))
+LEG = json.loads((ROOT / "manifests/legends.json").read_text(encoding="utf-8"))
+AUDIT = json.loads((ROOT / "manifests/loot_audit.json").read_text())
 
 VANILLA_CHESTS = ["village/village_" + v for v in ("armorer", "butcher", "cartographer", "desert_house", "fisher", "fletcher", "mason",
                   "plains_house", "savanna_house", "shepherd", "snowy_house", "taiga_house", "tannery", "temple", "toolsmith", "weaponsmith")] + [
@@ -27,9 +43,16 @@ VANILLA_CHESTS = ["village/village_" + v for v in ("armorer", "butcher", "cartog
     "nether_bridge", "buried_treasure", "jungle_temple", "desert_pyramid", "end_city_treasure"]
 IDS["loot_table"] = sorted(set(IDS["loot_table"]) | {f"minecraft:chests/{c}" for c in VANILLA_CHESTS}
                            | {f"minecraft:entities/{e}" for e in ("ender_dragon", "wither", "warden", "elder_guardian")})
+IDS["structure"] = sorted(set(IDS["structure"]) | set(FAM["vanilla_structures"]))
+HORIZON_ITEMS = {"horizon:wayfarer_shard", "horizon:ancient_core", "horizon:starforged_heart"} | \
+                {f["token"] for f in FAM["families"].values() if f.get("token")}
+TROPHY = lambda boss: "horizon:trophy_" + boss.split(":")[1]
+written = []
 
 
 def need(kind, i):
+    if i.startswith("horizon:"):
+        return i
     if i.startswith("minecraft:") and kind in ("entity", "item"):
         return i
     if i not in IDS[kind]:
@@ -40,7 +63,32 @@ def need(kind, i):
 def write(rel, obj):
     p = OUT / rel
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(json.dumps(obj, indent=2) + "\n")
+    text = obj if isinstance(obj, str) else json.dumps(obj, indent=2) + "\n"
+    p.write_text(text, encoding="utf-8")
+    written.append(rel.replace("\\", "/"))
+
+
+def clean_previous():
+    """Delete only files this script wrote last time. Legacy: if no manifest exists yet, the 0.1.0 layout
+    (fully generated) is removed per known subtree, never datapacks/ as a whole."""
+    if OWNED.exists():
+        for rel in json.loads(OWNED.read_text())["files"]:
+            (OUT / rel).unlink(missing_ok=True)
+    else:
+        legacy = ["horizon/loot_modifiers", "horizon/loot_table/inject", "horizon/tags/worldgen/structure/arise_any.json",
+                  "neoforge/loot_modifiers/global_loot_modifiers.json", "modern_industrialization/neoforge", "powah/neoforge",
+                  "apotheosis/worldgen", "dungeons_arise/worldgen", "mowziesmobs/worldgen"]
+        for rel in legacy:
+            p = OUT / rel
+            if p.is_file():
+                p.unlink()
+            elif p.is_dir():
+                for f in sorted(p.rglob("*"), reverse=True):
+                    f.unlink() if f.is_file() else f.rmdir()
+                p.rmdir()
+    for d in sorted((p for p in OUT.rglob("*") if p.is_dir()), key=lambda p: len(p.parts), reverse=True):
+        if not any(d.iterdir()):
+            d.rmdir()
 
 
 def jar_json(ns_path):  # "ns:worldgen/structure_set/x" -> parsed json from whichever jar has it
@@ -54,17 +102,11 @@ def jar_json(ns_path):  # "ns:worldgen/structure_set/x" -> parsed json from whic
 
 
 # ---------------------------------------------------------------- 1. ores
-# Mekanism owns tin/lead/uranium/osmium; MI keeps its unique ores
-# (antimony, bauxite, monazite, nickel, salt, tungsten, lignite); Powah's
-# uraninite is obtained from Mekanism uranium (recipe in kubejs).
 DISABLE_ORES = [
     *(f"modern_industrialization:{p}ore_generator_{o}" for o in ("tin", "lead", "uranium") for p in ("", "deepslate_")),
     "powah:uraninite_ore", "powah:uraninite_ore_dense", "powah:uraninite_ore_poor",
 ]
-
-# ------------------------------------------------------- 2. structure tiers
-# (set id, spacing, separation, tier) - only sets whose defaults clash with the
-# tier design are touched; everything else keeps the author's tuning.
+# ------------------------------------------------------- 2. structure spacing
 STRUCTURE_SETS = [
     ("dungeons_arise:major_structures", 60, 44, "rare/legendary landmarks"),
     ("mowziesmobs:frostmaw_spawns", 40, 16, "rare mini-boss"),
@@ -74,56 +116,382 @@ STRUCTURE_SETS = [
     ("apotheosis:towers", 32, 20, "uncommon boss tower"),
 ]
 
-# ------------------------------------------------------ 3. exploration loot
-COMMON_NS = {"explorify", "structory", "yungs_extras", "towns_and_towers", "ctov", "nova_structures", "repurposed_structures", "betterwitchhuts"}
-RARE_NS = {"dungeons_arise", "betterdungeons", "betterstrongholds", "betterfortresses", "betterdeserttemples", "betterjungletemples",
-           "betteroceanmonuments", "incendium", "deeperdarker", "aether", "undergarden", "irons_spellbooks", "mowziesmobs", "the_bumblezone", "apotheosis"}
-LEGENDARY_PATTERNS = [r"^cataclysm:chests/", r"^dungeons_arise:chests/(keep_kayra|shiraz_palace|plague_asylum|heavenly_|typhon|mechanical_nest|thornborn|kisegi)",
-                      r"^minecraft:chests/(end_city_treasure|ancient_city$|bastion_treasure)"]
-RARE_VANILLA = r"^minecraft:chests/(stronghold_|bastion_|ancient_city|woodland_mansion|nether_bridge|buried_treasure|jungle_temple$|desert_pyramid)"
-COMMON_VANILLA = r"^minecraft:chests/(village/|ruined_portal|shipwreck_|abandoned_mineshaft|simple_dungeon|pillager_outpost|igloo|underwater_ruin)"
-BOSSES_LEGENDARY = ["minecraft:ender_dragon", "minecraft:wither", "cataclysm:ignis", "cataclysm:netherite_monstrosity", "cataclysm:the_harbinger",
-                    "cataclysm:the_leviathan", "cataclysm:ender_guardian", "cataclysm:maledictus", "cataclysm:ancient_remnant", "cataclysm:scylla",
-                    "aether:sun_spirit", "deeperdarker:stalker", "minecraft:warden"]
-BOSSES_RARE = ["mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:frostmaw", "mowziesmobs:umvuthi", "mowziesmobs:sculptor", "aether:slider",
-               "aether:valkyrie_queen", "undergarden:forgotten_guardian", "minecraft:elder_guardian", "irons_spellbooks:dead_king",
-               "the_bumblezone:cosmic_crystal_entity"]
 
-
-def classify(table):
-    ns, path = table.split(":")
-    if not (path.startswith("chests/") or "/chests/" in path or path.startswith("chest/")):
-        return None
-    if any(re.search(p, table) for p in LEGENDARY_PATTERNS):
-        return "legendary"
-    if ns == "minecraft":
-        return "rare" if re.search(RARE_VANILLA, table) else "common" if re.search(COMMON_VANILLA, table) else None
-    if ns in RARE_NS:
-        return "rare"
-    if ns in COMMON_NS or ns == "terralith":
-        return "common"
+# ------------------------------------------------------- 3. reward families
+def first(rules, key):
+    for rx, fam in rules:
+        if re.search(rx, key):
+            return fam
     return None
 
 
-RELIC = {"common": ("horizon:wayfarer_shard", 0.35, [1, 2]),
-         "rare": ("horizon:ancient_core", 0.30, [1, 1]),
-         "legendary": ("horizon:starforged_heart", 0.45, [1, 1])}
+def role_of(table):
+    path = table.split(":", 1)[1]
+    if re.search(FAM["roles"]["skip"], path):
+        return None
+    for role in ("vault", "filler"):
+        if re.search(FAM["roles"][role], path):
+            return role
+    return "standard"
 
 
-def relic_table(item, chance, count):
-    return {"type": "minecraft:chest", "pools": [{"rolls": 1, "conditions": [{"condition": "minecraft:random_chance", "chance": chance}],
-            "entries": [{"type": "minecraft:item", "name": item,
-                         "functions": [{"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": count[0], "max": count[1]}}]}]}]}
+def is_container_table(t):
+    ns, path = t.split(":", 1)
+    if path.startswith(("entities/", "entity/", "blocks/", "block/", "gameplay/", "equipment/", "shearing/", "archaeology/")):
+        return False
+    return True
+
+
+def classify_all():
+    out = {}
+    for t in IDS["loot_table"]:
+        if not is_container_table(t):
+            continue
+        fam = first(FAM["tables"], t)
+        if not fam:
+            continue
+        role = role_of(t)
+        if role:
+            out[t] = (fam, role)
+    return out
+
+
+TWO_LEVEL = {"repurposed_structures", "ctov", "towns_and_towers", "kaisyn", "minecraft"}   # <category>/<variant>/... layouts
+_SPATHS = defaultdict(list)
+for _s in IDS["structure"]:
+    _SPATHS[_s.split(":")[0]].append(_s.split(":")[1])
+
+
+def group_key(tpl):
+    """Template -> the structure it belongs to. Flat template names (Cataclysm: acropolis_30, frosted_prison_bottom_7,
+    ruined_citadel15) map to the longest structure id of the same namespace they start with; nested layouts use folders."""
+    ns, p = tpl.split(":", 1)
+    seg = p.split("/")
+    cands = [s for s in _SPATHS.get(ns, []) if "/" not in s and (seg[0] == s or (seg[0].startswith(s) and len(s) >= 5))]
+    if cands:
+        return ns + ":" + max(cands, key=len)
+    return ns + ":" + "/".join(seg[:2] if ns in TWO_LEVEL and len(seg) > 2 else seg[:1])
+
+
+def groups_from_audit():
+    """template group (ns:first path segment) -> {table: containers}. Every template counted once (upper bound
+    for unique pieces; jigsaw repeats of the same piece make real totals higher, see in-game samples)."""
+    g = defaultdict(lambda: defaultdict(int))
+    for tpl, counts in AUDIT["templates"].items():
+        key = group_key(tpl)
+        for tb, n in counts.items():
+            g[key][tb] += n
+    return g
+
+
+def solve(classes):
+    """Per table and reward kind: chance = min over structure groups using the table of
+    budget * normalized_role_share / containers_of_that_role_in_group."""
+    groups = groups_from_audit()
+    split, cap = FAM["split"], FAM["max_chance"]
+    kinds = list(split)
+    chance = defaultdict(dict)        # table -> kind -> p
+    used_in = defaultdict(set)
+    group_family = {}
+    for gk, tabs in groups.items():
+        fams = defaultdict(int)
+        for tb, n in tabs.items():
+            if tb in classes:
+                fams[classes[tb][0]] += n
+        if not fams:
+            continue
+        group_family[gk] = max(fams, key=fams.get)
+        for tb in tabs:
+            if tb in classes:
+                used_in[tb].add(gk)
+    # reference size for tables never seen in a template (placed by code/processors)
+    fam_sizes = defaultdict(list)
+    for gk, tabs in groups.items():
+        f = group_family.get(gk)
+        if f:
+            fam_sizes[f].append({r: sum(n for tb, n in tabs.items() if classes.get(tb, (None,))[0] == f and classes[tb][1] == r)
+                                 for r in ("vault", "standard", "filler")})
+    ref = {f: {r: max(1.0, statistics.median([s[r] for s in v] or [4])) for r in ("vault", "standard", "filler")} for f, v in fam_sizes.items()}
+
+    def share(kind, role, present):
+        tot = sum(split[kind].get(r, 0) for r in present)
+        return split[kind].get(role, 0) / tot if tot else 0.0
+
+    for tb, (fam, role) in classes.items():
+        budget = FAM["families"][fam]["budget"]
+        for kind in kinds:
+            b = budget.get(kind, 0)
+            if b <= 0:
+                continue
+            cands = []
+            for gk in used_in.get(tb, ()):
+                tabs = groups[gk]
+                cnt = defaultdict(int)
+                for t2, n in tabs.items():
+                    if t2 in classes and classes[t2][0] == fam:
+                        cnt[classes[t2][1]] += n
+                present = [r for r in cnt if cnt[r] > 0]
+                s = share(kind, role, present)
+                if s and cnt[role]:
+                    cands.append(b * s / (cnt[role] * MEAN_COUNT.get(kind, 1.0)))
+            if not used_in.get(tb):
+                r = ref.get(fam, {"vault": 4, "standard": 6, "filler": 6})
+                s = share(kind, role, [x for x in ("vault", "standard", "filler") if r.get(x)])
+                if s:
+                    cands.append(b * s / (r[role] * MEAN_COUNT.get(kind, 1.0)))
+            if cands:
+                p = min(min(cands), cap[kind])
+                if p >= 0.004:
+                    chance[tb][kind] = round(p, 3)
+    return chance, groups, group_family
+
+
+MEAN_COUNT = {"token": 1.5}
+
+
+def chance_entry(item, p, count=(1, 1), extra_fn=None):
+    fns = []
+    if count != (1, 1):
+        fns.append({"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": count[0], "max": count[1]}})
+    if extra_fn:
+        fns = extra_fn + fns
+    return {"rolls": 1, "conditions": [{"condition": "minecraft:random_chance", "chance": p}],
+            "entries": [{"type": "minecraft:item", "name": item, **({"functions": fns} if fns else {})}]}
+
+
+def map_entry(clue, p, name):
+    cm = FAM["clue_maps"][clue]
+    fn = [{"function": "minecraft:exploration_map", "destination": f"#horizon:clue/{clue}", "decoration": cm["decoration"],
+           "zoom": 2, "search_radius": cm["search_radius"], "skip_existing_chunks": True},
+          {"function": "minecraft:set_name", "target": "item_name", "name": {"text": name, "color": "gold", "italic": False}}]
+    return {"rolls": 1, "conditions": [{"condition": "minecraft:random_chance", "chance": p}],
+            "entries": [{"type": "minecraft:item", "name": "minecraft:map", "functions": fn}]}
+
+
+def emit_families(classes, chance, groups, group_family):
+    items = FAM["items"]
+    inject = {}          # signature -> (table name, pools)
+    members = defaultdict(list)
+    for tb in sorted(classes):
+        fam, role = classes[tb]
+        f = FAM["families"][fam]
+        c = chance.get(tb, {})
+        pools, sig = [], []
+        for kind in ("shard", "core", "heart"):
+            if kind in c:
+                pools.append(chance_entry(need("item", items[kind]), c[kind]))
+                sig.append((kind, c[kind]))
+        if "token" in c and f.get("token"):
+            pools.append(chance_entry(f["token"], c["token"], (1, 2)))
+            sig.append(("token", c["token"]))
+        for ex in f.get("extras", []):
+            if re.search(ex["match"], tb.split(":", 1)[1]):
+                kind, ref = ex["entry"].split(":", 1)
+                if kind == "map":
+                    pools.append(map_entry(ref.split("/")[-1], ex["chance"], ex["name"]))
+                else:
+                    pools.append(chance_entry(need("item", ref), ex["chance"], tuple(ex.get("count", (1, 1)))))
+                sig.append((ex["entry"], ex["chance"]))
+        if not pools:
+            continue
+        key = (fam, role, tuple(sig))
+        if key not in inject:
+            name = f"{fam}/{role}_{len([k for k in inject if k[0] == fam and k[1] == role])}"
+            inject[key] = (name, pools)
+        members[inject[key][0]].append(tb)
+    mods = []
+    for key, (name, pools) in sorted(inject.items(), key=lambda kv: kv[1][0]):
+        write(f"horizon/loot_table/inject/{name}.json", {"type": "minecraft:chest", "pools": pools})
+        mname = "family_" + name.replace("/", "_")
+        write(f"horizon/loot_modifiers/{mname}.json", {
+            "type": "neoforge:add_table",
+            "conditions": [{"condition": "minecraft:any_of", "terms": [{"condition": "neoforge:loot_table_id", "loot_table_id": t}
+                                                                        for t in sorted(members[name])]}],
+            "table": f"horizon:inject/{name}"})
+        mods.append(f"horizon:{mname}")
+    return mods, members
+
+
+def emit_apotheosis(classes, chance):
+    """Family-aware entries placed BEFORE Apotheosis' defaults in its own injectors (first match wins).
+    Tables in a family always get an explicit entry, which also covers namespaces whose paths do not start
+    with 'chests' (Incendium, Terralith, Structory, Towns & Towers, Bumblezone) and were previously skipped."""
+    base_affix = jar_json("apotheosis:loot_modifiers/affix_loot_injection")
+    base_gem = jar_json("apotheosis:loot_modifiers/gem_loot_injection")
+    buckets_a, buckets_g = defaultdict(list), defaultdict(list)
+    for tb, (fam, role) in classes.items():
+        f = FAM["families"][fam]
+        c = chance.get(tb, {})
+        ns, path = tb.split(":", 1)
+        rar = tuple(f.get("apotheosis_vault_rarities", [])) if role == "vault" else ()
+        gems = tuple(f.get("apotheosis_gems", []))
+        buckets_a[(ns, round(c.get("affix", 0.0), 2), rar)].append(path)
+        buckets_g[(ns, round(c.get("gem", 0.0), 2), gems)].append(path)
+
+    def entries(buckets, extra_key):
+        out = []
+        for (ns, p, extra), paths in sorted(buckets.items()):
+            e = {"chance": p, "pattern": {"domain": ns, "path_regex": "(?:" + "|".join(re.escape(x) for x in sorted(paths)) + ")"}}
+            if extra:
+                e[extra_key] = list(extra)
+            out.append(e)
+        return out
+    for g in (FAM["families"][f].get("apotheosis_gems", []) for f in FAM["families"]):
+        for gem in g:
+            if f"data/{gem.split(':')[0]}/gems/{gem.split(':')[1]}.json" not in jar_index():
+                raise SystemExit(f"unknown apotheosis gem {gem}")
+    a = dict(base_affix); a["entries"] = entries(buckets_a, "rarities") + base_affix["entries"]
+    g = dict(base_gem); g["entries"] = entries(buckets_g, "gems") + base_gem["entries"]
+    write("apotheosis/loot_modifiers/affix_loot_injection.json", a)
+    write("apotheosis/loot_modifiers/gem_loot_injection.json", g)
+    return len(a["entries"]) - len(base_affix["entries"]), len(g["entries"]) - len(base_gem["entries"])
+
+
+_JI = None
+
+
+def jar_index():
+    global _JI
+    if _JI is None:
+        _JI = set()
+        for m in LOCK["mods"]:
+            with zipfile.ZipFile(CACHE / m["file"]) as z:
+                _JI.update(z.namelist())
+    return _JI
+
+
+# ---------------------------------------------------------------- 4. legends
+def emit_legends():
+    mods = []
+    items = FAM["items"]
+    for b in LEG["bosses"]:
+        ent = need("entity", b["id"])
+        ns, p = ent.split(":")
+        relic = items["heart"] if b["tier"] == "major" else items["core"]
+        write(f"horizon/loot_table/rewards/legend/{p}.json", {"type": "minecraft:advancement_reward", "pools": [
+            {"rolls": 1, "entries": [{"type": "minecraft:item", "name": relic}]},
+            {"rolls": 1, "entries": [{"type": "minecraft:item", "name": TROPHY(ent)}]}]})
+        write(f"horizon/advancement/legend/{p}.json", {
+            "criteria": {
+                "kill": {"trigger": "minecraft:player_killed_entity",
+                         "conditions": {"entity": [{"condition": "minecraft:entity_properties", "entity": "this", "predicate": {"type": ent}}]}},
+                "party": {"trigger": "minecraft:impossible"}},
+            "requirements": [["kill", "party"]],
+            "rewards": {"loot": [f"horizon:rewards/legend/{p}"], "function": f"horizon:fx/legend_{b['tier']}"}})
+        table = f"{ns}:entities/{p}"
+        if b["repeat"] and table in IDS["loot_table"]:
+            write(f"horizon/loot_table/inject/legend_repeat/{p}.json", {"type": "minecraft:entity", "pools": [
+                {"rolls": 1, "conditions": [{"condition": "minecraft:killed_by_player"}],
+                 "entries": [{"type": "minecraft:item", "name": items[b["repeat"]]}]}]})
+            write(f"horizon/loot_modifiers/legend_repeat_{p}.json", {
+                "type": "neoforge:add_table",
+                "conditions": [{"condition": "neoforge:loot_table_id", "loot_table_id": table}],
+                "table": f"horizon:inject/legend_repeat/{p}"})
+            mods.append(f"horizon:legend_repeat_{p}")
+    # feedback functions (advancement rewards run as the player, at the player). Viewers who ran
+    # "/horizon fx quiet" carry the tag horizon_fx_quiet and see/hear nothing.
+    write("horizon/function/fx/legend_major.mcfunction",
+          "particle minecraft:totem_of_undying ~ ~1.2 ~ 0.7 1.0 0.7 0.35 70 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
+          "particle minecraft:end_rod ~ ~1.2 ~ 0.4 1.4 0.4 0.05 30 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
+          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 0.6 1\n"
+          "title @s[tag=!horizon_fx_quiet] actionbar {\"text\":\"Legend defeated - a Starforged Heart and a trophy are yours\",\"color\":\"light_purple\"}\n")
+    write("horizon/function/fx/legend_mini.mcfunction",
+          "particle minecraft:end_rod ~ ~1.2 ~ 0.4 1.0 0.4 0.04 24 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
+          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.5 0.8\n"
+          "title @s[tag=!horizon_fx_quiet] actionbar {\"text\":\"Foe vanquished - an Ancient Core and a trophy are yours\",\"color\":\"aqua\"}\n")
+    write("horizon/function/fx/discover.mcfunction",
+          "execute at @s[tag=!horizon_fx_quiet] run playsound minecraft:block.amethyst_block.resonate player @s ~ ~ ~ 0.5 1.2\n")
+    return mods
+
+
+# ---------------------------------------------------------------- 5. atlas
+def emit_atlas():
+    fam_structs = defaultdict(list)
+    for s in IDS["structure"]:
+        f = first(FAM["structures"], s)
+        if f:
+            fam_structs[f].append(s)
+    for f, ss in sorted(fam_structs.items()):
+        write(f"horizon/tags/worldgen/structure/family/{f}.json", {"replace": False, "values": sorted(ss)})
+        write(f"horizon/advancement/atlas/{f}.json", {
+            "criteria": {"found": {"trigger": "minecraft:location", "conditions": {"player": [
+                {"condition": "minecraft:entity_properties", "entity": "this",
+                 "predicate": {"location": {"structures": f"#horizon:family/{f}"}}}]}}},
+            "rewards": {"function": "horizon:fx/discover"}})
+    for clue, cm in FAM["clue_maps"].items():
+        vals = sorted({s for f in cm["from"] for s in fam_structs.get(f, [])})
+        write(f"horizon/tags/worldgen/structure/clue/{clue}.json", {"replace": False, "values": vals})
+    # legacy tag kept for quests / docs (any When Dungeons Arise structure)
+    write("horizon/tags/worldgen/structure/arise_any.json", {"values": sorted(s for s in IDS["structure"] if s.startswith("dungeons_arise:"))})
+    return {f: len(v) for f, v in fam_structs.items()}
+
+
+# ---------------------------------------------------------------- report
+def report(classes, chance, groups, group_family, members):
+    rows = []
+    for gk, tabs in groups.items():
+        f = group_family.get(gk)
+        if not f:
+            continue
+        exp = defaultdict(float)
+        p0 = 1.0
+        n = 0
+        for tb, cnt in tabs.items():
+            if tb not in classes:
+                continue
+            n += cnt
+            c = chance.get(tb, {})
+            for k, p in c.items():
+                mult = MEAN_COUNT.get(k, 1.0)
+                exp[k] += cnt * p * mult
+            p0 *= (1 - c.get("heart", 0)) ** cnt
+        rows.append({"group": gk, "family": f, "containers": n, **{k: round(v, 2) for k, v in exp.items()},
+                     "p_heart_ge1": round(1 - p0, 2)})
+    rows.sort(key=lambda r: (r["family"], -r["containers"]))
+    fams = sorted({r["family"] for r in rows})
+    unassigned = sorted(t for t in AUDIT["per_table"] if t not in classes and is_container_table(t) and role_of(t))
+    out = {"tables_classified": len(classes), "inject_tables": len(members),
+           "by_family": {f: sum(1 for t in classes.values() if t[0] == f) for f in fams},
+           "placed_but_unassigned": unassigned, "groups": rows}
+    (ROOT / "manifests/loot_report.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
+    old = (ROOT / "manifests/loot_tiers.json")
+    if old.exists():
+        old.unlink()  # superseded by loot_report.json
+    md = ["# Loot budget report (generated)", "",
+          "Expected Horizon rewards for one full clear of each structure group, computed by `scripts/gen_datapack.py` from the",
+          "real container counts in the structure templates (`scripts/audit_loot.py`). Each template is counted once; jigsaw",
+          "structures that repeat a piece have more containers, so treat these as per-unique-layout figures. Apotheosis' affix",
+          "and gem numbers are the expected count of injected affix items / gems on top of each structure's own loot.", "",
+          f"Tables classified: {len(classes)} - inject tables: {len(members)} - placed but unassigned (no Horizon injection): {len(unassigned)}", ""]
+    for f in fams:
+        fr = [r for r in rows if r["family"] == f]
+        md += [f"## {FAM['families'][f]['title']} (`{f}`) - {len(fr)} structure groups", "",
+               "| Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |",
+               "|---|---|---|---|---|---|---|---|---|"]
+        for r in sorted(fr, key=lambda r: -r["containers"])[:25]:
+            md.append(f"| `{r['group']}` | {r['containers']} | {r.get('shard', 0)} | {r.get('core', 0)} | {r.get('heart', 0)} | "
+                      f"{r['p_heart_ge1']} | {r.get('token', 0)} | {r.get('affix', 0)} | {r.get('gem', 0)} |")
+        if len(fr) > 25:
+            md.append(f"| ... {len(fr) - 25} smaller groups | | | | | | | | |")
+        md.append("")
+    (ROOT / "docs/LOOT_BUDGET.md").write_text("\n".join(md) + "\n", encoding="utf-8")
+    return rows
+
+
+def assert_budgets(rows):
+    """Hard ceilings so a curation mistake cannot silently re-create the 0.1.0 flood."""
+    limits = {"heart": 2.0, "core": 5.0, "shard": 12.0, "token": 6.0}
+    bad = [(r["group"], k, r[k]) for r in rows for k, lim in limits.items() if r.get(k, 0) > lim * 1.001]
+    if bad:
+        raise SystemExit("budget exceeded: " + "; ".join(f"{g} {k}={v}" for g, k, v in bad[:20]))
 
 
 def main():
-    import shutil
-    shutil.rmtree(OUT, ignore_errors=True)
+    clean_previous()
     for bm in DISABLE_ORES:
         need("biome_modifier", bm)
         ns, p = bm.split(":")
         write(f"{ns}/neoforge/biome_modifier/{p}.json", {"type": "neoforge:none"})
-
     for sid, spacing, sep, why in STRUCTURE_SETS:
         need("structure_set", sid)
         d = jar_json(sid.replace(":", ":worldgen/structure_set/"))
@@ -131,37 +499,21 @@ def main():
         ns, p = sid.split(":")
         write(f"{ns}/worldgen/structure_set/{p}.json", d)
 
-    tiers = {"common": [], "rare": [], "legendary": []}
-    for t in IDS["loot_table"]:
-        c = classify(t)
-        if c:
-            tiers[c].append(t)
-    for ent in BOSSES_LEGENDARY + BOSSES_RARE:
-        need("entity", ent)
-        ns, p = ent.split(":")
-        t = f"{ns}:entities/{p}"
-        if t in IDS["loot_table"]:
-            tiers["legendary" if ent in BOSSES_LEGENDARY else "rare"].append(t)
-    modifiers = []
-    for tier, tables in tiers.items():
-        item, chance, count = RELIC[tier]
-        write(f"horizon/loot_table/inject/{tier}.json", relic_table(item, chance, count))
-        # boss tables always drop (chance 1) via a separate table
-        write(f"horizon/loot_table/inject/{tier}_boss.json", relic_table(item, 1.0, [1, 2] if tier == "legendary" else [1, 1]))
-        chests = sorted(t for t in tables if "/entities/" not in t and ":entities/" not in t)
-        bosses = sorted(t for t in tables if ":entities/" in t)
-        for name, group, table in ((f"{tier}_chests", chests, f"horizon:inject/{tier}"), (f"{tier}_bosses", bosses, f"horizon:inject/{tier}_boss")):
-            if not group:
-                continue
-            write(f"horizon/loot_modifiers/{name}.json", {
-                "type": "neoforge:add_table",
-                "conditions": [{"condition": "minecraft:any_of", "terms": [{"condition": "neoforge:loot_table_id", "loot_table_id": t} for t in group]}],
-                "table": table})
-            modifiers.append(f"horizon:{name}")
-    write("neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": modifiers})
-    (ROOT / "manifests/loot_tiers.json").write_text(json.dumps(tiers, indent=1))
-    print("ores disabled:", len(DISABLE_ORES), "| structure sets:", len(STRUCTURE_SETS),
-          "| loot tables per tier:", {k: len(v) for k, v in tiers.items()})
+    classes = classify_all()
+    chance, groups, group_family = solve(classes)
+    mods, members = emit_families(classes, chance, groups, group_family)
+    na, ng = emit_apotheosis(classes, chance)
+    mods += emit_legends()
+    atlas = emit_atlas()
+    write("neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": mods})
+    write("repurposed_structures/tags/item/blacklisted_from_modded_loot_importing.json",
+          {"replace": False, "values": sorted(HORIZON_ITEMS | {TROPHY(b["id"]) for b in LEG["bosses"]})})
+    rows = report(classes, chance, groups, group_family, members)
+    assert_budgets(rows)
+    OWNED.write_text(json.dumps({"generator": "scripts/gen_datapack.py", "files": sorted(written)}, indent=1) + "\n")
+    print(f"ores disabled: {len(DISABLE_ORES)} | structure sets: {len(STRUCTURE_SETS)} | tables classified: {len(classes)} "
+          f"| inject tables: {len(members)} | GLMs: {len(mods)} | apotheosis entries: +{na} affix, +{ng} gem "
+          f"| atlas families: {len(atlas)} | files: {len(written)}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,63 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "explorify:chest/dark_forest_settlement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "kaisyn:village/village_mushroom_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "kaisyn:village/village_swamp_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_fisher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_tannery"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_weaponsmith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/ocean_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/swamp_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/warped_fisher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/warped_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/warped_tannery"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/warped_weaponsmith"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/settlement/standard_5"
+}

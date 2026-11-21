@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "aether:bronze_dungeon",
+    "aether:gold_dungeon",
+    "aether:silver_dungeon",
+    "cataclysm:acropolis",
+    "cataclysm:amethyst_nest",
+    "cataclysm:ancient_factory",
+    "cataclysm:burning_arena",
+    "cataclysm:cursed_pyramid",
+    "cataclysm:frosted_prison",
+    "cataclysm:soul_black_smith",
+    "cataclysm:sunken_city",
+    "mowziesmobs:frostmaw_spawn",
+    "mowziesmobs:monastery",
+    "mowziesmobs:umvuthana_grove",
+    "mowziesmobs:wrought_chamber"
+  ]
+}

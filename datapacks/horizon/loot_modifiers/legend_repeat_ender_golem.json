@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/ender_golem"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/ender_golem"
+}

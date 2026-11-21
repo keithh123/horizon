@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/abandoned_temple/abandoned_temple_entrance"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/abandoned_temple/abandoned_temple_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/abandoned_temple/abandoned_temple_top"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/standard_4"
+}

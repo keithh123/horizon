@@ -232,6 +232,10 @@
       {
         "slug": "shatterbyte-lib",
         "why": "Provides mod id 'octolib' required by Relics 0.10.x (undeclared in Modrinth metadata; found by launch test)."
+      },
+      {
+        "slug": "gateways-to-eternity",
+        "why": "Bounded, readable wave challenges (fixed waves, fixed entity counts, visible timer). Activates the gateway data Apotheosis already ships and hosts Horizon's late-game Trials, which consume exploration relics instead of producing them."
       }
     ],
     "magic": [
@@ -364,6 +368,14 @@
         "slug": "odyssey-quests",
         "allow": "beta",
         "why": "Quest book (Heracles). FTB Quests is CurseForge-only and cannot be in an .mrpack."
+      },
+      {
+        "slug": "lootr",
+        "why": "Per-player structure loot: each player opens their own copy of every structure container, so the expedition reward budget (docs/LOOT.md) holds per player in multiplayer instead of first-come-first-served."
+      },
+      {
+        "slug": "corpse",
+        "why": "Death recovery: items stay in a corpse at the death spot (also for void deaths) instead of despawning, so dying costs a trip back, not the whole kit."
       }
     ],
     "atmosphere": [
@@ -374,6 +386,10 @@
       {
         "slug": "particle-rain",
         "why": "Better weather particles."
+      },
+      {
+        "slug": "subtle-effects",
+        "why": "Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config."
       }
     ]
   },
@@ -399,6 +415,12 @@
     "noisium": "Last 1.21.1 build Aug 2024; overlaps with Lithostitched/Tectonic noise handling.",
     "enderio": "1.21.1 line is beta-only; MI + Powah + Create Additions cover its role.",
     "industrial-foregoing": "Requires Titanium beta; overlaps MI. Excluded for stability.",
-    "advancedperipherals": "Alpha on 1.21.1."
+    "advancedperipherals": "Alpha on 1.21.1.",
+    "idas": "Modrinth metadata for 1.13.7+1.21.1-neoforge requires Quark, Supplementaries, Create and Integrated API: two large content mods to get one structure pack, on top of 18 structure mods.",
+    "simplymore": "Only an alpha build (1.3.0_alpha5) for NeoForge 1.21.1; would dilute the Simply Swords/Apotheosis weapon pool.",
+    "particular-reforged": "Overlaps Subtle Effects (ambient particles). One ambient-particle mod is enough; Subtle Effects has finer per-effect config.",
+    "loot-beams-refork": "Apotheosis already draws rarity beams/particles for affix items; a second beam renderer duplicates them. Horizon finds use server-side pickup feedback instead.",
+    "explorers-compass / natures-compass": "Point-to-anything compasses remove discovery. Clues come from exploration maps in loot and quest guidance instead.",
+    "yungs-cave-biomes": "Adds cave biomes = a second biome source under Terralith's cave biomes."
   }
 }

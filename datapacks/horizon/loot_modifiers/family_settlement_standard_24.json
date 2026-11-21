@@ -1,0 +1,59 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/archer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/butcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/fisherman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/mason"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/shepherd"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/smith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/archer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/attic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/fisherman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/mason"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/smith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/tavern_downstairs"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/settlement/standard_24"
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "deeperdarker:ancient_temple",
+    "minecraft:ancient_city",
+    "undergarden:catacombs",
+    "undergarden:denizen_camp",
+    "undergarden:depleted_mine",
+    "undergarden:forgotten_vestige"
+  ]
+}

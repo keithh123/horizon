@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "irons_spellbooks:dead_king"
+            }
+          }
+        ]
+      }
+    },
+    "party": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "kill",
+      "party"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "horizon:rewards/legend/dead_king"
+    ],
+    "function": "horizon:fx/legend_mini"
+  }
+}

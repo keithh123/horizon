@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betteroceanmonuments:chests/upper_side_chamber"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/lighthouse/lighthouse_top"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/ocean/standard_0"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_room_bookshelf"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_room_garden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_room_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/infested_temple/infested_temple_room_supply"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/filler_5"
+}

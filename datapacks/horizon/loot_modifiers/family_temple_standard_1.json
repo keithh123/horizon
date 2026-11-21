@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/lab"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/statue"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/wardrobe"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/standard_1"
+}

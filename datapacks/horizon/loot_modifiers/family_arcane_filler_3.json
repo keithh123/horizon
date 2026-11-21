@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/captain_quarters"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/food_barrel"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/arcane/filler_3"
+}

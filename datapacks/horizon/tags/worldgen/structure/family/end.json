@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "cataclysm:ruined_citadel",
+    "explorify:end_shipwreck",
+    "minecraft:end_city",
+    "nova_structures:end_castle",
+    "nova_structures:end_lighthouse",
+    "nova_structures:end_ship",
+    "nullscape:dragon_skeleton",
+    "nullscape:rift",
+    "repurposed_structures:ancient_city_end",
+    "repurposed_structures:mineshaft_end",
+    "repurposed_structures:outpost_end",
+    "repurposed_structures:pyramid_end",
+    "repurposed_structures:ruined_portal_end",
+    "repurposed_structures:shipwreck_end",
+    "repurposed_structures:stronghold_end"
+  ]
+}

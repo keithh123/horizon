@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.24
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:wayfarer_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.105
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:ancient_core"
+        }
+      ]
+    }
+  ]
+}

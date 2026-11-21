@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_village/mushroom_village_treasure"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/roadside/vault_2"
+}

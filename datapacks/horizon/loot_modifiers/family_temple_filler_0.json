@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/food_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/library"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/storage"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/filler_0"
+}

@@ -1,0 +1,35 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:pipeline/base/rare"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:pipeline/base/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/nether_keep/vault_keep"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/nether_keep/vault_keep_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_donjon/vault_piglin_donjon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_outstation/vault_piglin_outstation"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/nether/vault_4"
+}

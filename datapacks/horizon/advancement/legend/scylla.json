@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "cataclysm:scylla"
+            }
+          }
+        ]
+      }
+    },
+    "party": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "kill",
+      "party"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "horizon:rewards/legend/scylla"
+    ],
+    "function": "horizon:fx/legend_major"
+  }
+}

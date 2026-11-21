@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_campsite/illager_campsite_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_campsite/illager_campsite_tent"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/roadside/standard_2"
+}

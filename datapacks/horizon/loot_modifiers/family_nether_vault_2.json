@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:sanctum/coffin"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/nether/vault_2"
+}

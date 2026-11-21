@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_arise:bandit_towers",
+    "dungeons_arise:heavenly_challenger",
+    "dungeons_arise:heavenly_conqueror",
+    "dungeons_arise:heavenly_rider",
+    "dungeons_arise:keep_kayra",
+    "dungeons_arise:kisegi_sanctuary",
+    "dungeons_arise:mechanical_nest",
+    "dungeons_arise:mining_complex",
+    "dungeons_arise:plague_asylum",
+    "dungeons_arise:shiraz_palace",
+    "dungeons_arise:thornborn_towers"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/additional_ancient_city_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/additional_end_city_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/additional_good_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/additional_nether_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/catacombs/armory_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/citadel_tomes"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mangrove_hut"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/burnt_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/fire_ale_trove"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/sewer_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/trial_chambers/additional_ominous_spawner_consumable_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/trial_chambers/additional_regular_spawner_consumable_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/trial_chambers/additional_trial_chest_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/all_focuses"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/basic_curios"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/decent_ink"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/good_ink"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/great_ink"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/poor_ink"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/random_elixir"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/random_potion"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/random_potion_or_elixir"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:magic_items/scroll_pouch"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:spawners/ancient_battleground/ominous_projectiles"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:spawners/catacombs/ominous_zombie_spawner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:spawners/catacombs/regular_zombie_spawner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/ring_gen"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/ring_gen_all_schools"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/scroll_gen"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/scroll_gen_fire"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/scroll_gen_force_eldritch"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/scroll_gen_magic_missile"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:test/scroll_gen_notforce_eldritch"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/arcane/standard_0"
+}

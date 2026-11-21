@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/gold/gold_dungeon_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_reward"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/boss_lair/vault_0"
+}

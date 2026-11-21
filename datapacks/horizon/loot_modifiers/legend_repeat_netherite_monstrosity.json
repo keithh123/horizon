@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "cataclysm:entities/netherite_monstrosity"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/netherite_monstrosity"
+}

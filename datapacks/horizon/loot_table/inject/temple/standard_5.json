@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.144
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:wayfarer_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.054
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:ancient_core"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.06
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "#horizon:clue/landmark",
+              "decoration": "minecraft:target_x",
+              "zoom": 2,
+              "search_radius": 40,
+              "skip_existing_chunks": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Surveyor's Chart",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/puzzle_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/sentry_puzzle_treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/sudoku_success"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/hive/vault_3"
+}

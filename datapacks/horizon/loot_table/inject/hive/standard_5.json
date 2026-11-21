@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.2
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:wayfarer_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.07
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:ancient_core"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.267
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:honeyed_seal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

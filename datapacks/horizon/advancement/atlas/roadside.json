@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "found": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "#horizon:family/roadside"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "horizon:fx/discover"
+  }
+}

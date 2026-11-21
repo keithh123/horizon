@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.014
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:wayfarer_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.05
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "#horizon:clue/temple",
+              "decoration": "minecraft:red_x",
+              "zoom": 2,
+              "search_radius": 30,
+              "skip_existing_chunks": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Weathered Chart",
+                "color": "gold",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

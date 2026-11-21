@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "irons_spellbooks:ancient_battleground",
+    "irons_spellbooks:catacombs",
+    "irons_spellbooks:citadel",
+    "irons_spellbooks:evoker_fort",
+    "irons_spellbooks:ice_spider_den",
+    "irons_spellbooks:impaled_icebreaker",
+    "irons_spellbooks:mangrove_hut",
+    "irons_spellbooks:mountain_tower",
+    "irons_spellbooks:pyromancer_tower",
+    "terralith:mage_complex",
+    "terralith:mage_tower",
+    "terralith:mage_tower_autumn",
+    "terralith:mage_tower_spring",
+    "terralith:mage_tower_summer",
+    "terralith:mage_tower_winter"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "_comment": [
+    "Boss rewards. The relic for a boss comes from a FIRST-KILL advancement reward (once per player), not from the entity loot table,",
+    "so summonable/farmable bosses (Wither, respawned Dragon, Warden) cannot mint relics. Every player within 'party_radius' blocks",
+    "of the kill is credited (KubeJS), so a party all gets the first-kill reward. 'repeat' is an extra entity drop on later kills",
+    "(killed_by_player only): structure-bound bosses repeat-drop a lower relic; farmable ones drop nothing extra.",
+    "tier: major -> Starforged Heart + trophy; mini -> Ancient Core + trophy.",
+    "palette: [dark, mid, light, accent] hex colours for the generated trophy emblem."
+  ],
+  "party_radius": 96,
+  "bosses": [
+    {"id": "minecraft:ender_dragon", "name": "Ender Dragon", "tier": "major", "repeat": null, "palette": ["1a0f2e", "5b2a86", "c08bff", "ff4fd8"], "glyph": "wing"},
+    {"id": "minecraft:wither", "name": "Wither", "tier": "major", "repeat": null, "palette": ["111111", "3b3b3b", "9a9a9a", "5a2fd6"], "glyph": "skull"},
+    {"id": "minecraft:warden", "name": "Warden", "tier": "major", "repeat": null, "palette": ["061a1f", "0e4a55", "1fb3c4", "c8fff7"], "glyph": "eye"},
+    {"id": "minecraft:elder_guardian", "name": "Elder Guardian", "tier": "mini", "repeat": "shard", "palette": ["2d3a2f", "6f8f7a", "d6e6d0", "ff9a3d"], "glyph": "eye"},
+    {"id": "cataclysm:ignis", "name": "Ignis", "tier": "major", "repeat": "core", "palette": ["3a0a00", "a3300a", "ff8a2a", "ffe08a"], "glyph": "flame"},
+    {"id": "cataclysm:netherite_monstrosity", "name": "Netherite Monstrosity", "tier": "major", "repeat": "core", "palette": ["1d1716", "4a3a36", "8c7a74", "ff5a1f"], "glyph": "anvil"},
+    {"id": "cataclysm:the_harbinger", "name": "The Harbinger", "tier": "major", "repeat": "core", "palette": ["2a0606", "7a1414", "e03b3b", "ffd0d0"], "glyph": "gear"},
+    {"id": "cataclysm:the_leviathan", "name": "The Leviathan", "tier": "major", "repeat": "core", "palette": ["03142a", "0b3f6e", "3aa0e0", "b5f0ff"], "glyph": "wave"},
+    {"id": "cataclysm:ender_guardian", "name": "Ender Guardian", "tier": "major", "repeat": "core", "palette": ["160b24", "3d2160", "9a6fd0", "f0e0ff"], "glyph": "eye"},
+    {"id": "cataclysm:maledictus", "name": "Maledictus", "tier": "major", "repeat": "core", "palette": ["0b1a24", "264a5e", "8cc8e0", "e8fbff"], "glyph": "skull"},
+    {"id": "cataclysm:ancient_remnant", "name": "Ancient Remnant", "tier": "major", "repeat": "core", "palette": ["2a1f0a", "7a5a1e", "e0b450", "fff0b0"], "glyph": "sun"},
+    {"id": "cataclysm:scylla", "name": "Scylla", "tier": "major", "repeat": "core", "palette": ["0a1f2a", "1e5a6a", "5ad0d0", "ffe9a0"], "glyph": "wave"},
+    {"id": "cataclysm:ender_golem", "name": "Ender Golem", "tier": "mini", "repeat": "shard", "palette": ["120a1c", "35204f", "7f5aa8", "d7b8ff"], "glyph": "gear"},
+    {"id": "cataclysm:the_prowler", "name": "The Prowler", "tier": "mini", "repeat": "shard", "palette": ["1c0d0d", "5a1f1f", "b04a4a", "ffb0b0"], "glyph": "gear"},
+    {"id": "cataclysm:clawdian", "name": "Clawdian", "tier": "mini", "repeat": "shard", "palette": ["0d1f24", "1f5560", "3fb0b8", "fff0c0"], "glyph": "wave"},
+    {"id": "aether:slider", "name": "The Slider", "tier": "mini", "repeat": null, "palette": ["2a2a30", "5f6470", "b0b8c8", "7fd0ff"], "glyph": "anvil"},
+    {"id": "aether:valkyrie_queen", "name": "Valkyrie Queen", "tier": "mini", "repeat": null, "palette": ["2a2410", "8a7a3a", "f0e6b0", "ffffff"], "glyph": "wing"},
+    {"id": "aether:sun_spirit", "name": "Sun Spirit", "tier": "major", "repeat": null, "palette": ["3a1a00", "c06000", "ffb020", "fff6c0"], "glyph": "sun"},
+    {"id": "mowziesmobs:ferrous_wroughtnaut", "name": "Ferrous Wroughtnaut", "tier": "mini", "repeat": null, "palette": ["1e1e1e", "555555", "a8a8a8", "d0402a"], "glyph": "anvil"},
+    {"id": "mowziesmobs:frostmaw", "name": "Frostmaw", "tier": "mini", "repeat": null, "palette": ["0e1e2e", "3a6a9a", "bfe6ff", "ffffff"], "glyph": "flake"},
+    {"id": "mowziesmobs:umvuthi", "name": "Umvuthi", "tier": "mini", "repeat": null, "palette": ["2a1a06", "8a5a14", "f0c040", "40d060"], "glyph": "sun"},
+    {"id": "mowziesmobs:sculptor", "name": "The Sculptor", "tier": "mini", "repeat": null, "palette": ["1e1a14", "6a5e4a", "d8ccb0", "60c0ff"], "glyph": "gear"},
+    {"id": "undergarden:forgotten_guardian", "name": "Forgotten Guardian", "tier": "mini", "repeat": null, "palette": ["0e1a14", "2e5a46", "8ad0a8", "e0fff0"], "glyph": "skull"},
+    {"id": "irons_spellbooks:dead_king", "name": "The Dead King", "tier": "mini", "repeat": null, "palette": ["14100a", "4a3a1e", "c0a060", "8a40ff"], "glyph": "crown"},
+    {"id": "deeperdarker:stalker", "name": "The Stalker", "tier": "major", "repeat": "core", "palette": ["050f12", "0b2e36", "1f8a9a", "9af0ff"], "glyph": "eye"},
+    {"id": "the_bumblezone:cosmic_crystal_entity", "name": "Cosmic Crystal", "tier": "mini", "repeat": null, "palette": ["1a1030", "4a3a8a", "a0b0ff", "ffe060"], "glyph": "star"}
+  ]
+}

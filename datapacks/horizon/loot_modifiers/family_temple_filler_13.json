@@ -1,0 +1,47 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/stray_fort_loot_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/birch_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/desert_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/jungle_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/mangrove_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/oak_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/savanna_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/snowy_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/mansions/taiga_storage"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/temple/filler_13"
+}

@@ -1,0 +1,43 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:advancements/queens_desire"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:fluids/sugar_water_evaporates"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/bee_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/flowers"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/compasses"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/guarantee_compasses"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/spider_infested_bee_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/tree_dungeon"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/hive/standard_0"
+}

@@ -1,0 +1,31 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/ancient_hoops"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/bee_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/candle_parkour"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/candle_parkour_top"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/cannon_range"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/hive/standard_1"
+}

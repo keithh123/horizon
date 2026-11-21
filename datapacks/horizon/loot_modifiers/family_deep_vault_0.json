@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:chests/ancient_temple_apex"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:chests/ancient_temple_secret"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/deep/vault_0"
+}

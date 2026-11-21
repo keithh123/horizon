@@ -1,0 +1,39 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/food"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/generic_low"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/desert/junk"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/food"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:village/fortified/generic_low"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/settlement/filler_6"
+}

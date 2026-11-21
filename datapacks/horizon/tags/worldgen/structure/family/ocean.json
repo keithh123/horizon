@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "betteroceanmonuments:ocean_monument",
+    "dungeons_arise:fishing_hut",
+    "dungeons_arise:illager_corsair",
+    "dungeons_arise:illager_galley",
+    "dungeons_arise:lighthouse",
+    "dungeons_arise:typhon",
+    "dungeons_arise:undead_pirate_ship",
+    "minecraft:buried_treasure",
+    "minecraft:monument",
+    "minecraft:ocean_ruin_cold",
+    "minecraft:ocean_ruin_warm",
+    "minecraft:shipwreck",
+    "minecraft:shipwreck_beached",
+    "nova_structures:conduit_ruin",
+    "repurposed_structures:ancient_city_ocean",
+    "repurposed_structures:monument_desert",
+    "repurposed_structures:monument_icy",
+    "repurposed_structures:monument_jungle",
+    "repurposed_structures:monument_nether",
+    "repurposed_structures:outpost_ocean",
+    "repurposed_structures:temple_ocean"
+  ]
+}

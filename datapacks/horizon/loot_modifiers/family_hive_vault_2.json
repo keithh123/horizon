@@ -1,0 +1,31 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/gazebuzz_cluster/flower_pots_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/gazebuzz_cluster/gem_pot_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/gazebuzz_cluster/gold_plates_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/gazebuzz_cluster/potions_reward"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/gazebuzz_cluster/targets_reward"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/hive/vault_2"
+}
