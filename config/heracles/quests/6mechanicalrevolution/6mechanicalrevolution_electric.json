@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "createaddition:electric_motor"
+      }
+    },
+    "title": "Rotation to Power",
+    "description": [
+      "Create Crafts & Additions converts rotation to FE and back - the bridge to every other tech mod."
+    ],
+    "groups": {
+      "6 - Mechanical Revolution": {
+        "position": [
+          240,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "6mechanicalrevolution_brass"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "createaddition:alternator",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

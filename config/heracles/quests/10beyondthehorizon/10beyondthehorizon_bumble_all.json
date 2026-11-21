@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "the_bumblezone:honey_crystal"
+      }
+    },
+    "title": "Bee Whisperer",
+    "description": [
+      "Discover every Bumblezone biome."
+    ],
+    "groups": {
+      "10 - Beyond the Horizon": {
+        "position": [
+          0,
+          240
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "the_bumblezone:biomes/discover_all_biomes"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart",
+        "count": 1
+      }
+    }
+  }
+}

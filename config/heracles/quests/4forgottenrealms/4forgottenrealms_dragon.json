@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:dragon_head"
+      }
+    },
+    "title": "Free the End",
+    "description": [
+      "The dragon is a beginning. The horizon goes much further."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          96,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_end"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:end/kill_dragon"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart",
+        "count": 1
+      }
+    }
+  }
+}

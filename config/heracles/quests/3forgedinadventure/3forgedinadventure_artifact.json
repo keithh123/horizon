@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "artifacts:flippers"
+      }
+    },
+    "title": "Curious Trinket",
+    "description": [
+      "Artifacts and Relics appear in chests. Equip them in Curios slots (inventory button)."
+    ],
+    "groups": {
+      "3 - Forged in Adventure": {
+        "position": [
+          48,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "3forgedinadventure_apoth_haven"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "#artifacts:artifacts",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 4
+    }
+  }
+}

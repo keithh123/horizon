@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:inscription_table"
+      }
+    },
+    "title": "Inscription",
+    "description": [
+      "Iron's Spells is combat magic: scrolls found in loot go into a spellbook at the inscription table."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          0,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "irons_spellbooks:irons_spellbooks/make_inscription_table"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 4
+    }
+  }
+}

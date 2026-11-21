@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:archmage_spell_book"
+      }
+    },
+    "title": "Archmage",
+    "description": [
+      "Master Ars Nouveau."
+    ],
+    "groups": {
+      "10 - Beyond the Horizon": {
+        "position": [
+          0,
+          200
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ars_nouveau:archmage_spell_book"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
+    }
+  }
+}

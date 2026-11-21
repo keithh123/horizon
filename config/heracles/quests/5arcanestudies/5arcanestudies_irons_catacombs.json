@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:wayward_compass"
+      }
+    },
+    "title": "The Catacombs",
+    "description": [
+      "The Dead King waits in the catacombs. Prepare."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          96,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "5arcanestudies_irons_anvil"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "irons_spellbooks:irons_spellbooks/enter_catacombs"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

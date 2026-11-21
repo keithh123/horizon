@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:inscriber"
+      }
+    },
+    "title": "Inscriber Presses",
+    "description": [
+      "Presses come from meteorites. Find one with the meteorite compass."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "8thedigitalage_ae_quartz"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ae2:main/presses"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:wayfarer_shard",
+        "count": 2
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:echo_shard"
+      }
+    },
+    "title": "The Otherside",
+    "description": [
+      "Beyond the Ancient Cities lies the Otherside (Deeper and Darker)."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          48,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_nether"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "deeperdarker:main/enter_otherside"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:blue_ice"
+      }
+    },
+    "title": "The Frozen Tyrant",
+    "description": [
+      "A Frostmaw sleeps in cold biomes. Optional, very dangerous, very rewarding."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "2thewildfrontier_dungeon_arise"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:kill_entity",
+      "entity": {
+        "type": "mowziesmobs:frostmaw"
+      },
+      "amount": 1
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

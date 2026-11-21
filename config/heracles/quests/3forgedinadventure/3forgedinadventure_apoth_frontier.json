@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond_sword"
+      }
+    },
+    "title": "World Tier: Frontier",
+    "description": [
+      "Reach the Frontier tier. Purple and gold affixes begin to drop."
+    ],
+    "groups": {
+      "3 - Forged in Adventure": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "3forgedinadventure_apoth_haven"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/frontier"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 8
+      }
+    }
+  }
+}

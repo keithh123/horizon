@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bell"
+      }
+    },
+    "title": "Civilisation",
+    "description": [
+      "Find a village. ChoiceTheorem's overhaul gives every biome its own style."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          0,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/trade"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:emerald",
+        "count": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_sword"
+      }
+    },
+    "title": "World Tier: Haven",
+    "description": [
+      "Apotheosis loot is tiered. Your world tier rises as you progress, unlocking rarer affixes."
+    ],
+    "groups": {
+      "3 - Forged in Adventure": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/haven"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

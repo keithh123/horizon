@@ -1,0 +1,177 @@
+"""Build Project Horizon from manifests/lock.json.
+
+  python scripts/build.py mrpack                 -> dist/ProjectHorizon-<ver>.mrpack
+  python scripts/build.py instance [--groups a,b] [--name N]
+        -> a Prism instance in %APPDATA%/PrismLauncher/instances/<N> (dev/testing).
+           --groups limits mods to roster groups (+ their deps) for staged testing.
+
+Overrides (config, defaultconfigs, kubejs, datapacks, shaderpacks options, profiles)
+are copied from the repo into the pack/instance. Third-party jars are never
+redistributed: the .mrpack only references Modrinth CDN URLs with hashes.
+"""
+import hashlib, json, os, shutil, sys, urllib.request, zipfile
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LONG = chr(92) * 2 + '?' + chr(92)  # Windows long-path prefix \?\ - the repo may live deep on disk
+if os.name == "nt" and not str(ROOT).startswith(LONG):
+    ROOT = Path(LONG + str(ROOT))
+VERSION = (ROOT / "VERSION").read_text().strip()
+CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
+UA = {"User-Agent": "project-horizon-builder/0.1"}
+# repo dir -> path inside .minecraft
+OVERRIDES = {"config": "config", "defaultconfigs": "defaultconfigs", "kubejs": "kubejs",
+             "datapacks": "kubejs/data", "resourcepacks": "resourcepacks",
+             "shaderpacks": "shaderpacks", "profiles": "horizon-profiles", "options": "."}
+
+
+def lock():
+    return json.loads((ROOT / "manifests/lock.json").read_text())
+
+
+def select(mods, groups):
+    if not groups:
+        return mods
+    by_id = {m["project_id"]: m for m in mods}
+    keep = {m["project_id"] for m in mods if m["group"] in groups}
+    changed = True
+    while changed:
+        changed = False
+        for pid in list(keep):
+            for d in by_id[pid]["deps"]:
+                if d["type"] == "required" and d["project_id"] in by_id and d["project_id"] not in keep:
+                    keep.add(d["project_id"]); changed = True
+    return [m for m in mods if m["project_id"] in keep]
+
+
+def fetch(item):
+    CACHE.mkdir(parents=True, exist_ok=True)
+    dest = CACHE / item["file"]
+    if dest.exists() and hashlib.sha512(dest.read_bytes()).hexdigest() == item["hashes"]["sha512"]:
+        return dest
+    with urllib.request.urlopen(urllib.request.Request(item["url"], headers=UA), timeout=120) as r:
+        data = r.read()
+    if hashlib.sha512(data).hexdigest() != item["hashes"]["sha512"]:
+        raise SystemExit(f"hash mismatch {item['file']}")
+    dest.write_bytes(data)
+    return dest
+
+
+def copy_overrides(target: Path):
+    for src, dst in OVERRIDES.items():
+        s = ROOT / src
+        if not s.exists():
+            continue
+        for f in s.rglob("*"):
+            if f.is_file() and f.name != ".gitkeep":
+                out = target / dst / f.relative_to(s)
+                out.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, out)
+
+
+def env(m):
+    # Everything in the roster is part of the experience, so it is "required" on
+    # every side the mod supports. Modrinth's per-project "optional" flag describes
+    # client/server pairing, not pack optionality, and must not leak into the pack.
+    # The client always runs an integrated server in singleplayer, so server-only
+    # mods (worldgen, structures, AI libs) are REQUIRED on the client too.
+    return {"client": "required",
+            "server": "unsupported" if m["server_side"] == "unsupported" else "required"}
+
+
+def mrpack():
+    L = lock()
+    files = [{"path": f"mods/{m['file']}", "hashes": {"sha1": m["hashes"]["sha1"], "sha512": m["hashes"]["sha512"]},
+              "env": env(m), "downloads": [m["url"]], "fileSize": m["size"]} for m in L["mods"]]
+    files += [{"path": f"shaderpacks/{s['file']}", "hashes": {"sha1": s["hashes"]["sha1"], "sha512": s["hashes"]["sha512"]},
+               "env": {"client": "optional" if s["slug"] != "complementary-reimagined" else "required", "server": "unsupported"},
+               "downloads": [s["url"]], "fileSize": s["size"]} for s in L["shaders"]]
+    index = {"formatVersion": 1, "game": "minecraft", "versionId": VERSION, "name": "Project Horizon",
+             "summary": "Exploration-first RPG + technology pack with Voxy long-distance rendering.",
+             "files": files, "dependencies": {"minecraft": L["minecraft"], "neoforge": L["loader_version"]}}
+    out = ROOT / "dist" / f"ProjectHorizon-{VERSION}.mrpack"
+    out.parent.mkdir(exist_ok=True)
+    stage = CACHE.parent / "overrides"
+    shutil.rmtree(stage, ignore_errors=True)
+    copy_overrides(stage)
+    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr("modrinth.index.json", json.dumps(index, indent=2))
+        for f in stage.rglob("*"):
+            if f.is_file():
+                z.write(f, "overrides/" + f.relative_to(stage).as_posix())
+    print(f"wrote {out} ({len(files)} files, {out.stat().st_size/1024:.0f} KiB)")
+
+
+def instance(name, groups):
+    L = lock()
+    mods = select(L["mods"], groups)
+    inst = Path(os.environ["APPDATA"]) / "PrismLauncher" / "instances" / name
+    mc = inst / "minecraft"
+    (mc / "mods").mkdir(parents=True, exist_ok=True)
+    wanted = {m["file"] for m in mods}
+    for f in (mc / "mods").glob("*.jar"):
+        if f.name not in wanted:
+            f.unlink()
+    for i, m in enumerate(mods, 1):
+        shutil.copy2(fetch(m), mc / "mods" / m["file"])
+        print(f"[{i}/{len(mods)}] {m['file']}", flush=True)
+    for s in L["shaders"]:
+        (mc / "shaderpacks").mkdir(exist_ok=True)
+        shutil.copy2(fetch(s), mc / "shaderpacks" / s["file"])
+    copy_overrides(mc)
+    (inst / "mmc-pack.json").write_text(json.dumps({"formatVersion": 1, "components": [
+        {"uid": "net.minecraft", "version": L["minecraft"], "important": True},
+        {"uid": "net.neoforged", "version": L["loader_version"]}]}, indent=2))
+    prof = json.loads((ROOT / "profiles/balanced.json").read_text())
+    cfg = {"ConfigVersion": "1.2", "InstanceType": "OneSix", "name": name, "iconKey": "default",
+           "OverrideMemory": "true", "MinMemAlloc": str(prof["jvm"]["min_mb"]), "MaxMemAlloc": str(prof["jvm"]["max_mb"]),
+           "OverrideJavaArgs": "true", "JvmArgs": prof["jvm"]["args"]}
+    (inst / "instance.cfg").write_text("[General]\n" + "".join(f"{k}={v}\n" for k, v in cfg.items()))
+    print(f"instance {name}: {len(mods)} mods -> {inst}")
+
+
+def server(target: Path, accept_eula: bool):
+    """Populate an installed NeoForge server dir (java -jar neoforge-installer.jar --installServer)
+    with server-side mods and the server-relevant overrides. eula.txt is written only when the
+    operator explicitly passes --accept-eula."""
+    L = lock()
+    if not (target / "run.bat").exists():
+        raise SystemExit(f"{target} is not an installed NeoForge server (no run.bat)")
+    mods = [m for m in L["mods"] if m["server_side"] != "unsupported"]
+    (target / "mods").mkdir(exist_ok=True)
+    wanted = {m["file"] for m in mods}
+    for f in (target / "mods").glob("*.jar"):
+        if f.name not in wanted:
+            f.unlink()
+    for m in mods:
+        shutil.copy2(fetch(m), target / "mods" / m["file"])
+    for src in ("config", "kubejs", "datapacks"):
+        s = ROOT / src
+        dst = target / ("kubejs/data" if src == "datapacks" else src)
+        for f in s.rglob("*"):
+            if f.is_file():
+                out = dst / f.relative_to(s)
+                out.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(f, out)
+    prof = json.loads((ROOT / "profiles/balanced.json").read_text())
+    (target / "user_jvm_args.txt").write_text(f"-Xms{prof['jvm']['min_mb']}M -Xmx{prof['jvm']['max_mb']}M {prof['jvm']['args']}\n")
+    props = target / "server.properties"
+    if not props.exists():
+        props.write_text("motd=Project Horizon\nview-distance=10\nsimulation-distance=8\nallow-flight=true\n"
+                         "spawn-protection=0\nonline-mode=true\n")
+    if accept_eula:
+        (target / "eula.txt").write_text("# Accepted by the server operator (https://aka.ms/MinecraftEULA)\neula=true\n")
+    print(f"server: {len(mods)} server-side mods -> {target}" + (" (EULA accepted)" if accept_eula else " (eula.txt NOT written)"))
+
+
+if __name__ == "__main__":
+    cmd = sys.argv[1]
+    args = sys.argv[2:]
+    groups = args[args.index("--groups") + 1].split(",") if "--groups" in args else None
+    name = args[args.index("--name") + 1] if "--name" in args else "ProjectHorizon-dev"
+    if cmd == "mrpack":
+        mrpack()
+    elif cmd == "server":
+        server(Path(args[0]), "--accept-eula" in args)
+    else:
+        instance(name, groups)

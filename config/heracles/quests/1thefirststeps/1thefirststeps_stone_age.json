@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:stone_pickaxe"
+      }
+    },
+    "title": "Stone Age",
+    "description": [
+      "Mine stone and craft better tools."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_wood"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/mine_stone"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

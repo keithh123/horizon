@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:enchanting_apparatus"
+      }
+    },
+    "title": "Enchanting Apparatus",
+    "description": [
+      "The apparatus crafts most Ars items and enchants gear."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "5arcanestudies_ars_book"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ars_nouveau:enchanting_apparatus"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:source_gem",
+        "count": 16
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:wither_skeleton_skull"
+      }
+    },
+    "title": "Wither Storm Lite",
+    "description": [
+      "Summon and defeat the Wither."
+    ],
+    "groups": {
+      "9 - Legends and Conquests": {
+        "position": [
+          0,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:nether/summon_wither"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 2
+      }
+    }
+  }
+}

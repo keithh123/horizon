@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "undergarden:forgotten_ingot"
+      }
+    },
+    "title": "The Forgotten Guardian",
+    "description": [
+      "Defeat the guardian in the catacombs."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          96,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_undergarden"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "undergarden:undergarden/kill_forgotten_guardian"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

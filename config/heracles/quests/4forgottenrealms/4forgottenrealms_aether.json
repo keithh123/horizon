@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:glowstone"
+      }
+    },
+    "title": "Above the Clouds",
+    "description": [
+      "Build a glowstone portal to the Aether. Three dungeons, three bosses."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          0,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "aether:enter_aether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:feather",
+        "count": 8
+      }
+    }
+  }
+}

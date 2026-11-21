@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:novice_spell_book"
+      }
+    },
+    "title": "Novice Spellcaster",
+    "description": [
+      "Craft a spell book and design your first glyph combination."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "5arcanestudies_ars_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ars_nouveau:novice_spell_book"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 4
+    }
+  }
+}

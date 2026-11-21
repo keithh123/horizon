@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:nether_star"
+      }
+    },
+    "title": "World Tier: Summit",
+    "description": [
+      "Summit: mythic affixes and the deadliest bosses."
+    ],
+    "groups": {
+      "9 - Legends and Conquests": {
+        "position": [
+          0,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/summit"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:sigil_of_enhancement",
+        "count": 1
+      }
+    }
+  }
+}

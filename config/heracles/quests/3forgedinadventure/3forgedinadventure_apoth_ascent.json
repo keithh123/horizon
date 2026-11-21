@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_sword"
+      }
+    },
+    "title": "World Tier: Ascent",
+    "description": [
+      "Ascent loot is strong - so are the monsters."
+    ],
+    "groups": {
+      "3 - Forged in Adventure": {
+        "position": [
+          96,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "3forgedinadventure_apoth_frontier"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/ascent"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

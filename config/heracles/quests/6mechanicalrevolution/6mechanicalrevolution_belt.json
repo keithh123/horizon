@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "create:belt_connector"
+      }
+    },
+    "title": "Conveyor",
+    "description": [
+      "Belts move items and power. Your first production line."
+    ],
+    "groups": {
+      "6 - Mechanical Revolution": {
+        "position": [
+          144,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "6mechanicalrevolution_press"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "create:belt"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 4
+    }
+  }
+}

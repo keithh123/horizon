@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "modern_industrialization:fusion_reactor"
+      }
+    },
+    "title": "Plasma Engineering",
+    "description": [
+      "Build MI's fusion reactor."
+    ],
+    "groups": {
+      "10 - Beyond the Horizon": {
+        "position": [
+          0,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "modern_industrialization:fusion_reactor",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
+    }
+  }
+}

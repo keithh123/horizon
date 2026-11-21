@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:mossy_cobblestone"
+      }
+    },
+    "title": "Something Old",
+    "description": [
+      "Explore any ruin, camp or shrine. Small sites hold &bWayfarer Shards&r - the first exploration relic."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:wayfarer_shard",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:map",
+        "count": 3
+      }
+    }
+  }
+}

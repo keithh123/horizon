@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_block"
+      }
+    },
+    "title": "Iron in the Dark",
+    "description": [
+      "Wrought chambers underground hold the Ferrous Wroughtnaut. Hit it from behind."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          96,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "2thewildfrontier_dungeon_arise"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:kill_entity",
+      "entity": {
+        "type": "mowziesmobs:ferrous_wroughtnaut"
+      },
+      "amount": 1
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    }
+  }
+}

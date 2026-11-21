@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core"
+      }
+    },
+    "title": "Ancient Power",
+    "description": [
+      "Ancient Cores come from rare dungeons and mini-bosses. They gate the ME controller and give sockets."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          96,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "2thewildfrontier_dungeon_arise"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:ancient_core",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

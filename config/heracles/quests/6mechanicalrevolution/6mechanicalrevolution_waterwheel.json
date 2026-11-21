@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "create:water_wheel"
+      }
+    },
+    "title": "Water Power",
+    "description": [
+      "Place a water wheel to generate stress units."
+    ],
+    "groups": {
+      "6 - Mechanical Revolution": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "6mechanicalrevolution_andesite"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "create:water_wheel",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "create:shaft",
+        "count": 16
+      }
+    }
+  }
+}

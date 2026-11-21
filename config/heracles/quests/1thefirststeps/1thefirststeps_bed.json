@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:red_bed"
+      }
+    },
+    "title": "A Place to Rest",
+    "description": [
+      "Sleep through your first night. Bosses and dungeons do not rest - you should."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          96,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_wood"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/sleep_in_bed"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "farmersdelight:cooking_pot",
+        "count": 1
+      }
+    }
+  }
+}

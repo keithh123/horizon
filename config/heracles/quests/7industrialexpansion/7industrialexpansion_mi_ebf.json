@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "modern_industrialization:electric_blast_furnace"
+      }
+    },
+    "title": "Electric Blast Furnace",
+    "description": [
+      "Your first big electric multiblock."
+    ],
+    "groups": {
+      "7 - Industrial Expansion": {
+        "position": [
+          48,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "7industrialexpansion_mi_steam"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "modern_industrialization:electric_blast_furnace"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond"
+      }
+    },
+    "title": "Diamonds!",
+    "description": [
+      "Deep caves under Terralith's mountains hide diamonds - and danger."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          192,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_iron"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/mine_diamond"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:wayfarer_shard",
+        "count": 1
+      }
+    }
+  }
+}

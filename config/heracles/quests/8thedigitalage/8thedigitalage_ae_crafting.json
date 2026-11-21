@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:crafting_unit"
+      }
+    },
+    "title": "Autocrafting",
+    "description": [
+      "Build a crafting CPU and encode patterns."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          144,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "8thedigitalage_ae_controller"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ae2:main/crafting_cpu"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

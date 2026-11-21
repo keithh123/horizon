@@ -1,0 +1,9 @@
+{
+  "name": "Balanced (default)",
+  "target": "RTX 3060-class GPU / 6-core CPU / 16+ GB RAM; tuned on RTX 5070 + Ryzen 5 9600X + 32 GB",
+  "jvm": {"min_mb": 4096, "max_mb": 10240,
+          "args": "-XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+PerfDisableSharedMem"},
+  "vanilla": {"renderDistance": 12, "simulationDistance": 8, "maxFps": 260, "graphicsMode": 1, "particles": 1, "entityDistanceScaling": 1.0},
+  "voxy": {"enabled": true, "sectionRenderDistance": 16, "serviceThreads": 3},
+  "shader": "ComplementaryReimagined_r5.9.3 (Medium profile)"
+}

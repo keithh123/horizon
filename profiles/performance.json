@@ -1,0 +1,9 @@
+{
+  "name": "Performance",
+  "target": "GTX 1660-class GPU / 4-6 core CPU / 12-16 GB RAM",
+  "jvm": {"min_mb": 3072, "max_mb": 7168,
+          "args": "-XX:+UseZGC -XX:+ZGenerational -XX:+DisableExplicitGC -XX:+PerfDisableSharedMem"},
+  "vanilla": {"renderDistance": 8, "simulationDistance": 6, "maxFps": 144, "graphicsMode": 0, "particles": 2, "entityDistanceScaling": 0.75},
+  "voxy": {"enabled": true, "sectionRenderDistance": 8, "serviceThreads": 2},
+  "shader": "none"
+}

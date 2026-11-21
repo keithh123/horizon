@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "farmersdelight:cooking_pot"
+      }
+    },
+    "title": "Hearty Meals",
+    "description": [
+      "Farmer's Delight meals give long buffs. AppleSkin shows saturation on hover."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          144,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_bed"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "farmersdelight:cooking_pot",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_carrot",
+        "count": 8
+      }
+    }
+  }
+}

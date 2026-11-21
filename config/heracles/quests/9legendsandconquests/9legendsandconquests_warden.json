@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:sculk_catalyst"
+      }
+    },
+    "title": "Silence",
+    "description": [
+      "Defeat a Warden. Deeper and Darker gives a reason to."
+    ],
+    "groups": {
+      "9 - Legends and Conquests": {
+        "position": [
+          0,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "deeperdarker:main/kill_warden"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart",
+        "count": 1
+      }
+    }
+  }
+}

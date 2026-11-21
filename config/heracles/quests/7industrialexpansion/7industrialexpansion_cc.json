@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "computercraft:computer_normal"
+      }
+    },
+    "title": "Programmable World",
+    "description": [
+      "CC: Tweaked computers and turtles can script anything."
+    ],
+    "groups": {
+      "7 - Industrial Expansion": {
+        "position": [
+          0,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "computercraft:computer_normal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 4
+    }
+  }
+}

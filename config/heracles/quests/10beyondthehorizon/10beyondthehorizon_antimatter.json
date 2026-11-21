@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "mekanism:pellet_antimatter"
+      }
+    },
+    "title": "Antimatter",
+    "description": [
+      "The SPS turns polonium into antimatter."
+    ],
+    "groups": {
+      "10 - Beyond the Horizon": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "10beyondthehorizon_fusion_mek"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "mekanism:antimatter"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 30
+    }
+  }
+}

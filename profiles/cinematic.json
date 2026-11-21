@@ -1,0 +1,9 @@
+{
+  "name": "Cinematic",
+  "target": "RTX 4070+/RX 7800+ GPU / 8-core CPU / 32 GB RAM",
+  "jvm": {"min_mb": 6144, "max_mb": 14336,
+          "args": "-XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+DisableExplicitGC -XX:+PerfDisableSharedMem"},
+  "vanilla": {"renderDistance": 16, "simulationDistance": 10, "maxFps": 260, "graphicsMode": 1, "particles": 0, "entityDistanceScaling": 1.25},
+  "voxy": {"enabled": true, "sectionRenderDistance": 32, "serviceThreads": 4},
+  "shader": "ComplementaryUnbound_r5.9.3 (High profile)"
+}

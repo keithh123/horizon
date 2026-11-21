@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:controller"
+      }
+    },
+    "title": "The Controller",
+    "description": [
+      "An ME controller needs an &dAncient Core&r - the digital age starts with an expedition."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "8thedigitalage_ae_presses"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ae2:main/controller"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:fluix_crystal",
+        "count": 16
+      }
+    }
+  }
+}

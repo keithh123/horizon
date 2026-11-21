@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:charged_certus_quartz_crystal"
+      }
+    },
+    "title": "Charged Quartz",
+    "description": [
+      "AE2 begins with certus quartz and a charger."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "ae2:main/charged_quartz"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

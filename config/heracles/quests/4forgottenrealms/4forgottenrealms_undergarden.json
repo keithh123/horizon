@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "undergarden:catalyst"
+      }
+    },
+    "title": "The Undergarden",
+    "description": [
+      "A catalyst lights a portal to the dim world below."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          48,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_nether"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "undergarden:undergarden/enter_undergarden"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

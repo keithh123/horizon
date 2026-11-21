@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "create_enchantment_industry:printer"
+      }
+    },
+    "title": "Liquid Experience",
+    "description": [
+      "Create Enchantment Industry automates enchanting with liquid XP - pair it with Apothic Enchanting."
+    ],
+    "groups": {
+      "6 - Mechanical Revolution": {
+        "position": [
+          240,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "6mechanicalrevolution_brass"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "create_enchantment_industry:printer",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

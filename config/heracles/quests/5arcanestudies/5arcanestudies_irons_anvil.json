@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:arcane_anvil"
+      }
+    },
+    "title": "Arcane Anvil",
+    "description": [
+      "Upgrade scrolls and imbue weapons."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          48,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "5arcanestudies_irons_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "irons_spellbooks:irons_spellbooks/make_arcane_anvil"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:arcane_essence",
+        "count": 8
+      }
+    }
+  }
+}

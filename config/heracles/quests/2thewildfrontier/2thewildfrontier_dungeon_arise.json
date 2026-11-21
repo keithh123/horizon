@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:spyglass"
+      }
+    },
+    "title": "When Dungeons Arise",
+    "description": [
+      "Massive hand-built dungeons are spread far apart. Use the spyglass and Voxy's view distance to spot them on the horizon."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          48,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "2thewildfrontier_first_ruin"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:structure",
+      "structures": "#horizon:arise_any"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:wayfarer_shard",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

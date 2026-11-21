@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "entries": [
+    "horizon:common_chests",
+    "horizon:rare_chests",
+    "horizon:rare_bosses",
+    "horizon:legendary_chests",
+    "horizon:legendary_bosses"
+  ]
+}

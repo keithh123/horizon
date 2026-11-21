@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "mekanism:metallurgic_infuser"
+      }
+    },
+    "title": "Metallurgy",
+    "description": [
+      "Mekanism's infuser makes steel and alloys."
+    ],
+    "groups": {
+      "7 - Industrial Expansion": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "mekanism:metallurgic_infuser",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "mekanism:ingot_osmium",
+        "count": 8
+      }
+    }
+  }
+}

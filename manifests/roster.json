@@ -1,0 +1,404 @@
+{
+  "_comment": "Hand-curated roster. scripts/resolve.py turns this into manifests/lock.json + the .mrpack index. Required dependencies are pulled in automatically. 'allow' widens the accepted release channel; 'pin' forces an exact Modrinth version id.",
+  "minecraft": "1.21.1",
+  "loader": "neoforge",
+  "loader_version": "21.1.267",
+  "groups": {
+    "renderer": [
+      {
+        "slug": "sodium",
+        "why": "Renderer foundation required by Roxy/Voxy and Iris."
+      },
+      {
+        "slug": "iris",
+        "why": "Shader loader; Voxy-aware shader integration."
+      },
+      {
+        "slug": "roxy",
+        "allow": "beta",
+        "why": "Translation layer that runs the original Voxy jar on NeoForge 1.21.1."
+      },
+      {
+        "slug": "voxy",
+        "pin": "H3w2nVdU",
+        "loader_override": "fabric",
+        "skip_deps": [
+          "P7dR8mSH"
+        ],
+        "why": "Long-distance LOD renderer. Roxy's only verified jar: voxy-0.2.16-beta for MC 1.21.11 (loaded through Roxy, not natively)."
+      },
+      {
+        "slug": "voxy-worldgen",
+        "pin": "PzNUZlWw",
+        "allow": "beta",
+        "why": "Generates real chunks in the background and feeds them to Voxy, so distant LODs match the modded terrain exactly (no seed approximation). Roxy ships compat for this v2 line."
+      },
+      {
+        "slug": "forgified-fabric-api",
+        "why": "Fabric API surface required by Roxy/Voxy."
+      },
+      {
+        "slug": "sodium-extra",
+        "why": "Extra Sodium toggles used by the Performance profile (particles, animations, fog)."
+      },
+      {
+        "slug": "reeses-sodium-options",
+        "why": "Usable video settings UI for Sodium's expanded option set."
+      }
+    ],
+    "performance": [
+      {
+        "slug": "modernfix",
+        "why": "Load time and memory reduction; biggest single win for large packs."
+      },
+      {
+        "slug": "ferrite-core",
+        "why": "Blockstate/model memory deduplication."
+      },
+      {
+        "slug": "lithium",
+        "why": "Server-tick optimisations (AI, collisions, chunk ticking). NeoForge build."
+      },
+      {
+        "slug": "entityculling",
+        "why": "Skips rendering hidden entities/block entities - important with large factories."
+      },
+      {
+        "slug": "immediatelyfast",
+        "why": "Batches immediate-mode rendering (HUD, text, maps)."
+      },
+      {
+        "slug": "spark",
+        "why": "Profiler for tick/frame/memory analysis."
+      }
+    ],
+    "worldgen": [
+      {
+        "slug": "terralith",
+        "why": "Biome foundation: ~95 vanilla-block biomes, cave biomes, works with vanilla tooling and Voxy's server-side LOD build."
+      },
+      {
+        "slug": "tectonic",
+        "why": "Terrain shaping: huge mountain ranges, deep valleys, rivers; officially Terralith-compatible."
+      },
+      {
+        "slug": "incendium",
+        "allow": "alpha",
+        "why": "Nether biome + structure overhaul (Stardust Labs). Only 1.21.1 build is tagged alpha upstream; smoke-tested."
+      },
+      {
+        "slug": "nullscape",
+        "why": "End terrain overhaul (Stardust Labs) - gives the End exploration value."
+      }
+    ],
+    "structures": [
+      {
+        "slug": "yungs-better-dungeons",
+        "why": "Tier: common/uncommon underground discoveries."
+      },
+      {
+        "slug": "yungs-better-mineshafts",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-strongholds",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-desert-temples",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-jungle-temples",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-ocean-monuments",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-witch-huts",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-nether-fortresses",
+        "why": "Vanilla structure overhaul."
+      },
+      {
+        "slug": "yungs-better-end-island",
+        "why": "Better dragon fight arena."
+      },
+      {
+        "slug": "yungs-bridges",
+        "why": "Natural river crossings - travel flavour."
+      },
+      {
+        "slug": "yungs-extras",
+        "why": "Small common discoveries."
+      },
+      {
+        "slug": "when-dungeons-arise",
+        "why": "Rare/legendary tier: huge hand-built dungeons and landmarks."
+      },
+      {
+        "slug": "repurposed-structures-forge",
+        "why": "Biome-matched variants of vanilla structures; very configurable rarity."
+      },
+      {
+        "slug": "towns-and-towers",
+        "why": "Settlements and pillager outposts with regional variety."
+      },
+      {
+        "slug": "ct-overhaul-village",
+        "why": "Biome-specific village overhaul."
+      },
+      {
+        "slug": "explorify",
+        "why": "Common/uncommon tier: small vanilla-styled ruins, camps and shrines."
+      },
+      {
+        "slug": "dungeons-and-taverns",
+        "why": "Uncommon tier: taverns, illager hideouts, ancient ruins."
+      },
+      {
+        "slug": "structory",
+        "why": "Common tier: atmospheric ruins and minor discoveries."
+      }
+    ],
+    "dimensions": [
+      {
+        "slug": "aether",
+        "why": "Sky dimension with three dungeon bosses and its own gear line."
+      },
+      {
+        "slug": "deeperdarker",
+        "why": "Otherside dimension beyond Ancient Cities; Warden-tier progression."
+      },
+      {
+        "slug": "the-bumblezone",
+        "why": "Unique bee dimension with its own challenge/quest-like progression."
+      },
+      {
+        "slug": "the-undergarden",
+        "allow": "beta",
+        "why": "Underground dimension with a boss and its own material tier."
+      }
+    ],
+    "rpg": [
+      {
+        "slug": "apotheosis",
+        "why": "Core loot system: affixes, rarities, gems, sockets, world tiers, bosses."
+      },
+      {
+        "slug": "apothic-attributes",
+        "why": "Attribute framework used by Apotheosis (crit, armor pierce, etc.)."
+      },
+      {
+        "slug": "apothic-enchanting",
+        "why": "Enchanting overhaul; gives enchanting long-term depth."
+      },
+      {
+        "slug": "apothic-spawners",
+        "why": "Spawner modification - controlled mob-farm progression."
+      },
+      {
+        "slug": "simply-swords",
+        "why": "Weapon variety with unique uniques; Better Combat movesets built in."
+      },
+      {
+        "slug": "better-combat",
+        "why": "Directional, combo-based melee."
+      },
+      {
+        "slug": "curios",
+        "why": "Accessory slot framework."
+      },
+      {
+        "slug": "artifacts",
+        "why": "Exploration-found accessories (common/uncommon loot)."
+      },
+      {
+        "slug": "relics-mod",
+        "why": "Levelling relics found in structures (rare/legendary loot)."
+      },
+      {
+        "slug": "l_enders-cataclysm",
+        "why": "Late-game structure bosses with progression-defining drops."
+      },
+      {
+        "slug": "mowzies-mobs",
+        "why": "Mid-game overworld mini-bosses that make exploring dangerous."
+      },
+      {
+        "slug": "shatterbyte-lib",
+        "why": "Provides mod id 'octolib' required by Relics 0.10.x (undeclared in Modrinth metadata; found by launch test)."
+      }
+    ],
+    "magic": [
+      {
+        "slug": "irons-spells-n-spellbooks",
+        "why": "Combat magic: schools, spellbooks, scroll loot, boss encounters."
+      },
+      {
+        "slug": "ars-nouveau",
+        "why": "Utility/automation magic: glyph spells, mana, rituals, item transport."
+      },
+      {
+        "slug": "occultism",
+        "why": "Spirit-based automation and storage; ritual crafting."
+      },
+      {
+        "slug": "irons-lib",
+        "why": "Iron's Spells requires irons_lib >=1.21.1-2 <1.21.1-3 (undeclared in Modrinth metadata; found by launch test)."
+      }
+    ],
+    "technology": [
+      {
+        "slug": "create",
+        "why": "Mechanical engineering - early/mid technology backbone."
+      },
+      {
+        "slug": "createaddition",
+        "why": "Bridges Create rotational power and FE electricity."
+      },
+      {
+        "slug": "create-enchantment-industry",
+        "why": "Liquid XP + automated enchanting; ties Create to Apotheosis enchanting."
+      },
+      {
+        "slug": "modern-industrialization",
+        "why": "Deep multiblock industrial progression (steam -> electric -> fusion)."
+      },
+      {
+        "slug": "powah",
+        "why": "Mid-game FE generation tiers, simple to learn."
+      },
+      {
+        "slug": "ae2",
+        "why": "Digital storage and autocrafting across all tech mods."
+      },
+      {
+        "slug": "applied-energistics-2-wireless-terminals",
+        "why": "Wireless crafting/pattern terminals (ae2wtlib)."
+      },
+      {
+        "slug": "mega",
+        "why": "MEGA Cells: late-game AE2 storage tiers."
+      },
+      {
+        "slug": "mekanism",
+        "why": "Ore multiplication, chemistry, jetpacks/MekaSuit - the mid-game processing pillar."
+      },
+      {
+        "slug": "mekanism-generators",
+        "why": "Mekanism power line up to fission/fusion."
+      },
+      {
+        "slug": "applied-mekanistics",
+        "why": "Official AE2 storage/autocrafting of Mekanism chemicals."
+      },
+      {
+        "slug": "cc-tweaked",
+        "allow": "beta",
+        "why": "Programmable computers/turtles; CC tags its stable line as beta."
+      }
+    ],
+    "qol": [
+      {
+        "slug": "emi",
+        "why": "Primary recipe viewer with recipe trees."
+      },
+      {
+        "slug": "jei",
+        "why": "Loads JEI-only plugins (Create, etc.); EMI hides JEI's UI."
+      },
+      {
+        "slug": "jade",
+        "why": "Block/entity tooltips."
+      },
+      {
+        "slug": "appleskin",
+        "why": "Food/saturation readout."
+      },
+      {
+        "slug": "mouse-tweaks",
+        "why": "Inventory drag/scroll handling."
+      },
+      {
+        "slug": "sophisticated-backpacks",
+        "why": "Upgradeable backpacks."
+      },
+      {
+        "slug": "sophisticated-storage",
+        "why": "Upgradeable chests/barrels with sorting."
+      },
+      {
+        "slug": "waystones",
+        "why": "Discoverable fast travel - must be found in villages/structures."
+      },
+      {
+        "slug": "xaeros-minimap",
+        "why": "Minimap."
+      },
+      {
+        "slug": "xaeros-world-map",
+        "why": "World map."
+      },
+      {
+        "slug": "controlling",
+        "why": "Searchable keybinds and conflict view."
+      },
+      {
+        "slug": "polymorph",
+        "why": "Resolves recipe output conflicts between mods."
+      },
+      {
+        "slug": "farmers-delight",
+        "why": "Food variety that makes survival more than bread."
+      },
+      {
+        "slug": "kubejs",
+        "why": "Recipe/loot/progression scripting."
+      },
+      {
+        "slug": "odyssey-quests",
+        "allow": "beta",
+        "why": "Quest book (Heracles). FTB Quests is CurseForge-only and cannot be in an .mrpack."
+      }
+    ],
+    "atmosphere": [
+      {
+        "slug": "ambientsounds",
+        "why": "Biome/time-aware ambient soundscapes."
+      },
+      {
+        "slug": "particle-rain",
+        "why": "Better weather particles."
+      }
+    ]
+  },
+  "shaders": [
+    {
+      "slug": "complementary-reimagined",
+      "version_number": "r5.9.3",
+      "why": "Default shader. Voxy support since r5.8.1. r5.9.3 chosen over r5.10 (3 days old)."
+    },
+    {
+      "slug": "complementary-unbound",
+      "version_number": "r5.9.3",
+      "why": "Cinematic profile alternative."
+    }
+  ],
+  "rejected": {
+    "the-twilight-forest": "CurseForge-only; not distributable through Modrinth .mrpack. Documented as optional manual add-on.",
+    "ftb-quests": "CurseForge-only. Replaced by Odyssey Quests.",
+    "alexs-caves": "No 1.21.1 build (1.20.1 only).",
+    "biomes-o-plenty / regions-unexplored / oh-the-biomes-weve-gone": "Would stack a second biome-placement system on top of Terralith; one foundation chosen.",
+    "distanthorizons": "Mutually exclusive with Voxy.",
+    "c2me-neoforge": "Alpha; worldgen threading risk with heavy worldgen datapacks.",
+    "noisium": "Last 1.21.1 build Aug 2024; overlaps with Lithostitched/Tectonic noise handling.",
+    "enderio": "1.21.1 line is beta-only; MI + Powah + Create Additions cover its role.",
+    "industrial-foregoing": "Requires Titanium beta; overlaps MI. Excluded for stability.",
+    "advancedperipherals": "Alpha on 1.21.1."
+  }
+}

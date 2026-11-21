@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:obsidian"
+      }
+    },
+    "title": "We Need to Go Deeper",
+    "description": [
+      "Incendium reshapes the Nether into huge, hostile biomes."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:changed_dimension",
+      "to": "minecraft:the_nether"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    }
+  }
+}

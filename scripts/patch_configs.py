@@ -1,0 +1,67 @@
+"""Produce the pack's config/ overrides from the configs the mods generate.
+
+Mods write their default configs on first launch of the dev instance; this
+script copies only the files we change, applying documented edits. Every edit
+must match exactly once, so a mod update that renames a key fails loudly
+instead of silently shipping a no-op.
+"""
+import json, os, re, shutil
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+LONG = chr(92) * 2 + '?' + chr(92)  # Windows long-path prefix
+if os.name == "nt" and not str(ROOT).startswith(LONG):
+    ROOT = Path(LONG + str(ROOT))
+SRC = Path(os.environ["APPDATA"]) / "PrismLauncher/instances/ProjectHorizon-dev/minecraft/config"
+OUT = ROOT / "config"
+LOCK = json.loads((ROOT / "manifests/lock.json").read_text())
+SHADER = next(s["file"] for s in LOCK["shaders"] if s["slug"] == "complementary-reimagined")
+
+# file -> list of (regex, replacement, reason)
+EDITS = {
+    "apotheosis/apotheosis.cfg": [
+        (r'B:"Restrict Charms to Curios"=false', 'B:"Restrict Charms to Curios"=true',
+         "Potion charms only work from curio slots - stops 20 charms in an inventory stacking buffs."),
+        (r'I:"Boss Spawn Cooldown"=3600', 'I:"Boss Spawn Cooldown"=6000',
+         "Apotheosis bosses stay special next to Mowzie's/Cataclysm encounters."),
+    ],
+    "simplyswords/weapon_attributes.toml": [
+        *[(rf"^{m}_damageModifier = 3\.0$", f"{m}_damageModifier = 1.0",
+           f"{m} Simply Swords weapons: +3 -> +1 so they sidegrade vanilla/Apotheosis weapons instead of replacing them.")
+          for m in ("iron", "gold", "diamond", "netherite")],
+    ],
+    "simplyswords/loot.toml": [
+        (r"^standardLootTableWeight = 0\.1$", "standardLootTableWeight = 0.08", "fewer filler weapons in chests"),
+        (r"^rareLootTableWeight = 0\.4$", "rareLootTableWeight = 0.25", "rare weapons stay rare"),
+        (r"^runicLootTableWeight = 0\.7$", "runicLootTableWeight = 0.35", "runic weapons compete with Apotheosis affix loot"),
+        (r"^uniqueHardPity = 75$", "uniqueHardPity = 100", "uniques are milestone finds"),
+    ],
+    "voxy-config.json": [
+        (r'"service_threads": 4', '"service_threads": 3', "Balanced: leave CPU for worldgen + factories (6-core target)."),
+    ],
+    "iris.properties": [
+        (r"^shaderPack=$", f"shaderPack={SHADER}", "Complementary Reimagined (Voxy-aware since r5.8.1) is the default look."),
+    ],
+}
+
+
+def main():
+    shutil.rmtree(OUT, ignore_errors=True)
+    report = []
+    for rel, edits in EDITS.items():
+        text = (SRC / rel).read_text(encoding="utf-8")
+        for pat, rep, why in edits:
+            text, n = re.subn(pat, rep, text, flags=re.M)
+            if n != 1:
+                raise SystemExit(f"{rel}: pattern {pat!r} matched {n} times")
+            report.append(f"| `{rel}` | `{rep.strip()}` | {why} |")
+        out = OUT / rel
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(text, encoding="utf-8")
+    (ROOT / "manifests/config_changes.md").write_text(
+        "| File | Setting | Reason |\n|---|---|---|\n" + "\n".join(report) + "\n", encoding="utf-8")
+    print(f"patched {len(EDITS)} files, {len(report)} settings")
+
+
+if __name__ == "__main__":
+    main()

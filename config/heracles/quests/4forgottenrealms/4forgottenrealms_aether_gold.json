@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "aether:gold_dungeon_key"
+      }
+    },
+    "title": "The Sun Spirit",
+    "description": [
+      "Defeat the Sun Spirit atop the gold dungeon."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_aether_bronze"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "aether:gold_dungeon"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart",
+        "count": 1
+      }
+    }
+  }
+}

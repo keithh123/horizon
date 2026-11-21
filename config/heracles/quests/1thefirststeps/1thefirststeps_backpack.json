@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "sophisticatedbackpacks:backpack"
+      }
+    },
+    "title": "Pack Mule",
+    "description": [
+      "A backpack makes long expeditions possible."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          192,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_iron"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "sophisticatedbackpacks:backpack",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

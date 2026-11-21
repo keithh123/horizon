@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "modern_industrialization:distillation_tower"
+      }
+    },
+    "title": "Oil and Chemistry",
+    "description": [
+      "Refine oil into fuels and plastics."
+    ],
+    "groups": {
+      "7 - Industrial Expansion": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "7industrialexpansion_mi_ebf"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "modern_industrialization:distillation_tower"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

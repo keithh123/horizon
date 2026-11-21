@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:worn_notebook"
+      }
+    },
+    "title": "Worn Notebook",
+    "description": [
+      "Ars Nouveau: utility magic, mana and automation. Read the notebook."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "ars_nouveau:worn_notebook",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:source_gem",
+        "count": 8
+      }
+    }
+  }
+}

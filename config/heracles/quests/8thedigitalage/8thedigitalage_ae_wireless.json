@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:wireless_terminal"
+      }
+    },
+    "title": "Cut the Cord",
+    "description": [
+      "Wireless terminals put the network in your pocket - on expeditions too."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          144,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "8thedigitalage_ae_controller"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "ae2:wireless_terminal",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

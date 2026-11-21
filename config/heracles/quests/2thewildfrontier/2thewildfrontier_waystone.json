@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "waystones:waystone"
+      }
+    },
+    "title": "Ley Lines",
+    "description": [
+      "Waystones cannot be crafted cheaply: find one in a village and activate it. A warp stone needs a Wayfarer Shard."
+    ],
+    "groups": {
+      "2 - The Wild Frontier": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "2thewildfrontier_first_ruin"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "waystones:warp_stone",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "count": 4
+      }
+    }
+  }
+}

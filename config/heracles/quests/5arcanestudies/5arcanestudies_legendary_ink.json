@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:legendary_ink"
+      }
+    },
+    "title": "Legendary Ink",
+    "description": [
+      "Legendary ink - or a Starforged Heart - writes the strongest scrolls."
+    ],
+    "groups": {
+      "5 - Arcane Studies": {
+        "position": [
+          144,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "5arcanestudies_irons_catacombs"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "irons_spellbooks:irons_spellbooks/ink_legendary"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

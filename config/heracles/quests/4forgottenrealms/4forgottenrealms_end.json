@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_eye"
+      }
+    },
+    "title": "The End?",
+    "description": [
+      "Nullscape turns the End into a vast, strange landscape - not a finish line."
+    ],
+    "groups": {
+      "4 - Forgotten Realms": {
+        "position": [
+          48,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "4forgottenrealms_nether"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:changed_dimension",
+      "to": "minecraft:the_end"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

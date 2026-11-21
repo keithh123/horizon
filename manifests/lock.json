@@ -1,0 +1,4315 @@
+{
+  "minecraft": "1.21.1",
+  "loader": "neoforge",
+  "loader_version": "21.1.267",
+  "generated": "2026-11-21",
+  "mods": [
+    {
+      "slug": "ambientsounds",
+      "title": "AmbientSounds",
+      "project_id": "fM515JnW",
+      "version_id": "WGalCQAo",
+      "version": "6.3.11",
+      "channel": "release",
+      "published": "2026-10-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/fM515JnW/versions/WGalCQAo/AmbientSounds_NEOFORGE_v6.3.11_mc1.21.1.jar",
+      "size": 84815086,
+      "hashes": {
+        "sha512": "1e615137f1e4d4e2cd0f366560922304f6d96ce7a73e9e55bae2572a1f03916efccc633b249026826471162d498a2eecba10b712f20ecfd540cb818915d8e227",
+        "sha1": "9762244f9c116c85a6af3469da686650ed455bb1"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LGPL-3.0-only",
+      "group": "atmosphere",
+      "why": "Biome/time-aware ambient soundscapes.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "OsZiaDHq",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "particle-rain",
+      "title": "Particle Rain",
+      "project_id": "nrikgvxm",
+      "version_id": "DW2m22Qi",
+      "version": "v4.0.4+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-11-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "particlerain-4.0.4+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/nrikgvxm/versions/DW2m22Qi/particlerain-4.0.4%2B1.21.1-neoforge.jar",
+      "size": 626707,
+      "hashes": {
+        "sha512": "0e3ba8f5f83904ff8979d8d69f8e5be0eef340b6d1e326762ec9ab933c088ab63ef3b88117dc1023000ade11e9ad23d84390e3840b08519bb20638c131b08151",
+        "sha1": "0a8c52eea34e3bf9edcc7b2b03d1f8a100cb71be"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "atmosphere",
+      "why": "Better weather particles.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "architectury-api",
+      "title": "Architectury API",
+      "project_id": "lhGA9TYQ",
+      "version_id": "xGfBrBzj",
+      "version": "13.0.12+neoforge",
+      "channel": "release",
+      "published": "2026-11-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "architectury-13.0.12-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/xGfBrBzj/architectury-13.0.12-neoforge.jar",
+      "size": 584731,
+      "hashes": {
+        "sha512": "286127f99708d1e2723e1dcc9104ebcab258f04db92040fc2394e5b7faf36d731ef3b84e592d94ec0d0f7f899eca84f806b1e012223da4894d4d8af5030ffe0f",
+        "sha1": "646dace27624ac08ad8d229fe15f6601a8b7fbb2"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "dependency",
+      "why": "Required dependency of simply-swords",
+      "required_by": [
+        "simply-swords",
+        "shatterbyte-lib",
+        "simply-tooltips"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "balm",
+      "title": "Balm",
+      "project_id": "MBAkmtvl",
+      "version_id": "gMedgtzL",
+      "version": "21.0.67+neoforge-1.21.1",
+      "channel": "release",
+      "published": "2026-11-02",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "balm-neoforge-1.21.1-21.0.67.jar",
+      "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/gMedgtzL/balm-neoforge-1.21.1-21.0.67.jar",
+      "size": 786010,
+      "hashes": {
+        "sha1": "68c95ca8a6a87d26199d43ff6978bc94949329e3",
+        "sha512": "ad4f4df829b1195446486df818c2c1f0bf6738cb1b30cfdbf9eae4855ce62a66b00f2dc5e0a87409f25ce4eba9bd5c94e1b10d1940af451d5ef7dd7f4b3d8ebd"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "dependency",
+      "why": "Required dependency of waystones",
+      "required_by": [
+        "waystones"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "better-advanced-tooltips",
+      "title": "Better Advanced Tooltips",
+      "project_id": "iHLDc0eo",
+      "version_id": "uPFbnD32",
+      "version": "2101.1.0-build.5",
+      "channel": "release",
+      "published": "2026-08-04",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "better-advanced-tooltips-2101.1.0-build.5.jar",
+      "url": "https://cdn.modrinth.com/data/iHLDc0eo/versions/uPFbnD32/better-advanced-tooltips-2101.1.0-build.5.jar",
+      "size": 37653,
+      "hashes": {
+        "sha512": "05b5cdad948d1735eab7a67a16aaf32814678c392014ec2ada61b8341c0ed1c1ac181cab1de9da3f2c4632592f4a1a5db254bd0543e6778897c8ccd260894142",
+        "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of kubejs",
+      "required_by": [
+        "kubejs"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "better-modlist",
+      "title": "Better ModList",
+      "project_id": "sbpqhzIG",
+      "version_id": "QRL2q28j",
+      "version": "21.1.5",
+      "channel": "release",
+      "published": "2026-10-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "better_modlist-21.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/sbpqhzIG/versions/QRL2q28j/better_modlist-21.1.5.jar",
+      "size": 823891,
+      "hashes": {
+        "sha512": "65f47d2e3d72d9411dd07ac0740c771a1ea2693a1e72d69b83ba7edf3b20abf67510abc88e6fc9f6f71899783315a62e252d08b945a13e8d1baacba6a284d680",
+        "sha1": "f562b7e1a05deb3b8bb8e1bd7958fc1dbd99b626"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of voxy-worldgen",
+      "required_by": [
+        "voxy-worldgen"
+      ],
+      "deps": [
+        {
+          "project_id": "KUZAAwdD",
+          "version_id": null,
+          "type": "incompatible"
+        }
+      ]
+    },
+    {
+      "slug": "cloth-config",
+      "title": "Cloth Config API",
+      "project_id": "9s6osm5g",
+      "version_id": "izKINKFg",
+      "version": "15.0.140+neoforge",
+      "channel": "release",
+      "published": "2024-09-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "cloth-config-15.0.140-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/izKINKFg/cloth-config-15.0.140-neoforge.jar",
+      "size": 1163890,
+      "hashes": {
+        "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2",
+        "sha512": "aaf9b010955b8cd294e5a92f069985b18729fd5e2cf22d351f1dff9680f15488688803ec41e77e941cbde130ceb535014ca4c868047d80ab69c2d508e216654d"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LGPL-3.0-only",
+      "group": "dependency",
+      "why": "Required dependency of voxy-worldgen",
+      "required_by": [
+        "voxy-worldgen",
+        "better-combat",
+        "powah",
+        "cristel-lib"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "create-dragons-plus",
+      "title": "Create: Dragons Plus",
+      "project_id": "dzb1a5WV",
+      "version_id": "b0u9vk8C",
+      "version": "1.11.9",
+      "channel": "release",
+      "published": "2026-09-17",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "CreateDragonsPlus-1.11.9.jar",
+      "url": "https://cdn.modrinth.com/data/dzb1a5WV/versions/b0u9vk8C/CreateDragonsPlus-1.11.9.jar",
+      "size": 1085674,
+      "hashes": {
+        "sha512": "43299e49afe7132515aa8ad545b8c9566d90f12cfb39456b3d6e1ebc8e03f05787fbc420e7cc9495df4d6b585d13e7a4c4c7385f82f20aeb829c9491b725af53",
+        "sha1": "67ffcb61207a7dbc6b1e70f0473ddbacb19d44eb"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-or-later",
+      "group": "dependency",
+      "why": "Required dependency of create-enchantment-industry",
+      "required_by": [
+        "create-enchantment-industry"
+      ],
+      "deps": [
+        {
+          "project_id": "LNytGWDc",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "creativecore",
+      "title": "CreativeCore",
+      "project_id": "OsZiaDHq",
+      "version_id": "aoWQBRG8",
+      "version": "2.13.55",
+      "channel": "release",
+      "published": "2026-11-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "CreativeCore_NEOFORGE_v2.13.55_mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/OsZiaDHq/versions/aoWQBRG8/CreativeCore_NEOFORGE_v2.13.55_mc1.21.1.jar",
+      "size": 1240240,
+      "hashes": {
+        "sha1": "5687e0cc21ec86c64688c1e9112d29bca9fcc963",
+        "sha512": "05970c07c16019f042ba8bb24b33efebaa8eb22390bd4f22fa90e44adcb796eff2274d27ceaaa63c09d29978ffc16bffe42c9c03f218add31dcfebcbf2e28db7"
+      },
+      "client_side": "required",
+      "server_side": "optional",
+      "license": "LGPL-3.0-only",
+      "group": "dependency",
+      "why": "Required dependency of ambientsounds",
+      "required_by": [
+        "ambientsounds"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "cristel-lib",
+      "title": "Cristel Lib",
+      "project_id": "cl223EMc",
+      "version_id": "Sduz0AWP",
+      "version": "neoforge-1.21.1-3.1.7",
+      "channel": "release",
+      "published": "2026-06-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "cristellib-neoforge-1.21.1-3.1.7.jar",
+      "url": "https://cdn.modrinth.com/data/cl223EMc/versions/Sduz0AWP/cristellib-neoforge-1.21.1-3.1.7.jar",
+      "size": 583525,
+      "hashes": {
+        "sha512": "6d21ceb6cd91e63a248251ded3812208ed5ea4f36abb11e8c6e16aa119a95b0e714f59ec7689ae1b1248c9831e5e3e63aa681aa7dfa9b220d93741118466cbd6",
+        "sha1": "d250804b7ecea365bc736ec36ec6fc3f933917f1"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "CC-BY-NC-ND-4.0",
+      "group": "dependency",
+      "why": "Required dependency of towns-and-towers",
+      "required_by": [
+        "towns-and-towers"
+      ],
+      "deps": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "fzzy-config",
+      "title": "Fzzy Config",
+      "project_id": "hYykXjDp",
+      "version_id": "jRuOkBAG",
+      "version": "0.7.7+fix1+1.21+neoforge",
+      "channel": "release",
+      "published": "2026-10-26",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "fzzy_config-0.7.7+fix1+1.21+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/jRuOkBAG/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar",
+      "size": 2392720,
+      "hashes": {
+        "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+        "sha512": "7ea074ac2bee3471a213ed6e55d3beafded16631ea517ecbc6711324f6af82b697c9d391aaadcefff67eda13d5dcc2bfb5011373c73a7015761060b6d89cf15c"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-TDL-M",
+      "group": "dependency",
+      "why": "Required dependency of simply-swords",
+      "required_by": [
+        "simply-swords",
+        "simply-tooltips"
+      ],
+      "deps": [
+        {
+          "project_id": "ordsPcFz",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "geckolib",
+      "title": "Geckolib",
+      "project_id": "8BmcQJ2H",
+      "version_id": "Grwn5rUB",
+      "version": "4.9.3",
+      "channel": "release",
+      "published": "2026-09-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "url": "https://cdn.modrinth.com/data/8BmcQJ2H/versions/Grwn5rUB/geckolib-neoforge-1.21.1-4.9.3.jar",
+      "size": 634531,
+      "hashes": {
+        "sha512": "8dfa5f8c57224a5e34e5098367ea9819ca6dc9c11357cd3062c16da3455c8bd1a483098af7383debc4b9ce8e4d7ab3fdc799b415644eb829da83eb72a7335dfd",
+        "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac"
+      },
+      "client_side": "required",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of mowzies-mobs",
+      "required_by": [
+        "mowzies-mobs",
+        "occultism"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "guideme",
+      "title": "GuideME",
+      "project_id": "Ck4E7v7R",
+      "version_id": "QeYKsstN",
+      "version": "21.1.22",
+      "channel": "release",
+      "published": "2026-10-29",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "guideme-21.1.22.jar",
+      "url": "https://cdn.modrinth.com/data/Ck4E7v7R/versions/QeYKsstN/guideme-21.1.22.jar",
+      "size": 9332340,
+      "hashes": {
+        "sha512": "2a7b29143c1bef18375f221c337c6e744d04b79bc3cc10cadac46b7d6bb217ad78c51a3c33cd802b221cc7b38ff04a3f7064bd63d292e53bf9f3e09047eeda24",
+        "sha1": "eb2f531c91566a0f119b4b3a3acd927b48b6b27e"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Multiple-OSS-Licenses",
+      "group": "dependency",
+      "why": "Required dependency of modern-industrialization",
+      "required_by": [
+        "modern-industrialization",
+        "powah",
+        "ae2"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "kotlin-for-forge",
+      "title": "Kotlin for Forge",
+      "project_id": "ordsPcFz",
+      "version_id": "9ZlVvei8",
+      "version": "5.13.0",
+      "channel": "release",
+      "published": "2026-11-16",
+      "loaders": [
+        "forge",
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.20.6",
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8"
+      ],
+      "file": "kotlinforforge-5.13.0-all.jar",
+      "url": "https://cdn.modrinth.com/data/ordsPcFz/versions/9ZlVvei8/kotlinforforge-5.13.0-all.jar",
+      "size": 7364729,
+      "hashes": {
+        "sha512": "64a26f73e3299ad09b350d3421e3f97a5ccd158d1936fb50fc57f3c88bf6fd33814568bf43a0886f79ada4be65d65d232d9e20a901833150ec5b89a01c46d459",
+        "sha1": "b1d5563f4e3db9ec4a4a2b371560aa171d6de237"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LGPL-2.1-only",
+      "group": "dependency",
+      "why": "Required dependency of fzzy-config",
+      "required_by": [
+        "fzzy-config"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "lionfish-api",
+      "title": "Lionfish-API",
+      "project_id": "FoVacERa",
+      "version_id": "fTRMVgyZ",
+      "version": "3.1",
+      "channel": "release",
+      "published": "2026-06-30",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "lionfishapi-3.1.jar",
+      "url": "https://cdn.modrinth.com/data/FoVacERa/versions/fTRMVgyZ/lionfishapi-3.1.jar",
+      "size": 91596,
+      "hashes": {
+        "sha1": "353ca00ed118eb67cf11085abbbd699884722326",
+        "sha512": "fdd90f19d0424c3a837111291d6ac1547d62cbcedd43b74d3a8946912f9c5212a5ea239a6969eccf678289bcb77cbb9a937db01fdaf60e57826f9a99893d19cb"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "dependency",
+      "why": "Required dependency of l_enders-cataclysm",
+      "required_by": [
+        "l_enders-cataclysm"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "lithostitched",
+      "title": "Lithostitched",
+      "project_id": "XaDC71GB",
+      "version_id": "cZu4cHY3",
+      "version": "1.8.1-neoforge-21.1",
+      "channel": "release",
+      "published": "2026-10-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "lithostitched-1.8.1-neoforge-21.1.jar",
+      "url": "https://cdn.modrinth.com/data/XaDC71GB/versions/cZu4cHY3/lithostitched-1.8.1-neoforge-21.1.jar",
+      "size": 1023751,
+      "hashes": {
+        "sha512": "6c02b8b269269d5aa84cb03bf824a1b5d52838e806c2fec8727eb4049925592dac9bb65c996858751fbb722f22ac59c4be09860e1f01e8f7b97c95be3faf7a57",
+        "sha1": "88cdded5b617e19b4d2676948b5550699de23578"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of terralith",
+      "required_by": [
+        "terralith",
+        "tectonic",
+        "ct-overhaul-village"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "mezzconfig",
+      "title": "MezzConfig",
+      "project_id": "7tEfOcA7",
+      "version_id": "V6oWFnxW",
+      "version": "0.7.1",
+      "channel": "beta",
+      "published": "2026-11-09",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
+      "url": "https://cdn.modrinth.com/data/7tEfOcA7/versions/V6oWFnxW/mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
+      "size": 347249,
+      "hashes": {
+        "sha512": "e3576344d96b4734d35c7ceb969020ef728a666b771fb6da0465d08d940daff3c48352f6f3ca989edbe7fff57737d2fea4621f6422e858f95efe9fa70b46dfb2",
+        "sha1": "2382e29c9a0f44d4f4b9baa4cb3f6a356e048e60"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of jei",
+      "required_by": [
+        "jei"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "modonomicon",
+      "title": "Modonomicon",
+      "project_id": "692GClaE",
+      "version_id": "B0Pncoub",
+      "version": "1.21.1-1.123.1",
+      "channel": "release",
+      "published": "2026-11-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "modonomicon-1.21.1-neoforge-1.123.1.jar",
+      "url": "https://cdn.modrinth.com/data/692GClaE/versions/B0Pncoub/modonomicon-1.21.1-neoforge-1.123.1.jar",
+      "size": 2433115,
+      "hashes": {
+        "sha1": "ae7b0b434318302d5479a9e9f9fff80477287a25",
+        "sha512": "ced29058dfd33e294f06a3f000a14f53c91b33533ad71074a2855ca9a21b6ef9ae74ee88a0ff7583d29f9c84eddaa63e4b0754e585c84191063f1f226066053d"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT AND CC-BY-4.0",
+      "group": "dependency",
+      "why": "Required dependency of occultism",
+      "required_by": [
+        "occultism"
+      ],
+      "deps": [
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "owo-lib",
+      "title": "o\u03c9o (owo-lib)",
+      "project_id": "ccKDOlHs",
+      "version_id": "wbdHEItB",
+      "version": "0.12.15.6-beta.1+1.21",
+      "channel": "beta",
+      "published": "2026-10-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "owo-lib-neoforge-0.12.15.6-beta.1+1.21.jar",
+      "url": "https://cdn.modrinth.com/data/ccKDOlHs/versions/wbdHEItB/owo-lib-neoforge-0.12.15.6-beta.1%2B1.21.jar",
+      "size": 1223197,
+      "hashes": {
+        "sha1": "3a7f843ce3a4d24f8765a74bc5dde914b316b992",
+        "sha512": "fc843ef350c4af6748d9fd6ecd3c28f96262cf46d46a8329029f49ea4f9eb87238113a8a415e8bba2c4f346c718bf450194f6f5823dfbf1ae7312529a81c3e5c"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of aether",
+      "required_by": [
+        "aether"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "patchouli",
+      "title": "Patchouli",
+      "project_id": "nU0bVIaL",
+      "version_id": "BIogJv2D",
+      "version": "1.21.1-93-neoforge",
+      "channel": "release",
+      "published": "2026-03-08",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "url": "https://cdn.modrinth.com/data/nU0bVIaL/versions/BIogJv2D/Patchouli-1.21.1-93-NEOFORGE.jar",
+      "size": 646777,
+      "hashes": {
+        "sha512": "0b5c172db9a6eeecb5ca44b359a83548c3a60be7ff313959acdfc1e5b8039736c18e57e947d435b52d06da31159d2d02ea36e5742668dbc826308a4c99e4039f",
+        "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "CC-BY-NC-SA-3.0",
+      "group": "dependency",
+      "why": "Required dependency of apotheosis",
+      "required_by": [
+        "apotheosis"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "placebo",
+      "title": "Placebo",
+      "project_id": "tCkE8p2N",
+      "version_id": "B5zbSVlT",
+      "version": "1.21.1-9.9.4",
+      "channel": "release",
+      "published": "2026-10-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Placebo-1.21.1-9.9.4.jar",
+      "url": "https://cdn.modrinth.com/data/tCkE8p2N/versions/B5zbSVlT/Placebo-1.21.1-9.9.4.jar",
+      "size": 326063,
+      "hashes": {
+        "sha1": "007d52a42020a331d5272495f6d676e0ad1a2c13",
+        "sha512": "4f3a9c5974132f3638c262c56b0c2886df2bc58027c961aa11d06d0ae2e608b63f24f949b2f8c240989e2a1bfe303fd237c5f2d49269453ad6c2ff1f85f2c648"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of apotheosis",
+      "required_by": [
+        "apotheosis",
+        "apothic-attributes",
+        "apothic-enchanting",
+        "apothic-spawners"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "playeranimator",
+      "title": "playerAnimator",
+      "project_id": "gedNE4y2",
+      "version_id": "HJZB6bmA",
+      "version": "2.0.4+1.21.1-forge",
+      "channel": "beta",
+      "published": "2025-12-28",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gedNE4y2/versions/HJZB6bmA/player-animation-lib-forge-2.0.4%2B1.21.1.jar",
+      "size": 203149,
+      "hashes": {
+        "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
+        "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of better-combat",
+      "required_by": [
+        "better-combat"
+      ],
+      "deps": [
+        {
+          "project_id": "aRnIEV0F",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "resourceful-lib",
+      "title": "Resourceful Lib",
+      "project_id": "G1hIVOrD",
+      "version_id": "x99nCLTm",
+      "version": "3.0.12",
+      "channel": "release",
+      "published": "2024-12-08",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "url": "https://cdn.modrinth.com/data/G1hIVOrD/versions/x99nCLTm/resourcefullib-neoforge-1.21-3.0.12.jar",
+      "size": 484332,
+      "hashes": {
+        "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df",
+        "sha512": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of the-bumblezone",
+      "required_by": [
+        "the-bumblezone",
+        "odyssey-quests"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "rhino",
+      "title": "Rhino",
+      "project_id": "sk9knFPE",
+      "version_id": "cQ4POTah",
+      "version": "2101.2.7-build.85+Rhino-1.21",
+      "channel": "release",
+      "published": "2026-06-08",
+      "loaders": [
+        "fabric",
+        "forge",
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "26.1.2"
+      ],
+      "file": "rhino-2101.2.7-build.85.jar",
+      "url": "https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar",
+      "size": 882075,
+      "hashes": {
+        "sha512": "0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693",
+        "sha1": "3c8d34c7efe9e42fc90506acbf9fc842d36f9a42"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "MPL-2.0",
+      "group": "dependency",
+      "why": "Required dependency of kubejs",
+      "required_by": [
+        "kubejs"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "searchables",
+      "title": "Searchables",
+      "project_id": "fuuu3xnx",
+      "version_id": "iEE85X0w",
+      "version": "1.0.2",
+      "channel": "release",
+      "published": "2024-10-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/iEE85X0w/Searchables-neoforge-1.21.1-1.0.2.jar",
+      "size": 77326,
+      "hashes": {
+        "sha512": "d0824bac1900142ac9a53e68f7ec3b4c0d33d9366bbd3f1d0d93eed860e5eb6b5e6f5a215a69bfffa70bcb48573ff49b5a12bbaa96096ceac6636000d506027a",
+        "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "dependency",
+      "why": "Required dependency of controlling",
+      "required_by": [
+        "controlling"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "simply-tooltips",
+      "title": "Simply Tooltips",
+      "project_id": "6avVoBVB",
+      "version_id": "Zb6dytvm",
+      "version": "0.1.5",
+      "channel": "release",
+      "published": "2026-08-23",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "SimplyTooltips-neoforge-0.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/6avVoBVB/versions/Zb6dytvm/SimplyTooltips-neoforge-0.1.5.jar",
+      "size": 5512986,
+      "hashes": {
+        "sha512": "7be6beb5f72c03b7c9f44568c11577f2ba50aec8d16af34d860294718cd2ab550691a8e82756d96c6f0bdd1111e2de8aa68db970c5762be659ad4aec69940ebd",
+        "sha1": "6227453d5b628b1009d6ec516a0da5b588849744"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LicenseRef-Timefall-Development-License-1.2",
+      "group": "dependency",
+      "why": "Required dependency of simply-swords",
+      "required_by": [
+        "simply-swords"
+      ],
+      "deps": [
+        {
+          "project_id": "hYykXjDp",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "lhGA9TYQ",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "smartbrainlib",
+      "title": "SmartBrainLib",
+      "project_id": "PuyPazRT",
+      "version_id": "O5EpeqI3",
+      "version": "1.16.11",
+      "channel": "release",
+      "published": "2025-10-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
+      "url": "https://cdn.modrinth.com/data/PuyPazRT/versions/O5EpeqI3/SmartBrainLib-neoforge-1.21.1-1.16.11.jar",
+      "size": 391053,
+      "hashes": {
+        "sha512": "bfc76f6fd8c388d01b80601ad1b826f6b3f5ec5ea915e5725af129561e6bc4a10890975e6f6d2a0348d842c13042dcf1a9d0a1574fba76bce60119bee76e2dc2",
+        "sha1": "0310135a01eeceefbc7f1ab017498a65f3ad6836"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "MPL-2.0",
+      "group": "dependency",
+      "why": "Required dependency of occultism",
+      "required_by": [
+        "occultism"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "sophisticated-core",
+      "title": "Sophisticated Core",
+      "project_id": "nmoqTijg",
+      "version_id": "9e7VbbdS",
+      "version": "1.21.1-1.5.39.2489",
+      "channel": "release",
+      "published": "2026-11-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "sophisticatedcore-1.21.1-1.5.39.2489.jar",
+      "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/9e7VbbdS/sophisticatedcore-1.21.1-1.5.39.2489.jar",
+      "size": 1855442,
+      "hashes": {
+        "sha1": "27d19713fec2c1b1e8e8158b2c7e285d6153778b",
+        "sha512": "eb11155bbebd1e84957ccd3207ab54a0f9c47f09796bd8fdcc23aeaa16def26661c070e30846bb9eae752e08c0ee510eb2cd4c790bf2e4575212907fef9cde1d"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "dependency",
+      "why": "Required dependency of sophisticated-backpacks",
+      "required_by": [
+        "sophisticated-backpacks",
+        "sophisticated-storage"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "yungs-api",
+      "title": "YUNG's API",
+      "project_id": "Ua7DFN59",
+      "version_id": "2prKITKh",
+      "version": "1.21.1-NeoForge-5.1.9",
+      "channel": "release",
+      "published": "2026-09-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "url": "https://cdn.modrinth.com/data/Ua7DFN59/versions/2prKITKh/YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "size": 413763,
+      "hashes": {
+        "sha512": "7e3cf0b429e8a1c51dca094c2d8eabf12245bb42cbcd8b6e3e54959f931bef93201b81a08d200b417059aaa438e8eb445c3978a09568597bfb588199b7775967",
+        "sha1": "2c4b740c8ad27bbcb2a21b85b64f011b809aed91"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "dependency",
+      "why": "Required dependency of yungs-better-dungeons",
+      "required_by": [
+        "yungs-better-dungeons",
+        "yungs-better-mineshafts",
+        "yungs-better-strongholds",
+        "yungs-better-desert-temples",
+        "yungs-better-jungle-temples",
+        "yungs-better-ocean-monuments",
+        "yungs-better-witch-huts",
+        "yungs-better-nether-fortresses",
+        "yungs-better-end-island",
+        "yungs-bridges",
+        "yungs-extras"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "aether",
+      "title": "The Aether",
+      "project_id": "YhmgMVyu",
+      "version_id": "K5X5qMwG",
+      "version": "1.21.1-1.5.10-neoforge",
+      "channel": "release",
+      "published": "2025-09-28",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "aether-1.21.1-1.5.10-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/YhmgMVyu/versions/K5X5qMwG/aether-1.21.1-1.5.10-neoforge.jar",
+      "size": 40223909,
+      "hashes": {
+        "sha1": "7554b1dd391b8dd06a810918ec705d0493f693eb",
+        "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Custom",
+      "group": "dimensions",
+      "why": "Sky dimension with three dungeon bosses and its own gear line.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "ccKDOlHs",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "jtmvUHXj",
+          "version_id": "Avp7HDTx",
+          "type": "embedded"
+        },
+        {
+          "project_id": "sq1f0DCq",
+          "version_id": "30nL1EiU",
+          "type": "embedded"
+        }
+      ]
+    },
+    {
+      "slug": "deeperdarker",
+      "title": "Deeper and Darker",
+      "project_id": "fnAffV0n",
+      "version_id": "TuD0Zvi3",
+      "version": "1.4.1-neoforge-1.21.1",
+      "channel": "release",
+      "published": "2026-06-05",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "url": "https://cdn.modrinth.com/data/fnAffV0n/versions/TuD0Zvi3/deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "size": 3906057,
+      "hashes": {
+        "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c",
+        "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "AGPL-3.0-only",
+      "group": "dimensions",
+      "why": "Otherside dimension beyond Ancient Cities; Warden-tier progression.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "the-bumblezone",
+      "title": "The Bumblezone - NeoForge/Forge",
+      "project_id": "38tpSycf",
+      "version_id": "8YIuAJAj",
+      "version": "7.19.3+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-11-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "the_bumblezone-7.19.3+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/38tpSycf/versions/8YIuAJAj/the_bumblezone-7.19.3%2B1.21.1-neoforge.jar",
+      "size": 83645330,
+      "hashes": {
+        "sha1": "f2182319e6f3e0bd7376d6de9b1fd2e4f9ebf168",
+        "sha512": "3dc16cd3433f0291c73d5927d737be7b832e64b8b77f37ec25db2641eae0652fa0c59188e4c61e5fd959b6f12bd0a1f995d68cb4aa520988103e20ebfc9ba139"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "dimensions",
+      "why": "Unique bee dimension with its own challenge/quest-like progression.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "G1hIVOrD",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "Q2OqKxDG",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "the-undergarden",
+      "title": "The Undergarden",
+      "project_id": "Ejfl5qDL",
+      "version_id": "sY4KZ9q3",
+      "version": "0.9.6",
+      "channel": "beta",
+      "published": "2026-04-02",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "The_Undergarden-1.21.1-0.9.6.jar",
+      "url": "https://cdn.modrinth.com/data/Ejfl5qDL/versions/sY4KZ9q3/The_Undergarden-1.21.1-0.9.6.jar",
+      "size": 45294936,
+      "hashes": {
+        "sha1": "75f1753eefa0b7b8e3afd7377deaf9fe71392476",
+        "sha512": "bb98ea4bb0755e0a1ae67bae3534f1002b91945f7b565b21a408fade678bbc1e9f2b564a00b7157e38ab5eb77d69070b9f16db66de3cd5b41d5c89cbef721bf4"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "dimensions",
+      "why": "Underground dimension with a boss and its own material tier.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "ars-nouveau",
+      "title": "Ars Nouveau",
+      "project_id": "TKB6INcv",
+      "version_id": "ALmdjtiq",
+      "version": "5.13.5",
+      "channel": "release",
+      "published": "2026-11-09",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1",
+        "1.21"
+      ],
+      "file": "ars_nouveau-1.21.1-5.13.5.jar",
+      "url": "https://cdn.modrinth.com/data/TKB6INcv/versions/ALmdjtiq/ars_nouveau-1.21.1-5.13.5.jar",
+      "size": 19874860,
+      "hashes": {
+        "sha1": "cdc946c63e1eb676f0e29e4640335c0ce68d7de3",
+        "sha512": "be9cc13c9bab1808605ef5bb2b8a32a8a3bba169094e364d8aad0c5fafeb8a83ecabbcb0a0dba2b3806e0d3090172c1cf1d89792d814ac2fe9d07018d4445c49"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "magic",
+      "why": "Utility/automation magic: glyph spells, mana, rituals, item transport.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "irons-lib",
+      "title": "Iron's Lib",
+      "project_id": "9nfaJPtX",
+      "version_id": "26w23ufT",
+      "version": "1.21.1-2.4.0",
+      "channel": "release",
+      "published": "2026-11-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "irons_lib-1.21.1-2.4.0.jar",
+      "url": "https://cdn.modrinth.com/data/9nfaJPtX/versions/26w23ufT/irons_lib-1.21.1-2.4.0.jar",
+      "size": 490515,
+      "hashes": {
+        "sha512": "48d6996d935be45c6da1013a493559fcc781d994662e4d51b8bf2086ae77e80f92831b885c5f413fd2640bad15b32abd935af327daabc9e8497dae1ec12027ed",
+        "sha1": "de1eda4fd210ac622ef8df8e3245366ca0da5491"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "magic",
+      "why": "Iron's Spells requires irons_lib >=1.21.1-2 <1.21.1-3 (undeclared in Modrinth metadata; found by launch test).",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "irons-spells-n-spellbooks",
+      "title": "Iron's Spells 'n Spellbooks",
+      "project_id": "s4OWxYQQ",
+      "version_id": "Gzh2DpBL",
+      "version": "1.21.1-3.16.4",
+      "channel": "release",
+      "published": "2026-11-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "irons_spellbooks-1.21.1-3.16.4.jar",
+      "url": "https://cdn.modrinth.com/data/s4OWxYQQ/versions/Gzh2DpBL/irons_spellbooks-1.21.1-3.16.4.jar",
+      "size": 13900016,
+      "hashes": {
+        "sha512": "05309957ea3fee35c337b001b8a6d9d457a2d299f1c36ab376de18fae10a8d7ae61688b0a746ddde15667bab532627999e7c8ae140f23e9af721c4a0e642d957",
+        "sha1": "6a3758ab1861176cebe5fb0b3b536a0b3f678213"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "magic",
+      "why": "Combat magic: schools, spellbooks, scroll loot, boss encounters.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "occultism",
+      "title": "Occultism",
+      "project_id": "sbJh4AZw",
+      "version_id": "SFDVXWYt",
+      "version": "1.21.1-neoforge-1.227.0",
+      "channel": "release",
+      "published": "2026-11-11",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "occultism-1.21.1-neoforge-1.227.0.jar",
+      "url": "https://cdn.modrinth.com/data/sbJh4AZw/versions/SFDVXWYt/occultism-1.21.1-neoforge-1.227.0.jar",
+      "size": 6961729,
+      "hashes": {
+        "sha512": "063d775420e1efa916d1ed94f3f5bfc3b00b976b1de6fc333eda9886ea3665aa38254407a18469ed0a334bcac67b204392c9bf197fc10916ce36a9e29abd5ef0",
+        "sha1": "ac94231b96a6dcf96bfea789099a59ea11ef25db"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "magic",
+      "why": "Spirit-based automation and storage; ritual crafting.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "692GClaE",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "PuyPazRT",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "8BmcQJ2H",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "uOVMgoil",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "entityculling",
+      "title": "Entity Culling",
+      "project_id": "NNAgCjsB",
+      "version_id": "DDaDZQ47",
+      "version": "1.12.1",
+      "channel": "release",
+      "published": "2026-11-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "entityculling-neoforge-1.12.1-mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/NNAgCjsB/versions/DDaDZQ47/entityculling-neoforge-1.12.1-mc1.21.1.jar",
+      "size": 1523607,
+      "hashes": {
+        "sha512": "c1818837b0e43f67fa4cd2cfffc2d57c17e579b405b215dd627e3ea68d0c000b56a79614cd41f20451ea7a687e9e9de66afe871f0b9bcec680699445ea0d9fa3",
+        "sha1": "75671869d5991e7fbeed77f0549501d1368d6f44"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LicenseRef-tr7zw-Protective-License",
+      "group": "performance",
+      "why": "Skips rendering hidden entities/block entities - important with large factories.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "ferrite-core",
+      "title": "FerriteCore",
+      "project_id": "uXXizFIs",
+      "version_id": "x7kQWVju",
+      "version": "7.0.3-neoforge",
+      "channel": "release",
+      "published": "2026-01-25",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "ferritecore-7.0.3-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
+      "size": 121559,
+      "hashes": {
+        "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
+        "sha1": "9563692efb708b6b568df27a01ec52f6311928ef"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "performance",
+      "why": "Blockstate/model memory deduplication.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "immediatelyfast",
+      "title": "ImmediatelyFast",
+      "project_id": "5ZwdcRci",
+      "version_id": "EJzmEPZV",
+      "version": "1.6.15+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-10-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "ImmediatelyFast-NeoForge-1.6.15+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/5ZwdcRci/versions/EJzmEPZV/ImmediatelyFast-NeoForge-1.6.15%2B1.21.1.jar",
+      "size": 368896,
+      "hashes": {
+        "sha1": "f991166f7c82b493481c876e3c83c9fac4159671",
+        "sha512": "c115cad7b060373fc597aae08c685e2d56f173b88b792a4a2c229e222f8da293b99865e9553cf716483d3c3d6a18f31c51c5dd55be22d4625ed2c962d7b94fd0"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LGPL-3.0-or-later",
+      "group": "performance",
+      "why": "Batches immediate-mode rendering (HUD, text, maps).",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "lithium",
+      "title": "Lithium",
+      "project_id": "gvQqBUqZ",
+      "version_id": "DDUrRVCA",
+      "version": "mc1.21.1-0.15.4-neoforge",
+      "channel": "release",
+      "published": "2026-06-27",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/gvQqBUqZ/versions/DDUrRVCA/lithium-neoforge-0.15.4%2Bmc1.21.1.jar",
+      "size": 774220,
+      "hashes": {
+        "sha512": "2735da2088b88a8bdcd4ad02a2b6fffbfd3925557cefd4fa54b5477dfb9e582ea7f521300c060f57dff1325dd21bff276b7333363ad3371ed6893e3de9eca9cd",
+        "sha1": "97212e45c963730bbfc7c44780df99317814c21b"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LGPL-3.0-only",
+      "group": "performance",
+      "why": "Server-tick optimisations (AI, collisions, chunk ticking). NeoForge build.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "modernfix",
+      "title": "ModernFix",
+      "project_id": "nmDcB62a",
+      "version_id": "ZDZENbHH",
+      "version": "5.27.27+mc1.21.1",
+      "channel": "release",
+      "published": "2026-10-24",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "modernfix-neoforge-5.27.27+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/nmDcB62a/versions/ZDZENbHH/modernfix-neoforge-5.27.27%2Bmc1.21.1.jar",
+      "size": 614138,
+      "hashes": {
+        "sha512": "af14a35e51f1c5d94139c6225ae641e8b0ded5a8c68eb4806cf28025d6c043455ac289902cd6b854a867320ab845ad619b186d02b8341822faf03f4476dec555",
+        "sha1": "52c008540c7dc2cc451f7e939a885d7462c9ae72"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LGPL-3.0-only",
+      "group": "performance",
+      "why": "Load time and memory reduction; biggest single win for large packs.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "spark",
+      "title": "spark",
+      "project_id": "l6YH9Als",
+      "version_id": "v5qtqRQi",
+      "version": "1.10.124-neoforge",
+      "channel": "release",
+      "published": "2025-02-23",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "spark-1.10.124-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/v5qtqRQi/spark-1.10.124-neoforge.jar",
+      "size": 3642581,
+      "hashes": {
+        "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
+        "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "GPL-3.0-only",
+      "group": "performance",
+      "why": "Profiler for tick/frame/memory analysis.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "appleskin",
+      "title": "AppleSkin",
+      "project_id": "EsAfCjCV",
+      "version_id": "uAKA6Laj",
+      "version": "3.0.9+mc1.21",
+      "channel": "release",
+      "published": "2026-04-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1",
+        "1.21.2"
+      ],
+      "file": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "url": "https://cdn.modrinth.com/data/EsAfCjCV/versions/uAKA6Laj/appleskin-neoforge-mc1.21-3.0.9.jar",
+      "size": 75804,
+      "hashes": {
+        "sha1": "81cf0e668f991f83ac8820c386fbd6c9c3602246",
+        "sha512": "f4ea46273e407334b63e262e2555c9a8204f7b5e60f23f272fbaa83ad9e88800e0ee186aca840710df2dbe0a18b37758695fef2ae1a902c10b3706e3de772937"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "Unlicense",
+      "group": "qol",
+      "why": "Food/saturation readout.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "controlling",
+      "title": "Controlling",
+      "project_id": "xv94TkTM",
+      "version_id": "FaNppCJJ",
+      "version": "19.0.5",
+      "channel": "release",
+      "published": "2025-03-30",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "url": "https://cdn.modrinth.com/data/xv94TkTM/versions/FaNppCJJ/Controlling-neoforge-1.21.1-19.0.5.jar",
+      "size": 77555,
+      "hashes": {
+        "sha512": "bd01b2a38a869ea38e5f2a8fcd601e67ea9b132b9883c6ae752bc35dff6e94f6d47b965e31c1ee5c2f6a1221653549680da779fcb5319d199aec261d221d179e",
+        "sha1": "8a34424fc1428778be2fdbfa4da67b21b70bcbfe"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "qol",
+      "why": "Searchable keybinds and conflict view.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "fuuu3xnx",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "emi",
+      "title": "EMI",
+      "project_id": "fRiHVvU7",
+      "version_id": "5sIPA1To",
+      "version": "1.1.24+1.21.1+neoforge",
+      "channel": "release",
+      "published": "2026-05-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "emi-1.1.24+1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/5sIPA1To/emi-1.1.24%2B1.21.1%2Bneoforge.jar",
+      "size": 1111538,
+      "hashes": {
+        "sha512": "f4c45ed686fe617311d6debadcb6ace5963e66f8cfe0cfed398231f081f87407070efc7a73c8b695d158f1d87a97180737b9107a46771e77df2bc9a7dc715ebd",
+        "sha1": "3fd494b37027dfbc7f78414d7cbf251c9eb6738a"
+      },
+      "client_side": "required",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "qol",
+      "why": "Primary recipe viewer with recipe trees.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "farmers-delight",
+      "title": "Farmer's Delight",
+      "project_id": "R2OftAxM",
+      "version_id": "XTVZDOol",
+      "version": "1.21.1-1.3.4",
+      "channel": "release",
+      "published": "2026-08-29",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "FarmersDelight-1.21.1-1.3.4.jar",
+      "url": "https://cdn.modrinth.com/data/R2OftAxM/versions/XTVZDOol/FarmersDelight-1.21.1-1.3.4.jar",
+      "size": 3160490,
+      "hashes": {
+        "sha512": "1f6f8796469f747cff36f477b4f589a3d69613882399f9ee7f86db36c7bca9aa4828731f43db15dc6c7f5a4c1bbe3d4092a232e8cef010b09cec0581848fda90",
+        "sha1": "27675ddfcb8cc37e6ea1ab6c15051c7949d94657"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "qol",
+      "why": "Food variety that makes survival more than bread.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "jade",
+      "title": "Jade \ud83d\udd0d",
+      "project_id": "nvQzSEkH",
+      "version_id": "eYz2YBGT",
+      "version": "15.10.6+neoforge",
+      "channel": "release",
+      "published": "2026-08-06",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "url": "https://cdn.modrinth.com/data/nvQzSEkH/versions/eYz2YBGT/Jade-1.21.1-NeoForge-15.10.6.jar",
+      "size": 726853,
+      "hashes": {
+        "sha512": "dad9755dce8d85d914fc4df2baa0211f13e5839a71c1925fdd01f69081a95e30a2934e6273f8b01f0169adebe7a9dae57a8d904de0c4cb36dc17369bb474f0f2",
+        "sha1": "88ee316e68900080b017f60c12162e2731924cf8"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "CC-BY-NC-SA-4.0",
+      "group": "qol",
+      "why": "Block/entity tooltips.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "jei",
+      "title": "Just Enough Items (JEI)",
+      "project_id": "u6dRKJwZ",
+      "version_id": "iv3KiVkE",
+      "version": "19.64.0.455",
+      "channel": "release",
+      "published": "2026-10-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "jei-1.21.1-neoforge-19.64.0.455.jar",
+      "url": "https://cdn.modrinth.com/data/u6dRKJwZ/versions/iv3KiVkE/jei-1.21.1-neoforge-19.64.0.455.jar",
+      "size": 2375741,
+      "hashes": {
+        "sha512": "fdd02e57ce4dcf20b69860a5ace1b97d9a771486241179cf9edfe71e30c69bb4003b046d0cce8d8c4913b9689f1d8b04cf0542b0b04a6cf0b3b0465f3bb11702",
+        "sha1": "f6d6fc08d54c40752926b570a2220471e8c45c1a"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "MIT",
+      "group": "qol",
+      "why": "Loads JEI-only plugins (Create, etc.); EMI hides JEI's UI.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "7tEfOcA7",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "BOHUKqOz",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "kubejs",
+      "title": "KubeJS",
+      "project_id": "umyGl7zF",
+      "version_id": "GDXCpKlp",
+      "version": "2101.7.2-build.381",
+      "channel": "release",
+      "published": "2026-11-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "kubejs-neoforge-2101.7.2-build.381.jar",
+      "url": "https://cdn.modrinth.com/data/umyGl7zF/versions/GDXCpKlp/kubejs-neoforge-2101.7.2-build.381.jar",
+      "size": 2295092,
+      "hashes": {
+        "sha1": "b282ba250cdd247f319c016df02ff9e600caadb1",
+        "sha512": "f8286f9f371d0c1fb2b37e56b1dbb359dcfc5a9064a7384cbf6722450f5b5a77f05f55688d7a338b500a6f49590d51e3d3541664dfc0296e50fe573a34e5a529"
+      },
+      "client_side": "optional",
+      "server_side": "optional",
+      "license": "LGPL-3.0-only",
+      "group": "qol",
+      "why": "Recipe/loot/progression scripting.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "iHLDc0eo",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "sk9knFPE",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "mouse-tweaks",
+      "title": "Mouse Tweaks",
+      "project_id": "aC3cM3Vq",
+      "version_id": "9I21YYxf",
+      "version": "1.21-2.26.1-neoforge",
+      "channel": "release",
+      "published": "2024-08-17",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "size": 73938,
+      "hashes": {
+        "sha512": "f95c0cc881211ee0442434976775e07aae40b4a2ba4e3a85455bc57ca9d3c991e239cd98374a8abd442dc9c378dcd9001e2caa1bf69991d424b5652dd7f3483b",
+        "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "BSD-3-Clause",
+      "group": "qol",
+      "why": "Inventory drag/scroll handling.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "odyssey-quests",
+      "title": "Odyssey Quests",
+      "project_id": "lo90fZoB",
+      "version_id": "DYaRmc9w",
+      "version": "2.0.3",
+      "channel": "beta",
+      "published": "2026-10-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "heracles-neoforge-1.21.1-2.0.3.jar",
+      "url": "https://cdn.modrinth.com/data/lo90fZoB/versions/DYaRmc9w/heracles-neoforge-1.21.1-2.0.3.jar",
+      "size": 2297249,
+      "hashes": {
+        "sha1": "43d0b1c4530fd0fc12addbce9892a8f85ebc3b7e",
+        "sha512": "169520d794a26ed2b6cde03bcb50de0c20bb5a3464ae5c3ac36ca789edea65e26ec1e923cbfffaad9ebe4657a85ae876a3297d882b4376da3b42d212d32aff6d"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "qol",
+      "why": "Quest book (Heracles). FTB Quests is CurseForge-only and cannot be in an .mrpack.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "G1hIVOrD",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "polymorph",
+      "title": "Polymorph",
+      "project_id": "tagwiZkJ",
+      "version_id": "VEburL70",
+      "version": "1.1.0+1.21.1",
+      "channel": "release",
+      "published": "2025-07-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/tagwiZkJ/versions/VEburL70/polymorph-neoforge-1.1.0%2B1.21.1.jar",
+      "size": 174972,
+      "hashes": {
+        "sha1": "84f8c539fa326dc723ae62b7a6916d6b01982d07",
+        "sha512": "37358e19d8f251b7d435ea5198eded7b1361e90d5728e11fcb15aeb55786f4ee10fd8fecd14b11f34a99bd92aea01a9977c0dbc46ab6bb07af61a6c89455b6ff"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-or-later",
+      "group": "qol",
+      "why": "Resolves recipe output conflicts between mods.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "sophisticated-backpacks",
+      "title": "Sophisticated Backpacks",
+      "project_id": "TyCTlI4b",
+      "version_id": "CbYrTzNh",
+      "version": "1.21.1-3.26.22.2257",
+      "channel": "release",
+      "published": "2026-11-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "sophisticatedbackpacks-1.21.1-3.26.22.2257.jar",
+      "url": "https://cdn.modrinth.com/data/TyCTlI4b/versions/CbYrTzNh/sophisticatedbackpacks-1.21.1-3.26.22.2257.jar",
+      "size": 1266183,
+      "hashes": {
+        "sha1": "098cd62db8b38b937ca821d1de8511b9ed2c7142",
+        "sha512": "19718945b6db0bbd25ca80ef6ec8c76b50c214c80663297a08321dd3252c5a9780f94c1caffb618fc87bf8eec1bf0afceefcdeede9fa121d81407b6d4dd1d69c"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "qol",
+      "why": "Upgradeable backpacks.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "b1fMg6sH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nmoqTijg",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "vRYk0bv7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "BAscRYKm",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "WRaRZdTd",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "DMu0oBKf",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "sophisticated-storage",
+      "title": "Sophisticated Storage",
+      "project_id": "hMlaZH8f",
+      "version_id": "t9QwDIi8",
+      "version": "1.21.1-1.6.20.2239",
+      "channel": "release",
+      "published": "2026-11-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "sophisticatedstorage-1.21.1-1.6.20.2239.jar",
+      "url": "https://cdn.modrinth.com/data/hMlaZH8f/versions/t9QwDIi8/sophisticatedstorage-1.21.1-1.6.20.2239.jar",
+      "size": 2100126,
+      "hashes": {
+        "sha1": "13b863fa5fa12896caaece3a1b4e5f9475c7f591",
+        "sha512": "df3a1d6f5483d8de792f127c0106c7d935497d468cf7330c65b1a1d3796069ade21367f49e4a283c2d2aa3e1244e454d36c896ba825accf3efed029c5f8e9fd5"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "qol",
+      "why": "Upgradeable chests/barrels with sorting.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "WRaRZdTd",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nmoqTijg",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "BAscRYKm",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "qnQsVE2z",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "vRYk0bv7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "b1fMg6sH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "DMu0oBKf",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "waystones",
+      "title": "Waystones",
+      "project_id": "LOpKHB2A",
+      "version_id": "sE6fMBGR",
+      "version": "21.1.47+neoforge-1.21.1",
+      "channel": "release",
+      "published": "2026-11-15",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "waystones-neoforge-1.21.1-21.1.47.jar",
+      "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/sE6fMBGR/waystones-neoforge-1.21.1-21.1.47.jar",
+      "size": 1254420,
+      "hashes": {
+        "sha512": "24ee96445e68827b66d4e64e9670c6df4a635300afab7909a99764bf00182d1d0ea48808ae2d5041143dbad425662068f9ccdc55ad21bbdf9ed9e64f7c9e4d35",
+        "sha1": "51c3390c2555416979905f9d1b05ebc1a4de29c8"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "qol",
+      "why": "Discoverable fast travel - must be found in villages/structures.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "MBAkmtvl",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "xaeros-minimap",
+      "title": "Xaero's Minimap",
+      "project_id": "1bokaNcj",
+      "version_id": "irjR7dHk",
+      "version": "neoforge-1.21.1-26.6.0",
+      "channel": "release",
+      "published": "2026-10-05",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/irjR7dHk/xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "size": 2186351,
+      "hashes": {
+        "sha512": "d56b93ddb921285624b491d6a85aba23748bec9974867399c881c257eb25a746df92a735473adf3a6875e0928a56ff78245d5238eb9207b0e45c3fec20c896dc",
+        "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00"
+      },
+      "client_side": "required",
+      "server_side": "optional",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "qol",
+      "why": "Minimap.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "gF3BGWvG",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "xaeros-world-map",
+      "title": "Xaero's World Map",
+      "project_id": "NcUtCpym",
+      "version_id": "SnQ4SoDe",
+      "version": "neoforge-1.21.1-1.47.0",
+      "channel": "release",
+      "published": "2026-10-05",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/SnQ4SoDe/xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "size": 1427078,
+      "hashes": {
+        "sha512": "4d2d78bc85afa002f682ef344b7284cf1baa4903cc5a11cd1d7bd260ac63952580ae717bab47079540ead633cdd5d8e4fdf230dc99a68bcb7a269500e7dada13",
+        "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f"
+      },
+      "client_side": "required",
+      "server_side": "optional",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "qol",
+      "why": "World map.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "gF3BGWvG",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "forgified-fabric-api",
+      "title": "Forgified Fabric API",
+      "project_id": "Aqlf1Shp",
+      "version_id": "C4eskNuR",
+      "version": "0.116.15+2.3.6+1.21.1",
+      "channel": "release",
+      "published": "2026-10-15",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "forgified-fabric-api-0.116.15+2.3.6+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/C4eskNuR/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar",
+      "size": 5612888,
+      "hashes": {
+        "sha1": "1fe1ca9f440cd30c86186e42505694b70ececc11",
+        "sha512": "470ae4e8569484e6942a2f7e09a37ae58a58e0ad44f49f0d483db88024db19d41bfac3c68221c38623829871ade9d89bc5aa31cf0e682e798b2f9029b808011d"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "Apache-2.0",
+      "group": "renderer",
+      "why": "Fabric API surface required by Roxy/Voxy.",
+      "required_by": [
+        "roxy"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "iris",
+      "title": "Iris Shaders",
+      "project_id": "YL57xq9U",
+      "version_id": "KduFYu4t",
+      "version": "1.8.14-beta.1+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-06-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
+      "size": 2540723,
+      "hashes": {
+        "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+        "sha512": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LGPL-3.0-only",
+      "group": "renderer",
+      "why": "Shader loader; Voxy-aware shader integration.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "AANobbMI",
+          "version_id": "uMOpc5uV",
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "reeses-sodium-options",
+      "title": "Reese's Sodium Options",
+      "project_id": "Bh37bMuy",
+      "version_id": "nRS0RBpc",
+      "version": "mc1.21.1-2.2.6+neoforge",
+      "channel": "release",
+      "published": "2026-11-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "reeses-sodium-options-neoforge-2.2.6+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/nRS0RBpc/reeses-sodium-options-neoforge-2.2.6%2Bmc1.21.1.jar",
+      "size": 266738,
+      "hashes": {
+        "sha512": "1b01b52e26739a0584c805c9cbcbdb12b6fe26f5925c76564ec8319ca9985651d766881a1e1eb8de12ab8cfed54d83d1a751877e6aece0beec67003713c3402c",
+        "sha1": "2222aa3ad9aa9688b63f7640a6015467c06691c1"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "renderer",
+      "why": "Usable video settings UI for Sodium's expanded option set.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "AANobbMI",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "YL57xq9U",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "PtjYWJkn",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "roxy",
+      "title": "Roxy",
+      "project_id": "Ap78bKTp",
+      "version_id": "JJlkgYxJ",
+      "version": "0.4.2.1-neoforge+mc1.21.1",
+      "channel": "beta",
+      "published": "2026-11-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "roxy-1.21.1-NeoForge-0.4.2.1.jar",
+      "url": "https://cdn.modrinth.com/data/Ap78bKTp/versions/JJlkgYxJ/roxy-1.21.1-NeoForge-0.4.2.1.jar",
+      "size": 2778857,
+      "hashes": {
+        "sha1": "708a946046f3a95154166b87c4f08c576bf216fb",
+        "sha512": "15ab34a634b3a47a243819b408732b6a33e195b03ef10eb407262f14cd1f1be0774116c532f02869bee8ec5b4fe535977b2f1d14240064b1f143d14d48145ae7"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "MIT",
+      "group": "renderer",
+      "why": "Translation layer that runs the original Voxy jar on NeoForge 1.21.1.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "sBwZemk4",
+          "version_id": null,
+          "type": "incompatible"
+        },
+        {
+          "project_id": "wGoQDPN5",
+          "version_id": null,
+          "type": "incompatible"
+        },
+        {
+          "project_id": "WuGVWUF2",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Aqlf1Shp",
+          "version_id": "dAxle9F7",
+          "type": "required"
+        },
+        {
+          "project_id": "AANobbMI",
+          "version_id": "S3DUMfBo",
+          "type": "required"
+        },
+        {
+          "project_id": "fxxUqruK",
+          "version_id": "H3w2nVdU",
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "sodium",
+      "title": "Sodium",
+      "project_id": "AANobbMI",
+      "version_id": "uMOpc5uV",
+      "version": "mc1.21.1-0.8.13-neoforge",
+      "channel": "release",
+      "published": "2026-08-28",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "sodium-neoforge-0.8.13+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
+      "size": 1292934,
+      "hashes": {
+        "sha512": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390",
+        "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LicenseRef-Polyform-Shield-1.0.0",
+      "group": "renderer",
+      "why": "Renderer foundation required by Roxy/Voxy and Iris.",
+      "required_by": [
+        "iris",
+        "roxy",
+        "voxy",
+        "sodium-extra",
+        "reeses-sodium-options"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "sodium-extra",
+      "title": "Sodium Extra",
+      "project_id": "PtjYWJkn",
+      "version_id": "T819dLGI",
+      "version": "mc1.21.1-0.9.5+neoforge",
+      "channel": "release",
+      "published": "2026-10-25",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "sodium-extra-neoforge-0.9.5+mc1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/T819dLGI/sodium-extra-neoforge-0.9.5%2Bmc1.21.1.jar",
+      "size": 483373,
+      "hashes": {
+        "sha512": "1f213565e110e39a3e70ce5327f31448b301d2365f7ea281e06535169fd088f7d635370db7417adc927b1278eaefd75c77def7519395408ed0f86f6be240c076",
+        "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LGPL-3.0-only",
+      "group": "renderer",
+      "why": "Extra Sodium toggles used by the Performance profile (particles, animations, fog).",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "YL57xq9U",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Bh37bMuy",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "EE4vxUHj",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "AANobbMI",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "voxy",
+      "title": "voxy",
+      "project_id": "fxxUqruK",
+      "version_id": "H3w2nVdU",
+      "version": "0.2.16-beta",
+      "channel": "beta",
+      "published": "2026-05-25",
+      "loaders": [
+        "fabric"
+      ],
+      "game_versions": [
+        "1.21.11"
+      ],
+      "file": "voxy-0.2.16-beta+1.21.11.jar",
+      "url": "https://cdn.modrinth.com/data/fxxUqruK/versions/H3w2nVdU/voxy-0.2.16-beta%2B1.21.11.jar",
+      "size": 12620254,
+      "hashes": {
+        "sha1": "280a55279e0860d29146d908cd8a0246a12e2537",
+        "sha512": "d5159e2e745a9c50f16c67c54303b8a991dc5a1954e5cd7edc235c6f24ad2a045cb493e128717ed4e97352366ae83b03b3d73815342421e631c2a8995c48cccb"
+      },
+      "client_side": "required",
+      "server_side": "unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "renderer",
+      "why": "Long-distance LOD renderer. Roxy's only verified jar: voxy-0.2.16-beta for MC 1.21.11 (loaded through Roxy, not natively).",
+      "required_by": [
+        "roxy"
+      ],
+      "deps": [
+        {
+          "project_id": "mOgUt4GM",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "P7dR8mSH",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "AANobbMI",
+          "version_id": "NFkjnzWE",
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "voxy-worldgen",
+      "title": "Voxygen",
+      "project_id": "xT0lnNE9",
+      "version_id": "PzNUZlWw",
+      "version": "2.4.2",
+      "channel": "beta",
+      "published": "2026-07-06",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Voxy World Gen V2-neoforge-1.21.1-2.4.2.jar",
+      "url": "https://cdn.modrinth.com/data/xT0lnNE9/versions/PzNUZlWw/Voxy%20World%20Gen%20V2-neoforge-1.21.1-2.4.2.jar",
+      "size": 247336,
+      "hashes": {
+        "sha512": "1407723c46d6320eac110f7d31fb047ed08b5c654b83f9b77b8f19c90b351b497bf9a1180718dbf647579f3566b1b2a4f85f356c0d0de975a909c965d82bff5a",
+        "sha1": "1e9483ed7b46e1f997637a4f064f38a15680c8b7"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-iSeeEthan-Custom-License",
+      "group": "renderer",
+      "why": "Generates real chunks in the background and feeds them to Voxy, so distant LODs match the modded terrain exactly (no seed approximation). Roxy ships compat for this v2 line.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "sbpqhzIG",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "apotheosis",
+      "title": "Apotheosis",
+      "project_id": "rqFWfVlz",
+      "version_id": "veL1ccTb",
+      "version": "1.21.1-8.9.0",
+      "channel": "release",
+      "published": "2026-09-27",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Apotheosis-1.21.1-8.9.0.jar",
+      "url": "https://cdn.modrinth.com/data/rqFWfVlz/versions/veL1ccTb/Apotheosis-1.21.1-8.9.0.jar",
+      "size": 7184314,
+      "hashes": {
+        "sha512": "b3022bc31f4e9f99d298c36486e09cad308d4aa87e2aa65a341809aeca41f0067e744086768884959036a46685d4c0babc4274600884ad8962fe9d080d8ef3ee",
+        "sha1": "2d8b59070a221bcc2e3ea08b3b48cbf034b77c71"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "rpg",
+      "why": "Core loot system: affixes, rarities, gems, sockets, world tiers, bosses.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "nU0bVIaL",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "DfxVkOAO",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "DGaH8Rh0",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "pL8MtgqY",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "UVtY3ZAC",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "mH8wdmqr",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "apothic-attributes",
+      "title": "Apothic Attributes",
+      "project_id": "DGaH8Rh0",
+      "version_id": "64fZbLnj",
+      "version": "1.21.1-2.11.0",
+      "channel": "release",
+      "published": "2026-09-29",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "ApothicAttributes-1.21.1-2.11.0.jar",
+      "url": "https://cdn.modrinth.com/data/DGaH8Rh0/versions/64fZbLnj/ApothicAttributes-1.21.1-2.11.0.jar",
+      "size": 319609,
+      "hashes": {
+        "sha512": "568580e68016161151fc0254fb0da949b42cf285fa2bf7c3aec1cd320405c430483e9eb990aaddef537bfac4aa4beb21db82fbff9249131e05b15063b6839611",
+        "sha1": "7ff0e452e10cb582c188626a413037e63db9ca04"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "rpg",
+      "why": "Attribute framework used by Apotheosis (crit, armor pierce, etc.).",
+      "required_by": [
+        "apotheosis",
+        "apothic-enchanting"
+      ],
+      "deps": [
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "apothic-enchanting",
+      "title": "Apothic-Enchanting",
+      "project_id": "pL8MtgqY",
+      "version_id": "JAQJkLJ1",
+      "version": "1.21.1-1.6.4",
+      "channel": "release",
+      "published": "2026-10-08",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "ApothicEnchanting-1.21.1-1.6.4.jar",
+      "url": "https://cdn.modrinth.com/data/pL8MtgqY/versions/JAQJkLJ1/ApothicEnchanting-1.21.1-1.6.4.jar",
+      "size": 5422885,
+      "hashes": {
+        "sha512": "b560ed61810030472c42fa39e6199b1db07c19baba8f78d98b44ab3e1d00a1bebff5f69942bd076fea9754f63940df920cfb19906073b77bcc459bb8d88575de",
+        "sha1": "d88e75b60e97dae8054ee10f3a92aa2bb812b8b9"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "rpg",
+      "why": "Enchanting overhaul; gives enchanting long-term depth.",
+      "required_by": [
+        "apotheosis"
+      ],
+      "deps": [
+        {
+          "project_id": "DGaH8Rh0",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "apothic-spawners",
+      "title": "Apothic-Spawners",
+      "project_id": "DfxVkOAO",
+      "version_id": "pWfxcfO2",
+      "version": "1.21.1-1.4.0",
+      "channel": "release",
+      "published": "2026-07-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "ApothicSpawners-1.21.1-1.4.0.jar",
+      "url": "https://cdn.modrinth.com/data/DfxVkOAO/versions/pWfxcfO2/ApothicSpawners-1.21.1-1.4.0.jar",
+      "size": 129784,
+      "hashes": {
+        "sha512": "2fdd49cdb3e6610846c3a746ab0730d6d49412eaf8c21e3d0b9d588d80c8cd1a1d0b7e19ade7fc86fd699ac02e270e5fa01fb5cf106d24a7740692ecc1ad8820",
+        "sha1": "b3be29751daea738e691db8949cce079e5aae3be"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "rpg",
+      "why": "Spawner modification - controlled mob-farm progression.",
+      "required_by": [
+        "apotheosis"
+      ],
+      "deps": [
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "artifacts",
+      "title": "Artifacts",
+      "project_id": "P0Mu4wcQ",
+      "version_id": "lMfuK0o7",
+      "version": "13.2.5",
+      "channel": "release",
+      "published": "2026-09-02",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "artifacts-neoforge-13.2.5.jar",
+      "url": "https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lMfuK0o7/artifacts-neoforge-13.2.5.jar",
+      "size": 1086922,
+      "hashes": {
+        "sha1": "fb6cd3be2d034dde369ffd7558c95c6daa44189e",
+        "sha512": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "rpg",
+      "why": "Exploration-found accessories (common/uncommon loot).",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "jtmvUHXj",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "better-combat",
+      "title": "Better Combat",
+      "project_id": "5sy6g3kz",
+      "version_id": "VhIOvcXP",
+      "version": "2.4.0+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-07-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/5sy6g3kz/versions/VhIOvcXP/bettercombat-neoforge-2.4.0%2B1.21.1.jar",
+      "size": 1045389,
+      "hashes": {
+        "sha1": "bacbc8c86671663e9998b141c5732250c1f4d4fb",
+        "sha512": "db24730a42ae7e2dd546ee031d2f5e0dd6f9896418417a529fa21a44121761ebb29c8b8299db8f20500f7497f7b60a7d793b66c93abf37a8ea0aa3edafd80eb6"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "rpg",
+      "why": "Directional, combo-based melee.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "gedNE4y2",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "curios",
+      "title": "Curios API",
+      "project_id": "vvuO3ImH",
+      "version_id": "KJsZIQrT",
+      "version": "9.6.0+1.21.1",
+      "channel": "release",
+      "published": "2026-11-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1",
+        "1.21"
+      ],
+      "file": "curios-neoforge-9.6.0+1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/KJsZIQrT/curios-neoforge-9.6.0%2B1.21.1.jar",
+      "size": 411707,
+      "hashes": {
+        "sha1": "110fa48c45be8d8421bf2e0bd706f11ec47cc7f8",
+        "sha512": "1453d7c970f37b357967dbdad080ed107e90eea2b151e88a5e51b271a38ac72686d47a328fb8b3125cb8c6069130b72ac4b1c023f18ba5244f7550e4599bf8a4"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-or-later",
+      "group": "rpg",
+      "why": "Accessory slot framework.",
+      "required_by": [
+        "l_enders-cataclysm",
+        "occultism"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "l_enders-cataclysm",
+      "title": "L_Ender's Cataclysm",
+      "project_id": "46KJle7n",
+      "version_id": "PsPYpoCC",
+      "version": "3.33",
+      "channel": "release",
+      "published": "2026-09-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "url": "https://cdn.modrinth.com/data/46KJle7n/versions/PsPYpoCC/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar",
+      "size": 73375667,
+      "hashes": {
+        "sha512": "289f6e8364a6e432f34803a47cff8381899a1df0fdc675170323b43fd1c09579b1320d8b4e0de5df65c609b738d450c13c89e240d6d79f607888da26b7724947",
+        "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "CC-BY-NC-ND-4.0",
+      "group": "rpg",
+      "why": "Late-game structure bosses with progression-defining drops.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "FoVacERa",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "mowzies-mobs",
+      "title": "Mowzie's Mobs",
+      "project_id": "BFbX9xcm",
+      "version_id": "xgAXTl17",
+      "version": "1.8.2",
+      "channel": "release",
+      "published": "2026-03-15",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "mowziesmobs-1.21.1-1.8.2.jar",
+      "url": "https://cdn.modrinth.com/data/BFbX9xcm/versions/xgAXTl17/mowziesmobs-1.21.1-1.8.2.jar",
+      "size": 36042925,
+      "hashes": {
+        "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c",
+        "sha512": "ab10d2f759df613d5094bac26c5a8bbe144786699018f7e4ae027fc4a86632aa7f96206f2c8be9970338eadef42539614a19b41d0d70b6216c3ed1c4c4421f0a"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Mowzies-Mobs-License",
+      "group": "rpg",
+      "why": "Mid-game overworld mini-bosses that make exploring dangerous.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "8BmcQJ2H",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "relics-mod",
+      "title": "Relics",
+      "project_id": "OCJRPujW",
+      "version_id": "nvZZMhJS",
+      "version": "0.10.7.8",
+      "channel": "release",
+      "published": "2026-02-06",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "relics-1.21.1-0.10.7.8.jar",
+      "url": "https://cdn.modrinth.com/data/OCJRPujW/versions/nvZZMhJS/relics-1.21.1-0.10.7.8.jar",
+      "size": 2753166,
+      "hashes": {
+        "sha1": "7f7fd59273ac5ef6511a811518bc9af01705a528",
+        "sha512": "eee8bc6a1c676f6c513d59732f12bb6415cc7c7fb639ad8f9d7dc9958e4b6726226106715119d8c083c49628db1cf7e3a433716425016d6d025d1730885fbce1"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "rpg",
+      "why": "Levelling relics found in structures (rare/legendary loot).",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "shatterbyte-lib",
+      "title": "ShatterLib | OctoLib",
+      "project_id": "RH2KUdKJ",
+      "version_id": "bhZqwctG",
+      "version": "0.6.3.2+1.21",
+      "channel": "release",
+      "published": "2026-11-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "OctoLib-NEOFORGE-0.6.3.2+1.21.jar",
+      "url": "https://cdn.modrinth.com/data/RH2KUdKJ/versions/bhZqwctG/OctoLib-NEOFORGE-0.6.3.2%2B1.21.jar",
+      "size": 545732,
+      "hashes": {
+        "sha512": "aa458c9d11d0c928a73906522a34e0657b790675b9e07f0c0f2791f49ddd1560477ec790c763e7d5572294275bd11f30f8275e113ef11c960f97d30fb06e602a",
+        "sha1": "8d6fb9f6702dbba1e6143ac36c571f54c981b005"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "rpg",
+      "why": "Provides mod id 'octolib' required by Relics 0.10.x (undeclared in Modrinth metadata; found by launch test).",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "lhGA9TYQ",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "simply-swords",
+      "title": "Simply Swords",
+      "project_id": "bK3Ubu9p",
+      "version_id": "nS0Yahr5",
+      "version": "1.70.2-1.21.1",
+      "channel": "release",
+      "published": "2026-08-27",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/bK3Ubu9p/versions/nS0Yahr5/simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "size": 16282660,
+      "hashes": {
+        "sha1": "05b074ff774467f1fe9fb5592151b7845c321cbc",
+        "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Custom",
+      "group": "rpg",
+      "why": "Weapon variety with unique uniques; Better Combat movesets built in.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "hYykXjDp",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "5sy6g3kz",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "6avVoBVB",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "lhGA9TYQ",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "ct-overhaul-village",
+      "title": "ChoiceTheorem's Overhauled Village",
+      "project_id": "fgmhI8kH",
+      "version_id": "hJfyJvWt",
+      "version": "3.6.4",
+      "channel": "release",
+      "published": "2026-11-04",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "[neoforge]ctov-1.21.1-3.6.4.jar",
+      "url": "https://cdn.modrinth.com/data/fgmhI8kH/versions/hJfyJvWt/%5Bneoforge%5Dctov-1.21.1-3.6.4.jar",
+      "size": 7239618,
+      "hashes": {
+        "sha512": "5e8666e25e280d619a1a8c74d35918fcfe9642416bf7c4d546284467d6ba080bd026893e9e4761ce98a1fb8395b2dcfdbdc51412263d069f6db1a3ec76bbfaa8",
+        "sha1": "753b631f6cb258a448ac12b858e9a1cacbfefb6b"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "CC-BY-NC-ND-4.0",
+      "group": "structures",
+      "why": "Biome-specific village overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "XaDC71GB",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "dungeons-and-taverns",
+      "title": "Dungeons and Taverns",
+      "project_id": "tpehi7ww",
+      "version_id": "BYUUUeZA",
+      "version": "v4.4.4+mod",
+      "channel": "release",
+      "published": "2024-09-29",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "dungeons-and-taverns-v4.4.4.jar",
+      "url": "https://cdn.modrinth.com/data/tpehi7ww/versions/BYUUUeZA/dungeons-and-taverns-v4.4.4.jar",
+      "size": 24859622,
+      "hashes": {
+        "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3",
+        "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "structures",
+      "why": "Uncommon tier: taverns, illager hideouts, ancient ruins.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "explorify",
+      "title": "Explorify",
+      "project_id": "HSfsxuTo",
+      "version_id": "oyrAnNG8",
+      "version": "v1.6.6",
+      "channel": "release",
+      "published": "2026-11-08",
+      "loaders": [
+        "fabric",
+        "forge",
+        "neoforge"
+      ],
+      "game_versions": [
+        "26.3",
+        "26.2",
+        "26.1.2",
+        "26.1.1",
+        "26.1",
+        "1.21.11",
+        "1.21.10",
+        "1.21.9",
+        "1.21.8",
+        "1.21.7",
+        "1.21.6",
+        "1.21.5",
+        "1.21.4",
+        "1.21.3",
+        "1.21.2",
+        "1.21.1",
+        "1.21",
+        "1.20.6",
+        "1.20.5",
+        "1.20.4",
+        "1.20.3",
+        "1.20.2",
+        "1.20.1",
+        "1.20"
+      ],
+      "file": "Explorify v1.6.6.mod.jar",
+      "url": "https://cdn.modrinth.com/data/HSfsxuTo/versions/oyrAnNG8/Explorify%20v1.6.6.mod.jar",
+      "size": 775401,
+      "hashes": {
+        "sha1": "d7b21626ad33d898536634764cec6c9a8cd55063",
+        "sha512": "d4368c83b493c6fcf9b489cd91b4d1e468d695d099d9df3845a6fcee07ef58dc35074557d0108627b98c9941b1e6a6c0bcdbbcd121e8915514a21b91e9d38530"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "structures",
+      "why": "Common/uncommon tier: small vanilla-styled ruins, camps and shrines.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "repurposed-structures-forge",
+      "title": "Repurposed Structures - Neoforge/Forge",
+      "project_id": "QDNS5oAT",
+      "version_id": "8duZuWci",
+      "version": "7.5.22+1.21.1-neoforge",
+      "channel": "release",
+      "published": "2026-08-20",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/QDNS5oAT/versions/8duZuWci/repurposed_structures-7.5.22%2B1.21.1-neoforge.jar",
+      "size": 8246760,
+      "hashes": {
+        "sha512": "cb6d22bc8d426aefda37ba63dcd0346db342157500e86782ebf142d09cc81970d4745b81b760a639e5734f91d9f3275d6430d4a8c54dfd8256e732ea682e8bd2",
+        "sha1": "a64f6b2d331d5c3a5feefcd18d23f4585a42b097"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Biome-matched variants of vanilla structures; very configurable rarity.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "structory",
+      "title": "Structory",
+      "project_id": "aKCwCJlY",
+      "version_id": "TUbwu7eG",
+      "version": "1.3.17",
+      "channel": "release",
+      "published": "2026-07-08",
+      "loaders": [
+        "fabric",
+        "forge",
+        "neoforge",
+        "quilt"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1",
+        "1.21.10",
+        "1.21.11",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8",
+        "1.21.9",
+        "26.1",
+        "26.1.1",
+        "26.1.2",
+        "26.2"
+      ],
+      "file": "Structory_26.2_v1.3.7.jar",
+      "url": "https://cdn.modrinth.com/data/aKCwCJlY/versions/TUbwu7eG/Structory_26.2_v1.3.7.jar",
+      "size": 1261346,
+      "hashes": {
+        "sha512": "4178a15f32f6ed3d59a7eb2222a8e3f539efd7b54d8ffb790cbf1dfe5c54c6ce6ec33220e148424109c6360c4c6f081b9fbebfe74745fe3c8f05619a06ccb9ec",
+        "sha1": "8a9a1a1b3f74398310420b6fbe2c26ef142bed42"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-Stardust-Labs-License",
+      "group": "structures",
+      "why": "Common tier: atmospheric ruins and minor discoveries.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "towns-and-towers",
+      "title": "Towns and Towers",
+      "project_id": "DjLobEOy",
+      "version_id": "DZxwgj6V",
+      "version": "1.13.11",
+      "channel": "release",
+      "published": "2026-08-15",
+      "loaders": [
+        "fabric",
+        "neoforge",
+        "quilt"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "t_and_t-fabric-neoforge-1.13.11.jar",
+      "url": "https://cdn.modrinth.com/data/DjLobEOy/versions/DZxwgj6V/t_and_t-fabric-neoforge-1.13.11.jar",
+      "size": 3553006,
+      "hashes": {
+        "sha512": "7464b1556250ceee25b4b531e07f65568c98a9d26f97232c1f6016be63ff243891de8283e072981deb968ea7d8b83bdc1579ee842b6b792446f4c26a43af4b62",
+        "sha1": "8f00e36a11568c0b66bbdf5c0e9ee492e511b303"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "CC-BY-NC-SA-4.0",
+      "group": "structures",
+      "why": "Settlements and pillager outposts with regional variety.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "cl223EMc",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "when-dungeons-arise",
+      "title": "When Dungeons Arise",
+      "project_id": "8DfbfASn",
+      "version_id": "XIRJSFQ0",
+      "version": "2.1.68",
+      "channel": "release",
+      "published": "2025-10-26",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "DungeonsArise-1.21.1-2.1.68-release.jar",
+      "url": "https://cdn.modrinth.com/data/8DfbfASn/versions/XIRJSFQ0/DungeonsArise-1.21.1-2.1.68-release.jar",
+      "size": 11842679,
+      "hashes": {
+        "sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c",
+        "sha512": "cf87e06c8a49c9147fac2cf4d218d0e0eb56bb75819ab85f84ed7ae775bb3e259e2ebd5c423696d4d9026f6a69698babf5e7c82c74e480fbbf107359ef30a97e"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "group": "structures",
+      "why": "Rare/legendary tier: huge hand-built dungeons and landmarks.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "yungs-better-desert-temples",
+      "title": "YUNG's Better Desert Temples",
+      "project_id": "XNlO7sBv",
+      "version_id": "GQ9iNWkI",
+      "version": "1.21.1-NeoForge-4.1.5",
+      "channel": "release",
+      "published": "2025-03-07",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/XNlO7sBv/versions/GQ9iNWkI/YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar",
+      "size": 905839,
+      "hashes": {
+        "sha512": "6454c955f75f66104810e967a59ae032ddf1ccc5a854346af6bfba6e44cd456e755cd8feb1e0968be4e9132ea6c5d1cb2126fe5e85d3eb18c8d3ea3c81ffdf9a",
+        "sha1": "90529257dbd92558998c65178294bc7b2fd16a64"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-dungeons",
+      "title": "YUNG's Better Dungeons",
+      "project_id": "o1C1Dkj5",
+      "version_id": "D6aZn0Em",
+      "version": "1.21.1-NeoForge-5.1.4",
+      "channel": "release",
+      "published": "2024-12-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+      "url": "https://cdn.modrinth.com/data/o1C1Dkj5/versions/D6aZn0Em/YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar",
+      "size": 782160,
+      "hashes": {
+        "sha1": "73a660c13063450e555e5e2c015ae24d606b32b4",
+        "sha512": "40513bacd13fa9860abcab507b1fc09dc51649af4b615ce466e0ec361557f02d35e6e44bea1cc17cb4120805f862aad01394eb185f46611e7be63dfd97f272df"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Tier: common/uncommon underground discoveries.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-end-island",
+      "title": "YUNG's Better End Island",
+      "project_id": "2BwBOmBQ",
+      "version_id": "I52NZ1qK",
+      "version": "1.21.1-NeoForge-3.1.2",
+      "channel": "release",
+      "published": "2025-03-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "url": "https://cdn.modrinth.com/data/2BwBOmBQ/versions/I52NZ1qK/YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "size": 398130,
+      "hashes": {
+        "sha1": "832f2c17425debe74a9f267f4136f1a0f0221d19",
+        "sha512": "02923a1a97eb81ec13d69bdc6b7e8b36dfb9e6f1a98adfcf103707ec3afde35831ccd4b210e9b3a9c7662541c38ea593a3d94c12171b4072ea7feafa75c95f96"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Better dragon fight arena.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-jungle-temples",
+      "title": "YUNG's Better Jungle Temples",
+      "project_id": "z9Ve58Ih",
+      "version_id": "P00i2hJn",
+      "version": "1.21.1-NeoForge-3.1.2",
+      "channel": "release",
+      "published": "2024-11-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+      "url": "https://cdn.modrinth.com/data/z9Ve58Ih/versions/P00i2hJn/YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar",
+      "size": 795839,
+      "hashes": {
+        "sha512": "eca4233e874a55886c63d2111b8685d479771d3627bad2922582e65b78c51ba74733dc4624aabf91f2a2178a940a72d9209ae33eef74e34f84f07d62256709d9",
+        "sha1": "d6b7ce6cf351b09cbd23147ff166c35cfdc572e8"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-mineshafts",
+      "title": "YUNG's Better Mineshafts",
+      "project_id": "HjmxVlSr",
+      "version_id": "Go3nbneL",
+      "version": "1.21.1-NeoForge-5.1.1",
+      "channel": "release",
+      "published": "2024-10-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/HjmxVlSr/versions/Go3nbneL/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "size": 493967,
+      "hashes": {
+        "sha512": "8b01b386f53feeaa55f0c62697578b82e00501e45e428b2a68df6bda34efb6a4b3b4e3582abf13fe767ebcb61aef9368186f53c03999958bef38f31c41a7f8b2",
+        "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-nether-fortresses",
+      "title": "YUNG's Better Nether Fortresses",
+      "project_id": "Z2mXHnxP",
+      "version_id": "iopJiJQp",
+      "version": "1.21.1-NeoForge-3.1.5",
+      "channel": "release",
+      "published": "2025-06-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "url": "https://cdn.modrinth.com/data/Z2mXHnxP/versions/iopJiJQp/YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "size": 609639,
+      "hashes": {
+        "sha512": "18b461298d3df1215fa3b4d2c0cb2ef1c7ed76701d8a0bb140277b21923e31abd939f0fd9b400c5bd676d739f1cda31c43b4dc753f9187251542223f3424d336",
+        "sha1": "4061ece2141475227646649046fc14c2da505922"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-ocean-monuments",
+      "title": "YUNG's Better Ocean Monuments",
+      "project_id": "3dT9sgt4",
+      "version_id": "yFjEcj2g",
+      "version": "1.21.1-NeoForge-4.1.2",
+      "channel": "release",
+      "published": "2024-11-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "url": "https://cdn.modrinth.com/data/3dT9sgt4/versions/yFjEcj2g/YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "size": 1025571,
+      "hashes": {
+        "sha1": "fba629defdb92ad99ec4f411895afb6e19555a18",
+        "sha512": "77c864da36f1d2173e6460dc335996893a804954b8a5c274173fc95dfdbf437e80d9dce32f6060306a662fc35322566eecf5dfe24e2d3fab79bf7e0ff9fa4db6"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-strongholds",
+      "title": "YUNG's Better Strongholds",
+      "project_id": "kidLKymU",
+      "version_id": "8U0dIfSM",
+      "version": "1.21.1-NeoForge-5.1.3",
+      "channel": "release",
+      "published": "2025-03-06",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/kidLKymU/versions/8U0dIfSM/YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar",
+      "size": 461244,
+      "hashes": {
+        "sha1": "5d06a5850af7c577612d4592706a8e156bbe1cbf",
+        "sha512": "385d67e07f2c67af5ea387d92d92949d8f671e8f99204457b6396dbe987ac3b14c2bff765df5fcbaa68016604f82a1fc6ec5a69c012ca22ad088d1a7c9bc135d"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-better-witch-huts",
+      "title": "YUNG's Better Witch Huts",
+      "project_id": "t5FRdP87",
+      "version_id": "AvedwcIe",
+      "version": "1.21.1-NeoForge-4.1.1",
+      "channel": "release",
+      "published": "2024-10-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/t5FRdP87/versions/AvedwcIe/YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "size": 174789,
+      "hashes": {
+        "sha512": "9baa8a1f36a2a36efc3df58ab9347fd9f326b551ad78e3f600ed9d68862c619752ac0770804807efb15a46fcb4d9f6e2baf6a11f622d3ebb6c865662f6c7bcfd",
+        "sha1": "bbf6c91f4a2829c58bc024eaaab821986bc93de6"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Vanilla structure overhaul.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-bridges",
+      "title": "YUNG's Bridges",
+      "project_id": "Ht4BfYp6",
+      "version_id": "urkCzBf6",
+      "version": "1.21.1-NeoForge-5.1.1",
+      "channel": "release",
+      "published": "2024-10-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/urkCzBf6/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "size": 136820,
+      "hashes": {
+        "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b",
+        "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Natural river crossings - travel flavour.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "yungs-extras",
+      "title": "YUNG's Extras",
+      "project_id": "ZYgyPyfq",
+      "version_id": "N2EpMhR7",
+      "version": "1.21.1-NeoForge-5.1.1",
+      "channel": "release",
+      "published": "2024-10-14",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1"
+      ],
+      "file": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "url": "https://cdn.modrinth.com/data/ZYgyPyfq/versions/N2EpMhR7/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "size": 198183,
+      "hashes": {
+        "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b",
+        "sha512": "d4ef831a034977abdcaec40a7662adbc37c32cf141c68245250da501f6ada2ce193c5351166fbcf2ffb1c452b60bfca8ac578963332aa4a1b523e43912b8cb8c"
+      },
+      "client_side": "unsupported",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "structures",
+      "why": "Small common discoveries.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ua7DFN59",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "ae2",
+      "title": "Applied Energistics 2",
+      "project_id": "XxWD5pD3",
+      "version_id": "7Ac6mXbf",
+      "version": "19.2.20",
+      "channel": "release",
+      "published": "2026-11-18",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "appliedenergistics2-19.2.20.jar",
+      "url": "https://cdn.modrinth.com/data/XxWD5pD3/versions/7Ac6mXbf/appliedenergistics2-19.2.20.jar",
+      "size": 8242323,
+      "hashes": {
+        "sha1": "6ea9ea3e1c036a1f036173f3f38d4f7badaf1d28",
+        "sha512": "5caab83d4f4134d0161f22307aaf642c6ba89756490a2170986b236efca9ce2b2aa95a1ba82d483227702369bc3cac7aaa4e45fec885059f8b5da4f0d30205b9"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Multiple",
+      "group": "technology",
+      "why": "Digital storage and autocrafting across all tech mods.",
+      "required_by": [
+        "applied-energistics-2-wireless-terminals",
+        "mega",
+        "applied-mekanistics"
+      ],
+      "deps": [
+        {
+          "project_id": "Ck4E7v7R",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "6AQIaxuO",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "tq47Uqpn",
+          "version_id": null,
+          "type": "incompatible"
+        },
+        {
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Eyw0UxEx",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nfn13YXA",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "applied-energistics-2-wireless-terminals",
+      "title": "Applied Energistics 2 Wireless Terminals",
+      "project_id": "pNabrMMw",
+      "version_id": "CxSEpEnO",
+      "version": "19.5.1",
+      "channel": "release",
+      "published": "2026-07-17",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "ae2wtlib-19.5.1.jar",
+      "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/CxSEpEnO/ae2wtlib-19.5.1.jar",
+      "size": 252091,
+      "hashes": {
+        "sha1": "b1bee01393b15f1eb0f46d58862ef99234e1d337",
+        "sha512": "0659d755c6ae91551d30c20b948d5bde0a39b2ae9825b1a4e132f0bbd10e032f18d82b6847261360589f36980ed3597ef6c6947b680523a1de767a9b7953682e"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "technology",
+      "why": "Wireless crafting/pattern terminals (ae2wtlib).",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "XxWD5pD3",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "applied-mekanistics",
+      "title": "Applied Mekanistics",
+      "project_id": "IiATswDj",
+      "version_id": "TpUCzFaW",
+      "version": "1.6.3",
+      "channel": "release",
+      "published": "2025-10-12",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Applied-Mekanistics-1.6.3.jar",
+      "url": "https://cdn.modrinth.com/data/IiATswDj/versions/TpUCzFaW/Applied-Mekanistics-1.6.3.jar",
+      "size": 149709,
+      "hashes": {
+        "sha1": "bec4a47269ec23bca2329742e13409bfde69c5c3",
+        "sha512": "1a693c3c05862805bd88cf1265fd4b9b98b2da4efe986c9ff26efa0e675df14373983ffdf7ededb26f07864b6702fabc299ac1a06fb8fa35de0b341b596dbf9b"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "technology",
+      "why": "Official AE2 storage/autocrafting of Mekanism chemicals.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ce6I4WUE",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "XxWD5pD3",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "cc-tweaked",
+      "title": "CC: Tweaked",
+      "project_id": "gu7yAYhd",
+      "version_id": "2jhB1Ii4",
+      "version": "1.122.0",
+      "channel": "beta",
+      "published": "2026-11-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "cc-tweaked-1.21.1-forge-1.122.0.jar",
+      "url": "https://cdn.modrinth.com/data/gu7yAYhd/versions/2jhB1Ii4/cc-tweaked-1.21.1-forge-1.122.0.jar",
+      "size": 3220921,
+      "hashes": {
+        "sha512": "a111e0afd652843051017149517e8d3b24c17264a8484b50958a9ce108a83991c281e5080c7ae4ad56451b87eb16df52874bfef784ec8b4270d2c57e2d0b84e1",
+        "sha1": "19fcf36b45d5927c8e5785bbf08c8a58fac4ee6a"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-CCPL",
+      "group": "technology",
+      "why": "Programmable computers/turtles; CC tags its stable line as beta.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "create",
+      "title": "Create",
+      "project_id": "LNytGWDc",
+      "version_id": "UjX6dr61",
+      "version": "6.0.10+mc1.21.1",
+      "channel": "release",
+      "published": "2026-04-21",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "create-1.21.1-6.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/LNytGWDc/versions/UjX6dr61/create-1.21.1-6.0.10.jar",
+      "size": 19123767,
+      "hashes": {
+        "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
+        "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-Create-Mod-License",
+      "group": "technology",
+      "why": "Mechanical engineering - early/mid technology backbone.",
+      "required_by": [
+        "create-enchantment-industry",
+        "create-dragons-plus"
+      ],
+      "deps": []
+    },
+    {
+      "slug": "create-enchantment-industry",
+      "title": "Create: Enchantment Industry",
+      "project_id": "JWGBpFUP",
+      "version_id": "qUpvzZ83",
+      "version": "2.4.2",
+      "channel": "release",
+      "published": "2026-06-13",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "create-enchantment-industry-2.4.2.jar",
+      "url": "https://cdn.modrinth.com/data/JWGBpFUP/versions/qUpvzZ83/create-enchantment-industry-2.4.2.jar",
+      "size": 1283517,
+      "hashes": {
+        "sha1": "4ad5c181c805a548e15892500b07c0c0f88f0734",
+        "sha512": "16bd3dcd82159d6793bd9cc24dcb911b90e838c67f781581afea8c6af21f53106ac54de7f2dffe1a8576cf8908e68658538a1c76d3c44691109a24bc60460436"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-or-later",
+      "group": "technology",
+      "why": "Liquid XP + automated enchanting; ties Create to Apotheosis enchanting.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "LNytGWDc",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "dzb1a5WV",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "createaddition",
+      "title": "Create Crafts & Additions",
+      "project_id": "kU1G12Nn",
+      "version_id": "hsjVajlP",
+      "version": "neoforge-1.21.1-1.7.2",
+      "channel": "release",
+      "published": "2026-10-01",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "createaddition-1.7.2.jar",
+      "url": "https://cdn.modrinth.com/data/kU1G12Nn/versions/hsjVajlP/createaddition-1.7.2.jar",
+      "size": 1772844,
+      "hashes": {
+        "sha512": "f3a3ddb5600189da818fc71ea659d17f0d1097c5ad664433eed400b3ecc67d0f9305b348e5b7c5fd872d7a6e51330c7158b3181e77192c576c205a74dd0298ff",
+        "sha1": "8e7158d3144b1ee97e58092fe006675b0e09f6d8"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "technology",
+      "why": "Bridges Create rotational power and FE electricity.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "mega",
+      "title": "MEGA Cells",
+      "project_id": "jjuIRIVr",
+      "version_id": "RPG4EriK",
+      "version": "4.11.0",
+      "channel": "release",
+      "published": "2026-04-19",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "megacells-4.11.0.jar",
+      "url": "https://cdn.modrinth.com/data/jjuIRIVr/versions/RPG4EriK/megacells-4.11.0.jar",
+      "size": 1137276,
+      "hashes": {
+        "sha512": "a4d35f68a5103443930b132684bb30e715d7c92c8cb3b7c6b4151e728ae05b1d5d8d39ea33df0826f6cb5ca94dca5948a0b220119d76f5597d1e3cb881bfeca0",
+        "sha1": "ba6fe208a9172df1c68815fac7b0145f8052853b"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "technology",
+      "why": "MEGA Cells: late-game AE2 storage tiers.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "545hUrw9",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "IJI3QuK8",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "XxWD5pD3",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "SyKS54UY",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "pNabrMMw",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "oMgZ004U",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "IiATswDj",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "yKwUnZCV",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "mekanism",
+      "title": "Mekanism",
+      "project_id": "Ce6I4WUE",
+      "version_id": "5KzzycBT",
+      "version": "10.7.19.85",
+      "channel": "release",
+      "published": "2026-04-10",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Mekanism-1.21.1-10.7.19.85.jar",
+      "url": "https://cdn.modrinth.com/data/Ce6I4WUE/versions/5KzzycBT/Mekanism-1.21.1-10.7.19.85.jar",
+      "size": 11976009,
+      "hashes": {
+        "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
+        "sha512": "66745825330a98f3e4a5ea3a44aff8b00870f715c144edc38dd2f61b4240589600b58ae89efac3b54dbb5aa430b1059dac1a28fd71cac5cc9002bbeb5ba3f22b"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "technology",
+      "why": "Ore multiplication, chemistry, jetpacks/MekaSuit - the mid-game processing pillar.",
+      "required_by": [
+        "mekanism-generators",
+        "applied-mekanistics"
+      ],
+      "deps": [
+        {
+          "project_id": "R2OftAxM",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "EiEOyeoL",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "XxWD5pD3",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "NTi7d3Xc",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "qXkLFB0L",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Xg35A4rS",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "6AQIaxuO",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "gu7yAYhd",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "bcOsQHnC",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Eyw0UxEx",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "mekanism-generators",
+      "title": "Mekanism Generators",
+      "project_id": "OFVYKsAk",
+      "version_id": "a6gl7srE",
+      "version": "10.7.19.85",
+      "channel": "release",
+      "published": "2026-04-10",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "MekanismGenerators-1.21.1-10.7.19.85.jar",
+      "url": "https://cdn.modrinth.com/data/OFVYKsAk/versions/a6gl7srE/MekanismGenerators-1.21.1-10.7.19.85.jar",
+      "size": 1114598,
+      "hashes": {
+        "sha512": "6c3d5b7ea2f67f43c3d169c97de2855a7085f38019cf426e015ccc8ca9bc4f66e96b1cdf4a9afdc92bef7b2e236f16c81415ed5e48736805d5961d29525316d6",
+        "sha1": "44c4d8006597580ff7e4101b5a22f7b426cdcaf6"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "technology",
+      "why": "Mekanism power line up to fission/fusion.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "Ce6I4WUE",
+          "version_id": "5KzzycBT",
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "modern-industrialization",
+      "title": "Modern Industrialization",
+      "project_id": "Gov5Dboq",
+      "version_id": "MGepoMKK",
+      "version": "2.5.13",
+      "channel": "release",
+      "published": "2026-11-16",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Modern-Industrialization-2.5.13.jar",
+      "url": "https://cdn.modrinth.com/data/Gov5Dboq/versions/MGepoMKK/Modern-Industrialization-2.5.13.jar",
+      "size": 7348433,
+      "hashes": {
+        "sha1": "9f38687ec97ddfddfc5fd5307e9f68abdd38a7c3",
+        "sha512": "0ae221fbed5a9eeb8c9ad8e97f953a2dfc7b30cce51eea7081fd88e83cf9cc40e241949ea327417d308f223e87db3f66064ddb94cd92ef7683bcb015a80aa506"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "technology",
+      "why": "Deep multiblock industrial progression (steam -> electric -> fusion).",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "nfn13YXA",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "Ck4E7v7R",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
+    },
+    {
+      "slug": "powah",
+      "title": "Powah!",
+      "project_id": "KZO4S4DO",
+      "version_id": "1prWLuga",
+      "version": "6.2.10-neoforge",
+      "channel": "release",
+      "published": "2026-04-29",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Powah-6.2.10.jar",
+      "url": "https://cdn.modrinth.com/data/KZO4S4DO/versions/1prWLuga/Powah-6.2.10.jar",
+      "size": 2737991,
+      "hashes": {
+        "sha512": "41d616d3d944faaee2cde4d15b3fc35cdd154690169f43d8436e6432df50db90355ca5fef78bd0f7864d97d9a14039280c8fb78d8c3e1d407618c7ccff47d97f",
+        "sha1": "f134ab3e0ace3793abf93129e318eb817898a4e1"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LGPL-3.0-only",
+      "group": "technology",
+      "why": "Mid-game FE generation tiers, simple to learn.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "9s6osm5g",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "Ck4E7v7R",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "incendium",
+      "title": "Incendium Legacy",
+      "project_id": "ZVzW5oNS",
+      "version_id": "7mVvV9Th",
+      "version": "5.4.4",
+      "channel": "alpha",
+      "published": "2024-12-04",
+      "loaders": [
+        "fabric",
+        "forge",
+        "neoforge",
+        "quilt"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4"
+      ],
+      "file": "Incendium_1.21.x_v5.4.4.jar",
+      "url": "https://cdn.modrinth.com/data/ZVzW5oNS/versions/7mVvV9Th/Incendium_1.21.x_v5.4.4.jar",
+      "size": 4267528,
+      "hashes": {
+        "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef",
+        "sha512": "ca897be9059ea691860715dac6c0ccd934720d7d42c8af45b95257e8f91a6c9470f506bfb9ef3c770e6a6c57e58885add2126150a35927848817433fd227ce0e"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-Stardust-Labs-License",
+      "group": "worldgen",
+      "why": "Nether biome + structure overhaul (Stardust Labs). Only 1.21.1 build is tagged alpha upstream; smoke-tested.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "nullscape",
+      "title": "Nullscape",
+      "project_id": "LPjGiSO4",
+      "version_id": "3fv8O3xX",
+      "version": "1.2.14",
+      "channel": "release",
+      "published": "2025-10-07",
+      "loaders": [
+        "fabric",
+        "forge",
+        "neoforge",
+        "quilt"
+      ],
+      "game_versions": [
+        "1.21",
+        "1.21.1",
+        "1.21.10",
+        "1.21.2",
+        "1.21.3",
+        "1.21.4",
+        "1.21.5",
+        "1.21.6",
+        "1.21.7",
+        "1.21.8",
+        "1.21.9"
+      ],
+      "file": "Nullscape_1.21.x_v1.2.14.jar",
+      "url": "https://cdn.modrinth.com/data/LPjGiSO4/versions/3fv8O3xX/Nullscape_1.21.x_v1.2.14.jar",
+      "size": 355748,
+      "hashes": {
+        "sha512": "b35a9dfdc7180ca851aea378ee4687e18b3aae717c16870a7762afc67dc0c77598fb2c4a62cb12d6ed0eacf7c9166520e0a3e7dce20da09817065d27e62c8b44",
+        "sha1": "ae8e1cbd5de6cf6f450bb44cd69cd284dad690dd"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-Stardust-Labs-License",
+      "group": "worldgen",
+      "why": "End terrain overhaul (Stardust Labs) - gives the End exploration value.",
+      "required_by": [],
+      "deps": []
+    },
+    {
+      "slug": "tectonic",
+      "title": "Tectonic",
+      "project_id": "lWDHr9jE",
+      "version_id": "n4iyW7aB",
+      "version": "3.0.28-neoforge-21.1",
+      "channel": "release",
+      "published": "2026-09-11",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "tectonic-3.0.28-neoforge-21.1.jar",
+      "url": "https://cdn.modrinth.com/data/lWDHr9jE/versions/n4iyW7aB/tectonic-3.0.28-neoforge-21.1.jar",
+      "size": 451757,
+      "hashes": {
+        "sha512": "e07b9cb54f078b7bf74c925c5cebd6643f0b4c210b8f94474e68659b69468ece7d61432f70eafe7abaa1dfa798e4638aad297987c121dc127588c2623b7f7a81",
+        "sha1": "db15156eec4320c2997c4dd4948119472de01224"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "MIT",
+      "group": "worldgen",
+      "why": "Terrain shaping: huge mountain ranges, deep valleys, rivers; officially Terralith-compatible.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "XaDC71GB",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    },
+    {
+      "slug": "terralith",
+      "title": "Terralith",
+      "project_id": "8oi3bsk5",
+      "version_id": "IY93YaEe",
+      "version": "2.6.2",
+      "channel": "release",
+      "published": "2026-06-09",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "Terralith_1.21.1_v2.6.2_Neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/8oi3bsk5/versions/IY93YaEe/Terralith_1.21.1_v2.6.2_Neoforge.jar",
+      "size": 2814865,
+      "hashes": {
+        "sha1": "d4a9fe71b841f70edfb4b280f9bf5c58e4a28224",
+        "sha512": "35298f1682567f63dc16658b04cee5498b30819f1c05f9712b4480d7f5eb17059db3b13ab14f81a05fe257149d11ced2cce2030d3727c1747edd8657c53e2a85"
+      },
+      "client_side": "optional",
+      "server_side": "required",
+      "license": "LicenseRef-Stardust-Labs-License",
+      "group": "worldgen",
+      "why": "Biome foundation: ~95 vanilla-block biomes, cave biomes, works with vanilla tooling and Voxy's server-side LOD build.",
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "XaDC71GB",
+          "version_id": null,
+          "type": "required"
+        }
+      ]
+    }
+  ],
+  "shaders": [
+    {
+      "slug": "complementary-reimagined",
+      "version": "r5.9.3",
+      "version_id": "Bqen1mJX",
+      "file": "ComplementaryReimagined_r5.9.3.zip",
+      "url": "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip",
+      "size": 553397,
+      "hashes": {
+        "sha512": "45304b1d7862afdb2177b7e6226fc9c6737911d17a4ad46cc9c519ca4deb935f05072cd337cd8b19a15bb8062b57b54eceec7bdee4cd572d94858e2946d37d85",
+        "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6"
+      },
+      "why": "Default shader. Voxy support since r5.8.1. r5.9.3 chosen over r5.10 (3 days old)."
+    },
+    {
+      "slug": "complementary-unbound",
+      "version": "r5.9.3",
+      "version_id": "B1kyfoUZ",
+      "file": "ComplementaryUnbound_r5.9.3.zip",
+      "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip",
+      "size": 553400,
+      "hashes": {
+        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+        "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c"
+      },
+      "why": "Cinematic profile alternative."
+    }
+  ],
+  "problems": []
+}

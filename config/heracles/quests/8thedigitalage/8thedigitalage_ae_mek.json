@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ae2:pattern_provider"
+      }
+    },
+    "title": "Chemical Network",
+    "description": [
+      "Applied Mekanistics lets AE2 store and autocraft Mekanism chemicals. Pattern providers drive Create and MI too."
+    ],
+    "groups": {
+      "8 - The Digital Age": {
+        "position": [
+          192,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "8thedigitalage_ae_crafting"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "ae2:pattern_provider",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

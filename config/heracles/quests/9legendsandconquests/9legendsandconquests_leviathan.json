@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:heart_of_the_sea"
+      }
+    },
+    "title": "The Leviathan",
+    "description": [
+      "Beneath the Sunken City."
+    ],
+    "groups": {
+      "9 - Legends and Conquests": {
+        "position": [
+          48,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "9legendsandconquests_cataclysm_find"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "cataclysm:kill_leviathan"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart",
+        "count": 1
+      }
+    }
+  }
+}

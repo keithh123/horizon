@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:oak_log"
+      }
+    },
+    "title": "Timber!",
+    "description": [
+      "Gather wood for tools and a first shelter."
+    ],
+    "groups": {
+      "1 - The First Steps": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "1thefirststeps_welcome"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "#minecraft:logs",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:torch",
+        "count": 16
+      }
+    }
+  }
+}

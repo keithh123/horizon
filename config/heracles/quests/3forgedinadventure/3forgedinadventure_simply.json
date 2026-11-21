@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplyswords:iron_longsword"
+      }
+    },
+    "title": "A Blade of Choice",
+    "description": [
+      "Simply Swords weapons are sidegrades with movesets from Better Combat. Try a few - none is strictly best."
+    ],
+    "groups": {
+      "3 - Forged in Adventure": {
+        "position": [
+          48,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "3forgedinadventure_apoth_haven"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "#simplyswords:swords",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}
