@@ -16,7 +16,15 @@ problems = []
 titles = {}
 for qid, q in quests.items():
     d = q["display"]
-    t = d["title"].strip()
+    raw_t = d["title"]
+    try:
+        raw_t = json.loads(raw_t) if isinstance(raw_t, str) else raw_t
+    except ValueError:
+        pass
+    if not isinstance(raw_t, dict) or "text" not in raw_t or not isinstance(d["title"], str):
+        problems.append(f"{qid}: title must be a string holding component JSON (Heracles 2.0.3 FLAT_CODEC); anything else shows as New Quest")
+        raw_t = {"text": str(raw_t)}
+    t = raw_t["text"].strip()
     desc = " ".join(d["description"])
     if re.match(r"(?i)new quest|untitled|todo|placeholder", t) or len(t) < 4:
         problems.append(f"{qid}: placeholder title {t!r}")
@@ -55,11 +63,10 @@ for n in quests:
 DEADLOCK_ADV = {"minecraft:story/root"}
 first = quests.get("1thefirststeps_welcome")
 if first:
-    for t in first["tasks"].values():
-        if t.get("type") == "heracles:advancement" and (DEADLOCK_ADV & set(t["advancements"]) or
-                                                      not all(a.startswith("horizon:") for a in t["advancements"])):
-            problems.append("1thefirststeps_welcome waits on a vanilla/mod advancement the player must earn "
-                            "(story/root = craft a crafting table) but it unlocks the wood quest")
+    # the root quest must complete by something the player can do at once: a Check click. (Advancement tasks only
+    # complete from advancement events / quest init, a tick advancement did not complete it in game; story/root needs wood.)
+    if [t.get("type") for t in first["tasks"].values()] != ["heracles:check"]:
+        problems.append("1thefirststeps_welcome must be a single heracles:check task (verified in game 2026-11-22)")
     if first["dependencies"]:
         problems.append("welcome must have no prerequisites")
     if "1thefirststeps_wood" in quests and quests["1thefirststeps_wood"]["dependencies"] != ["1thefirststeps_welcome"]:

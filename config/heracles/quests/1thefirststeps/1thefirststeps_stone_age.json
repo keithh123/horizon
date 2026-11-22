@@ -6,7 +6,7 @@
         "id": "minecraft:stone_pickaxe"
       }
     },
-    "title": "Stone Age",
+    "title": "{\"text\": \"Stone Age\"}",
     "description": [
       "Mine stone and craft better tools.",
       "",

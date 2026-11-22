@@ -6,6 +6,8 @@ import earth.terrarium.heracles.api.rewards.defaults.ItemReward;
 import earth.terrarium.heracles.api.rewards.defaults.LootTableReward;
 import earth.terrarium.heracles.api.rewards.defaults.XpQuestReward;
 import earth.terrarium.heracles.api.tasks.QuestTask;
+import earth.terrarium.heracles.api.tasks.defaults.CheckTask;
+import earth.terrarium.heracles.common.network.packets.tasks.CheckTaskPacket;
 import earth.terrarium.heracles.api.tasks.client.display.TaskTitleFormatter;
 import earth.terrarium.heracles.client.handlers.ClientQuests;
 import earth.terrarium.heracles.client.ui.quests.AbstractQuestsScreen;
@@ -45,6 +47,7 @@ public final class QuestPopupScreen extends Screen {
     private int left, top, ph, bodyTop, bodyBottom;
     private double scroll;
     private int contentHeight;
+    private final List<Object[]> checkHits = new ArrayList<>();   // {x0, y0, x1, y1, taskId}
 
     public QuestPopupScreen(Screen parent, QuestContent content) {
         super(Component.empty());
@@ -56,7 +59,20 @@ public final class QuestPopupScreen extends Screen {
 
     private Quest quest() { return ClientQuests.getQuest(content.id()).orElse(null); }
 
-    private QuestStatus status() { return ClientQuests.getStatus(content.id()).orElse(content.quests().get(content.id())); }
+    /** The furthest state among the open-time snapshot, Heracles' lazily updated cache and the live progress object. */
+    private QuestStatus status() {
+        QuestStatus best = QuestStatus.LOCKED;
+        QuestStatus snap = content.quests().get(content.id());
+        QuestStatus cached = ClientQuests.getStatus(content.id()).orElse(null);
+        for (QuestStatus s : new QuestStatus[]{snap, cached}) if (s != null && s.ordinal() > best.ordinal()) best = s;
+        Quest q = quest();
+        QuestProgress p = ClientQuests.getProgress(content.id());
+        if (q != null && p != null && p.isComplete()) {
+            QuestStatus d = p.isClaimed(q) ? QuestStatus.COMPLETED_CLAIMED : QuestStatus.COMPLETED;
+            if (d.ordinal() > best.ordinal()) best = d;
+        }
+        return best;
+    }
 
     @Override
     protected void init() {
@@ -88,16 +104,23 @@ public final class QuestPopupScreen extends Screen {
 
     @Override
     public void renderBackground(GuiGraphics g, int mx, int my, float pt) {
-        // the chapter view stays visible, dimmed, behind the popup; no blur pass
-        if (parent != null) parent.render(g, -1, -1, pt);
-        g.fill(0, 0, this.width, this.height, 0xB0000000);
+        // intentionally empty: Screen.render() calls this *after* our panel is drawn, so the dimmed chapter view
+        // is drawn once at the start of render() instead (otherwise it covers the popup)
     }
 
     @Override
     public void render(GuiGraphics g, int mx, int my, float pt) {
-        renderBackground(g, mx, my, pt);
+        if (parent != null) parent.render(g, -1, -1, pt);   // the chapter view stays visible, dimmed, behind the popup
+        g.fill(0, 0, this.width, this.height, 0xB0000000);
+        g.pose().pushPose();
+        g.pose().translate(0, 0, 400);   // above the chapter view's item icons
+        try { renderPanel(g, mx, my, pt); } finally { g.pose().popPose(); }
+    }
+
+    private void renderPanel(GuiGraphics g, int mx, int my, float pt) {
         Quest quest = quest();
         if (quest == null) { onClose(); return; }
+        checkHits.clear();
         QuestStatus st = status();
         QuestProgress progress = ClientQuests.getProgress(content.id());
 
@@ -125,6 +148,14 @@ public final class QuestPopupScreen extends Screen {
             Component title;
             try { title = TaskTitleFormatter.create(task); } catch (RuntimeException e) { title = Component.literal(task.id()); }
             g.drawString(font, (done ? "✔ " : "○ ") + "", left + PAD, y, done ? C_GOOD : C_DIM, false);
+            if (task instanceof CheckTask && !done && st != QuestStatus.LOCKED) {
+                // Heracles' own quest screens show a Check button for manual tasks; the popup must too
+                int bx = left + W - PAD - 52, by = y - 2;
+                boolean hot = mx >= bx && mx < bx + 48 && my >= by && my < by + 12 && my >= bodyTop && my < bodyBottom;
+                g.fill(bx, by, bx + 48, by + 12, hot ? 0xFF6B4E1F : 0xFF3B2A14);
+                g.drawCenteredString(font, "Check", bx + 24, by + 2, C_GOLD);
+                checkHits.add(new Object[]{bx, by, bx + 48, by + 12, task.id()});
+            }
             for (FormattedCharSequence line : font.split(title, W - 2 * PAD - 14)) {
                 g.drawString(font, line, left + PAD + 12, y, done ? C_GOOD : C_TEXT, false);
                 y += LINE;
@@ -207,6 +238,19 @@ public final class QuestPopupScreen extends Screen {
             case COMPLETED -> "gui.horizon_questbook.complete";
             case COMPLETED_CLAIMED -> "gui.horizon_questbook.done";
         });
+    }
+
+    @Override
+    public boolean mouseClicked(double mx, double my, int button) {
+        if (button == 0 && my >= bodyTop && my < bodyBottom) {
+            for (Object[] h : checkHits) {
+                if (mx >= (int) h[0] && mx < (int) h[2] && my >= (int) h[1] && my < (int) h[3]) {
+                    NetworkHandler.CHANNEL.sendToServer(new CheckTaskPacket(content.id(), (String) h[4]));
+                    return true;
+                }
+            }
+        }
+        return super.mouseClicked(mx, my, button);
     }
 
     @Override

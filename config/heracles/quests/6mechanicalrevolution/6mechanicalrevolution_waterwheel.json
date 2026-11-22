@@ -6,7 +6,7 @@
         "id": "create:water_wheel"
       }
     },
-    "title": "Water Power",
+    "title": "{\"text\": \"Water Power\"}",
     "description": [
       "Place a water wheel in flowing water to generate stress units.",
       "",

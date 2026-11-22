@@ -6,7 +6,7 @@
         "id": "minecraft:mossy_cobblestone"
       }
     },
-    "title": "Something Old",
+    "title": "{\"text\": \"Something Old\"}",
     "description": [
       "Find any roadside ruin, camp, shrine or watchtower. Small sites are where &aWayfarer Shards&r come from.",
       "Completes when you step inside one (also if you already have).",

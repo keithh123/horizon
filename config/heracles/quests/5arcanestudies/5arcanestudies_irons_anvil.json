@@ -6,7 +6,7 @@
         "id": "irons_spellbooks:arcane_anvil"
       }
     },
-    "title": "Arcane Anvil",
+    "title": "{\"text\": \"Arcane Anvil\"}",
     "description": [
       "Upgrade scrolls and imbue weapons.",
       "",

@@ -6,7 +6,7 @@
         "id": "minecraft:sculk_catalyst"
       }
     },
-    "title": "Silence",
+    "title": "{\"text\": \"Silence\"}",
     "description": [
       "Defeat a Warden. The first defeat counts for a heart; summoned Wardens after that do not.",
       "",

@@ -6,7 +6,7 @@
         "id": "minecraft:filled_map"
       }
     },
-    "title": "Reading the Atlas",
+    "title": "{\"text\": \"Reading the Atlas\"}",
     "description": [
       "Every structure in this world belongs to an expedition family with its own rewards. Each quest in this chapter",
       "explains one family: what it is, how to prepare, what it gives, and why it is worth coming back.",

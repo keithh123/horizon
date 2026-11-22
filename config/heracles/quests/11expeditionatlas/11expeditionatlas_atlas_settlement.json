@@ -6,7 +6,7 @@
         "id": "minecraft:bell"
       }
     },
-    "title": "Settlements",
+    "title": "{\"text\": \"Settlements\"}",
     "description": [
       "&7Stage: early&r",
       "Villages, taverns and towns: safe, social, full of supplies. Cartographers sell and stash the maps that point to everything else.",

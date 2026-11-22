@@ -108,3 +108,19 @@ quest popup/inventory button/centring/minimap, claim flow and the early chain th
 Fresh Animations add-ons, the Horizon cues, the Photon/Solas/Noble/Bliss presets (only generated and checked for Voxy
 programs), Immersive Portals rendering (fresh chunks, Nether round trip, End, frame times), and Clavis (success/cancel/Lootr
 reopen, cursor, Moonlight). Treat those as untested until someone plays the build.
+
+
+## 0.3.1 client pass (2026-11-22)
+
+Fresh Prism import of `ProjectHorizon-0.3.1.mrpack` (185 mod files, Clavis `.jar.disabled`) and a new world.
+
+Passed: J, right-clicking the Heracles quest book, and the inventory button all open the same screen; chapters open centred;
+no minimap; one click opens the popup (description, requirements, prerequisites, rewards, Claim); X and Esc close it;
+first quest (Check) -> claim -> Timber! unlocks -> 16 logs complete it -> claim; progress and claims survive save/quit;
+relog does not repeat the starter-book gift (2 books after relog = 1 gift + 1 quest reward); a copied 0.3.0 world shows its
+completed quest ("Spirits and Chalk") as complete and claimable; Photon v1.4 loads with Voxy patches applied and Voxy
+terrain visible at the horizon; the Big Crown hat renders on the player.
+
+Not tested: Solas, Noble, Bliss, Complementary Unbound and any shader in the End; Fresh Animations Details/Emissive/Quivers
+visuals; the Horizon cue sounds (no audio observation); Immersive Portals client (not enabled); Clavis (not enabled);
+Moonlight; hat rarity/Curios slot behaviour; multiplayer.

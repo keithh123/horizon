@@ -6,7 +6,7 @@
         "id": "minecraft:oak_log"
       }
     },
-    "title": "Timber!",
+    "title": "{\"text\": \"Timber!\"}",
     "description": [
       "Gather wood for tools and a first shelter.",
       "",

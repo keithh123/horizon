@@ -26,10 +26,10 @@
 
 | # | Issue | Workaround |
 |---|---|---|
-| 15 | The quest popup, inventory button, one-click open, per-open centring and minimap-off are compiled and their mixin targets were checked against Heracles 2.0.3 bytecode, but have **not been run in a client**. | If the quest screen misbehaves, remove `horizon_questbook-*.jar`; Heracles' own screens return. |
+| 15 | Quest popup, inventory button, book right-click, J, centring, one-click details, X and Esc were played in game on 2026-11-22. Not exercised: popups for selectable/loot-table rewards, editor mode (it keeps Heracles screens), multiplayer. | If the quest screen misbehaves, remove `horizon_questbook-*.jar`; Heracles' own screens return. |
 | 16 | Clavis is disabled by default: its lockpicking screen moves the OS cursor with GLFW and the stuck-cursor bug after lockpicking could not be reproduced or fixed here. Moonlight was not available. | Rename `Clavis-*.jar.disabled` to `.jar` to try it (success, cancel and Lootr reopen untested). |
 | 17 | Immersive Portals 6.0.7 (native NeoForge) is not shipped. Server: loads, 20 TPS, 5.5 ms/tick vs 5.7 baseline with the three dimensions force-loaded. Client (Voxy/Iris/Sodium, fresh chunks, Nether round trip, End, frame times): untested. | Do not add it to a pack with Voxy until a client run says otherwise. |
 | 18 | Bliss Shaders has no Voxy programs: with it, distant terrain is unshaded or missing. Photon, Solas and Noble have them. All presets are generated but not looked at in game. | Use Complementary or Photon (Balanced), Unbound or Solas (Cinematic). |
 | 19 | FA Objects, Spiders, Creepers and Classic Horses are held back (not checked against Spider Overhaul, Lootr, Create). | docs/RESOURCE_PACKS.md. |
 | 20 | Boss wind-ups: no change beyond Better Combat debug boxes off. Each boss mod owns its animation; Horizon cannot add a telegraph without per-boss work. | - |
-| 21 | Existing worlds: the first quest keeps its task type, so saved progress should carry over, but a world where it was already complete was not loaded to confirm. | Back up `saves/` before updating. |
+| 21 | Existing worlds: the first quest changed from an advancement task to a Check task (same boolean storage). A copied 0.3.0 world kept its completed quest, but one with the old first quest already completed was not available to check. | Back up `saves/` before updating. |

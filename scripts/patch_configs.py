@@ -69,6 +69,10 @@ EXPANSION_EDITS = {
         ('"blockPlaceEffect": true', '"blockPlaceEffect": false', "Particle Interactions owns block place/break particles."),
         ('"runDust": true', '"runDust": false', "Footprint Particle owns running/snow dust; no doubled footstep puffs."),
     ],
+    "simplehats.json5": [
+        ('"enableMobLoot": true', '"enableMobLoot": false', "Hats are curated quest rewards (rare ones) and craftable from scraps; random mob drops would bypass the loot budget."),
+        ('"enableChestLoot": true', '"enableChestLoot": false', "Same: no hat bags in structure chests, Horizon's calibrated chest budgets stay exact."),
+    ],
     "bettercombat/client.json5": [
         ('"isDebugOBBEnabled": true', '"isDebugOBBEnabled": false', "Crisp hits: no debug hit-box outlines drawn around targets."),
     ],

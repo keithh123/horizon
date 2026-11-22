@@ -6,7 +6,7 @@
         "id": "artifacts:flippers"
       }
     },
-    "title": "Curious Trinket",
+    "title": "{\"text\": \"Curious Trinket\"}",
     "description": [
       "Artifacts and Relics appear in chests. Equip them in Curios slots (inventory button).",
       "Duplicates salvage into shards and gem dust.",

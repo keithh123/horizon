@@ -6,7 +6,7 @@
         "id": "mekanismgenerators:fusion_reactor_controller"
       }
     },
-    "title": "Star in a Jar",
+    "title": "{\"text\": \"Star in a Jar\"}",
     "description": [
       "Build a Mekanism fusion reactor (needs a Starforged Heart).",
       "&7(Item task: the controller. Form the reactor and ignite it to make it useful.)",

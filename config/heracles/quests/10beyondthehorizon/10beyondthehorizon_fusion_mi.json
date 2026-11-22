@@ -6,7 +6,7 @@
         "id": "modern_industrialization:fusion_reactor"
       }
     },
-    "title": "Plasma Engineering",
+    "title": "{\"text\": \"Plasma Engineering\"}",
     "description": [
       "Build MI's fusion reactor (needs a Starforged Heart).",
       "&7(Item task: the controller block.)",

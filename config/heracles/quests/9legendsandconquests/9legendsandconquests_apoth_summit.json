@@ -6,7 +6,7 @@
         "id": "minecraft:nether_star"
       }
     },
-    "title": "World Tier: Summit",
+    "title": "{\"text\": \"World Tier: Summit\"}",
     "description": [
       "Summit: mythic affixes and the deadliest bosses.",
       "",

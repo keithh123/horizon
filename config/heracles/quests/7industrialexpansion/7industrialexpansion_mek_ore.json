@@ -6,7 +6,7 @@
         "id": "mekanism:enrichment_chamber"
       }
     },
-    "title": "Ore Multiplication",
+    "title": "{\"text\": \"Ore Multiplication\"}",
     "description": [
       "Double, then triple, then quintuple your ores.",
       "Completes on Mekanism's own advancement for the enrichment chamber.",

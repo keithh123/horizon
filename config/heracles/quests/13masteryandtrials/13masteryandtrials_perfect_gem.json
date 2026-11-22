@@ -6,7 +6,7 @@
         "id": "apotheosis:gem_cutting_table"
       }
     },
-    "title": "Gem Cutter's Bench",
+    "title": "{\"text\": \"Gem Cutter's Bench\"}",
     "description": [
       "Craft a gem cutting table, then cut gems up toward Perfect purity. Gem dust comes from salvaging and shards.",
       "&7(Item task: the table itself. Apotheosis has no advancement for gem purity.)",

@@ -6,6 +6,7 @@
   "client": [
     "QuestClickMixin",
     "QuestsScreenInitMixin",
+    "OffsetBoundsMixin",
     "ModScreensMixin"
   ],
   "injectors": {

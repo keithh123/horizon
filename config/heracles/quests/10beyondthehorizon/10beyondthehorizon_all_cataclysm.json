@@ -6,7 +6,7 @@
         "id": "minecraft:dragon_egg"
       }
     },
-    "title": "Cataclysm Conqueror",
+    "title": "{\"text\": \"Cataclysm Conqueror\"}",
     "description": [
       "Defeat every Cataclysm boss.",
       "",

@@ -80,10 +80,10 @@
       "replaces_slug": null,
       "variant": null,
       "upstream": "ports/horizonquestbook/src (written for Project Horizon)",
-      "size": 17270,
+      "size": 19246,
       "hashes": {
-        "sha1": "c8b4f4367f7de2d57397a12aeb71bdc0548b9791",
-        "sha512": "92e59e1f01a61029ca7386732db0161e839fc02446ea9de3a1bdc42684545ed16ed8b891f1ba1bdeb573940c00a5508b6d65d9a307b8262a4a74f83237a28988"
+        "sha1": "6800909397c2a5ccd7d7cd6be500d6e321820452",
+        "sha512": "5cde49c07ff080ea084cc2b7f425ea3e1924a8569318327575b219ff957826264898aae08ee2672bf62c0fbd7e04928d1b1ca6759dc071873a6dd01a03498c21"
       }
     },
     {

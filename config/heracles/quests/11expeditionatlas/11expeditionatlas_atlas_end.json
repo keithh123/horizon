@@ -6,7 +6,7 @@
         "id": "minecraft:end_crystal"
       }
     },
-    "title": "End Expeditions",
+    "title": "{\"text\": \"End Expeditions\"}",
     "description": [
       "&7Stage: late&r",
       "Nullscape's End: end cities, End castles and lighthouses, wrecks drifting over the void.",

@@ -6,7 +6,7 @@
         "id": "minecraft:dragon_head"
       }
     },
-    "title": "Free the End",
+    "title": "{\"text\": \"Free the End\"}",
     "description": [
       "The dragon is a beginning. Its first defeat gives a Starforged Heart and a trophy;",
       "re-summoned dragons give their usual drops only.",

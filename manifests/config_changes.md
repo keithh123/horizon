@@ -5,6 +5,8 @@
 | `effectual.json` | `"lanternImprovements": false` | Swinging Lanterns owns lantern behaviour. |
 | `effectual.json` | `"blockPlaceEffect": false` | Particle Interactions owns block place/break particles. |
 | `effectual.json` | `"runDust": false` | Footprint Particle owns running/snow dust; no doubled footstep puffs. |
+| `simplehats.json5` | `"enableMobLoot": false` | Hats are curated quest rewards (rare ones) and craftable from scraps; random mob drops would bypass the loot budget. |
+| `simplehats.json5` | `"enableChestLoot": false` | Same: no hat bags in structure chests, Horizon's calibrated chest budgets stay exact. |
 | `bettercombat/client.json5` | `"isDebugOBBEnabled": false` | Crisp hits: no debug hit-box outlines drawn around targets. |
 | `footprintparticle.json` | `"waterSplashLevel": "DISABLED"` | Subtle Effects owns water splashes; no second splash on entering water. |
 | `particlerain/config.json` | `"rainVolume": 0.0` | Cool Rain owns rain audio (Particle Rain stays visual); avoids three layered rain loops. |

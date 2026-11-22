@@ -6,7 +6,7 @@
         "id": "waystones:waystone"
       }
     },
-    "title": "Ley Lines",
+    "title": "{\"text\": \"Ley Lines\"}",
     "description": [
       "Waystones stand in villages and some ruins. Right-click one to activate it - it becomes a fast-travel destination.",
       "A personal &eWarp Stone&r costs a Wayfarer Shard; &eWarp Scrolls&r turn up in village chests.",

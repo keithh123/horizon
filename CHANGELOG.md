@@ -2,13 +2,28 @@
 
 ## 0.3.1 (2026-11-22): quest book, hats, resource pack
 
-Honest status first: this pass was built and statically checked, and the headless server was booted and measured, but
-**no client could be launched** (the desktop session had no display: GLFW "Failed to find a primary monitor"). Everything
-that needs eyes or a mouse is listed as untested in docs/VALIDATION_REPORT.md.
+Built and statically checked, headless-server tested, then played in a fresh Prism import (see the client pass below and
+docs/VALIDATION_REPORT.md for what was and was not exercised).
+
+## 0.3.1 client pass (2026-11-22, same day)
+
+Played in a fresh Prism import of the .mrpack with a new world. Bugs found and fixed:
+
+- Quest titles were all "New Quest" in game: Heracles reads `title` with `ComponentSerialization.FLAT_CODEC`, a string that
+  holds component JSON, and silently falls back to "New Quest" for anything else. gen_quests now writes
+  `"title": "{\"text\": ...}"`; audit_quests checks it. This was the real source of the placeholder names.
+- J did nothing: Punchy Moves binds its Hello B emote to J (and H, K, L collide with other binds). Its four emote keys ship
+  unbound in options.txt.
+- First quest: an advancement task (tick or story/root) never completed it in game. It is a Check task again (same boolean
+  storage, so older progress reads the same) and the popup now has a Check button for manual tasks.
+- Chapter centring pushed the tree to the bottom-right (Heracles centre formula); fixed by a mixin. The tutorial screen no
+  longer interrupts (heracles_options.json ships showTutorial false, minimap off).
+- Popup: drawn under its own dim layer and under item icons; status label lagged behind progress. Fixed.
+- Simple Hats random mob/chest drops are off (curated rewards only).
 
 - Quests: 143 quests kept (ids unchanged). "Timber!" was unreachable on a fresh world: the first quest waited on
-  `minecraft:story/root` ("craft a crafting table"), which needs the wood Timber! asks for. It now completes on a
-  Horizon `minecraft:tick` advancement (same task type, so progress saved by 0.3.0 should stay valid). Fixed: Hearty Meals
+  `minecraft:story/root` ("craft a crafting table"), which needs the wood Timber! asks for. It is now a
+  Check task you click in the popup (boolean storage like the old advancement task, so 0.3.0 progress reads the same). Fixed: Hearty Meals
   (cooking pot) now follows Iron Will, not Sleep; Flawless Ambition pointed at the Pinnacle advancement (a duplicate of
   another quest) and is now Gem Cutter's Bench (craft the table); five titles that duplicated Hall of Legends entries
   renamed. Every quest now ends with an "Objective" and a "Why it matters" line. `scripts/audit_quests.py` checks

@@ -6,7 +6,7 @@
         "id": "farmersdelight:cooking_pot"
       }
     },
-    "title": "Hearty Meals",
+    "title": "{\"text\": \"Hearty Meals\"}",
     "description": [
       "Farmer's Delight meals give long buffs - the cheapest expedition preparation there is. AppleSkin shows saturation on hover.",
       "&7(Introductory item task: craft or hold a cooking pot.)",

@@ -6,7 +6,7 @@
         "id": "minecraft:bell"
       }
     },
-    "title": "Civilisation",
+    "title": "{\"text\": \"Civilisation\"}",
     "description": [
       "Find a village and trade. ChoiceTheorem's overhaul gives every biome its own style.",
       "Cartographer chests often hold a &6Surveyor's Chart&r pointing at a great landmark.",

@@ -6,7 +6,7 @@
         "id": "minecraft:glowstone"
       }
     },
-    "title": "Above the Clouds",
+    "title": "{\"text\": \"Above the Clouds\"}",
     "description": [
       "Build a glowstone portal to the Aether. Three dungeons, three bosses.",
       "",

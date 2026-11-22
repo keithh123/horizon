@@ -6,7 +6,7 @@
         "id": "create:belt_connector"
       }
     },
-    "title": "Conveyor",
+    "title": "{\"text\": \"Conveyor\"}",
     "description": [
       "Belts move items and power. Your first production line.",
       "",

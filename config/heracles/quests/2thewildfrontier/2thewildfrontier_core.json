@@ -6,7 +6,7 @@
         "id": "horizon:ancient_core"
       }
     },
-    "title": "Ancient Power",
+    "title": "{\"text\": \"Ancient Power\"}",
     "description": [
       "Ancient Cores come from temple and landmark treasure rooms and from a mini-boss's first defeat.",
       "They build the ME controller and socketing sigils. &7(Item task.)",

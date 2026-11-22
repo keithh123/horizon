@@ -6,7 +6,7 @@
         "id": "minecraft:red_bed"
       }
     },
-    "title": "A Place to Rest",
+    "title": "{\"text\": \"A Place to Rest\"}",
     "description": [
       "Sleep through your first night. Bosses and dungeons do not rest - you should.",
       "",

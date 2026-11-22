@@ -6,7 +6,7 @@
         "id": "create:brass_ingot"
       }
     },
-    "title": "Brass Age",
+    "title": "{\"text\": \"Brass Age\"}",
     "description": [
       "Brass unlocks logistics, mechanical crafters and arms.",
       "",

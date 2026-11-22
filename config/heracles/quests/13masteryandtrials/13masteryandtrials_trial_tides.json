@@ -6,7 +6,7 @@
         "id": "gateways:gate_pearl"
       }
     },
-    "title": "Trial of the Tides",
+    "title": "{\"text\": \"Trial of the Tides\"}",
     "description": [
       "A Gateways to Eternity trial: 3 fixed waves, fixed enemy counts, a visible timer.",
       "Cost: 1x ancient core, 4x tidebound doubloon, 2x prismarine crystals (+ ender pearl).",

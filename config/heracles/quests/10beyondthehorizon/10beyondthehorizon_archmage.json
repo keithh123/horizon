@@ -6,7 +6,7 @@
         "id": "ars_nouveau:archmage_spell_book"
       }
     },
-    "title": "Archmage",
+    "title": "{\"text\": \"Archmage\"}",
     "description": [
       "Master Ars Nouveau.",
       "",

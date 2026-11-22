@@ -6,7 +6,7 @@
         "id": "irons_spellbooks:inscription_table"
       }
     },
-    "title": "Inscription",
+    "title": "{\"text\": \"Inscription\"}",
     "description": [
       "Iron's Spells is combat magic: scrolls found in loot go into a spellbook at the inscription table.",
       "",

@@ -6,7 +6,7 @@
         "id": "minecraft:spawner"
       }
     },
-    "title": "Underground Dungeons",
+    "title": "{\"text\": \"Underground Dungeons\"}",
     "description": [
       "&7Stage: early-mid&r",
       "Spawner rooms, mineshafts, crypts and strongholds. Dark, cramped, spawner-driven.",

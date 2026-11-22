@@ -6,7 +6,7 @@
         "id": "createaddition:electric_motor"
       }
     },
-    "title": "Rotation to Power",
+    "title": "{\"text\": \"Rotation to Power\"}",
     "description": [
       "Create Crafts & Additions converts rotation to FE and back - the bridge to every other tech mod.",
       "&7(Item task: craft an alternator. Crafts & Additions has no advancements to prove it is running.)",

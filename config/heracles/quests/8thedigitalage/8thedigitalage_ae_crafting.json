@@ -6,7 +6,7 @@
         "id": "ae2:crafting_unit"
       }
     },
-    "title": "Autocrafting",
+    "title": "{\"text\": \"Autocrafting\"}",
     "description": [
       "Build a crafting CPU and encode patterns.",
       "",

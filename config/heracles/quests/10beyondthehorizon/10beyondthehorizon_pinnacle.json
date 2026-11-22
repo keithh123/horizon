@@ -6,7 +6,7 @@
         "id": "minecraft:beacon"
       }
     },
-    "title": "World Tier: Pinnacle",
+    "title": "{\"text\": \"World Tier: Pinnacle\"}",
     "description": [
       "The highest world tier. Everything is lethal; everything is worth it.",
       "",

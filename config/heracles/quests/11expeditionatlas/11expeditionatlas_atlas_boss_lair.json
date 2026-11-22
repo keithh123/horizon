@@ -6,7 +6,7 @@
         "id": "minecraft:wither_skeleton_skull"
       }
     },
-    "title": "Boss Lairs",
+    "title": "{\"text\": \"Boss Lairs\"}",
     "description": [
       "&7Stage: late&r",
       "Cataclysm's arenas, Mowzie's monasteries, Aether dungeon reward rooms. The boss is the point; chests are the bonus.",

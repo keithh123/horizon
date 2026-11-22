@@ -6,7 +6,7 @@
         "id": "minecraft:redstone_block"
       }
     },
-    "title": "Shut Down the Harbinger",
+    "title": "{\"text\": \"Shut Down the Harbinger\"}",
     "description": [
       "Deep in the Ancient Factory.",
       "",

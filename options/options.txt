@@ -38,3 +38,7 @@ key_gui.xaero_new_waypoint:key.keyboard.unknown
 key_gui.xaero_enlarge_map:key.keyboard.unknown
 key_gui.xaero_open_settings:key.keyboard.unknown
 key_key.apotheosis.toggle_radial_mining:key.keyboard.unknown
+key_key.punchy_moves.emote.hello_b:key.keyboard.unknown
+key_key.punchy_moves.emote.hello:key.keyboard.unknown
+key_key.punchy_moves.emote.cool_emote:key.keyboard.unknown
+key_key.punchy_moves.emote.shuuba_dance:key.keyboard.unknown

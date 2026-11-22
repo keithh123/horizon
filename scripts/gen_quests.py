@@ -50,9 +50,9 @@ C["1 - The First Steps"] = [
       "This book is a guide, not a checklist: every chapter is optional. Follow what interests you.",
       "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls).",
       "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it.",
-      "&7(Completes by itself on joining. Before 0.3.1 it waited on the vanilla crafting-table advancement, which",
-      "needs wood - the very thing the next quest asks for - so Timber! could never unlock.)"],
-     [], [("adv", "horizon:welcome")], [("item", "minecraft:bread", 8), ("item", "heracles:quest_book", 1)]),
+      "&7(Click Check below. Before 0.3.1 this waited on the vanilla crafting-table advancement, which needs wood -",
+      "the very thing the next quest asks for - so Timber! could never unlock.)"],
+     [], [("check",)], [("item", "minecraft:bread", 8), ("item", "heracles:quest_book", 1)]),
     ("wood", "Timber!", "minecraft:oak_log", ["Gather wood for tools and a first shelter."], ["welcome"],
      [("item", "#minecraft:logs", 16)], [("item", "minecraft:torch", 16)]),
     ("stone_age", "Stone Age", "minecraft:stone_pickaxe", ["Mine stone and craft better tools."], ["wood"],
@@ -352,7 +352,7 @@ C["13 - Mastery and Trials"] = mastery
 # ---------------------------------------------------------------- objective + why-it-matters lines
 # (objective, why). Every quest gets both; the generated chapters (atlas, legends, trials) use templates below.
 GUIDE = {
- "welcome": ("Nothing to do: it completes as you join. Claim the reward.", "It opens the whole chain, and its reward is the physical Quest Book (right-click, or the button under your inventory)."),
+ "welcome": ("Click Check, then claim the reward.", "It opens the whole chain, and its reward is the physical Quest Book (right-click, or the button under your inventory)."),
  "wood": ("Collect 16 logs of any kind.", "Planks, sticks and a crafting table are the base of every tool you will make."),
  "stone_age": ("Mine stone with a wooden pickaxe.", "Stone tools and a furnace are the gate to iron."),
  "iron": ("Smelt an iron ingot in a furnace.", "Iron makes buckets, shears, armour and most machine parts."),
@@ -557,7 +557,7 @@ def main():
             assert title.strip() and not title.lower().startswith("new quest"), qid
             quest = {
                 "display": {"icon": {"type": "heracles:item", "item": {"id": check("item", icon)}},
-                            "title": title, "description": desc + ["", "&aObjective:&r " + obj, "&bWhy it matters:&r " + why], "groups": {chapter: {"position": pos[qid]}}},
+                            "title": json.dumps({"text": title}), "description": desc + ["", "&aObjective:&r " + obj, "&bWhy it matters:&r " + why], "groups": {chapter: {"position": pos[qid]}}},
                 "settings": {"hidden": "LOCKED", "unlockNotification": True},
                 "dependencies": [f"{folder}_{d}" for d in deps],
                 "tasks": {f"t{i}": task(t) for i, t in enumerate(tasks)},

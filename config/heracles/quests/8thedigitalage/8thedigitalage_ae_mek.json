@@ -6,7 +6,7 @@
         "id": "appmek:chemical_storage_cell_1k"
       }
     },
-    "title": "Chemical Storage",
+    "title": "{\"text\": \"Chemical Storage\"}",
     "description": [
       "Applied Mekanistics lets AE2 store Mekanism chemicals and autocraft with them.",
       "&7(Item task: craft a 1k chemical storage cell. Applied Mekanistics has no advancements, so the quest cannot",

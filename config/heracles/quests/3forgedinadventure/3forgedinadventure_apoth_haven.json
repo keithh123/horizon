@@ -6,7 +6,7 @@
         "id": "minecraft:iron_sword"
       }
     },
-    "title": "World Tier: Haven",
+    "title": "{\"text\": \"World Tier: Haven\"}",
     "description": [
       "Apotheosis loot is tiered. Your world tier rises as you progress, unlocking rarer affixes.",
       "",

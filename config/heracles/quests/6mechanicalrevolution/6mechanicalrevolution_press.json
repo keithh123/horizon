@@ -6,7 +6,7 @@
         "id": "create:mechanical_press"
       }
     },
-    "title": "Mechanical Press",
+    "title": "{\"text\": \"Mechanical Press\"}",
     "description": [
       "Press plates automatically. Read Ponder scenes with &eW&r on any Create block.",
       "",

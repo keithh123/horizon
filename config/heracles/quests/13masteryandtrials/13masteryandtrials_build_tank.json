@@ -6,7 +6,7 @@
         "id": "minecraft:shield"
       }
     },
-    "title": "Bulwark",
+    "title": "{\"text\": \"Bulwark\"}",
     "description": [
       "&eDefensive sustain:&r shields, armour/protection affixes, life steal and regeneration.",
       "Look for &eGuardian&r (Echoing Fossils) and &eLunar&r gems, Relics with healing, Farmer's Delight buffs.",

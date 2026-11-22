@@ -6,7 +6,7 @@
         "id": "minecraft:diamond"
       }
     },
-    "title": "Diamonds!",
+    "title": "{\"text\": \"Diamonds!\"}",
     "description": [
       "Deep caves under Terralith's mountains hide diamonds - and danger.",
       "",

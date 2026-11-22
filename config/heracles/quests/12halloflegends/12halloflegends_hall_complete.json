@@ -6,7 +6,7 @@
         "id": "minecraft:lodestone"
       }
     },
-    "title": "Curator of Legends",
+    "title": "{\"text\": \"Curator of Legends\"}",
     "description": [
       "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet.",
       "",

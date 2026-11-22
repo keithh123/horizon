@@ -6,7 +6,7 @@
         "id": "sophisticatedbackpacks:backpack"
       }
     },
-    "title": "Pack Mule",
+    "title": "{\"text\": \"Pack Mule\"}",
     "description": [
       "A backpack makes long expeditions possible.",
       "&7(Introductory item task.)",

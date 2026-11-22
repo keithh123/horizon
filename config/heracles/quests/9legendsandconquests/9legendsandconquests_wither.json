@@ -6,7 +6,7 @@
         "id": "minecraft:wither_skeleton_skull"
       }
     },
-    "title": "Wither Storm Lite",
+    "title": "{\"text\": \"Wither Storm Lite\"}",
     "description": [
       "Summon and defeat the Wither. The first defeat (per player) gives a Starforged Heart and a trophy;",
       "later Withers drop their nether star only, so a Wither farm cannot mint relics.",

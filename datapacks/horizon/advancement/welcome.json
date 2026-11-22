@@ -1,7 +1,0 @@
-{
-  "criteria": {
-    "joined": {
-      "trigger": "minecraft:tick"
-    }
-  }
-}

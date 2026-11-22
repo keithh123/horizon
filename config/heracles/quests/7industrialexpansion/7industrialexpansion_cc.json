@@ -6,7 +6,7 @@
         "id": "computercraft:computer_normal"
       }
     },
-    "title": "Programmable World",
+    "title": "{\"text\": \"Programmable World\"}",
     "description": [
       "CC: Tweaked computers and turtles can script anything.",
       "&7(Item task.)",

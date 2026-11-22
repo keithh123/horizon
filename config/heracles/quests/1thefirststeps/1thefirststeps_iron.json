@@ -6,7 +6,7 @@
         "id": "minecraft:iron_ingot"
       }
     },
-    "title": "Iron Will",
+    "title": "{\"text\": \"Iron Will\"}",
     "description": [
       "Smelt iron. Most of the pack's machines start here.",
       "",

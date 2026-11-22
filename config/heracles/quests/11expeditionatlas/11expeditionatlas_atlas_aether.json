@@ -6,7 +6,7 @@
         "id": "minecraft:glowstone"
       }
     },
-    "title": "The Aether",
+    "title": "{\"text\": \"The Aether\"}",
     "description": [
       "&7Stage: mid&r",
       "Floating islands and three dungeons (Slider, Valkyrie Queen, Sun Spirit). Falling is the danger; the gear line is unique.",

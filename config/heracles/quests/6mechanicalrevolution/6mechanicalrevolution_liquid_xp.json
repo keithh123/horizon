@@ -6,7 +6,7 @@
         "id": "create_enchantment_industry:printer"
       }
     },
-    "title": "Liquid Experience",
+    "title": "{\"text\": \"Liquid Experience\"}",
     "description": [
       "Create Enchantment Industry automates enchanting with liquid XP - pair it with Apothic Enchanting.",
       "",

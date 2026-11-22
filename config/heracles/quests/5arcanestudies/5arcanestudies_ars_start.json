@@ -6,7 +6,7 @@
         "id": "ars_nouveau:worn_notebook"
       }
     },
-    "title": "Worn Notebook",
+    "title": "{\"text\": \"Worn Notebook\"}",
     "description": [
       "Ars Nouveau: utility magic, mana and automation. Read the notebook.",
       "&7Optional route: none of the magic mods is required for tech progression.",

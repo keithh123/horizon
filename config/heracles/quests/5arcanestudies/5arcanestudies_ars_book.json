@@ -6,7 +6,7 @@
         "id": "ars_nouveau:novice_spell_book"
       }
     },
-    "title": "Novice Spellcaster",
+    "title": "{\"text\": \"Novice Spellcaster\"}",
     "description": [
       "Craft a spell book and design your first glyph combination.",
       "",

@@ -6,7 +6,7 @@
         "id": "minecraft:enchanting_table"
       }
     },
-    "title": "Deep Enchanting",
+    "title": "{\"text\": \"Deep Enchanting\"}",
     "description": [
       "Apothic Enchanting adds Eterna, Quanta and Arcana. Bookshelves matter - experiment.",
       "",
