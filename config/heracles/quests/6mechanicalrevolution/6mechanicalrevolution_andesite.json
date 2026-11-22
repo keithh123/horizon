@@ -8,7 +8,10 @@
     },
     "title": "Andesite Alloy",
     "description": [
-      "Create runs on rotation. Everything starts with andesite alloy."
+      "Create runs on rotation. Everything starts with andesite alloy.",
+      "",
+      "&aObjective:&r Craft andesite alloy.",
+      "&bWhy it matters:&r Every Create machine starts with it."
     ],
     "groups": {
       "6 - Mechanical Revolution": {

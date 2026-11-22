@@ -1,0 +1,20 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "horizon_modelangles"
+version = "${mod_version}"
+displayName = "Horizon Model Angles"
+authors = "Project Horizon"
+description = "Lets 1.21.1 load block/item model element rotations at any angle between -180 and 180 degrees (newer Minecraft versions allow this), so converted packs such as Actually 3D Stuff keep their exact shapes."
+
+[[mixins]]
+config = "horizon_modelangles.mixins.json"
+
+[[dependencies.horizon_modelangles]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"

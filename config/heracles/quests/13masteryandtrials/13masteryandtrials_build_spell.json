@@ -10,7 +10,10 @@
     "description": [
       "&eElemental casting:&r Iron's Spells schools (fire, ice, lightning, holy, ender, blood, evocation, nature).",
       "Spell power and school attributes come from Iron's gear and spellbooks; Apotheosis gems still boost the wearer.",
-      "Mageslayer (Starlit Voidglass) is the anti-caster gem. Inks: Ancient Core = epic, Starforged Heart = legendary."
+      "Mageslayer (Starlit Voidglass) is the anti-caster gem. Inks: Ancient Core = epic, Starforged Heart = legendary.",
+      "",
+      "&aObjective:&r Click Check once you have read the guide.",
+      "&bWhy it matters:&r Helps pick spell schools and gems."
     ],
     "groups": {
       "13 - Mastery and Trials": {

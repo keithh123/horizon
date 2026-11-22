@@ -1,0 +1,13 @@
+{
+  "kind": "gradle",
+  "output": "horizon_questbook-1.0.0-neoforge.1.21.1.jar",
+  "built_jar": "horizon_questbook-1.0.0-neoforge.1.21.1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "source": "ports/horizonquestbook/src (written for Project Horizon)",
+  "attribution": "Original code for Project Horizon. Built against Heracles 2.0.3 (MIT, compileOnly, not bundled).",
+  "changes": "Inventory-screen button (the right-clickable item is Heracles' own heracles:quest_book), single-click quest details in a popup (description, requirements, unmet prerequisites, rewards, claim, X/Esc), per-open chapter centring, minimap off."
+}

@@ -1,0 +1,39 @@
+# Surface probe shared by Depths and the 0.3.0 baseline (same mod set minus Infinity Cave): heights must match
+SAY heights
+forceload add -1200 -1200
+forceload add -1200 -400
+forceload add -1200 400
+forceload add -1200 1200
+forceload add -400 -1200
+forceload add -400 -400
+forceload add -400 400
+forceload add -400 1200
+forceload add 400 -1200
+forceload add 400 -400
+forceload add 400 400
+forceload add 400 1200
+forceload add 1200 -1200
+forceload add 1200 -400
+forceload add 1200 400
+forceload add 1200 1200
+WAIT 60
+execute positioned -1200 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+WAIT 2
+execute as @e[type=marker,tag=hp] run data get entity @s Pos
+execute as @e[type=marker,tag=hp] at @s run locate biome #minecraft:is_overworld
+WAIT 3

@@ -9,7 +9,10 @@
     "title": "Bulwark",
     "description": [
       "&eDefensive sustain:&r shields, armour/protection affixes, life steal and regeneration.",
-      "Look for &eGuardian&r (Echoing Fossils) and &eLunar&r gems, Relics with healing, Farmer's Delight buffs."
+      "Look for &eGuardian&r (Echoing Fossils) and &eLunar&r gems, Relics with healing, Farmer's Delight buffs.",
+      "",
+      "&aObjective:&r Click Check once you have read the guide.",
+      "&bWhy it matters:&r Helps pick gems and gear for defence."
     ],
     "groups": {
       "13 - Mastery and Trials": {

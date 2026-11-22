@@ -9,7 +9,10 @@
     "title": "Something Old",
     "description": [
       "Find any roadside ruin, camp, shrine or watchtower. Small sites are where &aWayfarer Shards&r come from.",
-      "Completes when you step inside one (also if you already have)."
+      "Completes when you step inside one (also if you already have).",
+      "",
+      "&aObjective:&r Step inside any roadside ruin, camp, shrine or watchtower.",
+      "&bWhy it matters:&r Small sites are the main source of Wayfarer Shards and teach you how structure loot works."
     ],
     "groups": {
       "2 - The Wild Frontier": {
@@ -39,6 +42,13 @@
       "item": {
         "id": "minecraft:map",
         "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:explorerhat",
+        "count": 1
       }
     }
   }

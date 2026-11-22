@@ -14,7 +14,10 @@
       "&ePrepare:&r Stone tools, food. Occasionally a few hostile mobs.",
       "&eSignature rewards:&r Wayfarer Shards, occasional charts to temples and arcane sites.",
       "&eComing back:&r Found everywhere; the main shard income while travelling.",
-      "&eFeeds into:&r Shards -> warp stones, gem dust, backpack upgrades."
+      "&eFeeds into:&r Shards -> warp stones, gem dust, backpack upgrades.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

@@ -640,8 +640,9 @@
       },
       {
         "slug": "clavis",
-        "why": "Clavis: key-and-lock dungeon loot.",
-        "pin": "pncc8FpD"
+        "why": "Clavis: key-and-lock dungeon loot. DISABLED BY DEFAULT (0.3.1): lockpicking cursor bug not verified fixed; see docs/KNOWN_ISSUES.md. Enable by renaming mods/*.jar.disabled to .jar.",
+        "pin": "pncc8FpD",
+        "disabled_by_default": true
       },
       {
         "slug": "irons-simple-blood",
@@ -660,6 +661,12 @@
         "why": "ETF: required for Fresh Animations and emissives.",
         "pin": "1DVPB3a4"
       }
+    ],
+    "cosmetics": [
+      {
+        "slug": "simple-hats",
+        "why": "Simple Hats: wearable hats (head slot). 0.3.1: a few rare hats are quest and dungeon rewards (horizon loot + KubeJS), the rest unlocked by the mod's own system."
+      }
     ]
   },
   "shaders": [
@@ -672,6 +679,26 @@
       "slug": "complementary-unbound",
       "version_number": "r5.9.3",
       "why": "Cinematic profile alternative."
+    },
+    {
+      "slug": "photon-shader",
+      "version_number": "v1.4",
+      "why": "Balanced-profile candidate (0.3.1)."
+    },
+    {
+      "slug": "solas-shader",
+      "version_number": "3.9",
+      "why": "Cinematic-profile candidate (0.3.1)."
+    },
+    {
+      "slug": "noble",
+      "version_number": "1.9.9",
+      "why": "Optional (0.3.1)."
+    },
+    {
+      "slug": "bliss-shader",
+      "version_number": "2.1.2",
+      "why": "Optional (0.3.1)."
     }
   ],
   "rejected": {
@@ -714,9 +741,19 @@
       "why": "Fresh Animations base (EMF/ETF)."
     },
     {
-      "slug": "fresh-animations-extensions",
-      "pin": "zphVu6Oe",
-      "why": "Official FA extensions bundle; individual components NOT installed (duplicates)."
+      "slug": "fresh-animations-details",
+      "pin": "XM8VyQLk",
+      "why": "FA Details 2.4.0 (0.3.1): extra detail on vanilla mobs. Replaces the All-Extensions bundle so Objects, Spiders, Creepers, Classic Horses and Player stay off until each is checked."
+    },
+    {
+      "slug": "fresh-animations-emissive",
+      "pin": "A3tITCIa",
+      "why": "FA Emissive 1.7.0 (0.3.1): glowing eyes/parts via ETF emissive support."
+    },
+    {
+      "slug": "fresh-animations-quivers",
+      "pin": "dxPm8dtx",
+      "why": "FA Quivers 2.3.0 (0.3.1): quivers on skeletons/players' backs; no conflict with Better Combat or Simply Swords."
     },
     {
       "slug": "fluid-foolish",
@@ -808,38 +845,28 @@
     },
     {
       "slug": "fresh-animations-creepers",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
-    },
-    {
-      "slug": "fresh-animations-details",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
-    },
-    {
-      "slug": "fresh-animations-emissive",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
-    },
-    {
-      "slug": "fresh-animations-quivers",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+      "status": "not installed (held back)",
+      "reason": "0.3.1: split out of the All-Extensions bundle; not enabled until checked in game."
     },
     {
       "slug": "fresh-animations-spiders",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+      "status": "not installed (held back)",
+      "reason": "0.3.1: held back. Spider Overhaul adds 14 spider entity types with their own models; FA Spiders would re-animate only vanilla spiders, so the two would look different side by side. Not checked visually."
     },
     {
       "slug": "fresh-animations-objects",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+      "status": "not installed (held back)",
+      "reason": "0.3.1: split out of the All-Extensions bundle so each add-on is chosen on purpose. Objects animates chests, doors and other blocks via EMF; not enabled until checked in game against Sophisticated Storage, Lootr and Create block models (their blocks are modded, so Objects only touches vanilla blocks)."
     },
     {
       "slug": "fresh-animations-classic-horses",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+      "status": "not installed (held back)",
+      "reason": "0.3.1: split out of the All-Extensions bundle; not enabled until checked in game."
+    },
+    {
+      "slug": "fresh-animations-extensions",
+      "status": "replaced",
+      "reason": "0.3.1: the All-Extensions bundle was replaced by the individual Details, Emissive and Quivers packs (pinned in the roster); Objects, Spiders, Creepers and Classic Horses are held back, Player stays dropped (Punchy Moves conflict)."
     }
   ]
 }

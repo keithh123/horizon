@@ -9,7 +9,10 @@
     "title": "Free the End",
     "description": [
       "The dragon is a beginning. Its first defeat gives a Starforged Heart and a trophy;",
-      "re-summoned dragons give their usual drops only."
+      "re-summoned dragons give their usual drops only.",
+      "",
+      "&aObjective:&r Defeat the Ender Dragon.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy; the End then opens fully."
     ],
     "groups": {
       "4 - Forgotten Realms": {
@@ -40,6 +43,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 20
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:dragonskullender",
+        "count": 1
+      }
     }
   }
 }

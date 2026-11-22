@@ -14,7 +14,10 @@
       "&ePrepare:&r Respiration/Aqua Affinity, night vision, a boat, doors or conduit for air. Monuments: Mining Fatigue cure (milk).",
       "&eSignature rewards:&r Tidebound Doubloons (exchange for Lunar/Slipstream gems), buried-treasure cores, Heart of the Sea.",
       "&eComing back:&r Oceans are vast and cheap to cross by boat; many small wrecks keep doubloon income steady.",
-      "&eFeeds into:&r Doubloons -> targeted gems; cores -> sockets; monument prismarine for building."
+      "&eFeeds into:&r Doubloons -> targeted gems; cores -> sockets; monument prismarine for building.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

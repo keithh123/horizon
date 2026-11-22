@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.horizon.snugfire.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BlockStateBaseMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -14,7 +14,10 @@
       "&ePrepare:&r None. Bring emeralds.",
       "&eSignature rewards:&r Surveyor's Charts (exploration maps to nearby landmarks) in cartographer chests; warp scrolls; food and building blocks.",
       "&eComing back:&r Trading (villagers restock), new villages in new regions. Containers do not refill.",
-      "&eFeeds into:&r Building (regional styles), travel (warp scrolls, waystones), clues to landmarks."
+      "&eFeeds into:&r Building (regional styles), travel (warp scrolls, waystones), clues to landmarks.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

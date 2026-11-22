@@ -8,7 +8,10 @@
     },
     "title": "The Sun Spirit",
     "description": [
-      "Defeat the Sun Spirit atop the gold dungeon (first defeat: Starforged Heart + trophy)."
+      "Defeat the Sun Spirit atop the gold dungeon (first defeat: Starforged Heart + trophy).",
+      "",
+      "&aObjective:&r Defeat the Sun Spirit atop the gold dungeon.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart, needed for the highest tech tiers."
     ],
     "groups": {
       "4 - Forgotten Realms": {
@@ -39,6 +42,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 15
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:halo",
+        "count": 1
+      }
     }
   }
 }

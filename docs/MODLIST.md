@@ -1,6 +1,6 @@
-# Mod list - Project Horizon 0.3.0
+# Mod list - Project Horizon 0.3.1
 
-Minecraft 1.21.1 - NeoForge 21.1.267 - 176 mods - generated 2026-11-21 from `manifests/lock.json`.
+Minecraft 1.21.1 - NeoForge 21.1.267 - 177 mods - generated 2026-11-22 from `manifests/lock.json`.
 
 Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/server metadata (the pack installs everything on the client because singleplayer runs an integrated server).
 
@@ -170,7 +170,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Moog's Structure Lib (moogs_structures)](https://modrinth.com/project/1oUDhxuy) | `3.4.2-neoforge-1.21.1` | release | uns/req | LGPL-3.0-only | Required by mmr-moogs-mineshafts-reimagined |
 | [MossyLib](https://modrinth.com/project/ffLDUGbm) | `2.0.0+1.21.1+neoforge` | release | req/uns | CC-BY-ND-4.0 | Required by inventory-particles |
 | [MRU](https://modrinth.com/project/SNVQ2c0g) | `1.0.41+1.21.1-neoforge` | release | opt/opt | LicenseRef-All-Rights-Reserved | Required by sound |
-| [oωo (owo-lib)](https://modrinth.com/project/ccKDOlHs) | `0.12.15.6-beta.1+1.21` | beta | req/req | MIT | Required by aether |
+| [oωo (owo-lib)](https://modrinth.com/project/ccKDOlHs) | `0.12.15.6-beta.1+1.21` | beta | req/req | MIT | Required by aether, simple-hats |
 | [Patchouli](https://modrinth.com/project/nU0bVIaL) | `1.21.1-93-neoforge` | release | req/req | CC-BY-NC-SA-3.0 | Required by apotheosis |
 | [Placebo](https://modrinth.com/project/tCkE8p2N) | `1.21.1-9.9.4` | release | opt/opt | MIT | Required by apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners, gateways-to-eternity |
 | [playerAnimator](https://modrinth.com/project/gedNE4y2) | `2.0.4+1.21.1-forge` | beta | req/req | MIT | Required by better-combat |
@@ -192,6 +192,10 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 |---|---|---|
 | complementary-reimagined | `r5.9.3` | Default shader. Voxy support since r5.8.1. r5.9.3 chosen over r5.10 (3 days old). |
 | complementary-unbound | `r5.9.3` | Cinematic profile alternative. |
+| photon-shader | `v1.4` | Balanced-profile candidate (0.3.1). |
+| solas-shader | `3.9` | Cinematic-profile candidate (0.3.1). |
+| noble | `1.9.9` | Optional (0.3.1). |
+| bliss-shader | `2.1.2` | Optional (0.3.1). |
 
 ## Considered and rejected
 

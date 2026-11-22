@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "horizon_questbook"
+version = "${mod_version}"
+displayName = "Horizon Quest Book"
+authors = "Project Horizon"
+description = "A right-clickable Quest Book item and an inventory button that open the Heracles quest screen, one-click quest details in a popup, and per-open chapter centring. Original code for Project Horizon."
+
+[[mixins]]
+config = "horizon_questbook.mixins.json"
+
+[[dependencies.horizon_questbook]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.horizon_questbook]]
+modId = "heracles"
+type = "required"
+versionRange = "[2.0.3,2.1)"
+ordering = "AFTER"
+side = "CLIENT"

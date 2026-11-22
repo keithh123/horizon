@@ -8,7 +8,10 @@
     },
     "title": "The Undergarden",
     "description": [
-      "A catalyst lights a portal to the dim world below."
+      "A catalyst lights a portal to the dim world below.",
+      "",
+      "&aObjective:&r Light the catalyst portal and enter the Undergarden.",
+      "&bWhy it matters:&r A dim realm with its own materials, bosses and Echoing Fossil token."
     ],
     "groups": {
       "4 - Forgotten Realms": {

@@ -8,7 +8,10 @@
     },
     "title": "World Tier: Ascent",
     "description": [
-      "Ascent loot is strong - so are the monsters."
+      "Ascent loot is strong - so are the monsters.",
+      "",
+      "&aObjective:&r Reach the Ascent world tier.",
+      "&bWhy it matters:&r Ascent loot is strong, and so are the monsters; prepare before you push."
     ],
     "groups": {
       "3 - Forged in Adventure": {

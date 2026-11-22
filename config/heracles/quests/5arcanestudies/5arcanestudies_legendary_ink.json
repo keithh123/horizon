@@ -8,7 +8,10 @@
     },
     "title": "Legendary Ink",
     "description": [
-      "Legendary ink - or a Starforged Heart - writes the strongest scrolls."
+      "Legendary ink - or a Starforged Heart - writes the strongest scrolls.",
+      "",
+      "&aObjective:&r Obtain Legendary Ink.",
+      "&bWhy it matters:&r It is the only way to write the strongest spell scrolls."
     ],
     "groups": {
       "5 - Arcane Studies": {

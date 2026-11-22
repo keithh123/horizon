@@ -6,9 +6,12 @@
         "id": "minecraft:blaze_rod"
       }
     },
-    "title": "Ignis",
+    "title": "Quench the Flame Knight",
     "description": [
-      "The flame knight in the Burning Arena. First defeat: Starforged Heart + trophy."
+      "The flame knight in the Burning Arena. First defeat: Starforged Heart + trophy.",
+      "",
+      "&aObjective:&r Defeat Ignis in the Burning Arena.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {

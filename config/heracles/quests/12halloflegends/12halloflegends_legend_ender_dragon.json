@@ -8,7 +8,10 @@
     },
     "title": "Ender Dragon",
     "description": [
-      "A great legend. First defeat: Starforged Heart + trophy."
+      "A great legend. First defeat: Starforged Heart + trophy.",
+      "",
+      "&aObjective:&r Defeat Ender Dragon.",
+      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
     ],
     "groups": {
       "12 - Hall of Legends": {

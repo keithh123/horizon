@@ -8,7 +8,10 @@
     },
     "title": "Timber!",
     "description": [
-      "Gather wood for tools and a first shelter."
+      "Gather wood for tools and a first shelter.",
+      "",
+      "&aObjective:&r Collect 16 logs of any kind.",
+      "&bWhy it matters:&r Planks, sticks and a crafting table are the base of every tool you will make."
     ],
     "groups": {
       "1 - The First Steps": {

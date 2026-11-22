@@ -8,7 +8,10 @@
     },
     "title": "Novice Spellcaster",
     "description": [
-      "Craft a spell book and design your first glyph combination."
+      "Craft a spell book and design your first glyph combination.",
+      "",
+      "&aObjective:&r Craft a Novice Spell Book.",
+      "&bWhy it matters:&r A spell book is how you cast; glyphs are unlocked by crafting them."
     ],
     "groups": {
       "5 - Arcane Studies": {

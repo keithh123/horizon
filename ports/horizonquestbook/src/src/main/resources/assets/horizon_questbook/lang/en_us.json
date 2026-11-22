@@ -1,0 +1,16 @@
+{
+  "gui.horizon_questbook.button": "Quest Book",
+  "gui.horizon_questbook.close": "Close (Esc)",
+  "gui.horizon_questbook.description": "Description",
+  "gui.horizon_questbook.requirements": "Requirements",
+  "gui.horizon_questbook.prerequisites": "Prerequisites",
+  "gui.horizon_questbook.prereq_met": "All prerequisites complete.",
+  "gui.horizon_questbook.prereq_missing": "Complete these first:",
+  "gui.horizon_questbook.rewards": "Rewards",
+  "gui.horizon_questbook.claim": "Claim Rewards",
+  "gui.horizon_questbook.claimed": "Rewards Claimed",
+  "gui.horizon_questbook.locked": "Locked",
+  "gui.horizon_questbook.in_progress": "In progress",
+  "gui.horizon_questbook.complete": "Complete: claim below",
+  "gui.horizon_questbook.done": "Complete"
+}

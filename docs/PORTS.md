@@ -14,6 +14,7 @@ redistribution; every jar keeps its upstream license text and credits.
 | Item Landing Sound | re-implementation from jar | CC0-1.0 (bundled LICENSE; metadata says MIT) | Modrinth `item-landing-sound` 1.0.2 (no public source) | Logic recovered with Vineflower; NeoForge tick; client command registered once (upstream re-registered it every tick). | client | compiled; **not yet tested in game** |
 | Better Smoke | source port from jar | MIT | Modrinth `better-smoke` 0.1.2+1.21-1.21.8 (no public source) | Decompiled (Vineflower 1.10.1), remapped with `scripts/remap_intermediary.py`, Fabric entry points -> NeoForge. Mixin logic unchanged. | client | compiled; **not yet tested in game** |
 | Weather Glass | verbatim | PolyForm Shield 1.0.0 | CurseForge file 9613334 (0.6.2 for 1.21.1 NeoForge) | None; shipped byte-for-byte (license file is inside the jar). | client | hash-verified; **not yet tested in game** |
+| Horizon Quest Book | original code | MIT | none (written for Project Horizon) | Inventory button, quest popup, one-click open, per-open centring, minimap off; mixins into Heracles 2.0.3 (compileOnly). | client only | compiled; **not run in a client** |
 
 ## Building
 

@@ -9,7 +9,10 @@
     "title": "Plasma Engineering",
     "description": [
       "Build MI's fusion reactor (needs a Starforged Heart).",
-      "&7(Item task: the controller block.)"
+      "&7(Item task: the controller block.)",
+      "",
+      "&aObjective:&r Craft MI's fusion reactor controller (needs a Starforged Heart).",
+      "&bWhy it matters:&r Modern Industrialization's endgame power."
     ],
     "groups": {
       "10 - Beyond the Horizon": {

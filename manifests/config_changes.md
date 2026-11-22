@@ -3,6 +3,12 @@
 | `effectual.json` | `"caveDust": false` | Cave Dust owns underground dust (no double dust layers). |
 | `effectual.json` | `"snowFootprints": false` | Footprint Particle owns footprints. |
 | `effectual.json` | `"lanternImprovements": false` | Swinging Lanterns owns lantern behaviour. |
+| `effectual.json` | `"blockPlaceEffect": false` | Particle Interactions owns block place/break particles. |
+| `effectual.json` | `"runDust": false` | Footprint Particle owns running/snow dust; no doubled footstep puffs. |
+| `bettercombat/client.json5` | `"isDebugOBBEnabled": false` | Crisp hits: no debug hit-box outlines drawn around targets. |
+| `footprintparticle.json` | `"waterSplashLevel": "DISABLED"` | Subtle Effects owns water splashes; no second splash on entering water. |
+| `particlerain/config.json` | `"rainVolume": 0.0` | Cool Rain owns rain audio (Particle Rain stays visual); avoids three layered rain loops. |
+| `particlerain/config.json` | `"snowVolume": 0.0` | Same: one owner for precipitation audio. |
 | `punchy_moves/camera.json` | `"elytraCamera": false` | Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state. |
 | `visualoverhaul.json` | (seed file) | Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib registers it (NPE at Options.loadSelectedResourcePacks; client crash, tested). Its built-in packs still load (visualoverhaul:rounddiscs seen in the pack list). |
 | `apotheosis/apotheosis.cfg` | `B:"Restrict Charms to Curios"=true` | Potion charms only work from curio slots - stops 20 charms in an inventory stacking buffs. |

@@ -8,7 +8,10 @@
     },
     "title": "World Tier: Frontier",
     "description": [
-      "Reach the Frontier tier. Purple and gold affixes begin to drop."
+      "Reach the Frontier tier. Purple and gold affixes begin to drop.",
+      "",
+      "&aObjective:&r Reach the Frontier world tier.",
+      "&bWhy it matters:&r Rarer affixes begin to appear and harder monsters spawn."
     ],
     "groups": {
       "3 - Forged in Adventure": {

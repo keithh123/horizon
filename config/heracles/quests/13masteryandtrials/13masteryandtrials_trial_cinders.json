@@ -11,7 +11,10 @@
       "A Gateways to Eternity trial: 3 fixed waves, fixed enemy counts, a visible timer.",
       "Cost: 1x ancient core, 4x cinder idol, 2x blaze rod (+ ender pearl).",
       "Rewards: affix gear, gems and XP - never relics. Fight it in the open, away from your base.",
-      "&7Completes when you are within 48 blocks of the gate as its last wave falls."
+      "&7Completes when you are within 48 blocks of the gate as its last wave falls.",
+      "",
+      "&aObjective:&r Start the gate and survive every wave.",
+      "&bWhy it matters:&r Trials pay affix gear and gems on a fixed schedule; they never pay relics."
     ],
     "groups": {
       "13 - Mastery and Trials": {

@@ -8,7 +8,10 @@
     },
     "title": "Liquid Experience",
     "description": [
-      "Create Enchantment Industry automates enchanting with liquid XP - pair it with Apothic Enchanting."
+      "Create Enchantment Industry automates enchanting with liquid XP - pair it with Apothic Enchanting.",
+      "",
+      "&aObjective:&r Complete Enchantment Industry's engineer advancement.",
+      "&bWhy it matters:&r Liquid XP automates enchanting; pair it with Apothic Enchanting."
     ],
     "groups": {
       "6 - Mechanical Revolution": {

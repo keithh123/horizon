@@ -14,7 +14,10 @@
       "&ePrepare:&r Slow falling / feather falling, a pickaxe for dungeon doors, ranged weapons for zephyrs.",
       "&eSignature rewards:&r Skyward Plumes (exchange for Solar/Lightning gems), Aether accessories and dungeon keys (upstream).",
       "&eComing back:&r Dungeons are one-time; plumes from ruined portals and bosses.",
-      "&eFeeds into:&r Plumes -> mobility gems; Aether gear is a sidegrade line."
+      "&eFeeds into:&r Plumes -> mobility gems; Aether gear is a sidegrade line.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

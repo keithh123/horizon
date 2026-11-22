@@ -1,0 +1,15 @@
+{
+  "kind": "gradle",
+  "output": "horizon_snugfire-1.0.0-neoforge.1.21.1.jar",
+  "built_jar": "horizon_snugfire-1.0.0-neoforge.1.21.1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "replaces_slug": "tightfire",
+  "source": "ports/snugfire/src (written for Project Horizon)",
+  "attribution": "Independent equivalent of Tight Fire (AmyMialee, All Rights Reserved, Fabric only), written from its public description only; no Tight Fire code, assets or decompilation used. This is NOT Tight Fire.",
+  "changes": "New code: floor fire offset down to the top of a lower-than-full supporting block through the block render-offset hook (vanilla + Sodium renderers); outline extended to match. Client-only.",
+  "variant": "lab"
+}

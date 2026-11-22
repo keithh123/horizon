@@ -8,7 +8,10 @@
     },
     "title": "The End?",
     "description": [
-      "Nullscape turns the End into a vast, strange landscape - not a finish line."
+      "Nullscape turns the End into a vast, strange landscape - not a finish line.",
+      "",
+      "&aObjective:&r Enter the End.",
+      "&bWhy it matters:&r Nullscape's End is a full expedition area with Starlit Voidglass."
     ],
     "groups": {
       "4 - Forgotten Realms": {

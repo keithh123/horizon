@@ -417,14 +417,14 @@ def emit_legends():
     write("horizon/function/fx/legend_major.mcfunction",
           "particle minecraft:totem_of_undying ~ ~1.2 ~ 0.7 1.0 0.7 0.35 70 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
           "particle minecraft:end_rod ~ ~1.2 ~ 0.4 1.4 0.4 0.05 30 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
-          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 0.6 1\n"
+          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound horizon:cue.trophy player @s ~ ~ ~ 1 1\n"
           "title @s[tag=!horizon_fx_quiet] actionbar {\"text\":\"Legend defeated - a Starforged Heart and a trophy are yours\",\"color\":\"light_purple\"}\n")
     write("horizon/function/fx/legend_mini.mcfunction",
           "particle minecraft:end_rod ~ ~1.2 ~ 0.4 1.0 0.4 0.04 24 normal @a[distance=..48,tag=!horizon_fx_quiet]\n"
-          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.5 0.8\n"
+          "execute as @a[distance=..48,tag=!horizon_fx_quiet] at @s run playsound horizon:cue.legend_slain player @s ~ ~ ~ 1 1\n"
           "title @s[tag=!horizon_fx_quiet] actionbar {\"text\":\"Foe vanquished - an Ancient Core and a trophy are yours\",\"color\":\"aqua\"}\n")
     write("horizon/function/fx/discover.mcfunction",
-          "execute at @s[tag=!horizon_fx_quiet] run playsound minecraft:block.amethyst_block.resonate player @s ~ ~ ~ 0.5 1.2\n")
+          "execute at @s[tag=!horizon_fx_quiet] run playsound horizon:cue.rare_loot player @s ~ ~ ~ 1 1\n")
     return mods
 
 
@@ -442,6 +442,9 @@ def emit_atlas():
                 {"condition": "minecraft:entity_properties", "entity": "this",
                  "predicate": {"location": {"structures": f"#horizon:family/{f}"}}}]}}},
             "rewards": {"function": "horizon:fx/discover"}})
+    # 0.3.1: the book's first quest must not wait on anything the player has to earn. It used minecraft:story/root
+    # (craft a crafting table), which needs wood, which the next quest asks for. A tick criterion completes at once.
+    write("horizon/advancement/welcome.json", {"criteria": {"joined": {"trigger": "minecraft:tick"}}})
     for clue, cm in FAM["clue_maps"].items():
         vals = sorted({s for f in cm["from"] for s in fam_structs.get(f, [])})
         write(f"horizon/tags/worldgen/structure/clue/{clue}.json", {"replace": False, "values": vals})

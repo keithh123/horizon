@@ -29,5 +29,25 @@
     "pack": "ComplementaryReimagined",
     "preset": "MEDIUM"
   },
-  "effects": "balanced"
+  "effects": "balanced",
+  "shader_alternates": [
+    {
+      "id": "photon",
+      "pack": "photon",
+      "preset": "medium",
+      "note": "Photon v1.4, Voxy-aware"
+    },
+    {
+      "id": "noble",
+      "pack": "Noble",
+      "preset": "MEDIUM",
+      "note": "Optional: Noble 1.9.9, Voxy-aware"
+    },
+    {
+      "id": "bliss",
+      "pack": "Bliss",
+      "preset": null,
+      "note": "Optional: Bliss 2.1.2 has NO Voxy support: distant terrain is unshaded/hidden. Pack defaults."
+    }
+  ]
 }

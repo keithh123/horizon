@@ -8,7 +8,10 @@
     },
     "title": "Cataclysm Conqueror",
     "description": [
-      "Defeat every Cataclysm boss."
+      "Defeat every Cataclysm boss.",
+      "",
+      "&aObjective:&r Defeat every Cataclysm boss.",
+      "&bWhy it matters:&r The pack's hardest combat milestone."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
@@ -44,6 +47,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 30
+    },
+    "r2": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:bigcrown",
+        "count": 1
+      }
     }
   }
 }

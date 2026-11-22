@@ -66,6 +66,18 @@ EXPANSION_EDITS = {
         ('"caveDust": true', '"caveDust": false', "Cave Dust owns underground dust (no double dust layers)."),
         ('"snowFootprints": true', '"snowFootprints": false', "Footprint Particle owns footprints."),
         ('"lanternImprovements": true', '"lanternImprovements": false', "Swinging Lanterns owns lantern behaviour."),
+        ('"blockPlaceEffect": true', '"blockPlaceEffect": false', "Particle Interactions owns block place/break particles."),
+        ('"runDust": true', '"runDust": false', "Footprint Particle owns running/snow dust; no doubled footstep puffs."),
+    ],
+    "bettercombat/client.json5": [
+        ('"isDebugOBBEnabled": true', '"isDebugOBBEnabled": false', "Crisp hits: no debug hit-box outlines drawn around targets."),
+    ],
+    "footprintparticle.json": [
+        ('"waterSplashLevel": "PLAYER_ONLY"', '"waterSplashLevel": "DISABLED"', "Subtle Effects owns water splashes; no second splash on entering water."),
+    ],
+    "particlerain/config.json": [
+        ('"rainVolume": 0.2', '"rainVolume": 0.0', "Cool Rain owns rain audio (Particle Rain stays visual); avoids three layered rain loops."),
+        ('"snowVolume": 0.1', '"snowVolume": 0.0', "Same: one owner for precipitation audio."),
     ],
     "punchy_moves/camera.json": [
         ('"elytraCamera": true', '"elytraCamera": false', "Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state."),

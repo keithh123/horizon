@@ -14,7 +14,10 @@
       "&ePrepare:&r Diamond gear or good affixes, fire resistance for pyramids, a bow.",
       "&eSignature rewards:&r Ancient Cores in treasure rooms, higher-rarity affix rolls in the vault, charts to landmarks.",
       "&eComing back:&r Mansions and outposts are rare per region; each is a one-time clear.",
-      "&eFeeds into:&r Cores -> ME controller, socketing, epic ink."
+      "&eFeeds into:&r Cores -> ME controller, socketing, epic ink.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

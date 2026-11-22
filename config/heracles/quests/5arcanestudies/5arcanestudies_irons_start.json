@@ -8,7 +8,10 @@
     },
     "title": "Inscription",
     "description": [
-      "Iron's Spells is combat magic: scrolls found in loot go into a spellbook at the inscription table."
+      "Iron's Spells is combat magic: scrolls found in loot go into a spellbook at the inscription table.",
+      "",
+      "&aObjective:&r Craft an Inscription Table.",
+      "&bWhy it matters:&r Scrolls found in loot must be inscribed into a spellbook to be cast."
     ],
     "groups": {
       "5 - Arcane Studies": {

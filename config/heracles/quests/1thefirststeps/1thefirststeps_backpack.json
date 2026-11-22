@@ -9,13 +9,16 @@
     "title": "Pack Mule",
     "description": [
       "A backpack makes long expeditions possible.",
-      "&7(Introductory item task.)"
+      "&7(Introductory item task.)",
+      "",
+      "&aObjective:&r Craft a Sophisticated Backpack.",
+      "&bWhy it matters:&r Extra storage you carry makes long trips to far structures practical."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
           192,
-          0
+          36
         ]
       }
     }

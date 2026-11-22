@@ -33,9 +33,11 @@ Object.keys(H.legends).forEach(id => {
 
 // ---------------------------------------------------------------------------- 2. discovery feedback
 const SOUNDS = {
-  1: ['minecraft:block.amethyst_block.chime', 0.35, 1.5],
-  2: ['minecraft:block.amethyst_block.resonate', 0.6, 1.1],
-  3: ['minecraft:block.beacon.power_select', 0.7, 1.4]
+  // cues are Horizon sound events (kubejs/assets/horizon/sounds.json, re-skinnable by the Horizon-16x pack);
+  // each maps to vanilla sounds, so every tier is distinct: chime / resonating crystal / beacon
+  1: ['horizon:cue.item_found', 1, 1],
+  2: ['horizon:cue.rare_loot', 1, 1],
+  3: ['horizon:cue.mythic', 1, 1]
 }
 
 Object.keys(H.tiers).forEach(itemId => {

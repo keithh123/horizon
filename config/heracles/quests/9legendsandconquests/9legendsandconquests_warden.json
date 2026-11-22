@@ -8,7 +8,10 @@
     },
     "title": "Silence",
     "description": [
-      "Defeat a Warden. The first defeat counts for a heart; summoned Wardens after that do not."
+      "Defeat a Warden. The first defeat counts for a heart; summoned Wardens after that do not.",
+      "",
+      "&aObjective:&r Defeat a Warden.",
+      "&bWhy it matters:&r First defeat counts toward a heart; summoned Wardens afterwards do not."
     ],
     "groups": {
       "9 - Legends and Conquests": {

@@ -1,0 +1,88 @@
+# Horizon Depths (Infinity Cave merged onto Tectonic+Terralith), headless. docs/DEPTHS.md
+datapack list
+kubejs errors server
+neoforge tps
+SAY heights
+forceload add -1200 -1200
+forceload add -1200 -400
+forceload add -1200 400
+forceload add -1200 1200
+forceload add -400 -1200
+forceload add -400 -400
+forceload add -400 400
+forceload add -400 1200
+forceload add 400 -1200
+forceload add 400 -400
+forceload add 400 400
+forceload add 400 1200
+forceload add 1200 -1200
+forceload add 1200 -400
+forceload add 1200 400
+forceload add 1200 1200
+WAIT 60
+execute positioned -1200 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -1200 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned -400 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 400 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 -1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 -400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 400 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+execute positioned 1200 0 1200 positioned over motion_blocking_no_leaves run summon marker ~ ~ ~ {Tags:["hp"]}
+WAIT 2
+execute as @e[type=marker,tag=hp] run data get entity @s Pos
+execute as @e[type=marker,tag=hp] at @s run locate biome #minecraft:is_overworld
+WAIT 3
+SAY column
+forceload add 0 0 48 48
+WAIT 30
+execute if block 0 -128 0 minecraft:bedrock
+execute if block 16 -128 16 minecraft:bedrock
+execute if block 0 -129 0 minecraft:air
+fill 0 -127 0 15 -65 15 minecraft:glass replace minecraft:air
+fill 16 -127 16 31 -65 31 minecraft:glass replace minecraft:air
+fill 32 -127 32 47 -65 47 minecraft:glass replace minecraft:air
+fill 0 -64 0 15 -15 15 minecraft:glass replace minecraft:air
+fill 0 -127 0 15 -65 15 minecraft:glass replace minecraft:lava
+forceload remove all
+SAY biomes
+locate biome infinity_cave:amethyst_caves
+WAIT 8
+locate biome infinity_cave:limestone_grotto
+WAIT 8
+locate biome infinity_cave:molten_caves
+WAIT 8
+locate biome infinity_cave:sulfide_caves
+WAIT 8
+locate biome infinity_cave:deeprock_caverns
+WAIT 8
+locate biome infinity_cave:frozen_caves
+WAIT 8
+locate biome minecraft:deep_dark
+WAIT 8
+locate biome terralith:cave/mantle_caves
+WAIT 8
+SAY structures
+LOCATEAUDIT infinity_cave:frozen_robot 48 30
+LOCATEAUDIT infinity_cave:sulfide_huts 48 30
+LOCATEAUDIT infinity_cave:dinosaur 48 30
+LOCATEAUDIT infinity_cave:deep_dark_temple 48 30
+LOCATEAUDIT infinity_cave:knuckle_trap 48 30
+LOCATEAUDIT infinity_cave:limestone_houses 48 30
+LOCATEAUDIT infinity_cave:amethyst_geode 48 30
+LOCATEAUDIT infinity_cave:amethyst_altar 48 30
+SAY horizon structures unchanged
+LOCATEAUDIT mmr:mineshaft 96 50
+LOCATEAUDIT minecraft:ancient_city 96 30
+LOCATEAUDIT minecraft:trial_chambers 64 30
+SAY ic loot
+loot spawn 0 200 0 loot infinity_cave:structures/frozen_robot
+WAIT 1
+neoforge tps

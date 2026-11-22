@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.horizon.questbook.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "QuestClickMixin",
+    "QuestsScreenInitMixin",
+    "ModScreensMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

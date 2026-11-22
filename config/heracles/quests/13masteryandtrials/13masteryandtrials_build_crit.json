@@ -10,7 +10,10 @@
     "description": [
       "&eFast melee and crit:&r rapiers, katanas, sais and twinblades (Better Combat combos).",
       "Look for crit chance/damage affixes, &eSamurai&r and &eSlipstream&r gems (Slipstream: Tidebound Doubloons).",
-      "Accessories: speed and attack-speed artifacts."
+      "Accessories: speed and attack-speed artifacts.",
+      "",
+      "&aObjective:&r Click Check once you have read the guide.",
+      "&bWhy it matters:&r Helps pick gems and gear for fast melee."
     ],
     "groups": {
       "13 - Mastery and Trials": {

@@ -16,6 +16,7 @@ loading; each port is tested in game (docs/PORTS.md).
   python scripts/build_ports.py [name ...]
 """
 import hashlib, io, json, os, shutil, subprocess, sys, urllib.request, zipfile
+import tomllib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -69,7 +70,8 @@ def build(name, spec):
         prefix = spec.get("strip_prefix", "")
         if prefix:
             entries = {k[len(prefix):]: v for k, v in entries.items() if k.startswith(prefix)}
-        for e in spec.get("drop", []):
+        gen = json.loads((PORTS / name / spec["generated"]).read_text(encoding="utf-8")) if spec.get("generated") else {}
+        for e in spec.get("drop", []) + gen.get("drop", []):
             entries.pop(e, None)
         for path, edits in spec.get("edits", {}).items():
             text = entries[path].decode("utf-8")
@@ -78,8 +80,14 @@ def build(name, spec):
                     raise SystemExit(f"{name}: edit {old!r} matched {text.count(old)} times in {path}")
                 text = text.replace(old, new)
             entries[path] = text.encode("utf-8")
-        for path, rel in spec.get("add", {}).items():
+        for path, rel in {**spec.get("add", {}), **gen.get("add", {})}.items():
             entries[path] = (PORTS / name / rel).read_bytes()
+        metadata = "META-INF/neoforge.mods.toml"
+        if metadata in entries:
+            try:
+                tomllib.loads(entries[metadata].decode("utf-8"))
+            except (ValueError, UnicodeError) as exc:
+                raise SystemExit(f"{name}: invalid {metadata}: {exc}") from exc
         write_deterministic(entries, out)
     elif kind == "gradle":
         # Build in a short staging path: NeoForm runtime spawns java in build/tmp/..., and Windows CreateProcess
@@ -98,7 +106,7 @@ def build(name, spec):
         raise SystemExit(f"{name}: unknown kind {kind}")
     data = out.read_bytes()
     return {"name": name, "file": out.name, "kind": kind, "side": spec["side"], "license": spec["license"],
-            "replaces_slug": spec.get("replaces_slug"), "upstream": spec.get("upstream", {}).get("page") or spec.get("source"),
+            "replaces_slug": spec.get("replaces_slug"), "variant": spec.get("variant"), "upstream": spec.get("upstream", {}).get("page") or spec.get("source"),
             "size": len(data), "hashes": {"sha1": hashlib.sha1(data).hexdigest(), "sha512": hashlib.sha512(data).hexdigest()}}
 
 

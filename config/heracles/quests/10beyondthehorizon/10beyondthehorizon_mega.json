@@ -8,7 +8,10 @@
     },
     "title": "Unlimited Storage",
     "description": [
-      "A 256M MEGA component - built from a Starforged Heart. &7(Item task.)"
+      "A 256M MEGA component - built from a Starforged Heart. &7(Item task.)",
+      "",
+      "&aObjective:&r Craft a 256M MEGA cell component (needs a Starforged Heart).",
+      "&bWhy it matters:&r Effectively unlimited storage for a late AE2 base."
     ],
     "groups": {
       "10 - Beyond the Horizon": {

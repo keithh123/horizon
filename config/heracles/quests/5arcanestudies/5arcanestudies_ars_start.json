@@ -9,7 +9,10 @@
     "title": "Worn Notebook",
     "description": [
       "Ars Nouveau: utility magic, mana and automation. Read the notebook.",
-      "&7Optional route: none of the magic mods is required for tech progression."
+      "&7Optional route: none of the magic mods is required for tech progression.",
+      "",
+      "&aObjective:&r Obtain the Worn Notebook.",
+      "&bWhy it matters:&r It explains every Ars Nouveau mechanic in-game, so you never need a wiki."
     ],
     "groups": {
       "5 - Arcane Studies": {

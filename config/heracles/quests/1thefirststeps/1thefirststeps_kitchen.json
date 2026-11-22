@@ -9,13 +9,16 @@
     "title": "Hearty Meals",
     "description": [
       "Farmer's Delight meals give long buffs - the cheapest expedition preparation there is. AppleSkin shows saturation on hover.",
-      "&7(Introductory item task: craft or hold a cooking pot.)"
+      "&7(Introductory item task: craft or hold a cooking pot.)",
+      "",
+      "&aObjective:&r Craft or hold a Farmer's Delight cooking pot.",
+      "&bWhy it matters:&r Cooked meals give long buffs: the cheapest preparation for any expedition."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
-          144,
-          36
+          192,
+          0
         ]
       }
     }
@@ -25,7 +28,7 @@
     "unlockNotification": true
   },
   "dependencies": [
-    "1thefirststeps_bed"
+    "1thefirststeps_iron"
   ],
   "tasks": {
     "t0": {

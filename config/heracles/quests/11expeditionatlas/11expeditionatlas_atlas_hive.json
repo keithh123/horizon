@@ -14,7 +14,10 @@
       "&ePrepare:&r Bee-friendly gear (Bumblezone's own), patience. Solving puzzles gives the better chests.",
       "&eSignature rewards:&r Honeyed Seals (exchange for Verdant/Splendor gems), puzzle-treasure cores. Failed-puzzle chests give little.",
       "&eComing back:&r Many sanctums and mazes; rewards scale with puzzle success.",
-      "&eFeeds into:&r Seals -> utility gems; honey for food and building."
+      "&eFeeds into:&r Seals -> utility gems; honey for food and building.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

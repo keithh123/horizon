@@ -8,7 +8,10 @@
     },
     "title": "Metallurgy",
     "description": [
-      "Mekanism's infuser makes steel and alloys."
+      "Mekanism's infuser makes steel and alloys.",
+      "",
+      "&aObjective:&r Craft a metallurgic infuser.",
+      "&bWhy it matters:&r Steel and alloys are required for most Mekanism machines."
     ],
     "groups": {
       "7 - Industrial Expansion": {

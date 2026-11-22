@@ -9,7 +9,10 @@
     "title": "Civilisation",
     "description": [
       "Find a village and trade. ChoiceTheorem's overhaul gives every biome its own style.",
-      "Cartographer chests often hold a &6Surveyor's Chart&r pointing at a great landmark."
+      "Cartographer chests often hold a &6Surveyor's Chart&r pointing at a great landmark.",
+      "",
+      "&aObjective:&r Trade once with a villager.",
+      "&bWhy it matters:&r Villagers supply emeralds, maps and Surveyor's Charts that point to great landmarks."
     ],
     "groups": {
       "2 - The Wild Frontier": {

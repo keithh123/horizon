@@ -8,7 +8,10 @@
     },
     "title": "The Forgotten Guardian",
     "description": [
-      "Defeat the guardian in the catacombs."
+      "Defeat the guardian in the catacombs.",
+      "",
+      "&aObjective:&r Defeat the Forgotten Guardian in the catacombs.",
+      "&bWhy it matters:&r Its drops forge Undergarden's best gear."
     ],
     "groups": {
       "4 - Forgotten Realms": {

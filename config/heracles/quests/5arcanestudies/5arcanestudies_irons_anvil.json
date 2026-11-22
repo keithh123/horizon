@@ -8,7 +8,10 @@
     },
     "title": "Arcane Anvil",
     "description": [
-      "Upgrade scrolls and imbue weapons."
+      "Upgrade scrolls and imbue weapons.",
+      "",
+      "&aObjective:&r Craft an Arcane Anvil.",
+      "&bWhy it matters:&r Upgrades scrolls and imbues weapons with spells."
     ],
     "groups": {
       "5 - Arcane Studies": {

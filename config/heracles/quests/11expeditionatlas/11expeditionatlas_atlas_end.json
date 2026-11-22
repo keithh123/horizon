@@ -14,7 +14,10 @@
       "&ePrepare:&r Elytra or slow falling, feather falling, ender pearls, ranged weapons for shulkers.",
       "&eSignature rewards:&r Starlit Voidglass (exchange for Endersurge/Mageslayer gems), elytra, Ancient Cores, rare Starforged Hearts in city treasure.",
       "&eComing back:&r The outer End is effectively endless; cities repeat with variety thanks to Nullscape terrain.",
-      "&eFeeds into:&r Voidglass -> end gems; hearts -> late tech."
+      "&eFeeds into:&r Voidglass -> end gems; hearts -> late tech.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

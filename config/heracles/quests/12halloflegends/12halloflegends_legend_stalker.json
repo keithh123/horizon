@@ -8,7 +8,10 @@
     },
     "title": "The Stalker",
     "description": [
-      "A great legend. First defeat: Starforged Heart + trophy."
+      "A great legend. First defeat: Starforged Heart + trophy.",
+      "",
+      "&aObjective:&r Defeat The Stalker.",
+      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
     ],
     "groups": {
       "12 - Hall of Legends": {

@@ -8,7 +8,10 @@
     },
     "title": "Deep Enchanting",
     "description": [
-      "Apothic Enchanting adds Eterna, Quanta and Arcana. Bookshelves matter - experiment."
+      "Apothic Enchanting adds Eterna, Quanta and Arcana. Bookshelves matter - experiment.",
+      "",
+      "&aObjective:&r Enchant any item at an enchanting table.",
+      "&bWhy it matters:&r Apothic Enchanting scales far past vanilla, so a tuned library pays off early."
     ],
     "groups": {
       "3 - Forged in Adventure": {

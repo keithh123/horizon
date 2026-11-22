@@ -14,7 +14,10 @@
       "&ePrepare:&r Your best build. Read the boss: telegraphs are visible on every profile.",
       "&eSignature rewards:&r The boss drop and first-kill trophy/heart (see legends). Chests give cores and strong affix gear.",
       "&eComing back:&r First kill is the big reward (once per player); some Cataclysm bosses can be re-summoned for gear, not relics.",
-      "&eFeeds into:&r Trophies for the Hall of Legends; cores -> sockets."
+      "&eFeeds into:&r Trophies for the Hall of Legends; cores -> sockets.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

@@ -8,7 +8,10 @@
     },
     "title": "Buzzing Mysteries",
     "description": [
-      "Throw an ender pearl into a bee nest to enter the Bumblezone."
+      "Throw an ender pearl into a bee nest to enter the Bumblezone.",
+      "",
+      "&aObjective:&r Throw an ender pearl into a bee nest to enter the Bumblezone.",
+      "&bWhy it matters:&r Honeyed Seals from this realm buy targeted gems at the Expedition Exchange."
     ],
     "groups": {
       "4 - Forgotten Realms": {

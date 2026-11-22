@@ -8,7 +8,10 @@
     },
     "title": "Mechanical Press",
     "description": [
-      "Press plates automatically. Read Ponder scenes with &eW&r on any Create block."
+      "Press plates automatically. Read Ponder scenes with &eW&r on any Create block.",
+      "",
+      "&aObjective:&r Build a mechanical press and press a plate.",
+      "&bWhy it matters:&r Automated plates are the base of most late recipes."
     ],
     "groups": {
       "6 - Mechanical Revolution": {

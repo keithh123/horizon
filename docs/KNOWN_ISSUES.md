@@ -21,3 +21,15 @@
 | 12 | Spatial GUI moves JEI's recipe/bookmark lists on first launch. | Change back in JEI settings if preferred. |
 | 13 | Punchy Moves shows a first-join tutorial and owns an over-the-shoulder camera; Auto Third Person owns vehicle/elytra switching. | Skip the guide; camera options in Punchy Moves' Camera tab. |
 | 14 | Prism shows an "Easy There!" prompt on import listing the 7 jars that ship inside the pack (docs/PORTS.md). | Expected for this pack; tick "I trust this modpack". |
+
+## 0.3.1
+
+| # | Issue | Workaround |
+|---|---|---|
+| 15 | The quest popup, inventory button, one-click open, per-open centring and minimap-off are compiled and their mixin targets were checked against Heracles 2.0.3 bytecode, but have **not been run in a client**. | If the quest screen misbehaves, remove `horizon_questbook-*.jar`; Heracles' own screens return. |
+| 16 | Clavis is disabled by default: its lockpicking screen moves the OS cursor with GLFW and the stuck-cursor bug after lockpicking could not be reproduced or fixed here. Moonlight was not available. | Rename `Clavis-*.jar.disabled` to `.jar` to try it (success, cancel and Lootr reopen untested). |
+| 17 | Immersive Portals 6.0.7 (native NeoForge) is not shipped. Server: loads, 20 TPS, 5.5 ms/tick vs 5.7 baseline with the three dimensions force-loaded. Client (Voxy/Iris/Sodium, fresh chunks, Nether round trip, End, frame times): untested. | Do not add it to a pack with Voxy until a client run says otherwise. |
+| 18 | Bliss Shaders has no Voxy programs: with it, distant terrain is unshaded or missing. Photon, Solas and Noble have them. All presets are generated but not looked at in game. | Use Complementary or Photon (Balanced), Unbound or Solas (Cinematic). |
+| 19 | FA Objects, Spiders, Creepers and Classic Horses are held back (not checked against Spider Overhaul, Lootr, Create). | docs/RESOURCE_PACKS.md. |
+| 20 | Boss wind-ups: no change beyond Better Combat debug boxes off. Each boss mod owns its animation; Horizon cannot add a telegraph without per-boss work. | - |
+| 21 | Existing worlds: the first quest keeps its task type, so saved progress should carry over, but a world where it was already complete was not loaded to confirm. | Back up `saves/` before updating. |

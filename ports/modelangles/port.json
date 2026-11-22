@@ -1,0 +1,14 @@
+{
+  "kind": "gradle",
+  "output": "horizon_modelangles-1.0.0-neoforge.1.21.1.jar",
+  "built_jar": "horizon_modelangles-1.0.0-neoforge.1.21.1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "source": "ports/modelangles/src (written for Project Horizon)",
+  "attribution": "Written for Project Horizon.",
+  "changes": "New code: one mixin removing the -45/-22.5/0/22.5/45 restriction in BlockElement.Deserializer.getAngle. Client-only.",
+  "variant": "lab"
+}

@@ -9,7 +9,10 @@
     "title": "Ore Multiplication",
     "description": [
       "Double, then triple, then quintuple your ores.",
-      "Completes on Mekanism's own advancement for the enrichment chamber."
+      "Completes on Mekanism's own advancement for the enrichment chamber.",
+      "",
+      "&aObjective:&r Build an enrichment chamber.",
+      "&bWhy it matters:&r First ore multiplier, and the entry to further processing chains."
     ],
     "groups": {
       "7 - Industrial Expansion": {

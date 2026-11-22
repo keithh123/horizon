@@ -8,7 +8,10 @@
     },
     "title": "Bee Whisperer",
     "description": [
-      "Discover every Bumblezone biome."
+      "Discover every Bumblezone biome.",
+      "",
+      "&aObjective:&r Discover every Bumblezone biome.",
+      "&bWhy it matters:&r Completing the realm rewards Honeyed Seals for the Exchange."
     ],
     "groups": {
       "10 - Beyond the Horizon": {

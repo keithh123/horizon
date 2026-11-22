@@ -1,0 +1,7 @@
+# Immersive Portals 6.0.7 server-side boot with the 0.3.1 stack: load errors, dimensions, idle tick cost.
+neoforge tps
+execute in minecraft:the_nether run forceload add 0 0 64 64
+execute in minecraft:the_end run forceload add 0 0 64 64
+execute in minecraft:overworld run forceload add 0 0 64 64
+WAIT 20
+neoforge tps

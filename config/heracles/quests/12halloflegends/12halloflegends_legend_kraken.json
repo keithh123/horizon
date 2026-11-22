@@ -8,7 +8,10 @@
     },
     "title": "Kraken",
     "description": [
-      "A lesser legend. First defeat: Ancient Core + trophy."
+      "A lesser legend. First defeat: Ancient Core + trophy.",
+      "",
+      "&aObjective:&r Defeat Kraken.",
+      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
     ],
     "groups": {
       "12 - Hall of Legends": {

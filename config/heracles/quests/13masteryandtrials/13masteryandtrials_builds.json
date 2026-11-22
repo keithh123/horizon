@@ -10,7 +10,10 @@
     "description": [
       "Apotheosis is the backbone: affixes, gems and world tiers apply to every weapon and armour piece,",
       "including Simply Swords, Cataclysm and Aether gear. Accessories (Artifacts, Relics) add a second layer in Curios slots.",
-      "Pick a direction - the quests below are guides, not requirements. Mixing is fine."
+      "Pick a direction - the quests below are guides, not requirements. Mixing is fine.",
+      "",
+      "&aObjective:&r Click Check.",
+      "&bWhy it matters:&r Explains the build guides below; none are required."
     ],
     "groups": {
       "13 - Mastery and Trials": {

@@ -14,7 +14,10 @@
       "&ePrepare:&r Swift Sneak, night vision, wool to muffle steps, a plan for the Warden.",
       "&eSignature rewards:&r Echoing Fossils (exchange for Breach/Guardian gems), Ancient Cores, ancient-city hearts (rare), Warden carapace (upstream).",
       "&eComing back:&r Each Ancient City and Otherside temple is a one-time clear; the Undergarden is a self-contained dimension.",
-      "&eFeeds into:&r Fossils -> armour-piercing/defence gems; cores -> sockets."
+      "&eFeeds into:&r Fossils -> armour-piercing/defence gems; cores -> sockets.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

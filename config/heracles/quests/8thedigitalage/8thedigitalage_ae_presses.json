@@ -8,7 +8,10 @@
     },
     "title": "Inscriber Presses",
     "description": [
-      "Presses come from meteorites. Find one with the meteorite compass."
+      "Presses come from meteorites. Find one with the meteorite compass.",
+      "",
+      "&aObjective:&r Obtain an inscriber press from a meteorite.",
+      "&bWhy it matters:&r Presses make processors; finding one needs a meteorite compass."
     ],
     "groups": {
       "8 - The Digital Age": {

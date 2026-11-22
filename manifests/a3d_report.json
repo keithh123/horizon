@@ -1,0 +1,45 @@
+{
+ "source": {
+  "name": "Actually 3D Stuff",
+  "version": "1.5",
+  "page": "https://modrinth.com/resourcepack/actually-3d-stuff/version/4V80raWR",
+  "url": "https://cdn.modrinth.com/data/405SacPR/versions/4V80raWR/Actually%203D%20Stuff.zip",
+  "sha512": "59f982bf8a48d10d0b3330fe91defdceb460a83ae2934b3947402f709574a27f263554745d502c7368bfdc5633f1cf300bcdbef8af711f620b8a10317218c84e",
+  "license": "MIT",
+  "author": "Arch1vways"
+ },
+ "angles": "exact",
+ "converted": [
+  "minecraft:bone",
+  "minecraft:book",
+  "minecraft:bucket",
+  "minecraft:ender_pearl",
+  "minecraft:flint_and_steel",
+  "minecraft:iron_ingot",
+  "minecraft:lava_bucket",
+  "minecraft:lead",
+  "minecraft:shears",
+  "minecraft:stick",
+  "minecraft:water_bucket"
+ ],
+ "skipped": {
+  "minecraft:compass": "item definition 'minecraft:select' minecraft:display_context has no 1.21.1 model equivalent (needs item overrides)",
+  "minecraft:totem_of_undying": "item definition 'minecraft:select' minecraft:display_context has no 1.21.1 model equivalent (needs item overrides)"
+ },
+ "approximated": {},
+ "exact_angles": {
+  "minecraft:item/shears_a3ds": [
+   "element 0: angle -20.0 kept (needs horizon-modelangles)",
+   "element 1: angle -5.0 kept (needs horizon-modelangles)",
+   "element 2: angle -5.0 kept (needs horizon-modelangles)",
+   "element 3: angle 20.0 kept (needs horizon-modelangles)",
+   "element 4: angle 5.0 kept (needs horizon-modelangles)",
+   "element 5: angle 5.0 kept (needs horizon-modelangles)"
+  ]
+ },
+ "output": {
+  "file": "HorizonA3D-proto-exact.zip",
+  "sha512": "e2cd17332544ea42638f874507782bdc202008bd5084e695f89cd058aefd05dd3facf1bc18d3f8731385d6e11c6f3b248c9e18b3511b2b9f365351c8c4991cf3",
+  "entries": 49
+ }
+}

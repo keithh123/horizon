@@ -6,9 +6,12 @@
         "id": "minecraft:heart_of_the_sea"
       }
     },
-    "title": "The Leviathan",
+    "title": "Surface the Leviathan",
     "description": [
-      "Beneath the Sunken City."
+      "Beneath the Sunken City.",
+      "",
+      "&aObjective:&r Defeat the Leviathan under the Sunken City.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {

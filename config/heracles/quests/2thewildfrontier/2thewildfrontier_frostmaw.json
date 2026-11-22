@@ -8,7 +8,10 @@
     },
     "title": "The Frozen Tyrant",
     "description": [
-      "A Frostmaw sleeps in cold biomes. Optional, dangerous - and its first defeat gives you an Ancient Core and a trophy."
+      "A Frostmaw sleeps in cold biomes. Optional, dangerous - and its first defeat gives you an Ancient Core and a trophy.",
+      "",
+      "&aObjective:&r Defeat a Frostmaw in a cold biome.",
+      "&bWhy it matters:&r First defeat grants an Ancient Core and a trophy for your base."
     ],
     "groups": {
       "2 - The Wild Frontier": {
@@ -39,6 +42,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 8
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:icedragonskull",
+        "count": 1
+      }
     }
   }
 }

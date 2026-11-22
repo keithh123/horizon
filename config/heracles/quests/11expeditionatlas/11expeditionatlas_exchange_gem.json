@@ -8,7 +8,10 @@
     },
     "title": "A Gem of Your Choosing",
     "description": [
-      "Craft any Expedition Exchange gem (EMI: search the horizon_exchange recipes)."
+      "Craft any Expedition Exchange gem (EMI: search the horizon_exchange recipes).",
+      "",
+      "&aObjective:&r Craft any Exchange gem (EMI: search horizon_exchange).",
+      "&bWhy it matters:&r Shows the token to gem loop works on your save."
     ],
     "groups": {
       "11 - Expedition Atlas": {

@@ -60,6 +60,7 @@
   "horizon/advancement/trial/horizon.json",
   "horizon/advancement/trial/tides.json",
   "horizon/advancement/trial/void.json",
+  "horizon/advancement/welcome.json",
   "horizon/function/fx/discover.mcfunction",
   "horizon/function/fx/legend_major.mcfunction",
   "horizon/function/fx/legend_mini.mcfunction",

@@ -86,3 +86,25 @@ Ports in game: Snowy Leaves (state + tint), Better Smoke (plumes), Grand Telepor
 Not done yet: eating frames and port sounds (not observable by automation); Better Combat/spell/Punchy animation interplay;
 AE2 terminal screens under Spatial GUI; shader visual check of Better Clouds/Interactive Foliage; matched performance
 comparison; multiplayer with real players.
+
+
+---
+
+# Addendum: 0.3.1 (2026-11-22)
+
+What actually ran:
+
+| Check | Result |
+|---|---|
+| Full generator pipeline twice (`build_all.py --offline`) | Idempotent: 1051 owned files identical. `check_deps` 0 failures. |
+| `audit_quests.py` | 143 quests, 0 problems (placeholders, duplicate titles, prerequisites, cycles, early-chain deadlock). |
+| Source port `horizon_questbook` | Compiles with Gradle against Heracles 2.0.3, Resourcefullib, Olympus. |
+| Dedicated server (`tests/quest_hats_smoke.txt`) | Boots in ~50 s with 129 server mods, KubeJS 3/3 scripts 0 errors (new `horizon_book.js`), the 8 reward hats and `heracles:quest_book` resolve as items, `horizon:welcome` advancement loads (only the 4 known upstream advancement errors remain), 20 TPS in every dimension. |
+| Server with Immersive Portals 6.0.7 (`tests/ip_server_smoke.txt`) | Loads (Immersive Portals Core 1.0.0), 20 TPS; overall 5.46 ms/tick with the three dimensions force-loaded vs 5.66 ms/tick without it (same commands, same seed; world generation noise dominates). |
+| `build.py instance` update | On a copy of the 0.3.1 instance: a manually added jar survived, a stale Horizon-shipped jar was removed, `saves/` untouched, Clavis stayed `.jar.disabled`. |
+
+**Could not run: any client.** The session had no display (`glfwGetPrimaryMonitor failed`), so nothing below was seen:
+quest popup/inventory button/centring/minimap, claim flow and the early chain through reward claiming, hat rendering,
+Fresh Animations add-ons, the Horizon cues, the Photon/Solas/Noble/Bliss presets (only generated and checked for Voxy
+programs), Immersive Portals rendering (fresh chunks, Nether round trip, End, frame times), and Clavis (success/cancel/Lootr
+reopen, cursor, Moonlight). Treat those as untested until someone plays the build.

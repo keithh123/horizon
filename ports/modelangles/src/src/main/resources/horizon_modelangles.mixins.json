@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.horizon.modelangles.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "BlockElementDeserializerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

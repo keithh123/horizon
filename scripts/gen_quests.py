@@ -49,8 +49,10 @@ C["1 - The First Steps"] = [
      ["The world is enormous. Mountains here are real mountains, and with Voxy you can see them from very far away.",
       "This book is a guide, not a checklist: every chapter is optional. Follow what interests you.",
       "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls).",
-      "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it."],
-     [], [("adv", "minecraft:story/root")], [("item", "minecraft:bread", 8)]),
+      "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it.",
+      "&7(Completes by itself on joining. Before 0.3.1 it waited on the vanilla crafting-table advancement, which",
+      "needs wood - the very thing the next quest asks for - so Timber! could never unlock.)"],
+     [], [("adv", "horizon:welcome")], [("item", "minecraft:bread", 8), ("item", "heracles:quest_book", 1)]),
     ("wood", "Timber!", "minecraft:oak_log", ["Gather wood for tools and a first shelter."], ["welcome"],
      [("item", "#minecraft:logs", 16)], [("item", "minecraft:torch", 16)]),
     ("stone_age", "Stone Age", "minecraft:stone_pickaxe", ["Mine stone and craft better tools."], ["wood"],
@@ -61,7 +63,7 @@ C["1 - The First Steps"] = [
      [("adv", "minecraft:adventure/sleep_in_bed")], [("item", "minecraft:campfire", 1), ("xp", 2)]),
     ("kitchen", "Hearty Meals", "farmersdelight:cooking_pot",
      ["Farmer's Delight meals give long buffs - the cheapest expedition preparation there is. AppleSkin shows saturation on hover.",
-      "&7(Introductory item task: craft or hold a cooking pot.)"], ["bed"],
+      "&7(Introductory item task: craft or hold a cooking pot.)"], ["iron"],
      [("item", "farmersdelight:cooking_pot", 1)], [("item", "minecraft:golden_carrot", 8)]),
     ("backpack", "Pack Mule", "sophisticatedbackpacks:backpack", ["A backpack makes long expeditions possible.",
      "&7(Introductory item task.)"], ["iron"], [("item", "sophisticatedbackpacks:backpack", 1)], [("xp", 3)]),
@@ -72,7 +74,7 @@ C["2 - The Wild Frontier"] = [
     ("first_ruin", "Something Old", "minecraft:mossy_cobblestone",
      ["Find any roadside ruin, camp, shrine or watchtower. Small sites are where &aWayfarer Shards&r come from.",
       "Completes when you step inside one (also if you already have)."], [],
-     [("adv", "horizon:atlas/roadside")], [("item", "minecraft:map", 3)]),
+     [("adv", "horizon:atlas/roadside")], [("item", "minecraft:map", 3), ("item", "simplehats:explorerhat", 1)]),
     ("waystone", "Ley Lines", "waystones:waystone",
      ["Waystones stand in villages and some ruins. Right-click one to activate it - it becomes a fast-travel destination.",
       "A personal &eWarp Stone&r costs a Wayfarer Shard; &eWarp Scrolls&r turn up in village chests."], ["first_ruin"],
@@ -86,10 +88,10 @@ C["2 - The Wild Frontier"] = [
      [("adv", "horizon:atlas/landmark")], [("loot", "horizon:rewards/quest/chart_landmark"), ("xp", 5)]),
     ("frostmaw", "The Frozen Tyrant", "minecraft:blue_ice",
      ["A Frostmaw sleeps in cold biomes. Optional, dangerous - and its first defeat gives you an Ancient Core and a trophy."],
-     ["dungeon_arise"], [("adv", "horizon:legend/frostmaw")], [("xp", 8)]),
+     ["dungeon_arise"], [("adv", "horizon:legend/frostmaw")], [("xp", 8), ("item", "simplehats:icedragonskull", 1)]),
     ("wroughtnaut", "Iron in the Dark", "minecraft:iron_block",
      ["Wrought chambers underground hold the Ferrous Wroughtnaut. Hit it from behind. First defeat: Ancient Core + trophy."],
-     ["dungeon_arise"], [("adv", "horizon:legend/ferrous_wroughtnaut")], [("xp", 8)]),
+     ["dungeon_arise"], [("adv", "horizon:legend/ferrous_wroughtnaut")], [("xp", 8), ("item", "simplehats:fullironhelm", 1)]),
     ("core", "Ancient Power", CORE,
      ["Ancient Cores come from temple and landmark treasure rooms and from a mini-boss's first defeat.",
       "They build the ME controller and socketing sigils. &7(Item task.)"], ["dungeon_arise"],
@@ -121,10 +123,10 @@ C["4 - Forgotten Realms"] = [
      [("adv", "minecraft:story/enter_the_nether")], [("item", "minecraft:golden_apple", 2)]),
     ("aether", "Above the Clouds", "minecraft:glowstone", ["Build a glowstone portal to the Aether. Three dungeons, three bosses."], [],
      [("adv", "aether:enter_aether")], [("item", "minecraft:feather", 8)]),
-    ("aether_bronze", "The Slider", "aether:bronze_dungeon_key", ["Defeat the Slider in the bronze dungeon (first defeat: Ancient Core + trophy)."],
+    ("aether_bronze", "Stop the Slider", "aether:bronze_dungeon_key", ["Defeat the Slider in the bronze dungeon (first defeat: Ancient Core + trophy)."],
      ["aether"], [("adv", "aether:bronze_dungeon")], [("xp", 8)]),
     ("aether_gold", "The Sun Spirit", "aether:gold_dungeon_key", ["Defeat the Sun Spirit atop the gold dungeon (first defeat: Starforged Heart + trophy)."],
-     ["aether_bronze"], [("adv", "aether:gold_dungeon")], [("xp", 15)]),
+     ["aether_bronze"], [("adv", "aether:gold_dungeon")], [("xp", 15), ("item", "simplehats:halo", 1)]),
     ("bumblezone", "Buzzing Mysteries", "minecraft:honeycomb", ["Throw an ender pearl into a bee nest to enter the Bumblezone."], [],
      [("dim", "the_bumblezone:the_bumblezone")], [("item", "minecraft:honey_bottle", 6)]),
     ("undergarden", "The Undergarden", "undergarden:catalyst", ["A catalyst lights a portal to the dim world below."], ["nether"],
@@ -137,7 +139,7 @@ C["4 - Forgotten Realms"] = [
      [("adv", "minecraft:story/enter_the_end")], [("xp", 10)]),
     ("dragon", "Free the End", "minecraft:dragon_head", ["The dragon is a beginning. Its first defeat gives a Starforged Heart and a trophy;",
      "re-summoned dragons give their usual drops only."], ["end"],
-     [("adv", "minecraft:end/kill_dragon")], [("xp", 20)]),
+     [("adv", "minecraft:end/kill_dragon")], [("xp", 20), ("item", "simplehats:dragonskullender", 1)]),
 ]
 C["5 - Arcane Studies"] = [
     ("ars_start", "Worn Notebook", "ars_nouveau:worn_notebook", ["Ars Nouveau: utility magic, mana and automation. Read the notebook.",
@@ -154,7 +156,7 @@ C["5 - Arcane Studies"] = [
      [("adv", "irons_spellbooks:irons_spellbooks/make_arcane_anvil")], [("item", "irons_spellbooks:arcane_essence", 8)]),
     ("irons_catacombs", "The Catacombs", "irons_spellbooks:wayward_compass", ["The Dead King waits in the catacombs. Prepare.",
      "His first defeat gives an Ancient Core and a trophy."], ["irons_anvil"],
-     [("adv", "irons_spellbooks:irons_spellbooks/enter_catacombs")], [("xp", 8)]),
+     [("adv", "irons_spellbooks:irons_spellbooks/enter_catacombs")], [("xp", 8), ("item", "simplehats:amalgalichhat", 1)]),
     ("occultism", "Spirits and Chalk", "occultism:chalk_white", ["Occultism summons spirits that mine, craft and store for you."], [],
      [("adv", "occultism:chalks/root")], [("xp", 4)]),
     ("legendary_ink", "Legendary Ink", "irons_spellbooks:legendary_ink", ["Legendary ink - or a Starforged Heart - writes the strongest scrolls."],
@@ -220,13 +222,13 @@ C["8 - The Digital Age"] = [
 C["9 - Legends and Conquests"] = [
     ("cataclysm_find", "Ruins of Calamity", "minecraft:netherite_scrap", ["L_Ender's Cataclysm structures are legendary and rare. Find one."], [],
      [("adv", "cataclysm:root")], [("xp", 5)]),
-    ("ignis", "Ignis", "minecraft:blaze_rod", ["The flame knight in the Burning Arena. First defeat: Starforged Heart + trophy."], ["cataclysm_find"],
+    ("ignis", "Quench the Flame Knight", "minecraft:blaze_rod", ["The flame knight in the Burning Arena. First defeat: Starforged Heart + trophy."], ["cataclysm_find"],
      [("adv", "horizon:legend/ignis")], [("xp", 15)]),
-    ("monstrosity", "Netherite Monstrosity", "minecraft:netherite_ingot", ["Found in the Soul Blacksmith."], ["cataclysm_find"],
+    ("monstrosity", "Break the Monstrosity", "minecraft:netherite_ingot", ["Found in the Soul Blacksmith."], ["cataclysm_find"],
      [("adv", "horizon:legend/netherite_monstrosity")], [("xp", 15)]),
-    ("leviathan", "The Leviathan", "minecraft:heart_of_the_sea", ["Beneath the Sunken City."], ["cataclysm_find"],
+    ("leviathan", "Surface the Leviathan", "minecraft:heart_of_the_sea", ["Beneath the Sunken City."], ["cataclysm_find"],
      [("adv", "horizon:legend/the_leviathan")], [("xp", 15)]),
-    ("harbinger", "The Harbinger", "minecraft:redstone_block", ["Deep in the Ancient Factory."], ["cataclysm_find"],
+    ("harbinger", "Shut Down the Harbinger", "minecraft:redstone_block", ["Deep in the Ancient Factory."], ["cataclysm_find"],
      [("adv", "horizon:legend/the_harbinger")], [("xp", 15)]),
     ("wither", "Wither Storm Lite", "minecraft:wither_skeleton_skull",
      ["Summon and defeat the Wither. The first defeat (per player) gives a Starforged Heart and a trophy;",
@@ -239,7 +241,7 @@ C["9 - Legends and Conquests"] = [
 ]
 C["10 - Beyond the Horizon"] = [
     ("all_cataclysm", "Cataclysm Conqueror", "minecraft:dragon_egg", ["Defeat every Cataclysm boss."], [],
-     [("adv", "cataclysm:kill_all_bosses")], [("item", "apotheosis:sigil_of_enhancement", 1), ("xp", 30)]),
+     [("adv", "cataclysm:kill_all_bosses")], [("item", "apotheosis:sigil_of_enhancement", 1), ("xp", 30), ("item", "simplehats:bigcrown", 1)]),
     ("pinnacle", "World Tier: Pinnacle", "minecraft:beacon", ["The highest world tier. Everything is lethal; everything is worth it."], [],
      [("adv", "apotheosis:progression/pinnacle")], [("xp", 30)]),
     ("fusion_mek", "Star in a Jar", "mekanismgenerators:fusion_reactor_controller", ["Build a Mekanism fusion reactor (needs a Starforged Heart).",
@@ -304,7 +306,7 @@ for b in LEG["bosses"]:
 majors = [f"legend_{b['id'].split(':')[1]}" for b in LEG["bosses"] if b["tier"] == "major"]
 legends.append(("hall_complete", "Curator of Legends", "minecraft:lodestone",
                 ["Defeat every great legend. The reward is a pearl for the Horizon Gauntlet."], majors, [("check",)],
-                [("item", "gateways:gate_pearl", 1, {"gateways:gateway": "horizon:trial/horizon"}), ("xp", 50)]))
+                [("item", "gateways:gate_pearl", 1, {"gateways:gateway": "horizon:trial/horizon"}), ("xp", 50), ("item", "simplehats:crown", 1)]))
 C["12 - Hall of Legends"] = legends
 
 mastery = [("builds", "Choosing a Build", "minecraft:armor_stand",
@@ -341,10 +343,118 @@ for t in EXP["trials"]:
                      "Rewards: affix gear, gems and XP - never relics. Fight it in the open, away from your base.",
                      "&7Completes when you are within 48 blocks of the gate as its last wave falls."],
                     ["builds"], [("adv", f"horizon:trial/{t['id']}")], [("xp", 10)]))
-mastery.append(("perfect_gem", "Flawless Ambition", "apotheosis:gem_cutting_table",
-                ["Cut any gem up to Perfect purity at the gem cutting table. Gem dust comes from salvaging and shards."],
-                ["builds"], [("adv", "apotheosis:progression/pinnacle")], [("xp", 20)]))
+mastery.append(("perfect_gem", "Gem Cutter's Bench", "apotheosis:gem_cutting_table",
+                ["Craft a gem cutting table, then cut gems up toward Perfect purity. Gem dust comes from salvaging and shards.",
+                 "&7(Item task: the table itself. Apotheosis has no advancement for gem purity.)"],
+                ["builds"], [("item", "apotheosis:gem_cutting_table", 1)], [("xp", 20)]))
 C["13 - Mastery and Trials"] = mastery
+
+# ---------------------------------------------------------------- objective + why-it-matters lines
+# (objective, why). Every quest gets both; the generated chapters (atlas, legends, trials) use templates below.
+GUIDE = {
+ "welcome": ("Nothing to do: it completes as you join. Claim the reward.", "It opens the whole chain, and its reward is the physical Quest Book (right-click, or the button under your inventory)."),
+ "wood": ("Collect 16 logs of any kind.", "Planks, sticks and a crafting table are the base of every tool you will make."),
+ "stone_age": ("Mine stone with a wooden pickaxe.", "Stone tools and a furnace are the gate to iron."),
+ "iron": ("Smelt an iron ingot in a furnace.", "Iron makes buckets, shears, armour and most machine parts."),
+ "bed": ("Sleep in a bed through the night.", "Sets your spawn and skips night mobs while you build."),
+ "kitchen": ("Craft or hold a Farmer's Delight cooking pot.", "Cooked meals give long buffs: the cheapest preparation for any expedition."),
+ "backpack": ("Craft a Sophisticated Backpack.", "Extra storage you carry makes long trips to far structures practical."),
+ "diamonds": ("Mine a diamond.", "Diamonds unlock enchanting tables, better tools and the later gem tiers."),
+ "first_ruin": ("Step inside any roadside ruin, camp, shrine or watchtower.", "Small sites are the main source of Wayfarer Shards and teach you how structure loot works."),
+ "waystone": ("Right-click a waystone to activate it.", "Activated waystones become free fast-travel points, so long trips stop costing a day."),
+ "village": ("Trade once with a villager.", "Villagers supply emeralds, maps and Surveyor's Charts that point to great landmarks."),
+ "dungeon_arise": ("Enter one great landmark (follow the chart you receive).", "Landmarks hold the first boss fights and the Ancient Cores that gate tech."),
+ "frostmaw": ("Defeat a Frostmaw in a cold biome.", "First defeat grants an Ancient Core and a trophy for your base."),
+ "wroughtnaut": ("Defeat the Ferrous Wroughtnaut in a Wrought chamber.", "First defeat grants an Ancient Core and a trophy for your base."),
+ "core": ("Hold one Ancient Core.", "Cores gate the ME controller and gem socketing, so tech and gear progress both depend on expeditions."),
+ "apoth_haven": ("Reach the Haven world tier (earned automatically).", "World tier controls which affixes and gems can drop."),
+ "apoth_frontier": ("Reach the Frontier world tier.", "Rarer affixes begin to appear and harder monsters spawn."),
+ "socket": ("Obtain a Sigil of Socketing.", "Sockets let your best weapon carry gems, which is the core Apotheosis upgrade."),
+ "enchant": ("Enchant any item at an enchanting table.", "Apothic Enchanting scales far past vanilla, so a tuned library pays off early."),
+ "simply": ("Obtain any Simply Swords weapon.", "Weapon type decides your combos and playstyle: sample a few before committing."),
+ "artifact": ("Obtain one Artifact from a chest.", "Curios slots add a second equipment layer; duplicates salvage into shards."),
+ "apoth_ascent": ("Reach the Ascent world tier.", "Ascent loot is strong, and so are the monsters; prepare before you push."),
+ "nether": ("Enter the Nether.", "Opens Incendium's biomes, fortresses and the materials for Nether-era gear."),
+ "aether": ("Light an Aether portal and enter.", "A sky realm with three dungeons and the Skyward Plume token."),
+ "aether_bronze": ("Defeat the Slider in the bronze dungeon.", "First defeat grants an Ancient Core and a trophy; its key opens the next dungeon."),
+ "aether_gold": ("Defeat the Sun Spirit atop the gold dungeon.", "First defeat grants a Starforged Heart, needed for the highest tech tiers."),
+ "bumblezone": ("Throw an ender pearl into a bee nest to enter the Bumblezone.", "Honeyed Seals from this realm buy targeted gems at the Expedition Exchange."),
+ "undergarden": ("Light the catalyst portal and enter the Undergarden.", "A dim realm with its own materials, bosses and Echoing Fossil token."),
+ "forgotten_guardian": ("Defeat the Forgotten Guardian in the catacombs.", "Its drops forge Undergarden's best gear."),
+ "otherside": ("Enter the Otherside via the Ancient City portal.", "Deeper and Darker's dimension holds its strongest gear and bosses."),
+ "end": ("Enter the End.", "Nullscape's End is a full expedition area with Starlit Voidglass."),
+ "dragon": ("Defeat the Ender Dragon.", "First defeat grants a Starforged Heart and a trophy; the End then opens fully."),
+ "ars_start": ("Obtain the Worn Notebook.", "It explains every Ars Nouveau mechanic in-game, so you never need a wiki."),
+ "ars_book": ("Craft a Novice Spell Book.", "A spell book is how you cast; glyphs are unlocked by crafting them."),
+ "ars_apparatus": ("Craft an Enchanting Apparatus.", "It crafts most Ars items and unlocks the upgrade path."),
+ "irons_start": ("Craft an Inscription Table.", "Scrolls found in loot must be inscribed into a spellbook to be cast."),
+ "irons_anvil": ("Craft an Arcane Anvil.", "Upgrades scrolls and imbues weapons with spells."),
+ "irons_catacombs": ("Enter the Catacombs.", "The Dead King's first defeat grants an Ancient Core and a trophy."),
+ "occultism": ("Craft chalk and open the Occultism guide.", "Spirits automate mining, crafting and storage without power."),
+ "legendary_ink": ("Obtain Legendary Ink.", "It is the only way to write the strongest spell scrolls."),
+ "andesite": ("Craft andesite alloy.", "Every Create machine starts with it."),
+ "waterwheel": ("Place a water wheel in flowing water.", "First free source of rotation."),
+ "press": ("Build a mechanical press and press a plate.", "Automated plates are the base of most late recipes."),
+ "belt": ("Craft a mechanical belt and move an item.", "Belts move items and power: your first production line."),
+ "brass": ("Make a brass ingot.", "Brass unlocks logistics, mechanical crafters and arms."),
+ "electric": ("Craft a Crafts & Additions alternator.", "It converts rotation into FE and bridges Create to every other tech mod."),
+ "liquid_xp": ("Complete Enchantment Industry's engineer advancement.", "Liquid XP automates enchanting; pair it with Apothic Enchanting."),
+ "mek_metallurgic": ("Craft a metallurgic infuser.", "Steel and alloys are required for most Mekanism machines."),
+ "mek_ore": ("Build an enrichment chamber.", "First ore multiplier, and the entry to further processing chains."),
+ "mi_steam": ("Craft a bronze furnace (Modern Industrialization).", "Steam age is MI's start; multiblocks grow from here."),
+ "mi_ebf": ("Build the Electric Blast Furnace.", "First big electric multiblock and the gateway to advanced metals."),
+ "mi_distill": ("Build a distillation tower.", "Refines oil into fuels and plastics for late recipes."),
+ "powah": ("Craft an Energizing Orb.", "Simple scalable power generation."),
+ "cc": ("Craft a computer.", "Programmable automation for any machine in the pack."),
+ "ae_quartz": ("Charge a certus quartz crystal.", "First step of AE2 and the base of presses and inscribers."),
+ "ae_presses": ("Obtain an inscriber press from a meteorite.", "Presses make processors; finding one needs a meteorite compass."),
+ "ae_controller": ("Craft an ME controller.", "The controller requires an Ancient Core, which ties AE2 to expeditions."),
+ "ae_crafting": ("Build a crafting CPU.", "Autocrafting turns storage into production."),
+ "ae_mek": ("Craft a 1k chemical storage cell.", "Lets AE2 hold Mekanism chemicals and craft with them."),
+ "ae_wireless": ("Craft a wireless terminal.", "Reach your network away from base, including on expeditions."),
+ "cataclysm_find": ("Find any Cataclysm structure.", "Unlocks Cataclysm's bosses, the pack's toughest legends."),
+ "ignis": ("Defeat Ignis in the Burning Arena.", "First defeat grants a Starforged Heart and a trophy."),
+ "monstrosity": ("Defeat the Netherite Monstrosity.", "First defeat grants a Starforged Heart and a trophy."),
+ "leviathan": ("Defeat the Leviathan under the Sunken City.", "First defeat grants a Starforged Heart and a trophy."),
+ "harbinger": ("Defeat the Harbinger in the Ancient Factory.", "First defeat grants a Starforged Heart and a trophy."),
+ "wither": ("Summon and defeat the Wither.", "First defeat per player grants a Starforged Heart; later ones cannot be farmed for hearts."),
+ "warden": ("Defeat a Warden.", "First defeat counts toward a heart; summoned Wardens afterwards do not."),
+ "apoth_summit": ("Reach the Summit world tier.", "Mythic affixes drop, and the deadliest bosses spawn."),
+ "all_cataclysm": ("Defeat every Cataclysm boss.", "The pack's hardest combat milestone."),
+ "pinnacle": ("Reach the Pinnacle world tier.", "The highest tier; every gem can reach Perfect purity."),
+ "fusion_mek": ("Craft a fusion reactor controller (needs a Starforged Heart).", "Mekanism's endgame power."),
+ "fusion_mi": ("Craft MI's fusion reactor controller (needs a Starforged Heart).", "Modern Industrialization's endgame power."),
+ "antimatter": ("Make antimatter in an SPS.", "Antimatter is Mekanism's final resource."),
+ "mega": ("Craft a 256M MEGA cell component (needs a Starforged Heart).", "Effectively unlimited storage for a late AE2 base."),
+ "archmage": ("Craft an Archmage Spell Book.", "Ars Nouveau's final book; every glyph tier is available."),
+ "bumble_all": ("Discover every Bumblezone biome.", "Completing the realm rewards Honeyed Seals for the Exchange."),
+ "exchange": ("Obtain any realm token (see the list above).", "Tokens are the only way to buy a specific gem, so they make dungeon runs targeted."),
+ "exchange_gem": ("Craft any Exchange gem (EMI: search horizon_exchange).", "Shows the token to gem loop works on your save."),
+ "salvage": ("Craft a salvaging table.", "Turns unwanted duplicates into shards, gem dust and sometimes cores."),
+ "atlas": ("Click Check.", "Each following quest explains one structure family before you travel."),
+ "hall": ("Click Check.", "Explains how first-defeat relics, trophies and hearts work."),
+ "builds": ("Click Check.", "Explains the build guides below; none are required."),
+ "build_crit": ("Click Check once you have read the guide.", "Helps pick gems and gear for fast melee."),
+ "build_heavy": ("Click Check once you have read the guide.", "Helps pick gems and gear for heavy melee."),
+ "build_tank": ("Click Check once you have read the guide.", "Helps pick gems and gear for defence."),
+ "build_ranged": ("Click Check once you have read the guide.", "Helps pick gems and gear for bows."),
+ "build_spell": ("Click Check once you have read the guide.", "Helps pick spell schools and gems."),
+ "build_summon": ("Click Check once you have read the guide.", "Helps pick summons and utility tools."),
+ "perfect_gem": ("Craft a gem cutting table.", "Gem cutting is the long game of every build: Perfect gems are the strongest bonuses."),
+ "hall_complete": ("Defeat every great legend, then click Check.", "Its reward opens the Horizon Gauntlet, the hardest fight in the pack."),
+}
+
+
+def objective_why(qid, title):
+    if qid in GUIDE:
+        return GUIDE[qid]
+    if qid.startswith("atlas_"):
+        return ("Step inside any structure of this family.", "Knowing what a family offers before you go makes the trip worth it.")
+    if qid.startswith("legend_"):
+        return (f"Defeat {title}.", "First defeat grants its relic and a trophy for your base; later kills do not.")
+    if qid.startswith("trial_"):
+        return ("Start the gate and survive every wave.", "Trials pay affix gear and gems on a fixed schedule; they never pay relics.")
+    raise SystemExit(f"quest {qid} has no objective/why line")
 
 
 # ---------------------------------------------------------------- validation + emit
@@ -443,9 +553,11 @@ def main():
         for qid, title, icon, desc, deps, tasks, rewards in quests:
             for dep in deps:
                 assert dep in ids, f"{qid}: dependency {dep} not in chapter"
+            obj, why = objective_why(qid, title)
+            assert title.strip() and not title.lower().startswith("new quest"), qid
             quest = {
                 "display": {"icon": {"type": "heracles:item", "item": {"id": check("item", icon)}},
-                            "title": title, "description": desc, "groups": {chapter: {"position": pos[qid]}}},
+                            "title": title, "description": desc + ["", "&aObjective:&r " + obj, "&bWhy it matters:&r " + why], "groups": {chapter: {"position": pos[qid]}}},
                 "settings": {"hidden": "LOCKED", "unlockNotification": True},
                 "dependencies": [f"{folder}_{d}" for d in deps],
                 "tasks": {f"t{i}": task(t) for i, t in enumerate(tasks)},

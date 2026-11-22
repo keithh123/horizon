@@ -11,7 +11,10 @@
       "Every great foe gives its first slayer (and everyone fighting within 96 blocks) a relic and a &etrophy&r -",
       "a display block for your base. Great bosses give a Starforged Heart, lesser ones an Ancient Core.",
       "The reward is once per player, so summonable bosses (Wither, Warden, re-summoned Dragon) cannot be farmed for relics.",
-      "&7Each quest completes when you are credited with the kill (also retroactively)."
+      "&7Each quest completes when you are credited with the kill (also retroactively).",
+      "",
+      "&aObjective:&r Click Check.",
+      "&bWhy it matters:&r Explains how first-defeat relics, trophies and hearts work."
     ],
     "groups": {
       "12 - Hall of Legends": {

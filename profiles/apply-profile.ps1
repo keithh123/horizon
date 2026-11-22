@@ -11,9 +11,11 @@
     shaderpacks/<pack>.txt           the shader preset's option values (Complementary MEDIUM / HIGH ...)
     effect configs                   from effects.json: ambient particle/sound mods per effect level
     ../instance.cfg (Prism)          memory and JVM arguments
+  Optional -Shader photon|noble|bliss (balanced) or solas|noble (cinematic) swaps the shader pack and its preset.
   Gameplay, loot and rewards are identical in every profile; only visuals and background generation change.
 #>
-param([Parameter(Mandatory)][ValidateSet('performance','balanced','cinematic')][string]$Profile)
+param([Parameter(Mandatory)][ValidateSet('performance','balanced','cinematic')][string]$Profile,
+      [ValidateSet('','photon','noble','bliss','solas')][string]$Shader = '')
 $ErrorActionPreference = 'Stop'
 function Write-NoBom([string]$Path, $Lines) { [IO.File]::WriteAllText($Path, (($Lines | ForEach-Object { "$_".TrimStart([char]0xFEFF) }) -join "`n") + "`n", (New-Object Text.UTF8Encoding $false)) }
 function Set-JsonKeys([string]$Path, $Pairs) {
@@ -52,7 +54,10 @@ Set-JsonKeys (Join-Path $mc 'config/voxyworldgenv2.json') @{ enabled = [bool]$wg
 
 # Iris + shader preset options
 $ir = Join-Path $mc 'config/iris.properties'
-$so = (Get-Content (Join-Path $here 'shader_options.json') -Raw | ConvertFrom-Json).$Profile
+$soKey = if ($Shader) { "$Profile-$Shader" } else { $Profile }
+$so = (Get-Content (Join-Path $here 'shader_options.json') -Raw | ConvertFrom-Json).$soKey
+if ($Shader -and -not $so) { throw "No shader preset '$Shader' for profile '$Profile' (see shader_options.json)" }
+if ($so.voxy_programs -eq $false) { Write-Warning "$($so.pack_file) has no Voxy programs: distant terrain will not be shaded. $($so.note)" }
 if (Test-Path $ir) {
   $t = Get-Content $ir
   $pack = if ($so) { $so.pack_file } else { '' }

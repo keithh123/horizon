@@ -9,7 +9,10 @@
     "title": "The Catacombs",
     "description": [
       "The Dead King waits in the catacombs. Prepare.",
-      "His first defeat gives an Ancient Core and a trophy."
+      "His first defeat gives an Ancient Core and a trophy.",
+      "",
+      "&aObjective:&r Enter the Catacombs.",
+      "&bWhy it matters:&r The Dead King's first defeat grants an Ancient Core and a trophy."
     ],
     "groups": {
       "5 - Arcane Studies": {
@@ -40,6 +43,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 8
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:amalgalichhat",
+        "count": 1
+      }
     }
   }
 }

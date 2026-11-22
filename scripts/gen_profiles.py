@@ -31,6 +31,19 @@ def main():
             raise SystemExit(f"{prof.name}: preset {sh['preset']} not in {zipname}")
         opts = dict(kv.split("=", 1) for kv in m.group(1).split())
         out[prof.stem] = {"pack_file": zipname, "preset": sh["preset"], "options": opts}
+        for alt in p.get("shader_alternates", []):
+            azip = next(s["file"] for s in LOCK["shaders"] if s["file"].startswith(alt["pack"]))
+            z = zipfile.ZipFile(CACHE / azip)
+            voxy = any(n.endswith("voxy.json") for n in z.namelist())
+            aopts = {}
+            if alt["preset"]:
+                props = z.read("shaders/shaders.properties").decode("utf-8", "ignore")
+                m = re.search(rf"(?m)^\s*profile\.{alt['preset']}\s*=\s*(.+)$", props)
+                if not m:
+                    raise SystemExit(f"{prof.name}/{alt['id']}: preset {alt['preset']} not in {azip}")
+                aopts = dict(kv.split("=", 1) for kv in m.group(1).split() if "=" in kv)
+            out[f"{prof.stem}-{alt['id']}"] = {"pack_file": azip, "preset": alt["preset"], "options": aopts,
+                                                "voxy_programs": voxy, "note": alt.get("note", "")}
     (ROOT / "profiles/shader_options.json").write_text(json.dumps(out, indent=1) + "\n")
     print({k: (v["pack_file"], v["preset"], len(v["options"])) for k, v in out.items()})
 

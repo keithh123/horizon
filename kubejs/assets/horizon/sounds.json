@@ -1,0 +1,80 @@
+{
+  "cue.item_found": {
+    "subtitle": "horizon.subtitle.item_found",
+    "sounds": [
+      {
+        "name": "minecraft:block.amethyst_block.chime",
+        "type": "event",
+        "volume": 0.35,
+        "pitch": 1.5
+      }
+    ]
+  },
+  "cue.rare_loot": {
+    "subtitle": "horizon.subtitle.rare_loot",
+    "sounds": [
+      {
+        "name": "minecraft:block.amethyst_block.resonate",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.1
+      },
+      {
+        "name": "minecraft:block.amethyst_cluster.break",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 1.2
+      }
+    ]
+  },
+  "cue.mythic": {
+    "subtitle": "horizon.subtitle.mythic",
+    "sounds": [
+      {
+        "name": "minecraft:block.beacon.power_select",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 1.4
+      }
+    ]
+  },
+  "cue.trophy": {
+    "subtitle": "horizon.subtitle.trophy",
+    "sounds": [
+      {
+        "name": "minecraft:ui.toast.challenge_complete",
+        "type": "event",
+        "volume": 0.6,
+        "pitch": 1.0
+      }
+    ]
+  },
+  "cue.legend_slain": {
+    "subtitle": "horizon.subtitle.legend_slain",
+    "sounds": [
+      {
+        "name": "minecraft:entity.player.levelup",
+        "type": "event",
+        "volume": 0.5,
+        "pitch": 0.8
+      }
+    ]
+  },
+  "cue.quest_claim": {
+    "subtitle": "horizon.subtitle.quest_claim",
+    "sounds": [
+      {
+        "name": "minecraft:entity.experience_orb.pickup",
+        "type": "event",
+        "volume": 0.8,
+        "pitch": 0.9
+      },
+      {
+        "name": "minecraft:entity.player.levelup",
+        "type": "event",
+        "volume": 0.45,
+        "pitch": 1.35
+      }
+    ]
+  }
+}

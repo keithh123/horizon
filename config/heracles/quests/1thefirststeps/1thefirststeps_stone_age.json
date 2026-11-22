@@ -8,7 +8,10 @@
     },
     "title": "Stone Age",
     "description": [
-      "Mine stone and craft better tools."
+      "Mine stone and craft better tools.",
+      "",
+      "&aObjective:&r Mine stone with a wooden pickaxe.",
+      "&bWhy it matters:&r Stone tools and a furnace are the gate to iron."
     ],
     "groups": {
       "1 - The First Steps": {

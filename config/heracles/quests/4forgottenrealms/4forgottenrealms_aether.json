@@ -8,7 +8,10 @@
     },
     "title": "Above the Clouds",
     "description": [
-      "Build a glowstone portal to the Aether. Three dungeons, three bosses."
+      "Build a glowstone portal to the Aether. Three dungeons, three bosses.",
+      "",
+      "&aObjective:&r Light an Aether portal and enter.",
+      "&bWhy it matters:&r A sky realm with three dungeons and the Skyward Plume token."
     ],
     "groups": {
       "4 - Forgotten Realms": {

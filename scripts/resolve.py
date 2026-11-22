@@ -85,6 +85,7 @@ def main():
             "server_side": entry.get("side", {}).get("server", proj["server_side"]),
             "license": proj["license"]["id"], "group": group if not parent else "dependency",
             "why": entry.get("why", f"Required dependency of {parent}"),
+            "disabled_by_default": bool(entry.get("disabled_by_default", False)) and not parent,
             "required_by": [parent] if parent else [],
             "deps": [{"project_id": d["project_id"], "version_id": d["version_id"], "type": d["dependency_type"]} for d in v["dependencies"]],
         }

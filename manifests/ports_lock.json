@@ -69,6 +69,42 @@
       }
     },
     {
+      "name": "horizonquestbook",
+      "file": "horizon_questbook-1.0.0-neoforge.1.21.1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": null,
+      "variant": null,
+      "upstream": "ports/horizonquestbook/src (written for Project Horizon)",
+      "size": 17270,
+      "hashes": {
+        "sha1": "c8b4f4367f7de2d57397a12aeb71bdc0548b9791",
+        "sha512": "92e59e1f01a61029ca7386732db0161e839fc02446ea9de3a1bdc42684545ed16ed8b891f1ba1bdeb573940c00a5508b6d65d9a307b8262a4a74f83237a28988"
+      }
+    },
+    {
+      "name": "infinitycave",
+      "file": "infinity_cave-0.7-neoforge-1.21.1-horizon1.jar",
+      "kind": "repack",
+      "side": {
+        "client": "required",
+        "server": "required"
+      },
+      "license": "LGPL-3.0-only",
+      "replaces_slug": null,
+      "variant": "depths",
+      "upstream": "https://modrinth.com/mod/infinity-cave/version/6XJT5mi4",
+      "size": 6967535,
+      "hashes": {
+        "sha1": "715e54efe3a44c15d54395503c3af0e91b8f3373",
+        "sha512": "4438c17f23c9075100db2ab0e80e641777e315ca5a8657bb69f26793f0a2739a4672218e2525a95902656a23adebfe20f2db38eaca0749dbb3dc824a4b52417f"
+      }
+    },
+    {
       "name": "itemlandingsound",
       "file": "item_landing_sound-1.0.2-neoforge.1.21.1.horizon1.jar",
       "kind": "gradle",
@@ -86,6 +122,24 @@
       }
     },
     {
+      "name": "modelangles",
+      "file": "horizon_modelangles-1.0.0-neoforge.1.21.1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": null,
+      "variant": "lab",
+      "upstream": "ports/modelangles/src (written for Project Horizon)",
+      "size": 3007,
+      "hashes": {
+        "sha1": "c856fcb4bb250f46c13665cdead5d484f67b6f3c",
+        "sha512": "dca19381d63b37dd0861362b769d7e6a2519fd9273696dcdb8280341004e7460dee9b5d600322503c71afad545aa394c5fd86d3145629b9d421e40cdb531651d"
+      }
+    },
+    {
       "name": "snowyleavesplus",
       "file": "snowyleavesplus-0.1.12-neoforge.1.21.1.horizon1.jar",
       "kind": "gradle",
@@ -100,6 +154,24 @@
       "hashes": {
         "sha1": "2cb6ee904e3c50f1ce19489ed0e0af3699d225f6",
         "sha512": "ebae0880773bbb19152813b3fd084a1ff711f115009b8a95d8abd3f16f9b3a7052b1d9df83e03bc298256634f4950278442372b7cbb1a9e908d0f63da3daba24"
+      }
+    },
+    {
+      "name": "snugfire",
+      "file": "horizon_snugfire-1.0.0-neoforge.1.21.1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": "tightfire",
+      "variant": "lab",
+      "upstream": "ports/snugfire/src (written for Project Horizon)",
+      "size": 4631,
+      "hashes": {
+        "sha1": "0975914bbb38bbe9f084cca7a0f0363e8ad3940c",
+        "sha512": "8c886edf2fc6d021422f349bfffe3e50f3b50cc5c614112a670ba44bdebbc0c1972227501337b867ffd9aa3e86e54254e961bf030b0a85524f94b70f37003677"
       }
     },
     {

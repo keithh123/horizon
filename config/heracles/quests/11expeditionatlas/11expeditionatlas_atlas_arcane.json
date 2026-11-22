@@ -14,7 +14,10 @@
       "&ePrepare:&r Magic resistance (Iron's), mana regen, a way to fight casters at range.",
       "&eSignature rewards:&r Scrolls and inks (upstream tables, unchanged), Ancient Cores in treasure, Iron's spell gear.",
       "&eComing back:&r Iron's structures are spread far apart; the Dead King's catacombs are a one-time boss lair.",
-      "&eFeeds into:&r Magic route: scrolls -> spellbook; cores -> epic ink."
+      "&eFeeds into:&r Magic route: scrolls -> spellbook; cores -> epic ink.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

@@ -1,5 +1,35 @@
 # Changelog
 
+## 0.3.1 (2026-11-22): quest book, hats, resource pack
+
+Honest status first: this pass was built and statically checked, and the headless server was booted and measured, but
+**no client could be launched** (the desktop session had no display: GLFW "Failed to find a primary monitor"). Everything
+that needs eyes or a mouse is listed as untested in docs/VALIDATION_REPORT.md.
+
+- Quests: 143 quests kept (ids unchanged). "Timber!" was unreachable on a fresh world: the first quest waited on
+  `minecraft:story/root` ("craft a crafting table"), which needs the wood Timber! asks for. It now completes on a
+  Horizon `minecraft:tick` advancement (same task type, so progress saved by 0.3.0 should stay valid). Fixed: Hearty Meals
+  (cooking pot) now follows Iron Will, not Sleep; Flawless Ambition pointed at the Pinnacle advancement (a duplicate of
+  another quest) and is now Gem Cutter's Bench (craft the table); five titles that duplicated Hall of Legends entries
+  renamed. Every quest now ends with an "Objective" and a "Why it matters" line. `scripts/audit_quests.py` checks
+  placeholders, duplicate titles, prerequisites, cycles and the early-chain deadlock (part of build_all).
+- Quest book UI (new local mod `horizon_questbook`, original code): inventory button below the player inventory;
+  Heracles' own `heracles:quest_book` is now craftable (book + compass), rewarded by the first quest and given once to
+  every player on login; one click opens quest details in a popup (description, requirements with state, unmet
+  prerequisites, rewards, claim, X and Esc); every open centres the chapter on its tree; the minimap is forced off.
+- Cosmetics: Simple Hats 0.4.1. Eight curated hats are quest rewards (Frostmaw, Wrought, Sun Spirit, Dragon, Dead King,
+  Cataclysm Conqueror, Curator of Legends, first roadside ruin).
+- Effects: rain ripples (Particle Rain owns them; Subtle Effects off), rain/snow audio (Cool Rain owns it; Particle Rain
+  volume 0), footsteps/impacts (Effectual run dust and block-place effect off; Footprint Particle splash off); Better
+  Combat debug hit boxes off. Reward cues are now Horizon sound events (docs/RESOURCE_PACKS.md).
+- Resource packs: new original `Horizon-16x.zip`; the Fresh Animations All-Extensions bundle is replaced by Details,
+  Emissive and Quivers (Objects, Spiders, Creepers, Classic Horses held back, reasons in docs/RESOURCE_PACKS.md).
+- Shaders: Photon v1.4, Solas 3.9, Noble 1.9.9 and Bliss 2.1.2 added with presets (`apply-profile.ps1 -Profile balanced
+  -Shader photon`). Performance stays shader-free. Bliss has no Voxy programs; the switcher warns.
+- Clavis ships **disabled by default** (`Clavis-*.jar.disabled`): the lockpicking cursor bug could not be tested.
+- Immersive Portals (NeoForge 6.0.7) not enabled: server side loads and ticks like the baseline, client rendering is untested.
+- Build: `build.py instance` now removes only jars Horizon itself shipped, so manually added mods survive an update.
+
 ## 0.3.0 (2026-11-21): expansion candidate
 
 - 176 locked mods (+60: 51 requested native NeoForge 1.21.1 builds pinned by version id, 9 dependencies), 6 resource packs

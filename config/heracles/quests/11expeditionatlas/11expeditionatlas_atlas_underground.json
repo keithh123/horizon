@@ -14,7 +14,10 @@
       "&ePrepare:&r Iron armour, torches, a shield. Strongholds: diamond gear.",
       "&eSignature rewards:&r Shards in volume, the first Ancient Cores, spawners for Apothic Spawners.",
       "&eComing back:&r Spawners can be kept and modified (Apothic Spawners). Mineshafts are huge but low value per chest.",
-      "&eFeeds into:&r Spawners -> mob farms (bounded by spawner count), cores -> sockets."
+      "&eFeeds into:&r Spawners -> mob farms (bounded by spawner count), cores -> sockets.",
+      "",
+      "&aObjective:&r Step inside any structure of this family.",
+      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
     ],
     "groups": {
       "11 - Expedition Atlas": {

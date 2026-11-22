@@ -9,7 +9,10 @@
     "title": "Star in a Jar",
     "description": [
       "Build a Mekanism fusion reactor (needs a Starforged Heart).",
-      "&7(Item task: the controller. Form the reactor and ignite it to make it useful.)"
+      "&7(Item task: the controller. Form the reactor and ignite it to make it useful.)",
+      "",
+      "&aObjective:&r Craft a fusion reactor controller (needs a Starforged Heart).",
+      "&bWhy it matters:&r Mekanism's endgame power."
     ],
     "groups": {
       "10 - Beyond the Horizon": {

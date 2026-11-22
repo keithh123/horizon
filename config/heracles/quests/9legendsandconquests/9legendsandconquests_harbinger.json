@@ -6,9 +6,12 @@
         "id": "minecraft:redstone_block"
       }
     },
-    "title": "The Harbinger",
+    "title": "Shut Down the Harbinger",
     "description": [
-      "Deep in the Ancient Factory."
+      "Deep in the Ancient Factory.",
+      "",
+      "&aObjective:&r Defeat the Harbinger in the Ancient Factory.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {

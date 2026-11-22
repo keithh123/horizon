@@ -8,7 +8,10 @@
     },
     "title": "Curator of Legends",
     "description": [
-      "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet."
+      "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet.",
+      "",
+      "&aObjective:&r Defeat every great legend, then click Check.",
+      "&bWhy it matters:&r Its reward opens the Horizon Gauntlet, the hardest fight in the pack."
     ],
     "groups": {
       "12 - Hall of Legends": {
@@ -58,6 +61,13 @@
       "type": "heracles:xp",
       "xptype": "LEVEL",
       "amount": 50
+    },
+    "r2": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:crown",
+        "count": 1
+      }
     }
   }
 }

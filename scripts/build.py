@@ -29,16 +29,23 @@ def lock():
     return json.loads((ROOT / "manifests/lock.json").read_text())
 
 
-def ports():
+VARIANTS = {None: {"suffix": "", "name": "Project Horizon", "note": ""},
+            "lab": {"suffix": "-lab", "name": "Project Horizon (lab)", "note": " Untested ports."},
+            "depths": {"suffix": "-depths", "name": "Project Horizon: Depths",
+                       "note": " NEW WORLDS ONLY: Infinity Cave merged into Horizon terrain, overworld floor at Y -128."}}
+
+
+def ports(variant=None):
     """Locally built jars (ports/, scripts/build_ports.py). Shipped inside the pack because their
-    licenses permit redistribution; see docs/PORTS.md."""
+    licenses permit redistribution; see docs/PORTS.md. A port with a 'variant' ships only in that variant."""
     f = ROOT / "manifests/ports_lock.json"
     out = []
     for p in (json.loads(f.read_text())["ports"] if f.exists() else []):
         jar = ROOT / "ports/dist" / p["file"]
         if hashlib.sha512(jar.read_bytes()).hexdigest() != p["hashes"]["sha512"]:
             raise SystemExit(f"port {p['name']}: ports/dist/{p['file']} does not match ports_lock.json - run scripts/build_ports.py")
-        out.append(dict(p, path=jar))
+        if p.get("variant") in (None, variant):
+            out.append(dict(p, path=jar))
     return out
 
 
@@ -105,7 +112,7 @@ def set_resourcepacks(options: Path, packs):
     """Enable the pack's resource packs in lock order (first = lowest priority) above vanilla/mod resources,
     keeping any extra packs the player enabled (they stay on top)."""
     lines = options.read_text().splitlines() if options.exists() else []
-    ours = ["vanilla", "mod_resources"] + [f"file/{p['file']}" for p in packs]
+    ours = ["vanilla", "mod_resources"] + [f"file/{p['file']}" for p in packs] + [f"file/{n}" for n in LOCAL_PACKS]
     old = next((l for l in lines if l.startswith("resourcePacks:")), None)
     extra = []
     if old:
@@ -123,6 +130,34 @@ def set_resourcepacks(options: Path, packs):
 KNOWN_OLD = {"file/FA+Player-v1.1.zip", "file/FA-Player-Compats-1.3.1-mc1.21.1.zip", "file/Freshly Modded 3.0.5.zip"}
 
 
+LOCAL_PACKS = ["Horizon-16x.zip"]   # built by scripts/gen_resourcepack.py into resourcepacks/; highest priority of ours
+
+
+def deployed(m):
+    """File name a mod is installed under. Mods flagged disabled_by_default ship as <jar>.disabled (Prism lists them
+    as disabled; the player ticks them on). A copy the player already enabled is left alone."""
+    return m["file"] + (".disabled" if m.get("disabled_by_default") else "")
+
+
+def managed_names(mc: Path):
+    """Jars Horizon itself has shipped (earlier .mrpack indexes, local ports, our own install manifest). Only these
+    may be removed on update; anything else in mods/ was added by the player and is never touched."""
+    names = set()
+    mf = mc / "mods" / ".horizon-managed.json"
+    if mf.exists():
+        names |= set(json.loads(mf.read_text()))
+    for pk in (ROOT / "dist").glob("ProjectHorizon-*.mrpack"):
+        with zipfile.ZipFile(pk) as z:
+            for f in json.loads(z.read("modrinth.index.json"))["files"]:
+                if f["path"].startswith("mods/"):
+                    names.add(Path(f["path"]).name.removesuffix(".disabled"))
+            names |= {Path(n).name for n in z.namelist() if "/mods/" in n and n.endswith(".jar")}
+    lp = ROOT / "manifests/ports_lock.json"
+    if lp.exists():
+        names |= {p["file"] for p in json.loads(lp.read_text())["ports"]}
+    return names
+
+
 def env(m):
     # Everything in the roster is part of the experience, so it is "required" on
     # every side the mod supports. Modrinth's per-project "optional" flag describes
@@ -133,9 +168,9 @@ def env(m):
             "server": "unsupported" if m["server_side"] == "unsupported" else "required"}
 
 
-def mrpack():
+def mrpack(variant=None):
     L = lock()
-    files = [{"path": f"mods/{m['file']}", "hashes": {"sha1": m["hashes"]["sha1"], "sha512": m["hashes"]["sha512"]},
+    files = [{"path": f"mods/{deployed(m)}", "hashes": {"sha1": m["hashes"]["sha1"], "sha512": m["hashes"]["sha512"]},
               "env": env(m), "downloads": [m["url"]], "fileSize": m["size"]} for m in L["mods"]]
     files += [{"path": f"shaderpacks/{s['file']}", "hashes": {"sha1": s["hashes"]["sha1"], "sha512": s["hashes"]["sha512"]},
                "env": {"client": "optional" if s["slug"] != "complementary-reimagined" else "required", "server": "unsupported"},
@@ -143,10 +178,11 @@ def mrpack():
     files += [{"path": f"resourcepacks/{s['file']}", "hashes": {"sha1": s["hashes"]["sha1"], "sha512": s["hashes"]["sha512"]},
                "env": {"client": "required", "server": "unsupported"},
                "downloads": [s["url"]], "fileSize": s["size"]} for s in L.get("resourcepacks", [])]
-    index = {"formatVersion": 1, "game": "minecraft", "versionId": VERSION, "name": "Project Horizon",
-             "summary": "Exploration-first RPG + technology pack with Voxy long-distance rendering.",
+    index = {"formatVersion": 1, "game": "minecraft", "versionId": VERSION + (f"+{variant}" if variant else ""),
+             "name": VARIANTS[variant]["name"],
+             "summary": "Exploration-first RPG + technology pack with Voxy long-distance rendering." + VARIANTS[variant]["note"],
              "files": files, "dependencies": {"minecraft": L["minecraft"], "neoforge": L["loader_version"]}}
-    out = ROOT / "dist" / f"ProjectHorizon-{VERSION}.mrpack"
+    out = ROOT / "dist" / f"ProjectHorizon-{VERSION}{VARIANTS[variant]['suffix']}.mrpack"
     out.parent.mkdir(exist_ok=True)
     stage = CACHE.parent / "overrides"
     shutil.rmtree(stage, ignore_errors=True)
@@ -157,27 +193,38 @@ def mrpack():
         for f in stage.rglob("*"):
             if f.is_file():
                 z.write(f, "overrides/" + f.relative_to(stage).as_posix())
-        for p in ports():
+        for p in ports(variant):
             root = "client-overrides" if p["side"]["server"] == "unsupported" else "overrides"
             z.write(p["path"], f"{root}/mods/{p['file']}")
     print(f"wrote {out} ({len(files)} files, {out.stat().st_size/1024:.0f} KiB)")
 
 
-def instance(name, groups):
+def instance(name, groups, variant=None):
     L = lock()
     mods = select(L["mods"], groups)
     inst = Path(os.environ["APPDATA"]) / "PrismLauncher" / "instances" / name
     mc = inst / "minecraft"
     (mc / "mods").mkdir(parents=True, exist_ok=True)
-    wanted = {m["file"] for m in mods} | {p["file"] for p in ports()}
-    for f in (mc / "mods").glob("*.jar"):
-        if f.name not in wanted:
+    wanted = {m["file"] for m in mods} | {p["file"] for p in ports(variant)}
+    managed = managed_names(mc)
+    kept = [f.name for f in (mc / "mods").glob("*.jar") if f.name not in managed]
+    for f in (mc / "mods").glob("*.jar*"):
+        base = f.name.removesuffix(".disabled")
+        if base in managed and base not in wanted:
             f.unlink()
-    for p in ports():
+    for p in ports(variant):
         shutil.copy2(p["path"], mc / "mods" / p["file"])
     for i, m in enumerate(mods, 1):
-        shutil.copy2(fetch(m), mc / "mods" / m["file"])
-        print(f"[{i}/{len(mods)}] {m['file']}", flush=True)
+        dest = mc / "mods" / m["file"]
+        if m.get("disabled_by_default") and not dest.exists():
+            dest = mc / "mods" / deployed(m)
+        elif m.get("disabled_by_default"):
+            pass                      # the player enabled it: keep their choice
+        shutil.copy2(fetch(m), dest)
+        print(f"[{i}/{len(mods)}] {dest.name}", flush=True)
+    (mc / "mods" / ".horizon-managed.json").write_text(json.dumps(sorted(managed | wanted), indent=1))
+    if kept:
+        print(f"kept {len(kept)} jar(s) the player added: {kept}")
     for s in L["shaders"]:
         (mc / "shaderpacks").mkdir(exist_ok=True)
         shutil.copy2(fetch(s), mc / "shaderpacks" / s["file"])
@@ -205,16 +252,16 @@ def instance(name, groups):
     print(f"instance {name}: {len(mods)} mods -> {inst}")
 
 
-def server(target: Path, accept_eula: bool):
+def server(target: Path, accept_eula: bool, variant=None):
     """Populate an installed NeoForge server dir (java -jar neoforge-installer.jar --installServer)
     with server-side mods and the server-relevant overrides. eula.txt is written only when the
     operator explicitly passes --accept-eula."""
     L = lock()
     if not (target / "run.bat").exists():
         raise SystemExit(f"{target} is not an installed NeoForge server (no run.bat)")
-    mods = [m for m in L["mods"] if m["server_side"] != "unsupported"]
+    mods = [m for m in L["mods"] if m["server_side"] != "unsupported" and not m.get("disabled_by_default")]
     (target / "mods").mkdir(exist_ok=True)
-    sports = [p for p in ports() if p["side"]["server"] != "unsupported"]
+    sports = [p for p in ports(variant) if p["side"]["server"] != "unsupported"]
     wanted = {m["file"] for m in mods} | {p["file"] for p in sports}
     for f in (target / "mods").glob("*.jar"):
         if f.name not in wanted:
@@ -251,9 +298,12 @@ if __name__ == "__main__":
     args = sys.argv[2:]
     groups = args[args.index("--groups") + 1].split(",") if "--groups" in args else None
     name = args[args.index("--name") + 1] if "--name" in args else "ProjectHorizon-dev"
+    variant = args[args.index("--variant") + 1] if "--variant" in args else None
+    if variant not in VARIANTS:
+        raise SystemExit(f"unknown variant {variant}; known: {[v for v in VARIANTS if v]}")
     if cmd == "mrpack":
-        mrpack()
+        mrpack(variant)
     elif cmd == "server":
-        server(Path(args[0]), "--accept-eula" in args)
+        server(Path(args[0]), "--accept-eula" in args, variant)
     else:
-        instance(name, groups)
+        instance(name, groups, variant)

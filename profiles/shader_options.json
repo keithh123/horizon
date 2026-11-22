@@ -19,6 +19,58 @@
    "RAIN_PUDDLES": "0"
   }
  },
+ "balanced-photon": {
+  "pack_file": "photon_v1.4.zip",
+  "preset": "medium",
+  "options": {
+   "INFO": "1",
+   "shadowMapResolution": "2048",
+   "SHADER_AO": "SHADER_AO_SSAO"
+  },
+  "voxy_programs": true,
+  "note": "Photon v1.4, Voxy-aware"
+ },
+ "balanced-noble": {
+  "pack_file": "Noble v1.9.9.zip",
+  "preset": "MEDIUM",
+  "options": {
+   "RENDER_SCALE_OPTION": "100",
+   "shadowMapResolution": "3072",
+   "shadowDistance": "128",
+   "SHADOWS": "1",
+   "SHADOW_SAMPLES": "8",
+   "AO": "1",
+   "AO_SCALE": "50",
+   "REFLECTIONS": "1",
+   "REFLECTIONS_SCALE": "100",
+   "REFLECTIONS_STRIDE": "48",
+   "ATMOSPHERE_SCALE": "10",
+   "ATMOSPHERE_SCATTERING_STEPS": "16",
+   "ATMOSPHERE_TRANSMITTANCE_STEPS": "8",
+   "CLOUDS_SCALE": "50",
+   "CLOUDS_SHADOWS": "0",
+   "CLOUDS_LAYER0_ENABLED": "1",
+   "CLOUDS_LAYER1_ENABLED": "1",
+   "AIR_FOG": "1",
+   "AIR_FOG_MIN_SCATTERING_STEPS": "8",
+   "POM_LAYERS": "32",
+   "POM_DISTANCE": "32",
+   "POM_SHADOWING": "0",
+   "POM_DEPTH_WRITE": "0",
+   "WATER_PARALLAX": "1",
+   "WATER_CAUSTICS": "1",
+   "WATER_FOG_STEPS": "4"
+  },
+  "voxy_programs": true,
+  "note": "Optional: Noble 1.9.9, Voxy-aware"
+ },
+ "balanced-bliss": {
+  "pack_file": "Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+  "preset": null,
+  "options": {},
+  "voxy_programs": false,
+  "note": "Optional: Bliss 2.1.2 has NO Voxy support: distant terrain is unshaded/hidden. Pack defaults."
+ },
  "cinematic": {
   "pack_file": "ComplementaryUnbound_r5.9.3.zip",
   "preset": "HIGH",
@@ -38,5 +90,51 @@
    "ENTITY_SHADOW": "1",
    "RAIN_PUDDLES": "0"
   }
+ },
+ "cinematic-solas": {
+  "pack_file": "Solas Shader V3.9.zip",
+  "preset": "HIGH",
+  "options": {
+   "shadowMapResolution": "2048",
+   "shadowDistance": "192.0",
+   "VOXEL_VOLUME_SIZE": "192",
+   "VL_SAMPLES": "8"
+  },
+  "voxy_programs": true,
+  "note": "Solas 3.9, Voxy-aware"
+ },
+ "cinematic-noble": {
+  "pack_file": "Noble v1.9.9.zip",
+  "preset": "HIGH",
+  "options": {
+   "RENDER_SCALE_OPTION": "100",
+   "shadowMapResolution": "4096",
+   "shadowDistance": "256",
+   "SHADOWS": "1",
+   "SHADOW_SAMPLES": "8",
+   "AO": "1",
+   "AO_SCALE": "75",
+   "REFLECTIONS": "1",
+   "REFLECTIONS_SCALE": "100",
+   "REFLECTIONS_STRIDE": "32",
+   "ATMOSPHERE_SCALE": "50",
+   "ATMOSPHERE_SCATTERING_STEPS": "16",
+   "ATMOSPHERE_TRANSMITTANCE_STEPS": "16",
+   "CLOUDS_SCALE": "50",
+   "CLOUDS_SHADOWS": "1",
+   "CLOUDS_LAYER0_ENABLED": "1",
+   "CLOUDS_LAYER1_ENABLED": "1",
+   "AIR_FOG": "1",
+   "AIR_FOG_MIN_SCATTERING_STEPS": "16",
+   "POM_LAYERS": "64",
+   "POM_DISTANCE": "64",
+   "POM_SHADOWING": "1",
+   "POM_DEPTH_WRITE": "1",
+   "WATER_PARALLAX": "1",
+   "WATER_CAUSTICS": "1",
+   "WATER_FOG_STEPS": "8"
+  },
+  "voxy_programs": true,
+  "note": "Optional: Noble 1.9.9, Voxy-aware"
  }
 }

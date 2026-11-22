@@ -6,9 +6,13 @@
         "id": "apotheosis:gem_cutting_table"
       }
     },
-    "title": "Flawless Ambition",
+    "title": "Gem Cutter's Bench",
     "description": [
-      "Cut any gem up to Perfect purity at the gem cutting table. Gem dust comes from salvaging and shards."
+      "Craft a gem cutting table, then cut gems up toward Perfect purity. Gem dust comes from salvaging and shards.",
+      "&7(Item task: the table itself. Apotheosis has no advancement for gem purity.)",
+      "",
+      "&aObjective:&r Craft a gem cutting table.",
+      "&bWhy it matters:&r Gem cutting is the long game of every build: Perfect gems are the strongest bonuses."
     ],
     "groups": {
       "13 - Mastery and Trials": {
@@ -28,10 +32,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:advancement",
-      "advancements": [
-        "apotheosis:progression/pinnacle"
-      ]
+      "type": "heracles:item",
+      "item": "apotheosis:gem_cutting_table",
+      "amount": 1,
+      "collection": "AUTOMATIC"
     }
   },
   "rewards": {

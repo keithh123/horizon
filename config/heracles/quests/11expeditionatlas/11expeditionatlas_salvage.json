@@ -10,7 +10,10 @@
     "description": [
       "Duplicate Artifacts, Relics and Simply Swords uniques salvage into Wayfarer Shards and gem dust (uniques can",
       "also give an Ancient Core) at Apotheosis' salvaging table. Only loot-only items salvage - nothing farmable.",
-      "&7(Item task: build a salvaging table.)"
+      "&7(Item task: build a salvaging table.)",
+      "",
+      "&aObjective:&r Craft a salvaging table.",
+      "&bWhy it matters:&r Turns unwanted duplicates into shards, gem dust and sometimes cores."
     ],
     "groups": {
       "11 - Expedition Atlas": {

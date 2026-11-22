@@ -2,7 +2,7 @@
   "minecraft": "1.21.1",
   "loader": "neoforge",
   "loader_version": "21.1.267",
-  "generated": "2026-11-21",
+  "generated": "2026-11-22",
   "mods": [
     {
       "slug": "entity-model-features",
@@ -23,14 +23,15 @@
       "url": "https://cdn.modrinth.com/data/4I1XuqiY/versions/197m3VoU/entity_model_features-3.3.12-1.21-neoforge.jar",
       "size": 656382,
       "hashes": {
-        "sha512": "b18bde755c6719c62579d65c96e6e768c99b25fba9f987dc843b2a64ce4d713ba2f8151da4a98efe76d854550f40356ac4fdfa952568cf1fb11771353dfc70e8",
-        "sha1": "e9a163b77243cdfcb0ad3d698dc48a60cb8710e9"
+        "sha1": "e9a163b77243cdfcb0ad3d698dc48a60cb8710e9",
+        "sha512": "b18bde755c6719c62579d65c96e6e768c99b25fba9f987dc843b2a64ce4d713ba2f8151da4a98efe76d854550f40356ac4fdfa952568cf1fb11771353dfc70e8"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "animation",
       "why": "EMF: required for Fresh Animations (no OptiFine).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -59,14 +60,15 @@
       "url": "https://cdn.modrinth.com/data/BVzZfTc1/versions/1DVPB3a4/entity_texture_features-7.2.7-1.21-neoforge.jar",
       "size": 811876,
       "hashes": {
-        "sha1": "5fd97ee3a0a3bb8c223f26f196bdb5c9e9841923",
-        "sha512": "eca787ad7c15819f9cb14e29a3748b49d0d2a6af01e3a18295293ccacac636090bf71d6756ac640b81f5079f21814e306493f6b94be35e6b8cef198363ecb337"
+        "sha512": "eca787ad7c15819f9cb14e29a3748b49d0d2a6af01e3a18295293ccacac636090bf71d6756ac640b81f5079f21814e306493f6b94be35e6b8cef198363ecb337",
+        "sha1": "5fd97ee3a0a3bb8c223f26f196bdb5c9e9841923"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "animation",
       "why": "ETF: required for Fresh Animations and emissives.",
+      "disabled_by_default": false,
       "required_by": [
         "entity-model-features"
       ],
@@ -98,6 +100,7 @@
       "license": "LGPL-3.0-only",
       "group": "atmosphere",
       "why": "Biome/time-aware ambient soundscapes.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -133,6 +136,7 @@
       "license": "MIT",
       "group": "atmosphere",
       "why": "Better weather particles.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -154,14 +158,15 @@
       "url": "https://cdn.modrinth.com/data/4q8UOK1d/versions/1Cj3QYAu/SubtleEffects-neoforge-1.21.1-1.15.3.jar",
       "size": 3477966,
       "hashes": {
-        "sha512": "cdd70d36cd2837cf97b61c276b085d1517e3a4c04e495aa0da7f48af989900853f6e8ac248351d78b062bd08be7cbabc0826299e5d3afa44d94f38dc4cb83b53",
-        "sha1": "886b352836f2453ed73e6b7b3142fdf34a6cdd72"
+        "sha1": "886b352836f2453ed73e6b7b3142fdf34a6cdd72",
+        "sha512": "cdd70d36cd2837cf97b61c276b085d1517e3a4c04e495aa0da7f48af989900853f6e8ac248351d78b062bd08be7cbabc0826299e5d3afa44d94f38dc4cb83b53"
       },
       "client_side": "required",
       "server_side": "optional",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "atmosphere",
       "why": "Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -189,14 +194,15 @@
       "url": "https://cdn.modrinth.com/data/IgftU6Mn/versions/SwSSfJQQ/coolrain-1.21.1-NeoForge-1.0.2.jar",
       "size": 4151295,
       "hashes": {
-        "sha1": "2f41f15cb7b6c46aeeae95c29c1f3a9c1d53f327",
-        "sha512": "bd463f60ac2ab9f22bc7b7c35656e3e174b2db5bde95f3c7d404b07f085bdbd550774e9bf7ff81310a0f4eea5348398d2a8f617a1d1644db6e38c8eb83245328"
+        "sha512": "bd463f60ac2ab9f22bc7b7c35656e3e174b2db5bde95f3c7d404b07f085bdbd550774e9bf7ff81310a0f4eea5348398d2a8f617a1d1644db6e38c8eb83245328",
+        "sha1": "2f41f15cb7b6c46aeeae95c29c1f3a9c1d53f327"
       },
       "client_side": "unknown",
       "server_side": "unknown",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "audio",
       "why": "Cool Rain: rain sound variants.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -230,6 +236,7 @@
       "license": "GPL-3.0-only",
       "group": "audio",
       "why": "More Sounds (beta, exact target build).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -251,14 +258,15 @@
       "url": "https://cdn.modrinth.com/data/Zf8HMFM5/versions/EssE56Wf/satisfying_buttons-neoforge-1.1.2-1.21.1.jar",
       "size": 82520,
       "hashes": {
-        "sha1": "68b35adab60992d1aeaff2f720abc9f458b485b6",
-        "sha512": "99f8392b55da724b6ec477200664e92109a89639a2c01a991b378310fd6c9910250d87c53910b9deea6f905e23c2360a4c7069614a9b3cacdaf872a04adb0389"
+        "sha512": "99f8392b55da724b6ec477200664e92109a89639a2c01a991b378310fd6c9910250d87c53910b9deea6f905e23c2360a4c7069614a9b3cacdaf872a04adb0389",
+        "sha1": "68b35adab60992d1aeaff2f720abc9f458b485b6"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LicenseRef-Tonis-MMC-License",
       "group": "audio",
       "why": "Satisfying Buttons: GUI button feedback.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -288,6 +296,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "audio",
       "why": "Sounds: UI/item/block sound polish.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -325,14 +334,15 @@
       "url": "https://cdn.modrinth.com/data/uY9zbflw/versions/3TaQzJJO/soundcontroller-neoforge-1.4.0-mc1.21.1.jar",
       "size": 143696,
       "hashes": {
-        "sha1": "03e5cdf3352ca6d041eac8a5cd876e02912b73d1",
-        "sha512": "8a7e12caed7392166a7d79b7525b5865123779c3965175f85853f4c559cd279d69b135c8e0039258e46ae969ea90a47b38deb37acdb0aab164c381725f35e4a0"
+        "sha512": "8a7e12caed7392166a7d79b7525b5865123779c3965175f85853f4c559cd279d69b135c8e0039258e46ae969ea90a47b38deb37acdb0aab164c381725f35e4a0",
+        "sha1": "03e5cdf3352ca6d041eac8a5cd876e02912b73d1"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "audio",
       "why": "Sound Controller: per-sound volume control for overlapping sound mods.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -355,14 +365,15 @@
       "url": "https://cdn.modrinth.com/data/ANu8FMzT/versions/o2kINZoC/auto_third_person-neo-1.21.1-2.2.jar",
       "size": 47890,
       "hashes": {
-        "sha1": "5b66b1c3ca8d32d06327d9564abf5a364296af3c",
-        "sha512": "1f6e395aafdf46e18a9873fa89d6bd4ad3a3cf800d0d1e33191ac8afaf50461a59174247ec5be3e8f6dfe7e360f444f27a0b41ccd9b3b9812598da9950e27f47"
+        "sha512": "1f6e395aafdf46e18a9873fa89d6bd4ad3a3cf800d0d1e33191ac8afaf50461a59174247ec5be3e8f6dfe7e360f444f27a0b41ccd9b3b9812598da9950e27f47",
+        "sha1": "5b66b1c3ca8d32d06327d9564abf5a364296af3c"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-or-later",
       "group": "camera_anim",
       "why": "Auto Third Person: camera while riding/swimming/gliding.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -392,6 +403,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "camera_anim",
       "why": "Punchy!: first-person animation overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -413,14 +425,15 @@
       "url": "https://cdn.modrinth.com/data/mzgtK8pY/versions/8dHgPPh6/punchy-moves-1.0.9b-neoforge-1.21.1.jar",
       "size": 1283504,
       "hashes": {
-        "sha512": "3170ba413202dafe3571d5023cdf3fa3e2b9ecf79decf03220a14dff453d76398b4e8eca24d17844269bc10b2111cadac36ed64b15ca0523b6730cc2855901ad",
-        "sha1": "1e938b17657839a3d87044860bbe432c98f90141"
+        "sha1": "1e938b17657839a3d87044860bbe432c98f90141",
+        "sha512": "3170ba413202dafe3571d5023cdf3fa3e2b9ecf79decf03220a14dff453d76398b4e8eca24d17844269bc10b2111cadac36ed64b15ca0523b6730cc2855901ad"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "camera_anim",
       "why": "Punchy Moves: first-person attack animations (beta). Fluid & Foolish (its required animation pack) is installed as a resource pack.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -457,6 +470,7 @@
       "license": "MIT",
       "group": "camera_anim",
       "why": "Respawn Recap: death recap screen.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -493,6 +507,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "camera_anim",
       "why": "Seamless Sleep: smooth time passage while sleeping.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -521,14 +536,15 @@
       "url": "https://cdn.modrinth.com/data/hFUzfDsn/versions/snhDYBxP/BOMD-NeoForge-1.21-1.3.3.jar",
       "size": 1952017,
       "hashes": {
-        "sha1": "446ff63afb858ad49149d24b72541739de83d38d",
-        "sha512": "29a35ed7ce6d0832614b526295f33c3b92a136c1c235ccea3ce0312543e05ee7353d22e4814cbad884824e4381d32a7835e73d72d06c0fed53a9f5fc6b275951"
+        "sha512": "29a35ed7ce6d0832614b526295f33c3b92a136c1c235ccea3ce0312543e05ee7353d22e4814cbad884824e4381d32a7835e73d72d06c0fed53a9f5fc6b275951",
+        "sha1": "446ff63afb858ad49149d24b72541739de83d38d"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "content_ext",
       "why": "Bosses of Mass Destruction (existing NeoForge port).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -537,12 +553,12 @@
           "type": "required"
         },
         {
-          "project_id": "GkIc6rRo",
+          "project_id": "9s6osm5g",
           "version_id": null,
           "type": "required"
         },
         {
-          "project_id": "9s6osm5g",
+          "project_id": "GkIc6rRo",
           "version_id": null,
           "type": "required"
         }
@@ -566,14 +582,15 @@
       "url": "https://cdn.modrinth.com/data/q2bV1Tm1/versions/lE9PF6Wp/block_factorys_bosses-2.1.2-neo-1.21.1.jar",
       "size": 23943105,
       "hashes": {
-        "sha1": "249a5f2ba43fd341d4a2831691c154d92aa5a12d",
-        "sha512": "9a2b58bd7c15c15f089d87bdd1ac5b8cccaeab6a28518b9a10336e811334aba7e42c9cae7733a5fd7125ebce28554b0dea530cb7f86ecb85617203d948590344"
+        "sha512": "9a2b58bd7c15c15f089d87bdd1ac5b8cccaeab6a28518b9a10336e811334aba7e42c9cae7733a5fd7125ebce28554b0dea530cb7f86ecb85617203d948590344",
+        "sha1": "249a5f2ba43fd341d4a2831691c154d92aa5a12d"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
       "why": "Bosses' Rise.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -601,25 +618,26 @@
       "url": "https://cdn.modrinth.com/data/y9Xnig6p/versions/pncc8FpD/Clavis-NEOFORGE-0.2.13%2B1.21.1.jar",
       "size": 322447,
       "hashes": {
-        "sha1": "0215f3c831df113f9e5cc7c8bfff969d291a4c04",
-        "sha512": "e28b0516591471272542843cc9bea9032c0d1c6e0791a70919b402d90c9b26be87f15d21ea2912b9cf87e3bba134c00e21e8fceac9ee0283c0b53c99ac20b5f4"
+        "sha512": "e28b0516591471272542843cc9bea9032c0d1c6e0791a70919b402d90c9b26be87f15d21ea2912b9cf87e3bba134c00e21e8fceac9ee0283c0b53c99ac20b5f4",
+        "sha1": "0215f3c831df113f9e5cc7c8bfff969d291a4c04"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
-      "why": "Clavis: key-and-lock dungeon loot.",
+      "why": "Clavis: key-and-lock dungeon loot. DISABLED BY DEFAULT (0.3.1): lockpicking cursor bug not verified fixed; see docs/KNOWN_ISSUES.md. Enable by renaming mods/*.jar.disabled to .jar.",
+      "disabled_by_default": true,
       "required_by": [],
       "deps": [
-        {
-          "project_id": "RH2KUdKJ",
-          "version_id": null,
-          "type": "required"
-        },
         {
           "project_id": "EltpO5cN",
           "version_id": null,
           "type": "optional"
+        },
+        {
+          "project_id": "RH2KUdKJ",
+          "version_id": null,
+          "type": "required"
         }
       ]
     },
@@ -650,6 +668,7 @@
       "license": "GPL-3.0-only",
       "group": "content_ext",
       "why": "Companions! (confirmed by user).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -690,6 +709,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
       "why": "Fantasy Armor.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -722,14 +742,15 @@
       "url": "https://cdn.modrinth.com/data/rsBLWxD0/versions/KTq0GVPl/fantasy-weapons-1.0-1.21.1-neoforge.jar",
       "size": 241315,
       "hashes": {
-        "sha512": "3873a76c2c12884ce19a4044fcab392c9047fe25968551f7527c41c1ada0a1675a6d3aa6e41b73ab42fd71f3b7b832a0a0461ab8fa03ff62ff04fc1b7a4c6f45",
-        "sha1": "67b91bf5a235611ea10c81d348f7bbc7c7a125d9"
+        "sha1": "67b91bf5a235611ea10c81d348f7bbc7c7a125d9",
+        "sha512": "3873a76c2c12884ce19a4044fcab392c9047fe25968551f7527c41c1ada0a1675a6d3aa6e41b73ab42fd71f3b7b832a0a0461ab8fa03ff62ff04fc1b7a4c6f45"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
       "why": "Fantasy Weapons.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -751,14 +772,15 @@
       "url": "https://cdn.modrinth.com/data/l7Ddlxg5/versions/ay2cFXz0/simpleblood-1.21.1-1.0.5.jar",
       "size": 71624,
       "hashes": {
-        "sha1": "78a56b59a32fb1f61fa02bd83661034687697372",
-        "sha512": "e171b7e446b5c926626018255eb7a1e4ba0ed0dbfae78bef7179bb847171479119070893bac69d2fb53cbe7b4593fd011606725ff1535b835589118b2c7ca152"
+        "sha512": "e171b7e446b5c926626018255eb7a1e4ba0ed0dbfae78bef7179bb847171479119070893bac69d2fb53cbe7b4593fd011606725ff1535b835589118b2c7ca152",
+        "sha1": "78a56b59a32fb1f61fa02bd83661034687697372"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "content_ext",
       "why": "Iron's Simple Blood.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -780,14 +802,15 @@
       "url": "https://cdn.modrinth.com/data/41B2buzz/versions/bjAno6mP/primal-1.1.6%2B1.21.jar",
       "size": 13075156,
       "hashes": {
-        "sha1": "609c9217dfeebb42fe4e070d63aa6d0e1d818c5b",
-        "sha512": "aa1cb5ba4e4043493f0fe573b08adba314aa03be1e9373ff962b1e27d0847a22711dc88a093cc3908fc4a5fb7057ffcc6b42279e000b7483f912bbcd044166dc"
+        "sha512": "aa1cb5ba4e4043493f0fe573b08adba314aa03be1e9373ff962b1e27d0847a22711dc88a093cc3908fc4a5fb7057ffcc6b42279e000b7483f912bbcd044166dc",
+        "sha1": "609c9217dfeebb42fe4e070d63aa6d0e1d818c5b"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "content_ext",
       "why": "Primal.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -818,6 +841,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
       "why": "Spider Overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -853,8 +877,55 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "content_ext",
       "why": "Wither: Reincarnated.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
+    },
+    {
+      "slug": "simple-hats",
+      "title": "Simple Hats",
+      "project_id": "iSkQCp6b",
+      "version_id": "t7zbSooi",
+      "version": "1.21.1-Neo-0.4.1",
+      "channel": "release",
+      "published": "2026-10-17",
+      "loaders": [
+        "neoforge"
+      ],
+      "game_versions": [
+        "1.21.1"
+      ],
+      "file": "simplehats-neoforge-1.21.1-0.4.1.jar",
+      "url": "https://cdn.modrinth.com/data/iSkQCp6b/versions/t7zbSooi/simplehats-neoforge-1.21.1-0.4.1.jar",
+      "size": 1407624,
+      "hashes": {
+        "sha1": "db9a2a5e72b0eae36b90962a7f19035f38bb5669",
+        "sha512": "db4f65911bdfaf21d68dc2d930ef0053069d6c518177b19095c051e0ba77754862c334215c7e613dda90351a86880995e043038ceb40987f5bfcfde72eda6cb3"
+      },
+      "client_side": "required",
+      "server_side": "required",
+      "license": "LicenseRef-Multiple",
+      "group": "cosmetics",
+      "why": "Simple Hats: wearable hats (head slot). 0.3.1: a few rare hats are quest and dungeon rewards (horizon loot + KubeJS), the rest unlocked by the mod's own system.",
+      "disabled_by_default": false,
+      "required_by": [],
+      "deps": [
+        {
+          "project_id": "jtmvUHXj",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "ccKDOlHs",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "optional"
+        }
+      ]
     },
     {
       "slug": "architectury-api",
@@ -883,6 +954,7 @@
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of simply-swords",
+      "disabled_by_default": false,
       "required_by": [
         "simply-swords",
         "shatterbyte-lib",
@@ -910,14 +982,15 @@
       "url": "https://cdn.modrinth.com/data/MBAkmtvl/versions/gMedgtzL/balm-neoforge-1.21.1-21.0.67.jar",
       "size": 786010,
       "hashes": {
-        "sha1": "68c95ca8a6a87d26199d43ff6978bc94949329e3",
-        "sha512": "ad4f4df829b1195446486df818c2c1f0bf6738cb1b30cfdbf9eae4855ce62a66b00f2dc5e0a87409f25ce4eba9bd5c94e1b10d1940af451d5ef7dd7f4b3d8ebd"
+        "sha512": "ad4f4df829b1195446486df818c2c1f0bf6738cb1b30cfdbf9eae4855ce62a66b00f2dc5e0a87409f25ce4eba9bd5c94e1b10d1940af451d5ef7dd7f4b3d8ebd",
+        "sha1": "68c95ca8a6a87d26199d43ff6978bc94949329e3"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "dependency",
       "why": "Required dependency of waystones",
+      "disabled_by_default": false,
       "required_by": [
         "waystones"
       ],
@@ -941,14 +1014,15 @@
       "url": "https://cdn.modrinth.com/data/iHLDc0eo/versions/uPFbnD32/better-advanced-tooltips-2101.1.0-build.5.jar",
       "size": 37653,
       "hashes": {
-        "sha512": "05b5cdad948d1735eab7a67a16aaf32814678c392014ec2ada61b8341c0ed1c1ac181cab1de9da3f2c4632592f4a1a5db254bd0543e6778897c8ccd260894142",
-        "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50"
+        "sha1": "5b73537b908764f2d3fd593a0f56a8b1b034bc50",
+        "sha512": "05b5cdad948d1735eab7a67a16aaf32814678c392014ec2ada61b8341c0ed1c1ac181cab1de9da3f2c4632592f4a1a5db254bd0543e6778897c8ccd260894142"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of kubejs",
+      "disabled_by_default": false,
       "required_by": [
         "kubejs"
       ],
@@ -980,6 +1054,7 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of voxy-worldgen",
+      "disabled_by_default": false,
       "required_by": [
         "voxy-worldgen"
       ],
@@ -1010,14 +1085,15 @@
       "url": "https://cdn.modrinth.com/data/GkIc6rRo/versions/5wbxkBQ1/CerbonsAPI-NeoForge-1.21-1.3.0.jar",
       "size": 250545,
       "hashes": {
-        "sha1": "3f0d3eed4633d9ef3a713de4b39ee4e683aa9389",
-        "sha512": "6bd24b718d532cdd0c49150eefc223b4d7c3550bbc81d5c65ed84b704bf3c8e20d3cb3524082688383cc4aba38e190921976b056b84d5755670c5399a7c7e627"
+        "sha512": "6bd24b718d532cdd0c49150eefc223b4d7c3550bbc81d5c65ed84b704bf3c8e20d3cb3524082688383cc4aba38e190921976b056b84d5755670c5399a7c7e627",
+        "sha1": "3f0d3eed4633d9ef3a713de4b39ee4e683aa9389"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of bosses-of-mass-destruction-forge",
+      "disabled_by_default": false,
       "required_by": [
         "bosses-of-mass-destruction-forge",
         "cerbons-api"
@@ -1057,6 +1133,7 @@
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of voxy-worldgen",
+      "disabled_by_default": false,
       "required_by": [
         "voxy-worldgen",
         "better-combat",
@@ -1086,14 +1163,15 @@
       "url": "https://cdn.modrinth.com/data/dzb1a5WV/versions/b0u9vk8C/CreateDragonsPlus-1.11.9.jar",
       "size": 1085674,
       "hashes": {
-        "sha1": "67ffcb61207a7dbc6b1e70f0473ddbacb19d44eb",
-        "sha512": "43299e49afe7132515aa8ad545b8c9566d90f12cfb39456b3d6e1ebc8e03f05787fbc420e7cc9495df4d6b585d13e7a4c4c7385f82f20aeb829c9491b725af53"
+        "sha512": "43299e49afe7132515aa8ad545b8c9566d90f12cfb39456b3d6e1ebc8e03f05787fbc420e7cc9495df4d6b585d13e7a4c4c7385f82f20aeb829c9491b725af53",
+        "sha1": "67ffcb61207a7dbc6b1e70f0473ddbacb19d44eb"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LGPL-3.0-or-later",
       "group": "dependency",
       "why": "Required dependency of create-enchantment-industry",
+      "disabled_by_default": false,
       "required_by": [
         "create-enchantment-industry"
       ],
@@ -1131,6 +1209,7 @@
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of ambientsounds",
+      "disabled_by_default": false,
       "required_by": [
         "ambientsounds"
       ],
@@ -1162,6 +1241,7 @@
       "license": "CC-BY-NC-ND-4.0",
       "group": "dependency",
       "why": "Required dependency of towns-and-towers",
+      "disabled_by_default": false,
       "required_by": [
         "towns-and-towers"
       ],
@@ -1192,14 +1272,15 @@
       "url": "https://cdn.modrinth.com/data/hYykXjDp/versions/jRuOkBAG/fzzy_config-0.7.7%2Bfix1%2B1.21%2Bneoforge.jar",
       "size": 2392720,
       "hashes": {
-        "sha512": "7ea074ac2bee3471a213ed6e55d3beafded16631ea517ecbc6711324f6af82b697c9d391aaadcefff67eda13d5dcc2bfb5011373c73a7015761060b6d89cf15c",
-        "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472"
+        "sha1": "aa04a2ddbce2f50b21d667d2f3e589f9e043e472",
+        "sha512": "7ea074ac2bee3471a213ed6e55d3beafded16631ea517ecbc6711324f6af82b697c9d391aaadcefff67eda13d5dcc2bfb5011373c73a7015761060b6d89cf15c"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-TDL-M",
       "group": "dependency",
       "why": "Required dependency of simply-swords",
+      "disabled_by_default": false,
       "required_by": [
         "simply-swords",
         "subtle-effects",
@@ -1239,6 +1320,7 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of mowzies-mobs",
+      "disabled_by_default": false,
       "required_by": [
         "mowzies-mobs",
         "occultism",
@@ -1275,6 +1357,7 @@
       "license": "LicenseRef-Multiple-OSS-Licenses",
       "group": "dependency",
       "why": "Required dependency of modern-industrialization",
+      "disabled_by_default": false,
       "required_by": [
         "modern-industrialization",
         "powah",
@@ -1308,6 +1391,7 @@
       "license": "CC-BY-NC-ND-4.0",
       "group": "dependency",
       "why": "Required dependency of advancement-plaques",
+      "disabled_by_default": false,
       "required_by": [
         "advancement-plaques",
         "legendary-tooltips"
@@ -1341,6 +1425,7 @@
       "license": "GPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of companions-mod",
+      "disabled_by_default": false,
       "required_by": [
         "companions-mod"
       ],
@@ -1382,6 +1467,7 @@
       "license": "LGPL-2.1-only",
       "group": "dependency",
       "why": "Required dependency of respawn-recap",
+      "disabled_by_default": false,
       "required_by": [
         "respawn-recap",
         "fzzy-config"
@@ -1414,6 +1500,7 @@
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of l_enders-cataclysm",
+      "disabled_by_default": false,
       "required_by": [
         "l_enders-cataclysm"
       ],
@@ -1445,6 +1532,7 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of terralith",
+      "disabled_by_default": false,
       "required_by": [
         "terralith",
         "tectonic",
@@ -1470,14 +1558,15 @@
       "url": "https://cdn.modrinth.com/data/7tEfOcA7/versions/V6oWFnxW/mezz_config-1.21.1-neoforge-0.7.1-standalone.jar",
       "size": 347249,
       "hashes": {
-        "sha512": "e3576344d96b4734d35c7ceb969020ef728a666b771fb6da0465d08d940daff3c48352f6f3ca989edbe7fff57737d2fea4621f6422e858f95efe9fa70b46dfb2",
-        "sha1": "2382e29c9a0f44d4f4b9baa4cb3f6a356e048e60"
+        "sha1": "2382e29c9a0f44d4f4b9baa4cb3f6a356e048e60",
+        "sha512": "e3576344d96b4734d35c7ceb969020ef728a666b771fb6da0465d08d940daff3c48352f6f3ca989edbe7fff57737d2fea4621f6422e858f95efe9fa70b46dfb2"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of jei",
+      "disabled_by_default": false,
       "required_by": [
         "jei"
       ],
@@ -1502,14 +1591,15 @@
       "url": "https://cdn.modrinth.com/data/codAaoxh/versions/vcVnfiCM/midnightlib-neoforge-1.10.0%2B1.21.1.jar",
       "size": 64794,
       "hashes": {
-        "sha512": "9586940ec144452577455b61fd7c9f7ee123044a47255f9425be1bfcd4e842d5902b66c7f5546540281cad8c12e30d38fc29e8fb3aa3cb592ed13ff430316e68",
-        "sha1": "540612caebec8a02a8774488e03982488b6bbba9"
+        "sha1": "540612caebec8a02a8774488e03982488b6bbba9",
+        "sha512": "9586940ec144452577455b61fd7c9f7ee123044a47255f9425be1bfcd4e842d5902b66c7f5546540281cad8c12e30d38fc29e8fb3aa3cb592ed13ff430316e68"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of visual-overhaul",
+      "disabled_by_default": false,
       "required_by": [
         "visual-overhaul"
       ],
@@ -1541,6 +1631,7 @@
       "license": "MIT AND CC-BY-4.0",
       "group": "dependency",
       "why": "Required dependency of occultism",
+      "disabled_by_default": false,
       "required_by": [
         "occultism"
       ],
@@ -1571,14 +1662,15 @@
       "url": "https://cdn.modrinth.com/data/1oUDhxuy/versions/wcg4mE4e/MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
       "size": 1094979,
       "hashes": {
-        "sha1": "c379b8d5dc1a4b1e8987da1052d6b4de81354d72",
-        "sha512": "378d5da579e65e8c37d81aee510302f99b3097f0c6a4245f3621478f741fac3b55a3715227d9408153a66c98624f8fcb5f93e98027212e0f0a82b768315d0651"
+        "sha512": "378d5da579e65e8c37d81aee510302f99b3097f0c6a4245f3621478f741fac3b55a3715227d9408153a66c98624f8fcb5f93e98027212e0f0a82b768315d0651",
+        "sha1": "c379b8d5dc1a4b1e8987da1052d6b4de81354d72"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of mmr-moogs-mineshafts-reimagined",
+      "disabled_by_default": false,
       "required_by": [
         "mmr-moogs-mineshafts-reimagined"
       ],
@@ -1602,14 +1694,15 @@
       "url": "https://cdn.modrinth.com/data/ffLDUGbm/versions/nK9D38gY/MossyLib-2.0.0%2B1.21.1%2Bneoforge.jar",
       "size": 226215,
       "hashes": {
-        "sha512": "35d1a634c70b0daf2d664d8351e3895c0963707e569533ac97d197312978ef684955adb1c47795f6f4ef731e32b99e9ba9a5e7c6b8aed5d96e120b975292b5bb",
-        "sha1": "3e62bb5979518de7e5effff0f7dd5356e3d5065e"
+        "sha1": "3e62bb5979518de7e5effff0f7dd5356e3d5065e",
+        "sha512": "35d1a634c70b0daf2d664d8351e3895c0963707e569533ac97d197312978ef684955adb1c47795f6f4ef731e32b99e9ba9a5e7c6b8aed5d96e120b975292b5bb"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "CC-BY-ND-4.0",
       "group": "dependency",
       "why": "Required dependency of inventory-particles",
+      "disabled_by_default": false,
       "required_by": [
         "inventory-particles"
       ],
@@ -1647,6 +1740,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "dependency",
       "why": "Required dependency of sound",
+      "disabled_by_default": false,
       "required_by": [
         "sound"
       ],
@@ -1685,8 +1779,10 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of aether",
+      "disabled_by_default": false,
       "required_by": [
-        "aether"
+        "aether",
+        "simple-hats"
       ],
       "deps": []
     },
@@ -1716,6 +1812,7 @@
       "license": "CC-BY-NC-SA-3.0",
       "group": "dependency",
       "why": "Required dependency of apotheosis",
+      "disabled_by_default": false,
       "required_by": [
         "apotheosis"
       ],
@@ -1747,6 +1844,7 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of apotheosis",
+      "disabled_by_default": false,
       "required_by": [
         "apotheosis",
         "apothic-attributes",
@@ -1775,14 +1873,15 @@
       "url": "https://cdn.modrinth.com/data/gedNE4y2/versions/HJZB6bmA/player-animation-lib-forge-2.0.4%2B1.21.1.jar",
       "size": 203149,
       "hashes": {
-        "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f",
-        "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c"
+        "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c",
+        "sha512": "fc00450fb6c95ec1779021bdc726122dacb5915c6baddaacc981cd221b01b8db35f2a0dfde5d6fa6766d877266dc82f58854f571ea53cc5c4d468b80e1548a5f"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of better-combat",
+      "disabled_by_default": false,
       "required_by": [
         "better-combat"
       ],
@@ -1820,6 +1919,7 @@
       "license": "CC-BY-NC-ND-4.0",
       "group": "dependency",
       "why": "Required dependency of legendary-tooltips",
+      "disabled_by_default": false,
       "required_by": [
         "legendary-tooltips"
       ],
@@ -1844,14 +1944,15 @@
       "url": "https://cdn.modrinth.com/data/G1hIVOrD/versions/x99nCLTm/resourcefullib-neoforge-1.21-3.0.12.jar",
       "size": 484332,
       "hashes": {
-        "sha512": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8",
-        "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df"
+        "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df",
+        "sha512": "a9d20e345faa9bcb297bd95ac9524205834804d1bb13518397dd4f7f62b352b08c3339ee7f7870d3669078ceeb33d5c31ea527aecce4b31d62ec1ff7d8b562c8"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of the-bumblezone",
+      "disabled_by_default": false,
       "required_by": [
         "the-bumblezone",
         "odyssey-quests"
@@ -1883,14 +1984,15 @@
       "url": "https://cdn.modrinth.com/data/sk9knFPE/versions/cQ4POTah/rhino-2101.2.7-build.85.jar",
       "size": 882075,
       "hashes": {
-        "sha1": "3c8d34c7efe9e42fc90506acbf9fc842d36f9a42",
-        "sha512": "0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693"
+        "sha512": "0a6c7f4410281aeb03b815ec03487a8e80a4d3dae013d81282e447bf9c08144ef57318af614ea6d40b7d9a8c25031c557890ec792a5895a82467c1643116f693",
+        "sha1": "3c8d34c7efe9e42fc90506acbf9fc842d36f9a42"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "MPL-2.0",
       "group": "dependency",
       "why": "Required dependency of kubejs",
+      "disabled_by_default": false,
       "required_by": [
         "kubejs"
       ],
@@ -1914,14 +2016,15 @@
       "url": "https://cdn.modrinth.com/data/fuuu3xnx/versions/iEE85X0w/Searchables-neoforge-1.21.1-1.0.2.jar",
       "size": 77326,
       "hashes": {
-        "sha512": "d0824bac1900142ac9a53e68f7ec3b4c0d33d9366bbd3f1d0d93eed860e5eb6b5e6f5a215a69bfffa70bcb48573ff49b5a12bbaa96096ceac6636000d506027a",
-        "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+        "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74",
+        "sha512": "d0824bac1900142ac9a53e68f7ec3b4c0d33d9366bbd3f1d0d93eed860e5eb6b5e6f5a215a69bfffa70bcb48573ff49b5a12bbaa96096ceac6636000d506027a"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of controlling",
+      "disabled_by_default": false,
       "required_by": [
         "controlling"
       ],
@@ -1945,14 +2048,15 @@
       "url": "https://cdn.modrinth.com/data/6avVoBVB/versions/Zb6dytvm/SimplyTooltips-neoforge-0.1.5.jar",
       "size": 5512986,
       "hashes": {
-        "sha1": "6227453d5b628b1009d6ec516a0da5b588849744",
-        "sha512": "7be6beb5f72c03b7c9f44568c11577f2ba50aec8d16af34d860294718cd2ab550691a8e82756d96c6f0bdd1111e2de8aa68db970c5762be659ad4aec69940ebd"
+        "sha512": "7be6beb5f72c03b7c9f44568c11577f2ba50aec8d16af34d860294718cd2ab550691a8e82756d96c6f0bdd1111e2de8aa68db970c5762be659ad4aec69940ebd",
+        "sha1": "6227453d5b628b1009d6ec516a0da5b588849744"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LicenseRef-Timefall-Development-License-1.2",
       "group": "dependency",
       "why": "Required dependency of simply-swords",
+      "disabled_by_default": false,
       "required_by": [
         "simply-swords"
       ],
@@ -1995,6 +2099,7 @@
       "license": "MPL-2.0",
       "group": "dependency",
       "why": "Required dependency of occultism",
+      "disabled_by_default": false,
       "required_by": [
         "occultism"
       ],
@@ -2018,14 +2123,15 @@
       "url": "https://cdn.modrinth.com/data/nmoqTijg/versions/9e7VbbdS/sophisticatedcore-1.21.1-1.5.39.2489.jar",
       "size": 1855442,
       "hashes": {
-        "sha1": "27d19713fec2c1b1e8e8158b2c7e285d6153778b",
-        "sha512": "eb11155bbebd1e84957ccd3207ab54a0f9c47f09796bd8fdcc23aeaa16def26661c070e30846bb9eae752e08c0ee510eb2cd4c790bf2e4575212907fef9cde1d"
+        "sha512": "eb11155bbebd1e84957ccd3207ab54a0f9c47f09796bd8fdcc23aeaa16def26661c070e30846bb9eae752e08c0ee510eb2cd4c790bf2e4575212907fef9cde1d",
+        "sha1": "27d19713fec2c1b1e8e8158b2c7e285d6153778b"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "dependency",
       "why": "Required dependency of sophisticated-backpacks",
+      "disabled_by_default": false,
       "required_by": [
         "sophisticated-backpacks",
         "sophisticated-storage"
@@ -2050,14 +2156,15 @@
       "url": "https://cdn.modrinth.com/data/Gj6Yce3v/versions/uGTq42kW/sway-2.4.5-neoforge%2B1.21.1.jar",
       "size": 74388,
       "hashes": {
-        "sha512": "85d51a58b983f1ff8e0fc773d80db31921614dc3200e934c41c42ed24c1ce6ba20b69706d7a25e868066dc20028607979ae956c9e2c20505ed70ffc60741694f",
-        "sha1": "6c1664020f8f0e0bd3771fbebdc4707993527a18"
+        "sha1": "6c1664020f8f0e0bd3771fbebdc4707993527a18",
+        "sha512": "85d51a58b983f1ff8e0fc773d80db31921614dc3200e934c41c42ed24c1ce6ba20b69706d7a25e868066dc20028607979ae956c9e2c20505ed70ffc60741694f"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "CC-BY-NC-SA-4.0",
       "group": "dependency",
       "why": "Required dependency of mc2-interactive-foliage",
+      "disabled_by_default": false,
       "required_by": [
         "mc2-interactive-foliage"
       ],
@@ -2089,6 +2196,7 @@
       "license": "MIT",
       "group": "dependency",
       "why": "Required dependency of effectual",
+      "disabled_by_default": false,
       "required_by": [
         "effectual"
       ],
@@ -2119,14 +2227,15 @@
       "url": "https://cdn.modrinth.com/data/1eAoo2KR/versions/7TVdVtxF/yet_another_config_lib_v3-3.8.2%2B1.21.1-neoforge.jar",
       "size": 1118651,
       "hashes": {
-        "sha512": "583de19b927ce8050c2b7d5e60b75accc69e325e5aac85c27994c82a9dec2e4e078343fa1d4c3a10d4bd7e0e524e0b3b246a18cf03db01e363a1e6f865adcf48",
-        "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb"
+        "sha1": "fe270c9f6e0a8142cf316944087f5109cef08bbb",
+        "sha512": "583de19b927ce8050c2b7d5e60b75accc69e325e5aac85c27994c82a9dec2e4e078343fa1d4c3a10d4bd7e0e524e0b3b246a18cf03db01e363a1e6f865adcf48"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "LGPL-3.0-or-later",
       "group": "dependency",
       "why": "Required dependency of better-clouds",
+      "disabled_by_default": false,
       "required_by": [
         "better-clouds",
         "particle-interactions",
@@ -2164,6 +2273,7 @@
       "license": "LGPL-3.0-only",
       "group": "dependency",
       "why": "Required dependency of yungs-better-dungeons",
+      "disabled_by_default": false,
       "required_by": [
         "yungs-better-dungeons",
         "yungs-better-mineshafts",
@@ -2197,14 +2307,15 @@
       "url": "https://cdn.modrinth.com/data/YhmgMVyu/versions/K5X5qMwG/aether-1.21.1-1.5.10-neoforge.jar",
       "size": 40223909,
       "hashes": {
-        "sha1": "7554b1dd391b8dd06a810918ec705d0493f693eb",
-        "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46"
+        "sha512": "4b004daed6d09362646e204f068dee28e80523e705e862778036c492775672071ca9cc95f9574a842f34d2e058b46138c6154c6a2f251dcdad7a8803907dad46",
+        "sha1": "7554b1dd391b8dd06a810918ec705d0493f693eb"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-Custom",
       "group": "dimensions",
       "why": "Sky dimension with three dungeon bosses and its own gear line.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2242,14 +2353,15 @@
       "url": "https://cdn.modrinth.com/data/fnAffV0n/versions/TuD0Zvi3/deeperdarker-neoforge-1.21.1-1.4.1.jar",
       "size": 3906057,
       "hashes": {
-        "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c",
-        "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f"
+        "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f",
+        "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "AGPL-3.0-only",
       "group": "dimensions",
       "why": "Otherside dimension beyond Ancient Cities; Warden-tier progression.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2271,25 +2383,26 @@
       "url": "https://cdn.modrinth.com/data/38tpSycf/versions/8YIuAJAj/the_bumblezone-7.19.3%2B1.21.1-neoforge.jar",
       "size": 83645330,
       "hashes": {
-        "sha1": "f2182319e6f3e0bd7376d6de9b1fd2e4f9ebf168",
-        "sha512": "3dc16cd3433f0291c73d5927d737be7b832e64b8b77f37ec25db2641eae0652fa0c59188e4c61e5fd959b6f12bd0a1f995d68cb4aa520988103e20ebfc9ba139"
+        "sha512": "3dc16cd3433f0291c73d5927d737be7b832e64b8b77f37ec25db2641eae0652fa0c59188e4c61e5fd959b6f12bd0a1f995d68cb4aa520988103e20ebfc9ba139",
+        "sha1": "f2182319e6f3e0bd7376d6de9b1fd2e4f9ebf168"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "dimensions",
       "why": "Unique bee dimension with its own challenge/quest-like progression.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
-        {
-          "project_id": "Q2OqKxDG",
-          "version_id": null,
-          "type": "optional"
-        },
         {
           "project_id": "G1hIVOrD",
           "version_id": null,
           "type": "required"
+        },
+        {
+          "project_id": "Q2OqKxDG",
+          "version_id": null,
+          "type": "optional"
         }
       ]
     },
@@ -2319,6 +2432,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "dimensions",
       "why": "Underground dimension with a boss and its own material tier.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2348,6 +2462,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "fx",
       "why": "ATMOSPHERICS: client-side atmosphere polish.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2378,6 +2493,7 @@
       "license": "MPL-2.0",
       "group": "fx",
       "why": "Better Clouds: Sodium/Iris-aware cloud renderer. Profile-controlled.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2423,6 +2539,7 @@
       "license": "MPL-2.0",
       "group": "fx",
       "why": "Cave Dust: underground dust particles; owns cave dust (Subtle Effects equivalent off).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2452,6 +2569,7 @@
       "license": "MIT",
       "group": "fx",
       "why": "Clear Despawn: items blink before despawning.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2481,6 +2599,7 @@
       "license": "MIT",
       "group": "fx",
       "why": "Cozy Critters & Creepy Crawlies: client-side ambient critters. Profile-controlled density.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2510,6 +2629,7 @@
       "license": "MIT",
       "group": "fx",
       "why": "Effectual: ambient particles; overlapping Subtle Effects categories disabled.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2518,12 +2638,12 @@
           "type": "required"
         },
         {
-          "project_id": "9s6osm5g",
+          "project_id": "sBn7rVvc",
           "version_id": null,
           "type": "required"
         },
         {
-          "project_id": "sBn7rVvc",
+          "project_id": "9s6osm5g",
           "version_id": null,
           "type": "required"
         }
@@ -2555,6 +2675,7 @@
       "license": "GPL-3.0-or-later",
       "group": "fx",
       "why": "Footprint Particle: footprints on soft blocks. Profile-controlled.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2587,14 +2708,15 @@
       "url": "https://cdn.modrinth.com/data/IAzUFvS6/versions/o7bsv488/fwa%2B1.21.1-neoforge-1.3.8.jar",
       "size": 410804,
       "hashes": {
-        "sha512": "68e10e65f3ce4312b34c19cae3f72a1d82a16edfbba88cbd6e0f890434f7f7f2628774773ed38bb62cac8ff92d593716fb0906558ed2e9079a7bd08867f34461",
-        "sha1": "bf7e21132d3171d6c184d04fd5a176be09d4a7a5"
+        "sha1": "bf7e21132d3171d6c184d04fd5a176be09d4a7a5",
+        "sha512": "68e10e65f3ce4312b34c19cae3f72a1d82a16edfbba88cbd6e0f890434f7f7f2628774773ed38bb62cac8ff92d593716fb0906558ed2e9079a7bd08867f34461"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "MIT",
       "group": "fx",
       "why": "Fancy World Animations: block open/close animations. Lantern swing owned by Swinging Lanterns.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2624,13 +2746,9 @@
       "license": "CC-BY-ND-4.0",
       "group": "fx",
       "why": "Inventory Particles: particles on item interactions in GUIs.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
-        {
-          "project_id": "1eAoo2KR",
-          "version_id": null,
-          "type": "optional"
-        },
         {
           "project_id": "PLAGcSFJ",
           "version_id": null,
@@ -2640,6 +2758,11 @@
           "project_id": "ffLDUGbm",
           "version_id": null,
           "type": "required"
+        },
+        {
+          "project_id": "1eAoo2KR",
+          "version_id": null,
+          "type": "optional"
         },
         {
           "project_id": "FCzmUKBr",
@@ -2674,6 +2797,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "fx",
       "why": "Interactive Foliage: plants bend around entities (needs Sway).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2702,14 +2826,15 @@
       "url": "https://cdn.modrinth.com/data/xFCYuAs8/versions/Js4y2r4d/eg_particle_interactions-0.4.1-neoforge-mc1.21.1.jar",
       "size": 322743,
       "hashes": {
-        "sha1": "5d851a305cd25dc98593ebe2612c9855b685de97",
-        "sha512": "4218eb6c842b687a2559bc2bc98437df5f105d77c49458f198942b34cb9f6a6cc748a57554f5be5647b753c73519a174a01c4525f603792dbfb2c7e132671df5"
+        "sha512": "4218eb6c842b687a2559bc2bc98437df5f105d77c49458f198942b34cb9f6a6cc748a57554f5be5647b753c73519a174a01c4525f603792dbfb2c7e132671df5",
+        "sha1": "5d851a305cd25dc98593ebe2612c9855b685de97"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "CC-BY-NC-4.0",
       "group": "fx",
       "why": "Particle Interactions (beta, exact target build).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2737,14 +2862,15 @@
       "url": "https://cdn.modrinth.com/data/P8STLvzB/versions/W5IQteYO/Perception-NEOFORGE-0.2.1%2B1.21.1.jar",
       "size": 78664,
       "hashes": {
-        "sha512": "540180f6b90776096268249baa4e9380dff750989d8a6213289946b788ba07b647a6ff318ec1abbcaee5372ba9bd5b9244980869db43d1af0787a5ba57d6c93b",
-        "sha1": "ea6d1403c8bc5cdda2727c1a90b29284c0ed653a"
+        "sha1": "ea6d1403c8bc5cdda2727c1a90b29284c0ed653a",
+        "sha512": "540180f6b90776096268249baa4e9380dff750989d8a6213289946b788ba07b647a6ff318ec1abbcaee5372ba9bd5b9244980869db43d1af0787a5ba57d6c93b"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "fx",
       "why": "Perception: visual feedback effects.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2774,6 +2900,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "fx",
       "why": "Swinging Lanterns: owns lantern animation.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2796,14 +2923,15 @@
       "url": "https://cdn.modrinth.com/data/YQnwl5Vv/versions/TMOdQHDi/visualoverhaul-neoforge-5.2.1.jar",
       "size": 189281,
       "hashes": {
-        "sha512": "901604f51c6e4d0f7bdc681b5c2e109732a7b8e8add341d34ed1056f683317482025be2e247a316b2077aa8f03ed41e8e1750f9ed410271066877ef82679e771",
-        "sha1": "7620025151d8804347312bccb9464fe644d9ac84"
+        "sha1": "7620025151d8804347312bccb9464fe644d9ac84",
+        "sha512": "901604f51c6e4d0f7bdc681b5c2e109732a7b8e8add341d34ed1056f683317482025be2e247a316b2077aa8f03ed41e8e1750f9ed410271066877ef82679e771"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "MIT",
       "group": "fx",
       "why": "Visual Overhaul: model polish for vanilla blocks/items.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2831,14 +2959,15 @@
       "url": "https://cdn.modrinth.com/data/z13R7Et1/versions/kOdevgPm/visuality-forge-3.0.0.jar",
       "size": 132898,
       "hashes": {
-        "sha1": "9786f023733a302b582b7349336e1ab47e93823e",
-        "sha512": "f90754b93efff9fc466351446e916b1aac314e8834985f97725fff9a4978bc5519e3497303c7136a2e8b0aedda36ae674858ddfe3f01b63d1886fa906440e373"
+        "sha512": "f90754b93efff9fc466351446e916b1aac314e8834985f97725fff9a4978bc5519e3497303c7136a2e8b0aedda36ae674858ddfe3f01b63d1886fa906440e373",
+        "sha1": "9786f023733a302b582b7349336e1ab47e93823e"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "MIT",
       "group": "fx",
       "why": "Visuality: hit/crystal/water-splash particles. Ambient-particle overlap with Subtle Effects resolved in config.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2868,14 +2997,15 @@
       "url": "https://cdn.modrinth.com/data/EwYg6C78/versions/xcBfBf8H/windy-1.1.1%2B1.21-neoforge.jar",
       "size": 33416,
       "hashes": {
-        "sha512": "01e3aacc6dd41e837943454a3a8d60717d8958832e3053e329de6dd44c65c958111f579918683da4887b0cca9677398b42edf9d2660f0ad566752ddf80977f29",
-        "sha1": "8af1c26a4873d9deb3ca670676dbd01ebd3391fb"
+        "sha1": "8af1c26a4873d9deb3ca670676dbd01ebd3391fb",
+        "sha512": "01e3aacc6dd41e837943454a3a8d60717d8958832e3053e329de6dd44c65c958111f579918683da4887b0cca9677398b42edf9d2660f0ad566752ddf80977f29"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "fx",
       "why": "Windy: wind-gust particles. Profile-controlled.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -2912,6 +3042,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "magic",
       "why": "Utility/automation magic: glyph spells, mana, rituals, item transport.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2933,14 +3064,15 @@
       "url": "https://cdn.modrinth.com/data/9nfaJPtX/versions/26w23ufT/irons_lib-1.21.1-2.4.0.jar",
       "size": 490515,
       "hashes": {
-        "sha1": "de1eda4fd210ac622ef8df8e3245366ca0da5491",
-        "sha512": "48d6996d935be45c6da1013a493559fcc781d994662e4d51b8bf2086ae77e80f92831b885c5f413fd2640bad15b32abd935af327daabc9e8497dae1ec12027ed"
+        "sha512": "48d6996d935be45c6da1013a493559fcc781d994662e4d51b8bf2086ae77e80f92831b885c5f413fd2640bad15b32abd935af327daabc9e8497dae1ec12027ed",
+        "sha1": "de1eda4fd210ac622ef8df8e3245366ca0da5491"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "magic",
       "why": "Iron's Spells requires irons_lib >=1.21.1-2 <1.21.1-3 (undeclared in Modrinth metadata; found by launch test).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2970,6 +3102,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "magic",
       "why": "Combat magic: schools, spellbooks, scroll loot, boss encounters.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -2991,31 +3124,17 @@
       "url": "https://cdn.modrinth.com/data/sbJh4AZw/versions/SFDVXWYt/occultism-1.21.1-neoforge-1.227.0.jar",
       "size": 6961729,
       "hashes": {
-        "sha1": "ac94231b96a6dcf96bfea789099a59ea11ef25db",
-        "sha512": "063d775420e1efa916d1ed94f3f5bfc3b00b976b1de6fc333eda9886ea3665aa38254407a18469ed0a334bcac67b204392c9bf197fc10916ce36a9e29abd5ef0"
+        "sha512": "063d775420e1efa916d1ed94f3f5bfc3b00b976b1de6fc333eda9886ea3665aa38254407a18469ed0a334bcac67b204392c9bf197fc10916ce36a9e29abd5ef0",
+        "sha1": "ac94231b96a6dcf96bfea789099a59ea11ef25db"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "magic",
       "why": "Spirit-based automation and storage; ritual crafting.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
-        {
-          "project_id": "692GClaE",
-          "version_id": null,
-          "type": "required"
-        },
-        {
-          "project_id": "PuyPazRT",
-          "version_id": null,
-          "type": "required"
-        },
-        {
-          "project_id": "8BmcQJ2H",
-          "version_id": null,
-          "type": "required"
-        },
         {
           "project_id": "u6dRKJwZ",
           "version_id": null,
@@ -3032,9 +3151,24 @@
           "type": "required"
         },
         {
+          "project_id": "692GClaE",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "PuyPazRT",
+          "version_id": null,
+          "type": "required"
+        },
+        {
           "project_id": "fRiHVvU7",
           "version_id": null,
           "type": "optional"
+        },
+        {
+          "project_id": "8BmcQJ2H",
+          "version_id": null,
+          "type": "required"
         }
       ]
     },
@@ -3064,6 +3198,7 @@
       "license": "LicenseRef-tr7zw-Protective-License",
       "group": "performance",
       "why": "Skips rendering hidden entities/block entities - important with large factories.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3085,14 +3220,15 @@
       "url": "https://cdn.modrinth.com/data/uXXizFIs/versions/x7kQWVju/ferritecore-7.0.3-neoforge.jar",
       "size": 121559,
       "hashes": {
-        "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417",
-        "sha1": "9563692efb708b6b568df27a01ec52f6311928ef"
+        "sha1": "9563692efb708b6b568df27a01ec52f6311928ef",
+        "sha512": "19af89a2075bb10a63884fa853ebf84b02c79dc3242430ecdad056fd764fdcde367a7303276b329df01b0736e2ef264c5d80c7dc92c6aebd244f556a230bb417"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "MIT",
       "group": "performance",
       "why": "Blockstate/model memory deduplication.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3123,6 +3259,7 @@
       "license": "LGPL-3.0-or-later",
       "group": "performance",
       "why": "Batches immediate-mode rendering (HUD, text, maps).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3152,6 +3289,7 @@
       "license": "LGPL-3.0-only",
       "group": "performance",
       "why": "Server-tick optimisations (AI, collisions, chunk ticking). NeoForge build.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3181,6 +3319,7 @@
       "license": "LGPL-3.0-only",
       "group": "performance",
       "why": "Load time and memory reduction; biggest single win for large packs.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3202,14 +3341,15 @@
       "url": "https://cdn.modrinth.com/data/l6YH9Als/versions/v5qtqRQi/spark-1.10.124-neoforge.jar",
       "size": 3642581,
       "hashes": {
-        "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6",
-        "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4"
+        "sha512": "f86ce34f2759c69df82578c397ff55b666c84626229a98f598458b960c21b38c95d6bfef4772af7f963c4f4868e5e2d9aef6b99c1d51bab55bf45e0e6e6b5ed4",
+        "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "GPL-3.0-only",
       "group": "performance",
       "why": "Profiler for tick/frame/memory analysis.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3241,6 +3381,7 @@
       "license": "Unlicense",
       "group": "qol",
       "why": "Food/saturation readout.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3270,6 +3411,7 @@
       "license": "MIT",
       "group": "qol",
       "why": "Searchable keybinds and conflict view.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3306,15 +3448,16 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "Death recovery: items stay in a corpse at the death spot (also for void deaths) instead of despawning, so dying costs a trip back, not the whole kit.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
-          "project_id": "XQ2oaWrb",
+          "project_id": "nvQzSEkH",
           "version_id": null,
           "type": "optional"
         },
         {
-          "project_id": "nvQzSEkH",
+          "project_id": "XQ2oaWrb",
           "version_id": null,
           "type": "optional"
         }
@@ -3338,14 +3481,15 @@
       "url": "https://cdn.modrinth.com/data/fRiHVvU7/versions/5sIPA1To/emi-1.1.24%2B1.21.1%2Bneoforge.jar",
       "size": 1111538,
       "hashes": {
-        "sha1": "3fd494b37027dfbc7f78414d7cbf251c9eb6738a",
-        "sha512": "f4c45ed686fe617311d6debadcb6ace5963e66f8cfe0cfed398231f081f87407070efc7a73c8b695d158f1d87a97180737b9107a46771e77df2bc9a7dc715ebd"
+        "sha512": "f4c45ed686fe617311d6debadcb6ace5963e66f8cfe0cfed398231f081f87407070efc7a73c8b695d158f1d87a97180737b9107a46771e77df2bc9a7dc715ebd",
+        "sha1": "3fd494b37027dfbc7f78414d7cbf251c9eb6738a"
       },
       "client_side": "required",
       "server_side": "optional",
       "license": "MIT",
       "group": "qol",
       "why": "Primary recipe viewer with recipe trees.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3375,6 +3519,7 @@
       "license": "MIT",
       "group": "qol",
       "why": "Food variety that makes survival more than bread.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3404,6 +3549,7 @@
       "license": "CC-BY-NC-SA-4.0",
       "group": "qol",
       "why": "Block/entity tooltips.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3440,6 +3586,7 @@
       "license": "MIT",
       "group": "qol",
       "why": "Loads JEI-only plugins (Create, etc.); EMI hides JEI's UI.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3473,23 +3620,24 @@
       "url": "https://cdn.modrinth.com/data/umyGl7zF/versions/GDXCpKlp/kubejs-neoforge-2101.7.2-build.381.jar",
       "size": 2295092,
       "hashes": {
-        "sha512": "f8286f9f371d0c1fb2b37e56b1dbb359dcfc5a9064a7384cbf6722450f5b5a77f05f55688d7a338b500a6f49590d51e3d3541664dfc0296e50fe573a34e5a529",
-        "sha1": "b282ba250cdd247f319c016df02ff9e600caadb1"
+        "sha1": "b282ba250cdd247f319c016df02ff9e600caadb1",
+        "sha512": "f8286f9f371d0c1fb2b37e56b1dbb359dcfc5a9064a7384cbf6722450f5b5a77f05f55688d7a338b500a6f49590d51e3d3541664dfc0296e50fe573a34e5a529"
       },
       "client_side": "optional",
       "server_side": "optional",
       "license": "LGPL-3.0-only",
       "group": "qol",
       "why": "Recipe/loot/progression scripting.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
-          "project_id": "sk9knFPE",
+          "project_id": "iHLDc0eo",
           "version_id": null,
           "type": "required"
         },
         {
-          "project_id": "iHLDc0eo",
+          "project_id": "sk9knFPE",
           "version_id": null,
           "type": "required"
         }
@@ -3521,6 +3669,7 @@
       "license": "MIT",
       "group": "qol",
       "why": "Per-player structure loot: each player opens their own copy of every structure container, so the expedition reward budget (docs/LOOT.md) holds per player in multiplayer instead of first-come-first-served.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3543,14 +3692,15 @@
       "url": "https://cdn.modrinth.com/data/aC3cM3Vq/versions/9I21YYxf/MouseTweaks-neoforge-mc1.21-2.26.1.jar",
       "size": 73938,
       "hashes": {
-        "sha512": "f95c0cc881211ee0442434976775e07aae40b4a2ba4e3a85455bc57ca9d3c991e239cd98374a8abd442dc9c378dcd9001e2caa1bf69991d424b5652dd7f3483b",
-        "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc"
+        "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc",
+        "sha512": "f95c0cc881211ee0442434976775e07aae40b4a2ba4e3a85455bc57ca9d3c991e239cd98374a8abd442dc9c378dcd9001e2caa1bf69991d424b5652dd7f3483b"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "BSD-3-Clause",
       "group": "qol",
       "why": "Inventory drag/scroll handling.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3580,6 +3730,7 @@
       "license": "MIT",
       "group": "qol",
       "why": "Quest book (Heracles). FTB Quests is CurseForge-only and cannot be in an .mrpack.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3616,6 +3767,7 @@
       "license": "LGPL-3.0-or-later",
       "group": "qol",
       "why": "Resolves recipe output conflicts between mods.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -3645,35 +3797,11 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "Upgradeable backpacks.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
-          "project_id": "vvuO3ImH",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "b1fMg6sH",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "nmoqTijg",
-          "version_id": null,
-          "type": "required"
-        },
-        {
-          "project_id": "vRYk0bv7",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
           "project_id": "BAscRYKm",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "u6dRKJwZ",
           "version_id": null,
           "type": "optional"
         },
@@ -3683,7 +3811,32 @@
           "type": "optional"
         },
         {
+          "project_id": "b1fMg6sH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "vvuO3ImH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nmoqTijg",
+          "version_id": null,
+          "type": "required"
+        },
+        {
           "project_id": "DMu0oBKf",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "vRYk0bv7",
           "version_id": null,
           "type": "optional"
         }
@@ -3707,14 +3860,15 @@
       "url": "https://cdn.modrinth.com/data/hMlaZH8f/versions/t9QwDIi8/sophisticatedstorage-1.21.1-1.6.20.2239.jar",
       "size": 2100126,
       "hashes": {
-        "sha512": "df3a1d6f5483d8de792f127c0106c7d935497d468cf7330c65b1a1d3796069ade21367f49e4a283c2d2aa3e1244e454d36c896ba825accf3efed029c5f8e9fd5",
-        "sha1": "13b863fa5fa12896caaece3a1b4e5f9475c7f591"
+        "sha1": "13b863fa5fa12896caaece3a1b4e5f9475c7f591",
+        "sha512": "df3a1d6f5483d8de792f127c0106c7d935497d468cf7330c65b1a1d3796069ade21367f49e4a283c2d2aa3e1244e454d36c896ba825accf3efed029c5f8e9fd5"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "Upgradeable chests/barrels with sorting.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3777,14 +3931,15 @@
       "url": "https://cdn.modrinth.com/data/LOpKHB2A/versions/sE6fMBGR/waystones-neoforge-1.21.1-21.1.47.jar",
       "size": 1254420,
       "hashes": {
-        "sha1": "51c3390c2555416979905f9d1b05ebc1a4de29c8",
-        "sha512": "24ee96445e68827b66d4e64e9670c6df4a635300afab7909a99764bf00182d1d0ea48808ae2d5041143dbad425662068f9ccdc55ad21bbdf9ed9e64f7c9e4d35"
+        "sha512": "24ee96445e68827b66d4e64e9670c6df4a635300afab7909a99764bf00182d1d0ea48808ae2d5041143dbad425662068f9ccdc55ad21bbdf9ed9e64f7c9e4d35",
+        "sha1": "51c3390c2555416979905f9d1b05ebc1a4de29c8"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "Discoverable fast travel - must be found in villages/structures.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3821,6 +3976,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "Minimap.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3857,6 +4013,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "qol",
       "why": "World map.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3884,14 +4041,15 @@
       "url": "https://cdn.modrinth.com/data/Aqlf1Shp/versions/C4eskNuR/forgified-fabric-api-0.116.15%2B2.3.6%2B1.21.1.jar",
       "size": 5612888,
       "hashes": {
-        "sha512": "470ae4e8569484e6942a2f7e09a37ae58a58e0ad44f49f0d483db88024db19d41bfac3c68221c38623829871ade9d89bc5aa31cf0e682e798b2f9029b808011d",
-        "sha1": "1fe1ca9f440cd30c86186e42505694b70ececc11"
+        "sha1": "1fe1ca9f440cd30c86186e42505694b70ececc11",
+        "sha512": "470ae4e8569484e6942a2f7e09a37ae58a58e0ad44f49f0d483db88024db19d41bfac3c68221c38623829871ade9d89bc5aa31cf0e682e798b2f9029b808011d"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "Apache-2.0",
       "group": "renderer",
       "why": "Fabric API surface required by Roxy/Voxy.",
+      "disabled_by_default": false,
       "required_by": [
         "roxy"
       ],
@@ -3915,14 +4073,15 @@
       "url": "https://cdn.modrinth.com/data/YL57xq9U/versions/KduFYu4t/iris-neoforge-1.8.14-beta.1%2Bmc1.21.1.jar",
       "size": 2540723,
       "hashes": {
-        "sha512": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5",
-        "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885"
+        "sha1": "1bd129cf7bce65d6b1c0543045f0620c98a0f885",
+        "sha512": "33fddb430e16222902eac75b8b3d57c381b0f3cc729f3b56c4628df12ca108f23a0b11e2feb167923d6d14d1fc7e8ee1a977ec421b19d1951bdca74c4092b9c5"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "renderer",
       "why": "Shader loader; Voxy-aware shader integration.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -3950,16 +4109,22 @@
       "url": "https://cdn.modrinth.com/data/Bh37bMuy/versions/nRS0RBpc/reeses-sodium-options-neoforge-2.2.6%2Bmc1.21.1.jar",
       "size": 266738,
       "hashes": {
-        "sha1": "2222aa3ad9aa9688b63f7640a6015467c06691c1",
-        "sha512": "1b01b52e26739a0584c805c9cbcbdb12b6fe26f5925c76564ec8319ca9985651d766881a1e1eb8de12ab8cfed54d83d1a751877e6aece0beec67003713c3402c"
+        "sha512": "1b01b52e26739a0584c805c9cbcbdb12b6fe26f5925c76564ec8319ca9985651d766881a1e1eb8de12ab8cfed54d83d1a751877e6aece0beec67003713c3402c",
+        "sha1": "2222aa3ad9aa9688b63f7640a6015467c06691c1"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "MIT",
       "group": "renderer",
       "why": "Usable video settings UI for Sodium's expanded option set.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
+        {
+          "project_id": "AANobbMI",
+          "version_id": null,
+          "type": "required"
+        },
         {
           "project_id": "YL57xq9U",
           "version_id": null,
@@ -3969,11 +4134,6 @@
           "project_id": "PtjYWJkn",
           "version_id": null,
           "type": "optional"
-        },
-        {
-          "project_id": "AANobbMI",
-          "version_id": null,
-          "type": "required"
         }
       ]
     },
@@ -3995,14 +4155,15 @@
       "url": "https://cdn.modrinth.com/data/Ap78bKTp/versions/JJlkgYxJ/roxy-1.21.1-NeoForge-0.4.2.1.jar",
       "size": 2778857,
       "hashes": {
-        "sha1": "708a946046f3a95154166b87c4f08c576bf216fb",
-        "sha512": "15ab34a634b3a47a243819b408732b6a33e195b03ef10eb407262f14cd1f1be0774116c532f02869bee8ec5b4fe535977b2f1d14240064b1f143d14d48145ae7"
+        "sha512": "15ab34a634b3a47a243819b408732b6a33e195b03ef10eb407262f14cd1f1be0774116c532f02869bee8ec5b4fe535977b2f1d14240064b1f143d14d48145ae7",
+        "sha1": "708a946046f3a95154166b87c4f08c576bf216fb"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "MIT",
       "group": "renderer",
       "why": "Translation layer that runs the original Voxy jar on NeoForge 1.21.1.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4055,14 +4216,15 @@
       "url": "https://cdn.modrinth.com/data/AANobbMI/versions/uMOpc5uV/sodium-neoforge-0.8.13%2Bmc1.21.1.jar",
       "size": 1292934,
       "hashes": {
-        "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693",
-        "sha512": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390"
+        "sha512": "4f537696af95411e9daf15795fb5fcbc49913d488a96fa912fa8f1d7db408710995e8a1461190f3cd0f8217bf9e35e9539176592428ed587ca2d7aa84450a390",
+        "sha1": "1757289be21ed18db5b0d90703fa3db1b2de5693"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LicenseRef-Polyform-Shield-1.0.0",
       "group": "renderer",
       "why": "Renderer foundation required by Roxy/Voxy and Iris.",
+      "disabled_by_default": false,
       "required_by": [
         "iris",
         "roxy",
@@ -4090,14 +4252,15 @@
       "url": "https://cdn.modrinth.com/data/PtjYWJkn/versions/T819dLGI/sodium-extra-neoforge-0.9.5%2Bmc1.21.1.jar",
       "size": 483373,
       "hashes": {
-        "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068",
-        "sha512": "1f213565e110e39a3e70ce5327f31448b301d2365f7ea281e06535169fd088f7d635370db7417adc927b1278eaefd75c77def7519395408ed0f86f6be240c076"
+        "sha512": "1f213565e110e39a3e70ce5327f31448b301d2365f7ea281e06535169fd088f7d635370db7417adc927b1278eaefd75c77def7519395408ed0f86f6be240c076",
+        "sha1": "6ca433df0ad08ce8413582e75dcae7619414a068"
       },
       "client_side": "required",
       "server_side": "unsupported",
       "license": "LGPL-3.0-only",
       "group": "renderer",
       "why": "Extra Sodium toggles used by the Performance profile (particles, animations, fog).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4148,6 +4311,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "renderer",
       "why": "Long-distance LOD renderer. Roxy's only verified jar: voxy-0.2.16-beta for MC 1.21.11 (loaded through Roxy, not natively).",
+      "disabled_by_default": false,
       "required_by": [
         "roxy"
       ],
@@ -4195,6 +4359,7 @@
       "license": "LicenseRef-iSeeEthan-Custom-License",
       "group": "renderer",
       "why": "Generates real chunks in the background and feeds them to Voxy, so distant LODs match the modded terrain exactly (no seed approximation). Roxy ships compat for this v2 line.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4235,12 +4400,28 @@
       "license": "MIT",
       "group": "rpg",
       "why": "Core loot system: affixes, rarities, gems, sockets, world tiers, bosses.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
           "project_id": "nU0bVIaL",
           "version_id": null,
           "type": "required"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "tCkE8p2N",
+          "version_id": null,
+          "type": "required"
+        },
+        {
+          "project_id": "UVtY3ZAC",
+          "version_id": null,
+          "type": "optional"
         },
         {
           "project_id": "DfxVkOAO",
@@ -4259,21 +4440,6 @@
         },
         {
           "project_id": "nvQzSEkH",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "u6dRKJwZ",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "tCkE8p2N",
-          "version_id": null,
-          "type": "required"
-        },
-        {
-          "project_id": "UVtY3ZAC",
           "version_id": null,
           "type": "optional"
         },
@@ -4302,14 +4468,15 @@
       "url": "https://cdn.modrinth.com/data/DGaH8Rh0/versions/64fZbLnj/ApothicAttributes-1.21.1-2.11.0.jar",
       "size": 319609,
       "hashes": {
-        "sha1": "7ff0e452e10cb582c188626a413037e63db9ca04",
-        "sha512": "568580e68016161151fc0254fb0da949b42cf285fa2bf7c3aec1cd320405c430483e9eb990aaddef537bfac4aa4beb21db82fbff9249131e05b15063b6839611"
+        "sha512": "568580e68016161151fc0254fb0da949b42cf285fa2bf7c3aec1cd320405c430483e9eb990aaddef537bfac4aa4beb21db82fbff9249131e05b15063b6839611",
+        "sha1": "7ff0e452e10cb582c188626a413037e63db9ca04"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "rpg",
       "why": "Attribute framework used by Apotheosis (crit, armor pierce, etc.).",
+      "disabled_by_default": false,
       "required_by": [
         "apotheosis",
         "apothic-enchanting",
@@ -4354,6 +4521,7 @@
       "license": "MIT",
       "group": "rpg",
       "why": "Enchanting overhaul; gives enchanting long-term depth.",
+      "disabled_by_default": false,
       "required_by": [
         "apotheosis"
       ],
@@ -4388,14 +4556,15 @@
       "url": "https://cdn.modrinth.com/data/DfxVkOAO/versions/pWfxcfO2/ApothicSpawners-1.21.1-1.4.0.jar",
       "size": 129784,
       "hashes": {
-        "sha1": "b3be29751daea738e691db8949cce079e5aae3be",
-        "sha512": "2fdd49cdb3e6610846c3a746ab0730d6d49412eaf8c21e3d0b9d588d80c8cd1a1d0b7e19ade7fc86fd699ac02e270e5fa01fb5cf106d24a7740692ecc1ad8820"
+        "sha512": "2fdd49cdb3e6610846c3a746ab0730d6d49412eaf8c21e3d0b9d588d80c8cd1a1d0b7e19ade7fc86fd699ac02e270e5fa01fb5cf106d24a7740692ecc1ad8820",
+        "sha1": "b3be29751daea738e691db8949cce079e5aae3be"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "rpg",
       "why": "Spawner modification - controlled mob-farm progression.",
+      "disabled_by_default": false,
       "required_by": [
         "apotheosis"
       ],
@@ -4425,14 +4594,15 @@
       "url": "https://cdn.modrinth.com/data/P0Mu4wcQ/versions/lMfuK0o7/artifacts-neoforge-13.2.5.jar",
       "size": 1086922,
       "hashes": {
-        "sha512": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d",
-        "sha1": "fb6cd3be2d034dde369ffd7558c95c6daa44189e"
+        "sha1": "fb6cd3be2d034dde369ffd7558c95c6daa44189e",
+        "sha512": "9079bc8a22c237881b22b38027bbab2a8a2e685a1f49c1e1e0e5796f3e0a5509a130d73753c7b2980f12e4f00845f8e8c967ee969f1eadcd52139c2780afe09d"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "rpg",
       "why": "Exploration-found accessories (common/uncommon loot).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4471,14 +4641,15 @@
       "url": "https://cdn.modrinth.com/data/5sy6g3kz/versions/VhIOvcXP/bettercombat-neoforge-2.4.0%2B1.21.1.jar",
       "size": 1045389,
       "hashes": {
-        "sha1": "bacbc8c86671663e9998b141c5732250c1f4d4fb",
-        "sha512": "db24730a42ae7e2dd546ee031d2f5e0dd6f9896418417a529fa21a44121761ebb29c8b8299db8f20500f7497f7b60a7d793b66c93abf37a8ea0aa3edafd80eb6"
+        "sha512": "db24730a42ae7e2dd546ee031d2f5e0dd6f9896418417a529fa21a44121761ebb29c8b8299db8f20500f7497f7b60a7d793b66c93abf37a8ea0aa3edafd80eb6",
+        "sha1": "bacbc8c86671663e9998b141c5732250c1f4d4fb"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "rpg",
       "why": "Directional, combo-based melee.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4512,14 +4683,15 @@
       "url": "https://cdn.modrinth.com/data/vvuO3ImH/versions/KJsZIQrT/curios-neoforge-9.6.0%2B1.21.1.jar",
       "size": 411707,
       "hashes": {
-        "sha1": "110fa48c45be8d8421bf2e0bd706f11ec47cc7f8",
-        "sha512": "1453d7c970f37b357967dbdad080ed107e90eea2b151e88a5e51b271a38ac72686d47a328fb8b3125cb8c6069130b72ac4b1c023f18ba5244f7550e4599bf8a4"
+        "sha512": "1453d7c970f37b357967dbdad080ed107e90eea2b151e88a5e51b271a38ac72686d47a328fb8b3125cb8c6069130b72ac4b1c023f18ba5244f7550e4599bf8a4",
+        "sha1": "110fa48c45be8d8421bf2e0bd706f11ec47cc7f8"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LGPL-3.0-or-later",
       "group": "rpg",
       "why": "Accessory slot framework.",
+      "disabled_by_default": false,
       "required_by": [
         "l_enders-cataclysm",
         "occultism"
@@ -4544,14 +4716,15 @@
       "url": "https://cdn.modrinth.com/data/8OIeAukW/versions/FNtkt80G/GatewaysToEternity-1.21.1-5.1.0.jar",
       "size": 649614,
       "hashes": {
-        "sha1": "594098a08a23474310ca51bbef6d997303757348",
-        "sha512": "83448ff2215b9a5d645bf9b0e0a0babfdfb04e60a2d9ca07783c962575b5770d095fdbfdd8ab6cb861871b98ecbc29204af3be14cb830623b442ad9894d462fb"
+        "sha512": "83448ff2215b9a5d645bf9b0e0a0babfdfb04e60a2d9ca07783c962575b5770d095fdbfdd8ab6cb861871b98ecbc29204af3be14cb830623b442ad9894d462fb",
+        "sha1": "594098a08a23474310ca51bbef6d997303757348"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "rpg",
       "why": "Bounded, readable wave challenges (fixed waves, fixed entity counts, visible timer). Activates the gateway data Apotheosis already ships and hosts Horizon's late-game Trials, which consume exploration relics instead of producing them.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4584,14 +4757,15 @@
       "url": "https://cdn.modrinth.com/data/46KJle7n/versions/PsPYpoCC/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar",
       "size": 73375667,
       "hashes": {
-        "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133",
-        "sha512": "289f6e8364a6e432f34803a47cff8381899a1df0fdc675170323b43fd1c09579b1320d8b4e0de5df65c609b738d450c13c89e240d6d79f607888da26b7724947"
+        "sha512": "289f6e8364a6e432f34803a47cff8381899a1df0fdc675170323b43fd1c09579b1320d8b4e0de5df65c609b738d450c13c89e240d6d79f607888da26b7724947",
+        "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "CC-BY-NC-ND-4.0",
       "group": "rpg",
       "why": "Late-game structure bosses with progression-defining drops.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4624,14 +4798,15 @@
       "url": "https://cdn.modrinth.com/data/BFbX9xcm/versions/xgAXTl17/mowziesmobs-1.21.1-1.8.2.jar",
       "size": 36042925,
       "hashes": {
-        "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c",
-        "sha512": "ab10d2f759df613d5094bac26c5a8bbe144786699018f7e4ae027fc4a86632aa7f96206f2c8be9970338eadef42539614a19b41d0d70b6216c3ed1c4c4421f0a"
+        "sha512": "ab10d2f759df613d5094bac26c5a8bbe144786699018f7e4ae027fc4a86632aa7f96206f2c8be9970338eadef42539614a19b41d0d70b6216c3ed1c4c4421f0a",
+        "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-Mowzies-Mobs-License",
       "group": "rpg",
       "why": "Mid-game overworld mini-bosses that make exploring dangerous.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4667,6 +4842,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "rpg",
       "why": "Levelling relics found in structures (rare/legendary loot).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -4688,14 +4864,15 @@
       "url": "https://cdn.modrinth.com/data/RH2KUdKJ/versions/bhZqwctG/OctoLib-NEOFORGE-0.6.3.2%2B1.21.jar",
       "size": 545732,
       "hashes": {
-        "sha1": "8d6fb9f6702dbba1e6143ac36c571f54c981b005",
-        "sha512": "aa458c9d11d0c928a73906522a34e0657b790675b9e07f0c0f2791f49ddd1560477ec790c763e7d5572294275bd11f30f8275e113ef11c960f97d30fb06e602a"
+        "sha512": "aa458c9d11d0c928a73906522a34e0657b790675b9e07f0c0f2791f49ddd1560477ec790c763e7d5572294275bd11f30f8275e113ef11c960f97d30fb06e602a",
+        "sha1": "8d6fb9f6702dbba1e6143ac36c571f54c981b005"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "rpg",
       "why": "Provides mod id 'octolib' required by Relics 0.10.x (undeclared in Modrinth metadata; found by launch test).",
+      "disabled_by_default": false,
       "required_by": [
         "clavis"
       ],
@@ -4725,18 +4902,19 @@
       "url": "https://cdn.modrinth.com/data/bK3Ubu9p/versions/nS0Yahr5/simplyswords-neoforge-1.70.2-1.21.1.jar",
       "size": 16282660,
       "hashes": {
-        "sha1": "05b074ff774467f1fe9fb5592151b7845c321cbc",
-        "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd"
+        "sha512": "9a231c0068318e7f62e3d5dfd81660b3f8efdcae9bcf83cfc3637c897fed29aac1941ef8007e8b29f0badfdce0c8047cfb73cd1ea486f25c69197384adfc8dcd",
+        "sha1": "05b074ff774467f1fe9fb5592151b7845c321cbc"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-Custom",
       "group": "rpg",
       "why": "Weapon variety with unique uniques; Better Combat movesets built in.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
-          "project_id": "6avVoBVB",
+          "project_id": "hYykXjDp",
           "version_id": null,
           "type": "required"
         },
@@ -4746,7 +4924,7 @@
           "type": "optional"
         },
         {
-          "project_id": "hYykXjDp",
+          "project_id": "6avVoBVB",
           "version_id": null,
           "type": "required"
         },
@@ -4775,14 +4953,15 @@
       "url": "https://cdn.modrinth.com/data/fgmhI8kH/versions/hJfyJvWt/%5Bneoforge%5Dctov-1.21.1-3.6.4.jar",
       "size": 7239618,
       "hashes": {
-        "sha1": "753b631f6cb258a448ac12b858e9a1cacbfefb6b",
-        "sha512": "5e8666e25e280d619a1a8c74d35918fcfe9642416bf7c4d546284467d6ba080bd026893e9e4761ce98a1fb8395b2dcfdbdc51412263d069f6db1a3ec76bbfaa8"
+        "sha512": "5e8666e25e280d619a1a8c74d35918fcfe9642416bf7c4d546284467d6ba080bd026893e9e4761ce98a1fb8395b2dcfdbdc51412263d069f6db1a3ec76bbfaa8",
+        "sha1": "753b631f6cb258a448ac12b858e9a1cacbfefb6b"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "CC-BY-NC-ND-4.0",
       "group": "structures",
       "why": "Biome-specific village overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -4811,14 +4990,15 @@
       "url": "https://cdn.modrinth.com/data/tpehi7ww/versions/BYUUUeZA/dungeons-and-taverns-v4.4.4.jar",
       "size": 24859622,
       "hashes": {
-        "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976",
-        "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3"
+        "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3",
+        "sha512": "83069dc336bcc212059f753923373d9522aa5953bf4b4fe2a8cfa666b4e28d2d017daa66c4b35e315c3be8d1ad60c2872879dd47cc1f47665ebbfd102da76976"
       },
       "client_side": "optional",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "structures",
       "why": "Uncommon tier: taverns, illager hideouts, ancient ruins.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -4873,6 +5053,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "structures",
       "why": "Common/uncommon tier: small vanilla-styled ruins, camps and shrines.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -4894,14 +5075,15 @@
       "url": "https://cdn.modrinth.com/data/QDNS5oAT/versions/8duZuWci/repurposed_structures-7.5.22%2B1.21.1-neoforge.jar",
       "size": 8246760,
       "hashes": {
-        "sha512": "cb6d22bc8d426aefda37ba63dcd0346db342157500e86782ebf142d09cc81970d4745b81b760a639e5734f91d9f3275d6430d4a8c54dfd8256e732ea682e8bd2",
-        "sha1": "a64f6b2d331d5c3a5feefcd18d23f4585a42b097"
+        "sha1": "a64f6b2d331d5c3a5feefcd18d23f4585a42b097",
+        "sha512": "cb6d22bc8d426aefda37ba63dcd0346db342157500e86782ebf142d09cc81970d4745b81b760a639e5734f91d9f3275d6430d4a8c54dfd8256e732ea682e8bd2"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Biome-matched variants of vanilla structures; very configurable rarity.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -4949,6 +5131,7 @@
       "license": "LicenseRef-Stardust-Labs-License",
       "group": "structures",
       "why": "Common tier: atmospheric ruins and minor discoveries.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -4980,6 +5163,7 @@
       "license": "CC-BY-NC-SA-4.0",
       "group": "structures",
       "why": "Settlements and pillager outposts with regional variety.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5016,6 +5200,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "structures",
       "why": "Rare/legendary tier: huge hand-built dungeons and landmarks.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -5046,6 +5231,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5082,6 +5268,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Tier: common/uncommon underground discoveries.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5118,6 +5305,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Better dragon fight arena.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5154,6 +5342,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5182,14 +5371,15 @@
       "url": "https://cdn.modrinth.com/data/HjmxVlSr/versions/Go3nbneL/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
       "size": 493967,
       "hashes": {
-        "sha512": "8b01b386f53feeaa55f0c62697578b82e00501e45e428b2a68df6bda34efb6a4b3b4e3582abf13fe767ebcb61aef9368186f53c03999958bef38f31c41a7f8b2",
-        "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906"
+        "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906",
+        "sha512": "8b01b386f53feeaa55f0c62697578b82e00501e45e428b2a68df6bda34efb6a4b3b4e3582abf13fe767ebcb61aef9368186f53c03999958bef38f31c41a7f8b2"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5226,6 +5416,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5262,6 +5453,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5298,6 +5490,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5334,6 +5527,7 @@
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Vanilla structure overhaul.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5362,14 +5556,15 @@
       "url": "https://cdn.modrinth.com/data/Ht4BfYp6/versions/urkCzBf6/YungsBridges-1.21.1-NeoForge-5.1.1.jar",
       "size": 136820,
       "hashes": {
-        "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b",
-        "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e"
+        "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e",
+        "sha512": "20b07ae4c08974980f976bcae32f18ccb885745d6cd50d4a5d0156eb5c51c29e49f8b2bf7dc2ae160d39b62f2332513bd9850efc5cba13697e36a2ac2848bc3b"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Natural river crossings - travel flavour.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5398,14 +5593,15 @@
       "url": "https://cdn.modrinth.com/data/ZYgyPyfq/versions/N2EpMhR7/YungsExtras-1.21.1-NeoForge-5.1.1.jar",
       "size": 198183,
       "hashes": {
-        "sha512": "d4ef831a034977abdcaec40a7662adbc37c32cf141c68245250da501f6ada2ce193c5351166fbcf2ffb1c452b60bfca8ac578963332aa4a1b523e43912b8cb8c",
-        "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b"
+        "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b",
+        "sha512": "d4ef831a034977abdcaec40a7662adbc37c32cf141c68245250da501f6ada2ce193c5351166fbcf2ffb1c452b60bfca8ac578963332aa4a1b523e43912b8cb8c"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "LGPL-3.0-only",
       "group": "structures",
       "why": "Small common discoveries.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5441,12 +5637,23 @@
       "license": "LicenseRef-Multiple",
       "group": "technology",
       "why": "Digital storage and autocrafting across all tech mods.",
+      "disabled_by_default": false,
       "required_by": [
         "applied-energistics-2-wireless-terminals",
         "mega",
         "applied-mekanistics"
       ],
       "deps": [
+        {
+          "project_id": "nfn13YXA",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        },
         {
           "project_id": "Ck4E7v7R",
           "version_id": null,
@@ -5471,16 +5678,6 @@
           "project_id": "Eyw0UxEx",
           "version_id": null,
           "type": "optional"
-        },
-        {
-          "project_id": "nfn13YXA",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "nvQzSEkH",
-          "version_id": null,
-          "type": "optional"
         }
       ]
     },
@@ -5502,14 +5699,15 @@
       "url": "https://cdn.modrinth.com/data/pNabrMMw/versions/CxSEpEnO/ae2wtlib-19.5.1.jar",
       "size": 252091,
       "hashes": {
-        "sha512": "0659d755c6ae91551d30c20b948d5bde0a39b2ae9825b1a4e132f0bbd10e032f18d82b6847261360589f36980ed3597ef6c6947b680523a1de767a9b7953682e",
-        "sha1": "b1bee01393b15f1eb0f46d58862ef99234e1d337"
+        "sha1": "b1bee01393b15f1eb0f46d58862ef99234e1d337",
+        "sha512": "0659d755c6ae91551d30c20b948d5bde0a39b2ae9825b1a4e132f0bbd10e032f18d82b6847261360589f36980ed3597ef6c6947b680523a1de767a9b7953682e"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "technology",
       "why": "Wireless crafting/pattern terminals (ae2wtlib).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5545,6 +5743,7 @@
       "license": "LGPL-3.0-only",
       "group": "technology",
       "why": "Official AE2 storage/autocrafting of Mekanism chemicals.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5585,6 +5784,7 @@
       "license": "LicenseRef-CCPL",
       "group": "technology",
       "why": "Programmable computers/turtles; CC tags its stable line as beta.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -5614,6 +5814,7 @@
       "license": "LicenseRef-Create-Mod-License",
       "group": "technology",
       "why": "Mechanical engineering - early/mid technology backbone.",
+      "disabled_by_default": false,
       "required_by": [
         "create-enchantment-industry",
         "create-dragons-plus"
@@ -5638,14 +5839,15 @@
       "url": "https://cdn.modrinth.com/data/JWGBpFUP/versions/qUpvzZ83/create-enchantment-industry-2.4.2.jar",
       "size": 1283517,
       "hashes": {
-        "sha512": "16bd3dcd82159d6793bd9cc24dcb911b90e838c67f781581afea8c6af21f53106ac54de7f2dffe1a8576cf8908e68658538a1c76d3c44691109a24bc60460436",
-        "sha1": "4ad5c181c805a548e15892500b07c0c0f88f0734"
+        "sha1": "4ad5c181c805a548e15892500b07c0c0f88f0734",
+        "sha512": "16bd3dcd82159d6793bd9cc24dcb911b90e838c67f781581afea8c6af21f53106ac54de7f2dffe1a8576cf8908e68658538a1c76d3c44691109a24bc60460436"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LGPL-3.0-or-later",
       "group": "technology",
       "why": "Liquid XP + automated enchanting; ties Create to Apotheosis enchanting.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5686,6 +5888,7 @@
       "license": "MIT",
       "group": "technology",
       "why": "Bridges Create rotational power and FE electricity.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -5715,15 +5918,26 @@
       "license": "LGPL-3.0-only",
       "group": "technology",
       "why": "MEGA Cells: late-game AE2 storage tiers.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
+        {
+          "project_id": "pNabrMMw",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "545hUrw9",
+          "version_id": null,
+          "type": "optional"
+        },
         {
           "project_id": "IJI3QuK8",
           "version_id": null,
           "type": "optional"
         },
         {
-          "project_id": "yKwUnZCV",
+          "project_id": "oMgZ004U",
           "version_id": null,
           "type": "optional"
         },
@@ -5738,22 +5952,12 @@
           "type": "required"
         },
         {
-          "project_id": "pNabrMMw",
+          "project_id": "yKwUnZCV",
           "version_id": null,
           "type": "optional"
         },
         {
           "project_id": "SyKS54UY",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "545hUrw9",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "oMgZ004U",
           "version_id": null,
           "type": "optional"
         }
@@ -5777,46 +5981,22 @@
       "url": "https://cdn.modrinth.com/data/Ce6I4WUE/versions/5KzzycBT/Mekanism-1.21.1-10.7.19.85.jar",
       "size": 11976009,
       "hashes": {
-        "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
-        "sha512": "66745825330a98f3e4a5ea3a44aff8b00870f715c144edc38dd2f61b4240589600b58ae89efac3b54dbb5aa430b1059dac1a28fd71cac5cc9002bbeb5ba3f22b"
+        "sha512": "66745825330a98f3e4a5ea3a44aff8b00870f715c144edc38dd2f61b4240589600b58ae89efac3b54dbb5aa430b1059dac1a28fd71cac5cc9002bbeb5ba3f22b",
+        "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "technology",
       "why": "Ore multiplication, chemistry, jetpacks/MekaSuit - the mid-game processing pillar.",
+      "disabled_by_default": false,
       "required_by": [
         "mekanism-generators",
         "applied-mekanistics"
       ],
       "deps": [
         {
-          "project_id": "R2OftAxM",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "nvQzSEkH",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "NTi7d3Xc",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "qXkLFB0L",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "EiEOyeoL",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
-          "project_id": "u6dRKJwZ",
+          "project_id": "XxWD5pD3",
           "version_id": null,
           "type": "optional"
         },
@@ -5831,17 +6011,42 @@
           "type": "optional"
         },
         {
-          "project_id": "fRiHVvU7",
-          "version_id": null,
-          "type": "optional"
-        },
-        {
           "project_id": "gu7yAYhd",
           "version_id": null,
           "type": "optional"
         },
         {
-          "project_id": "XxWD5pD3",
+          "project_id": "fRiHVvU7",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "qXkLFB0L",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "nvQzSEkH",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "NTi7d3Xc",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "u6dRKJwZ",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "R2OftAxM",
+          "version_id": null,
+          "type": "optional"
+        },
+        {
+          "project_id": "EiEOyeoL",
           "version_id": null,
           "type": "optional"
         },
@@ -5883,6 +6088,7 @@
       "license": "MIT",
       "group": "technology",
       "why": "Mekanism power line up to fission/fusion.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5910,14 +6116,15 @@
       "url": "https://cdn.modrinth.com/data/Gov5Dboq/versions/MGepoMKK/Modern-Industrialization-2.5.13.jar",
       "size": 7348433,
       "hashes": {
-        "sha1": "9f38687ec97ddfddfc5fd5307e9f68abdd38a7c3",
-        "sha512": "0ae221fbed5a9eeb8c9ad8e97f953a2dfc7b30cce51eea7081fd88e83cf9cc40e241949ea327417d308f223e87db3f66064ddb94cd92ef7683bcb015a80aa506"
+        "sha512": "0ae221fbed5a9eeb8c9ad8e97f953a2dfc7b30cce51eea7081fd88e83cf9cc40e241949ea327417d308f223e87db3f66064ddb94cd92ef7683bcb015a80aa506",
+        "sha1": "9f38687ec97ddfddfc5fd5307e9f68abdd38a7c3"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "MIT",
       "group": "technology",
       "why": "Deep multiblock industrial progression (steam -> electric -> fusion).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -5973,15 +6180,16 @@
       "license": "LGPL-3.0-only",
       "group": "technology",
       "why": "Mid-game FE generation tiers, simple to learn.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
-          "project_id": "Ck4E7v7R",
+          "project_id": "9s6osm5g",
           "version_id": null,
           "type": "required"
         },
         {
-          "project_id": "9s6osm5g",
+          "project_id": "Ck4E7v7R",
           "version_id": null,
           "type": "required"
         }
@@ -6013,6 +6221,7 @@
       "license": "CC-BY-NC-ND-4.0",
       "group": "ui",
       "why": "Advancement Plaques: toast replacement.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6053,6 +6262,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "ui",
       "why": "Last World Panorama: title panorama from the last world.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6082,6 +6292,7 @@
       "license": "CC-BY-NC-ND-4.0",
       "group": "ui",
       "why": "Legendary Tooltips: rarity tooltip borders.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6122,6 +6333,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "ui",
       "why": "Smooth Loading Screen.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6151,6 +6363,7 @@
       "license": "MIT",
       "group": "ui",
       "why": "Spatial GUI (confirmed by user).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6186,6 +6399,7 @@
       "license": "MIT",
       "group": "world_ext",
       "why": "TW's Decorative Food: placeable food decor.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6217,6 +6431,7 @@
       "license": "LGPL-3.0-only",
       "group": "world_ext",
       "why": "FallingTree: whole-tree felling.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6281,6 +6496,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "world_ext",
       "why": "Grim Kingdoms: lost structures/ruins.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6302,14 +6518,15 @@
       "url": "https://cdn.modrinth.com/data/6ItsEKMh/versions/cLqsoOGy/homesteads-3.0.0-for-neoforge-1.21.1.jar",
       "size": 1006976,
       "hashes": {
-        "sha512": "02dea5e31c97f0545929626cc2b6099635063e26d23b9f80abe8920e8858c716177e7bd5160fb6b5fa9008f727e04c1496695e37bdbaf24f42b77081a7a783ca",
-        "sha1": "70dceea42cb61491fc1150f4d0198c4e492bbc7f"
+        "sha1": "70dceea42cb61491fc1150f4d0198c4e492bbc7f",
+        "sha512": "02dea5e31c97f0545929626cc2b6099635063e26d23b9f80abe8920e8858c716177e7bd5160fb6b5fa9008f727e04c1496695e37bdbaf24f42b77081a7a783ca"
       },
       "client_side": "required",
       "server_side": "required",
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "world_ext",
       "why": "Homesteads: villager homestead structures.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6349,14 +6566,15 @@
       "url": "https://cdn.modrinth.com/data/z25hqseO/versions/JJc7pNHb/MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
       "size": 5067871,
       "hashes": {
-        "sha1": "8062c40df67327fa880eafd7991a373035d254a8",
-        "sha512": "ccf495329a6afc5cf73f18e1b1a6c7eecf74378cad1513fdeb0e76d836fecb7013d61bc3f5e70e566dd1f5507b6c381a43bf50cd9bb096c6af035929a23a9f20"
+        "sha512": "ccf495329a6afc5cf73f18e1b1a6c7eecf74378cad1513fdeb0e76d836fecb7013d61bc3f5e70e566dd1f5507b6c381a43bf50cd9bb096c6af035929a23a9f20",
+        "sha1": "8062c40df67327fa880eafd7991a373035d254a8"
       },
       "client_side": "unsupported",
       "server_side": "required",
       "license": "GPL-3.0-only",
       "group": "world_ext",
       "why": "Moog's Mineshafts Reimagined (overlaps YUNG's Better Mineshafts; see COMPATIBILITY.md).",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6392,6 +6610,7 @@
       "license": "LicenseRef-All-Rights-Reserved",
       "group": "world_ext",
       "why": "Streams Reflowing: flowing streams worldgen. New chunks only.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6420,14 +6639,15 @@
       "url": "https://cdn.modrinth.com/data/ZVzW5oNS/versions/7mVvV9Th/Incendium_1.21.x_v5.4.4.jar",
       "size": 4267528,
       "hashes": {
-        "sha512": "ca897be9059ea691860715dac6c0ccd934720d7d42c8af45b95257e8f91a6c9470f506bfb9ef3c770e6a6c57e58885add2126150a35927848817433fd227ce0e",
-        "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef"
+        "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef",
+        "sha512": "ca897be9059ea691860715dac6c0ccd934720d7d42c8af45b95257e8f91a6c9470f506bfb9ef3c770e6a6c57e58885add2126150a35927848817433fd227ce0e"
       },
       "client_side": "optional",
       "server_side": "required",
       "license": "LicenseRef-Stardust-Labs-License",
       "group": "worldgen",
       "why": "Nether biome + structure overhaul (Stardust Labs). Only 1.21.1 build is tagged alpha upstream; smoke-tested.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6462,14 +6682,15 @@
       "url": "https://cdn.modrinth.com/data/LPjGiSO4/versions/3fv8O3xX/Nullscape_1.21.x_v1.2.14.jar",
       "size": 355748,
       "hashes": {
-        "sha1": "ae8e1cbd5de6cf6f450bb44cd69cd284dad690dd",
-        "sha512": "b35a9dfdc7180ca851aea378ee4687e18b3aae717c16870a7762afc67dc0c77598fb2c4a62cb12d6ed0eacf7c9166520e0a3e7dce20da09817065d27e62c8b44"
+        "sha512": "b35a9dfdc7180ca851aea378ee4687e18b3aae717c16870a7762afc67dc0c77598fb2c4a62cb12d6ed0eacf7c9166520e0a3e7dce20da09817065d27e62c8b44",
+        "sha1": "ae8e1cbd5de6cf6f450bb44cd69cd284dad690dd"
       },
       "client_side": "optional",
       "server_side": "required",
       "license": "LicenseRef-Stardust-Labs-License",
       "group": "worldgen",
       "why": "End terrain overhaul (Stardust Labs) - gives the End exploration value.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": []
     },
@@ -6499,6 +6720,7 @@
       "license": "MIT",
       "group": "worldgen",
       "why": "Terrain shaping: huge mountain ranges, deep valleys, rivers; officially Terralith-compatible.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6534,6 +6756,7 @@
       "license": "LicenseRef-Stardust-Labs-License",
       "group": "worldgen",
       "why": "Biome foundation: ~95 vanilla-block biomes, cave biomes, works with vanilla tooling and Voxy's server-side LOD build.",
+      "disabled_by_default": false,
       "required_by": [],
       "deps": [
         {
@@ -6553,8 +6776,8 @@
       "url": "https://cdn.modrinth.com/data/HVnmMxH1/versions/Bqen1mJX/ComplementaryReimagined_r5.9.3.zip",
       "size": 553397,
       "hashes": {
-        "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6",
-        "sha512": "45304b1d7862afdb2177b7e6226fc9c6737911d17a4ad46cc9c519ca4deb935f05072cd337cd8b19a15bb8062b57b54eceec7bdee4cd572d94858e2946d37d85"
+        "sha512": "45304b1d7862afdb2177b7e6226fc9c6737911d17a4ad46cc9c519ca4deb935f05072cd337cd8b19a15bb8062b57b54eceec7bdee4cd572d94858e2946d37d85",
+        "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6"
       },
       "why": "Default shader. Voxy support since r5.8.1. r5.9.3 chosen over r5.10 (3 days old)."
     },
@@ -6566,10 +6789,62 @@
       "url": "https://cdn.modrinth.com/data/R6NEzAwj/versions/B1kyfoUZ/ComplementaryUnbound_r5.9.3.zip",
       "size": 553400,
       "hashes": {
-        "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c",
-        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67"
+        "sha1": "2ee08300e1d6f039e63eae8484dddf57b3aaaf67",
+        "sha512": "a085d1d8cda67cd17a2b414eeba48bbd809da069f269bab46246235ec8fe714a275013c70d0504527b0987d810deddddba4564332414ab3b3bd7435932ff808c"
       },
       "why": "Cinematic profile alternative."
+    },
+    {
+      "slug": "photon-shader",
+      "version": "v1.4",
+      "version_id": "BnGklH5y",
+      "file": "photon_v1.4.zip",
+      "url": "https://cdn.modrinth.com/data/lLqFfGNs/versions/BnGklH5y/photon_v1.4.zip",
+      "size": 3857333,
+      "hashes": {
+        "sha512": "2dec87084dccf91a72a06235ecbfb3627f066699b5f70583f06077cba61433aedbfa6af28eb68bf1cdc726149cc3d9a587517cfab59e6a24e9d6a40b6874d655",
+        "sha1": "96c7730f5891a42e39bbf1f0f5a98fa99628a7fe"
+      },
+      "why": "Balanced-profile candidate (0.3.1)."
+    },
+    {
+      "slug": "solas-shader",
+      "version": "3.9",
+      "version_id": "IsqhVpb8",
+      "file": "Solas Shader V3.9.zip",
+      "url": "https://cdn.modrinth.com/data/EpQFjzrQ/versions/IsqhVpb8/Solas%20Shader%20V3.9.zip",
+      "size": 1243081,
+      "hashes": {
+        "sha512": "754f88b030fc26a6284bc7fdede886af494b227a67e716ce89c8ec5a185f8ad33d0aeac573245c5e39621ac5b24b4778d50ce566647135c2f1b2f63643901c69",
+        "sha1": "7130b2ef691aa90f117231ba9ab01e7f6fca6fab"
+      },
+      "why": "Cinematic-profile candidate (0.3.1)."
+    },
+    {
+      "slug": "noble",
+      "version": "1.9.9",
+      "version_id": "5g32dX2k",
+      "file": "Noble v1.9.9.zip",
+      "url": "https://cdn.modrinth.com/data/sclYVqbt/versions/5g32dX2k/Noble%20v1.9.9.zip",
+      "size": 16823335,
+      "hashes": {
+        "sha1": "d717efc78a6051cccbd9a5e42f2a6b243ca40192",
+        "sha512": "737d87aebd18aa594b43f5f7ea3cbabb88d99de7d9ea2a2abbd493dcc5e8fd80ffa88044fabc746b73a6353db0c443473686f9c48946bc3ba965f0a0b2cd8862"
+      },
+      "why": "Optional (0.3.1)."
+    },
+    {
+      "slug": "bliss-shader",
+      "version": "2.1.2",
+      "version_id": "kC2Y8q1P",
+      "file": "Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip",
+      "url": "https://cdn.modrinth.com/data/ZvMtQlho/versions/kC2Y8q1P/Bliss_v2.1.2_%28Chocapic13_Shaders_edit%29.zip",
+      "size": 1791406,
+      "hashes": {
+        "sha1": "ded6c8a98305f8aff90ef781e7585b33b8452cfd",
+        "sha512": "dafc60be4980ec40f40edc0f2625cb0976f3c9ce5ed86383146a120480826bb1de70ef5e38b7f1437294ed4d38c6ef3c82ebef0ae4e00b8cee165788c9c18280"
+      },
+      "why": "Optional (0.3.1)."
     }
   ],
   "resourcepacks": [
@@ -6583,8 +6858,8 @@
       "url": "https://cdn.modrinth.com/data/SEt2q8cl/versions/dYoh6GWk/%C2%A7a%C2%A7lVocal%20Villagers%20%C2%A7r%C2%A771.5.zip",
       "size": 1148267,
       "hashes": {
-        "sha1": "1f1022ee1a87b6524dce5fa7b6c51188ea161d38",
-        "sha512": "a23021136442512a150a06c557ffd995763d6a4ced24e6b9e2c6ab0c185b243d24bbcafd6a81064d8abdcb4063c59957e2e7efbc70d55f1a93182f3181079c56"
+        "sha512": "a23021136442512a150a06c557ffd995763d6a4ced24e6b9e2c6ab0c185b243d24bbcafd6a81064d8abdcb4063c59957e2e7efbc70d55f1a93182f3181079c56",
+        "sha1": "1f1022ee1a87b6524dce5fa7b6c51188ea161d38"
       },
       "license": "CC-BY-NC-SA-4.0",
       "pack_format_note": "",
@@ -6634,29 +6909,63 @@
       "url": "https://cdn.modrinth.com/data/50dA9Sha/versions/HC1XRKGD/FreshAnimations_v1.11.2_1.20%2B.zip",
       "size": 742790,
       "hashes": {
-        "sha1": "c0f564f3b9c12762923015eefad53edbdbbd3d96",
-        "sha512": "e64c2fc73d2c61f6814d1223ac2a2bb1dda7ed55edb75efef23449475140a42ef2a490c4789f42e022eca96ffa6b50b63de70a2858fc7b257421b36aab5c10b3"
+        "sha512": "e64c2fc73d2c61f6814d1223ac2a2bb1dda7ed55edb75efef23449475140a42ef2a490c4789f42e022eca96ffa6b50b63de70a2858fc7b257421b36aab5c10b3",
+        "sha1": "c0f564f3b9c12762923015eefad53edbdbbd3d96"
       },
       "license": "LicenseRef-See-Terms-of-Use-in-Description",
       "pack_format_note": "",
       "why": "Fresh Animations base (EMF/ETF)."
     },
     {
-      "slug": "fresh-animations-extensions",
-      "title": "Fresh Animations: Extensions",
-      "project_id": "YAVTU8mK",
-      "version": "1.10.1",
-      "version_id": "zphVu6Oe",
-      "file": "FA+All_Extensions-v1.10.1.zip",
-      "url": "https://cdn.modrinth.com/data/YAVTU8mK/versions/zphVu6Oe/FA%2BAll_Extensions-v1.10.1.zip",
-      "size": 548952,
+      "slug": "fresh-animations-details",
+      "title": "Fresh Animations: Details",
+      "project_id": "lctgpCsu",
+      "version": "2.4.0",
+      "version_id": "XM8VyQLk",
+      "file": "FA+Details-v2.4.zip",
+      "url": "https://cdn.modrinth.com/data/lctgpCsu/versions/XM8VyQLk/FA%2BDetails-v2.4.zip",
+      "size": 400883,
       "hashes": {
-        "sha1": "33c6cc4d621ba7f27e2d5c45269ac28f2287deae",
-        "sha512": "7accd41fc3b4286e08085b3dcc3818c6c4d1c0e4a90d6b13bed125a827131531706d20c62ec87edd271c8880077c25d7731acaae88e5f5ec0fa92f5600e6859e"
+        "sha512": "d8a6c2e0ac272e2f4773ed962301ece0cda73136d89a9788eff4dae74979471d29b7dee4073e8169644c4c2017f7b3286dab538171f9e8e2c19e708aa7df8d3d",
+        "sha1": "b98a11e783b79851e6f3c72e4b1eaf9b401d7599"
       },
       "license": "LicenseRef-All-Rights-Reserved",
       "pack_format_note": "",
-      "why": "Official FA extensions bundle; individual components NOT installed (duplicates)."
+      "why": "FA Details 2.4.0 (0.3.1): extra detail on vanilla mobs. Replaces the All-Extensions bundle so Objects, Spiders, Creepers, Classic Horses and Player stay off until each is checked."
+    },
+    {
+      "slug": "fresh-animations-emissive",
+      "title": "Fresh Animations: Emissive",
+      "project_id": "VRS2YQn9",
+      "version": "1.7.0",
+      "version_id": "A3tITCIa",
+      "file": "FA+Emissive-v1.7.zip",
+      "url": "https://cdn.modrinth.com/data/VRS2YQn9/versions/A3tITCIa/FA%2BEmissive-v1.7.zip",
+      "size": 103295,
+      "hashes": {
+        "sha1": "f7cf8c02f166611340d5f2a062a3ad2145365b21",
+        "sha512": "3b7fc541086ee7928dc5a81fb43914ad0846f59f6bffd8fedcb4089a58051e62ed699f8bb91d7b96e20a34e1a0d9fe3ff33ea4603642d022cdd473c8bb20f6ae"
+      },
+      "license": "LicenseRef-All-Rights-Reserved",
+      "pack_format_note": "",
+      "why": "FA Emissive 1.7.0 (0.3.1): glowing eyes/parts via ETF emissive support."
+    },
+    {
+      "slug": "fresh-animations-quivers",
+      "title": "Fresh Animations: Quivers",
+      "project_id": "T4pK4GiQ",
+      "version": "2.3.0",
+      "version_id": "dxPm8dtx",
+      "file": "FA+Quivers-v2.3.zip",
+      "url": "https://cdn.modrinth.com/data/T4pK4GiQ/versions/dxPm8dtx/FA%2BQuivers-v2.3.zip",
+      "size": 90466,
+      "hashes": {
+        "sha1": "2c32000d720ad835ee4d8ff9b4af130dbe736d74",
+        "sha512": "6495d1df5fa8658feb7b15f7366a658f35fa2742a7798703a5e6111acd0ce076653c0b00a9af204cfbe02a2dac85e675165a969e12b018a46c2c4a5874049b42"
+      },
+      "license": "LicenseRef-All-Rights-Reserved",
+      "pack_format_note": "",
+      "why": "FA Quivers 2.3.0 (0.3.1): quivers on skeletons/players' backs; no conflict with Better Combat or Simply Swords."
     },
     {
       "slug": "fluid-foolish",

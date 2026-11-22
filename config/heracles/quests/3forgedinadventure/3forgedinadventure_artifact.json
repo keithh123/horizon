@@ -9,7 +9,10 @@
     "title": "Curious Trinket",
     "description": [
       "Artifacts and Relics appear in chests. Equip them in Curios slots (inventory button).",
-      "Duplicates salvage into shards and gem dust."
+      "Duplicates salvage into shards and gem dust.",
+      "",
+      "&aObjective:&r Obtain one Artifact from a chest.",
+      "&bWhy it matters:&r Curios slots add a second equipment layer; duplicates salvage into shards."
     ],
     "groups": {
       "3 - Forged in Adventure": {

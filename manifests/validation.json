@@ -1,262 +1,278 @@
 {
- "visuality-forge": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "better-clouds": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "cosy-critters": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "mc2-interactive-foliage": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "atmospherics": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "fwa": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "visual-overhaul": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars) after seeding config/visualoverhaul.json (firstLaunch NPE fixed, tested); built-in packs load",
-  "unverified": "visuals not inspected"
- },
- "inventory-particles": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "particle-interactions": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "footprintparticle": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "cave-dust-rethinking": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "perception": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "windy": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "effectual": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "swinging-lanterns": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "cleardespawn-reborn": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "sound": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "sound-controller": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "cool-rain-reforged": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "satisfying-buttons": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "punchy-fpa": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "auto-third-person": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "respawn-recap": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "advancement-plaques": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "legendary-tooltips": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "smooth-loading-screen": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "last-world-panorama": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
-  "unverified": "individual visuals/sounds not inspected one by one"
- },
- "entity-model-features": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "entitytexturefeatures": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "punchymoves": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): runs; declares FA Player Extension incompatible (in-game screen) -> FA Player Extension dropped; elytra camera handed to Auto Third Person",
-  "unverified": "first-person combat feel with Better Combat/spells not tested"
- },
- "spatial-gui": {
-  "evidence": "in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): 3D inventory + EMI panel render; hover hit-testing matched the tilted slots; repositions JEI lists (chat notice)",
-  "unverified": "AE2 terminals and other container screens not opened yet"
- },
- "seamless-sleep": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "more-sounds": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "fallingtree": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "streams-reflowing": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": "worldgen cost: heavy plate prefetch on new chunks; client particle scan radius 512 by default (now profile-controlled)"
- },
- "homesteads": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; forest homestead located in natural terrain (1404 blocks); loot joined settlement/roadside families",
-  "unverified": ""
- },
- "mmr-moogs-mineshafts-reimagined": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; mineshaft located (1565 blocks) and audited: 0.98 core / 2.6 shard per 96-block area incl. neighbours; deep-dark variant kept out of heart-bearing family; dense sets thinned",
-  "unverified": ""
- },
- "grim-kingdoms-lost-structures-ruins": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; glimmervault fortress located (7506 blocks) and audited; uses only vanilla chest tables, which keep their calibrated chances",
-  "unverified": ""
- },
- "decorative-food": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "spider-overhaul": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; birch spider nest located/audited (spacing raised 8/6 -> 28/12)",
-  "unverified": ""
- },
- "fantasy_armor": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "fantasy_weapons": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "mod-primal": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "wither-reincarnated": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "clavis": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "irons-simple-blood": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": ""
- },
- "companions-mod": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
-  "unverified": "Sacred Pontiff legend hook not observed (entity gone before player-attributed damage); companions_tent not found within locate radius"
- },
- "bossesrise": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; infernal dragon/kraken/sandworm legend hook fired; yeti hideout located",
-  "unverified": "Yeti and Underworld Knight resist /kill and /damage (intro immunity / per-hit cap): first-kill legend for them needs a real fight"
- },
- "bosses-of-mass-destruction-forge": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; lich tower located + audited (0.9 Ancient Core per clear vs budget 1.0); lich/obsidilith/gauntlet/void blossom summoned, killed, legend hook fired",
-  "unverified": ""
- },
- "fresh-animations": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "fresh-animations-extensions": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "vvi": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "fire-rekindled": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "animated-hearts": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "fluid-foolish": {
-  "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
-  "unverified": "FA mob animations not inspected visually"
- },
- "snowyleavesplus": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loaded into a world generated without it; under snow with randomTickSpeed 600 a leaf reached snowiness=full (execute if block), whitened tint visible",
-  "unverified": "dedicated-server pairing not tested"
- },
- "armour-sound-tweak-updated": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, inventory opened with no errors",
-  "unverified": "equip sound not audible to automated test"
- },
- "eating-animation": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, item predicates registered, no errors",
-  "unverified": "eating frames not observed (automation cannot hold right-click)"
- },
- "item-landing-sound": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; item dropped and landed with no errors",
-  "unverified": "sound not audible to automated test"
- },
- "better-smoke": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): campfires produce billowing clustered smoke plumes; no errors",
-  "unverified": "wind/config screen not exercised"
- },
- "grandteleport-neoforge": {
-  "evidence": "metadata repack fixes FML InvalidModFileException; client launch OK; in game /tp plays the teleport transition; crashes a dedicated server (client classes) -> shipped client-only",
-  "unverified": ""
- },
- "CF:weather-glass": {
-  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; frost/snow overlay seen on glass during snowfall",
-  "unverified": "rain droplets not inspected"
- },
- "particle-rain": {
-  "evidence": "already locked in 0.2.0",
-  "unverified": ""
- },
- "subtle-effects": {
-  "evidence": "already locked in 0.2.0; cave dust/lantern ownership documented",
-  "unverified": ""
- },
- "l_enders-cataclysm": {
-  "evidence": "already locked in 0.2.0",
-  "unverified": ""
- }
+  "visuality-forge": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "better-clouds": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "cosy-critters": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "mc2-interactive-foliage": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "atmospherics": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "fwa": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "visual-overhaul": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars) after seeding config/visualoverhaul.json (firstLaunch NPE fixed, tested); built-in packs load",
+    "unverified": "visuals not inspected"
+  },
+  "inventory-particles": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "particle-interactions": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "footprintparticle": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "cave-dust-rethinking": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "perception": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "windy": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "effectual": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "swinging-lanterns": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "cleardespawn-reborn": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "sound": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "sound-controller": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "cool-rain-reforged": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "satisfying-buttons": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "punchy-fpa": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "auto-third-person": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "respawn-recap": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "advancement-plaques": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "legendary-tooltips": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "smooth-loading-screen": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "last-world-panorama": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): no crash/errors attributed",
+    "unverified": "individual visuals/sounds not inspected one by one"
+  },
+  "entity-model-features": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "entitytexturefeatures": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "punchymoves": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): runs; declares FA Player Extension incompatible (in-game screen) -> FA Player Extension dropped; elytra camera handed to Auto Third Person",
+    "unverified": "first-person combat feel with Better Combat/spells not tested"
+  },
+  "spatial-gui": {
+    "evidence": "in-world (HorizonTest, Balanced, Iris+Complementary, Voxy on): 3D inventory + EMI panel render; hover hit-testing matched the tilted slots; repositions JEI lists (chat notice)",
+    "unverified": "AE2 terminals and other container screens not opened yet"
+  },
+  "seamless-sleep": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "more-sounds": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "fallingtree": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "streams-reflowing": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": "worldgen cost: heavy plate prefetch on new chunks; client particle scan radius 512 by default (now profile-controlled)"
+  },
+  "homesteads": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; forest homestead located in natural terrain (1404 blocks); loot joined settlement/roadside families",
+    "unverified": ""
+  },
+  "mmr-moogs-mineshafts-reimagined": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; mineshaft located (1565 blocks) and audited: 0.98 core / 2.6 shard per 96-block area incl. neighbours; deep-dark variant kept out of heart-bearing family; dense sets thinned",
+    "unverified": ""
+  },
+  "grim-kingdoms-lost-structures-ruins": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; glimmervault fortress located (7506 blocks) and audited; uses only vanilla chest tables, which keep their calibrated chances",
+    "unverified": ""
+  },
+  "decorative-food": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "spider-overhaul": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; birch spider nest located/audited (spacing raised 8/6 -> 28/12)",
+    "unverified": ""
+  },
+  "fantasy_armor": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "fantasy_weapons": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "mod-primal": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "wither-reincarnated": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "clavis": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "irons-simple-blood": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": ""
+  },
+  "companions-mod": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS",
+    "unverified": "Sacred Pontiff legend hook not observed (entity gone before player-attributed damage); companions_tent not found within locate radius"
+  },
+  "bossesrise": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; infernal dragon/kraken/sandworm legend hook fired; yeti hideout located",
+    "unverified": "Yeti and Underworld Knight resist /kill and /damage (intro immunity / per-hit cap): first-kill legend for them needs a real fight"
+  },
+  "bosses-of-mass-destruction-forge": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars); dedicated server: loads, 20 TPS; lich tower located + audited (0.9 Ancient Core per clear vs budget 1.0); lich/obsidilith/gauntlet/void blossom summoned, killed, legend hook fired",
+    "unverified": ""
+  },
+  "fresh-animations": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "fresh-animations-extensions": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "vvi": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "fire-rekindled": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "animated-hearts": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "fluid-foolish": {
+    "evidence": "client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log)",
+    "unverified": "FA mob animations not inspected visually"
+  },
+  "snowyleavesplus": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loaded into a world generated without it; under snow with randomTickSpeed 600 a leaf reached snowiness=full (execute if block), whitened tint visible",
+    "unverified": "dedicated-server pairing not tested"
+  },
+  "armour-sound-tweak-updated": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, inventory opened with no errors",
+    "unverified": "equip sound not audible to automated test"
+  },
+  "eating-animation": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, item predicates registered, no errors",
+    "unverified": "eating frames not observed (automation cannot hold right-click)"
+  },
+  "item-landing-sound": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; item dropped and landed with no errors",
+    "unverified": "sound not audible to automated test"
+  },
+  "better-smoke": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): campfires produce billowing clustered smoke plumes; no errors",
+    "unverified": "wind/config screen not exercised"
+  },
+  "grandteleport-neoforge": {
+    "evidence": "metadata repack fixes FML InvalidModFileException; client launch OK; in game /tp plays the teleport transition; crashes a dedicated server (client classes) -> shipped client-only",
+    "unverified": ""
+  },
+  "CF:weather-glass": {
+    "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; frost/snow overlay seen on glass during snowfall",
+    "unverified": "rain droplets not inspected"
+  },
+  "particle-rain": {
+    "evidence": "already locked in 0.2.0",
+    "unverified": ""
+  },
+  "subtle-effects": {
+    "evidence": "already locked in 0.2.0; cave dust/lantern ownership documented",
+    "unverified": ""
+  },
+  "l_enders-cataclysm": {
+    "evidence": "already locked in 0.2.0",
+    "unverified": ""
+  },
+  "simple-hats": {
+    "evidence": "0.3.1: dedicated server boots with it (20 TPS, 0 KubeJS errors); the 8 hat ids used as quest rewards resolve as items (/summon).",
+    "unverified": "hat rendering, Curios head slot, hat-bag drops (client launch impossible: no display session)."
+  },
+  "fresh-animations-details": {
+    "evidence": "0.3.1: pinned, hash-verified download; written to options.txt in the documented order (docs/RESOURCE_PACKS.md).",
+    "unverified": "not seen in game (client launch impossible this session); replaces the All-Extensions bundle."
+  },
+  "fresh-animations-emissive": {
+    "evidence": "0.3.1: pinned, hash-verified download; written to options.txt in the documented order (docs/RESOURCE_PACKS.md).",
+    "unverified": "not seen in game (client launch impossible this session); replaces the All-Extensions bundle."
+  },
+  "fresh-animations-quivers": {
+    "evidence": "0.3.1: pinned, hash-verified download; written to options.txt in the documented order (docs/RESOURCE_PACKS.md).",
+    "unverified": "not seen in game (client launch impossible this session); replaces the All-Extensions bundle."
+  }
 }

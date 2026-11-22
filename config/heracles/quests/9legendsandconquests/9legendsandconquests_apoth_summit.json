@@ -8,7 +8,10 @@
     },
     "title": "World Tier: Summit",
     "description": [
-      "Summit: mythic affixes and the deadliest bosses."
+      "Summit: mythic affixes and the deadliest bosses.",
+      "",
+      "&aObjective:&r Reach the Summit world tier.",
+      "&bWhy it matters:&r Mythic affixes drop, and the deadliest bosses spawn."
     ],
     "groups": {
       "9 - Legends and Conquests": {

@@ -29,5 +29,19 @@
     "pack": "ComplementaryUnbound",
     "preset": "HIGH"
   },
-  "effects": "full"
+  "effects": "full",
+  "shader_alternates": [
+    {
+      "id": "solas",
+      "pack": "Solas",
+      "preset": "HIGH",
+      "note": "Solas 3.9, Voxy-aware"
+    },
+    {
+      "id": "noble",
+      "pack": "Noble",
+      "preset": "HIGH",
+      "note": "Optional: Noble 1.9.9, Voxy-aware"
+    }
+  ]
 }

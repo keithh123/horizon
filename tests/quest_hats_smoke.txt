@@ -1,0 +1,15 @@
+# 0.3.1: KubeJS (quest book recipe + gift script), Simple Hats ids used as quest rewards, Heracles quest load, TPS.
+kubejs errors server
+neoforge tps
+summon item 0 200 0 {Item:{id:"simplehats:icedragonskull",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:fullironhelm",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:halo",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:dragonskullender",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:amalgalichhat",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:bigcrown",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:crown",count:1}}
+summon item 0 200 0 {Item:{id:"simplehats:explorerhat",count:1}}
+summon item 0 200 0 {Item:{id:"heracles:quest_book",count:1}}
+playsound horizon:cue.quest_claim master @a
+WAIT 2
+neoforge tps

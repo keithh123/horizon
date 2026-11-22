@@ -8,7 +8,10 @@
     },
     "title": "Autocrafting",
     "description": [
-      "Build a crafting CPU and encode patterns."
+      "Build a crafting CPU and encode patterns.",
+      "",
+      "&aObjective:&r Build a crafting CPU.",
+      "&bWhy it matters:&r Autocrafting turns storage into production."
     ],
     "groups": {
       "8 - The Digital Age": {

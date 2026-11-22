@@ -1,0 +1,20 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "horizon_snugfire"
+version = "${mod_version}"
+displayName = "Horizon Snug Fire"
+authors = "Project Horizon"
+description = "Independent equivalent of the idea behind Tight Fire (AmyMialee, All Rights Reserved; not ported, no code or assets used): floor fire on blocks lower than a full block is drawn on their top surface instead of floating, and its outline reaches down to match."
+
+[[mixins]]
+config = "horizon_snugfire.mixins.json"
+
+[[dependencies.horizon_snugfire]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"

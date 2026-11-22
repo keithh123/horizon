@@ -10,7 +10,10 @@
     "description": [
       "Applied Mekanistics lets AE2 store Mekanism chemicals and autocraft with them.",
       "&7(Item task: craft a 1k chemical storage cell. Applied Mekanistics has no advancements, so the quest cannot",
-      "see the cell actually holding gas - fill it yourself.)"
+      "see the cell actually holding gas - fill it yourself.)",
+      "",
+      "&aObjective:&r Craft a 1k chemical storage cell.",
+      "&bWhy it matters:&r Lets AE2 hold Mekanism chemicals and craft with them."
     ],
     "groups": {
       "8 - The Digital Age": {

@@ -1,0 +1,32 @@
+{
+  "kind": "repack",
+  "variant": "depths",
+  "output": "infinity_cave-0.7-neoforge-1.21.1-horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "required"
+  },
+  "license": "LGPL-3.0-only",
+  "upstream": {
+    "page": "https://modrinth.com/mod/infinity-cave/version/6XJT5mi4",
+    "source": "https://github.com/Frozeh/infinity-cave",
+    "url": "https://cdn.modrinth.com/data/DEq97NAA/versions/6XJT5mi4/infinity_cave-0.7-NeoForge-1.21.1.jar",
+    "sha512": "e96cb77cf8fb3ff1fa6af7bd08a57e5cad017be3917b91b3ecec781d5886f7c137d84a3e4f3bb90d2d7500e9ff2d678663dea3060fa803e024a439a26a4125a3",
+    "version": "0.7"
+  },
+  "attribution": "Infinity Cave by Frozytime (Frozeh), LGPL-3.0-only. Repacked by Project Horizon for the new-world-only Depths variant; the LGPL covers the modified jar, and the changes are generated from scripts/gen_deepcaves.py (source of the modification).",
+  "changes": "1) neoforge.mods.toml: minecraft range '[1.21,1.21.1)' -> '[1.21,1.21.2)' (the 1.21.1 build excludes 1.21.1, FML refuses it); optional AFTER-ordering on tectonic and terralith so its built-in TOP pack sits above theirs. 2) Built-in pack infinity_cave_terralith: worldgen merged onto Tectonic 3.0.28 (terratonic) + Terralith 2.6.2 by scripts/gen_deepcaves.py (see merge.json report); copies that only shadow Terralith/Tectonic dropped. No code changes.",
+  "generated": "merge.json",
+  "edits": {
+    "META-INF/neoforge.mods.toml": [
+      [
+        "versionRange=\"[1.21,1.21.1)\"",
+        "versionRange=\"[1.21,1.21.2)\""
+      ],
+      [
+        "[[mixins]]\nconfig = \"infinity_cave.mixins.json\"",
+        "[[dependencies.infinity_cave]]\n    modId=\"tectonic\"\n    type=\"optional\"\n    versionRange=\"*\"\n    ordering=\"AFTER\"\n    side=\"BOTH\"\n[[dependencies.infinity_cave]]\n    modId=\"terralith\"\n    type=\"optional\"\n    versionRange=\"*\"\n    ordering=\"AFTER\"\n    side=\"BOTH\"\n[[mixins]]\nconfig = \"infinity_cave.mixins.json\""
+      ]
+    ]
+  }
+}

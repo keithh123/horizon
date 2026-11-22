@@ -6,9 +6,12 @@
         "id": "minecraft:netherite_ingot"
       }
     },
-    "title": "Netherite Monstrosity",
+    "title": "Break the Monstrosity",
     "description": [
-      "Found in the Soul Blacksmith."
+      "Found in the Soul Blacksmith.",
+      "",
+      "&aObjective:&r Defeat the Netherite Monstrosity.",
+      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {

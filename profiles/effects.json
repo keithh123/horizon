@@ -23,6 +23,7 @@
       "config/subtle_effects/blocks.toml": {
         "format": "toml",
         "set": {
+          "rainWaterRipples": "false",
           "rainWaterRipplesDensity": 0.1,
           "lanternSparksDensity": 1,
           "lavaSparksDensity": 0.25
@@ -104,6 +105,7 @@
       "config/subtle_effects/blocks.toml": {
         "format": "toml",
         "set": {
+          "rainWaterRipples": "false",
           "rainWaterRipplesDensity": 0.35,
           "lanternSparksDensity": 5,
           "lavaSparksDensity": 1.0
@@ -187,6 +189,7 @@
       "config/subtle_effects/blocks.toml": {
         "format": "toml",
         "set": {
+          "rainWaterRipples": "false",
           "rainWaterRipplesDensity": 0.6,
           "lanternSparksDensity": 8,
           "lavaSparksDensity": 1.5

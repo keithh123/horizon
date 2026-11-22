@@ -8,7 +8,10 @@
     },
     "title": "The Otherside",
     "description": [
-      "Beyond the Ancient Cities lies the Otherside (Deeper and Darker)."
+      "Beyond the Ancient Cities lies the Otherside (Deeper and Darker).",
+      "",
+      "&aObjective:&r Enter the Otherside via the Ancient City portal.",
+      "&bWhy it matters:&r Deeper and Darker's dimension holds its strongest gear and bosses."
     ],
     "groups": {
       "4 - Forgotten Realms": {

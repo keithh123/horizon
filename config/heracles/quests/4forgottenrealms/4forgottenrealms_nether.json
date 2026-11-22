@@ -8,7 +8,10 @@
     },
     "title": "We Need to Go Deeper",
     "description": [
-      "Incendium reshapes the Nether into huge, hostile biomes."
+      "Incendium reshapes the Nether into huge, hostile biomes.",
+      "",
+      "&aObjective:&r Enter the Nether.",
+      "&bWhy it matters:&r Opens Incendium's biomes, fortresses and the materials for Nether-era gear."
     ],
     "groups": {
       "4 - Forgotten Realms": {

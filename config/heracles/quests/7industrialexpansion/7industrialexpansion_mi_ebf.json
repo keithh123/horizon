@@ -8,7 +8,10 @@
     },
     "title": "Electric Blast Furnace",
     "description": [
-      "Your first big electric multiblock."
+      "Your first big electric multiblock.",
+      "",
+      "&aObjective:&r Build the Electric Blast Furnace.",
+      "&bWhy it matters:&r First big electric multiblock and the gateway to advanced metals."
     ],
     "groups": {
       "7 - Industrial Expansion": {
