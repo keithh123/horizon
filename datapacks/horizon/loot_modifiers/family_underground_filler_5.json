@@ -6,7 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/undead_crypts_grave"
+          "loot_table_id": "mmr:deep_dark_mineshaft/supply_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:deep_dark_mineshaft/supply_barrel_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:deep_dark_mineshaft/supply_barrel_3"
         }
       ]
     }

@@ -1,0 +1,11 @@
+{
+  "kind": "gradle",
+  "output": "snowyleavesplus-0.1.12-neoforge.1.21.1.horizon1.jar",
+  "built_jar": "snowyleavesplus-0.1.12-neoforge.1.21.1.horizon1.jar",
+  "side": {"client": "required", "server": "required"},
+  "license": "MPL-2.0",
+  "replaces_slug": "snowyleavesplus",
+  "source": "https://github.com/theRookieCoder/SnowyLeavesPlus/tree/78d079e",
+  "attribution": "Original Fabric mod by theRookieCoder (MPL-2.0). NeoForge 1.21.1 source port by Project Horizon; MPL-2.0 files stay MPL-2.0 (ports/snowyleavesplus/src).",
+  "changes": "Yarn -> Mojang names; Fabric ColorProviderRegistry -> NeoForge RegisterColorHandlersEvent.Block; fabric.mod.json -> neoforge.mods.toml. Behaviour unchanged except setBlock only when snowiness changes. Adds a blockstate property to vanilla leaves, so it is required on client AND server."
+}

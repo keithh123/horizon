@@ -6,6 +6,34 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/supply_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/supply_barrel_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/supply_barrel_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/storage_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/supply_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/supply_barrel_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/supply_barrel_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_grave"
         },
         {

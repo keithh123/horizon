@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/nether_skeleton_tower/skeleton_tower_camp"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/nether_skeleton_tower/skeleton_tower_chest"
+          "loot_table_id": "nova_structures:chests/nether_port/nether_port_chest"
         }
       ]
     }

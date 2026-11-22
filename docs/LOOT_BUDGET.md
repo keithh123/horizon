@@ -7,7 +7,7 @@ and gem numbers are the expected count of injected affix items / gems on top of 
 Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include
 repeated jigsaw pieces; the solver budgets those structures from the measured counts.
 
-Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon injection): 93
+Tables classified: 1043 - inject tables: 314 - placed but unassigned (no Horizon injection): 105
 
 ## The Aether (`aether`) - 1 structure groups
 
@@ -32,13 +32,16 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `irons_spellbooks:priest_house` | 3 | 0.05 | 0.06 | 0 | 0.0 | 0 | 0.08 | 0.08 |
 | `irons_spellbooks:priest_house_taiga` | 3 | 0.05 | 0.06 | 0 | 0.0 | 0 | 0.08 | 0.08 |
 
-## Boss Lairs (`boss_lair`) - 4 structure groups
+## Boss Lairs (`boss_lair`) - 7 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
+| `block_factorys_bosses:underworld_arena` | 72 | 0 | 0.99 | 0 | 0.0 | 0 | 2.99 | 2.0 |
+| `block_factorys_bosses:dragon_tower` | 25 | 0 | 0 | 0 | 0.0 | 0 | 3.0 | 2.0 |
 | `cataclysm:acropolis` | 24 | 0 | 1.01 | 0 | 0.0 | 0 | 3.0 | 1.99 |
 | `cataclysm:frosted_prison` | 14 | 0.01 | 1.18 | 0.06 | 0.06 | 0.26 | 3.35 | 2.23 |
 | `mowziesmobs:monastery` | 11 | 0 | 1.0 | 0 | 0.0 | 0 | 3.0 | 2.0 |
+| `bosses_of_mass_destruction:lich_tower` | 5 | 0 | 1.0 | 0 | 0.0 | 0 | 3.0 | 2.0 |
 | `cataclysm:amethyst_nest` | 2 | 0 | 1.0 | 0 | 0.0 | 0 | 1.2 | 0.9 |
 
 ## The Deep (Otherside & Undergarden) (`deep`) - 5 structure groups
@@ -103,7 +106,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `dungeons_arise:heavenly_challenger` | 12 | 1.31 | 0.98 | 0.16 | 0.15 | 0 | 1.56 | 1.12 |
 | `dungeons_arise:heavenly_rider` | 9 | 3.0 | 1.0 | 1.0 | 0.75 | 0 | 2.45 | 1.65 |
 
-## Nether Expeditions (`nether`) - 36 structure groups
+## Nether Expeditions (`nether`) - 37 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -111,6 +114,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `incendium:forbidden_castle` **(measured)** | 115.0 | 0.35 | 0.32 | 0.03 | 0.03 | 0.82 | 0.89 | 0.61 |
 | `betterfortresses:fortress` **(measured)** | 99.0 | 0 | 0.69 | 0 | 0.0 | 2.5 | 2.01 | 1.39 |
 | `minecraft:bastion_remnant` **(measured)** | 31.0 | 0.35 | 0.28 | 0 | 0.0 | 1.33 | 1.12 | 0.77 |
+| `mmr:1_21_0/nether_mineshaft` | 132 | 0 | 0.49 | 0.05 | 0.05 | 2.11 | 1.71 | 0.98 |
 | `nova_structures:nether_port` | 93 | 0 | 0.7 | 0 | 0.0 | 2.46 | 1.98 | 1.4 |
 | `incendium:castle` | 76 | 0 | 0.68 | 0.05 | 0.05 | 1.88 | 1.58 | 1.1 |
 | `incendium:quartz_flats` | 44 | 0 | 0.7 | 0 | 0.0 | 2.5 | 1.99 | 1.39 |
@@ -131,8 +135,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `repurposed_structures:strongholds/nether` | 8 | 0 | 0 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
 | `nova_structures:donjon` | 6 | 0.6 | 0.11 | 0.01 | 0.01 | 0.33 | 0.88 | 0.64 |
 | `repurposed_structures:ruins/nether` | 5 | 0 | 0.03 | 0 | 0.0 | 0.16 | 0.1 | 0.07 |
-| `nova_structures:skeleton_camp` | 4 | 0 | 0.1 | 0 | 0.0 | 0.28 | 0.21 | 0.14 |
-| ... 11 smaller groups | | | | | | | | |
+| ... 12 smaller groups | | | | | | | | |
 
 ## Ocean Expeditions (`ocean`) - 14 structure groups
 
@@ -153,7 +156,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `betteroceanmonuments:start` | 1 | 0.03 | 0.02 | 0 | 0.0 | 0.08 | 0.06 | 0.04 |
 | `dungeons_arise:lighthouse` | 1 | 0.6 | 0.4 | 0 | 0.0 | 1.05 | 0.6 | 0.45 |
 
-## Roadside Ruins & Camps (`roadside`) - 29 structure groups
+## Roadside Ruins & Camps (`roadside`) - 35 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -182,9 +185,9 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `dungeons_arise:merchant_campsite` | 9 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `betterwitchhuts:witch_hut` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `dungeons_arise:small_blimp` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
-| ... 4 smaller groups | | | | | | | | |
+| ... 10 smaller groups | | | | | | | | |
 
-## Settlements (`settlement`) - 70 structure groups
+## Settlements (`settlement`) - 110 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -213,7 +216,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `ctov:village/mountain_alpine` | 33 | 0.43 | 0 | 0 | 0.0 | 0 | 0.59 | 0.25 |
 | `ctov:village/swamp` | 33 | 0.44 | 0.03 | 0 | 0.0 | 0 | 0.59 | 0.27 |
 | `ctov:village/snowy_igloo` | 31 | 0.37 | 0.03 | 0 | 0.0 | 0 | 0.51 | 0.21 |
-| ... 45 smaller groups | | | | | | | | |
+| ... 85 smaller groups | | | | | | | | |
 
 ## Temples, Mansions & Outposts (`temple`) - 81 structure groups
 
@@ -246,7 +249,7 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `betterdeserttemples:hall_room` | 30 | 0.95 | 0.83 | 0.03 | 0.03 | 0 | 1.75 | 1.23 |
 | ... 56 smaller groups | | | | | | | | |
 
-## Underground Dungeons (`underground`) - 28 structure groups
+## Underground Dungeons (`underground`) - 36 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -255,11 +258,19 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `minecraft:mansion` **(measured)** | 28.0 | 1.43 | 0.9 | 0 | 0.0 | 0.04 | 2.26 | 1.56 |
 | `minecraft:stronghold` **(measured)** | 20.0 | 0.32 | 0.04 | 0 | 0.0 | 0.08 | 0.34 | 0.22 |
 | `minecraft:village_plains` **(measured)** | 17.0 | 0.2 | 0.08 | 0 | 0.0 | 0.08 | 0.25 | 0.17 |
+| `mmr:1_21_0/desert_mineshaft` | 275 | 0.83 | 0.17 | 0 | 0.0 | 0 | 1.2 | 0.74 |
+| `mmr:1_21_0/mineshaft` | 210 | 1.48 | 0.25 | 0 | 0.0 | 0 | 1.05 | 0.68 |
+| `mmr:1_21_0/jungle_mineshaft` | 171 | 1.36 | 0.17 | 0 | 0.0 | 0 | 1.17 | 0.76 |
+| `mmr:1_21_0/dark_oak_mineshaft` | 167 | 1.35 | 0.18 | 0 | 0.0 | 0 | 1.19 | 0.74 |
 | `nova_structures:creeping_crypt` | 153 | 1.38 | 0 | 0 | 0.0 | 0 | 1.38 | 0.92 |
 | `nova_structures:undead_crypt` | 145 | 1.45 | 0 | 0 | 0.0 | 0 | 1.16 | 0.72 |
 | `nova_structures:remnant` | 130 | 1.3 | 0 | 0 | 0.0 | 0 | 0.59 | 0.35 |
+| `mmr:1_21_0/mushroom_mineshaft` | 116 | 1.4 | 0.17 | 0 | 0.0 | 0 | 1.18 | 0.78 |
 | `minecraft:illager_mansion/manor_fixed` | 112 | 1.17 | 0.14 | 0 | 0.0 | 0 | 1.04 | 0.66 |
+| `mmr:1_21_0/mesa_mineshaft` | 112 | 1.36 | 0.17 | 0 | 0.0 | 0 | 1.21 | 0.77 |
+| `mmr:1_21_0/snowy_mineshaft` | 102 | 1.41 | 0.18 | 0 | 0.0 | 0 | 1.39 | 0.74 |
 | `nova_structures:bunker` | 87 | 1.53 | 0.25 | 0 | 0.0 | 0 | 1.07 | 0.74 |
+| `mmr:1_21_0/deep_dark_mineshaft` | 71 | 1.39 | 0.18 | 0 | 0.0 | 0 | 1.43 | 0.88 |
 | `betterstrongholds:rooms` | 66 | 1.39 | 0.24 | 0 | 0.0 | 0 | 1.4 | 0.9 |
 | `betterdungeons:small_dungeon` | 53 | 0.56 | 0 | 0 | 0.0 | 0 | 0.71 | 0.44 |
 | `betterstrongholds:treasure` | 33 | 0.09 | 0.25 | 0 | 0.0 | 0 | 1.1 | 0.71 |
@@ -267,13 +278,5 @@ Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon 
 | `betterdungeons:skeleton_dungeon` | 17 | 1.4 | 0.25 | 0 | 0.0 | 0 | 1.4 | 0.9 |
 | `betterdungeons:zombie_dungeon` | 7 | 0.14 | 0 | 0 | 0.0 | 0 | 0.13 | 0.08 |
 | `explorify:ruins` | 7 | 0.39 | 0.26 | 0 | 0.0 | 0 | 0.64 | 0.44 |
-| `betterstrongholds:terminators` | 5 | 0.09 | 0 | 0 | 0.0 | 0 | 0.06 | 0.04 |
-| `explorify:mausoleum` | 4 | 0.04 | 0 | 0 | 0.0 | 0 | 0.05 | 0.03 |
-| `kaisyn:village/savanna_plateau_ramshackled` | 4 | 0.04 | 0 | 0 | 0.0 | 0 | 0.05 | 0.03 |
-| `ars_nouveau:wilden_den_top` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
-| `ars_nouveau:wilden_den_top_defender` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
-| `ars_nouveau:wilden_den_top_hunter` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
-| `ars_nouveau:wilden_den_top_stalker` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
-| `betterstrongholds:stairs` | 2 | 0.03 | 0 | 0 | 0.0 | 0 | 0.02 | 0.02 |
-| ... 3 smaller groups | | | | | | | | |
+| ... 11 smaller groups | | | | | | | | |
 

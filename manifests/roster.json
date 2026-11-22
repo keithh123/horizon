@@ -587,12 +587,6 @@
         "pin": "JJc7pNHb"
       },
       {
-        "slug": "infinity-cave",
-        "why": "Infinity Cave: cave generation; mod wrapper as advised for Terralith users. Beta.",
-        "pin": "6XJT5mi4",
-        "allow": "beta"
-      },
-      {
         "slug": "grim-kingdoms-lost-structures-ruins",
         "why": "Grim Kingdoms: lost structures/ruins.",
         "pin": "2HwCrjkl"
@@ -735,14 +729,37 @@
       "why": "Conditional FA player patches (Artifacts, Farmers Delight present)."
     },
     {
-      "slug": "freshly-modded",
-      "pin": "ck5iB4VE",
-      "why": "F.M.R.P: FA-style models for supported modded mobs."
-    },
-    {
       "slug": "fluid-foolish",
       "pin": "UAp4jRDk",
       "why": "Required animation pack for Punchy Moves (separate from FA mob stack)."
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "infinity-cave",
+      "status": "blocked",
+      "version": "0.7 (beta, NeoForge 1.21.1)",
+      "reason": "Its always-on built-in datapack (infinity_cave_terralith when Terralith is loaded) replaces minecraft:dimension/overworld, minecraft:dimension_type/overworld (min_y -128, height 448), minecraft:worldgen/noise_settings/overworld and every vanilla biome file. Terralith also overrides dimension/overworld and Tectonic overrides noise_settings/overworld, so one terrain system silently loses. The dimension_type change also applies to existing 0.2.0 saves (overworld height changes under already-generated chunks). Needs a merged Tectonic+Terralith+Infinity Cave noise router and a new-world-only rollout; not attempted in this pass."
+    },
+    {
+      "slug": "freshly-modded",
+      "status": "not installed (FA addon)",
+      "reason": "F.M.R.P 3.0.5 only ships EMF models for friendsandfoes, frostiful, guardvillagers, savage_and_ravage and takesapillage; none is in Horizon, so it would animate nothing."
+    },
+    {
+      "slug": "fresh-compats",
+      "status": "not installed (FA addon)",
+      "reason": "Targets Supplementaries, Quark, Sleep Tight and You've Goat to be Kidding Me; none is in Horizon."
+    },
+    {
+      "slug": "fresh-illager-mod-compats",
+      "status": "not installed (FA addon)",
+      "reason": "Patches for illager mods that are not in Horizon."
+    },
+    {
+      "slug": "fresh-animations-creepers/details/emissive/quivers/spiders/objects/classic-horses",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
     }
   ]
 }

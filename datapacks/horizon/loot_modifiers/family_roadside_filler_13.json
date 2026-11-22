@@ -6,7 +6,19 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:library/junk"
+          "loot_table_id": "structory:harvest/graveyard"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:harvest/graveyard2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:library/high"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:library/low"
         }
       ]
     }

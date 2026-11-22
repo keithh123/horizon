@@ -1,12 +1,46 @@
 {
   "ports": [
     {
+      "name": "armoursoundtweak",
+      "file": "armoursoundtweak-1.0.2-neoforge.1.21.1.horizon1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "Apache-2.0",
+      "replaces_slug": "armour-sound-tweak-updated",
+      "upstream": "https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated/tree/5433562",
+      "size": 4578,
+      "hashes": {
+        "sha1": "4347101a652194f8be3d7cd40427934abca43876",
+        "sha512": "0b58ef8305ad8de4e9b5e6fb7685f916a8da34cea3fae1ccd218892601340dc745a2d824c06b68dc96b7f1898abad92a072b10ac131f31187b92f383b9b45c19"
+      }
+    },
+    {
+      "name": "eatinganimation",
+      "file": "eatinganimationid-1.9.72-neoforge.1.21.1.horizon1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": "eating-animation",
+      "upstream": "https://github.com/Theoness1/EatingAnimation/tree/8dc8b78",
+      "size": 1018875,
+      "hashes": {
+        "sha1": "acdbf7a665faf8f82b5ce5ba04e83a28dfe34867",
+        "sha512": "3fe2cb149dc57c79f37d1b86f47bf1f4d6fbf5a280126a524510aaf29c73f96626f6c7c303e9daa39ba3184451586c65779a2fbbe2558619adab9030abfa9426"
+      }
+    },
+    {
       "name": "grandteleport",
       "file": "GrandTeleport-NeoForge-1.21.1-1.0.1-horizon1.jar",
       "kind": "repack",
       "side": {
         "client": "required",
-        "server": "optional"
+        "server": "unsupported"
       },
       "license": "MIT",
       "replaces_slug": "grandteleport-neoforge",
@@ -15,6 +49,23 @@
       "hashes": {
         "sha1": "586b41eb6859e59eae8366c8275c9aa2c5550545",
         "sha512": "95a092cec5be1b740e2c5436a91dd5ef9208f84aaef0ec6700fb534a5cfa2177c948bec73399ccd96f86a1dd6e5aa123f7563e4b9b0ded3c1a1e7c13a0bb8951"
+      }
+    },
+    {
+      "name": "snowyleavesplus",
+      "file": "snowyleavesplus-0.1.12-neoforge.1.21.1.horizon1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "required"
+      },
+      "license": "MPL-2.0",
+      "replaces_slug": "snowyleavesplus",
+      "upstream": "https://github.com/theRookieCoder/SnowyLeavesPlus/tree/78d079e",
+      "size": 170799,
+      "hashes": {
+        "sha1": "2cb6ee904e3c50f1ce19489ed0e0af3699d225f6",
+        "sha512": "ebae0880773bbb19152813b3fd084a1ff711f115009b8a95d8abd3f16f9b3a7052b1d9df83e03bc298256634f4950278442372b7cbb1a9e908d0f63da3daba24"
       }
     }
   ]

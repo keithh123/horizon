@@ -3,7 +3,7 @@
   "output": "GrandTeleport-NeoForge-1.21.1-1.0.1-horizon1.jar",
   "side": {
     "client": "required",
-    "server": "optional"
+    "server": "unsupported"
   },
   "license": "MIT",
   "replaces_slug": "grandteleport-neoforge",
@@ -14,7 +14,7 @@
     "version": "neoforge-1.0.1"
   },
   "attribution": "Original Fabric mod by hookuru_; NeoForge port by cfrsh (MIT). Metadata-only repack by Project Horizon.",
-  "changes": "neoforge.mods.toml version 'neoforge-1.0.1' -> '1.0.1'. FML 4.0.45 rejects the original with InvalidModFileException (Illegal version number). No code changes.",
+  "changes": "neoforge.mods.toml version 'neoforge-1.0.1' -> '1.0.1'. FML 4.0.45 rejects the original with InvalidModFileException (Illegal version number). No code changes. Shipped client-only: its mod constructor loads net.minecraft.client.gui.screens.Screen, which crashes a dedicated server (tested).",
   "edits": {
     "META-INF/neoforge.mods.toml": [
       [

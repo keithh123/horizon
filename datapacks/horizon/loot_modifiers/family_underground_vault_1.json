@@ -6,7 +6,39 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/vault_creeping"
+          "loot_table_id": "mmr:dark_oak_mineshaft/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/treasure_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/treasure_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/treasure_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/treasure_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/treasure_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/treasure_3"
         }
       ]
     }

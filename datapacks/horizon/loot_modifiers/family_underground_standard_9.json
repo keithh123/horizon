@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/miner_chest_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/start_piece"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/underground/standard_9"
+}

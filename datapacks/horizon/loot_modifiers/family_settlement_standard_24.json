@@ -6,51 +6,19 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/archer"
+          "loot_table_id": "structory:mood/badlands"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/butcher"
+          "loot_table_id": "structory:mood/desert"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/fisherman"
+          "loot_table_id": "structory:mood/grassy"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/mason"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/shepherd"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/smith"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/archer"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/attic"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/fisherman"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/mason"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/smith"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/tavern_downstairs"
+          "loot_table_id": "structory:mood/miner"
         }
       ]
     }

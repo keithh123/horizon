@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/treasure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/treasure_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:snowy_mineshaft/treasure_3"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/underground/vault_6"
+}

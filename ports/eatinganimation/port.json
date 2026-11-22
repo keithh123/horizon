@@ -1,0 +1,14 @@
+{
+  "kind": "gradle",
+  "output": "eatinganimationid-1.9.72-neoforge.1.21.1.horizon1.jar",
+  "built_jar": "eatinganimationid-1.9.72-neoforge.1.21.1.horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "replaces_slug": "eating-animation",
+  "source": "https://github.com/Theoness1/EatingAnimation/tree/8dc8b78",
+  "attribution": "Eating Animation by theone_ss, spusik_, PinkGoosik, DoctorNight1 (MIT). NeoForge 1.21.1 port by Project Horizon. Textures/models are the upstream assets, unchanged.",
+  "changes": "Fabric item predicates -> NeoForge ItemProperties (client setup, after registries freeze so modded food is included); built-in support pack via AddPackFindersEvent; GUI model mixin retargeted to GuiGraphics.renderItem. Client-only."
+}

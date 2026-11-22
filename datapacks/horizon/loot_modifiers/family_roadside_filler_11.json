@@ -6,11 +6,19 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/generic"
+          "loot_table_id": "nova_structures:chests/pillager_outpost_kitchen"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/kitchen"
+          "loot_table_id": "nova_structures:chests/shrine/shrine_lesser_ominous"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/generic/miner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/low"
         }
       ]
     }

@@ -1,0 +1,24 @@
+// Shared NeoForge 1.21.1 build for Project Horizon source ports. Each port's build.gradle sets
+// project.ext.{modId, modVersion, group} and applies this file. Pinned toolchain: Java 21,
+// ModDevGradle 2.0.141, NeoForge 21.1.267 (the pack's loader), Parchment-free Mojang mappings.
+apply plugin: 'java-library'
+apply plugin: 'net.neoforged.moddev'
+
+version = project.ext.modVersion
+base { archivesName = project.ext.modId }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+neoForge {
+    version = '21.1.267'
+    runs { }
+    mods { "${project.ext.modId}" { sourceSet(sourceSets.main) } }
+}
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 21 }
+// reproducible jars: fixed timestamps, stable order
+tasks.withType(AbstractArchiveTask).configureEach { preserveFileTimestamps = false; reproducibleFileOrder = true }
+processResources {
+    def props = [mod_version: project.ext.modVersion]
+    inputs.properties props
+    filesMatching('META-INF/neoforge.mods.toml') { expand props }
+}

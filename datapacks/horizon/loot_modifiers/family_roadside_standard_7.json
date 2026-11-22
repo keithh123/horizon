@@ -6,11 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/badland_miner_outpost_forge"
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/mangrove_witchhud"
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost_towers"
         }
       ]
     }

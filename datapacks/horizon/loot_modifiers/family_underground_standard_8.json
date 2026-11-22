@@ -6,7 +6,31 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:underground/giant_bee_hive"
+          "loot_table_id": "mmr:mesa_mineshaft/entrance_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/miner_chest_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mushroom_mineshaft/miner_chest_3"
         }
       ]
     }

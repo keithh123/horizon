@@ -6,19 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:harvest/graveyard"
+          "loot_table_id": "nova_structures:chests/toxic_lair/generic"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:harvest/graveyard2"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:library/high"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:library/low"
+          "loot_table_id": "nova_structures:chests/toxic_lair/kitchen"
         }
       ]
     }

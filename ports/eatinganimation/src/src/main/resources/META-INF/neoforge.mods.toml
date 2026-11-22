@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "eatinganimationid"
+version = "${mod_version}"
+displayName = "Eating Animation (NeoForge port)"
+logoFile = "assets/eatinganimationid/eatinganimationicon.png"
+authors = "theone_ss, spusik_, PinkGoosik, DoctorNight1; NeoForge 1.21.1 port for Project Horizon"
+credits = "MIT. Source: https://github.com/Theoness1/EatingAnimation (branch 1.21, commit 8dc8b78), ported to NeoForge."
+description = "Adds simple sprite animation when you eat or drink something."
+
+[[mixins]]
+config = "eatinganimation.mixins.json"
+
+[[dependencies.eatinganimationid]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.eatinganimationid]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "CLIENT"

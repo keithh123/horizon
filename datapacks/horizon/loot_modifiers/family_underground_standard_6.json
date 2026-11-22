@@ -6,7 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/bunker_altar"
+          "loot_table_id": "mmr:deep_dark_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:deep_dark_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:deep_dark_mineshaft/miner_chest_3"
         }
       ]
     }

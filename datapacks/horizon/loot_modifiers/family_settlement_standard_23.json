@@ -6,19 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/badlands"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/desert"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/grassy"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/miner"
+          "loot_table_id": "repurposed_structures:chests/villages/ocean_cartographer"
         }
       ]
     }

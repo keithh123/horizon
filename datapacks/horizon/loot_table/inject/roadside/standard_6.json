@@ -6,13 +6,28 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.023
+          "chance": 0.35
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "horizon:wayfarer_shard"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.015
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:ancient_core"
         }
       ]
     },

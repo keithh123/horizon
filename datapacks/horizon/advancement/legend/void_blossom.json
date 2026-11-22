@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "kill": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "bosses_of_mass_destruction:void_blossom"
+            }
+          }
+        ]
+      }
+    },
+    "party": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "kill",
+      "party"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "horizon:rewards/legend/void_blossom"
+    ],
+    "function": "horizon:fx/legend_mini"
+  }
+}

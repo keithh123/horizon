@@ -1,0 +1,4 @@
+Changes made for Project Horizon (NeoForge 1.21.1 back-port), 2026-11-21:
+- Event and API mapping to NeoForge 1.21.1 (see header of ArmourSoundTweak.java).
+- MidnightLib/ModMenu config replaced by a NeoForge client config with the same options.
+Original work: Armour Sound Tweak Updated, Apache License 2.0.

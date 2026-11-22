@@ -626,6 +626,30 @@
     [
       "^nova_structures:chests/",
       "roadside"
+    ],
+    [
+      "^bosses_of_mass_destruction:chests/",
+      "boss_lair"
+    ],
+    [
+      "^block_factorys_bosses:(chests/|kraken$)",
+      "boss_lair"
+    ],
+    [
+      "^homesteads:loot/homesteads",
+      "settlement"
+    ],
+    [
+      "^homesteads:loot/prospector",
+      "roadside"
+    ],
+    [
+      "^mmr:nether_mineshaft",
+      "nether"
+    ],
+    [
+      "^mmr:",
+      "underground"
     ]
   ],
   "structures": [
@@ -852,6 +876,50 @@
     [
       "^(explorify|structory|yungsextras|betterwitchhuts|terralith|nova_structures):",
       "roadside"
+    ],
+    [
+      "^bosses_of_mass_destruction:",
+      "boss_lair"
+    ],
+    [
+      "^block_factorys_bosses:",
+      "boss_lair"
+    ],
+    [
+      "^homesteads:prospector",
+      "roadside"
+    ],
+    [
+      "^homesteads:",
+      "settlement"
+    ],
+    [
+      "^mmr:nether",
+      "nether"
+    ],
+    [
+      "^mmr:",
+      "underground"
+    ],
+    [
+      "^grim_kingdoms:(glimmervault_fortress|frostbloom_bastion|glacierfall_keep|frozen_onion_fort|grain_sack_(fort|keep|hold)|chill_hallmanor|eldermoor)",
+      "temple"
+    ],
+    [
+      "^grim_kingdoms:",
+      "roadside"
+    ],
+    [
+      "^companions:companions_(babayaga|monkey_temple|teddytower|factory)",
+      "temple"
+    ],
+    [
+      "^companions:",
+      "roadside"
+    ],
+    [
+      "^spider_overhaul:",
+      "underground"
     ]
   ],
   "clue_maps": {

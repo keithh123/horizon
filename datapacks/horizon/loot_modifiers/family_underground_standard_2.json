@@ -10,6 +10,38 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/trial_spawner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/trial_spawner_ominous"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:empty"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/suspicious_sand"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/trial_spawner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/trial_spawner_ominous"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/trial_spawner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:mesa_mineshaft/trial_spawner_ominous"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "repurposed_structures:chests/dungeons/badlands"
         },
         {

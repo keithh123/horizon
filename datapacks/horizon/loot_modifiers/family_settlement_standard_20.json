@@ -6,7 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/villages/jungle_house"
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_cartographer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/warped_cartographer"
         }
       ]
     }

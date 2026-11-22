@@ -1,0 +1,4 @@
+plugins { id 'net.neoforged.moddev' }
+ext { modId = 'snowyleavesplus'; modVersion = '0.1.12-neoforge.1.21.1.horizon1' }
+group = 'io.github.therookiecoder'
+apply from: '../../_gradle/port.gradle'

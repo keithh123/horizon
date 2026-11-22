@@ -6,15 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/bastions/underground/bridge"
+          "loot_table_id": "repurposed_structures:chests/ancient_cities/nether"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/bastions/underground/other"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/bastions/underground/skeleton_horse_stable"
+          "loot_table_id": "repurposed_structures:chests/ancient_cities/nether_magma_box"
         }
       ]
     }

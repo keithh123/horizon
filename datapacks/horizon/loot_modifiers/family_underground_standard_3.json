@@ -18,6 +18,42 @@
         },
         {
           "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:dark_oak_mineshaft/miner_chest_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/gold_cart"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/miner_chest_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/stable"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:desert_mineshaft/suspicious_sand"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
           "loot_table_id": "repurposed_structures:chests/dungeons/deep"
         },
         {

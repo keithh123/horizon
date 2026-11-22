@@ -1,0 +1,45 @@
+# 0.3.0 expansion (headless): load, new loot tables through the Horizon GLMs, new structures located in natural
+# Terralith/Tectonic terrain and audited, new bosses/mobs summoned and killed, dimensions.  docs/VALIDATION_REPORT.md
+kubejs errors server
+neoforge tps
+SAY loot rolls
+loot spawn 0 200 0 loot bosses_of_mass_destruction:chests/lich_tower
+loot spawn 0 200 0 loot block_factorys_bosses:chests/underworld_arena_vault
+loot spawn 0 200 0 loot mmr:mineshaft/rare
+loot spawn 0 200 0 loot homesteads:loot/homesteads
+WAIT 2
+LOCATEAUDIT bosses_of_mass_destruction:lich_tower 64 50
+LOCATEAUDIT bosses_of_mass_destruction:gauntlet_arena 48 50
+LOCATEAUDIT block_factorys_bosses:underworld_arena 96 50
+LOCATEAUDIT block_factorys_bosses:yeti_hideout 48 50
+LOCATEAUDIT grim_kingdoms:glimmervault_fortress_plains 96 50
+LOCATEAUDIT homesteads:forest_home_steads 48 50
+LOCATEAUDIT mmr:mineshaft 96 50
+LOCATEAUDIT companions:companions_tent 32 50
+LOCATEAUDIT spider_overhaul:birch_spidernest 32 20
+SAY bosses
+forceload add 0 0 32 32
+summon bosses_of_mass_destruction:lich 8 120 8
+summon bosses_of_mass_destruction:obsidilith 16 120 8
+summon bosses_of_mass_destruction:gauntlet 24 120 8
+summon bosses_of_mass_destruction:void_blossom 8 120 24
+summon block_factorys_bosses:infernal_dragon 16 140 24
+summon block_factorys_bosses:yeti 24 120 24
+summon block_factorys_bosses:kraken 24 120 16
+summon block_factorys_bosses:sandworm 8 120 16
+summon block_factorys_bosses:underworld_knight 16 120 16
+summon companions:sacred_pontiff 12 120 12
+summon primal:bear 20 120 20
+summon spider_overhaul:cavern_spider 4 120 4
+WAIT 8
+neoforge tps
+kill @e[type=!minecraft:player,type=!minecraft:item]
+WAIT 5
+forceload remove all
+SAY dimensions
+execute in minecraft:the_nether run forceload add 0 0
+execute in minecraft:the_end run forceload add 0 0
+WAIT 10
+execute in minecraft:the_nether run forceload remove all
+execute in minecraft:the_end run forceload remove all
+neoforge tps

@@ -19,6 +19,9 @@ import hashlib, io, json, os, shutil, subprocess, sys, urllib.request, zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+LONG = chr(92) * 2 + '?' + chr(92)  # Windows long-path prefix: the repo may live deep on disk
+if os.name == "nt" and not str(ROOT).startswith(LONG):
+    ROOT = Path(LONG + str(ROOT))
 PORTS = ROOT / "ports"
 DIST = PORTS / "dist"
 CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
@@ -75,9 +78,15 @@ def build(name, spec):
             entries[path] = (PORTS / name / rel).read_bytes()
         write_deterministic(entries, out)
     elif kind == "gradle":
-        src = PORTS / name / "src"
-        gradlew = src / ("gradlew.bat" if os.name == "nt" else "gradlew")
-        subprocess.run([str(gradlew), "build", "--no-daemon", "-q"], cwd=src, check=True)
+        # Build in a short staging path: NeoForm runtime spawns java in build/tmp/..., and Windows CreateProcess
+        # fails (error 267) when the repo lives in a deep folder. Layout is mirrored so '../../_gradle' resolves.
+        stage = Path(os.environ.get("PH_PORT_BUILD", Path.home() / ".cache" / "project-horizon" / "portbuild"))
+        shutil.rmtree(stage / "ports" / name / "src" / "src", ignore_errors=True)
+        shutil.copytree(PORTS / "_gradle", stage / "ports" / "_gradle", dirs_exist_ok=True)
+        shutil.copytree(PORTS / name / "src", stage / "ports" / name / "src", dirs_exist_ok=True)
+        src = stage / "ports" / name / "src"
+        gradlew = stage / "ports" / "_gradle" / ("gradlew.bat" if os.name == "nt" else "gradlew")   # shared Gradle 8.10 wrapper
+        subprocess.run([str(gradlew), "-p", str(src), "clean", "build", "--no-daemon", "-q"], cwd=src, check=True)
         built = src / "build" / "libs" / spec["built_jar"]
         out.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(built, out)

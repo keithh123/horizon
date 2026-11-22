@@ -19,7 +19,11 @@ if os.name == "nt" and not str(ROOT).startswith(LONG):
 CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
 SYSTEM = {"minecraft", "neoforge"}
 # Ranges this checker's vkey() mis-orders but FML (Maven ComparableVersion) accepts; each confirmed by a real client launch.
-LAUNCH_VERIFIED = {("subtle-effects", "fzzy_config", "0.7.7+fix1+1.21+neoforge")}
+LAUNCH_VERIFIED = {("subtle-effects", "fzzy_config", "0.7.7+fix1+1.21+neoforge"),
+                   # 0.3.0: Maven orders 1.21-1.10.35.96 < 1.21.1-1.11.38.127 (list < int); this vkey() does not. Client loaded.
+                   ("clavis", "lootr", "1.21.1-1.11.38.127"),
+                   # NeoForge provides no 'forge' mod id, so FML skips this optional dep; PLATFORM maps forge only for old ranges. Client loaded.
+                   ("more-sounds", "forge", "21.1.267")}
 PLATFORM = {"minecraft": "1.21.1", "neoforge": "21.1.267", "forge": "21.1.267", "javafml": "4", "java": "21"}
 
 
@@ -123,6 +127,8 @@ def main():
                                                          + (" [system mod: accepted by FML 4.0.45, confirmed by launch log]" if mid in SYSTEM else ""))
         elif typ in ("incompatible", "discouraged") and have and in_range(have[0], rng):
             (fail if typ == "incompatible" else warn).append(f"{owner}: {typ} with {mid} {rng}, found {have[0]}")
+        elif typ == "optional" and have and not in_range(have[0], rng) and (owner, mid, have[0]) in LAUNCH_VERIFIED:
+            warn.append(f"{owner}: optional {mid} {rng}, found {have[0]} [checker quirk: accepted by FML, confirmed by client launch]")
         elif typ == "optional" and have and not in_range(have[0], rng):
             fail.append(f"{owner}: optional {mid} {rng} is present but version {have[0]} is out of range (FML rejects this)")
     for owner, fm in fabric:

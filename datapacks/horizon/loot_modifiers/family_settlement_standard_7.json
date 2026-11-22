@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "kaisyn:village/village_badlands_house"
+          "loot_table_id": "homesteads:loot/homesteads"
         }
       ]
     }

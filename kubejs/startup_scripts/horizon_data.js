@@ -17,6 +17,51 @@ global.HORIZON = {
    "path": "valkyrie_queen",
    "tier": "mini"
   },
+  "block_factorys_bosses:infernal_dragon": {
+   "name": "Infernal Dragon",
+   "path": "infernal_dragon",
+   "tier": "mini"
+  },
+  "block_factorys_bosses:kraken": {
+   "name": "Kraken",
+   "path": "kraken",
+   "tier": "mini"
+  },
+  "block_factorys_bosses:sandworm": {
+   "name": "Sandworm",
+   "path": "sandworm",
+   "tier": "mini"
+  },
+  "block_factorys_bosses:underworld_knight": {
+   "name": "Underworld Knight",
+   "path": "underworld_knight",
+   "tier": "mini"
+  },
+  "block_factorys_bosses:yeti": {
+   "name": "Yeti",
+   "path": "yeti",
+   "tier": "mini"
+  },
+  "bosses_of_mass_destruction:gauntlet": {
+   "name": "Nether Gauntlet",
+   "path": "gauntlet",
+   "tier": "mini"
+  },
+  "bosses_of_mass_destruction:lich": {
+   "name": "Night Lich",
+   "path": "lich",
+   "tier": "mini"
+  },
+  "bosses_of_mass_destruction:obsidilith": {
+   "name": "Obsidilith",
+   "path": "obsidilith",
+   "tier": "mini"
+  },
+  "bosses_of_mass_destruction:void_blossom": {
+   "name": "Void Blossom",
+   "path": "void_blossom",
+   "tier": "mini"
+  },
   "cataclysm:ancient_remnant": {
    "name": "Ancient Remnant",
    "path": "ancient_remnant",
@@ -70,6 +115,11 @@ global.HORIZON = {
   "cataclysm:the_prowler": {
    "name": "The Prowler",
    "path": "the_prowler",
+   "tier": "mini"
+  },
+  "companions:sacred_pontiff": {
+   "name": "Sacred Pontiff",
+   "path": "sacred_pontiff",
    "tier": "mini"
   },
   "deeperdarker:stalker": {

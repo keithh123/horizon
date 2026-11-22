@@ -6,11 +6,23 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "yungsextras:desert/chillzone"
+          "loot_table_id": "terralith:desert_outpost"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "yungsextras:desert/ruins"
+          "loot_table_id": "terralith:igloo"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:lodge_drinkables"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:ruin/glacial/main_cs"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:witch_hut"
         }
       ]
     }

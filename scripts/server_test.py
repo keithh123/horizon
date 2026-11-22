@@ -38,9 +38,9 @@ def main():
                 lines.append(line)
     threading.Thread(target=pump, daemon=True).start()
 
-    def wait_for(rx, timeout):
+    def wait_for(rx, timeout, since=0):
         t0 = time.time()
-        seen = 0
+        seen = since
         while time.time() - t0 < timeout:
             with lock:
                 cur = lines[seen:]
@@ -67,6 +67,27 @@ def main():
             _, rx, to = c.split(" ", 2)
             print("WAITLOG", rx, "->", (wait_for(rx, float(to)) or "TIMEOUT").strip()[:200])
             continue
+        if c.startswith("LOCATEAUDIT "):
+            # LOCATEAUDIT <structure> <radius> <rolls>: find a naturally generated instance, load it, audit its containers
+            _, sid, rad, rolls = c.split()
+            send(f"say [horizon-test] locate {sid}")
+            with lock:
+                mark = len(lines)
+            send(f"locate structure {sid}")
+            hit = wait_for(r"(The nearest .* is at \[|Could not find a structure|Incorrect argument|Unknown)", 300, mark)
+            m = re.search(r"\[(-?\d+), (~|-?\d+), (-?\d+)\]", hit or "")
+            print("LOCATE", sid, "->", (hit or "TIMEOUT").strip()[-160:])
+            if m:
+                x, z = int(m.group(1)), int(m.group(3))
+                r = int(rad)
+                send(f"forceload add {x - r} {z - r} {x + r} {z + r}")
+                time.sleep(25)
+                send(f"execute positioned {x} 64 {z} run horizon audit {r} {rolls}")
+                time.sleep(6)
+                send("forceload remove all")
+            continue
+        if c.startswith("SAY "):
+            send("say [horizon-test] " + c[4:]); time.sleep(0.5); continue
         if c.startswith("WAIT "):
             time.sleep(float(c.split()[1])); continue
         send(c)

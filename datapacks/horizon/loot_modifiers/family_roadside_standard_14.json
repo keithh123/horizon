@@ -6,35 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_cold/large"
+          "loot_table_id": "nova_structures:chests/shrine/combat_pot"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_cold/small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_hot/large"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_hot/small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_icy/large"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_icy/small"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_warm/large"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/ruins/land_warm/small"
+          "loot_table_id": "nova_structures:chests/toxic_lair/brewing"
         }
       ]
     }

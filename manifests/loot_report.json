@@ -1,25 +1,26 @@
 {
- "tables_classified": 932,
- "inject_tables": 296,
+ "tables_classified": 1043,
+ "inject_tables": 314,
  "by_family": {
   "aether": 22,
   "arcane": 79,
-  "boss_lair": 8,
+  "boss_lair": 18,
   "deep": 14,
   "end": 22,
   "hive": 47,
   "landmark": 62,
-  "nether": 205,
+  "nether": 215,
   "ocean": 28,
-  "roadside": 110,
-  "settlement": 125,
+  "roadside": 111,
+  "settlement": 126,
   "temple": 161,
-  "underground": 49
+  "underground": 138
  },
  "placed_but_unassigned": [
   "all_bark_all_bite:chests/kennel/scavenger",
   "archers:chests/archery_range",
   "beautify:chests/botanist/botanist_chest_taiga",
+  "block_factorys_bosses:chests/undead_arena_rare",
   "chefsdelight:chests/cooker",
   "create_structures:chests/village/village_windmill",
   "ctov:village/mesa/smith",
@@ -47,9 +48,15 @@
   "kaisyn:village/village_forest_ruins/forest_ruins_butcher",
   "kaisyn:village/village_forest_ruins/forest_ruins_library",
   "kaisyn:village/village_forest_ruins/forest_ruins_temple",
+  "minecraft:chests/dye",
+  "minecraft:chests/mineral",
   "minecraft:chests/nether_fortress/fort_inside_generic",
+  "minecraft:chests/random",
+  "minecraft:chests/trial_chambers/reward",
+  "minecraft:chests/trial_chambers/reward_rare",
   "minecraft:chests/village/village_leatherworker",
   "minecraft:chests/village_desert_house",
+  "minecraft:chests/wood",
   "monobank:monobank/village/badlands",
   "monobank:monobank/village/beach",
   "monobank:monobank/village/dark_forest",
@@ -61,6 +68,11 @@
   "morevillagers:chests/village/netherologist",
   "morevillagers:chests/village/village_hunter",
   "morevillagers:chests/village/village_oceanographer",
+  "mvs:general",
+  "mvs:houses_books",
+  "mvs:houses_common",
+  "mvs:houses_rare",
+  "mvs:houses_uncommon",
   "nova_structures:chests/illager_hideout_lesser_meat",
   "nova_structures:chests/illager_hideout_raw_trash",
   "nova_structures:chests/illager_hideout_raw_vegitarian",
@@ -255,6 +267,25 @@
    "p_heart_ge1": 0.0
   },
   {
+   "group": "block_factorys_bosses:underworld_arena",
+   "family": "boss_lair",
+   "containers": 72,
+   "calibrated": false,
+   "core": 0.99,
+   "affix": 2.99,
+   "gem": 2.0,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "block_factorys_bosses:dragon_tower",
+   "family": "boss_lair",
+   "containers": 25,
+   "calibrated": false,
+   "affix": 3.0,
+   "gem": 2.0,
+   "p_heart_ge1": 0.0
+  },
+  {
    "group": "cataclysm:acropolis",
    "family": "boss_lair",
    "containers": 24,
@@ -281,6 +312,16 @@
    "group": "mowziesmobs:monastery",
    "family": "boss_lair",
    "containers": 11,
+   "calibrated": false,
+   "core": 1.0,
+   "affix": 3.0,
+   "gem": 2.0,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "bosses_of_mass_destruction:lich_tower",
+   "family": "boss_lair",
+   "containers": 5,
    "calibrated": false,
    "core": 1.0,
    "affix": 3.0,
@@ -802,6 +843,18 @@
    "gem": 1.65,
    "heart": 0.05,
    "shard": 0.32,
+   "p_heart_ge1": 0.05
+  },
+  {
+   "group": "mmr:1_21_0/nether_mineshaft",
+   "family": "nether",
+   "containers": 132,
+   "calibrated": false,
+   "token": 2.11,
+   "affix": 1.71,
+   "gem": 0.98,
+   "heart": 0.05,
+   "core": 0.49,
    "p_heart_ge1": 0.05
   },
   {
@@ -1658,6 +1711,72 @@
    "p_heart_ge1": 0.0
   },
   {
+   "group": "homesteads:prospector_camp_badlands_1",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:prospector_camp_badlands_2",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:prospector_camp_badlands_5",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:prospector_camp_cave_2",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:prospector_camp_cave_3",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:prospector_camp_cave_5",
+   "family": "roadside",
+   "containers": 1,
+   "calibrated": false,
+   "core": 0.03,
+   "shard": 0.6,
+   "affix": 0.4,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
    "group": "structory:harvest",
    "family": "settlement",
    "containers": 190,
@@ -2367,6 +2486,406 @@
    "calibrated": false,
    "shard": 0.01,
    "affix": 0.01,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_3",
+   "family": "settlement",
+   "containers": 2,
+   "calibrated": false,
+   "shard": 0.8,
+   "affix": 1.0,
+   "gem": 0.5,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_5",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_6",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_7",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_8",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_9",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_small_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_small_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_small_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:flower_house_small_5",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_1_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_1_3",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_3",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_5",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_2_6",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_1_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_5",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_small_2_7",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:forest_tent_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:swamp_1_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:swamp_2_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:swamp_2_3",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:swamp_small_1_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:swamp_small_1_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_house_1",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_house_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_house_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_house_6",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_small_1_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_small_1_4",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_small_2_2",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "homesteads:taiga_tent_3",
+   "family": "settlement",
+   "containers": 1,
+   "calibrated": false,
+   "shard": 0.4,
+   "affix": 0.5,
+   "gem": 0.25,
    "p_heart_ge1": 0.0
   },
   {
@@ -3284,6 +3803,50 @@
    "p_heart_ge1": 0.0
   },
   {
+   "group": "mmr:1_21_0/desert_mineshaft",
+   "family": "underground",
+   "containers": 275,
+   "calibrated": false,
+   "shard": 0.83,
+   "affix": 1.2,
+   "gem": 0.74,
+   "core": 0.17,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "mmr:1_21_0/mineshaft",
+   "family": "underground",
+   "containers": 210,
+   "calibrated": false,
+   "shard": 1.48,
+   "core": 0.25,
+   "affix": 1.05,
+   "gem": 0.68,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "mmr:1_21_0/jungle_mineshaft",
+   "family": "underground",
+   "containers": 171,
+   "calibrated": false,
+   "shard": 1.36,
+   "affix": 1.17,
+   "gem": 0.76,
+   "core": 0.17,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "mmr:1_21_0/dark_oak_mineshaft",
+   "family": "underground",
+   "containers": 167,
+   "calibrated": false,
+   "shard": 1.35,
+   "affix": 1.19,
+   "gem": 0.74,
+   "core": 0.18,
+   "p_heart_ge1": 0.0
+  },
+  {
    "group": "nova_structures:creeping_crypt",
    "family": "underground",
    "containers": 153,
@@ -3326,6 +3889,17 @@
    "p_heart_ge1": 0.0
   },
   {
+   "group": "mmr:1_21_0/mushroom_mineshaft",
+   "family": "underground",
+   "containers": 116,
+   "calibrated": false,
+   "shard": 1.4,
+   "affix": 1.18,
+   "gem": 0.78,
+   "core": 0.17,
+   "p_heart_ge1": 0.0
+  },
+  {
    "group": "minecraft:illager_mansion/manor_fixed",
    "family": "underground",
    "containers": 112,
@@ -3334,6 +3908,17 @@
    "core": 0.14,
    "affix": 1.04,
    "gem": 0.66,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "mmr:1_21_0/mesa_mineshaft",
+   "family": "underground",
+   "containers": 112,
+   "calibrated": false,
+   "shard": 1.36,
+   "affix": 1.21,
+   "gem": 0.77,
+   "core": 0.17,
    "p_heart_ge1": 0.0
   },
   {
@@ -3350,6 +3935,17 @@
    "p_heart_ge1": 0.01
   },
   {
+   "group": "mmr:1_21_0/snowy_mineshaft",
+   "family": "underground",
+   "containers": 102,
+   "calibrated": false,
+   "shard": 1.41,
+   "affix": 1.39,
+   "gem": 0.74,
+   "core": 0.18,
+   "p_heart_ge1": 0.0
+  },
+  {
    "group": "nova_structures:bunker",
    "family": "underground",
    "containers": 87,
@@ -3358,6 +3954,17 @@
    "affix": 1.07,
    "gem": 0.74,
    "core": 0.25,
+   "p_heart_ge1": 0.0
+  },
+  {
+   "group": "mmr:1_21_0/deep_dark_mineshaft",
+   "family": "underground",
+   "containers": 71,
+   "calibrated": false,
+   "shard": 1.39,
+   "affix": 1.43,
+   "gem": 0.88,
+   "core": 0.18,
    "p_heart_ge1": 0.0
   },
   {

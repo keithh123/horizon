@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mowziesmobs:chests/umvuthana_grove_chest"
+          "loot_table_id": "bosses_of_mass_destruction:chests/lich_tower"
         }
       ]
     }

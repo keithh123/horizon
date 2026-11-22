@@ -6,11 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/villages/bamboo_house"
+          "loot_table_id": "nova_structures:chests/village/village_birch_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/villages/dark_forest_house"
+          "loot_table_id": "repurposed_structures:chests/villages/mountains_house"
         }
       ]
     }

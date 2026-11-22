@@ -12,9 +12,16 @@
     "horizon:trophy_ferrous_wroughtnaut",
     "horizon:trophy_forgotten_guardian",
     "horizon:trophy_frostmaw",
+    "horizon:trophy_gauntlet",
     "horizon:trophy_ignis",
+    "horizon:trophy_infernal_dragon",
+    "horizon:trophy_kraken",
+    "horizon:trophy_lich",
     "horizon:trophy_maledictus",
     "horizon:trophy_netherite_monstrosity",
+    "horizon:trophy_obsidilith",
+    "horizon:trophy_sacred_pontiff",
+    "horizon:trophy_sandworm",
     "horizon:trophy_sculptor",
     "horizon:trophy_scylla",
     "horizon:trophy_slider",
@@ -24,8 +31,11 @@
     "horizon:trophy_the_leviathan",
     "horizon:trophy_the_prowler",
     "horizon:trophy_umvuthi",
+    "horizon:trophy_underworld_knight",
     "horizon:trophy_valkyrie_queen",
+    "horizon:trophy_void_blossom",
     "horizon:trophy_warden",
-    "horizon:trophy_wither"
+    "horizon:trophy_wither",
+    "horizon:trophy_yeti"
   ]
 }

@@ -117,6 +117,13 @@ STRUCTURE_SETS = [
     ("mowziesmobs:umvuthana_groves", 36, 14, "rare mini-boss"),
     ("mowziesmobs:wrought_chambers", 24, 10, "uncommon mini-boss"),
     ("apotheosis:towers", 32, 20, "uncommon boss tower"),
+    # 0.3.0 expansion: boss arenas join the mini-boss tiers; dense sets thinned next to YUNG's mineshafts
+    ("bosses_of_mass_destruction:gauntlet_arena", 40, 16, "rare mini-boss (was 32/16)"),
+    ("block_factorys_bosses:yeti_hideout", 40, 20, "rare mini-boss (was 30/25)"),
+    ("spider_overhaul:birch_spidernest", 28, 12, "spider nests were 8/6 (near-every-region)"),
+    ("mmr:mesa_mineshaft", 40, 20, "extra mineshafts next to YUNG's Better Mineshafts (was 12/4)"),
+    ("mmr:mushroom_mineshaft", 40, 20, "extra mineshafts next to YUNG's Better Mineshafts (was 16/6)"),
+    ("mmr:deep_dark_mineshaft", 40, 20, "extra mineshafts next to YUNG's Better Mineshafts (was 20/10)"),
 ]
 
 
@@ -159,7 +166,7 @@ def classify_all():
     return out
 
 
-TWO_LEVEL = {"repurposed_structures", "ctov", "towns_and_towers", "kaisyn", "minecraft"}   # <category>/<variant>/... layouts
+TWO_LEVEL = {"repurposed_structures", "ctov", "towns_and_towers", "kaisyn", "minecraft", "mmr"}   # <category>/<variant>/... layouts
 _SPATHS = defaultdict(list)
 for _s in IDS["structure"]:
     _SPATHS[_s.split(":")[0]].append(_s.split(":")[1])
@@ -176,13 +183,25 @@ def group_key(tpl):
     return ns + ":" + "/".join(seg[:2] if ns in TWO_LEVEL and len(seg) > 2 else seg[:1])
 
 
+# 0.3.0 expansion namespaces: their structures only constrain their OWN tables. Grim Kingdoms (vanilla chest
+# tables only) and others reusing foreign tables therefore keep the calibrated vanilla/baseline chances unchanged.
+OWN_TABLES_ONLY = {"mmr", "grim_kingdoms", "homesteads", "bosses_of_mass_destruction", "block_factorys_bosses",
+                   "companions", "spider_overhaul"}
+VERSIONED = {"mmr": "mmr:1_21_0/"}   # Moog's versioned pool elements: 1.21.1 resolves to the 1_21_0 templates
+
+
 def groups_from_audit():
     """template group (ns:first path segment) -> {table: containers}. Every template counted once (upper bound
     for unique pieces; jigsaw repeats of the same piece make real totals higher, see in-game samples)."""
     g = defaultdict(lambda: defaultdict(int))
     for tpl, counts in AUDIT["templates"].items():
+        ns = tpl.split(":", 1)[0]
+        if ns in VERSIONED and not tpl.startswith(VERSIONED[ns]):
+            continue        # template for another Minecraft version (never placed on 1.21.1)
         key = group_key(tpl)
         for tb, n in counts.items():
+            if ns in OWN_TABLES_ONLY and not tb.startswith(ns + ":"):
+                continue    # 0.3.0 additions must not lower the calibrated chances of tables they merely reuse
             g[key][tb] += n
     for st, c in CAL.items():          # measured container counts replace the unique-template estimate
         g[st] = defaultdict(int, c["tables"])

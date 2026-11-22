@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "Apache-2.0"
+issueTrackerURL = "https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated/issues"
+
+[[mods]]
+modId = "armoursoundtweak"
+version = "${mod_version}"
+displayName = "Armour Sound Tweak Updated (NeoForge port)"
+authors = "Mr_Chumbucket (original), yourlocalfinancialadvisor (Updated); NeoForge 1.21.1 port for Project Horizon"
+credits = "Apache-2.0. Source: https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated (branch 1.21.2, commit 5433562), back-ported to 1.21.1 and NeoForge. See NOTICE."
+description = "Plays equip sounds when you move armour, elytra, skulls and pumpkins in the inventory screen."
+
+[[dependencies.armoursoundtweak]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.armoursoundtweak]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "CLIENT"

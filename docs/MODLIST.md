@@ -1,6 +1,6 @@
 # Mod list - Project Horizon 0.2.0
 
-Minecraft 1.21.1 - NeoForge 21.1.267 - 116 mods - generated 2026-11-21 from `manifests/lock.json`.
+Minecraft 1.21.1 - NeoForge 21.1.267 - 176 mods - generated 2026-11-21 from `manifests/lock.json`.
 
 Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/server metadata (the pack installs everything on the client because singleplayer runs an integrated server).
 
@@ -143,36 +143,47 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Particle Rain](https://modrinth.com/project/nrikgvxm) | `v4.0.4+1.21.1-neoforge` | release | req/uns | MIT | Better weather particles. |
 | [Subtle Effects](https://modrinth.com/project/4q8UOK1d) | `1.15.3` | release | req/opt | LicenseRef-All-Rights-Reserved | Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config. |
 
-## Dependency (27)
+## Dependency (38)
 
 | Mod | Version | Channel | Side (c/s) | License | Why |
 |---|---|---|---|---|---|
-| [Architectury API](https://modrinth.com/project/lhGA9TYQ) | `13.0.12+neoforge` | release | req/req | LGPL-3.0-only | Required by shatterbyte-lib, simply-swords, simply-tooltips |
+| [Architectury API](https://modrinth.com/project/lhGA9TYQ) | `13.0.12+neoforge` | release | req/req | LGPL-3.0-only | Required by effectual, shatterbyte-lib, simply-swords, simply-tooltips, tlib |
 | [Balm](https://modrinth.com/project/MBAkmtvl) | `21.0.67+neoforge-1.21.1` | release | opt/opt | LicenseRef-All-Rights-Reserved | Required by waystones |
 | [Better Advanced Tooltips](https://modrinth.com/project/iHLDc0eo) | `2101.1.0-build.5` | release | req/req | MIT | Required by kubejs |
 | [Better ModList](https://modrinth.com/project/sbpqhzIG) | `21.1.5` | release | req/uns | MIT | Required by voxy-worldgen |
-| [Cloth Config API](https://modrinth.com/project/9s6osm5g) | `15.0.140+neoforge` | release | opt/opt | LGPL-3.0-only | Required by better-combat, cristel-lib, powah, voxy-worldgen |
+| [CERBON's API](https://modrinth.com/project/GkIc6rRo) | `1.3.0` | release | req/req | LGPL-3.0-only | Required by bosses-of-mass-destruction-forge, cerbons-api |
+| [Cloth Config API](https://modrinth.com/project/9s6osm5g) | `15.0.140+neoforge` | release | opt/opt | LGPL-3.0-only | Required by better-combat, bosses-of-mass-destruction-forge, cristel-lib, effectual, powah, spider-overhaul, voxy-worldgen |
 | [Create: Dragons Plus](https://modrinth.com/project/dzb1a5WV) | `1.11.9` | release | req/req | LGPL-3.0-or-later | Required by create-enchantment-industry |
 | [CreativeCore](https://modrinth.com/project/OsZiaDHq) | `2.13.55` | release | req/opt | LGPL-3.0-only | Required by ambientsounds |
 | [Cristel Lib](https://modrinth.com/project/cl223EMc) | `neoforge-1.21.1-3.1.7` | release | opt/req | CC-BY-NC-ND-4.0 | Required by towns-and-towers |
 | [Fzzy Config](https://modrinth.com/project/hYykXjDp) | `0.7.7+fix1+1.21+neoforge` | release | req/req | LicenseRef-TDL-M | Required by simply-swords, simply-tooltips, subtle-effects |
-| [Geckolib](https://modrinth.com/project/8BmcQJ2H) | `4.9.3` | release | req/opt | MIT | Required by mowzies-mobs, occultism |
+| [Geckolib](https://modrinth.com/project/8BmcQJ2H) | `4.9.3` | release | req/opt | MIT | Required by bosses-of-mass-destruction-forge, bossesrise, companions-mod, fantasy_armor, mowzies-mobs, occultism |
 | [GuideME](https://modrinth.com/project/Ck4E7v7R) | `21.1.22` | release | req/req | LicenseRef-Multiple-OSS-Licenses | Required by ae2, modern-industrialization, powah |
-| [Kotlin for Forge](https://modrinth.com/project/ordsPcFz) | `5.13.0` | release | opt/opt | LGPL-2.1-only | Required by fzzy-config |
+| [Iceberg](https://modrinth.com/project/5faXoLqX) | `1.3.2` | release | req/req | CC-BY-NC-ND-4.0 | Required by advancement-plaques, legendary-tooltips |
+| [Knight Lib](https://modrinth.com/project/hAnl9nbm) | `2.0.5` | release | req/req | GPL-3.0-only | Required by companions-mod |
+| [Kotlin for Forge](https://modrinth.com/project/ordsPcFz) | `5.13.0` | release | opt/opt | LGPL-2.1-only | Required by fzzy-config, respawn-recap |
 | [Lionfish-API](https://modrinth.com/project/FoVacERa) | `3.1` | release | req/req | LGPL-3.0-only | Required by l_enders-cataclysm |
 | [Lithostitched](https://modrinth.com/project/XaDC71GB) | `1.8.1-neoforge-21.1` | release | uns/req | MIT | Required by ct-overhaul-village, tectonic, terralith |
 | [MezzConfig](https://modrinth.com/project/7tEfOcA7) | `0.7.1` | beta | opt/opt | MIT | Required by jei |
+| [MidnightLib](https://modrinth.com/project/codAaoxh) | `1.10.0+1.21.1-neoforge` | release | opt/opt | MIT | Required by visual-overhaul |
 | [Modonomicon](https://modrinth.com/project/692GClaE) | `1.21.1-1.123.1` | release | req/req | MIT AND CC-BY-4.0 | Required by occultism |
+| [Moog's Structure Lib (moogs_structures)](https://modrinth.com/project/1oUDhxuy) | `3.4.2-neoforge-1.21.1` | release | uns/req | LGPL-3.0-only | Required by mmr-moogs-mineshafts-reimagined |
+| [MossyLib](https://modrinth.com/project/ffLDUGbm) | `2.0.0+1.21.1+neoforge` | release | req/uns | CC-BY-ND-4.0 | Required by inventory-particles |
+| [MRU](https://modrinth.com/project/SNVQ2c0g) | `1.0.41+1.21.1-neoforge` | release | opt/opt | LicenseRef-All-Rights-Reserved | Required by sound |
 | [oωo (owo-lib)](https://modrinth.com/project/ccKDOlHs) | `0.12.15.6-beta.1+1.21` | beta | req/req | MIT | Required by aether |
 | [Patchouli](https://modrinth.com/project/nU0bVIaL) | `1.21.1-93-neoforge` | release | req/req | CC-BY-NC-SA-3.0 | Required by apotheosis |
 | [Placebo](https://modrinth.com/project/tCkE8p2N) | `1.21.1-9.9.4` | release | opt/opt | MIT | Required by apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners, gateways-to-eternity |
 | [playerAnimator](https://modrinth.com/project/gedNE4y2) | `2.0.4+1.21.1-forge` | beta | req/req | MIT | Required by better-combat |
+| [Prism](https://modrinth.com/project/1OE8wbN0) | `1.0.11` | release | req/uns | CC-BY-NC-ND-4.0 | Required by legendary-tooltips |
 | [Resourceful Lib](https://modrinth.com/project/G1hIVOrD) | `3.0.12` | release | req/req | MIT | Required by odyssey-quests, the-bumblezone |
 | [Rhino](https://modrinth.com/project/sk9knFPE) | `2101.2.7-build.85+Rhino-1.21` | release | opt/opt | MPL-2.0 | Required by kubejs |
 | [Searchables](https://modrinth.com/project/fuuu3xnx) | `1.0.2` | release | req/uns | MIT | Required by controlling |
 | [Simply Tooltips](https://modrinth.com/project/6avVoBVB) | `0.1.5` | release | req/uns | LicenseRef-Timefall-Development-License-1.2 | Required by simply-swords |
 | [SmartBrainLib](https://modrinth.com/project/PuyPazRT) | `1.16.11` | release | uns/req | MPL-2.0 | Required by occultism |
 | [Sophisticated Core](https://modrinth.com/project/nmoqTijg) | `1.21.1-1.5.39.2489` | release | req/req | LicenseRef-All-Rights-Reserved | Required by sophisticated-backpacks, sophisticated-storage |
+| [SWAY API](https://modrinth.com/project/Gj6Yce3v) | `2.4.5-neoforge+1.21.1` | release | req/uns | CC-BY-NC-SA-4.0 | Required by mc2-interactive-foliage |
+| [TLib](https://modrinth.com/project/sBn7rVvc) | `1.5.0-1.21.1` | release | opt/opt | MIT | Required by effectual |
+| [YetAnotherConfigLib (YACL)](https://modrinth.com/project/1eAoo2KR) | `3.8.2+1.21.1-neoforge` | release | opt/opt | LGPL-3.0-or-later | Required by better-clouds, particle-interactions, seamless-sleep, sound, spatial-gui, windy |
 | [YUNG's API](https://modrinth.com/project/Ua7DFN59) | `1.21.1-NeoForge-5.1.9` | release | req/req | LGPL-3.0-only | Required by yungs-better-desert-temples, yungs-better-dungeons, yungs-better-end-island, yungs-better-jungle-temples, yungs-better-mineshafts, yungs-better-nether-fortresses, yungs-better-ocean-monuments, yungs-better-strongholds, yungs-better-witch-huts, yungs-bridges, yungs-extras |
 
 ## Shaders

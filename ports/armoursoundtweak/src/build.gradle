@@ -1,0 +1,4 @@
+plugins { id 'net.neoforged.moddev' }
+ext { modId = 'armoursoundtweak'; modVersion = '1.0.2-neoforge.1.21.1.horizon1' }
+group = 'mr_chumbucket'
+apply from: '../../_gradle/port.gradle'

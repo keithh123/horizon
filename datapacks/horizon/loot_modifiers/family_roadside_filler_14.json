@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:ruin/glacial/junk"
+          "loot_table_id": "structory:library/junk"
         }
       ]
     }

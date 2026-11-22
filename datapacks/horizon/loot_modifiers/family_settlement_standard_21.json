@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/villages/mushroom_house"
+          "loot_table_id": "repurposed_structures:chests/villages/jungle_house"
         }
       ]
     }

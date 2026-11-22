@@ -6,7 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_cartographer"
+          "loot_table_id": "kaisyn:village/village_jungle_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/badlands_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/cherry_house"
         }
       ]
     }

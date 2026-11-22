@@ -6,7 +6,27 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/dungeons/snow"
+          "loot_table_id": "mmr:jungle_mineshaft/brewing_scraps"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/furnace_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/gold_cart"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/miner_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/miner_chest_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/miner_chest_3"
         }
       ]
     }

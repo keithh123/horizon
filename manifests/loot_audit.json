@@ -137,6 +137,9 @@
    "irons_spellbooks:trial_chamber_modifiers/regular_spawner_consumable_modifier",
    "irons_spellbooks:trial_chamber_modifiers/ominous_spawner_consumable_modifier"
   ],
+  "knight-lib": [
+   "knightlib:essence_all_hostiles"
+  ],
   "occultism": [
    "occultism:datura_seed_from_grass",
    "occultism:datura_seed_from_tall_grass",
@@ -641,6 +644,9 @@
   "artifacts:inject/chests/woodland_mansion": [
    "artifacts:artifact",
    "artifacts:items/chorus_totem"
+  ],
+  "bosses_of_mass_destruction:chests/obsidilith": [
+   "minecraft:chests/end_city_treasure"
   ],
   "ctov:chests/village/village_bakery": [
    "ctov:chests/village/village_farm",
@@ -2267,6 +2273,30 @@
    "containers": 5,
    "templates": 2
   },
+  "block_factorys_bosses:chests/dragon_tower_common": {
+   "containers": 25,
+   "templates": 2
+  },
+  "block_factorys_bosses:chests/undead_arena_rare": {
+   "containers": 1,
+   "templates": 1
+  },
+  "block_factorys_bosses:chests/underworld_arena_common": {
+   "containers": 6,
+   "templates": 3
+  },
+  "block_factorys_bosses:chests/underworld_arena_rare": {
+   "containers": 3,
+   "templates": 3
+  },
+  "block_factorys_bosses:chests/underworld_arena_trash": {
+   "containers": 63,
+   "templates": 7
+  },
+  "bosses_of_mass_destruction:chests/lich_tower": {
+   "containers": 5,
+   "templates": 2
+  },
   "cataclysm:chests/abandoned": {
    "containers": 23,
    "templates": 3
@@ -2947,6 +2977,14 @@
    "containers": 21,
    "templates": 21
   },
+  "homesteads:loot/homesteads": {
+   "containers": 41,
+   "templates": 40
+  },
+  "homesteads:loot/prospector_loot": {
+   "containers": 6,
+   "templates": 6
+  },
   "iceandfire:chest/village_scribe": {
    "containers": 22,
    "templates": 21
@@ -3423,9 +3461,17 @@
    "containers": 6,
    "templates": 6
   },
+  "minecraft:chests/abandoned_mineshaft": {
+   "containers": 10,
+   "templates": 7
+  },
   "minecraft:chests/ancient_city": {
-   "containers": 1,
-   "templates": 1
+   "containers": 89,
+   "templates": 19
+  },
+  "minecraft:chests/ancient_city_ice_box": {
+   "containers": 53,
+   "templates": 23
   },
   "minecraft:chests/bastion_bridge": {
    "containers": 3,
@@ -3436,20 +3482,28 @@
    "templates": 2
   },
   "minecraft:chests/bastion_other": {
+   "containers": 4,
+   "templates": 3
+  },
+  "minecraft:chests/bastion_treasure": {
+   "containers": 10,
+   "templates": 9
+  },
+  "minecraft:chests/buried_treasure": {
+   "containers": 14,
+   "templates": 13
+  },
+  "minecraft:chests/desert_pyramid": {
+   "containers": 54,
+   "templates": 20
+  },
+  "minecraft:chests/dye": {
    "containers": 1,
    "templates": 1
   },
-  "minecraft:chests/bastion_treasure": {
-   "containers": 2,
-   "templates": 2
-  },
-  "minecraft:chests/desert_pyramid": {
-   "containers": 50,
-   "templates": 16
-  },
   "minecraft:chests/end_city_treasure": {
-   "containers": 28,
-   "templates": 17
+   "containers": 33,
+   "templates": 22
   },
   "minecraft:chests/illager_mansion/ancient_city_raid_chest": {
    "containers": 3,
@@ -3504,72 +3558,96 @@
    "templates": 9
   },
   "minecraft:chests/jungle_temple": {
-   "containers": 17,
-   "templates": 17
+   "containers": 28,
+   "templates": 26
+  },
+  "minecraft:chests/mineral": {
+   "containers": 2,
+   "templates": 2
   },
   "minecraft:chests/nether_bridge": {
-   "containers": 11,
-   "templates": 9
+   "containers": 14,
+   "templates": 12
   },
   "minecraft:chests/nether_fortress/fort_inside_generic": {
    "containers": 2,
    "templates": 1
   },
   "minecraft:chests/pillager_outpost": {
-   "containers": 117,
-   "templates": 47
+   "containers": 189,
+   "templates": 90
+  },
+  "minecraft:chests/random": {
+   "containers": 5,
+   "templates": 5
+  },
+  "minecraft:chests/ruined_portal": {
+   "containers": 28,
+   "templates": 21
   },
   "minecraft:chests/shipwreck_map": {
-   "containers": 13,
-   "templates": 6
+   "containers": 43,
+   "templates": 24
   },
   "minecraft:chests/shipwreck_supply": {
-   "containers": 11,
-   "templates": 6
+   "containers": 19,
+   "templates": 13
   },
   "minecraft:chests/shipwreck_treasure": {
-   "containers": 10,
-   "templates": 7
+   "containers": 38,
+   "templates": 30
   },
   "minecraft:chests/simple_dungeon": {
-   "containers": 102,
-   "templates": 40
+   "containers": 179,
+   "templates": 75
   },
   "minecraft:chests/stronghold_corridor": {
-   "containers": 7,
-   "templates": 4
+   "containers": 50,
+   "templates": 31
   },
   "minecraft:chests/stronghold_crossing": {
-   "containers": 12,
-   "templates": 4
+   "containers": 39,
+   "templates": 22
   },
   "minecraft:chests/stronghold_library": {
-   "containers": 10,
-   "templates": 7
+   "containers": 47,
+   "templates": 29
+  },
+  "minecraft:chests/trial_chambers/reward": {
+   "containers": 12,
+   "templates": 11
+  },
+  "minecraft:chests/trial_chambers/reward_rare": {
+   "containers": 13,
+   "templates": 12
+  },
+  "minecraft:chests/underwater_ruin_big": {
+   "containers": 29,
+   "templates": 16
   },
   "minecraft:chests/village/village_armorer": {
-   "containers": 27,
-   "templates": 27
+   "containers": 88,
+   "templates": 67
   },
   "minecraft:chests/village/village_butcher": {
-   "containers": 64,
-   "templates": 50
+   "containers": 126,
+   "templates": 85
   },
   "minecraft:chests/village/village_cartographer": {
-   "containers": 76,
-   "templates": 61
+   "containers": 139,
+   "templates": 88
   },
   "minecraft:chests/village/village_desert_house": {
    "containers": 48,
    "templates": 23
   },
   "minecraft:chests/village/village_fisher": {
-   "containers": 113,
-   "templates": 61
+   "containers": 172,
+   "templates": 93
   },
   "minecraft:chests/village/village_fletcher": {
-   "containers": 31,
-   "templates": 29
+   "containers": 48,
+   "templates": 44
   },
   "minecraft:chests/village/village_jungle_house": {
    "containers": 9,
@@ -3580,52 +3658,392 @@
    "templates": 2
   },
   "minecraft:chests/village/village_mason": {
-   "containers": 59,
-   "templates": 41
+   "containers": 86,
+   "templates": 57
   },
   "minecraft:chests/village/village_plains_house": {
-   "containers": 88,
-   "templates": 54
+   "containers": 111,
+   "templates": 70
   },
   "minecraft:chests/village/village_savanna_house": {
-   "containers": 39,
-   "templates": 27
+   "containers": 40,
+   "templates": 28
   },
   "minecraft:chests/village/village_shepherd": {
-   "containers": 63,
-   "templates": 47
+   "containers": 110,
+   "templates": 71
   },
   "minecraft:chests/village/village_snowy_house": {
-   "containers": 24,
-   "templates": 16
+   "containers": 28,
+   "templates": 19
   },
   "minecraft:chests/village/village_swamp_house": {
    "containers": 8,
    "templates": 8
   },
   "minecraft:chests/village/village_taiga_house": {
-   "containers": 87,
-   "templates": 46
+   "containers": 165,
+   "templates": 85
   },
   "minecraft:chests/village/village_tannery": {
-   "containers": 56,
-   "templates": 45
+   "containers": 86,
+   "templates": 65
   },
   "minecraft:chests/village/village_temple": {
-   "containers": 79,
-   "templates": 63
+   "containers": 80,
+   "templates": 64
   },
   "minecraft:chests/village/village_toolsmith": {
-   "containers": 27,
-   "templates": 27
+   "containers": 64,
+   "templates": 55
   },
   "minecraft:chests/village/village_weaponsmith": {
-   "containers": 46,
-   "templates": 46
+   "containers": 94,
+   "templates": 73
   },
   "minecraft:chests/village_desert_house": {
    "containers": 2,
    "templates": 1
+  },
+  "minecraft:chests/wood": {
+   "containers": 5,
+   "templates": 3
+  },
+  "minecraft:chests/woodland_mansion": {
+   "containers": 44,
+   "templates": 25
+  },
+  "mmr:dark_oak_mineshaft/miner_chest": {
+   "containers": 116,
+   "templates": 17
+  },
+  "mmr:dark_oak_mineshaft/miner_chest_2": {
+   "containers": 110,
+   "templates": 18
+  },
+  "mmr:dark_oak_mineshaft/miner_chest_3": {
+   "containers": 98,
+   "templates": 18
+  },
+  "mmr:dark_oak_mineshaft/supply_barrel": {
+   "containers": 76,
+   "templates": 12
+  },
+  "mmr:dark_oak_mineshaft/supply_barrel_2": {
+   "containers": 68,
+   "templates": 9
+  },
+  "mmr:dark_oak_mineshaft/supply_barrel_3": {
+   "containers": 69,
+   "templates": 9
+  },
+  "mmr:dark_oak_mineshaft/treasure": {
+   "containers": 20,
+   "templates": 15
+  },
+  "mmr:dark_oak_mineshaft/treasure_2": {
+   "containers": 22,
+   "templates": 15
+  },
+  "mmr:dark_oak_mineshaft/treasure_3": {
+   "containers": 25,
+   "templates": 13
+  },
+  "mmr:deep_dark_mineshaft/miner_chest": {
+   "containers": 18,
+   "templates": 14
+  },
+  "mmr:deep_dark_mineshaft/miner_chest_2": {
+   "containers": 19,
+   "templates": 17
+  },
+  "mmr:deep_dark_mineshaft/miner_chest_3": {
+   "containers": 16,
+   "templates": 16
+  },
+  "mmr:deep_dark_mineshaft/supply_barrel": {
+   "containers": 12,
+   "templates": 8
+  },
+  "mmr:deep_dark_mineshaft/supply_barrel_2": {
+   "containers": 11,
+   "templates": 7
+  },
+  "mmr:deep_dark_mineshaft/supply_barrel_3": {
+   "containers": 15,
+   "templates": 7
+  },
+  "mmr:deep_dark_mineshaft/treasure": {
+   "containers": 17,
+   "templates": 17
+  },
+  "mmr:deep_dark_mineshaft/treasure_2": {
+   "containers": 18,
+   "templates": 16
+  },
+  "mmr:deep_dark_mineshaft/treasure_3": {
+   "containers": 14,
+   "templates": 12
+  },
+  "mmr:desert_mineshaft/gold_cart": {
+   "containers": 34,
+   "templates": 10
+  },
+  "mmr:desert_mineshaft/miner_chest": {
+   "containers": 16,
+   "templates": 13
+  },
+  "mmr:desert_mineshaft/miner_chest_2": {
+   "containers": 18,
+   "templates": 16
+  },
+  "mmr:desert_mineshaft/miner_chest_3": {
+   "containers": 16,
+   "templates": 12
+  },
+  "mmr:desert_mineshaft/stable": {
+   "containers": 40,
+   "templates": 5
+  },
+  "mmr:desert_mineshaft/supply_barrel": {
+   "containers": 190,
+   "templates": 25
+  },
+  "mmr:desert_mineshaft/supply_barrel_2": {
+   "containers": 194,
+   "templates": 22
+  },
+  "mmr:desert_mineshaft/supply_barrel_3": {
+   "containers": 192,
+   "templates": 24
+  },
+  "mmr:desert_mineshaft/suspicious_sand": {
+   "containers": 48,
+   "templates": 2
+  },
+  "mmr:desert_mineshaft/treasure": {
+   "containers": 19,
+   "templates": 14
+  },
+  "mmr:desert_mineshaft/treasure_2": {
+   "containers": 20,
+   "templates": 11
+  },
+  "mmr:desert_mineshaft/treasure_3": {
+   "containers": 20,
+   "templates": 11
+  },
+  "mmr:jungle_mineshaft/brewing_scraps": {
+   "containers": 2,
+   "templates": 2
+  },
+  "mmr:jungle_mineshaft/furnace_chest": {
+   "containers": 4,
+   "templates": 2
+  },
+  "mmr:jungle_mineshaft/gold_cart": {
+   "containers": 44,
+   "templates": 16
+  },
+  "mmr:jungle_mineshaft/miner_chest": {
+   "containers": 2,
+   "templates": 2
+  },
+  "mmr:jungle_mineshaft/miner_chest_2": {
+   "containers": 5,
+   "templates": 5
+  },
+  "mmr:jungle_mineshaft/miner_chest_3": {
+   "containers": 1,
+   "templates": 1
+  },
+  "mmr:jungle_mineshaft/supply_barrel": {
+   "containers": 84,
+   "templates": 15
+  },
+  "mmr:jungle_mineshaft/supply_barrel_2": {
+   "containers": 81,
+   "templates": 14
+  },
+  "mmr:jungle_mineshaft/supply_barrel_3": {
+   "containers": 83,
+   "templates": 13
+  },
+  "mmr:jungle_mineshaft/treasure": {
+   "containers": 4,
+   "templates": 4
+  },
+  "mmr:jungle_mineshaft/treasure_2": {
+   "containers": 4,
+   "templates": 4
+  },
+  "mmr:jungle_mineshaft/treasure_3": {
+   "containers": 4,
+   "templates": 2
+  },
+  "mmr:mesa_mineshaft/entrance_chest": {
+   "containers": 12,
+   "templates": 6
+  },
+  "mmr:mesa_mineshaft/miner_chest": {
+   "containers": 24,
+   "templates": 22
+  },
+  "mmr:mesa_mineshaft/miner_chest_2": {
+   "containers": 23,
+   "templates": 21
+  },
+  "mmr:mesa_mineshaft/miner_chest_3": {
+   "containers": 22,
+   "templates": 20
+  },
+  "mmr:mesa_mineshaft/pot": {
+   "containers": 87,
+   "templates": 7
+  },
+  "mmr:mesa_mineshaft/storage_chest": {
+   "containers": 24,
+   "templates": 6
+  },
+  "mmr:mesa_mineshaft/supply_barrel": {
+   "containers": 41,
+   "templates": 14
+  },
+  "mmr:mesa_mineshaft/supply_barrel_2": {
+   "containers": 36,
+   "templates": 13
+  },
+  "mmr:mesa_mineshaft/supply_barrel_3": {
+   "containers": 38,
+   "templates": 13
+  },
+  "mmr:mesa_mineshaft/treasure": {
+   "containers": 14,
+   "templates": 14
+  },
+  "mmr:mesa_mineshaft/treasure_2": {
+   "containers": 17,
+   "templates": 15
+  },
+  "mmr:mesa_mineshaft/treasure_3": {
+   "containers": 13,
+   "templates": 11
+  },
+  "mmr:mineshaft/common": {
+   "containers": 255,
+   "templates": 19
+  },
+  "mmr:mineshaft/rare": {
+   "containers": 56,
+   "templates": 25
+  },
+  "mmr:mineshaft/uncommon": {
+   "containers": 217,
+   "templates": 25
+  },
+  "mmr:mushroom_mineshaft/miner_chest": {
+   "containers": 34,
+   "templates": 15
+  },
+  "mmr:mushroom_mineshaft/miner_chest_2": {
+   "containers": 36,
+   "templates": 21
+  },
+  "mmr:mushroom_mineshaft/miner_chest_3": {
+   "containers": 27,
+   "templates": 22
+  },
+  "mmr:mushroom_mineshaft/supply_barrel": {
+   "containers": 57,
+   "templates": 13
+  },
+  "mmr:mushroom_mineshaft/supply_barrel_2": {
+   "containers": 52,
+   "templates": 12
+  },
+  "mmr:mushroom_mineshaft/supply_barrel_3": {
+   "containers": 54,
+   "templates": 12
+  },
+  "mmr:mushroom_mineshaft/treasure": {
+   "containers": 21,
+   "templates": 18
+  },
+  "mmr:mushroom_mineshaft/treasure_2": {
+   "containers": 13,
+   "templates": 10
+  },
+  "mmr:mushroom_mineshaft/treasure_3": {
+   "containers": 16,
+   "templates": 14
+  },
+  "mmr:nether_mineshaft/miner_chest": {
+   "containers": 49,
+   "templates": 32
+  },
+  "mmr:nether_mineshaft/miner_chest_2": {
+   "containers": 58,
+   "templates": 37
+  },
+  "mmr:nether_mineshaft/miner_chest_3": {
+   "containers": 58,
+   "templates": 36
+  },
+  "mmr:nether_mineshaft/supply_barrel": {
+   "containers": 68,
+   "templates": 13
+  },
+  "mmr:nether_mineshaft/supply_barrel_2": {
+   "containers": 68,
+   "templates": 12
+  },
+  "mmr:nether_mineshaft/supply_barrel_3": {
+   "containers": 71,
+   "templates": 10
+  },
+  "mmr:nether_mineshaft/treasure": {
+   "containers": 3,
+   "templates": 3
+  },
+  "mmr:snowy_mineshaft/miner_chest": {
+   "containers": 18,
+   "templates": 18
+  },
+  "mmr:snowy_mineshaft/miner_chest_2": {
+   "containers": 17,
+   "templates": 13
+  },
+  "mmr:snowy_mineshaft/miner_chest_3": {
+   "containers": 16,
+   "templates": 14
+  },
+  "mmr:snowy_mineshaft/start_piece": {
+   "containers": 32,
+   "templates": 4
+  },
+  "mmr:snowy_mineshaft/supply_barrel": {
+   "containers": 24,
+   "templates": 6
+  },
+  "mmr:snowy_mineshaft/supply_barrel_2": {
+   "containers": 25,
+   "templates": 5
+  },
+  "mmr:snowy_mineshaft/supply_barrel_3": {
+   "containers": 26,
+   "templates": 5
+  },
+  "mmr:snowy_mineshaft/treasure": {
+   "containers": 11,
+   "templates": 11
+  },
+  "mmr:snowy_mineshaft/treasure_2": {
+   "containers": 9,
+   "templates": 7
+  },
+  "mmr:snowy_mineshaft/treasure_3": {
+   "containers": 9,
+   "templates": 7
   },
   "monobank:monobank/village/badlands": {
    "containers": 2,
@@ -3674,6 +4092,26 @@
   "mowziesmobs:chests/monastery_chest": {
    "containers": 11,
    "templates": 6
+  },
+  "mvs:general": {
+   "containers": 1,
+   "templates": 1
+  },
+  "mvs:houses_books": {
+   "containers": 1,
+   "templates": 1
+  },
+  "mvs:houses_common": {
+   "containers": 2,
+   "templates": 1
+  },
+  "mvs:houses_rare": {
+   "containers": 2,
+   "templates": 1
+  },
+  "mvs:houses_uncommon": {
+   "containers": 1,
+   "templates": 1
   },
   "nova_structures:archaelogy/archeology_toxic": {
    "containers": 1202,
@@ -5285,6 +5723,12 @@
   "minecraft:illager_manor_room_degradation": [
    "minecraft:chests/woodland_mansion"
   ],
+  "mmr:desert_mineshaft_arena": [
+   "mmr:desert_mineshaft/vault"
+  ],
+  "mmr:mesa_mineshaft_entrance": [
+   "mmr:mesa_mineshaft/vault"
+  ],
   "mowziesmobs:monastery": [
    "mowziesmobs:chests/monastery_chest"
   ],
@@ -5931,6 +6375,52 @@
   },
   "betterwitchhuts:witch_hut_lg": {
    "betterwitchhuts:chests/hut_0": 2
+  },
+  "block_factorys_bosses:dragon_tower1": {
+   "block_factorys_bosses:chests/dragon_tower_common": 22
+  },
+  "block_factorys_bosses:dragon_tower2": {
+   "block_factorys_bosses:chests/dragon_tower_common": 3
+  },
+  "block_factorys_bosses:underworld_arena_2": {
+   "block_factorys_bosses:chests/undead_arena_rare": 1
+  },
+  "block_factorys_bosses:underworld_arena_bridge_broken": {
+   "block_factorys_bosses:chests/underworld_arena_trash": 3
+  },
+  "block_factorys_bosses:underworld_arena_bridge_dead_end": {
+   "block_factorys_bosses:chests/underworld_arena_trash": 9
+  },
+  "block_factorys_bosses:underworld_arena_bridge_junction": {
+   "block_factorys_bosses:chests/underworld_arena_trash": 10
+  },
+  "block_factorys_bosses:underworld_arena_bridge_straight": {
+   "block_factorys_bosses:chests/underworld_arena_trash": 4
+  },
+  "block_factorys_bosses:underworld_arena_chest_common": {
+   "block_factorys_bosses:chests/underworld_arena_common": 1
+  },
+  "block_factorys_bosses:underworld_arena_chest_rare": {
+   "block_factorys_bosses:chests/underworld_arena_rare": 1
+  },
+  "block_factorys_bosses:underworld_arena_dungeons": {
+   "block_factorys_bosses:chests/underworld_arena_trash": 7
+  },
+  "block_factorys_bosses:underworld_arena_storage": {
+   "block_factorys_bosses:chests/underworld_arena_common": 4,
+   "block_factorys_bosses:chests/underworld_arena_rare": 1,
+   "block_factorys_bosses:chests/underworld_arena_trash": 15
+  },
+  "block_factorys_bosses:underworld_arena_tower": {
+   "block_factorys_bosses:chests/underworld_arena_common": 1,
+   "block_factorys_bosses:chests/underworld_arena_rare": 1,
+   "block_factorys_bosses:chests/underworld_arena_trash": 15
+  },
+  "bosses_of_mass_destruction:lich_tower/bottom": {
+   "bosses_of_mass_destruction:chests/lich_tower": 3
+  },
+  "bosses_of_mass_destruction:lich_tower/top": {
+   "bosses_of_mass_destruction:chests/lich_tower": 2
   },
   "cataclysm:abandoned_spire": {
    "cataclysm:chests/abandoned": 1,
@@ -10609,6 +11099,1060 @@
   "explorify:watchtower/taiga/tower/whole": {
    "minecraft:chests/village/village_taiga_house": 1
   },
+  "grim_kingdoms:forest/camp1": {
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:forest/camp2": {
+   "minecraft:chests/village/village_butcher": 1
+  },
+  "grim_kingdoms:forest/camp3": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_butcher": 1
+  },
+  "grim_kingdoms:forest/gnome_tall_tower": {
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/shipwreck_supply": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 1
+  },
+  "grim_kingdoms:forest/nordic_cabin2": {
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:forest/nordic_cabin3": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/stronghold_crossing": 2
+  },
+  "grim_kingdoms:forest/nordic_cabin4": {
+   "minecraft:chests/abandoned_mineshaft": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_mason": 1
+  },
+  "grim_kingdoms:plains/chillhall_plains_refuge": {
+   "minecraft:chests/shipwreck_map": 3,
+   "minecraft:chests/shipwreck_treasure": 2,
+   "minecraft:chests/simple_dungeon": 3,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/underwater_ruin_big": 2,
+   "minecraft:chests/village/village_butcher": 2,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_mason": 5,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:plains/eldermoor": {
+   "minecraft:chests/ancient_city": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fisher": 2,
+   "minecraft:chests/village/village_plains_house": 2,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:plains/glacierfall_keep_plains": {
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/nether_bridge": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_temple": 1
+  },
+  "grim_kingdoms:plains/glimmervault_fortress_plains": {
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/end_city_treasure": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_map": 4,
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 4,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/trial_chambers/reward": 2,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 4,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 5,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_tannery": 3,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:plains/gnomish_hut": {
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:plains/grain_sack_fort": {
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 2,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:plains/grain_sack_hold": {
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/village/village_butcher": 3,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/wood": 2
+  },
+  "grim_kingdoms:plains/grain_sack_keep": {
+   "minecraft:chests/ancient_city": 2,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/wood": 2
+  },
+  "grim_kingdoms:plains/houses/house_1": {
+   "minecraft:chests/village/village_mason": 2,
+   "minecraft:chests/village/village_plains_house": 1
+  },
+  "grim_kingdoms:plains/houses/house_2": {
+   "minecraft:chests/village/village_fisher": 4
+  },
+  "grim_kingdoms:plains/houses/house_21": {
+   "minecraft:chests/village/village_plains_house": 1
+  },
+  "grim_kingdoms:plains/houses/house_22": {
+   "minecraft:chests/village/village_armorer": 1
+  },
+  "grim_kingdoms:plains/houses/house_23": {
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:plains/houses/house_24": {
+   "minecraft:chests/village/village_butcher": 1
+  },
+  "grim_kingdoms:plains/houses/house_3": {
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/village/village_armorer": 1
+  },
+  "grim_kingdoms:plains/houses/house_31": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_plains_house": 2
+  },
+  "grim_kingdoms:plains/houses/house_32": {
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:plains/houses/house_33": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_mason": 3
+  },
+  "grim_kingdoms:plains/houses/house_4": {
+   "minecraft:chests/random": 1,
+   "minecraft:chests/village/village_fletcher": 2,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:plains/houses/house_43": {
+   "minecraft:chests/village/village_fletcher": 2,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:plains/houses/house_44": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_tannery": 2
+  },
+  "grim_kingdoms:plains/houses/house_5": {
+   "minecraft:chests/mineral": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fisher": 2,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:plains/houses/house_6": {
+   "minecraft:chests/village/village_mason": 2
+  },
+  "grim_kingdoms:plains/houses/house_7": {
+   "minecraft:chests/village/village_butcher": 4,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:plains/houses/roof": {
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1
+  },
+  "grim_kingdoms:plains/meadow_flower_ruin": {
+   "minecraft:chests/abandoned_mineshaft": 2,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 3,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:plains/meadow_ruin": {
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_savanna_house": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:plains/mill_stone": {
+   "minecraft:chests/village/village_mason": 2,
+   "minecraft:chests/village/village_plains_house": 1
+  },
+  "grim_kingdoms:plains/river_bend_watch": {
+   "minecraft:chests/dye": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/random": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_plains_house": 3,
+   "minecraft:chests/village/village_tannery": 2,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:plains/sandfell_outpost": {
+   "minecraft:chests/desert_pyramid": 1,
+   "minecraft:chests/jungle_temple": 2,
+   "minecraft:chests/nether_bridge": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:plains/silentgale_citadel_plains": {
+   "minecraft:chests/ancient_city_ice_box": 2,
+   "minecraft:chests/end_city_treasure": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:plains/slate_needle": {
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 1
+  },
+  "grim_kingdoms:plains/slate_thin_needle": {
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_mason": 1
+  },
+  "grim_kingdoms:plains/stonyfell_outpost_plains": {
+   "minecraft:chests/ancient_city_ice_box": 2,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/ruined_portal": 2,
+   "minecraft:chests/shipwreck_treasure": 2,
+   "minecraft:chests/simple_dungeon": 13,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 3,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 4,
+   "minecraft:chests/village/village_taiga_house": 4,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 3,
+   "minecraft:chests/woodland_mansion": 3
+  },
+  "grim_kingdoms:plains/tor_tower": {
+   "minecraft:chests/abandoned_mineshaft": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 3,
+   "minecraft:chests/trial_chambers/reward_rare": 2
+  },
+  "grim_kingdoms:plains/weathered_colosseum": {
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/mineral": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:plains/zweiberg_plains": {
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:snowy/blackridge_watch": {
+   "minecraft:chests/ancient_city": 5,
+   "minecraft:chests/ancient_city_ice_box": 2,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 2,
+   "minecraft:chests/village/village_armorer": 3,
+   "minecraft:chests/village/village_butcher": 2,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_weaponsmith": 3,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/chill_hallmanor": {
+   "minecraft:chests/ancient_city_ice_box": 6,
+   "minecraft:chests/end_city_treasure": 1,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 3,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 4,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_weaponsmith": 1,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/decrown_monolith": {
+   "minecraft:chests/ancient_city": 5,
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 5,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 4,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/frostbloom_bastion": {
+   "minecraft:chests/ancient_city": 18,
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/ruined_portal": 3,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 3,
+   "minecraft:chests/village/village_weaponsmith": 4,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/frozen_onion_fort": {
+   "minecraft:chests/ancient_city": 5,
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 4,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:snowy/frozen_onion_fort1": {
+   "minecraft:chests/ancient_city": 6,
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 4,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:snowy/frozen_onion_fort2": {
+   "minecraft:chests/ancient_city": 5,
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 4,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:snowy/glacierfall_keep": {
+   "minecraft:chests/ancient_city": 8,
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_taiga_house": 5,
+   "minecraft:chests/woodland_mansion": 5
+  },
+  "grim_kingdoms:snowy/glimmervault_fortress": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/end_city_treasure": 1,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_map": 4,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 4,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 4,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 5,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_tannery": 3,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:snowy/shardspire_castle": {
+   "minecraft:chests/ancient_city": 5,
+   "minecraft:chests/ancient_city_ice_box": 3,
+   "minecraft:chests/bastion_treasure": 2,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_map": 2,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/underwater_ruin_big": 3,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 2,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 3,
+   "minecraft:chests/village/village_taiga_house": 4,
+   "minecraft:chests/village/village_weaponsmith": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:snowy/silentgale_citadel": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/ancient_city_ice_box": 2,
+   "minecraft:chests/end_city_treasure": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/snowgrave_citadel": {
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/shipwreck_treasure": 2,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 1
+  },
+  "grim_kingdoms:snowy/stonyfell_outpost": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/ruined_portal": 2,
+   "minecraft:chests/shipwreck_treasure": 2,
+   "minecraft:chests/simple_dungeon": 12,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 3,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 5,
+   "minecraft:chests/village/village_taiga_house": 4,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 3,
+   "minecraft:chests/woodland_mansion": 3
+  },
+  "grim_kingdoms:snowy/terrain/path1": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/underwater_ruin_big": 2,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:snowy/terrain/path10": {
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:snowy/terrain/path14": {
+   "minecraft:chests/village/village_fisher": 1
+  },
+  "grim_kingdoms:snowy/terrain/path2": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 3,
+   "minecraft:chests/village/village_weaponsmith": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:snowy/terrain/path3": {
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:snowy/terrain/path5": {
+   "minecraft:chests/village/village_shepherd": 1
+  },
+  "grim_kingdoms:snowy/terrain/path6": {
+   "minecraft:chests/stronghold_corridor": 1
+  },
+  "grim_kingdoms:snowy/terrain/path7": {
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:snowy/terrain/path8": {
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:snowy/travelers_lodge": {
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:snowy/whitewarden_keep": {
+   "minecraft:chests/ancient_city": 3,
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/ruined_portal": 2,
+   "minecraft:chests/shipwreck_map": 4,
+   "minecraft:chests/shipwreck_treasure": 2,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/stronghold_library": 3,
+   "minecraft:chests/underwater_ruin_big": 4,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 4,
+   "minecraft:chests/village/village_cartographer": 3,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_shepherd": 8,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 5,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/winterhold_citadel": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/pillager_outpost": 4,
+   "minecraft:chests/random": 1,
+   "minecraft:chests/ruined_portal": 2,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 3,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 7,
+   "minecraft:chests/village/village_cartographer": 5,
+   "minecraft:chests/village/village_plains_house": 2,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 5,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:snowy/zweiberg": {
+   "minecraft:chests/ancient_city": 4,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:taiga/blackridge_watch_taiga": {
+   "minecraft:chests/ancient_city_ice_box": 2,
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/simple_dungeon": 2,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 2,
+   "minecraft:chests/village/village_armorer": 3,
+   "minecraft:chests/village/village_butcher": 2,
+   "minecraft:chests/village/village_cartographer": 2,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_weaponsmith": 3,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:taiga/bramblepath": {
+   "minecraft:chests/buried_treasure": 2,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/stronghold_crossing": 2,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_snowy_house": 1,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_tannery": 4,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:taiga/decrown_monolith_taiga": {
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 5,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 4
+  },
+  "grim_kingdoms:taiga/east_spur_tower": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/stronghold_corridor": 5,
+   "minecraft:chests/stronghold_crossing": 2,
+   "minecraft:chests/underwater_ruin_big": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_mason": 2,
+   "minecraft:chests/village/village_taiga_house": 3,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:taiga/frozen_onion_fort_taiga": {
+   "minecraft:chests/ancient_city_ice_box": 4,
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_cartographer": 4,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_toolsmith": 2
+  },
+  "grim_kingdoms:taiga/high_spur_tower": {
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_mason": 2,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:taiga/houses/house_1": {
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_taiga_house": 2
+  },
+  "grim_kingdoms:taiga/houses/house_2": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_snowy_house": 1
+  },
+  "grim_kingdoms:taiga/houses/house_3": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:taiga/houses/house_4": {
+   "minecraft:chests/random": 1,
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:taiga/houses/house_5": {
+   "minecraft:chests/bastion_treasure": 1,
+   "minecraft:chests/stronghold_crossing": 1
+  },
+  "grim_kingdoms:taiga/houses/house_6": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_fisher": 3,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:taiga/houses/house_7": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_fletcher": 1
+  },
+  "grim_kingdoms:taiga/houses/house_8": {
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:taiga/long_pine_cabin": {
+   "minecraft:chests/shipwreck_map": 1,
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:taiga/north_spur_tower": {
+   "minecraft:chests/abandoned_mineshaft": 2,
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_snowy_house": 2,
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:taiga/old_timber_watch": {
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:taiga/pine_cabin": {
+   "minecraft:chests/pillager_outpost": 3,
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_fisher": 1
+  },
+  "grim_kingdoms:taiga/secluded_cabin": {
+   "minecraft:chests/pillager_outpost": 1
+  },
+  "grim_kingdoms:taiga/south_spur_tower": {
+   "minecraft:chests/abandoned_mineshaft": 1,
+   "minecraft:chests/jungle_temple": 2,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_butcher": 1,
+   "minecraft:chests/village/village_fisher": 1,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_taiga_house": 1,
+   "minecraft:chests/village/village_tannery": 1
+  },
+  "grim_kingdoms:taiga/west_spur_tower": {
+   "minecraft:chests/abandoned_mineshaft": 1,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/stronghold_crossing": 1,
+   "minecraft:chests/stronghold_library": 1,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_cartographer": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_mason": 1,
+   "minecraft:chests/village/village_plains_house": 2,
+   "minecraft:chests/village/village_taiga_house": 2,
+   "minecraft:chests/village/village_tannery": 2,
+   "minecraft:chests/wood": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:taiga/winterhold_citadel_taiga": {
+   "minecraft:chests/ancient_city_ice_box": 1,
+   "minecraft:chests/pillager_outpost": 4,
+   "minecraft:chests/random": 1,
+   "minecraft:chests/ruined_portal": 2,
+   "minecraft:chests/shipwreck_treasure": 1,
+   "minecraft:chests/simple_dungeon": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_library": 2,
+   "minecraft:chests/underwater_ruin_big": 3,
+   "minecraft:chests/village/village_armorer": 2,
+   "minecraft:chests/village/village_butcher": 7,
+   "minecraft:chests/village/village_cartographer": 5,
+   "minecraft:chests/village/village_plains_house": 2,
+   "minecraft:chests/village/village_shepherd": 2,
+   "minecraft:chests/village/village_taiga_house": 5,
+   "minecraft:chests/village/village_weaponsmith": 2,
+   "minecraft:chests/woodland_mansion": 2
+  },
+  "grim_kingdoms:taiga/zweiberg_taiga": {
+   "minecraft:chests/buried_treasure": 1,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/woodland_mansion": 1
+  },
+  "grim_kingdoms:water/blackwater": {
+   "minecraft:chests/ancient_city": 1,
+   "minecraft:chests/bastion_other": 1,
+   "minecraft:chests/desert_pyramid": 1,
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/simple_dungeon": 1
+  },
+  "grim_kingdoms:water/ship10": {
+   "minecraft:chests/village/village_armorer": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:water/ship11": {
+   "minecraft:chests/desert_pyramid": 1,
+   "minecraft:chests/nether_bridge": 1,
+   "minecraft:chests/ruined_portal": 1
+  },
+  "grim_kingdoms:water/ship12": {
+   "minecraft:chests/desert_pyramid": 1,
+   "minecraft:chests/jungle_temple": 1
+  },
+  "grim_kingdoms:water/ship2": {
+   "minecraft:chests/bastion_other": 2,
+   "minecraft:chests/pillager_outpost": 2,
+   "minecraft:chests/trial_chambers/reward_rare": 1
+  },
+  "grim_kingdoms:water/ship3": {
+   "minecraft:chests/village/village_shepherd": 1,
+   "minecraft:chests/village/village_tannery": 1,
+   "minecraft:chests/village/village_toolsmith": 1
+  },
+  "grim_kingdoms:water/ship4": {
+   "minecraft:chests/abandoned_mineshaft": 2,
+   "minecraft:chests/pillager_outpost": 1,
+   "minecraft:chests/village/village_toolsmith": 1,
+   "minecraft:chests/village/village_weaponsmith": 1
+  },
+  "grim_kingdoms:water/ship5": {
+   "minecraft:chests/village/village_cartographer": 1
+  },
+  "grim_kingdoms:water/ship6": {
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/stronghold_crossing": 2
+  },
+  "grim_kingdoms:water/ship7": {
+   "minecraft:chests/ruined_portal": 1,
+   "minecraft:chests/stronghold_corridor": 2,
+   "minecraft:chests/trial_chambers/reward": 1,
+   "minecraft:chests/trial_chambers/reward_rare": 1,
+   "minecraft:chests/village/village_fletcher": 1,
+   "minecraft:chests/village/village_plains_house": 1,
+   "minecraft:chests/village/village_taiga_house": 1
+  },
+  "grim_kingdoms:water/ship8": {
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/stronghold_crossing": 2
+  },
+  "grim_kingdoms:water/ship9": {
+   "minecraft:chests/pillager_outpost": 1
+  },
+  "grim_kingdoms:water/shipwreck1": {
+   "minecraft:chests/jungle_temple": 1,
+   "minecraft:chests/shipwreck_supply": 1,
+   "minecraft:chests/stronghold_corridor": 1,
+   "minecraft:chests/trial_chambers/reward": 1
+  },
+  "homesteads:flower_house_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_5": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_6": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_7": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_8": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_9": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_small_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_small_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_small_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:flower_house_small_5": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_1_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_1_3": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_3": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_5": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_2_6": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_1_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_2_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_2_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_2_3": {
+   "homesteads:loot/homesteads": 2
+  },
+  "homesteads:forest_small_2_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_2_5": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_small_2_7": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:forest_tent_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:prospector_camp_badlands_1": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:prospector_camp_badlands_2": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:prospector_camp_badlands_5": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:prospector_camp_cave_2": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:prospector_camp_cave_3": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:prospector_camp_cave_5": {
+   "homesteads:loot/prospector_loot": 1
+  },
+  "homesteads:swamp_1_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:swamp_2_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:swamp_2_3": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:swamp_small_1_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:swamp_small_1_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_house_1": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_house_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_house_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_house_6": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_small_1_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_small_1_4": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_small_2_2": {
+   "homesteads:loot/homesteads": 1
+  },
+  "homesteads:taiga_tent_3": {
+   "homesteads:loot/homesteads": 1
+  },
   "incendium:castle/decor/lumber/barrel_big1": {
    "incendium:castle/barrel/lumber_big": 1
   },
@@ -13233,6 +14777,1884 @@
   "minecraft:village_swamp/swamp_village_stonecutter": {
    "minecraft:chests/village/village_mason": 1
   },
+  "mmr:1_21_0/dark_oak_mineshaft/corner_3": {
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/corner_4": {
+   "mmr:dark_oak_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/corner_5": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/corner_6": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 4,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 4,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 3
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/dead_end_1": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/dead_end_2": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/dead_end_3": {
+   "mmr:dark_oak_mineshaft/miner_chest": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/dead_end_4": {
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 1,
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/dead_end_5": {
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/entrance": {
+   "mmr:dark_oak_mineshaft/miner_chest": 20,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 19,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 17,
+   "mmr:dark_oak_mineshaft/supply_barrel": 13,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 12,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 12,
+   "mmr:dark_oak_mineshaft/treasure": 2,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/entrance_round_staircase": {
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/entrance_south": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/entrance_upper": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/intersection_2": {
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/intersection_3": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 1,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 1,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/round_staircase_2": {
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/round_staircase_3": {
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_1": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_2": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_3": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_5": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_6": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 2,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 2,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_8": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/dark_oak_mineshaft/straight_9": {
+   "mmr:dark_oak_mineshaft/miner_chest": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/corner_3": {
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/corner_4": {
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/corner_5": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/corner_6": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 4,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 4,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 3
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_1": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 2,
+   "mmr:deep_dark_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_2": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_3": {
+   "mmr:deep_dark_mineshaft/miner_chest": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_4": {
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_5": {
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/dead_end_warden_prison": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/intersection_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/intersection_3": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/intersection_pit": {
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/round_staircase_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/round_staircase_3": {
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_1": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_2": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_3": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_5": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_6": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 2,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 2,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_8": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/deep_dark_mineshaft/straight_9": {
+   "mmr:deep_dark_mineshaft/miner_chest": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/corner_1": {
+   "mmr:desert_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/corner_2": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/corner_4": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/corner_5": {
+   "mmr:desert_mineshaft/supply_barrel": 7,
+   "mmr:desert_mineshaft/supply_barrel_2": 7,
+   "mmr:desert_mineshaft/supply_barrel_3": 6,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/crossing_2": {
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/desert_mineshaft/crossing_3": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/end_1": {
+   "mmr:desert_mineshaft/gold_cart": 3
+  },
+  "mmr:1_21_0/desert_mineshaft/end_2": {
+   "mmr:desert_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/desert_mineshaft/end_3": {
+   "mmr:desert_mineshaft/gold_cart": 3
+  },
+  "mmr:1_21_0/desert_mineshaft/end_4": {
+   "mmr:desert_mineshaft/gold_cart": 3,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/long_end_1": {
+   "mmr:desert_mineshaft/gold_cart": 6,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/long_straight_1": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 2,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/mineshaft_entrance": {
+   "mmr:desert_mineshaft/supply_barrel": 18,
+   "mmr:desert_mineshaft/supply_barrel_2": 18,
+   "mmr:desert_mineshaft/supply_barrel_3": 17
+  },
+  "mmr:1_21_0/desert_mineshaft/path_decoration_cart": {
+   "mmr:desert_mineshaft/supply_barrel": 1,
+   "mmr:desert_mineshaft/supply_barrel_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/round_staircase": {
+   "mmr:desert_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/round_staircase_1": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/round_staircase_2": {
+   "mmr:desert_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/special_corner_1": {
+   "mmr:desert_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/desert_mineshaft/special_crossing_1": {
+   "mmr:desert_mineshaft/suspicious_sand": 24,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/special_crossing_2": {
+   "mmr:desert_mineshaft/stable": 8,
+   "mmr:desert_mineshaft/supply_barrel": 8,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 8
+  },
+  "mmr:1_21_0/desert_mineshaft/special_crossing_3": {
+   "mmr:desert_mineshaft/supply_barrel": 9,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 9,
+   "mmr:desert_mineshaft/treasure": 2,
+   "mmr:desert_mineshaft/treasure_2": 3,
+   "mmr:desert_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_0/desert_mineshaft/special_crossing_4": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1,
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/special_crossing_5": {
+   "mmr:desert_mineshaft/miner_chest": 4,
+   "mmr:desert_mineshaft/miner_chest_2": 3,
+   "mmr:desert_mineshaft/miner_chest_3": 3,
+   "mmr:desert_mineshaft/treasure": 2,
+   "mmr:desert_mineshaft/treasure_2": 2,
+   "mmr:desert_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_1": {
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_2": {
+   "mmr:desert_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_4": {
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 5,
+   "mmr:desert_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_6": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_7": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/desert_mineshaft/straight_8": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/corner_4": {
+   "mmr:jungle_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/corner_5": {
+   "mmr:jungle_mineshaft/supply_barrel": 7,
+   "mmr:jungle_mineshaft/supply_barrel_2": 7,
+   "mmr:jungle_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_0/jungle_mineshaft/crossing_2": {
+   "mmr:jungle_mineshaft/supply_barrel": 4,
+   "mmr:jungle_mineshaft/supply_barrel_2": 4,
+   "mmr:jungle_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/jungle_mineshaft/crossing_4": {
+   "mmr:jungle_mineshaft/supply_barrel": 5,
+   "mmr:jungle_mineshaft/supply_barrel_2": 4,
+   "mmr:jungle_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_0/jungle_mineshaft/end_1": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/end_2": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/end_3": {
+   "mmr:jungle_mineshaft/gold_cart": 2,
+   "mmr:jungle_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/end_4": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/long_end_1": {
+   "mmr:jungle_mineshaft/gold_cart": 4
+  },
+  "mmr:1_21_0/jungle_mineshaft/long_straight_1": {
+   "mmr:jungle_mineshaft/gold_cart": 6
+  },
+  "mmr:1_21_0/jungle_mineshaft/mineshaft_entrance": {
+   "mmr:jungle_mineshaft/miner_chest": 1,
+   "mmr:jungle_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/special_crossing_3": {
+   "mmr:jungle_mineshaft/brewing_scraps": 1,
+   "mmr:jungle_mineshaft/supply_barrel": 4,
+   "mmr:jungle_mineshaft/supply_barrel_2": 5,
+   "mmr:jungle_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_0/jungle_mineshaft/special_crossing_4": {
+   "mmr:jungle_mineshaft/miner_chest_2": 1,
+   "mmr:jungle_mineshaft/supply_barrel": 6,
+   "mmr:jungle_mineshaft/supply_barrel_2": 5,
+   "mmr:jungle_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_0/jungle_mineshaft/special_crossing_nether_portal": {
+   "mmr:jungle_mineshaft/supply_barrel": 13,
+   "mmr:jungle_mineshaft/supply_barrel_2": 14,
+   "mmr:jungle_mineshaft/supply_barrel_3": 14
+  },
+  "mmr:1_21_0/jungle_mineshaft/start_room": {
+   "mmr:jungle_mineshaft/furnace_chest": 2,
+   "mmr:jungle_mineshaft/supply_barrel": 1,
+   "mmr:jungle_mineshaft/treasure": 1,
+   "mmr:jungle_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_1": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_2": {
+   "mmr:jungle_mineshaft/supply_barrel_2": 1
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_4": {
+   "mmr:jungle_mineshaft/supply_barrel": 5,
+   "mmr:jungle_mineshaft/supply_barrel_2": 4,
+   "mmr:jungle_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_6": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_7": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_0/jungle_mineshaft/straight_drop": {
+   "mmr:jungle_mineshaft/treasure": 1,
+   "mmr:jungle_mineshaft/treasure_2": 1,
+   "mmr:jungle_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/mesa_mineshaft/corner_3": {
+   "mmr:mesa_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/corner_4": {
+   "mmr:mesa_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/corner_5": {
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/corner_6": {
+   "mmr:mesa_mineshaft/supply_barrel": 7,
+   "mmr:mesa_mineshaft/supply_barrel_2": 7,
+   "mmr:mesa_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_0/mesa_mineshaft/dead_end_1": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 2,
+   "mmr:mesa_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/mesa_mineshaft/dead_end_2": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/dead_end_3": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 2,
+   "mmr:mesa_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_0/mesa_mineshaft/dead_end_4": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/dead_end_5": {
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/entrance_shaft": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 9,
+   "mmr:mesa_mineshaft/supply_barrel": 1,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/intersection_2": {
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/intersection_3": {
+   "mmr:mesa_mineshaft/supply_barrel": 4,
+   "mmr:mesa_mineshaft/supply_barrel_2": 4,
+   "mmr:mesa_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/mesa_mineshaft/round_staircase_1": {
+   "mmr:mesa_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/round_staircase_2": {
+   "mmr:mesa_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_1": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_2": {
+   "mmr:mesa_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_3": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_5": {
+   "mmr:mesa_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_6": {
+   "mmr:mesa_mineshaft/supply_barrel": 4,
+   "mmr:mesa_mineshaft/supply_barrel_2": 5,
+   "mmr:mesa_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_8": {
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mesa_mineshaft/straight_9": {
+   "mmr:mesa_mineshaft/miner_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mineshaft/corner_3": {
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_0/mineshaft/corner_4": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_0/mineshaft/corner_5": {
+   "mmr:mineshaft/common": 1,
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_0/mineshaft/corner_6": {
+   "mmr:mineshaft/common": 10,
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_0/mineshaft/dead_end_2": {
+   "mmr:mineshaft/rare": 1,
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_0/mineshaft/dead_end_3": {
+   "mmr:mineshaft/common": 3,
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_0/mineshaft/dead_end_4": {
+   "mmr:mineshaft/rare": 3
+  },
+  "mmr:1_21_0/mineshaft/dead_end_5": {
+   "mmr:mineshaft/rare": 2
+  },
+  "mmr:1_21_0/mineshaft/entrance": {
+   "mmr:mineshaft/common": 55
+  },
+  "mmr:1_21_0/mineshaft/intersection_10": {
+   "mmr:mineshaft/common": 21,
+   "mmr:mineshaft/rare": 5,
+   "mmr:mineshaft/uncommon": 23
+  },
+  "mmr:1_21_0/mineshaft/intersection_2": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_0/mineshaft/intersection_3": {
+   "mmr:mineshaft/common": 4
+  },
+  "mmr:1_21_0/mineshaft/intersection_5": {
+   "mmr:mineshaft/rare": 1,
+   "mmr:mineshaft/uncommon": 16
+  },
+  "mmr:1_21_0/mineshaft/intersection_8": {
+   "mmr:mineshaft/rare": 2,
+   "mmr:mineshaft/uncommon": 14
+  },
+  "mmr:1_21_0/mineshaft/intersection_9": {
+   "mmr:mineshaft/rare": 4,
+   "mmr:mineshaft/uncommon": 12
+  },
+  "mmr:1_21_0/mineshaft/round_staircase": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_0/mineshaft/round_staircase_2": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_0/mineshaft/straight_1": {
+   "mmr:mineshaft/common": 2,
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_0/mineshaft/straight_2": {
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_0/mineshaft/straight_3": {
+   "mmr:mineshaft/common": 2,
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_0/mineshaft/straight_5": {
+   "mmr:mineshaft/common": 1
+  },
+  "mmr:1_21_0/mineshaft/straight_6": {
+   "mmr:mineshaft/common": 4,
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_0/mineshaft/straight_8": {
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_0/mineshaft/straight_9": {
+   "mmr:mineshaft/rare": 2,
+   "mmr:mineshaft/uncommon": 4
+  },
+  "mmr:1_21_0/mushroom_mineshaft/corner_3": {
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/corner_4": {
+   "mmr:mushroom_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/corner_5": {
+   "mmr:mushroom_mineshaft/miner_chest": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/corner_6": {
+   "mmr:mushroom_mineshaft/supply_barrel": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 3
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_1": {
+   "mmr:mushroom_mineshaft/miner_chest": 1,
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 2,
+   "mmr:mushroom_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_2": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_3": {
+   "mmr:mushroom_mineshaft/miner_chest": 2,
+   "mmr:mushroom_mineshaft/miner_chest_2": 2,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_4": {
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_5": {
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_large_1": {
+   "mmr:mushroom_mineshaft/supply_barrel": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_0/mushroom_mineshaft/dead_end_large_2": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 2,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 2
+  },
+  "mmr:1_21_0/mushroom_mineshaft/entrance": {
+   "mmr:mushroom_mineshaft/miner_chest": 4,
+   "mmr:mushroom_mineshaft/miner_chest_2": 3,
+   "mmr:mushroom_mineshaft/miner_chest_3": 2,
+   "mmr:mushroom_mineshaft/supply_barrel": 8,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 7,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 7,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/entrance_lower": {
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 2
+  },
+  "mmr:1_21_0/mushroom_mineshaft/intersection_2": {
+   "mmr:mushroom_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/intersection_3": {
+   "mmr:mushroom_mineshaft/supply_barrel": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/mushroom_mineshaft/round_staircase_2": {
+   "mmr:mushroom_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/round_staircase_3": {
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_1": {
+   "mmr:mushroom_mineshaft/miner_chest": 1,
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_2": {
+   "mmr:mushroom_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_3": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_5": {
+   "mmr:mushroom_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_6": {
+   "mmr:mushroom_mineshaft/supply_barrel": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 2,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_8": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/mushroom_mineshaft/straight_9": {
+   "mmr:mushroom_mineshaft/miner_chest": 2,
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/corner_1": {
+   "mmr:nether_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/corner_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/corner_4": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/corner_5": {
+   "mmr:nether_mineshaft/supply_barrel": 7,
+   "mmr:nether_mineshaft/supply_barrel_2": 7,
+   "mmr:nether_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_0/nether_mineshaft/crossing_2": {
+   "mmr:nether_mineshaft/supply_barrel": 4,
+   "mmr:nether_mineshaft/supply_barrel_2": 4,
+   "mmr:nether_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/nether_mineshaft/crossing_3": {
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/end_1": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/end_2": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/end_3": {
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1,
+   "mmr:nether_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/end_4": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/long_end_1": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 3
+  },
+  "mmr:1_21_0/nether_mineshaft/long_straight_1": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_0/nether_mineshaft/mess_hall": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/mineshaft_entrance": {
+   "mmr:nether_mineshaft/supply_barrel": 1,
+   "mmr:nether_mineshaft/supply_barrel_2": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/round_staircase_1": {
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/round_staircase_2": {
+   "mmr:nether_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/special_corner_1": {
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/special_crossing_1": {
+   "mmr:nether_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/special_crossing_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_0/nether_mineshaft/start_room": {
+   "mmr:nether_mineshaft/miner_chest": 3,
+   "mmr:nether_mineshaft/miner_chest_2": 3,
+   "mmr:nether_mineshaft/miner_chest_3": 3,
+   "mmr:nether_mineshaft/supply_barrel": 8,
+   "mmr:nether_mineshaft/supply_barrel_2": 8,
+   "mmr:nether_mineshaft/supply_barrel_3": 9
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_1": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_2": {
+   "mmr:nether_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_4": {
+   "mmr:nether_mineshaft/supply_barrel": 3,
+   "mmr:nether_mineshaft/supply_barrel_2": 4,
+   "mmr:nether_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_6": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_7": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/nether_mineshaft/straight_8": {
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/corner_3": {
+   "mmr:snowy_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/corner_4": {
+   "mmr:snowy_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/corner_5": {
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/corner_6": {
+   "mmr:snowy_mineshaft/supply_barrel": 7,
+   "mmr:snowy_mineshaft/supply_barrel_2": 7,
+   "mmr:snowy_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_0/snowy_mineshaft/dead_end_1": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_2": 2,
+   "mmr:snowy_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_0/snowy_mineshaft/dead_end_2": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1,
+   "mmr:snowy_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/dead_end_3": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 2,
+   "mmr:snowy_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_0/snowy_mineshaft/dead_end_4": {
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_2": 1,
+   "mmr:snowy_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/dead_end_5": {
+   "mmr:snowy_mineshaft/treasure_2": 1,
+   "mmr:snowy_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/intersection_2": {
+   "mmr:snowy_mineshaft/treasure": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/intersection_3": {
+   "mmr:snowy_mineshaft/supply_barrel": 4,
+   "mmr:snowy_mineshaft/supply_barrel_2": 4,
+   "mmr:snowy_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/snowy_mineshaft/round_staircase_1": {
+   "mmr:snowy_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/round_staircase_2": {
+   "mmr:snowy_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/start_lower": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/start_piece": {
+   "mmr:snowy_mineshaft/start_piece": 8
+  },
+  "mmr:1_21_0/snowy_mineshaft/start_round_staircase": {
+   "mmr:snowy_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_1": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_2": {
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_3": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_5": {
+   "mmr:snowy_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_6": {
+   "mmr:snowy_mineshaft/supply_barrel": 4,
+   "mmr:snowy_mineshaft/supply_barrel_2": 5,
+   "mmr:snowy_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_8": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_0/snowy_mineshaft/straight_9": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 2,
+   "mmr:snowy_mineshaft/miner_chest_3": 1,
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_2/deep_dark_mineshaft/corner_3": {
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_2/deep_dark_mineshaft/corner_4": {
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_2/deep_dark_mineshaft/dead_end_warden_prison": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_2/deep_dark_mineshaft/intersection_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_2/deep_dark_mineshaft/intersection_3": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_2/desert_mineshaft/special_crossing_2": {
+   "mmr:desert_mineshaft/stable": 8,
+   "mmr:desert_mineshaft/supply_barrel": 8,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 8
+  },
+  "mmr:1_21_2/desert_mineshaft/special_crossing_3": {
+   "mmr:desert_mineshaft/supply_barrel": 9,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 9,
+   "mmr:desert_mineshaft/treasure": 2,
+   "mmr:desert_mineshaft/treasure_2": 3,
+   "mmr:desert_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_2/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_2/mineshaft/intersection_10": {
+   "mmr:mineshaft/common": 21,
+   "mmr:mineshaft/rare": 5,
+   "mmr:mineshaft/uncommon": 23
+  },
+  "mmr:1_21_2/mushroom_mineshaft/entrance": {
+   "mmr:mushroom_mineshaft/miner_chest": 4,
+   "mmr:mushroom_mineshaft/miner_chest_2": 3,
+   "mmr:mushroom_mineshaft/miner_chest_3": 2,
+   "mmr:mushroom_mineshaft/supply_barrel": 8,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 7,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 7,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_2/nether_mineshaft/start_room": {
+   "mmr:nether_mineshaft/miner_chest": 3,
+   "mmr:nether_mineshaft/miner_chest_2": 3,
+   "mmr:nether_mineshaft/miner_chest_3": 3,
+   "mmr:nether_mineshaft/supply_barrel": 8,
+   "mmr:nether_mineshaft/supply_barrel_2": 8,
+   "mmr:nether_mineshaft/supply_barrel_3": 9
+  },
+  "mmr:1_21_2/snowy_mineshaft/start_piece": {
+   "mmr:snowy_mineshaft/start_piece": 8
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/dead_end_1": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/dead_end_2": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/dead_end_3": {
+   "mmr:dark_oak_mineshaft/miner_chest": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/dead_end_4": {
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_2": 1,
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/entrance": {
+   "mmr:dark_oak_mineshaft/miner_chest": 20,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 19,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 17,
+   "mmr:dark_oak_mineshaft/supply_barrel": 13,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 12,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 12,
+   "mmr:dark_oak_mineshaft/treasure": 2,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/straight_2": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/straight_3": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/straight_8": {
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/dark_oak_mineshaft/straight_9": {
+   "mmr:dark_oak_mineshaft/miner_chest": 2,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 1,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 1,
+   "mmr:dark_oak_mineshaft/treasure": 1,
+   "mmr:dark_oak_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/corner_3": {
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/corner_4": {
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/dead_end_1": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 2,
+   "mmr:deep_dark_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/dead_end_2": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/dead_end_3": {
+   "mmr:deep_dark_mineshaft/miner_chest": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/dead_end_4": {
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/dead_end_warden_prison": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/intersection_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/intersection_3": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/straight_2": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/straight_3": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/straight_8": {
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/deep_dark_mineshaft/straight_9": {
+   "mmr:deep_dark_mineshaft/miner_chest": 2,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_3": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/end_1": {
+   "mmr:desert_mineshaft/gold_cart": 3
+  },
+  "mmr:1_21_4/desert_mineshaft/end_3": {
+   "mmr:desert_mineshaft/gold_cart": 3
+  },
+  "mmr:1_21_4/desert_mineshaft/end_4": {
+   "mmr:desert_mineshaft/gold_cart": 3,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/long_end_1": {
+   "mmr:desert_mineshaft/gold_cart": 6,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/long_straight_1": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 2,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/special_crossing_4": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1,
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/straight_1": {
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/straight_6": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/treasure_2": 1,
+   "mmr:desert_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/desert_mineshaft/straight_8": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_4/jungle_mineshaft/end_1": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_4/jungle_mineshaft/end_3": {
+   "mmr:jungle_mineshaft/gold_cart": 2,
+   "mmr:jungle_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_4/jungle_mineshaft/end_4": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_4/jungle_mineshaft/long_end_1": {
+   "mmr:jungle_mineshaft/gold_cart": 4
+  },
+  "mmr:1_21_4/jungle_mineshaft/long_straight_1": {
+   "mmr:jungle_mineshaft/gold_cart": 6
+  },
+  "mmr:1_21_4/jungle_mineshaft/start_room": {
+   "mmr:jungle_mineshaft/furnace_chest": 2,
+   "mmr:jungle_mineshaft/supply_barrel": 1,
+   "mmr:jungle_mineshaft/treasure": 1,
+   "mmr:jungle_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/jungle_mineshaft/straight_1": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_4/jungle_mineshaft/straight_6": {
+   "mmr:jungle_mineshaft/gold_cart": 2
+  },
+  "mmr:1_21_4/jungle_mineshaft/straight_drop": {
+   "mmr:jungle_mineshaft/treasure": 1,
+   "mmr:jungle_mineshaft/treasure_2": 1,
+   "mmr:jungle_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/mesa_mineshaft/dead_end_1": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 2,
+   "mmr:mesa_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/mesa_mineshaft/dead_end_2": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/dead_end_3": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 2,
+   "mmr:mesa_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_4/mesa_mineshaft/dead_end_4": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/straight_2": {
+   "mmr:mesa_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/straight_3": {
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/straight_8": {
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/mesa_mineshaft/straight_9": {
+   "mmr:mesa_mineshaft/miner_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/mineshaft/dead_end_2": {
+   "mmr:mineshaft/rare": 1,
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_4/mineshaft/dead_end_3": {
+   "mmr:mineshaft/common": 3,
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_4/mineshaft/dead_end_4": {
+   "mmr:mineshaft/rare": 3
+  },
+  "mmr:1_21_4/mineshaft/intersection_10": {
+   "mmr:mineshaft/common": 21,
+   "mmr:mineshaft/rare": 5,
+   "mmr:mineshaft/uncommon": 23
+  },
+  "mmr:1_21_4/mineshaft/straight_2": {
+   "mmr:mineshaft/uncommon": 1
+  },
+  "mmr:1_21_4/mineshaft/straight_3": {
+   "mmr:mineshaft/common": 2,
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_4/mineshaft/straight_8": {
+   "mmr:mineshaft/uncommon": 2
+  },
+  "mmr:1_21_4/mineshaft/straight_9": {
+   "mmr:mineshaft/rare": 2,
+   "mmr:mineshaft/uncommon": 4
+  },
+  "mmr:1_21_4/mushroom_mineshaft/dead_end_1": {
+   "mmr:mushroom_mineshaft/miner_chest": 1,
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 2,
+   "mmr:mushroom_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/mushroom_mineshaft/dead_end_2": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/dead_end_3": {
+   "mmr:mushroom_mineshaft/miner_chest": 2,
+   "mmr:mushroom_mineshaft/miner_chest_2": 2,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/dead_end_4": {
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_2": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/entrance": {
+   "mmr:mushroom_mineshaft/miner_chest": 4,
+   "mmr:mushroom_mineshaft/miner_chest_2": 3,
+   "mmr:mushroom_mineshaft/miner_chest_3": 2,
+   "mmr:mushroom_mineshaft/supply_barrel": 8,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 7,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 7,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/straight_2": {
+   "mmr:mushroom_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/straight_3": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/straight_8": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/mushroom_mineshaft/straight_9": {
+   "mmr:mushroom_mineshaft/miner_chest": 2,
+   "mmr:mushroom_mineshaft/miner_chest_2": 1,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/end_1": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/end_3": {
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1,
+   "mmr:nether_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/end_4": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/long_end_1": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 3
+  },
+  "mmr:1_21_4/nether_mineshaft/long_straight_1": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_4/nether_mineshaft/mess_hall": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/special_crossing_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_4/nether_mineshaft/start_room": {
+   "mmr:nether_mineshaft/miner_chest": 3,
+   "mmr:nether_mineshaft/miner_chest_2": 3,
+   "mmr:nether_mineshaft/miner_chest_3": 3,
+   "mmr:nether_mineshaft/supply_barrel": 8,
+   "mmr:nether_mineshaft/supply_barrel_2": 8,
+   "mmr:nether_mineshaft/supply_barrel_3": 9
+  },
+  "mmr:1_21_4/nether_mineshaft/straight_1": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/straight_6": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/nether_mineshaft/straight_8": {
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/dead_end_1": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_2": 2,
+   "mmr:snowy_mineshaft/treasure_3": 2
+  },
+  "mmr:1_21_4/snowy_mineshaft/dead_end_2": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1,
+   "mmr:snowy_mineshaft/treasure": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/dead_end_3": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 2,
+   "mmr:snowy_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_4/snowy_mineshaft/dead_end_4": {
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_2": 1,
+   "mmr:snowy_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/start_lower": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/straight_2": {
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/straight_3": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 1,
+   "mmr:snowy_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/straight_8": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_4/snowy_mineshaft/straight_9": {
+   "mmr:snowy_mineshaft/miner_chest": 1,
+   "mmr:snowy_mineshaft/miner_chest_2": 2,
+   "mmr:snowy_mineshaft/miner_chest_3": 1,
+   "mmr:snowy_mineshaft/treasure": 1,
+   "mmr:snowy_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_5/dark_oak_mineshaft/entrance": {
+   "mmr:dark_oak_mineshaft/miner_chest": 20,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 19,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 17,
+   "mmr:dark_oak_mineshaft/supply_barrel": 13,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 12,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 12,
+   "mmr:dark_oak_mineshaft/treasure": 2,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_5/dark_oak_mineshaft/entrance_south": {
+   "mmr:dark_oak_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_5/dark_oak_mineshaft/intersection_2": {
+   "mmr:dark_oak_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_5/dark_oak_mineshaft/intersection_3": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 1,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 1,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_5/deep_dark_mineshaft/dead_end_warden_prison": {
+   "mmr:deep_dark_mineshaft/miner_chest": 1,
+   "mmr:deep_dark_mineshaft/miner_chest_2": 1,
+   "mmr:deep_dark_mineshaft/treasure": 1,
+   "mmr:deep_dark_mineshaft/treasure_2": 1,
+   "mmr:deep_dark_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_5/deep_dark_mineshaft/intersection_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_5/deep_dark_mineshaft/intersection_3": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_5/desert_mineshaft/crossing_2": {
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_5/desert_mineshaft/crossing_3": {
+   "mmr:desert_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_5/desert_mineshaft/mineshaft_entrance": {
+   "mmr:desert_mineshaft/supply_barrel": 18,
+   "mmr:desert_mineshaft/supply_barrel_2": 18,
+   "mmr:desert_mineshaft/supply_barrel_3": 17
+  },
+  "mmr:1_21_5/desert_mineshaft/path_decoration_cart": {
+   "mmr:desert_mineshaft/supply_barrel": 1,
+   "mmr:desert_mineshaft/supply_barrel_3": 1
+  },
+  "mmr:1_21_5/desert_mineshaft/special_crossing_1": {
+   "mmr:desert_mineshaft/suspicious_sand": 24,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_5/desert_mineshaft/special_crossing_2": {
+   "mmr:desert_mineshaft/stable": 8,
+   "mmr:desert_mineshaft/supply_barrel": 8,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 8
+  },
+  "mmr:1_21_5/desert_mineshaft/special_crossing_3": {
+   "mmr:desert_mineshaft/supply_barrel": 9,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 9,
+   "mmr:desert_mineshaft/treasure": 2,
+   "mmr:desert_mineshaft/treasure_2": 3,
+   "mmr:desert_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_5/desert_mineshaft/special_crossing_4": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1,
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_5/jungle_mineshaft/crossing_2": {
+   "mmr:jungle_mineshaft/supply_barrel": 4,
+   "mmr:jungle_mineshaft/supply_barrel_2": 4,
+   "mmr:jungle_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_5/jungle_mineshaft/crossing_4": {
+   "mmr:jungle_mineshaft/supply_barrel": 5,
+   "mmr:jungle_mineshaft/supply_barrel_2": 4,
+   "mmr:jungle_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_5/jungle_mineshaft/special_crossing_3": {
+   "mmr:jungle_mineshaft/brewing_scraps": 1,
+   "mmr:jungle_mineshaft/supply_barrel": 4,
+   "mmr:jungle_mineshaft/supply_barrel_2": 5,
+   "mmr:jungle_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_5/jungle_mineshaft/special_crossing_4": {
+   "mmr:jungle_mineshaft/miner_chest_2": 1,
+   "mmr:jungle_mineshaft/supply_barrel": 6,
+   "mmr:jungle_mineshaft/supply_barrel_2": 5,
+   "mmr:jungle_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_5/jungle_mineshaft/special_crossing_nether_portal": {
+   "mmr:jungle_mineshaft/supply_barrel": 13,
+   "mmr:jungle_mineshaft/supply_barrel_2": 14,
+   "mmr:jungle_mineshaft/supply_barrel_3": 14
+  },
+  "mmr:1_21_5/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_5/mesa_mineshaft/intersection_2": {
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_5/mesa_mineshaft/intersection_3": {
+   "mmr:mesa_mineshaft/supply_barrel": 4,
+   "mmr:mesa_mineshaft/supply_barrel_2": 4,
+   "mmr:mesa_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_5/mineshaft/intersection_10": {
+   "mmr:mineshaft/common": 21,
+   "mmr:mineshaft/rare": 5,
+   "mmr:mineshaft/uncommon": 23
+  },
+  "mmr:1_21_5/mineshaft/intersection_2": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:1_21_5/mineshaft/intersection_3": {
+   "mmr:mineshaft/common": 4
+  },
+  "mmr:1_21_5/mineshaft/intersection_5": {
+   "mmr:mineshaft/rare": 1,
+   "mmr:mineshaft/uncommon": 16
+  },
+  "mmr:1_21_5/mushroom_mineshaft/dead_end_large_2": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 2,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 2
+  },
+  "mmr:1_21_5/mushroom_mineshaft/entrance": {
+   "mmr:mushroom_mineshaft/miner_chest": 4,
+   "mmr:mushroom_mineshaft/miner_chest_2": 3,
+   "mmr:mushroom_mineshaft/miner_chest_3": 2,
+   "mmr:mushroom_mineshaft/supply_barrel": 8,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 7,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 7,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_5/mushroom_mineshaft/intersection_2": {
+   "mmr:mushroom_mineshaft/treasure_2": 1
+  },
+  "mmr:1_21_5/mushroom_mineshaft/intersection_3": {
+   "mmr:mushroom_mineshaft/supply_barrel": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:1_21_5/nether_mineshaft/special_crossing_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_5/nether_mineshaft/start_room": {
+   "mmr:nether_mineshaft/miner_chest": 3,
+   "mmr:nether_mineshaft/miner_chest_2": 3,
+   "mmr:nether_mineshaft/miner_chest_3": 3,
+   "mmr:nether_mineshaft/supply_barrel": 8,
+   "mmr:nether_mineshaft/supply_barrel_2": 8,
+   "mmr:nether_mineshaft/supply_barrel_3": 9
+  },
+  "mmr:1_21_5/snowy_mineshaft/intersection_2": {
+   "mmr:snowy_mineshaft/treasure": 1
+  },
+  "mmr:1_21_5/snowy_mineshaft/intersection_3": {
+   "mmr:snowy_mineshaft/supply_barrel": 4,
+   "mmr:snowy_mineshaft/supply_barrel_2": 4,
+   "mmr:snowy_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_5/snowy_mineshaft/start_piece": {
+   "mmr:snowy_mineshaft/start_piece": 8
+  },
+  "mmr:1_21_6/desert_mineshaft/mineshaft_entrance": {
+   "mmr:desert_mineshaft/supply_barrel": 18,
+   "mmr:desert_mineshaft/supply_barrel_2": 18,
+   "mmr:desert_mineshaft/supply_barrel_3": 17
+  },
+  "mmr:1_21_6/desert_mineshaft/special_crossing_2": {
+   "mmr:desert_mineshaft/stable": 8,
+   "mmr:desert_mineshaft/supply_barrel": 8,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 8
+  },
+  "mmr:1_21_9/dark_oak_mineshaft/entrance": {
+   "mmr:dark_oak_mineshaft/miner_chest": 20,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 19,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 17,
+   "mmr:dark_oak_mineshaft/supply_barrel": 13,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 12,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 12,
+   "mmr:dark_oak_mineshaft/treasure": 2,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_9/dark_oak_mineshaft/entrance_upper": {
+   "mmr:dark_oak_mineshaft/supply_barrel": 1
+  },
+  "mmr:1_21_9/desert_mineshaft/mineshaft_entrance": {
+   "mmr:desert_mineshaft/supply_barrel": 18,
+   "mmr:desert_mineshaft/supply_barrel_2": 18,
+   "mmr:desert_mineshaft/supply_barrel_3": 17
+  },
+  "mmr:1_21_9/desert_mineshaft/special_crossing_2": {
+   "mmr:desert_mineshaft/stable": 8,
+   "mmr:desert_mineshaft/supply_barrel": 8,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 8
+  },
+  "mmr:1_21_9/desert_mineshaft/special_crossing_3": {
+   "mmr:desert_mineshaft/supply_barrel": 9,
+   "mmr:desert_mineshaft/supply_barrel_2": 9,
+   "mmr:desert_mineshaft/supply_barrel_3": 9,
+   "mmr:desert_mineshaft/treasure": 2,
+   "mmr:desert_mineshaft/treasure_2": 3,
+   "mmr:desert_mineshaft/treasure_3": 3
+  },
+  "mmr:1_21_9/desert_mineshaft/special_crossing_4": {
+   "mmr:desert_mineshaft/miner_chest": 1,
+   "mmr:desert_mineshaft/miner_chest_2": 1,
+   "mmr:desert_mineshaft/miner_chest_3": 1,
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 4,
+   "mmr:desert_mineshaft/supply_barrel_3": 5,
+   "mmr:desert_mineshaft/treasure": 1
+  },
+  "mmr:1_21_9/desert_mineshaft/straight_4": {
+   "mmr:desert_mineshaft/supply_barrel": 4,
+   "mmr:desert_mineshaft/supply_barrel_2": 5,
+   "mmr:desert_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_9/jungle_mineshaft/special_crossing_4": {
+   "mmr:jungle_mineshaft/miner_chest_2": 1,
+   "mmr:jungle_mineshaft/supply_barrel": 6,
+   "mmr:jungle_mineshaft/supply_barrel_2": 5,
+   "mmr:jungle_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_9/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_9/mesa_mineshaft/straight_6": {
+   "mmr:mesa_mineshaft/supply_barrel": 4,
+   "mmr:mesa_mineshaft/supply_barrel_2": 5,
+   "mmr:mesa_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_9/mineshaft/entrance": {
+   "mmr:mineshaft/common": 55
+  },
+  "mmr:1_21_9/mineshaft/intersection_10": {
+   "mmr:mineshaft/common": 21,
+   "mmr:mineshaft/rare": 5,
+   "mmr:mineshaft/uncommon": 23
+  },
+  "mmr:1_21_9/mushroom_mineshaft/dead_end_large_1": {
+   "mmr:mushroom_mineshaft/supply_barrel": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 4,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 4
+  },
+  "mmr:1_21_9/mushroom_mineshaft/entrance": {
+   "mmr:mushroom_mineshaft/miner_chest": 4,
+   "mmr:mushroom_mineshaft/miner_chest_2": 3,
+   "mmr:mushroom_mineshaft/miner_chest_3": 2,
+   "mmr:mushroom_mineshaft/supply_barrel": 8,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 7,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 7,
+   "mmr:mushroom_mineshaft/treasure": 1,
+   "mmr:mushroom_mineshaft/treasure_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/corner_1": {
+   "mmr:nether_mineshaft/miner_chest": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/corner_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/corner_4": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/corner_5": {
+   "mmr:nether_mineshaft/supply_barrel": 7,
+   "mmr:nether_mineshaft/supply_barrel_2": 7,
+   "mmr:nether_mineshaft/supply_barrel_3": 6
+  },
+  "mmr:1_21_9/nether_mineshaft/crossing_2": {
+   "mmr:nether_mineshaft/supply_barrel": 4,
+   "mmr:nether_mineshaft/supply_barrel_2": 4,
+   "mmr:nether_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:1_21_9/nether_mineshaft/crossing_3": {
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/end_2": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/end_3": {
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1,
+   "mmr:nether_mineshaft/treasure": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/long_end_1": {
+   "mmr:nether_mineshaft/miner_chest": 2,
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 3
+  },
+  "mmr:1_21_9/nether_mineshaft/mess_hall": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/mineshaft_entrance": {
+   "mmr:nether_mineshaft/supply_barrel": 1,
+   "mmr:nether_mineshaft/supply_barrel_2": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/special_corner_1": {
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/special_crossing_2": {
+   "mmr:nether_mineshaft/miner_chest_2": 2,
+   "mmr:nether_mineshaft/miner_chest_3": 2
+  },
+  "mmr:1_21_9/nether_mineshaft/start_room": {
+   "mmr:nether_mineshaft/miner_chest": 3,
+   "mmr:nether_mineshaft/miner_chest_2": 3,
+   "mmr:nether_mineshaft/miner_chest_3": 3,
+   "mmr:nether_mineshaft/supply_barrel": 8,
+   "mmr:nether_mineshaft/supply_barrel_2": 8,
+   "mmr:nether_mineshaft/supply_barrel_3": 9
+  },
+  "mmr:1_21_9/nether_mineshaft/straight_6": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/straight_7": {
+   "mmr:nether_mineshaft/miner_chest": 1,
+   "mmr:nether_mineshaft/miner_chest_2": 1,
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/nether_mineshaft/straight_8": {
+   "mmr:nether_mineshaft/miner_chest_3": 1
+  },
+  "mmr:1_21_9/snowy_mineshaft/start_piece": {
+   "mmr:snowy_mineshaft/start_piece": 8
+  },
+  "mmr:1_21_9/snowy_mineshaft/straight_6": {
+   "mmr:snowy_mineshaft/supply_barrel": 4,
+   "mmr:snowy_mineshaft/supply_barrel_2": 5,
+   "mmr:snowy_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:26_3_0/dark_oak_mineshaft/entrance": {
+   "mmr:dark_oak_mineshaft/miner_chest": 20,
+   "mmr:dark_oak_mineshaft/miner_chest_2": 19,
+   "mmr:dark_oak_mineshaft/miner_chest_3": 17,
+   "mmr:dark_oak_mineshaft/supply_barrel": 13,
+   "mmr:dark_oak_mineshaft/supply_barrel_2": 12,
+   "mmr:dark_oak_mineshaft/supply_barrel_3": 12,
+   "mmr:dark_oak_mineshaft/treasure": 2,
+   "mmr:dark_oak_mineshaft/treasure_2": 2,
+   "mmr:dark_oak_mineshaft/treasure_3": 3
+  },
+  "mmr:26_3_0/deep_dark_mineshaft/intersection_2": {
+   "mmr:deep_dark_mineshaft/treasure_2": 1
+  },
+  "mmr:26_3_0/deep_dark_mineshaft/intersection_3": {
+   "mmr:deep_dark_mineshaft/supply_barrel": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_2": 1,
+   "mmr:deep_dark_mineshaft/supply_barrel_3": 2
+  },
+  "mmr:26_3_0/mesa_mineshaft/entrance": {
+   "mmr:mesa_mineshaft/entrance_chest": 2,
+   "mmr:mesa_mineshaft/miner_chest": 1,
+   "mmr:mesa_mineshaft/miner_chest_2": 1,
+   "mmr:mesa_mineshaft/miner_chest_3": 1,
+   "mmr:mesa_mineshaft/pot": 13,
+   "mmr:mesa_mineshaft/storage_chest": 4,
+   "mmr:mesa_mineshaft/supply_barrel": 2,
+   "mmr:mesa_mineshaft/supply_barrel_2": 1,
+   "mmr:mesa_mineshaft/supply_barrel_3": 1,
+   "mmr:mesa_mineshaft/treasure": 1,
+   "mmr:mesa_mineshaft/treasure_2": 1,
+   "mmr:mesa_mineshaft/treasure_3": 1
+  },
+  "mmr:26_3_0/mesa_mineshaft/intersection_2": {
+   "mmr:mesa_mineshaft/treasure_2": 1
+  },
+  "mmr:26_3_0/mesa_mineshaft/intersection_3": {
+   "mmr:mesa_mineshaft/supply_barrel": 4,
+   "mmr:mesa_mineshaft/supply_barrel_2": 4,
+   "mmr:mesa_mineshaft/supply_barrel_3": 5
+  },
+  "mmr:26_3_0/mineshaft/intersection_2": {
+   "mmr:mineshaft/rare": 1
+  },
+  "mmr:26_3_0/mineshaft/intersection_3": {
+   "mmr:mineshaft/common": 4
+  },
+  "mmr:26_3_0/mineshaft/intersection_5": {
+   "mmr:mineshaft/rare": 1,
+   "mmr:mineshaft/uncommon": 16
+  },
+  "mmr:26_3_0/mushroom_mineshaft/dead_end_large_2": {
+   "mmr:mushroom_mineshaft/miner_chest_2": 2,
+   "mmr:mushroom_mineshaft/miner_chest_3": 1,
+   "mmr:mushroom_mineshaft/treasure": 2
+  },
+  "mmr:26_3_0/mushroom_mineshaft/intersection_2": {
+   "mmr:mushroom_mineshaft/treasure_2": 1
+  },
+  "mmr:26_3_0/mushroom_mineshaft/intersection_3": {
+   "mmr:mushroom_mineshaft/supply_barrel": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_2": 1,
+   "mmr:mushroom_mineshaft/supply_barrel_3": 2
+  },
   "monobank:village/monobank/badlands_locked": {
    "monobank:monobank/village/badlands": 1
   },
@@ -13274,6 +16696,13 @@
   },
   "monobank:village/monobank/swamp_unlocked": {
    "monobank:monobank/village/swamp": 1
+  },
+  "moogs_structures:barn": {
+   "mvs:general": 1,
+   "mvs:houses_books": 1,
+   "mvs:houses_common": 2,
+   "mvs:houses_rare": 2,
+   "mvs:houses_uncommon": 1
   },
   "mowziesmobs:monastery/interior/monastery_barrels": {
    "mowziesmobs:chests/monastery_chest": 3

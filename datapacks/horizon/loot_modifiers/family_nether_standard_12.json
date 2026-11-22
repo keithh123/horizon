@@ -6,7 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/cities/nether"
+          "loot_table_id": "repurposed_structures:chests/bastions/underground/bridge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/bastions/underground/other"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/bastions/underground/skeleton_horse_stable"
         }
       ]
     }

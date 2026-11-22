@@ -6,7 +6,23 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "cataclysm:chests/amethyst_nest_chest"
+          "loot_table_id": "block_factorys_bosses:chests/dragon_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:kraken"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "bosses_of_mass_destruction:chests/gauntlet"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "bosses_of_mass_destruction:chests/obsidilith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:chests/umvuthana_grove_chest"
         }
       ]
     }

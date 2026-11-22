@@ -1,0 +1,14 @@
+{
+  "kind": "gradle",
+  "output": "armoursoundtweak-1.0.2-neoforge.1.21.1.horizon1.jar",
+  "built_jar": "armoursoundtweak-1.0.2-neoforge.1.21.1.horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "Apache-2.0",
+  "replaces_slug": "armour-sound-tweak-updated",
+  "source": "https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated/tree/5433562",
+  "attribution": "Armour Sound Tweak Updated (Apache-2.0) by yourlocalfinancialadvisor, based on Mr_Chumbucket's Armour Sound Tweak. NeoForge 1.21.1 back-port by Project Horizon (NOTICE lists changes).",
+  "changes": "Back-port from 1.21.2 Fabric: equip sound from ArmorItem material / ElytraItem instead of 1.21.2 EQUIPPABLE/GLIDER components; NeoForge ClientTickEvent.Pre; NeoForge client config replaces MidnightLib/ModMenu. Client-only."
+}

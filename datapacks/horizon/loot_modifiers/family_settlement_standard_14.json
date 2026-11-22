@@ -6,7 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/hamlet/hamlet"
+          "loot_table_id": "nova_structures:chests/firewatch_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/villages/giant_taiga_house"
         }
       ]
     }

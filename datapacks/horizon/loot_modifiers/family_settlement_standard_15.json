@@ -6,63 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/hamlet/hamlet_tresure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/tavern_quest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/cave"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/jungle"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/mangrove"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/mushroom"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/ocean"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/snowy"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/taiga"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/attic"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/smith/expert"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/desert/smith/novice"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/butcher"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/smith/expert"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:village/fortified/smith/novice"
+          "loot_table_id": "nova_structures:chests/hamlet/hamlet"
         }
       ]
     }
