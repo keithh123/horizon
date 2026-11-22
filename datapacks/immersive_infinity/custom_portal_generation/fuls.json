@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "xenoclustwo"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "xenoclustwo:fuls_d",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "minecraft:blue_ice",
+    "area_block": "xenoclustwo:fuls_d_portal",
+    "to_frame_block": "minecraft:blue_ice",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "xenoclustwo:fuls_d"
+  }
+}

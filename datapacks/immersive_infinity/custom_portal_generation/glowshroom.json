@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "shadowlands"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "shadowlands:glowshroom_forest",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "shadowlands:darkshroom_stone",
+    "area_block": "shadowlands:glowshroom_forest_portal",
+    "to_frame_block": "shadowlands:darkshroom_stone",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "shadowlands:glowshroom_forest_portal_igniter"
+  }
+}

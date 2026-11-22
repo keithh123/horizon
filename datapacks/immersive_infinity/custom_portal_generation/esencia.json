@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "esencia"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "esencia:esencia",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "esencia:arvanim",
+    "area_block": "esencia:esencia_portal",
+    "to_frame_block": "esencia:arvanim",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "esencia:esencia"
+  }
+}

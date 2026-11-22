@@ -53,3 +53,7 @@ Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_e
   existing instance removes stale pack-owned files (old loot modifiers, scripts, quests) but never touches saves,
   `options.txt` or configs the pack does not ship.
 - `scripts/smoke.sh` launches only `$PH_INSTANCE` and no longer kills other Java processes (see the script).
+- `python scripts/gen_portal_guards.py [--jar immersive_infinity.jar]` regenerates `datapacks/immersive_infinity/` (owned, listed in
+  `datapacks/.generated-portal-guards.json`); not part of `build_all.py` because Immersive Infinity is not in the roster.
+- `python scripts/patch_micimmptl.py <orig.jar> <patched.jar>` disables the Voxy mixins of Make it Compatible: Immersive Portals
+  (incompatible with Voxy 0.2.16-beta). Instance-only: the add-on is not shipped.

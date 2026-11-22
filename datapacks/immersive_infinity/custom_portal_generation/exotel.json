@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "exotelcraft"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "exotelcraft:exotel",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "minecraft:blackstone",
+    "area_block": "exotelcraft:exotel_portal",
+    "to_frame_block": "minecraft:blackstone",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "exotelcraft:exotel_portal_igniter"
+  }
+}

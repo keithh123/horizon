@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "divinerpg"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "divinerpg:wildwood",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "divinerpg:eden_block",
+    "area_block": "divinerpg:wildwood_portal",
+    "to_frame_block": "divinerpg:eden_block",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "divinerpg:twilight_clock"
+  }
+}

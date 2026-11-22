@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "voidscape"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "voidscape:void",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "voidscape:voidic_crystal_block",
+    "area_block": "voidscape:portal",
+    "to_frame_block": "voidscape:voidic_crystal_block",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "voidscape:charred_bone"
+  }
+}

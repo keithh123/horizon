@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "xenoclustwo"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "xenoclustwo:descicast",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "minecraft:spruce_wood",
+    "area_block": "xenoclustwo:descicast_portal",
+    "to_frame_block": "minecraft:spruce_wood",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "xenoclustwo:descicast"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oreportal_forge"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "oreportal_forge:irondimension",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "minecraft:iron_block",
+    "area_block": "oreportal_forge:irondimension_portal",
+    "to_frame_block": "minecraft:iron_block",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "oreportal_forge:irondimension"
+  }
+}

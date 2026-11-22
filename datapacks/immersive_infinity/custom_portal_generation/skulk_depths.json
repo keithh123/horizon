@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "sculk_depths"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "sculk_depths:sculk_depths",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "minecraft:reinforced_deepslate",
+    "area_block": "sculk_depths:sculk_depths_portal",
+    "to_frame_block": "minecraft:reinforced_deepslate",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "sculk_depths:energized_flint_and_steel"
+  }
+}

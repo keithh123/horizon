@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.3.1 hand-added Immersive Portals instance: crash fixes (2026-11-22)
+
+Immersive Portals, Immersive Infinity, immptl-compat and Make it Compatible: Immersive Portals are **not** in the pack
+roster or the .mrpack; they were added by hand to the `ProjectHorizon-0.3.1` Prism instance. Two crashes there:
+
+- Create New World crashed: Immersive Infinity's `custom_portal_generation` datapack registry had 42 of 70 definitions
+  referencing blocks/items of mods that are not installed (DivineRPG, Blue Skies, OrePortal, ...). Fixed by
+  `scripts/gen_portal_guards.py`, which re-emits those 42 under `datapacks/immersive_infinity/` with a `neoforge:conditions`
+  `mod_loaded` guard (portal returns by itself if the mod is added). The 28 working definitions (Aether, Deeper and Darker,
+  Undergarden x4, Twilight Forest x2, and the ones with no registry references) are untouched. Shipped in the .mrpack
+  as `kubejs/data`; inert without Immersive Infinity.
+- World join crashed: Make it Compatible: Immersive Portals 1.0.0 targets an older Voxy; with Voxy 0.2.16-beta / Roxy
+  0.4.2.1 / Sodium 0.8.13 two of its mixins fail (`voxy$clearBoundOnSectionRemoved` handler and the
+  `ChunkBoundRenderer.delayQueueIndex` @Shadow field do not exist). No newer build found, so
+  `scripts/patch_micimmptl.py` empties the add-on's Voxy mixin config. Voxy is unmodified and renders the main view; Voxy
+  LODs are not drawn inside portal views.
+
 ## 0.3.1 (2026-11-22): quest book, hats, resource pack
 
 Built and statically checked, headless-server tested, then played in a fresh Prism import (see the client pass below and

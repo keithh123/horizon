@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "project_alpha"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "project_alpha:a_space",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "project_alpha:modified_iron_block",
+    "area_block": "project_alpha:a_space_portal",
+    "to_frame_block": "project_alpha:modified_iron_block",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "project_alpha:a_space"
+  }
+}

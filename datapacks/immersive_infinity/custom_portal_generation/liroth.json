@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "liroth"
+    }
+  ],
+  "schema_version": "imm_ptl:v1",
+  "from": [
+    "minecraft:overworld"
+  ],
+  "to": "liroth:liroth_dimension",
+  "form": {
+    "type": "imm_ptl:try_hard_to_match",
+    "from_frame_block": "liroth:dimensional_communicator",
+    "area_block": "liroth:liroth_dimension_portal",
+    "to_frame_block": "liroth:dimensional_communicator",
+    "generate_frame_if_not_found": true
+  },
+  "trigger": {
+    "type": "imm_ptl:use_item",
+    "item": "minecraft:flint_and_steel"
+  }
+}
