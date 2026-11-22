@@ -6,15 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_house"
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost_forge"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_6"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_7"
+          "loot_table_id": "nova_structures:chests/mangrove_witchhud"
         }
       ]
     }

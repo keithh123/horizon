@@ -1,0 +1,101 @@
+{
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "relics:amphibian_boot"
+    },
+    {
+      "item": "relics:aqua_walker"
+    },
+    {
+      "item": "relics:bastion_ring"
+    },
+    {
+      "item": "relics:chorus_inhibitor"
+    },
+    {
+      "item": "relics:drowned_belt"
+    },
+    {
+      "item": "relics:elytra_booster"
+    },
+    {
+      "item": "relics:enders_hand"
+    },
+    {
+      "item": "relics:holy_locket"
+    },
+    {
+      "item": "relics:hunter_belt"
+    },
+    {
+      "item": "relics:ice_breaker"
+    },
+    {
+      "item": "relics:ice_skates"
+    },
+    {
+      "item": "relics:infinity_ham"
+    },
+    {
+      "item": "relics:jellyfish_necklace"
+    },
+    {
+      "item": "relics:leather_belt"
+    },
+    {
+      "item": "relics:magic_mirror"
+    },
+    {
+      "item": "relics:magma_walker"
+    },
+    {
+      "item": "relics:midnight_robe"
+    },
+    {
+      "item": "relics:phantom_boot"
+    },
+    {
+      "item": "relics:rage_glove"
+    },
+    {
+      "item": "relics:reflection_necklace"
+    },
+    {
+      "item": "relics:roller_skates"
+    },
+    {
+      "item": "relics:shadow_glaive"
+    },
+    {
+      "item": "relics:space_dissector"
+    },
+    {
+      "item": "relics:spore_sack"
+    },
+    {
+      "item": "relics:springy_boot"
+    },
+    {
+      "item": "relics:wool_mitten"
+    }
+  ],
+  "outputs": [
+    {
+      "min_count": 2,
+      "max_count": 3,
+      "stack": {
+        "id": "horizon:wayfarer_shard",
+        "count": 1
+      }
+    },
+    {
+      "min_count": 2,
+      "max_count": 4,
+      "stack": {
+        "id": "apotheosis:gem_dust",
+        "count": 1
+      }
+    }
+  ]
+}

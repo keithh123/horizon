@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_grave"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_hallway"
+          "loot_table_id": "betterstrongholds:chests/library_md"
         }
       ]
     }

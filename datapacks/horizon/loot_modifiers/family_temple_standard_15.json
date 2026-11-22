@@ -6,11 +6,19 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/stray_fort_archer"
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_banner"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/stray_fort_tresure"
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_dispenser"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge_chest"
         }
       ]
     }

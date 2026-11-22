@@ -6,15 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/basement"
+          "loot_table_id": "irons_spellbooks:chests/evoker_fort"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/dungeon"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/tower"
+          "loot_table_id": "irons_spellbooks:chests/evoker_fort/guard_tower"
         }
       ]
     }

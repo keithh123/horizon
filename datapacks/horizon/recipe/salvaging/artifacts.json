@@ -1,0 +1,161 @@
+{
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "artifacts:anglers_hat"
+    },
+    {
+      "item": "artifacts:antidote_vessel"
+    },
+    {
+      "item": "artifacts:aqua_dashers"
+    },
+    {
+      "item": "artifacts:bunny_hoppers"
+    },
+    {
+      "item": "artifacts:charm_of_shrinking"
+    },
+    {
+      "item": "artifacts:charm_of_sinking"
+    },
+    {
+      "item": "artifacts:chorus_totem"
+    },
+    {
+      "item": "artifacts:cloud_in_a_bottle"
+    },
+    {
+      "item": "artifacts:cowboy_hat"
+    },
+    {
+      "item": "artifacts:cross_necklace"
+    },
+    {
+      "item": "artifacts:crystal_heart"
+    },
+    {
+      "item": "artifacts:digging_claws"
+    },
+    {
+      "item": "artifacts:feral_claws"
+    },
+    {
+      "item": "artifacts:fire_gauntlet"
+    },
+    {
+      "item": "artifacts:flame_pendant"
+    },
+    {
+      "item": "artifacts:flippers"
+    },
+    {
+      "item": "artifacts:golden_hook"
+    },
+    {
+      "item": "artifacts:helium_flamingo"
+    },
+    {
+      "item": "artifacts:kitty_slippers"
+    },
+    {
+      "item": "artifacts:lucky_scarf"
+    },
+    {
+      "item": "artifacts:night_vision_goggles"
+    },
+    {
+      "item": "artifacts:novelty_drinking_hat"
+    },
+    {
+      "item": "artifacts:obsidian_skull"
+    },
+    {
+      "item": "artifacts:onion_ring"
+    },
+    {
+      "item": "artifacts:panic_necklace"
+    },
+    {
+      "item": "artifacts:pickaxe_heater"
+    },
+    {
+      "item": "artifacts:plastic_drinking_hat"
+    },
+    {
+      "item": "artifacts:pocket_piston"
+    },
+    {
+      "item": "artifacts:power_glove"
+    },
+    {
+      "item": "artifacts:rooted_boots"
+    },
+    {
+      "item": "artifacts:running_shoes"
+    },
+    {
+      "item": "artifacts:scarf_of_invisibility"
+    },
+    {
+      "item": "artifacts:shock_pendant"
+    },
+    {
+      "item": "artifacts:snorkel"
+    },
+    {
+      "item": "artifacts:snowshoes"
+    },
+    {
+      "item": "artifacts:steadfast_spikes"
+    },
+    {
+      "item": "artifacts:strider_shoes"
+    },
+    {
+      "item": "artifacts:superstitious_hat"
+    },
+    {
+      "item": "artifacts:thorn_pendant"
+    },
+    {
+      "item": "artifacts:umbrella"
+    },
+    {
+      "item": "artifacts:universal_attractor"
+    },
+    {
+      "item": "artifacts:vampiric_glove"
+    },
+    {
+      "item": "artifacts:villager_hat"
+    },
+    {
+      "item": "artifacts:warp_drive"
+    },
+    {
+      "item": "artifacts:whoopee_cushion"
+    },
+    {
+      "item": "artifacts:withered_bracelet"
+    }
+  ],
+  "outputs": [
+    {
+      "min_count": 1,
+      "max_count": 2,
+      "stack": {
+        "id": "horizon:wayfarer_shard",
+        "count": 1
+      }
+    },
+    {
+      "min_count": 1,
+      "max_count": 3,
+      "stack": {
+        "id": "apotheosis:gem_dust",
+        "count": 1
+      }
+    }
+  ]
+}

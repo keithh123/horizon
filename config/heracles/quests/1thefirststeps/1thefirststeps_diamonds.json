@@ -14,7 +14,7 @@
       "1 - The First Steps": {
         "position": [
           192,
-          40
+          36
         ]
       }
     }
@@ -38,7 +38,7 @@
     "r0": {
       "type": "heracles:item",
       "item": {
-        "id": "horizon:wayfarer_shard",
+        "id": "minecraft:spyglass",
         "count": 1
       }
     }

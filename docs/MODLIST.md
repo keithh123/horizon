@@ -1,6 +1,6 @@
-# Mod list - Project Horizon 0.1.0
+# Mod list - Project Horizon 0.2.0
 
-Minecraft 1.21.1 - NeoForge 21.1.267 - 112 mods - generated 2026-11-21 from `manifests/lock.json`.
+Minecraft 1.21.1 - NeoForge 21.1.267 - 116 mods - generated 2026-11-21 from `manifests/lock.json`.
 
 Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/server metadata (the pack installs everything on the client because singleplayer runs an integrated server).
 
@@ -69,7 +69,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [The Bumblezone - NeoForge/Forge](https://modrinth.com/project/38tpSycf) | `7.19.3+1.21.1-neoforge` | release | req/req | LicenseRef-All-Rights-Reserved | Unique bee dimension with its own challenge/quest-like progression. |
 | [The Undergarden](https://modrinth.com/project/Ejfl5qDL) | `0.9.6` | beta | req/req | LicenseRef-All-Rights-Reserved | Underground dimension with a boss and its own material tier. |
 
-## Rpg (12)
+## Rpg (13)
 
 | Mod | Version | Channel | Side (c/s) | License | Why |
 |---|---|---|---|---|---|
@@ -80,6 +80,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Artifacts](https://modrinth.com/project/P0Mu4wcQ) | `13.2.5` | release | req/req | MIT | Exploration-found accessories (common/uncommon loot). |
 | [Better Combat](https://modrinth.com/project/5sy6g3kz) | `2.4.0+1.21.1-neoforge` | release | req/req | LicenseRef-All-Rights-Reserved | Directional, combo-based melee. |
 | [Curios API](https://modrinth.com/project/vvuO3ImH) | `9.6.0+1.21.1` | release | req/req | LGPL-3.0-or-later | Accessory slot framework. |
+| [Gateways to Eternity](https://modrinth.com/project/8OIeAukW) | `1.21.1-5.1.0` | release | req/req | MIT | Bounded, readable wave challenges (fixed waves, fixed entity counts, visible timer). Activates the gateway data Apotheosis already ships and hosts Horizon's late-game Trials, which consume exploration relics instead of producing them. |
 | [L_Ender's Cataclysm](https://modrinth.com/project/46KJle7n) | `3.33` | release | req/req | CC-BY-NC-ND-4.0 | Late-game structure bosses with progression-defining drops. |
 | [Mowzie's Mobs](https://modrinth.com/project/BFbX9xcm) | `1.8.2` | release | req/req | LicenseRef-Mowzies-Mobs-License | Mid-game overworld mini-bosses that make exploring dangerous. |
 | [Relics](https://modrinth.com/project/OCJRPujW) | `0.10.7.8` | release | req/req | LicenseRef-All-Rights-Reserved | Levelling relics found in structures (rare/legendary loot). |
@@ -112,17 +113,19 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Modern Industrialization](https://modrinth.com/project/Gov5Dboq) | `2.5.13` | release | req/req | MIT | Deep multiblock industrial progression (steam -> electric -> fusion). |
 | [Powah!](https://modrinth.com/project/KZO4S4DO) | `6.2.10-neoforge` | release | req/req | LGPL-3.0-only | Mid-game FE generation tiers, simple to learn. |
 
-## Qol (15)
+## Qol (17)
 
 | Mod | Version | Channel | Side (c/s) | License | Why |
 |---|---|---|---|---|---|
 | [AppleSkin](https://modrinth.com/project/EsAfCjCV) | `3.0.9+mc1.21` | release | opt/opt | Unlicense | Food/saturation readout. |
 | [Controlling](https://modrinth.com/project/xv94TkTM) | `19.0.5` | release | req/uns | MIT | Searchable keybinds and conflict view. |
+| [Corpse](https://modrinth.com/project/WrpuIfhw) | `neoforge-1.21.1-1.1.22` | release | req/req | LicenseRef-All-Rights-Reserved | Death recovery: items stay in a corpse at the death spot (also for void deaths) instead of despawning, so dying costs a trip back, not the whole kit. |
 | [EMI](https://modrinth.com/project/fRiHVvU7) | `1.1.24+1.21.1+neoforge` | release | req/opt | MIT | Primary recipe viewer with recipe trees. |
 | [Farmer's Delight](https://modrinth.com/project/R2OftAxM) | `1.21.1-1.3.4` | release | req/req | MIT | Food variety that makes survival more than bread. |
 | [Jade 🔍](https://modrinth.com/project/nvQzSEkH) | `15.10.6+neoforge` | release | opt/opt | CC-BY-NC-SA-4.0 | Block/entity tooltips. |
 | [Just Enough Items (JEI)](https://modrinth.com/project/u6dRKJwZ) | `19.64.0.455` | release | opt/opt | MIT | Loads JEI-only plugins (Create, etc.); EMI hides JEI's UI. |
 | [KubeJS](https://modrinth.com/project/umyGl7zF) | `2101.7.2-build.381` | release | opt/opt | LGPL-3.0-only | Recipe/loot/progression scripting. |
+| [Lootr](https://modrinth.com/project/EltpO5cN) | `1.21.1-1.11.38.127` | release | req/req | MIT | Per-player structure loot: each player opens their own copy of every structure container, so the expedition reward budget (docs/LOOT.md) holds per player in multiplayer instead of first-come-first-served. |
 | [Mouse Tweaks](https://modrinth.com/project/aC3cM3Vq) | `1.21-2.26.1-neoforge` | release | req/uns | BSD-3-Clause | Inventory drag/scroll handling. |
 | [Odyssey Quests](https://modrinth.com/project/lo90fZoB) | `2.0.3` | beta | req/req | MIT | Quest book (Heracles). FTB Quests is CurseForge-only and cannot be in an .mrpack. |
 | [Polymorph](https://modrinth.com/project/tagwiZkJ) | `1.1.0+1.21.1` | release | req/req | LGPL-3.0-or-later | Resolves recipe output conflicts between mods. |
@@ -132,12 +135,13 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Xaero's Minimap](https://modrinth.com/project/1bokaNcj) | `neoforge-1.21.1-26.6.0` | release | req/opt | LicenseRef-All-Rights-Reserved | Minimap. |
 | [Xaero's World Map](https://modrinth.com/project/NcUtCpym) | `neoforge-1.21.1-1.47.0` | release | req/opt | LicenseRef-All-Rights-Reserved | World map. |
 
-## Atmosphere (2)
+## Atmosphere (3)
 
 | Mod | Version | Channel | Side (c/s) | License | Why |
 |---|---|---|---|---|---|
 | [AmbientSounds](https://modrinth.com/project/fM515JnW) | `6.3.11` | release | req/uns | LGPL-3.0-only | Biome/time-aware ambient soundscapes. |
 | [Particle Rain](https://modrinth.com/project/nrikgvxm) | `v4.0.4+1.21.1-neoforge` | release | req/uns | MIT | Better weather particles. |
+| [Subtle Effects](https://modrinth.com/project/4q8UOK1d) | `1.15.3` | release | req/opt | LicenseRef-All-Rights-Reserved | Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config. |
 
 ## Dependency (27)
 
@@ -151,7 +155,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Create: Dragons Plus](https://modrinth.com/project/dzb1a5WV) | `1.11.9` | release | req/req | LGPL-3.0-or-later | Required by create-enchantment-industry |
 | [CreativeCore](https://modrinth.com/project/OsZiaDHq) | `2.13.55` | release | req/opt | LGPL-3.0-only | Required by ambientsounds |
 | [Cristel Lib](https://modrinth.com/project/cl223EMc) | `neoforge-1.21.1-3.1.7` | release | opt/req | CC-BY-NC-ND-4.0 | Required by towns-and-towers |
-| [Fzzy Config](https://modrinth.com/project/hYykXjDp) | `0.7.7+fix1+1.21+neoforge` | release | req/req | LicenseRef-TDL-M | Required by simply-swords, simply-tooltips |
+| [Fzzy Config](https://modrinth.com/project/hYykXjDp) | `0.7.7+fix1+1.21+neoforge` | release | req/req | LicenseRef-TDL-M | Required by simply-swords, simply-tooltips, subtle-effects |
 | [Geckolib](https://modrinth.com/project/8BmcQJ2H) | `4.9.3` | release | req/opt | MIT | Required by mowzies-mobs, occultism |
 | [GuideME](https://modrinth.com/project/Ck4E7v7R) | `21.1.22` | release | req/req | LicenseRef-Multiple-OSS-Licenses | Required by ae2, modern-industrialization, powah |
 | [Kotlin for Forge](https://modrinth.com/project/ordsPcFz) | `5.13.0` | release | opt/opt | LGPL-2.1-only | Required by fzzy-config |
@@ -161,7 +165,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | [Modonomicon](https://modrinth.com/project/692GClaE) | `1.21.1-1.123.1` | release | req/req | MIT AND CC-BY-4.0 | Required by occultism |
 | [oωo (owo-lib)](https://modrinth.com/project/ccKDOlHs) | `0.12.15.6-beta.1+1.21` | beta | req/req | MIT | Required by aether |
 | [Patchouli](https://modrinth.com/project/nU0bVIaL) | `1.21.1-93-neoforge` | release | req/req | CC-BY-NC-SA-3.0 | Required by apotheosis |
-| [Placebo](https://modrinth.com/project/tCkE8p2N) | `1.21.1-9.9.4` | release | opt/opt | MIT | Required by apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners |
+| [Placebo](https://modrinth.com/project/tCkE8p2N) | `1.21.1-9.9.4` | release | opt/opt | MIT | Required by apotheosis, apothic-attributes, apothic-enchanting, apothic-spawners, gateways-to-eternity |
 | [playerAnimator](https://modrinth.com/project/gedNE4y2) | `2.0.4+1.21.1-forge` | beta | req/req | MIT | Required by better-combat |
 | [Resourceful Lib](https://modrinth.com/project/G1hIVOrD) | `3.0.12` | release | req/req | MIT | Required by odyssey-quests, the-bumblezone |
 | [Rhino](https://modrinth.com/project/sk9knFPE) | `2101.2.7-build.85+Rhino-1.21` | release | opt/opt | MPL-2.0 | Required by kubejs |
@@ -192,3 +196,9 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | enderio | 1.21.1 line is beta-only; MI + Powah + Create Additions cover its role. |
 | industrial-foregoing | Requires Titanium beta; overlaps MI. Excluded for stability. |
 | advancedperipherals | Alpha on 1.21.1. |
+| idas | Modrinth metadata for 1.13.7+1.21.1-neoforge requires Quark, Supplementaries, Create and Integrated API: two large content mods to get one structure pack, on top of 18 structure mods. |
+| simplymore | Only an alpha build (1.3.0_alpha5) for NeoForge 1.21.1; would dilute the Simply Swords/Apotheosis weapon pool. |
+| particular-reforged | Overlaps Subtle Effects (ambient particles). One ambient-particle mod is enough; Subtle Effects has finer per-effect config. |
+| loot-beams-refork | Apotheosis already draws rarity beams/particles for affix items; a second beam renderer duplicates them. Horizon finds use server-side pickup feedback instead. |
+| explorers-compass / natures-compass | Point-to-anything compasses remove discovery. Clues come from exploration maps in loot and quest guidance instead. |
+| yungs-cave-biomes | Adds cave biomes = a second biome source under Terralith's cave biomes. |

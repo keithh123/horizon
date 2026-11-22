@@ -6,11 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/mangrove_hut/hidden_potion_storage"
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/captain_quarters"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage"
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/food_barrel"
         }
       ]
     }

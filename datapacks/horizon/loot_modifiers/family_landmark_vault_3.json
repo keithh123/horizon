@@ -6,15 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure"
+          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_treasure"
         }
       ]
     }

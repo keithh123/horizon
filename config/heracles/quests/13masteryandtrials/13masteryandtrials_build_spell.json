@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:inscription_table"
+      }
+    },
+    "title": "Spellblade and Scholar",
+    "description": [
+      "&eElemental casting:&r Iron's Spells schools (fire, ice, lightning, holy, ender, blood, evocation, nature).",
+      "Spell power and school attributes come from Iron's gear and spellbooks; Apotheosis gems still boost the wearer.",
+      "Mageslayer (Starlit Voidglass) is the anti-caster gem. Inks: Ancient Core = epic, Starforged Heart = legendary."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          144
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

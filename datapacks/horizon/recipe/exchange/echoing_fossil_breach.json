@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "horizon_exchange",
+  "ingredients": [
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "apotheosis:gem_dust"
+    },
+    {
+      "item": "apotheosis:gem_dust"
+    }
+  ],
+  "result": {
+    "id": "apotheosis:gem",
+    "count": 1,
+    "components": {
+      "apotheosis:gem": "apotheosis:core/breach",
+      "apotheosis:purity": "flawed"
+    }
+  }
+}

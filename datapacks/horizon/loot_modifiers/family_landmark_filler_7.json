@@ -15,6 +15,18 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms"
         }
       ]
     }

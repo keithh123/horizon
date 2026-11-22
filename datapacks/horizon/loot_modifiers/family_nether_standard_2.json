@@ -6,19 +6,31 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_hub"
+          "loot_table_id": "betterfortresses:chests/worship"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:reactor/office"
+          "loot_table_id": "incendium:sanctum/banners"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/shipwrecks/crimson/map"
+          "loot_table_id": "incendium:sanctum/lower_loot"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/shipwrecks/warped/map"
+          "loot_table_id": "incendium:sanctum/tax_collector"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/bastion_bridge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/bastion_other"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/temples/basalt"
         }
       ]
     }

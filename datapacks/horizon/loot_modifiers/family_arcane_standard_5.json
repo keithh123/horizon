@@ -6,7 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/mountain_tower/mountain_tower"
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/basement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/tower"
         }
       ]
     }

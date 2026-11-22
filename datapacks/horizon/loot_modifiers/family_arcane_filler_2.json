@@ -6,7 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/cask"
+          "loot_table_id": "irons_spellbooks:chests/citadel/citadel_bookshelf"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_supplies"
         }
       ]
     }

@@ -8,13 +8,13 @@
     },
     "title": "Cut the Cord",
     "description": [
-      "Wireless terminals put the network in your pocket - on expeditions too."
+      "Wireless terminals put the network in your pocket - on expeditions too. &7(Item task.)"
     ],
     "groups": {
       "8 - The Digital Age": {
         "position": [
           144,
-          40
+          36
         ]
       }
     }

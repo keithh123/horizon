@@ -11,6 +11,14 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterfortresses:chests/storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:pipeline/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:pipeline/junk"
         }
       ]
     }

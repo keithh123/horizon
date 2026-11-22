@@ -1,0 +1,205 @@
+# GENERATED calibration run: real placed structures -> real per-table container counts (scripts/calibrate.py)
+# 0 dungeons_arise:keep_kayra
+execute in minecraft:overworld run forceload add 5840 5840 6095 6095
+execute in minecraft:overworld run forceload add 5840 6096 6095 6159
+execute in minecraft:overworld run forceload add 6096 5840 6159 6095
+execute in minecraft:overworld run forceload add 6096 6096 6159 6159
+execute in minecraft:overworld run place structure dungeons_arise:keep_kayra 6000 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 6000 70 6000 run horizon audit 150 20
+execute in minecraft:overworld run forceload remove all
+# 1 dungeons_arise:kisegi_sanctuary
+execute in minecraft:overworld run forceload add 7024 5824 7279 6079
+execute in minecraft:overworld run forceload add 7024 6080 7279 6175
+execute in minecraft:overworld run forceload add 7280 5824 7375 6079
+execute in minecraft:overworld run forceload add 7280 6080 7375 6175
+execute in minecraft:overworld run place structure dungeons_arise:kisegi_sanctuary 7200 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 7200 70 6000 run horizon audit 170 20
+execute in minecraft:overworld run forceload remove all
+# 2 dungeons_arise:shiraz_palace
+execute in minecraft:overworld run forceload add 8224 5824 8479 6079
+execute in minecraft:overworld run forceload add 8224 6080 8479 6175
+execute in minecraft:overworld run forceload add 8480 5824 8575 6079
+execute in minecraft:overworld run forceload add 8480 6080 8575 6175
+execute in minecraft:overworld run place structure dungeons_arise:shiraz_palace 8400 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 8400 70 6000 run horizon audit 170 20
+execute in minecraft:overworld run forceload remove all
+# 3 dungeons_arise:mechanical_nest
+execute in minecraft:overworld run forceload add 9392 5792 9647 6047
+execute in minecraft:overworld run forceload add 9392 6048 9647 6207
+execute in minecraft:overworld run forceload add 9648 5792 9807 6047
+execute in minecraft:overworld run forceload add 9648 6048 9807 6207
+execute in minecraft:overworld run place structure dungeons_arise:mechanical_nest 9600 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 9600 70 6000 run horizon audit 200 20
+execute in minecraft:overworld run forceload remove all
+# 4 dungeons_arise:plague_asylum
+execute in minecraft:overworld run forceload add 10656 5856 10911 6111
+execute in minecraft:overworld run forceload add 10656 6112 10911 6143
+execute in minecraft:overworld run forceload add 10912 5856 10943 6111
+execute in minecraft:overworld run forceload add 10912 6112 10943 6143
+execute in minecraft:overworld run place structure dungeons_arise:plague_asylum 10800 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 10800 70 6000 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 5 dungeons_arise:thornborn_towers
+execute in minecraft:overworld run forceload add 11856 5856 12111 6111
+execute in minecraft:overworld run forceload add 11856 6112 12111 6143
+execute in minecraft:overworld run forceload add 12112 5856 12143 6111
+execute in minecraft:overworld run forceload add 12112 6112 12143 6143
+execute in minecraft:overworld run place structure dungeons_arise:thornborn_towers 12000 70 6000
+WAIT 6
+execute in minecraft:overworld positioned 12000 70 6000 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 6 dungeons_arise:bandit_towers
+execute in minecraft:overworld run forceload add 5856 7056 6111 7311
+execute in minecraft:overworld run forceload add 5856 7312 6111 7343
+execute in minecraft:overworld run forceload add 6112 7056 6143 7311
+execute in minecraft:overworld run forceload add 6112 7312 6143 7343
+execute in minecraft:overworld run place structure dungeons_arise:bandit_towers 6000 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 6000 70 7200 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 7 dungeons_arise:mining_complex
+execute in minecraft:overworld run forceload add 7040 7040 7295 7295
+execute in minecraft:overworld run forceload add 7040 7296 7295 7359
+execute in minecraft:overworld run forceload add 7296 7040 7359 7295
+execute in minecraft:overworld run forceload add 7296 7296 7359 7359
+execute in minecraft:overworld run place structure dungeons_arise:mining_complex 7200 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 7200 70 7200 run horizon audit 150 20
+execute in minecraft:overworld run forceload remove all
+# 8 dungeons_arise:illager_fort
+execute in minecraft:overworld run forceload add 8288 7088 8511 7311
+execute in minecraft:overworld run place structure dungeons_arise:illager_fort 8400 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 8400 70 7200 run horizon audit 110 20
+execute in minecraft:overworld run forceload remove all
+# 9 dungeons_arise:heavenly_conqueror
+execute in minecraft:overworld run forceload add 9472 7072 9727 7327
+execute in minecraft:overworld run place structure dungeons_arise:heavenly_conqueror 9600 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 9600 70 7200 run horizon audit 120 20
+execute in minecraft:overworld run forceload remove all
+# 10 dungeons_arise:undead_pirate_ship
+execute in minecraft:overworld run forceload add 10704 7104 10895 7295
+execute in minecraft:overworld run place structure dungeons_arise:undead_pirate_ship 10800 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 10800 70 7200 run horizon audit 90 20
+execute in minecraft:overworld run forceload remove all
+# 11 cataclysm:abandoned_village
+execute in minecraft:overworld run forceload add 11888 7088 12111 7311
+execute in minecraft:overworld run place structure cataclysm:abandoned_village 12000 70 7200
+WAIT 6
+execute in minecraft:overworld positioned 12000 70 7200 run horizon audit 110 20
+execute in minecraft:overworld run forceload remove all
+# 12 minecraft:village_plains
+execute in minecraft:overworld run forceload add 5888 8288 6111 8511
+execute in minecraft:overworld run place structure minecraft:village_plains 6000 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 6000 70 8400 run horizon audit 110 20
+execute in minecraft:overworld run forceload remove all
+# 13 ctov:large/village_plains
+execute in minecraft:overworld run forceload add 7056 8256 7311 8511
+execute in minecraft:overworld run forceload add 7056 8512 7311 8543
+execute in minecraft:overworld run forceload add 7312 8256 7343 8511
+execute in minecraft:overworld run forceload add 7312 8512 7343 8543
+execute in minecraft:overworld run place structure ctov:large/village_plains 7200 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 7200 70 8400 run horizon audit 140 20
+execute in minecraft:overworld run forceload remove all
+# 14 minecraft:stronghold
+execute in minecraft:overworld run forceload add 8256 8256 8511 8511
+execute in minecraft:overworld run forceload add 8256 8512 8511 8543
+execute in minecraft:overworld run forceload add 8512 8256 8543 8511
+execute in minecraft:overworld run forceload add 8512 8512 8543 8543
+execute in minecraft:overworld run place structure minecraft:stronghold 8400 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 8400 70 8400 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 15 minecraft:mineshaft
+execute in minecraft:overworld run forceload add 9488 8288 9711 8511
+execute in minecraft:overworld run place structure minecraft:mineshaft 9600 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 9600 70 8400 run horizon audit 110 20
+execute in minecraft:overworld run forceload remove all
+# 16 minecraft:mansion
+execute in minecraft:overworld run forceload add 10688 8288 10911 8511
+execute in minecraft:overworld run place structure minecraft:mansion 10800 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 10800 70 8400 run horizon audit 110 20
+execute in minecraft:overworld run forceload remove all
+# 17 betterdeserttemples:desert_temple
+execute in minecraft:overworld run forceload add 11904 8304 12095 8495
+execute in minecraft:overworld run place structure betterdeserttemples:desert_temple 12000 70 8400
+WAIT 6
+execute in minecraft:overworld positioned 12000 70 8400 run horizon audit 90 20
+execute in minecraft:overworld run forceload remove all
+# 18 irons_spellbooks:citadel
+execute in minecraft:overworld run forceload add 5856 9456 6111 9711
+execute in minecraft:overworld run forceload add 5856 9712 6111 9743
+execute in minecraft:overworld run forceload add 6112 9456 6143 9711
+execute in minecraft:overworld run forceload add 6112 9712 6143 9743
+execute in minecraft:overworld run place structure irons_spellbooks:citadel 6000 70 9600
+WAIT 6
+execute in minecraft:overworld positioned 6000 70 9600 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 19 minecraft:ancient_city
+execute in minecraft:overworld run forceload add 7056 9456 7311 9711
+execute in minecraft:overworld run forceload add 7056 9712 7311 9743
+execute in minecraft:overworld run forceload add 7312 9456 7343 9711
+execute in minecraft:overworld run forceload add 7312 9712 7343 9743
+execute in minecraft:overworld run place structure minecraft:ancient_city 7200 70 9600
+WAIT 6
+execute in minecraft:overworld positioned 7200 70 9600 run horizon audit 130 20
+execute in minecraft:overworld run forceload remove all
+# 20 incendium:forbidden_castle
+execute in minecraft:the_nether run forceload add 1856 2560 2111 2815
+execute in minecraft:the_nether run forceload add 1856 2816 2111 2847
+execute in minecraft:the_nether run forceload add 2112 2560 2143 2815
+execute in minecraft:the_nether run forceload add 2112 2816 2143 2847
+execute in minecraft:the_nether run place structure incendium:forbidden_castle 2000 50 2700
+WAIT 6
+execute in minecraft:the_nether positioned 2000 50 2700 run horizon audit 140 20
+execute in minecraft:the_nether run forceload remove all
+# 21 incendium:sanctum
+execute in minecraft:the_nether run forceload add 2560 2560 2815 2815
+execute in minecraft:the_nether run forceload add 2560 2816 2815 2831
+execute in minecraft:the_nether run forceload add 2816 2560 2831 2815
+execute in minecraft:the_nether run forceload add 2816 2816 2831 2831
+execute in minecraft:the_nether run place structure incendium:sanctum 2700 50 2700
+WAIT 6
+execute in minecraft:the_nether positioned 2700 50 2700 run horizon audit 130 20
+execute in minecraft:the_nether run forceload remove all
+# 22 betterfortresses:fortress
+execute in minecraft:the_nether run forceload add 3248 2560 3503 2815
+execute in minecraft:the_nether run forceload add 3248 2816 3503 2847
+execute in minecraft:the_nether run forceload add 3504 2560 3551 2815
+execute in minecraft:the_nether run forceload add 3504 2816 3551 2847
+execute in minecraft:the_nether run place structure betterfortresses:fortress 3400 50 2700
+WAIT 6
+execute in minecraft:the_nether positioned 3400 50 2700 run horizon audit 140 20
+execute in minecraft:the_nether run forceload remove all
+# 23 minecraft:bastion_remnant
+execute in minecraft:the_nether run forceload add 4000 2608 4191 2799
+execute in minecraft:the_nether run place structure minecraft:bastion_remnant 4100 50 2700
+WAIT 6
+execute in minecraft:the_nether positioned 4100 50 2700 run horizon audit 90 20
+execute in minecraft:the_nether run forceload remove all
+# 24 minecraft:end_city
+execute in minecraft:the_end run forceload add 480 3280 735 3535
+execute in minecraft:the_end run place structure minecraft:end_city 600 70 3400
+WAIT 6
+execute in minecraft:the_end positioned 600 70 3400 run horizon audit 120 20
+execute in minecraft:the_end run forceload remove all
+# 25 nova_structures:end_castle
+execute in minecraft:the_end run forceload add 1152 3248 1407 3503
+execute in minecraft:the_end run forceload add 1152 3504 1407 3551
+execute in minecraft:the_end run forceload add 1408 3248 1455 3503
+execute in minecraft:the_end run forceload add 1408 3504 1455 3551
+execute in minecraft:the_end run place structure nova_structures:end_castle 1300 70 3400
+WAIT 6
+execute in minecraft:the_end positioned 1300 70 3400 run horizon audit 140 20
+execute in minecraft:the_end run forceload remove all

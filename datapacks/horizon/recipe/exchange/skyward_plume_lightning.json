@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "horizon_exchange",
+  "ingredients": [
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "apotheosis:gem_dust"
+    },
+    {
+      "item": "apotheosis:gem_dust"
+    }
+  ],
+  "result": {
+    "id": "apotheosis:gem",
+    "count": 1,
+    "components": {
+      "apotheosis:gem": "apotheosis:core/lightning",
+      "apotheosis:purity": "flawed"
+    }
+  }
+}

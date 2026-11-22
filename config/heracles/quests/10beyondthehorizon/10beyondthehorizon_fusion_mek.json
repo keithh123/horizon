@@ -8,13 +8,14 @@
     },
     "title": "Star in a Jar",
     "description": [
-      "Build a Mekanism fusion reactor (needs a Starforged Heart)."
+      "Build a Mekanism fusion reactor (needs a Starforged Heart).",
+      "&7(Item task: the controller. Form the reactor and ignite it to make it useful.)"
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          80
+          72
         ]
       }
     }

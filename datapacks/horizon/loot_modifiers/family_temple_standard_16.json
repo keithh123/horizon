@@ -6,31 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/bedroom"
+          "loot_table_id": "nova_structures:chests/stray_fort_archer"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/dirty_clothes"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/lab"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/music_room"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/potion_brewing"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/pumpkin_room"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/witch_villa/slime_room"
+          "loot_table_id": "nova_structures:chests/stray_fort_tresure"
         }
       ]
     }

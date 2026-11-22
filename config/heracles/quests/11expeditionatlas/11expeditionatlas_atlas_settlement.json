@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bell"
+      }
+    },
+    "title": "Settlements",
+    "description": [
+      "&7Stage: early&r",
+      "Villages, taverns and towns: safe, social, full of supplies. Cartographers sell and stash the maps that point to everything else.",
+      "",
+      "&ePrepare:&r None. Bring emeralds.",
+      "&eSignature rewards:&r Surveyor's Charts (exploration maps to nearby landmarks) in cartographer chests; warp scrolls; food and building blocks.",
+      "&eComing back:&r Trading (villagers restock), new villages in new regions. Containers do not refill.",
+      "&eFeeds into:&r Building (regional styles), travel (warp scrolls, waystones), clues to landmarks."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/settlement"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    },
+    "r1": {
+      "type": "heracles:loottable",
+      "loot_table": "horizon:rewards/quest/chart_temple"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_cutting_table"
+      }
+    },
+    "title": "A Gem of Your Choosing",
+    "description": [
+      "Craft any Expedition Exchange gem (EMI: search the horizon_exchange recipes)."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_exchange"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:recipe",
+      "recipes": [
+        "horizon:exchange/cinder_idol_blood_lord",
+        "horizon:exchange/cinder_idol_inferno",
+        "horizon:exchange/cinder_idol_molten_breach",
+        "horizon:exchange/echoing_fossil_breach",
+        "horizon:exchange/echoing_fossil_guardian",
+        "horizon:exchange/honeyed_seal_splendor",
+        "horizon:exchange/honeyed_seal_verdant_ruin",
+        "horizon:exchange/skyward_plume_lightning",
+        "horizon:exchange/skyward_plume_solar",
+        "horizon:exchange/starlit_voidglass_endersurge",
+        "horizon:exchange/starlit_voidglass_mageslayer",
+        "horizon:exchange/tidebound_doubloon_lunar",
+        "horizon:exchange/tidebound_doubloon_slipstream"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

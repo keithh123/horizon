@@ -14,7 +14,7 @@
       "4 - Forgotten Realms": {
         "position": [
           48,
-          120
+          108
         ]
       }
     }
@@ -28,8 +28,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:changed_dimension",
-      "to": "minecraft:the_end"
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_end"
+      ]
     }
   },
   "rewards": {

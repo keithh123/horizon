@@ -3,12 +3,35 @@
   Run with the game CLOSED, from the instance's horizon-profiles folder:
       powershell -ExecutionPolicy Bypass -File apply-profile.ps1 balanced
   Profiles: performance | balanced | cinematic
-  Edits: options.txt, config/voxy-config.json, config/iris.properties and, when the
-  folder is inside a Prism instance, the instance memory/JVM settings (instance.cfg).
+  Edits (only these keys; everything else in each file is left as you set it):
+    options.txt                      render/simulation distance, max fps, graphics, particles, entity distance
+    config/voxy-config.json          enabled, section_render_distance, service_threads
+    config/voxyworldgenv2.json       enabled, generationRadius, maxActiveTasks, maxQueueSize  (background LOD generation)
+    config/iris.properties           enableShaders, shaderPack
+    shaderpacks/<pack>.txt           the shader preset's option values (Complementary MEDIUM / HIGH ...)
+    effect configs                   from effects.json: ambient particle/sound mods per effect level
+    ../instance.cfg (Prism)          memory and JVM arguments
+  Gameplay, loot and rewards are identical in every profile; only visuals and background generation change.
 #>
 param([Parameter(Mandatory)][ValidateSet('performance','balanced','cinematic')][string]$Profile)
 $ErrorActionPreference = 'Stop'
 function Write-NoBom([string]$Path, $Lines) { [IO.File]::WriteAllText($Path, (($Lines | ForEach-Object { "$_".TrimStart([char]0xFEFF) }) -join "`n") + "`n", (New-Object Text.UTF8Encoding $false)) }
+function Set-JsonKeys([string]$Path, $Pairs) {
+  if (-not (Test-Path $Path)) { Write-Host "  skip (not generated yet): $Path"; return }
+  $j = Get-Content $Path -Raw | ConvertFrom-Json
+  foreach ($k in $Pairs.Keys) { if ($j.PSObject.Properties[$k]) { $j.$k = $Pairs[$k] } else { $j | Add-Member -NotePropertyName $k -NotePropertyValue $Pairs[$k] } }
+  Write-NoBom $Path ($j | ConvertTo-Json -Depth 20)
+}
+function Set-LineKeys([string]$Path, $Pairs, [string]$Sep) {
+  if (-not (Test-Path $Path)) { Write-Host "  skip (not generated yet): $Path"; return }
+  $t = @(Get-Content $Path -Encoding UTF8)
+  foreach ($k in $Pairs.Keys) {
+    $rx = '^(\s*)' + [regex]::Escape($k) + '\s*' + [regex]::Escape($Sep.Trim()) + '.*$'
+    if ($t -match $rx) { $t = $t -replace $rx, ('$1' + $k + $Sep + $Pairs[$k]) } else { Write-Host "  key not found in $(Split-Path -Leaf $Path): $k" }
+  }
+  Write-NoBom $Path $t
+}
+
 $here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $mc = Split-Path -Parent $here
 $p = Get-Content (Join-Path $here "$Profile.json") -Raw | ConvertFrom-Json
@@ -22,25 +45,40 @@ foreach ($prop in $p.vanilla.PSObject.Properties) {
 }
 Write-NoBom $opt $lines
 
-# Voxy
-$vx = Join-Path $mc 'config/voxy-config.json'
-if (Test-Path $vx) {
-  $j = Get-Content $vx -Raw | ConvertFrom-Json
-  $j.enabled = [bool]$p.voxy.enabled
-  $j.section_render_distance = [double]$p.voxy.sectionRenderDistance
-  $j.service_threads = [int]$p.voxy.serviceThreads
-  Write-NoBom $vx ($j | ConvertTo-Json)
-}
+# Voxy + Voxy World Gen
+Set-JsonKeys (Join-Path $mc 'config/voxy-config.json') @{ enabled = [bool]$p.voxy.enabled; section_render_distance = [double]$p.voxy.sectionRenderDistance; service_threads = [int]$p.voxy.serviceThreads }
+$wg = $p.voxyWorldgen
+Set-JsonKeys (Join-Path $mc 'config/voxyworldgenv2.json') @{ enabled = [bool]$wg.enabled; generationRadius = [int]$wg.generationRadius; maxActiveTasks = [int]$wg.maxActiveTasks; maxQueueSize = [int]$wg.maxQueueSize }
 
-# Iris / shader
+# Iris + shader preset options
 $ir = Join-Path $mc 'config/iris.properties'
+$so = (Get-Content (Join-Path $here 'shader_options.json') -Raw | ConvertFrom-Json).$Profile
 if (Test-Path $ir) {
   $t = Get-Content $ir
-  $pack = switch -Wildcard ($p.shader) { 'none' { '' } 'ComplementaryUnbound*' { (Get-ChildItem (Join-Path $mc 'shaderpacks') -Filter 'ComplementaryUnbound*' | Select-Object -First 1).Name }
-                                         default { (Get-ChildItem (Join-Path $mc 'shaderpacks') -Filter 'ComplementaryReimagined*' | Select-Object -First 1).Name } }
+  $pack = if ($so) { $so.pack_file } else { '' }
   $t = $t -replace '^enableShaders=.*', ("enableShaders=" + ($(if ($pack) { 'true' } else { 'false' })))
   if ($pack) { $t = $t -replace '^shaderPack=.*', "shaderPack=$pack" }
   Write-NoBom $ir $t
+}
+if ($so) {
+  $txt = Join-Path $mc ("shaderpacks/" + $so.pack_file + ".txt")
+  $cur = [ordered]@{}
+  if (Test-Path $txt) { foreach ($l in Get-Content $txt) { if ($l -match '^([^#=]+)=(.*)$') { $cur[$Matches[1]] = $Matches[2] } } }
+  foreach ($o in $so.options.PSObject.Properties) { $cur[$o.Name] = $o.Value }
+  Write-NoBom $txt ($cur.GetEnumerator() | ForEach-Object { "$($_.Key)=$($_.Value)" })
+  Write-Host "  shader: $($so.pack_file) preset $($so.preset) ($($so.options.PSObject.Properties.Count) options)"
+}
+
+# Ambient effects (Subtle Effects, Particle Rain, AmbientSounds ...) - see effects.json
+$fxFile = Join-Path $here 'effects.json'
+if (Test-Path $fxFile) {
+  $fx = (Get-Content $fxFile -Raw | ConvertFrom-Json).levels.($p.effects)
+  foreach ($f in $fx.PSObject.Properties) {
+    $path = Join-Path $mc $f.Name; $pairs = @{}
+    foreach ($kv in $f.Value.set.PSObject.Properties) { $pairs[$kv.Name] = $kv.Value }
+    switch ($f.Value.format) { 'json' { Set-JsonKeys $path $pairs } 'toml' { Set-LineKeys $path $pairs ' = ' } default { Set-LineKeys $path $pairs '=' } }
+  }
+  Write-Host "  effects: $($p.effects)"
 }
 
 # Prism instance memory (instance.cfg sits next to the minecraft folder)

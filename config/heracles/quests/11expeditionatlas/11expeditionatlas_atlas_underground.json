@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:spawner"
+      }
+    },
+    "title": "Underground Dungeons",
+    "description": [
+      "&7Stage: early-mid&r",
+      "Spawner rooms, mineshafts, crypts and strongholds. Dark, cramped, spawner-driven.",
+      "",
+      "&ePrepare:&r Iron armour, torches, a shield. Strongholds: diamond gear.",
+      "&eSignature rewards:&r Shards in volume, the first Ancient Cores, spawners for Apothic Spawners.",
+      "&eComing back:&r Spawners can be kept and modified (Apothic Spawners). Mineshafts are huge but low value per chest.",
+      "&eFeeds into:&r Spawners -> mob farms (bounded by spawner count), cores -> sockets."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          72
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/underground"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

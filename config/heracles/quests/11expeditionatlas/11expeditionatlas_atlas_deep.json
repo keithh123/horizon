@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:echo_shard"
+      }
+    },
+    "title": "The Deep (Otherside & Undergarden)",
+    "description": [
+      "&7Stage: mid-late&r",
+      "Ancient Cities, Deeper and Darker's Otherside temples and the Undergarden's catacombs and camps. Sound and darkness matter.",
+      "",
+      "&ePrepare:&r Swift Sneak, night vision, wool to muffle steps, a plan for the Warden.",
+      "&eSignature rewards:&r Echoing Fossils (exchange for Breach/Guardian gems), Ancient Cores, ancient-city hearts (rare), Warden carapace (upstream).",
+      "&eComing back:&r Each Ancient City and Otherside temple is a one-time clear; the Undergarden is a self-contained dimension.",
+      "&eFeeds into:&r Fossils -> armour-piercing/defence gems; cores -> sockets."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          324
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/deep"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 12
+    }
+  }
+}

@@ -8,13 +8,14 @@
     },
     "title": "The Catacombs",
     "description": [
-      "The Dead King waits in the catacombs. Prepare."
+      "The Dead King waits in the catacombs. Prepare.",
+      "His first defeat gives an Ancient Core and a trophy."
     ],
     "groups": {
       "5 - Arcane Studies": {
         "position": [
           96,
-          40
+          36
         ]
       }
     }
@@ -36,11 +37,9 @@
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:ancient_core",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
     }
   }
 }

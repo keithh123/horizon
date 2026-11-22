@@ -1,0 +1,34 @@
+# Load validation + loot + real placed structures (headless). Used by docs/VALIDATION_REPORT.md
+kubejs errors server
+neoforge tps
+# direct table rolls (GLMs fire on /loot too)
+loot spawn 0 200 0 loot minecraft:chests/end_city_treasure
+loot spawn 0 200 0 loot dungeons_arise:chests/keep_kayra/keep_kayra_treasure
+loot spawn 0 200 0 loot cataclysm:entities/ignis
+WAIT 2
+# real placed structures: forceload, place, roll every container 50x, tally per clear
+forceload add 1890 1890 2110 2110
+place structure dungeons_arise:keep_kayra 2000 90 2000
+WAIT 5
+execute positioned 2000 90 2000 run horizon audit 110 50
+forceload remove all
+forceload add -2110 1890 -1890 2110
+place structure dungeons_arise:kisegi_sanctuary -2000 90 2000
+WAIT 5
+execute positioned -2000 90 2000 run horizon audit 110 50
+forceload remove all
+forceload add 3890 -110 4110 110
+place structure minecraft:village_plains 4000 80 0
+WAIT 3
+execute positioned 4000 80 0 run horizon audit 110 200
+forceload remove all
+forceload add -4060 -60 -3940 60
+place structure minecraft:shipwreck -4000 62 0
+WAIT 2
+execute positioned -4000 62 0 run horizon audit 60 400
+forceload remove all
+# trial gate opens and parses
+forceload add 0 0
+open_gateway 8 100 8 horizon:trial/tides
+WAIT 5
+neoforge tps

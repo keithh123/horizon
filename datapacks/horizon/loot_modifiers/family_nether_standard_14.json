@@ -6,23 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/outposts/basalt"
+          "loot_table_id": "repurposed_structures:chests/temples/crimson"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/outposts/crimson"
+          "loot_table_id": "repurposed_structures:chests/temples/soul"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/outposts/nether_brick"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/outposts/soul"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/outposts/warped"
+          "loot_table_id": "repurposed_structures:chests/temples/warped"
         }
       ]
     }

@@ -6,19 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_banner"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_dispenser"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge_chest"
+          "loot_table_id": "nova_structures:chests/illager_hideout_utility"
         }
       ]
     }

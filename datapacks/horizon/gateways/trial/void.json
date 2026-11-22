@@ -1,0 +1,87 @@
+{
+  "size": "medium",
+  "color": "#9a72e8",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "minecraft:enderman",
+          "count": 6
+        },
+        {
+          "entity": "minecraft:endermite",
+          "count": 4
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1200,
+      "setup_time": 160
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:endermaptera",
+          "count": 4
+        },
+        {
+          "entity": "minecraft:enderman",
+          "count": 4
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1600,
+      "setup_time": 160
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:ender_golem",
+          "count": 1
+        },
+        {
+          "entity": "cataclysm:endermaptera",
+          "count": 4
+        },
+        {
+          "entity": "minecraft:enderman",
+          "count": 2
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 2400,
+      "setup_time": 160
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:counted",
+      "count": 2,
+      "reward": {
+        "type": "apotheosis:affix_item",
+        "rarities": [
+          "apotheosis:epic",
+          "apotheosis:mythic"
+        ]
+      }
+    },
+    {
+      "type": "apotheosis:gem",
+      "gems": [
+        "apotheosis:the_end/endersurge",
+        "apotheosis:the_end/mageslayer"
+      ],
+      "purities": [
+        "normal",
+        "flawless"
+      ]
+    },
+    {
+      "type": "gateways:experience",
+      "experience": 2500,
+      "orb_size": 50
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.058
+          "chance": 0.035
         }
       ],
       "entries": [
@@ -31,7 +31,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#horizon:clue/temple",
+              "destination": "horizon:clue/temple",
               "decoration": "minecraft:red_x",
               "zoom": 2,
               "search_radius": 30,

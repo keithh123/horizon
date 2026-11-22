@@ -8,13 +8,14 @@
     },
     "title": "Programmable World",
     "description": [
-      "CC: Tweaked computers and turtles can script anything."
+      "CC: Tweaked computers and turtles can script anything.",
+      "&7(Item task.)"
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          120
+          108
         ]
       }
     }

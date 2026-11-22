@@ -8,7 +8,8 @@
     },
     "title": "Rotation to Power",
     "description": [
-      "Create Crafts & Additions converts rotation to FE and back - the bridge to every other tech mod."
+      "Create Crafts & Additions converts rotation to FE and back - the bridge to every other tech mod.",
+      "&7(Item task: craft an alternator. Crafts & Additions has no advancements to prove it is running.)"
     ],
     "groups": {
       "6 - Mechanical Revolution": {

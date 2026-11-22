@@ -6,15 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal"
+          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_normal"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal"
+          "loot_table_id": "dungeons_arise:spawners/infested_temple/infested_temple_normal"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_normal"
+          "loot_table_id": "dungeons_arise:spawners/kisegi_sanctuary/kisegi_sanctuary_normal"
         }
       ]
     }

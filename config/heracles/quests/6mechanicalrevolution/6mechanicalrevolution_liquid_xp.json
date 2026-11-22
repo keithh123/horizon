@@ -14,7 +14,7 @@
       "6 - Mechanical Revolution": {
         "position": [
           240,
-          40
+          36
         ]
       }
     }
@@ -28,10 +28,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "create_enchantment_industry:printer",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "create_enchantment_industry:experienced_engineer"
+      ]
     }
   },
   "rewards": {

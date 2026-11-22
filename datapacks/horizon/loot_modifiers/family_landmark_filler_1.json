@@ -11,6 +11,18 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_normal"
         }
       ]
     }

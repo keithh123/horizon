@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:end_crystal"
+      }
+    },
+    "title": "End Expeditions",
+    "description": [
+      "&7Stage: late&r",
+      "Nullscape's End: end cities, End castles and lighthouses, wrecks drifting over the void.",
+      "",
+      "&ePrepare:&r Elytra or slow falling, feather falling, ender pearls, ranged weapons for shulkers.",
+      "&eSignature rewards:&r Starlit Voidglass (exchange for Endersurge/Mageslayer gems), elytra, Ancient Cores, rare Starforged Hearts in city treasure.",
+      "&eComing back:&r The outer End is effectively endless; cities repeat with variety thanks to Nullscape terrain.",
+      "&eFeeds into:&r Voidglass -> end gems; hearts -> late tech."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          396
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/end"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

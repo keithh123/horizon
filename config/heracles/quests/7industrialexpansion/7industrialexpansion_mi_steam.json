@@ -8,13 +8,14 @@
     },
     "title": "Steam Age",
     "description": [
-      "Modern Industrialization starts with steam. Its multiblocks grow into a real industrial base."
+      "Modern Industrialization starts with steam. Its multiblocks grow into a real industrial base.",
+      "Completes on MI's bronze furnace advancement."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          40
+          36
         ]
       }
     }
@@ -26,10 +27,10 @@
   "dependencies": [],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "modern_industrialization:bronze_boiler",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "modern_industrialization:bronze_furnace"
+      ]
     }
   },
   "rewards": {

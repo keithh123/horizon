@@ -30,22 +30,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/mangrove_hut"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/burnt_chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/fire_ale_trove"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "irons_spellbooks:chests/sewer_loot"
         },
         {

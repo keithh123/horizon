@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:trophy_cosmic_crystal_entity"
+      }
+    },
+    "title": "Cosmic Crystal",
+    "description": [
+      "A lesser legend. First defeat: Ancient Core + trophy."
+    ],
+    "groups": {
+      "12 - Hall of Legends": {
+        "position": [
+          48,
+          900
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "12halloflegends_hall"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/cosmic_crystal_entity"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

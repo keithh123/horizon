@@ -6,7 +6,31 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/ruin/ruin"
+          "loot_table_id": "structory:outcast/bandit/desert"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/bandit/desert_copper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/boat/loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/farm_ruin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/mine/loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:outcast/settlement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "structory:ruin/ruin"
         }
       ]
     }

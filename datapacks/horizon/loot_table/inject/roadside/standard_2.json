@@ -6,28 +6,13 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.084
+          "chance": 0.042
         }
       ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "horizon:wayfarer_shard"
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.006
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "horizon:ancient_core"
         }
       ]
     },
@@ -46,7 +31,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#horizon:clue/temple",
+              "destination": "horizon:clue/temple",
               "decoration": "minecraft:red_x",
               "zoom": 2,
               "search_radius": 30,

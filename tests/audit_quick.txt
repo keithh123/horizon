@@ -1,0 +1,4 @@
+forceload add 1890 1890 2110 2110
+place structure dungeons_arise:keep_kayra 2000 90 2000
+WAIT 5
+execute positioned 2000 90 2000 run horizon audit 110 20

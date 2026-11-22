@@ -8,7 +8,8 @@
     },
     "title": "Ore Multiplication",
     "description": [
-      "Double, then triple, then quintuple your ores."
+      "Double, then triple, then quintuple your ores.",
+      "Completes on Mekanism's own advancement for the enrichment chamber."
     ],
     "groups": {
       "7 - Industrial Expansion": {
@@ -28,10 +29,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "mekanism:enrichment_chamber",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "mekanism:enricher"
+      ]
     }
   },
   "rewards": {

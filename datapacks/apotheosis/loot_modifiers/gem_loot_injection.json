@@ -52,7 +52,7 @@
       }
     },
     {
-      "chance": 0.05,
+      "chance": 0.04,
       "pattern": {
         "domain": "betterdeserttemples",
         "path_regex": "(?:chests/lab|chests/statue|chests/wardrobe)"
@@ -73,10 +73,17 @@
       }
     },
     {
+      "chance": 0.01,
+      "pattern": {
+        "domain": "betterdungeons",
+        "path_regex": "(?:small_dungeon/chests/loot_piles|zombie_dungeon/chests/special|zombie_dungeon/chests/tombstone)"
+      }
+    },
+    {
       "chance": 0.02,
       "pattern": {
         "domain": "betterdungeons",
-        "path_regex": "(?:skeleton_dungeon/chests/common|small_dungeon/chests/loot_piles)"
+        "path_regex": "(?:skeleton_dungeon/chests/common|zombie_dungeon/chests/common)"
       }
     },
     {
@@ -90,20 +97,6 @@
         "apotheosis:the_nether/blood_lord",
         "apotheosis:the_nether/molten_breach"
       ]
-    },
-    {
-      "chance": 0.12,
-      "pattern": {
-        "domain": "betterdungeons",
-        "path_regex": "(?:zombie_dungeon/chests/common)"
-      }
-    },
-    {
-      "chance": 0.13,
-      "pattern": {
-        "domain": "betterdungeons",
-        "path_regex": "(?:zombie_dungeon/chests/special|zombie_dungeon/chests/tombstone)"
-      }
     },
     {
       "chance": 0.16,
@@ -120,34 +113,22 @@
       }
     },
     {
+      "chance": 0.01,
+      "pattern": {
+        "domain": "betterfortresses",
+        "path_regex": "(?:chests/extra|chests/hall|chests/keep|chests/obsidian|chests/puzzle|chests/quarters|chests/storage)"
+      },
+      "gems": [
+        "apotheosis:the_nether/inferno",
+        "apotheosis:the_nether/blood_lord",
+        "apotheosis:the_nether/molten_breach"
+      ]
+    },
+    {
       "chance": 0.02,
       "pattern": {
         "domain": "betterfortresses",
-        "path_regex": "(?:chests/extra|chests/hall|chests/keep|chests/puzzle|chests/worship)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
-    },
-    {
-      "chance": 0.03,
-      "pattern": {
-        "domain": "betterfortresses",
-        "path_regex": "(?:chests/quarters|chests/storage)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
-    },
-    {
-      "chance": 0.1,
-      "pattern": {
-        "domain": "betterfortresses",
-        "path_regex": "(?:chests/obsidian)"
+        "path_regex": "(?:chests/worship)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -182,7 +163,7 @@
       }
     },
     {
-      "chance": 0.45,
+      "chance": 0.04,
       "pattern": {
         "domain": "betteroceanmonuments",
         "path_regex": "(?:chests/upper_side_chamber)"
@@ -203,7 +184,7 @@
       }
     },
     {
-      "chance": 0.07,
+      "chance": 0.14,
       "pattern": {
         "domain": "betterstrongholds",
         "path_regex": "(?:chests/library_md)"
@@ -259,10 +240,17 @@
       }
     },
     {
+      "chance": 0.0,
+      "pattern": {
+        "domain": "ctov",
+        "path_regex": "(?:chests/village/village_farm|chests/village/village_smith)"
+      }
+    },
+    {
       "chance": 0.01,
       "pattern": {
         "domain": "ctov",
-        "path_regex": "(?:chests/village/village_badlands_house|chests/village/village_bakery|chests/village/village_beach_house|chests/village/village_dark_forest_house|chests/village/village_farm|chests/village/village_forager|chests/village/village_jungle_house|chests/village/village_mountain_house|chests/village/village_mushroom_house|chests/village/village_smith|chests/village/village_swamp_house)"
+        "path_regex": "(?:chests/village/village_badlands_house|chests/village/village_bakery|chests/village/village_beach_house|chests/village/village_dark_forest_house|chests/village/village_forager|chests/village/village_jungle_house|chests/village/village_mountain_house|chests/village/village_mushroom_house|chests/village/village_swamp_house)"
       }
     },
     {
@@ -304,14 +292,14 @@
       "chance": 0.0,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/bandit_village/bandit_village_barrels|chests/bandit_village/bandit_village_normal|chests/bandit_village/bandit_village_supply|chests/bathhouse/bathhouse_barrels|chests/bathhouse/bathhouse_normal|chests/mushroom_village/mushroom_village_barrels)"
+        "path_regex": "(?:chests/bandit_towers/bandit_towers_barrels|chests/bandit_towers/bandit_towers_gardens|chests/bandit_towers/bandit_towers_normal|chests/bandit_towers/bandit_towers_rooms|chests/bandit_towers/bandit_towers_supply|chests/bandit_village/bandit_village_barrels|chests/bandit_village/bandit_village_normal|chests/bandit_village/bandit_village_supply|chests/bathhouse/bathhouse_barrels|chests/bathhouse/bathhouse_normal|chests/mechanical_nest/mechanical_nest_normal|chests/mechanical_nest/mechanical_nest_supply|chests/mushroom_village/mushroom_village_barrels)"
       }
     },
     {
       "chance": 0.01,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/aviary/aviary_barrels|chests/aviary/aviary_normal|chests/bandit_towers/bandit_towers_barrels|chests/bandit_towers/bandit_towers_gardens|chests/bandit_towers/bandit_towers_normal|chests/bandit_towers/bandit_towers_rooms|chests/bandit_towers/bandit_towers_supply|chests/greenwood_pub/greenwood_pub_barrels_hallways|chests/greenwood_pub/greenwood_pub_barrels_normal|chests/greenwood_pub/greenwood_pub_normal|chests/illager_fort/illager_fort_barrels|chests/illager_fort/illager_fort_normal|chests/jungle_tree_house/jungle_tree_house_barrels|chests/jungle_tree_house/jungle_tree_house_normal|chests/keep_kayra/keep_kayra_garden_normal|chests/keep_kayra/keep_kayra_library_normal|chests/keep_kayra/keep_kayra_normal|chests/kisegi_sanctuary/kisegi_sanctuary_normal|chests/mechanical_nest/mechanical_nest_normal|chests/mechanical_nest/mechanical_nest_supply|chests/merchant_campsite/merchant_campsite_supply|chests/mushroom_house/mushroom_house_barrels|chests/mushroom_house/mushroom_house_normal|chests/shiraz_palace/shiraz_palace_gardens|chests/shiraz_palace/shiraz_palace_library|chests/shiraz_palace/shiraz_palace_normal|chests/shiraz_palace/shiraz_palace_rooms|chests/shiraz_palace/shiraz_palace_supply|chests/undead_pirate_ship/undead_pirate_ship_barrels|chests/undead_pirate_ship/undead_pirate_ship_supply|spawners/infested_temple/infested_temple_normal|spawners/kisegi_sanctuary/kisegi_sanctuary_normal)"
+        "path_regex": "(?:chests/aviary/aviary_barrels|chests/aviary/aviary_normal|chests/greenwood_pub/greenwood_pub_barrels_hallways|chests/greenwood_pub/greenwood_pub_barrels_normal|chests/greenwood_pub/greenwood_pub_normal|chests/heavenly_challenger/heavenly_challenger_normal|chests/heavenly_challenger/heavenly_challenger_supply|chests/illager_campsite/illager_campsite_supply|chests/illager_corsair/illager_corsair_barrels|chests/illager_corsair/illager_corsair_supply|chests/illager_fort/illager_fort_barrels|chests/illager_fort/illager_fort_normal|chests/jungle_tree_house/jungle_tree_house_barrels|chests/jungle_tree_house/jungle_tree_house_normal|chests/keep_kayra/keep_kayra_garden_normal|chests/keep_kayra/keep_kayra_library_normal|chests/keep_kayra/keep_kayra_normal|chests/kisegi_sanctuary/kisegi_sanctuary_normal|chests/merchant_campsite/merchant_campsite_supply|chests/mushroom_house/mushroom_house_barrels|chests/mushroom_house/mushroom_house_normal|chests/plague_asylum/plague_asylum_barrels|chests/plague_asylum/plague_asylum_normal|chests/plague_asylum/plague_asylum_storage|chests/shiraz_palace/shiraz_palace_gardens|chests/shiraz_palace/shiraz_palace_library|chests/shiraz_palace/shiraz_palace_normal|chests/shiraz_palace/shiraz_palace_rooms|chests/shiraz_palace/shiraz_palace_supply|chests/thornborn_towers/thornborn_towers_barrels|chests/thornborn_towers/thornborn_towers_rooms|chests/thornborn_towers/thornborn_towers_top_rooms|chests/undead_pirate_ship/undead_pirate_ship_barrels|chests/undead_pirate_ship/undead_pirate_ship_supply|spawners/infested_temple/infested_temple_normal|spawners/kisegi_sanctuary/kisegi_sanctuary_normal)"
       }
     },
     {
@@ -330,49 +318,42 @@
       "chance": 0.02,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/illager_campsite/illager_campsite_supply|chests/illager_corsair/illager_corsair_barrels|chests/illager_corsair/illager_corsair_supply|chests/kisegi_sanctuary/kisegi_sanctuary_basement|chests/kisegi_sanctuary/kisegi_sanctuary_top|chests/mining_complex/mining_complex_barrel|chests/mining_complex/mining_complex_dripstone_normal|chests/mining_complex/mining_complex_facility_normal|chests/mining_complex/mining_complex_lush_normal|chests/small_blimp/small_blimp_coal_storage)"
+        "path_regex": "(?:chests/illager_campsite/illager_campsite_map|chests/illager_campsite/illager_campsite_tent|chests/small_blimp/small_blimp_coal_storage)"
       }
     },
     {
       "chance": 0.03,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/illager_galley/illager_galley_barrels|chests/illager_galley/illager_galley_supply|chests/illager_windmill/illager_windmill_barrels|chests/mines_treasure_big|chests/mines_treasure_medium|chests/mines_treasure_small|chests/mining_system/mining_system_barrels|chests/mushroom_house/mushroom_house_treasure|chests/thornborn_towers/thornborn_towers_barrels|chests/thornborn_towers/thornborn_towers_rooms|chests/thornborn_towers/thornborn_towers_top_rooms)"
+        "path_regex": "(?:chests/illager_galley/illager_galley_barrels|chests/illager_galley/illager_galley_supply|chests/illager_windmill/illager_windmill_barrels|chests/kisegi_sanctuary/kisegi_sanctuary_basement|chests/kisegi_sanctuary/kisegi_sanctuary_top|chests/mines_treasure_big|chests/mines_treasure_medium|chests/mines_treasure_small|chests/mining_system/mining_system_barrels|chests/mushroom_house/mushroom_house_treasure)"
       }
     },
     {
       "chance": 0.04,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/bandit_village/bandit_village_tents|chests/foundry/foundry_normal|chests/foundry/foundry_passage_normal|chests/illager_campsite/illager_campsite_map|chests/illager_campsite/illager_campsite_tent|chests/infested_temple/infested_temple_room_bookshelf|chests/infested_temple/infested_temple_room_garden|chests/infested_temple/infested_temple_room_normal|chests/infested_temple/infested_temple_room_supply|chests/merchant_campsite/merchant_campsite_map|chests/merchant_campsite/merchant_campsite_tent|chests/plague_asylum/plague_asylum_barrels|chests/plague_asylum/plague_asylum_normal|chests/plague_asylum/plague_asylum_storage)"
+        "path_regex": "(?:chests/bandit_village/bandit_village_tents|chests/foundry/foundry_normal|chests/foundry/foundry_passage_normal|chests/heavenly_challenger/heavenly_challenger_treasure|chests/infested_temple/infested_temple_room_bookshelf|chests/infested_temple/infested_temple_room_garden|chests/infested_temple/infested_temple_room_normal|chests/infested_temple/infested_temple_room_supply|chests/keep_kayra/keep_kayra_garden_treasure|chests/keep_kayra/keep_kayra_library_treasure|chests/keep_kayra/keep_kayra_treasure|chests/merchant_campsite/merchant_campsite_map|chests/merchant_campsite/merchant_campsite_tent|chests/mining_complex/mining_complex_barrel|chests/mining_complex/mining_complex_dripstone_normal|chests/mining_complex/mining_complex_facility_normal|chests/mining_complex/mining_complex_lush_normal|chests/plague_asylum/plague_asylum_cells|chests/plague_asylum/plague_asylum_potions)"
       }
     },
     {
       "chance": 0.05,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/heavenly_conqueror/heavenly_conqueror_barrels|chests/heavenly_conqueror/heavenly_conqueror_normal|chests/mushroom_village/mushroom_village_treasure)"
+        "path_regex": "(?:chests/bandit_towers/bandit_towers_treasure|chests/heavenly_conqueror/heavenly_conqueror_barrels|chests/heavenly_conqueror/heavenly_conqueror_normal|chests/mushroom_village/mushroom_village_treasure)"
       }
     },
     {
       "chance": 0.06,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/small_blimp/small_blimp_treasure)"
-      }
-    },
-    {
-      "chance": 0.07,
-      "pattern": {
-        "domain": "dungeons_arise",
-        "path_regex": "(?:chests/keep_kayra/keep_kayra_garden_treasure|chests/keep_kayra/keep_kayra_library_treasure|chests/keep_kayra/keep_kayra_treasure)"
+        "path_regex": "(?:chests/mechanical_nest/mechanical_nest_equipment|chests/mechanical_nest/mechanical_nest_treasure|chests/small_blimp/small_blimp_treasure)"
       }
     },
     {
       "chance": 0.09,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/heavenly_challenger/heavenly_challenger_normal|chests/heavenly_challenger/heavenly_challenger_supply|chests/kisegi_sanctuary/kisegi_sanctuary_treasure|chests/plague_asylum/plague_asylum_cells|chests/plague_asylum/plague_asylum_potions|chests/shiraz_palace/shiraz_palace_towers)"
+        "path_regex": "(?:chests/illager_corsair/illager_corsair_treasure|chests/illager_fort/illager_fort_treasure|chests/shiraz_palace/shiraz_palace_towers|chests/undead_pirate_ship/undead_pirate_ship_treasure)"
       }
     },
     {
@@ -386,21 +367,21 @@
       "chance": 0.11,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/foundry/foundry_chains|chests/foundry/foundry_lava_pit|chests/foundry/foundry_passage_exterior|chests/heavenly_rider/heavenly_rider_barrels|chests/heavenly_rider/heavenly_rider_normal|chests/undead_pirate_ship/undead_pirate_ship_treasure)"
+        "path_regex": "(?:chests/foundry/foundry_chains|chests/foundry/foundry_lava_pit|chests/foundry/foundry_passage_exterior|chests/heavenly_rider/heavenly_rider_barrels|chests/heavenly_rider/heavenly_rider_normal)"
       }
     },
     {
       "chance": 0.12,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/mechanical_nest/mechanical_nest_equipment)"
+        "path_regex": "(?:chests/kisegi_sanctuary/kisegi_sanctuary_treasure)"
       }
     },
     {
       "chance": 0.13,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/illager_fort/illager_fort_treasure|chests/monastery/monastery_barrels)"
+        "path_regex": "(?:chests/monastery/monastery_barrels)"
       }
     },
     {
@@ -426,14 +407,14 @@
       "chance": 0.17,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/abandoned_temple/abandoned_temple_entrance|chests/abandoned_temple/abandoned_temple_map|chests/abandoned_temple/abandoned_temple_top)"
+        "path_regex": "(?:chests/abandoned_temple/abandoned_temple_entrance|chests/abandoned_temple/abandoned_temple_map|chests/abandoned_temple/abandoned_temple_top|chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal|chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure|chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous|chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure|chests/mining_complex/mining_complex_treasure|chests/plague_asylum/plague_asylum_treasure)"
       }
     },
     {
       "chance": 0.19,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/jungle_tree_house/jungle_tree_house_treasure|chests/mechanical_nest/mechanical_nest_treasure)"
+        "path_regex": "(?:chests/jungle_tree_house/jungle_tree_house_treasure)"
       }
     },
     {
@@ -448,27 +429,6 @@
       "pattern": {
         "domain": "dungeons_arise",
         "path_regex": "(?:chests/aviary/aviary_treasure|chests/mushroom_mines/mushroom_mines_barrels)"
-      }
-    },
-    {
-      "chance": 0.23,
-      "pattern": {
-        "domain": "dungeons_arise",
-        "path_regex": "(?:chests/bandit_towers/bandit_towers_treasure)"
-      }
-    },
-    {
-      "chance": 0.25,
-      "pattern": {
-        "domain": "dungeons_arise",
-        "path_regex": "(?:chests/illager_corsair/illager_corsair_treasure)"
-      }
-    },
-    {
-      "chance": 0.27,
-      "pattern": {
-        "domain": "dungeons_arise",
-        "path_regex": "(?:chests/heavenly_challenger/heavenly_challenger_treasure|chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal|chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure|chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous|chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure|chests/mining_complex/mining_complex_treasure)"
       }
     },
     {
@@ -522,14 +482,14 @@
       "chance": 0.38,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/illager_galley/illager_galley_treasure)"
+        "path_regex": "(?:chests/illager_galley/illager_galley_treasure|chests/thornborn_towers/thornborn_towers_top_treasure)"
       }
     },
     {
       "chance": 0.45,
       "pattern": {
         "domain": "dungeons_arise",
-        "path_regex": "(?:chests/ceryneian_hind/ceryneian_hind_treasure|chests/heavenly_challenger/heavenly_challenger_theater|chests/heavenly_conqueror/heavenly_conqueror_treasure|chests/heavenly_rider/heavenly_rider_treasure|chests/infested_temple/infested_temple_top_treasure|chests/infested_temple/infested_temple_vault_normal|chests/infested_temple/infested_temple_vault_ominous|chests/infested_temple/infested_temple_vault_treasure|chests/lighthouse/lighthouse_top|chests/mining_system/mining_system_treasure|chests/mushroom_mines/mushroom_mines_treasure|chests/plague_asylum/plague_asylum_treasure|chests/thornborn_towers/thornborn_towers_top_treasure|chests/typhon/typhon_treasure|spawners/infested_temple/infested_temple_guaranteed_omen|spawners/infested_temple/infested_temple_ominous|spawners/kisegi_sanctuary/kisegi_sanctuary_ominous)"
+        "path_regex": "(?:chests/ceryneian_hind/ceryneian_hind_treasure|chests/heavenly_challenger/heavenly_challenger_theater|chests/heavenly_conqueror/heavenly_conqueror_treasure|chests/heavenly_rider/heavenly_rider_treasure|chests/infested_temple/infested_temple_top_treasure|chests/infested_temple/infested_temple_vault_normal|chests/infested_temple/infested_temple_vault_ominous|chests/infested_temple/infested_temple_vault_treasure|chests/lighthouse/lighthouse_top|chests/mining_system/mining_system_treasure|chests/mushroom_mines/mushroom_mines_treasure|chests/typhon/typhon_treasure|spawners/infested_temple/infested_temple_guaranteed_omen|spawners/infested_temple/infested_temple_ominous|spawners/kisegi_sanctuary/kisegi_sanctuary_ominous)"
       }
     },
     {
@@ -550,7 +510,7 @@
       "chance": 0.0,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:castle/barrel/alchemist|castle/barrel/barracks|castle/barrel/blacksmith|castle/barrel/food|castle/barrel/food_low|castle/barrel/generic|castle/barrel/generic_big|castle/barrel/ice|castle/barrel/library|castle/barrel/library_low|castle/barrel/lumber|castle/barrel/lumber_big|castle/barrel/monument|castle/barrel/random|castle/tower_barrel|sanctum/brewery|sanctum/common_loot|sanctum/junk_loot)"
+        "path_regex": "(?:castle/barrel/alchemist|castle/barrel/barracks|castle/barrel/blacksmith|castle/barrel/food|castle/barrel/food_low|castle/barrel/generic|castle/barrel/generic_big|castle/barrel/ice|castle/barrel/library|castle/barrel/library_low|castle/barrel/lumber|castle/barrel/lumber_big|castle/barrel/monument|castle/barrel/random|castle/tower_barrel|reactor/junk|reactor/waste|sanctum/brewery|sanctum/common_loot|sanctum/junk_loot)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -562,7 +522,7 @@
       "chance": 0.01,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:quartz_flats/ghastling_food|quartz_flats/kitchen_basic|quartz_flats/kitchen_junk|reactor/junk|reactor/waste)"
+        "path_regex": "(?:pipeline/common|pipeline/junk|pipeline/rare|quartz_flats/ghastling_food|quartz_flats/kitchen_basic|quartz_flats/kitchen_junk)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -574,7 +534,7 @@
       "chance": 0.02,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:cvill/farmer|cvill/low|cvill/lumberjack|lab/junk)"
+        "path_regex": "(?:cvill/farmer|cvill/low|cvill/lumberjack|lab/junk|sanctum/banners|sanctum/lower_loot|sanctum/tax_collector)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -586,19 +546,7 @@
       "chance": 0.03,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:pipeline/common|pipeline/junk|pipeline/uncommon)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
-    },
-    {
-      "chance": 0.04,
-      "pattern": {
-        "domain": "incendium",
-        "path_regex": "(?:sanctum/banners|sanctum/lower_loot|sanctum/tax_collector)"
+        "path_regex": "(?:pipeline/uncommon)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -634,7 +582,7 @@
       "chance": 0.09,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:castle/base/blackstone|castle/king_statue)"
+        "path_regex": "(?:castle/base/blackstone|castle/king_statue|sanctum/coffin)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -658,19 +606,7 @@
       "chance": 0.14,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:artifact/banners/blade|artifact/banners/ominous|artifact/banners/poppy|artifact/banners/sanctum|artifact/firestorm_drop|artifact/misc/restless_nature|artifact/patron/daybreaker|artifact/patron/holy_wrath|artifact/patron/scouts_battle_helm|artifact/patron/scroll_of_returning|artifact/patron/warping_witherblade|artifact/potions/bad_omen|artifact/potions/death|artifact/potions/elixer_of_undying|artifact/potions/eternal_glowing|artifact/potions/miners_ale|artifact/potions/sus_brew|artifact/ragnarok_drop|artifact/scarlet_or_sacrifice|artifact/scroll_drop|artifact/shield/necrotic_shield|artifact/shield/prismatic_shield|artifact/shield/radiation_shield|artifact/tool/cake_batter|artifact/tool/hazmat_suit|artifact/tool/hefty_pickaxe|artifact/tool/infernal_feather|artifact/tool/infernal_wings|artifact/tool/torch_of_lunacy|artifact/tool/unstable_powder|artifact/trailblazer_drop|artifact/weapon/blazing_hatchet|artifact/weapon/chilling_blade|artifact/weapon/firestorm|artifact/weapon/greatsword_of_sacrifice|artifact/weapon/multiplex_crossbow|artifact/weapon/ragnarok|artifact/weapon/scarlet_dagger|artifact/weapon/sentrys_wrath|artifact/weapon/trailblazer|artifact/weapon/voltaic_trident|artifact/weapon/withersbane|castle/base/brewing|castle/base/gold|castle/base/gold_big|castle/base/gold_small|castle/base/gold_stackable|castle/base/head_self|castle/base/random_blocks|castle/base/rare_potion|castle/base/tools|castle/base/tools_armor|castle/base/unbreaking_efficiency|castle/base/wood|castle/blacksmith/boots|castle/blacksmith/chestplate|castle/blacksmith/helmet|castle/blacksmith/leggings|castle/entity/alchemist|castle/entity/any|castle/entity/knight|castle/entity/scout|castle/stand/armor|castle/stand/boots|castle/stand/chestplate|castle/stand/helmet|castle/stand/leggings|cvill/mob/brewer|cvill/mob/guard|cvill/mob/miner|cvill/wood|ghastling|hovering_inferno|hovering_inferno/extras|iron_nuggets|lab/basalt|lab/piglin_loot|sanctum/potions|sanctum/potionsfull)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
-    },
-    {
-      "chance": 0.16,
-      "pattern": {
-        "domain": "incendium",
-        "path_regex": "(?:sanctum/coffin)"
+        "path_regex": "(?:artifact/banners/blade|artifact/banners/ominous|artifact/banners/poppy|artifact/banners/sanctum|artifact/firestorm_drop|artifact/misc/restless_nature|artifact/patron/daybreaker|artifact/patron/holy_wrath|artifact/patron/scouts_battle_helm|artifact/patron/scroll_of_returning|artifact/patron/warping_witherblade|artifact/potions/bad_omen|artifact/potions/death|artifact/potions/elixer_of_undying|artifact/potions/eternal_glowing|artifact/potions/miners_ale|artifact/potions/sus_brew|artifact/ragnarok_drop|artifact/scarlet_or_sacrifice|artifact/scroll_drop|artifact/shield/necrotic_shield|artifact/shield/prismatic_shield|artifact/shield/radiation_shield|artifact/tool/cake_batter|artifact/tool/hazmat_suit|artifact/tool/hefty_pickaxe|artifact/tool/infernal_feather|artifact/tool/infernal_wings|artifact/tool/torch_of_lunacy|artifact/tool/unstable_powder|artifact/trailblazer_drop|artifact/weapon/blazing_hatchet|artifact/weapon/chilling_blade|artifact/weapon/firestorm|artifact/weapon/greatsword_of_sacrifice|artifact/weapon/multiplex_crossbow|artifact/weapon/ragnarok|artifact/weapon/scarlet_dagger|artifact/weapon/sentrys_wrath|artifact/weapon/trailblazer|artifact/weapon/voltaic_trident|artifact/weapon/withersbane|castle/barrel/nuggets|castle/barrel/pigstep|castle/base/brewing|castle/base/gold|castle/base/gold_big|castle/base/gold_small|castle/base/gold_stackable|castle/base/head_self|castle/base/random_blocks|castle/base/rare_potion|castle/base/tools|castle/base/tools_armor|castle/base/unbreaking_efficiency|castle/base/wood|castle/blacksmith/boots|castle/blacksmith/chestplate|castle/blacksmith/helmet|castle/blacksmith/leggings|castle/entity/alchemist|castle/entity/any|castle/entity/knight|castle/entity/scout|castle/stand/armor|castle/stand/boots|castle/stand/chestplate|castle/stand/helmet|castle/stand/leggings|cvill/mob/brewer|cvill/mob/guard|cvill/mob/lumberjack|cvill/mob/miner|cvill/wood|ghastling|hovering_inferno|hovering_inferno/extras|iron_nuggets|lab/basalt|lab/piglin_loot|pipeline/base/common|pipeline/base/junk|pipeline/base/uncommon|sanctum/potions|sanctum/potionsfull)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -682,7 +618,7 @@
       "chance": 0.21,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:castle/barrel/nuggets|castle/barrel/pigstep|cvill/mob/lumberjack|lab/rare|lab/treasure|pipeline/base/common|pipeline/base/junk|pipeline/base/uncommon|pipeline/rare|pipeline/treasure)"
+        "path_regex": "(?:lab/rare|lab/treasure|pipeline/treasure)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -730,14 +666,14 @@
       "chance": 0.0,
       "pattern": {
         "domain": "irons_spellbooks",
-        "path_regex": "(?:chests/bookshelf_loot|chests/citadel/citadel_bookshelf|chests/citadel/rampart_supplies|chests/component_storage|chests/filler_storage_loot|chests/magic_bookshelf_loot|chests/pyromancer_tower/fire_ale_cask|chests/pyromancer_tower/old_cask|chests/pyromancer_tower/pyromancer_basic_storage|chests/pyromancer_tower/pyromancer_supplies)"
+        "path_regex": "(?:chests/bookshelf_loot|chests/component_storage|chests/filler_storage_loot|chests/magic_bookshelf_loot|chests/pyromancer_tower/fire_ale_cask|chests/pyromancer_tower/old_cask|chests/pyromancer_tower/pyromancer_basic_storage|chests/pyromancer_tower/pyromancer_supplies)"
       }
     },
     {
       "chance": 0.01,
       "pattern": {
         "domain": "irons_spellbooks",
-        "path_regex": "(?:chests/ice_spider_den/cask)"
+        "path_regex": "(?:chests/citadel/citadel_bookshelf|chests/citadel/rampart_supplies|chests/ice_spider_den/cask)"
       }
     },
     {
@@ -776,17 +712,24 @@
       }
     },
     {
-      "chance": 0.24,
+      "chance": 0.14,
       "pattern": {
         "domain": "irons_spellbooks",
-        "path_regex": "(?:chests/additional_ancient_city_loot|chests/additional_end_city_loot|chests/additional_good_loot|chests/additional_nether_loot|chests/battleground/burial_loot|chests/battleground/piglin_camp|chests/catacombs/armory_loot|chests/citadel/citadel_tomes|chests/citadel/rampart_chest|chests/mangrove_hut|chests/pyromancer_tower/burnt_chest|chests/pyromancer_tower/fire_ale_trove|chests/sewer_loot|chests/trial_chambers/additional_ominous_spawner_consumable_loot|chests/trial_chambers/additional_regular_spawner_consumable_loot|chests/trial_chambers/additional_trial_chest_loot|magic_items/all_focuses|magic_items/basic_curios|magic_items/decent_ink|magic_items/good_ink|magic_items/great_ink|magic_items/poor_ink|magic_items/random_elixir|magic_items/random_potion|magic_items/random_potion_or_elixir|magic_items/scroll_pouch|spawners/ancient_battleground/ominous_projectiles|spawners/catacombs/ominous_zombie_spawner|spawners/catacombs/regular_zombie_spawner|test/ring_gen|test/ring_gen_all_schools|test/scroll_gen|test/scroll_gen_fire|test/scroll_gen_force_eldritch|test/scroll_gen_magic_missile|test/scroll_gen_notforce_eldritch)"
+        "path_regex": "(?:chests/additional_ancient_city_loot|chests/additional_end_city_loot|chests/additional_good_loot|chests/additional_nether_loot|chests/catacombs/armory_loot|chests/citadel/citadel_tomes|chests/sewer_loot|chests/trial_chambers/additional_ominous_spawner_consumable_loot|chests/trial_chambers/additional_regular_spawner_consumable_loot|chests/trial_chambers/additional_trial_chest_loot|magic_items/all_focuses|magic_items/basic_curios|magic_items/decent_ink|magic_items/good_ink|magic_items/great_ink|magic_items/poor_ink|magic_items/random_elixir|magic_items/random_potion|magic_items/random_potion_or_elixir|magic_items/scroll_pouch|spawners/ancient_battleground/ominous_projectiles|spawners/catacombs/ominous_zombie_spawner|spawners/catacombs/regular_zombie_spawner|test/ring_gen|test/ring_gen_all_schools|test/scroll_gen|test/scroll_gen_fire|test/scroll_gen_force_eldritch|test/scroll_gen_magic_missile|test/scroll_gen_notforce_eldritch)"
       }
     },
     {
-      "chance": 0.27,
+      "chance": 0.16,
       "pattern": {
         "domain": "irons_spellbooks",
-        "path_regex": "(?:chests/additional_treasure_loot|chests/catacombs/dead_king_vault|chests/citadel/citadel_vault|chests/citadel/spawner_reward|chests/ice_spider_den/spawner_reward|chests/trial_chambers/additional_ominous_vault_loot|chests/trial_chambers/additional_regular_vault_loot|magic_items/reward_ink|magic_items/tincture_of_forgetfulness_reward)"
+        "path_regex": "(?:chests/citadel/rampart_chest)"
+      }
+    },
+    {
+      "chance": 0.24,
+      "pattern": {
+        "domain": "irons_spellbooks",
+        "path_regex": "(?:chests/battleground/burial_loot|chests/battleground/piglin_camp|chests/mangrove_hut|chests/pyromancer_tower/burnt_chest|chests/pyromancer_tower/fire_ale_trove)"
       }
     },
     {
@@ -794,6 +737,13 @@
       "pattern": {
         "domain": "irons_spellbooks",
         "path_regex": "(?:chests/impaled_icebreaker/captain_quarters|chests/impaled_icebreaker/food_barrel)"
+      }
+    },
+    {
+      "chance": 0.36,
+      "pattern": {
+        "domain": "irons_spellbooks",
+        "path_regex": "(?:chests/additional_treasure_loot|chests/catacombs/dead_king_vault|chests/citadel/citadel_vault|chests/citadel/spawner_reward|chests/ice_spider_den/spawner_reward|chests/trial_chambers/additional_ominous_vault_loot|chests/trial_chambers/additional_regular_vault_loot|magic_items/reward_ink|magic_items/tincture_of_forgetfulness_reward)"
       }
     },
     {
@@ -849,18 +799,11 @@
       "chance": 0.01,
       "pattern": {
         "domain": "minecraft",
-        "path_regex": "(?:chests/illager_mansion/kitchen|chests/illager_mansion/secret_room|chests/stronghold_corridor|chests/stronghold_library|chests/village/village_desert_house|chests/village/village_snowy_house)"
+        "path_regex": "(?:chests/illager_mansion/kitchen|chests/illager_mansion/secret_room|chests/simple_dungeon|chests/stronghold_corridor|chests/stronghold_library|chests/village/village_desert_house|chests/village/village_snowy_house)"
       }
     },
     {
-      "chance": 0.02,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/igloo_chest|chests/illager_mansion/ancient_city_raid_chest|chests/illager_mansion/evoker_chest|chests/illager_mansion/map_chest|chests/illager_mansion/pillager_chest|chests/illager_mansion/ravager_chest|chests/illager_mansion/smithing_room|chests/illager_mansion/vindicator_chest|chests/illager_mansion/witch_chest|chests/pillager_outpost|chests/ruined_portal|chests/shipwreck_supply|chests/simple_dungeon|chests/stronghold_crossing|chests/village/village_jungle_house|chests/village/village_swamp_house)"
-      }
-    },
-    {
-      "chance": 0.02,
+      "chance": 0.01,
       "pattern": {
         "domain": "minecraft",
         "path_regex": "(?:chests/nether_bridge)"
@@ -872,51 +815,14 @@
       ]
     },
     {
-      "chance": 0.04,
+      "chance": 0.02,
       "pattern": {
         "domain": "minecraft",
-        "path_regex": "(?:chests/ancient_city_ice_box|chests/shipwreck_map)"
+        "path_regex": "(?:chests/abandoned_mineshaft|chests/igloo_chest|chests/illager_mansion/ancient_city_raid_chest|chests/illager_mansion/evoker_chest|chests/illager_mansion/map_chest|chests/illager_mansion/pillager_chest|chests/illager_mansion/ravager_chest|chests/illager_mansion/smithing_room|chests/illager_mansion/vindicator_chest|chests/illager_mansion/witch_chest|chests/pillager_outpost|chests/shipwreck_supply|chests/stronghold_crossing|chests/village/village_jungle_house|chests/village/village_swamp_house)"
       }
     },
     {
-      "chance": 0.05,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/desert_pyramid)"
-      }
-    },
-    {
-      "chance": 0.07,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/end_city_treasure)"
-      },
-      "gems": [
-        "apotheosis:the_end/endersurge",
-        "apotheosis:the_end/mageslayer"
-      ]
-    },
-    {
-      "chance": 0.09,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/bastion_hoglin_stable)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
-    },
-    {
-      "chance": 0.15,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/shipwreck_treasure)"
-      }
-    },
-    {
-      "chance": 0.17,
+      "chance": 0.02,
       "pattern": {
         "domain": "minecraft",
         "path_regex": "(?:chests/bastion_bridge|chests/bastion_other)"
@@ -928,35 +834,51 @@
       ]
     },
     {
-      "chance": 0.18,
+      "chance": 0.04,
       "pattern": {
         "domain": "minecraft",
-        "path_regex": "(?:chests/abandoned_mineshaft)"
+        "path_regex": "(?:chests/desert_pyramid|chests/shipwreck_map|chests/underwater_ruin_big|chests/underwater_ruin_small)"
       }
     },
     {
-      "chance": 0.2,
+      "chance": 0.05,
       "pattern": {
         "domain": "minecraft",
-        "path_regex": "(?:chests/jungle_temple|chests/underwater_ruin_big|chests/underwater_ruin_small)"
+        "path_regex": "(?:chests/bastion_hoglin_stable)"
+      },
+      "gems": [
+        "apotheosis:the_nether/inferno",
+        "apotheosis:the_nether/blood_lord",
+        "apotheosis:the_nether/molten_breach"
+      ]
+    },
+    {
+      "chance": 0.06,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/end_city_treasure)"
+      },
+      "gems": [
+        "apotheosis:the_end/endersurge",
+        "apotheosis:the_end/mageslayer"
+      ]
+    },
+    {
+      "chance": 0.07,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/ancient_city|chests/ancient_city_ice_box)"
       }
     },
     {
-      "chance": 0.28,
+      "chance": 0.09,
       "pattern": {
         "domain": "minecraft",
-        "path_regex": "(?:chests/woodland_mansion)"
+        "path_regex": "(?:chests/buried_treasure)"
       }
     },
     {
-      "chance": 0.45,
-      "pattern": {
-        "domain": "minecraft",
-        "path_regex": "(?:chests/ancient_city|chests/buried_treasure)"
-      }
-    },
-    {
-      "chance": 0.45,
+      "chance": 0.09,
       "pattern": {
         "domain": "minecraft",
         "path_regex": "(?:chests/bastion_treasure)"
@@ -966,6 +888,34 @@
         "apotheosis:the_nether/blood_lord",
         "apotheosis:the_nether/molten_breach"
       ]
+    },
+    {
+      "chance": 0.12,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/ruined_portal)"
+      }
+    },
+    {
+      "chance": 0.15,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/shipwreck_treasure)"
+      }
+    },
+    {
+      "chance": 0.16,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/woodland_mansion)"
+      }
+    },
+    {
+      "chance": 0.2,
+      "pattern": {
+        "domain": "minecraft",
+        "path_regex": "(?:chests/jungle_temple)"
+      }
     },
     {
       "chance": 0.18,
@@ -1010,7 +960,7 @@
       "chance": 0.01,
       "pattern": {
         "domain": "nova_structures",
-        "path_regex": "(?:chests/nether_port/nether_port_supplies)"
+        "path_regex": "(?:chests/nether_port/nether_port_supplies|chests/piglin_camp/chest)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1024,6 +974,17 @@
         "domain": "nova_structures",
         "path_regex": "(?:chests/conduit_ruin/conduit_ruin_big|chests/conduit_ruin/conduit_ruin_main|chests/conduit_ruin/conduit_ruin_small|chests/illager_hideout_fishing|chests/jungle_ruins/jungle_ruins_house|chests/jungle_ruins/jungle_ruins_main_temple_wild|chests/pillager_outpost_kitchen|chests/shrine/shrine_lesser_ominous)"
       }
+    },
+    {
+      "chance": 0.02,
+      "pattern": {
+        "domain": "nova_structures",
+        "path_regex": "(?:chests/end_castle/castle_bar|chests/end_castle/castle_brewing)"
+      },
+      "gems": [
+        "apotheosis:the_end/endersurge",
+        "apotheosis:the_end/mageslayer"
+      ]
     },
     {
       "chance": 0.03,
@@ -1071,17 +1032,6 @@
       }
     },
     {
-      "chance": 0.07,
-      "pattern": {
-        "domain": "nova_structures",
-        "path_regex": "(?:chests/end_castle/castle_bar|chests/end_castle/castle_brewing)"
-      },
-      "gems": [
-        "apotheosis:the_end/endersurge",
-        "apotheosis:the_end/mageslayer"
-      ]
-    },
-    {
       "chance": 0.11,
       "pattern": {
         "domain": "nova_structures",
@@ -1092,7 +1042,7 @@
       "chance": 0.14,
       "pattern": {
         "domain": "nova_structures",
-        "path_regex": "(?:chests/piglin_outstation/outstation_tower)"
+        "path_regex": "(?:chests/piglin_donjon/donjon_generic|chests/piglin_outstation/outstation_tower)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1106,18 +1056,6 @@
         "domain": "nova_structures",
         "path_regex": "(?:chests/illager_hideout_lesser_tresure)"
       }
-    },
-    {
-      "chance": 0.21,
-      "pattern": {
-        "domain": "nova_structures",
-        "path_regex": "(?:chests/piglin_donjon/donjon_generic)"
-      },
-      "gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ]
     },
     {
       "chance": 0.23,
@@ -1189,7 +1127,7 @@
       "chance": 0.45,
       "pattern": {
         "domain": "nova_structures",
-        "path_regex": "(?:chests/nether_keep/vault_keep|chests/nether_keep/vault_keep_generic|chests/piglin_camp/chest|chests/piglin_donjon/vault_piglin_donjon|chests/piglin_outstation/outstation_treasure|chests/piglin_outstation/vault_piglin_outstation)"
+        "path_regex": "(?:chests/nether_keep/vault_keep|chests/nether_keep/vault_keep_generic|chests/piglin_donjon/vault_piglin_donjon|chests/piglin_outstation/outstation_treasure|chests/piglin_outstation/vault_piglin_outstation)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1198,11 +1136,34 @@
       ]
     },
     {
+      "chance": 0.0,
+      "pattern": {
+        "domain": "repurposed_structures",
+        "path_regex": "(?:chests/shipwrecks/end/supply)"
+      },
+      "gems": [
+        "apotheosis:the_end/endersurge",
+        "apotheosis:the_end/mageslayer"
+      ]
+    },
+    {
       "chance": 0.01,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/mansions/birch_storage|chests/mansions/desert_storage|chests/mansions/jungle_storage|chests/mansions/mangrove_storage|chests/mansions/oak_storage|chests/mansions/savanna_storage|chests/mansions/snowy_storage|chests/mansions/taiga_storage|chests/villages/ocean_cartographer)"
+        "path_regex": "(?:chests/dungeons/deep|chests/dungeons/mushroom|chests/dungeons/ocean|chests/dungeons/snow|chests/mansions/birch_storage|chests/mansions/desert_storage|chests/mansions/jungle_storage|chests/mansions/mangrove_storage|chests/mansions/oak_storage|chests/mansions/savanna_storage|chests/mansions/snowy_storage|chests/mansions/taiga_storage|chests/villages/ocean_cartographer)"
       }
+    },
+    {
+      "chance": 0.01,
+      "pattern": {
+        "domain": "repurposed_structures",
+        "path_regex": "(?:chests/dungeons/nether|chests/ruins/nether)"
+      },
+      "gems": [
+        "apotheosis:the_nether/inferno",
+        "apotheosis:the_nether/blood_lord",
+        "apotheosis:the_nether/molten_breach"
+      ]
     },
     {
       "chance": 0.02,
@@ -1215,18 +1176,7 @@
       "chance": 0.02,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/shipwrecks/end/supply)"
-      },
-      "gems": [
-        "apotheosis:the_end/endersurge",
-        "apotheosis:the_end/mageslayer"
-      ]
-    },
-    {
-      "chance": 0.02,
-      "pattern": {
-        "domain": "repurposed_structures",
-        "path_regex": "(?:chests/bastions/underground/bridge|chests/bastions/underground/other|chests/bastions/underground/skeleton_horse_stable)"
+        "path_regex": "(?:chests/bastions/underground/bridge|chests/bastions/underground/other|chests/bastions/underground/skeleton_horse_stable|chests/temples/basalt)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1288,7 +1238,7 @@
       "chance": 0.08,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/temples/basalt|chests/temples/crimson|chests/temples/soul|chests/temples/warped)"
+        "path_regex": "(?:chests/temples/crimson|chests/temples/soul|chests/temples/warped)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1356,7 +1306,7 @@
       "chance": 0.14,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/dungeons/nether|chests/mineshafts/basalt|chests/mineshafts/crimson|chests/mineshafts/nether|chests/mineshafts/soul|chests/mineshafts/warped)"
+        "path_regex": "(?:chests/mineshafts/basalt|chests/mineshafts/crimson|chests/mineshafts/nether|chests/mineshafts/soul|chests/mineshafts/warped)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1392,14 +1342,14 @@
       "chance": 0.18,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/dungeons/badlands|chests/dungeons/dark_forest|chests/dungeons/deep|chests/dungeons/desert|chests/dungeons/icy|chests/dungeons/jungle|chests/dungeons/mushroom|chests/dungeons/ocean|chests/dungeons/snow|chests/dungeons/swamp|chests/mineshafts/birch|chests/mineshafts/dark_forest|chests/mineshafts/desert|chests/mineshafts/icy|chests/mineshafts/jungle|chests/mineshafts/ocean|chests/mineshafts/savanna|chests/mineshafts/stone|chests/mineshafts/swamp|chests/mineshafts/taiga)"
+        "path_regex": "(?:chests/dungeons/badlands|chests/dungeons/dark_forest|chests/dungeons/desert|chests/dungeons/icy|chests/dungeons/jungle|chests/dungeons/swamp|chests/mineshafts/birch|chests/mineshafts/dark_forest|chests/mineshafts/desert|chests/mineshafts/icy|chests/mineshafts/jungle|chests/mineshafts/ocean|chests/mineshafts/savanna|chests/mineshafts/stone|chests/mineshafts/swamp|chests/mineshafts/taiga)"
       }
     },
     {
       "chance": 0.28,
       "pattern": {
         "domain": "repurposed_structures",
-        "path_regex": "(?:chests/ruins/nether|chests/shipwrecks/crimson/map|chests/shipwrecks/warped/map)"
+        "path_regex": "(?:chests/shipwrecks/crimson/map|chests/shipwrecks/warped/map)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -1466,14 +1416,14 @@
       "chance": 0.0,
       "pattern": {
         "domain": "structory",
-        "path_regex": "(?:harvest/graveyard|harvest/graveyard2|harvest/old_manor/common|library/high|library/junk|library/low)"
+        "path_regex": "(?:harvest/graveyard|harvest/graveyard2|harvest/old_manor/common|library/high|library/junk|library/low|mood/fisherman)"
       }
     },
     {
       "chance": 0.01,
       "pattern": {
         "domain": "structory",
-        "path_regex": "(?:harvest/manor2/loot|harvest/manor2/treasure|harvest/old_manor/treasure|mood/badlands|mood/cave|mood/desert|mood/farmer|mood/fisherman|mood/grassy|mood/jungle|mood/mangrove|mood/miner|mood/mushroom|mood/ocean|mood/snowy|mood/taiga|outcast/bandit/desert|outcast/bandit/desert_copper|outcast/boat/loot|outcast/farm_ruin|outcast/mine/loot|outcast/ruin/ruin|outcast/settlement|ruin/ruin|ruin/swamp/loot|ruin/taiga/illager_low|ruin/taiga/loot)"
+        "path_regex": "(?:harvest/manor2/loot|harvest/manor2/treasure|harvest/old_manor/treasure|mood/badlands|mood/cave|mood/desert|mood/farmer|mood/grassy|mood/jungle|mood/mangrove|mood/miner|mood/mushroom|mood/ocean|mood/snowy|mood/taiga|outcast/bandit/desert|outcast/bandit/desert_copper|outcast/boat/loot|outcast/farm_ruin|outcast/mine/loot|outcast/ruin/ruin|outcast/settlement|ruin/ruin|ruin/swamp/loot|ruin/taiga/illager_low|ruin/taiga/loot)"
       }
     },
     {
@@ -1508,7 +1458,7 @@
       "chance": 0.01,
       "pattern": {
         "domain": "terralith",
-        "path_regex": "(?:desert_outpost|igloo|lodge_drinkables|ruin/glacial/junk|ruin/glacial/main_cs|village/desert/archer|village/desert/attic|village/desert/butcher|village/desert/cartographer|village/desert/fisherman|village/desert/mason|village/desert/shepherd|village/desert/smith|village/desert/smith/expert|village/desert/smith/novice|village/fortified/archer|village/fortified/attic|village/fortified/butcher|village/fortified/cartographer|village/fortified/fisherman|village/fortified/mason|village/fortified/smith|village/fortified/smith/expert|village/fortified/smith/novice|village/fortified/tavern_downstairs|village/fortified/tavern_upstairs|witch_hut)"
+        "path_regex": "(?:desert_outpost|igloo|lodge_drinkables|ruin/glacial/junk|ruin/glacial/main_cs|underground/chest|village/desert/archer|village/desert/attic|village/desert/butcher|village/desert/cartographer|village/desert/fisherman|village/desert/mason|village/desert/shepherd|village/desert/smith|village/desert/smith/expert|village/desert/smith/novice|village/fortified/archer|village/fortified/attic|village/fortified/butcher|village/fortified/cartographer|village/fortified/fisherman|village/fortified/mason|village/fortified/smith|village/fortified/smith/expert|village/fortified/smith/novice|village/fortified/tavern_downstairs|village/fortified/tavern_upstairs|witch_hut)"
       }
     },
     {
@@ -1529,7 +1479,7 @@
       "chance": 0.04,
       "pattern": {
         "domain": "terralith",
-        "path_regex": "(?:underground/chest|underground/giant_bee_hive)"
+        "path_regex": "(?:underground/giant_bee_hive)"
       }
     },
     {

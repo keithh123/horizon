@@ -57,13 +57,32 @@ def fetch(item):
     return dest
 
 
+MIRRORED = ["kubejs/data", "kubejs/server_scripts", "kubejs/startup_scripts", "kubejs/client_scripts", "kubejs/assets",
+            "config/heracles/quests"]   # fully owned by the pack: stale files from older versions are removed
+
+
+def prune_mirrored(target: Path, staged: Path):
+    """Delete files under the pack-owned dirs of an existing install that the new build no longer ships
+    (e.g. 0.1.0 loot modifiers). Player data (saves, options, other configs) is never touched."""
+    removed = 0
+    for rel in MIRRORED:
+        d = target / rel
+        if not d.exists():
+            continue
+        for f in d.rglob("*"):
+            if f.is_file() and not (staged / rel / f.relative_to(d)).exists():
+                f.unlink()
+                removed += 1
+    return removed
+
+
 def copy_overrides(target: Path):
     for src, dst in OVERRIDES.items():
         s = ROOT / src
         if not s.exists():
             continue
         for f in s.rglob("*"):
-            if f.is_file() and f.name != ".gitkeep":
+            if f.is_file() and f.name != ".gitkeep" and not f.name.startswith(".generated"):
                 out = target / dst / f.relative_to(s)
                 out.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, out)
@@ -118,6 +137,10 @@ def instance(name, groups):
     for s in L["shaders"]:
         (mc / "shaderpacks").mkdir(exist_ok=True)
         shutil.copy2(fetch(s), mc / "shaderpacks" / s["file"])
+    stage = CACHE.parent / "overrides-instance"
+    shutil.rmtree(stage, ignore_errors=True)
+    copy_overrides(stage)
+    print("pruned stale pack files:", prune_mirrored(mc, stage))
     copy_overrides(mc)
     (inst / "mmc-pack.json").write_text(json.dumps({"formatVersion": 1, "components": [
         {"uid": "net.minecraft", "version": L["minecraft"], "important": True},
@@ -145,6 +168,10 @@ def server(target: Path, accept_eula: bool):
             f.unlink()
     for m in mods:
         shutil.copy2(fetch(m), target / "mods" / m["file"])
+    stage = CACHE.parent / "overrides-server"
+    shutil.rmtree(stage, ignore_errors=True)
+    copy_overrides(stage)
+    print("pruned stale pack files:", prune_mirrored(target, stage))
     for src in ("config", "kubejs", "datapacks"):
         s = ROOT / src
         dst = target / ("kubejs/data" if src == "datapacks" else src)

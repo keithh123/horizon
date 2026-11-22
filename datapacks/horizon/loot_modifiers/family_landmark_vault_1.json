@@ -10,23 +10,15 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal"
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure"
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_treasure"
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure"
         }
       ]
     }

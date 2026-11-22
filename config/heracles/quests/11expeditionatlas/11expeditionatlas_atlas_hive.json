@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:honeycomb"
+      }
+    },
+    "title": "The Bumblezone",
+    "description": [
+      "&7Stage: early-mid&r",
+      "A whole dimension of puzzles: cell mazes, the Sempiternal Sanctum's colour puzzles, battle cubes and parkour. Brains over armour.",
+      "",
+      "&ePrepare:&r Bee-friendly gear (Bumblezone's own), patience. Solving puzzles gives the better chests.",
+      "&eSignature rewards:&r Honeyed Seals (exchange for Verdant/Splendor gems), puzzle-treasure cores. Failed-puzzle chests give little.",
+      "&eComing back:&r Many sanctums and mazes; rewards scale with puzzle success.",
+      "&eFeeds into:&r Seals -> utility gems; honey for food and building."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          144
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/hive"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

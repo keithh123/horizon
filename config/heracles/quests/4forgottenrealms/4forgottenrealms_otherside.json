@@ -14,7 +14,7 @@
       "4 - Forgotten Realms": {
         "position": [
           48,
-          80
+          72
         ]
       }
     }
@@ -36,11 +36,9 @@
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:ancient_core",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
     }
   }
 }

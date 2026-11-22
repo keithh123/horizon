@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "done": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "horizon:fx/legend_mini"
+  }
+}

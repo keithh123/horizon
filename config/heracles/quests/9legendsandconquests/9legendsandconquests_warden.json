@@ -8,13 +8,13 @@
     },
     "title": "Silence",
     "description": [
-      "Defeat a Warden. Deeper and Darker gives a reason to."
+      "Defeat a Warden. The first defeat counts for a heart; summoned Wardens after that do not."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
           0,
-          80
+          72
         ]
       }
     }
@@ -28,17 +28,15 @@
     "t0": {
       "type": "heracles:advancement",
       "advancements": [
-        "deeperdarker:main/kill_warden"
+        "horizon:legend/warden"
       ]
     }
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:starforged_heart",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
     }
   }
 }

@@ -6,23 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_1"
+          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_main_temple"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_2"
+          "loot_table_id": "structory:ruin/swamp/loot"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_3"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_4"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/dungeon_5"
+          "loot_table_id": "structory:ruin/taiga/loot"
         }
       ]
     }

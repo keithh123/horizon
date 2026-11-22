@@ -8,13 +8,13 @@
     },
     "title": "Unlimited Storage",
     "description": [
-      "A 256M MEGA component - built from a Starforged Heart."
+      "A 256M MEGA component - built from a Starforged Heart. &7(Item task.)"
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          160
+          144
         ]
       }
     }

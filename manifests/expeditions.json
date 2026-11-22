@@ -1,0 +1,66 @@
+{
+  "_comment": [
+    "Sinks and conversions for exploration rewards (read by scripts/gen_datapack.py; every id validated).",
+    "exchange: regional tokens buy a CHOSEN Apotheosis gem at its minimum purity (cut it up yourself at the gem cutting table).",
+    "  Predictable progress toward a selected goal, but never the top purity and never uniques/affix gear.",
+    "salvage: duplicate finds -> shards/gem dust in Apotheosis' salvaging table. Inputs are only non-renewable loot items:",
+    "  anything with a recipe in any jar, or listed in 'exclude', is removed automatically (no relic minting loops).",
+    "trials: Gateways to Eternity gates bought with relics/tokens. Fixed waves and entity counts, rewards are gear/gems/xp,",
+    "  never relics or tokens, so Trials are a sink, not a farm."
+  ],
+  "exchange": {
+    "cost": 6, "dust": 2,
+    "offers": {
+      "horizon:tidebound_doubloon": ["apotheosis:core/lunar", "apotheosis:core/slipstream"],
+      "horizon:cinder_idol": ["apotheosis:the_nether/inferno", "apotheosis:the_nether/blood_lord", "apotheosis:the_nether/molten_breach"],
+      "horizon:starlit_voidglass": ["apotheosis:the_end/endersurge", "apotheosis:the_end/mageslayer"],
+      "horizon:skyward_plume": ["apotheosis:core/solar", "apotheosis:core/lightning"],
+      "horizon:echoing_fossil": ["apotheosis:core/breach", "apotheosis:core/guardian"],
+      "horizon:honeyed_seal": ["apotheosis:overworld/verdant_ruin", "apotheosis:core/splendor"]
+    }
+  },
+  "salvage": [
+    {"name": "artifacts", "tag": "artifacts:artifacts", "exclude": ["artifacts:everlasting_beef", "artifacts:eternal_steak"],
+     "outputs": [["horizon:wayfarer_shard", 1, 2], ["apotheosis:gem_dust", 1, 3]]},
+    {"name": "relics", "tag": "relics:relic", "exclude": [],
+     "outputs": [["horizon:wayfarer_shard", 2, 3], ["apotheosis:gem_dust", 2, 4]]},
+    {"name": "simply_uniques", "tag": "simplyswords:lootable_uniques", "exclude": [],
+     "outputs": [["horizon:wayfarer_shard", 2, 4], ["horizon:ancient_core", 0, 1], ["apotheosis:gem_dust", 2, 4]]}
+  ],
+  "trials": [
+    {"id": "tides", "name": "Trial of the Tides", "color": "#3aa0e0", "size": "medium",
+     "cost": {"horizon:ancient_core": 1, "horizon:tidebound_doubloon": 4, "minecraft:prismarine_crystals": 2},
+     "waves": [
+       {"entities": [["minecraft:drowned", 6], ["minecraft:guardian", 2]], "time": 1200},
+       {"entities": [["minecraft:drowned", 6], ["cataclysm:deepling", 3], ["minecraft:guardian", 2]], "time": 1600},
+       {"entities": [["cataclysm:deepling_brute", 2], ["cataclysm:deepling_priest", 2], ["cataclysm:deepling_angler", 2]], "time": 2000}],
+     "rewards": {"affix": ["apotheosis:rare", "apotheosis:epic"], "affix_count": 2, "gems": ["apotheosis:core/lunar", "apotheosis:core/slipstream"],
+                 "purities": ["normal", "flawless"], "xp": 1500}},
+    {"id": "cinders", "name": "Trial of Cinders", "color": "#ff7a2a", "size": "medium",
+     "cost": {"horizon:ancient_core": 1, "horizon:cinder_idol": 4, "minecraft:blaze_rod": 2},
+     "waves": [
+       {"entities": [["minecraft:blaze", 4], ["minecraft:wither_skeleton", 3]], "time": 1200},
+       {"entities": [["minecraft:wither_skeleton", 5], ["minecraft:magma_cube", 4], ["minecraft:blaze", 3]], "time": 1600},
+       {"entities": [["cataclysm:ignited_revenant", 2], ["cataclysm:ignited_berserker", 3], ["minecraft:blaze", 3]], "time": 2000}],
+     "rewards": {"affix": ["apotheosis:rare", "apotheosis:epic"], "affix_count": 2,
+                 "gems": ["apotheosis:the_nether/inferno", "apotheosis:the_nether/blood_lord", "apotheosis:the_nether/molten_breach"],
+                 "purities": ["flawed", "normal", "flawless"], "xp": 1800}},
+    {"id": "void", "name": "Trial of the Void", "color": "#9a72e8", "size": "medium",
+     "cost": {"horizon:ancient_core": 2, "horizon:starlit_voidglass": 4, "minecraft:popped_chorus_fruit": 1},
+     "waves": [
+       {"entities": [["minecraft:enderman", 6], ["minecraft:endermite", 4]], "time": 1200},
+       {"entities": [["cataclysm:endermaptera", 4], ["minecraft:enderman", 4]], "time": 1600},
+       {"entities": [["cataclysm:ender_golem", 1], ["cataclysm:endermaptera", 4], ["minecraft:enderman", 2]], "time": 2400}],
+     "rewards": {"affix": ["apotheosis:epic", "apotheosis:mythic"], "affix_count": 2,
+                 "gems": ["apotheosis:the_end/endersurge", "apotheosis:the_end/mageslayer"], "purities": ["normal", "flawless"], "xp": 2500}},
+    {"id": "horizon", "name": "The Horizon Gauntlet", "color": "#ffd36a", "size": "large",
+     "cost": {"horizon:starforged_heart": 1, "horizon:echoing_fossil": 2, "horizon:skyward_plume": 2, "horizon:honeyed_seal": 2},
+     "waves": [
+       {"entities": [["minecraft:vindicator", 4], ["minecraft:evoker", 1], ["minecraft:pillager", 4]], "time": 1600},
+       {"entities": [["minecraft:wither_skeleton", 4], ["cataclysm:ignited_revenant", 2], ["minecraft:blaze", 4]], "time": 1800},
+       {"entities": [["cataclysm:deepling_brute", 2], ["cataclysm:endermaptera", 4], ["minecraft:enderman", 3]], "time": 2000},
+       {"entities": [["cataclysm:ender_golem", 1], ["cataclysm:ignited_berserker", 2], ["minecraft:ravager", 1]], "time": 2600}],
+     "rewards": {"affix": ["apotheosis:mythic"], "affix_count": 1, "affix2": ["apotheosis:epic"], "gems": [],
+                 "purities": ["flawless", "perfect"], "random_gems": 2, "xp": 5000}}
+  ]
+}

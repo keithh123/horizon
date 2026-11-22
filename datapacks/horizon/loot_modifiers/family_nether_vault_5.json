@@ -6,10 +6,6 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/rare"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "incendium:pipeline/treasure"
         }
       ]

@@ -8,13 +8,14 @@
     },
     "title": "Free the End",
     "description": [
-      "The dragon is a beginning. The horizon goes much further."
+      "The dragon is a beginning. Its first defeat gives a Starforged Heart and a trophy;",
+      "re-summoned dragons give their usual drops only."
     ],
     "groups": {
       "4 - Forgotten Realms": {
         "position": [
           96,
-          80
+          72
         ]
       }
     }
@@ -36,11 +37,9 @@
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:starforged_heart",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
     }
   }
 }

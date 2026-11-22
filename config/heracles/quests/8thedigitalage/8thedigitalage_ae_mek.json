@@ -3,12 +3,14 @@
     "icon": {
       "type": "heracles:item",
       "item": {
-        "id": "ae2:pattern_provider"
+        "id": "appmek:chemical_storage_cell_1k"
       }
     },
-    "title": "Chemical Network",
+    "title": "Chemical Storage",
     "description": [
-      "Applied Mekanistics lets AE2 store and autocraft Mekanism chemicals. Pattern providers drive Create and MI too."
+      "Applied Mekanistics lets AE2 store Mekanism chemicals and autocraft with them.",
+      "&7(Item task: craft a 1k chemical storage cell. Applied Mekanistics has no advancements, so the quest cannot",
+      "see the cell actually holding gas - fill it yourself.)"
     ],
     "groups": {
       "8 - The Digital Age": {
@@ -29,7 +31,7 @@
   "tasks": {
     "t0": {
       "type": "heracles:item",
-      "item": "ae2:pattern_provider",
+      "item": "appmek:chemical_storage_cell_1k",
       "amount": 1,
       "collection": "AUTOMATIC"
     }

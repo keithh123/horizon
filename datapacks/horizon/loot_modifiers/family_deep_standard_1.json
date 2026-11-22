@@ -7,10 +7,6 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "deeperdarker:chests/crystallized_amber"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/ancient_city_ice_box"
         }
       ]
     }

@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/shrine/combat_pot"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/toxic_lair/brewing"
+          "loot_table_id": "nova_structures:chests/ruin_loot_master"
         }
       ]
     }

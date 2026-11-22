@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:spyglass"
+      }
+    },
+    "title": "Great Landmarks",
+    "description": [
+      "&7Stage: mid-late&r",
+      "When Dungeons Arise and Cataclysm's open structures: castles, palaces, sanctuaries you can see on the horizon. Hours to clear, many floors, elite mobs.",
+      "",
+      "&ePrepare:&r Enchanted diamond/netherite or rare+ affixes, healing, a backpack, a waystone or warp scroll home.",
+      "&eSignature rewards:&r The Starforged Heart jackpot (vault rooms only), several Ancient Cores, epic/mythic affix rolls in vaults.",
+      "&eComing back:&r One clear each; there are dozens per world. Visible from far away thanks to Voxy, so they double as navigation.",
+      "&eFeeds into:&r Hearts -> fusion, 256M storage, enhancement sigils, legendary ink."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          360
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/landmark"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 12
+    }
+  }
+}

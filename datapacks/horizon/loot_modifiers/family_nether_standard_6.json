@@ -6,15 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:sanctum/banners"
+          "loot_table_id": "incendium:cvill/blacksmith"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:sanctum/lower_loot"
+          "loot_table_id": "incendium:cvill/butcher"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:sanctum/tax_collector"
+          "loot_table_id": "incendium:cvill/medium"
         }
       ]
     }

@@ -6,14 +6,6 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_normal"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_supply"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_barrel"
         },
         {

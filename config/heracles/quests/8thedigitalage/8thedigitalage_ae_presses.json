@@ -36,11 +36,9 @@
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:wayfarer_shard",
-        "count": 2
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
     }
   }
 }

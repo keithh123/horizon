@@ -10,19 +10,11 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/abandoned_mineshaft"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "repurposed_structures:chests/dungeons/badlands"
         },
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "repurposed_structures:chests/dungeons/dark_forest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/dungeons/deep"
         },
         {
           "condition": "neoforge:loot_table_id",
@@ -35,18 +27,6 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "repurposed_structures:chests/dungeons/jungle"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/dungeons/mushroom"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/dungeons/ocean"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/dungeons/snow"
         },
         {
           "condition": "neoforge:loot_table_id",

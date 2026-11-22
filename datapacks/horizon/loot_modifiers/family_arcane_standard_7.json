@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:mage/barracks"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:mage/extras"
+          "loot_table_id": "irons_spellbooks:chests/mountain_tower/mountain_tower"
         }
       ]
     }

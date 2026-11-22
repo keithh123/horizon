@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:underground/chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "terralith:underground/giant_bee_hive"
+          "loot_table_id": "nova_structures:chests/bunker_altar"
         }
       ]
     }

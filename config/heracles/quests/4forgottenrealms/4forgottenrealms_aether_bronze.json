@@ -8,7 +8,7 @@
     },
     "title": "The Slider",
     "description": [
-      "Defeat the Slider in the bronze dungeon."
+      "Defeat the Slider in the bronze dungeon (first defeat: Ancient Core + trophy)."
     ],
     "groups": {
       "4 - Forgotten Realms": {
@@ -36,11 +36,9 @@
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:ancient_core",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
     }
   }
 }

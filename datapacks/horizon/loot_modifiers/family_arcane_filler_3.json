@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/captain_quarters"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/food_barrel"
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/cask"
         }
       ]
     }

@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:inscription_table"
+      }
+    },
+    "title": "Arcane Sites",
+    "description": [
+      "&7Stage: mid&r",
+      "Mage towers, citadels, pyromancer and ice-spider lairs, catacombs: Iron's Spells' own structures and Terralith's mage towers.",
+      "",
+      "&ePrepare:&r Magic resistance (Iron's), mana regen, a way to fight casters at range.",
+      "&eSignature rewards:&r Scrolls and inks (upstream tables, unchanged), Ancient Cores in treasure, Iron's spell gear.",
+      "&eComing back:&r Iron's structures are spread far apart; the Dead King's catacombs are a one-time boss lair.",
+      "&eFeeds into:&r Magic route: scrolls -> spellbook; cores -> epic ink."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          216
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/arcane"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

@@ -16,7 +16,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#horizon:clue/landmark",
+              "destination": "horizon:clue/landmark",
               "decoration": "minecraft:target_x",
               "zoom": 2,
               "search_radius": 40,

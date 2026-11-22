@@ -6,71 +6,55 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "kaisyn:village/exclusives/village_classic_blacksmith"
+          "loot_table_id": "explorify:chest/dark_forest_settlement"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "kaisyn:village/exclusives/village_mediterranean_house"
+          "loot_table_id": "kaisyn:village/village_mushroom_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "kaisyn:village/exclusives/village_piglin_house"
+          "loot_table_id": "kaisyn:village/village_swamp_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "kaisyn:village/exclusives/village_wandering_trader_hut"
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_fisher"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_armorer"
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_butcher"
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_tannery"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_fisher"
+          "loot_table_id": "repurposed_structures:chests/villages/crimson_weaponsmith"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_fletcher"
+          "loot_table_id": "repurposed_structures:chests/villages/ocean_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_mason"
+          "loot_table_id": "repurposed_structures:chests/villages/swamp_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_plains_house"
+          "loot_table_id": "repurposed_structures:chests/villages/warped_fisher"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_savanna_house"
+          "loot_table_id": "repurposed_structures:chests/villages/warped_house"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_shepherd"
+          "loot_table_id": "repurposed_structures:chests/villages/warped_tannery"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_taiga_house"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_tannery"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_temple"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_toolsmith"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+          "loot_table_id": "repurposed_structures:chests/villages/warped_weaponsmith"
         }
       ]
     }

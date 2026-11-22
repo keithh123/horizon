@@ -18,6 +18,8 @@ if os.name == "nt" and not str(ROOT).startswith(LONG):
     ROOT = Path(LONG + str(ROOT))
 CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
 SYSTEM = {"minecraft", "neoforge"}
+# Ranges this checker's vkey() mis-orders but FML (Maven ComparableVersion) accepts; each confirmed by a real client launch.
+LAUNCH_VERIFIED = {("subtle-effects", "fzzy_config", "0.7.7+fix1+1.21+neoforge")}
 PLATFORM = {"minecraft": "1.21.1", "neoforge": "21.1.267", "forge": "21.1.267", "javafml": "4", "java": "21"}
 
 
@@ -112,6 +114,8 @@ def main():
         if typ == "required":
             if not have:
                 (warn if side == "CLIENT" and mid in ("sodium", "iris") else fail).append(f"{owner}: requires {mid} {rng} ({side}) - MISSING")
+            elif not in_range(have[0], rng) and (owner, mid, have[0]) in LAUNCH_VERIFIED:
+                warn.append(f"{owner}: requires {mid} {rng}, found {have[0]} [checker ordering quirk: accepted by FML, confirmed by 0.2.0 client launch]")
             elif not in_range(have[0], rng):
                 # FML 4 treats minecraft/neoforge as "system mods"; the launch log for these exact jars
                 # reports "0 mod requirements missing", so a range mismatch there is advisory only.

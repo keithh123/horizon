@@ -14,7 +14,7 @@
       "9 - Legends and Conquests": {
         "position": [
           48,
-          120
+          108
         ]
       }
     }
@@ -30,17 +30,15 @@
     "t0": {
       "type": "heracles:advancement",
       "advancements": [
-        "cataclysm:kill_harbinger"
+        "horizon:legend/the_harbinger"
       ]
     }
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:starforged_heart",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
     }
   }
 }

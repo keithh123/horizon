@@ -26,10 +26,10 @@
   "dependencies": [],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "mekanism:metallurgic_infuser",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "mekanism:metallurgic_infuser"
+      ]
     }
   },
   "rewards": {

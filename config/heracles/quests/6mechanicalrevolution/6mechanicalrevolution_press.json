@@ -28,10 +28,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "create:mechanical_press",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "create:mechanical_press"
+      ]
     }
   },
   "rewards": {

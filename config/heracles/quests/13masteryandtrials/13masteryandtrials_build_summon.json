@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:summon_focus"
+      }
+    },
+    "title": "Summoner and Artificer",
+    "description": [
+      "&eSummoning and utility:&r Iron's summoning spells, Ars Nouveau familiars and turrets, Occultism spirits.",
+      "Less burst, more control and automation - strong for exploring and base-building."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          180
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

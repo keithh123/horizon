@@ -8,13 +8,13 @@
     },
     "title": "Iron in the Dark",
     "description": [
-      "Wrought chambers underground hold the Ferrous Wroughtnaut. Hit it from behind."
+      "Wrought chambers underground hold the Ferrous Wroughtnaut. Hit it from behind. First defeat: Ancient Core + trophy."
     ],
     "groups": {
       "2 - The Wild Frontier": {
         "position": [
           96,
-          40
+          36
         ]
       }
     }
@@ -28,20 +28,17 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:kill_entity",
-      "entity": {
-        "type": "mowziesmobs:ferrous_wroughtnaut"
-      },
-      "amount": 1
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ferrous_wroughtnaut"
+      ]
     }
   },
   "rewards": {
     "r0": {
-      "type": "heracles:item",
-      "item": {
-        "id": "horizon:ancient_core",
-        "count": 1
-      }
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
     }
   }
 }

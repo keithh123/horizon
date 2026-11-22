@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:mossy_cobblestone"
+      }
+    },
+    "title": "Roadside Ruins & Camps",
+    "description": [
+      "&7Stage: early&r",
+      "Small, quick discoveries between destinations: ruins, shrines, camps, guide posts, watchtowers. Five minutes each.",
+      "",
+      "&ePrepare:&r Stone tools, food. Occasionally a few hostile mobs.",
+      "&eSignature rewards:&r Wayfarer Shards, occasional charts to temples and arcane sites.",
+      "&eComing back:&r Found everywhere; the main shard income while travelling.",
+      "&eFeeds into:&r Shards -> warp stones, gem dust, backpack upgrades."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          36
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/roadside"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    },
+    "r1": {
+      "type": "heracles:loottable",
+      "loot_table": "horizon:rewards/quest/chart_temple"
+    }
+  }
+}

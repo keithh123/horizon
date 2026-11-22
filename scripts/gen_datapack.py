@@ -34,6 +34,9 @@ LOCK = json.loads((ROOT / "manifests/lock.json").read_text())
 FAM = json.loads((ROOT / "manifests/loot_families.json").read_text(encoding="utf-8"))
 LEG = json.loads((ROOT / "manifests/legends.json").read_text(encoding="utf-8"))
 AUDIT = json.loads((ROOT / "manifests/loot_audit.json").read_text())
+EXP = json.loads((ROOT / "manifests/expeditions.json").read_text(encoding="utf-8"))
+_CAL = ROOT / "manifests/loot_calibration.json"
+CAL = json.loads(_CAL.read_text()) if _CAL.exists() else {}   # real placed structures (scripts/calibrate.py)
 
 VANILLA_CHESTS = ["village/village_" + v for v in ("armorer", "butcher", "cartographer", "desert_house", "fisher", "fletcher", "mason",
                   "plains_house", "savanna_house", "shepherd", "snowy_house", "taiga_house", "tannery", "temple", "toolsmith", "weaponsmith")] + [
@@ -181,6 +184,8 @@ def groups_from_audit():
         key = group_key(tpl)
         for tb, n in counts.items():
             g[key][tb] += n
+    for st, c in CAL.items():          # measured container counts replace the unique-template estimate
+        g[st] = defaultdict(int, c["tables"])
     return g
 
 
@@ -261,7 +266,7 @@ def chance_entry(item, p, count=(1, 1), extra_fn=None):
 
 def map_entry(clue, p, name):
     cm = FAM["clue_maps"][clue]
-    fn = [{"function": "minecraft:exploration_map", "destination": f"#horizon:clue/{clue}", "decoration": cm["decoration"],
+    fn = [{"function": "minecraft:exploration_map", "destination": f"horizon:clue/{clue}", "decoration": cm["decoration"],
            "zoom": 2, "search_radius": cm["search_radius"], "skip_existing_chunks": True},
           {"function": "minecraft:set_name", "target": "item_name", "name": {"text": name, "color": "gold", "italic": False}}]
     return {"rolls": 1, "conditions": [{"condition": "minecraft:random_chance", "chance": p}],
@@ -426,6 +431,126 @@ def emit_atlas():
     return {f: len(v) for f, v in fam_structs.items()}
 
 
+# ---------------------------------------------------------------- expeditions: exchange, salvage, trials
+def jar_files(prefix_re):
+    out = {}
+    for m in LOCK["mods"]:
+        with zipfile.ZipFile(CACHE / m["file"]) as z:
+            for n in z.namelist():
+                if re.match(prefix_re, n) and n.endswith(".json"):
+                    try:
+                        out[n] = json.loads(z.read(n))
+                    except Exception:
+                        pass
+    return out
+
+
+def expand_tag(tag, tagfiles, seen=None):
+    ns, p = tag.split(":")
+    seen = seen or set()
+    vals = []
+    for n, d in tagfiles.items():
+        if n in (f"data/{ns}/tags/item/{p}.json", f"data/{ns}/tags/items/{p}.json"):
+            for v in d.get("values", []):
+                v = v["id"] if isinstance(v, dict) else v
+                if v.startswith("#"):
+                    if v not in seen:
+                        seen.add(v)
+                        vals += expand_tag(v[1:], tagfiles, seen)
+                else:
+                    vals.append(v)
+    return sorted(set(vals))
+
+
+def craftable_outputs():
+    outs = set()
+    for n, d in jar_files(r"data/[^/]+/recipes?/").items():
+        res = d.get("result") or d.get("output") or d.get("results") or []
+        for r in (res if isinstance(res, list) else [res]):
+            if isinstance(r, str):
+                outs.add(r)
+            elif isinstance(r, dict):
+                i = r.get("id") or r.get("item")
+                if isinstance(i, str):
+                    outs.add(i)
+    return outs
+
+
+def gem_min_purity(gem):
+    ns, p = gem.split(":")
+    for m in LOCK["mods"]:
+        with zipfile.ZipFile(CACHE / m["file"]) as z:
+            n = f"data/{ns}/gems/{p}.json"
+            if n in z.namelist():
+                return json.loads(z.read(n)).get("min_purity", "chipped")
+    raise SystemExit(f"unknown gem {gem}")
+
+
+def gem_stack(gem, purity):
+    return {"id": "apotheosis:gem", "count": 1, "components": {"apotheosis:gem": gem, "apotheosis:purity": purity}}
+
+
+def emit_expeditions():
+    order = ["cracked", "chipped", "flawed", "normal", "flawless", "perfect"]
+    ex = EXP["exchange"]
+    n_ex = 0
+    for token, gems in ex["offers"].items():
+        for gem in gems:
+            pur = max("flawed", gem_min_purity(gem), key=order.index)
+            write(f"horizon/recipe/exchange/{token.split(':')[1]}_{gem.split('/')[-1]}.json", {
+                "type": "minecraft:crafting_shapeless", "category": "misc", "group": "horizon_exchange",
+                "ingredients": [{"item": token}] * ex["cost"] + [{"item": "apotheosis:gem_dust"}] * ex["dust"],
+                "result": gem_stack(gem, pur)})
+            n_ex += 1
+    tagfiles = jar_files(r"data/[^/]+/tags/items?/")
+    crafted = craftable_outputs()
+    n_salv, salvaged = 0, {}
+    for sv in EXP["salvage"]:
+        items = [i for i in expand_tag(sv["tag"], tagfiles) if i not in sv["exclude"] and i not in crafted]
+        dropped = [i for i in expand_tag(sv["tag"], tagfiles) if i in crafted and i not in sv["exclude"]]
+        salvaged[sv["name"]] = {"items": len(items), "excluded_craftable": dropped, "excluded_manual": sv["exclude"]}
+        for i in items:
+            need("item", i)
+        for o in sv["outputs"]:
+            need("item", o[0])
+        write(f"horizon/recipe/salvaging/{sv['name']}.json", {
+            "type": "apotheosis:salvaging", "input": [{"item": i} for i in items],
+            "outputs": [{"min_count": o[1], "max_count": o[2], "stack": {"id": o[0], "count": 1}} for o in sv["outputs"]]})
+        n_salv += 1
+    for t in EXP["trials"]:
+        waves = []
+        for w in t["waves"]:
+            waves.append({"entities": [{"entity": need("entity", e), "count": c} for e, c in w["entities"]],
+                          "modifiers": [], "rewards": [], "max_wave_time": w["time"], "setup_time": 160})
+        rw = t["rewards"]
+        rewards = [{"type": "gateways:counted", "count": rw["affix_count"], "reward": {"type": "apotheosis:affix_item", "rarities": rw["affix"]}}]
+        if rw.get("affix2"):
+            rewards.append({"type": "apotheosis:affix_item", "rarities": rw["affix2"]})
+        if rw.get("gems"):
+            for g in rw["gems"]:
+                gem_min_purity(g)
+            rewards.append({"type": "apotheosis:gem", "gems": rw["gems"], "purities": rw["purities"]})
+        if rw.get("random_gems"):
+            rewards.append({"type": "gateways:counted", "count": rw["random_gems"],
+                            "reward": {"type": "apotheosis:true_random_gem", "purities": rw["purities"]}})
+        rewards.append({"type": "gateways:experience", "experience": rw["xp"], "orb_size": 50})
+        write(f"horizon/gateways/trial/{t['id']}.json", {"size": t["size"], "color": t["color"], "waves": waves, "rewards": rewards})
+        # granted by kubejs/server_scripts/horizon_events.js on GateEvent$Completed (everyone near the gate)
+        write(f"horizon/advancement/trial/{t['id']}.json", {"criteria": {"done": {"trigger": "minecraft:impossible"}},
+                                                           "rewards": {"function": "horizon:fx/legend_mini"}})
+        ing = []
+        for item, n in t["cost"].items():
+            ing += [{"item": need("item", item)}] * n
+        if len(ing) > 9:
+            raise SystemExit(f"trial {t['id']}: recipe has {len(ing)} > 9 ingredients")
+        write(f"horizon/recipe/trial/{t['id']}.json", {
+            "type": "minecraft:crafting_shapeless", "category": "misc", "group": "horizon_trials",
+            "ingredients": ing + [{"item": "minecraft:ender_pearl"}] * (1 if len(ing) < 9 else 0),
+            "result": {"id": "gateways:gate_pearl", "count": 1, "components": {"gateways:gateway": f"horizon:trial/{t['id']}"}}})
+    (ROOT / "manifests/salvage_report.json").write_text(json.dumps(salvaged, indent=1))
+    return n_ex, n_salv, len(EXP["trials"])
+
+
 # ---------------------------------------------------------------- report
 def report(classes, chance, groups, group_family, members):
     rows = []
@@ -445,7 +570,7 @@ def report(classes, chance, groups, group_family, members):
                 mult = MEAN_COUNT.get(k, 1.0)
                 exp[k] += cnt * p * mult
             p0 *= (1 - c.get("heart", 0)) ** cnt
-        rows.append({"group": gk, "family": f, "containers": n, **{k: round(v, 2) for k, v in exp.items()},
+        rows.append({"group": gk, "family": f, "containers": n, "calibrated": gk in CAL, **{k: round(v, 2) for k, v in exp.items()},
                      "p_heart_ge1": round(1 - p0, 2)})
     rows.sort(key=lambda r: (r["family"], -r["containers"]))
     fams = sorted({r["family"] for r in rows})
@@ -461,15 +586,17 @@ def report(classes, chance, groups, group_family, members):
           "Expected Horizon rewards for one full clear of each structure group, computed by `scripts/gen_datapack.py` from the",
           "real container counts in the structure templates (`scripts/audit_loot.py`). Each template is counted once; jigsaw",
           "structures that repeat a piece have more containers, so treat these as per-unique-layout figures. Apotheosis' affix",
-          "and gem numbers are the expected count of injected affix items / gems on top of each structure's own loot.", "",
+          "and gem numbers are the expected count of injected affix items / gems on top of each structure's own loot.",
+          "Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include",
+          "repeated jigsaw pieces; the solver budgets those structures from the measured counts.", "",
           f"Tables classified: {len(classes)} - inject tables: {len(members)} - placed but unassigned (no Horizon injection): {len(unassigned)}", ""]
     for f in fams:
         fr = [r for r in rows if r["family"] == f]
         md += [f"## {FAM['families'][f]['title']} (`{f}`) - {len(fr)} structure groups", "",
                "| Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |",
                "|---|---|---|---|---|---|---|---|---|"]
-        for r in sorted(fr, key=lambda r: -r["containers"])[:25]:
-            md.append(f"| `{r['group']}` | {r['containers']} | {r.get('shard', 0)} | {r.get('core', 0)} | {r.get('heart', 0)} | "
+        for r in sorted(fr, key=lambda r: (not r.get("calibrated"), -r["containers"]))[:25]:
+            md.append(f"| `{r['group']}`{' **(measured)**' if r.get('calibrated') else ''} | {r['containers']} | {r.get('shard', 0)} | {r.get('core', 0)} | {r.get('heart', 0)} | "
                       f"{r['p_heart_ge1']} | {r.get('token', 0)} | {r.get('affix', 0)} | {r.get('gem', 0)} |")
         if len(fr) > 25:
             md.append(f"| ... {len(fr) - 25} smaller groups | | | | | | | | |")
@@ -505,7 +632,14 @@ def main():
     na, ng = emit_apotheosis(classes, chance)
     mods += emit_legends()
     atlas = emit_atlas()
+    nx, ns_, nt = emit_expeditions()
     write("neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": mods})
+    for clue in FAM["clue_maps"]:   # quest-reward charts (Heracles loot-table reward)
+        write(f"horizon/loot_table/rewards/quest/chart_{clue}.json", {"type": "minecraft:chest", "pools": [map_entry(clue, 1.0, "Surveyor's Chart")]})
+    tokens = sorted(f["token"] for f in FAM["families"].values() if f.get("token"))
+    write("horizon/tags/item/tokens.json", {"replace": False, "values": tokens})
+    write("horizon/tags/item/relics.json", {"replace": False, "values": sorted(FAM["items"].values())})
+    write("horizon/tags/item/trophies.json", {"replace": False, "values": sorted(TROPHY(b["id"]) for b in LEG["bosses"])})
     write("repurposed_structures/tags/item/blacklisted_from_modded_loot_importing.json",
           {"replace": False, "values": sorted(HORIZON_ITEMS | {TROPHY(b["id"]) for b in LEG["bosses"]})})
     rows = report(classes, chance, groups, group_family, members)
@@ -513,7 +647,7 @@ def main():
     OWNED.write_text(json.dumps({"generator": "scripts/gen_datapack.py", "files": sorted(written)}, indent=1) + "\n")
     print(f"ores disabled: {len(DISABLE_ORES)} | structure sets: {len(STRUCTURE_SETS)} | tables classified: {len(classes)} "
           f"| inject tables: {len(members)} | GLMs: {len(mods)} | apotheosis entries: +{na} affix, +{ng} gem "
-          f"| atlas families: {len(atlas)} | files: {len(written)}")
+          f"| atlas families: {len(atlas)} | exchanges: {nx} | salvage recipes: {ns_} | trials: {nt} | files: {len(written)}")
 
 
 if __name__ == "__main__":

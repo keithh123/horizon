@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:shield"
+      }
+    },
+    "title": "Bulwark",
+    "description": [
+      "&eDefensive sustain:&r shields, armour/protection affixes, life steal and regeneration.",
+      "Look for &eGuardian&r (Echoing Fossils) and &eLunar&r gems, Relics with healing, Farmer's Delight buffs."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          72
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

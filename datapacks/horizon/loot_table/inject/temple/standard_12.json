@@ -6,7 +6,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.01
+          "chance": 0.133
         }
       ],
       "entries": [
@@ -21,7 +21,7 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.012
+          "chance": 0.1
         }
       ],
       "entries": [
@@ -46,7 +46,7 @@
           "functions": [
             {
               "function": "minecraft:exploration_map",
-              "destination": "#horizon:clue/landmark",
+              "destination": "horizon:clue/landmark",
               "decoration": "minecraft:target_x",
               "zoom": 2,
               "search_radius": 40,

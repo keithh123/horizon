@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:salvaging_table"
+      }
+    },
+    "title": "Nothing Wasted",
+    "description": [
+      "Duplicate Artifacts, Relics and Simply Swords uniques salvage into Wayfarer Shards and gem dust (uniques can",
+      "also give an Ancient Core) at Apotheosis' salvaging table. Only loot-only items salvage - nothing farmable.",
+      "&7(Item task: build a salvaging table.)"
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          504
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "apotheosis:salvaging_table",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

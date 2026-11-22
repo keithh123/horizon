@@ -14,10 +14,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/woodland_mansion"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/illager_hideout_tresure"
         }
       ]

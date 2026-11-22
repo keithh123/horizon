@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bow"
+      }
+    },
+    "title": "Deadeye",
+    "description": [
+      "&eRanged:&r bows and crossbows take Apotheosis ranged affixes (arrow damage/velocity, snipe, volley).",
+      "Solar and Lightning gems (Skyward Plumes) suit fast bows; arrow quivers from Relics help."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          108
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

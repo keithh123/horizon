@@ -26,8 +26,10 @@
   "dependencies": [],
   "tasks": {
     "t0": {
-      "type": "heracles:changed_dimension",
-      "to": "minecraft:the_nether"
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_nether"
+      ]
     }
   },
   "rewards": {

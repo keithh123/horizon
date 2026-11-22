@@ -8,7 +8,8 @@
     },
     "title": "Pack Mule",
     "description": [
-      "A backpack makes long expeditions possible."
+      "A backpack makes long expeditions possible.",
+      "&7(Introductory item task.)"
     ],
     "groups": {
       "1 - The First Steps": {

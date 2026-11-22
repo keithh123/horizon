@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_cutting_table"
+      }
+    },
+    "title": "Flawless Ambition",
+    "description": [
+      "Cut any gem up to Perfect purity at the gem cutting table. Gem dust comes from salvaging and shards."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          360
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/pinnacle"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
+    }
+  }
+}

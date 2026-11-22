@@ -1,0 +1,20 @@
+{
+  "_comment": "Ambient-effect levels used by apply-profile.ps1 (profile key 'effects'). Only Subtle Effects keys that exist in its generated defaults (0.2.0 test launch). Files are created on first launch; missing files are skipped. Gameplay is unaffected.",
+  "levels": {
+    "minimal": {
+      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 3, "enableParticleCulling": "true"}},
+      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 0.1, "pollenDensity": 0.1, "sculkDustDensity": 0.1, "flameGeyserSpawnChance": 1, "smokeGeyserSpawnChance": 1, "bubbleGeyserSpawnChance": 1}},
+      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.1, "lanternSparksDensity": 1, "lavaSparksDensity": 0.25}}
+    },
+    "balanced": {
+      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 5, "enableParticleCulling": "true"}},
+      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 0.5, "pollenDensity": 0.75, "sculkDustDensity": 0.25, "flameGeyserSpawnChance": 5, "smokeGeyserSpawnChance": 5, "bubbleGeyserSpawnChance": 5}},
+      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.35, "lanternSparksDensity": 5, "lavaSparksDensity": 1.0}}
+    },
+    "full": {
+      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 8, "enableParticleCulling": "true"}},
+      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 1.0, "pollenDensity": 1.5, "sculkDustDensity": 0.5, "flameGeyserSpawnChance": 8, "smokeGeyserSpawnChance": 8, "bubbleGeyserSpawnChance": 8}},
+      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.6, "lanternSparksDensity": 8, "lavaSparksDensity": 1.5}}
+    }
+  }
+}

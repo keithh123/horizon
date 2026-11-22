@@ -6,11 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/evoker_fort"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "irons_spellbooks:chests/evoker_fort/guard_tower"
+          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_chest"
         }
       ]
     }

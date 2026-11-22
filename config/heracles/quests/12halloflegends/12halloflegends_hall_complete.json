@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:lodestone"
+      }
+    },
+    "title": "Curator of Legends",
+    "description": [
+      "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet."
+    ],
+    "groups": {
+      "12 - Hall of Legends": {
+        "position": [
+          96,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "12halloflegends_legend_ender_dragon",
+    "12halloflegends_legend_wither",
+    "12halloflegends_legend_warden",
+    "12halloflegends_legend_ignis",
+    "12halloflegends_legend_netherite_monstrosity",
+    "12halloflegends_legend_the_harbinger",
+    "12halloflegends_legend_the_leviathan",
+    "12halloflegends_legend_ender_guardian",
+    "12halloflegends_legend_maledictus",
+    "12halloflegends_legend_ancient_remnant",
+    "12halloflegends_legend_scylla",
+    "12halloflegends_legend_sun_spirit",
+    "12halloflegends_legend_stalker"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "gateways:gate_pearl",
+        "count": 1,
+        "components": {
+          "gateways:gateway": "horizon:trial/horizon"
+        }
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 50
+    }
+  }
+}

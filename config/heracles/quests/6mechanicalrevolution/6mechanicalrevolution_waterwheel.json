@@ -8,7 +8,7 @@
     },
     "title": "Water Power",
     "description": [
-      "Place a water wheel to generate stress units."
+      "Place a water wheel in flowing water to generate stress units."
     ],
     "groups": {
       "6 - Mechanical Revolution": {
@@ -28,10 +28,10 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "create:water_wheel",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "create:water_wheel"
+      ]
     }
   },
   "rewards": {

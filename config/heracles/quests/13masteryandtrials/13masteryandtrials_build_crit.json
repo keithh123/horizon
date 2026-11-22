@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplyswords:iron_rapier"
+      }
+    },
+    "title": "Fast Blades",
+    "description": [
+      "&eFast melee and crit:&r rapiers, katanas, sais and twinblades (Better Combat combos).",
+      "Look for crit chance/damage affixes, &eSamurai&r and &eSlipstream&r gems (Slipstream: Tidebound Doubloons).",
+      "Accessories: speed and attack-speed artifacts."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

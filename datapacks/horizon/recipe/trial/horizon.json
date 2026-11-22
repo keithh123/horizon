@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "horizon_trials",
+  "ingredients": [
+    {
+      "item": "horizon:starforged_heart"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:echoing_fossil"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:skyward_plume"
+    },
+    {
+      "item": "horizon:honeyed_seal"
+    },
+    {
+      "item": "horizon:honeyed_seal"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": {
+    "id": "gateways:gate_pearl",
+    "count": 1,
+    "components": {
+      "gateways:gateway": "horizon:trial/horizon"
+    }
+  }
+}

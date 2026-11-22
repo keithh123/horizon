@@ -4,8 +4,10 @@ Expected Horizon rewards for one full clear of each structure group, computed by
 real container counts in the structure templates (`scripts/audit_loot.py`). Each template is counted once; jigsaw
 structures that repeat a piece have more containers, so treat these as per-unique-layout figures. Apotheosis' affix
 and gem numbers are the expected count of injected affix items / gems on top of each structure's own loot.
+Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include
+repeated jigsaw pieces; the solver budgets those structures from the measured counts.
 
-Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon injection): 93
+Tables classified: 932 - inject tables: 296 - placed but unassigned (no Horizon injection): 93
 
 ## The Aether (`aether`) - 1 structure groups
 
@@ -13,11 +15,10 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 |---|---|---|---|---|---|---|---|---|
 | `aether:ruined_portal` | 13 | 0 | 0.49 | 0 | 0.0 | 2.01 | 1.0 | 0.81 |
 
-## Arcane Sites (`arcane`) - 13 structure groups
+## Arcane Sites (`arcane`) - 12 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
-| `irons_spellbooks:citadel` | 132 | 0.48 | 0.32 | 0 | 0.0 | 0 | 0.6 | 0.6 |
 | `irons_spellbooks:catacombs` | 88 | 0.83 | 0.7 | 0 | 0.0 | 0 | 1.03 | 1.03 |
 | `irons_spellbooks:pyromancer_tower` | 50 | 0.79 | 0.35 | 0 | 0.0 | 0 | 0.8 | 0.8 |
 | `irons_spellbooks:villages` | 33 | 0.55 | 0.7 | 0 | 0.0 | 0 | 0.88 | 0.88 |
@@ -36,7 +37,7 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
 | `cataclysm:acropolis` | 24 | 0 | 1.01 | 0 | 0.0 | 0 | 3.0 | 1.99 |
-| `cataclysm:frosted_prison` | 14 | 0.03 | 1.24 | 0.08 | 0.08 | 0.35 | 3.48 | 2.31 |
+| `cataclysm:frosted_prison` | 14 | 0.01 | 1.18 | 0.06 | 0.06 | 0.26 | 3.35 | 2.23 |
 | `mowziesmobs:monastery` | 11 | 0 | 1.0 | 0 | 0.0 | 0 | 3.0 | 2.0 |
 | `cataclysm:amethyst_nest` | 2 | 0 | 1.0 | 0 | 0.0 | 0 | 1.2 | 0.9 |
 
@@ -54,12 +55,12 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
-| `nova_structures:end_castle` | 113 | 0 | 0.99 | 0.25 | 0.22 | 2.55 | 3.0 | 1.7 |
-| `repurposed_structures:shipwrecks/end` | 38 | 0 | 1.0 | 0.25 | 0.23 | 3.0 | 3.01 | 2.0 |
+| `nova_structures:end_castle` **(measured)** | 187.0 | 0 | 1.01 | 0.26 | 0.23 | 2.54 | 2.53 | 1.71 |
+| `repurposed_structures:shipwrecks/end` | 38 | 0 | 1.0 | 0.25 | 0.23 | 2.55 | 2.56 | 1.7 |
 | `repurposed_structures:ancient_cities/end` | 14 | 0 | 0.99 | 0 | 0.0 | 3.0 | 3.0 | 2.0 |
-| `cataclysm:ruined_citadel` | 13 | 0.13 | 0.49 | 0.17 | 0.16 | 0.7 | 1.03 | 0.68 |
+| `cataclysm:ruined_citadel` | 13 | 0.05 | 0.35 | 0.13 | 0.12 | 0.53 | 0.74 | 0.49 |
 | `nova_structures:end_lighthouse` | 8 | 0 | 0 | 0 | 0.0 | 3.0 | 3.0 | 2.0 |
-| `explorify:end_shipwreck` | 4 | 0 | 0.23 | 0.08 | 0.08 | 0.35 | 0.45 | 0.3 |
+| `explorify:end_shipwreck` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
 | `repurposed_structures:ruined_portals` | 2 | 0 | 1.0 | 0 | 0.0 | 2.1 | 1.2 | 0.9 |
 
 ## The Bumblezone (`hive`) - 19 structure groups
@@ -90,57 +91,58 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
-| `dungeons_arise:mining_complex` | 191 | 3.06 | 0 | 0 | 0.0 | 0 | 4.93 | 3.04 |
-| `dungeons_arise:kisegi_sanctuary` | 138 | 3.04 | 2.53 | 1.2 | 0.71 | 0 | 4.98 | 3.04 |
-| `dungeons_arise:shiraz_palace` | 122 | 2.98 | 2.51 | 1.2 | 0.72 | 0 | 5.04 | 3.04 |
-| `dungeons_arise:mechanical_nest` | 90 | 2.97 | 2.5 | 1.2 | 0.73 | 0 | 4.98 | 2.99 |
-| `dungeons_arise:bandit_towers` | 88 | 2.96 | 2.5 | 1.2 | 0.72 | 0 | 5.0 | 3.03 |
-| `dungeons_arise:keep_kayra` | 84 | 3.0 | 2.52 | 1.19 | 0.7 | 0 | 4.99 | 2.99 |
-| `dungeons_arise:plague_asylum` | 26 | 3.01 | 1.76 | 1.0 | 0.75 | 0 | 3.95 | 2.55 |
-| `dungeons_arise:thornborn_towers` | 25 | 3.0 | 0.5 | 0.5 | 0.5 | 0 | 1.85 | 1.19 |
-| `dungeons_arise:heavenly_conqueror` | 16 | 3.0 | 1.0 | 1.0 | 0.75 | 0 | 2.45 | 1.66 |
-| `dungeons_arise:heavenly_challenger` | 12 | 2.4 | 2.5 | 1.2 | 0.75 | 0 | 4.2 | 2.7 |
+| `dungeons_arise:bandit_towers` **(measured)** | 450.0 | 3.7 | 2.49 | 1.22 | 0.71 | 0 | 4.68 | 2.82 |
+| `dungeons_arise:mechanical_nest` **(measured)** | 374.0 | 5.6 | 2.49 | 1.2 | 0.71 | 0 | 6.85 | 4.22 |
+| `dungeons_arise:plague_asylum` **(measured)** | 159.0 | 4.55 | 2.92 | 1.2 | 0.73 | 1.99 | 7.24 | 4.51 |
+| `dungeons_arise:keep_kayra` **(measured)** | 142.0 | 2.63 | 2.14 | 1.22 | 0.71 | 0 | 4.39 | 2.8 |
+| `dungeons_arise:shiraz_palace` **(measured)** | 137.0 | 3.44 | 2.52 | 1.2 | 0.72 | 0 | 5.38 | 3.23 |
+| `dungeons_arise:kisegi_sanctuary` **(measured)** | 130.0 | 3.63 | 2.61 | 1.2 | 0.72 | 0.41 | 5.65 | 3.44 |
+| `dungeons_arise:thornborn_towers` **(measured)** | 124.0 | 3.4 | 2.55 | 1.2 | 0.74 | 0.21 | 5.28 | 3.3 |
+| `dungeons_arise:mining_complex` **(measured)** | 116.0 | 3.89 | 0.27 | 0 | 0.0 | 1.25 | 6.11 | 3.76 |
+| `dungeons_arise:heavenly_conqueror` **(measured)** | 22.0 | 3.08 | 1.1 | 1.0 | 0.75 | 0.33 | 2.76 | 1.87 |
+| `dungeons_arise:heavenly_challenger` | 12 | 1.31 | 0.98 | 0.16 | 0.15 | 0 | 1.56 | 1.12 |
 | `dungeons_arise:heavenly_rider` | 9 | 3.0 | 1.0 | 1.0 | 0.75 | 0 | 2.45 | 1.65 |
 
-## Nether Expeditions (`nether`) - 33 structure groups
+## Nether Expeditions (`nether`) - 36 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
-| `incendium:sanctum` | 111 | 0 | 0.7 | 0.05 | 0.05 | 2.14 | 1.7 | 1.19 |
+| `incendium:sanctum` **(measured)** | 136.0 | 0.32 | 0.97 | 0.05 | 0.05 | 2.08 | 2.16 | 1.65 |
+| `incendium:forbidden_castle` **(measured)** | 115.0 | 0.35 | 0.32 | 0.03 | 0.03 | 0.82 | 0.89 | 0.61 |
+| `betterfortresses:fortress` **(measured)** | 99.0 | 0 | 0.69 | 0 | 0.0 | 2.5 | 2.01 | 1.39 |
+| `minecraft:bastion_remnant` **(measured)** | 31.0 | 0.35 | 0.28 | 0 | 0.0 | 1.33 | 1.12 | 0.77 |
 | `nova_structures:nether_port` | 93 | 0 | 0.7 | 0 | 0.0 | 2.46 | 1.98 | 1.4 |
-| `incendium:castle` | 76 | 0 | 0.7 | 0.05 | 0.05 | 2.12 | 2.02 | 1.19 |
+| `incendium:castle` | 76 | 0 | 0.68 | 0.05 | 0.05 | 1.88 | 1.58 | 1.1 |
 | `incendium:quartz_flats` | 44 | 0 | 0.7 | 0 | 0.0 | 2.5 | 1.99 | 1.39 |
-| `betterfortresses:halls` | 43 | 0 | 0.7 | 0.05 | 0.05 | 2.51 | 2.01 | 1.41 |
-| `betterfortresses:keep` | 42 | 0 | 0.5 | 0 | 0.0 | 1.25 | 1.18 | 0.82 |
+| `betterfortresses:halls` | 43 | 0 | 0.23 | 0 | 0.0 | 1.24 | 0.87 | 0.6 |
+| `betterfortresses:keep` | 42 | 0 | 0.43 | 0 | 0.0 | 0.9 | 0.9 | 0.61 |
 | `incendium:cvill` | 42 | 0 | 0.7 | 0 | 0.0 | 2.49 | 2.01 | 1.41 |
 | `repurposed_structures:bastions/underground` | 37 | 0 | 0.71 | 0.05 | 0.05 | 2.52 | 1.99 | 1.41 |
 | `nova_structures:nether_skeleton_tower` | 36 | 0 | 0.7 | 0 | 0.0 | 2.51 | 2.0 | 1.39 |
 | `dungeons_arise:scorched_mines` | 23 | 0 | 0.7 | 0.05 | 0.05 | 2.51 | 2.01 | 1.4 |
-| `repurposed_structures:temples` | 22 | 2.0 | 2.0 | 0 | 0.0 | 4.5 | 5.2 | 3.74 |
-| `incendium:reactor` | 18 | 0 | 0.7 | 0.05 | 0.05 | 2.5 | 1.99 | 1.4 |
-| `incendium:pipeline` | 17 | 0 | 0.7 | 0.05 | 0.05 | 2.5 | 2.0 | 1.4 |
+| `repurposed_structures:temples` | 22 | 2.0 | 1.86 | 0 | 0.0 | 4.19 | 4.95 | 3.57 |
+| `incendium:reactor` | 18 | 0 | 0.7 | 0.05 | 0.05 | 2.13 | 1.7 | 1.19 |
+| `incendium:pipeline` | 17 | 0 | 0.19 | 0.01 | 0.01 | 0.77 | 0.64 | 0.45 |
 | `incendium:the_lab` | 16 | 0 | 0.7 | 0.05 | 0.05 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:ancient_cities/nether` | 14 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
 | `betterdungeons:small_nether_dungeon` | 13 | 0 | 0 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:shipwrecks/nether` | 10 | 0 | 0.7 | 0.05 | 0.05 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:cities/nether` | 8 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:strongholds/nether` | 8 | 0 | 0 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
-| `nova_structures:donjon` | 6 | 0.6 | 0.68 | 0.05 | 0.05 | 2.34 | 2.04 | 1.49 |
-| `repurposed_structures:ruins/nether` | 5 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
+| `nova_structures:donjon` | 6 | 0.6 | 0.11 | 0.01 | 0.01 | 0.33 | 0.88 | 0.64 |
+| `repurposed_structures:ruins/nether` | 5 | 0 | 0.03 | 0 | 0.0 | 0.16 | 0.1 | 0.07 |
 | `nova_structures:skeleton_camp` | 4 | 0 | 0.1 | 0 | 0.0 | 0.28 | 0.21 | 0.14 |
-| `repurposed_structures:outposts/basalt` | 4 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
-| `repurposed_structures:outposts/crimson` | 4 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
-| `repurposed_structures:outposts/nether_brick` | 4 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
-| ... 8 smaller groups | | | | | | | | |
+| ... 11 smaller groups | | | | | | | | |
 
-## Ocean Expeditions (`ocean`) - 13 structure groups
+## Ocean Expeditions (`ocean`) - 14 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
+| `dungeons_arise:undead_pirate_ship` **(measured)** | 44.0 | 0.96 | 0.34 | 0 | 0.0 | 1.85 | 1.45 | 1.01 |
+| `minecraft:mineshaft` **(measured)** | 5.0 | 0.46 | 0.03 | 0 | 0.0 | 0.14 | 0.31 | 0.2 |
 | `nova_structures:conduit_ruin` | 51 | 0.82 | 0.41 | 0 | 0.0 | 1.99 | 1.38 | 1.02 |
-| `dungeons_arise:undead_pirate_ship` | 28 | 0.81 | 0.4 | 0 | 0.0 | 2.0 | 1.41 | 1.01 |
-| `cataclysm:sunken_city` | 18 | 0.63 | 0.33 | 0 | 0.0 | 1.52 | 1.11 | 0.79 |
-| `dungeons_arise:illager_corsair` | 15 | 0.8 | 0.4 | 0 | 0.0 | 1.99 | 1.4 | 1.0 |
+| `cataclysm:sunken_city` | 18 | 0.57 | 0.31 | 0 | 0.0 | 1.52 | 1.06 | 0.75 |
+| `dungeons_arise:illager_corsair` | 15 | 0.32 | 0.17 | 0 | 0.0 | 0.72 | 0.58 | 0.41 |
 | `dungeons_arise:illager_galley` | 11 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `repurposed_structures:monuments/desert` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `repurposed_structures:monuments/icy` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
@@ -148,7 +150,7 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 | `repurposed_structures:monuments/nether` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `dungeons_arise:fishing_hut` | 3 | 0.8 | 0 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `dungeons_arise:typhon` | 2 | 0 | 0.4 | 0 | 0.0 | 2.0 | 1.2 | 0.9 |
-| `betteroceanmonuments:start` | 1 | 0.6 | 0.4 | 0 | 0.0 | 1.05 | 0.6 | 0.45 |
+| `betteroceanmonuments:start` | 1 | 0.03 | 0.02 | 0 | 0.0 | 0.08 | 0.06 | 0.04 |
 | `dungeons_arise:lighthouse` | 1 | 0.6 | 0.4 | 0 | 0.0 | 1.05 | 0.6 | 0.45 |
 
 ## Roadside Ruins & Camps (`roadside`) - 29 structure groups
@@ -175,48 +177,51 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 | `repurposed_structures:ruins/land_hot` | 12 | 0.7 | 0 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `repurposed_structures:ruins/land_icy` | 12 | 0.7 | 0 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `repurposed_structures:ruins/land_warm` | 12 | 0.7 | 0 | 0 | 0.0 | 0 | 0.4 | 0.25 |
-| `dungeons_arise:illager_campsite` | 9 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
+| `dungeons_arise:illager_campsite` | 9 | 0.3 | 0 | 0 | 0.0 | 0 | 0.18 | 0.11 |
 | `dungeons_arise:jungle_tree_house` | 9 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `dungeons_arise:merchant_campsite` | 9 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `betterwitchhuts:witch_hut` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `dungeons_arise:small_blimp` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | ... 4 smaller groups | | | | | | | | |
 
-## Settlements (`settlement`) - 69 structure groups
+## Settlements (`settlement`) - 70 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
+| `ctov:large/village_plains` **(measured)** | 171.0 | 1.55 | 0.08 | 0 | 0.0 | 0 | 1.9 | 0.71 |
 | `structory:harvest` | 190 | 1.92 | 0 | 0 | 0.0 | 0 | 1.88 | 1.12 |
 | `kaisyn:village/exclusives` | 131 | 0.8 | 0.09 | 0 | 0.0 | 0.23 | 1.29 | 0.32 |
-| `structory:outcast_villager` | 130 | 2.61 | 0 | 0 | 0.0 | 0 | 3.28 | 2.06 |
-| `terralith:village` | 87 | 0.86 | 0.01 | 0 | 0.0 | 0 | 0.92 | 0.45 |
+| `structory:outcast_villager` | 130 | 2.56 | 0 | 0 | 0.0 | 0 | 3.22 | 1.99 |
+| `terralith:village` | 87 | 0.83 | 0 | 0 | 0.0 | 0 | 0.89 | 0.43 |
 | `dungeons_arise:greenwood_pub` | 60 | 0.78 | 0 | 0 | 0.0 | 0 | 1.02 | 0.48 |
-| `ctov:village/mesa_fortified` | 54 | 0.75 | 0.06 | 0 | 0.0 | 0 | 0.95 | 0.48 |
-| `ctov:village/taiga_fortified` | 48 | 0.25 | 0 | 0 | 0.0 | 0 | 0.41 | 0.07 |
-| `kaisyn:ships/village_ocean` | 44 | 0.58 | 0.31 | 0 | 0.0 | 1.1 | 1.2 | 0.72 |
-| `ctov:village/desert_oasis` | 43 | 0.59 | 0.03 | 0 | 0.0 | 0 | 0.83 | 0.41 |
-| `ctov:village/swamp_fortified` | 43 | 0.45 | 0 | 0 | 0.0 | 0 | 0.68 | 0.3 |
+| `ctov:village/mesa_fortified` | 54 | 0.71 | 0.06 | 0 | 0.0 | 0 | 0.89 | 0.42 |
+| `ctov:village/taiga_fortified` | 48 | 0.2 | 0 | 0 | 0.0 | 0 | 0.34 | 0.01 |
+| `kaisyn:ships/village_ocean` | 44 | 0.57 | 0.3 | 0 | 0.0 | 1.1 | 1.18 | 0.71 |
+| `ctov:village/desert_oasis` | 43 | 0.56 | 0.03 | 0 | 0.0 | 0 | 0.78 | 0.36 |
+| `ctov:village/swamp_fortified` | 43 | 0.41 | 0 | 0 | 0.0 | 0 | 0.61 | 0.24 |
 | `kaisyn:village/beach_lighthouse` | 40 | 0.49 | 0.1 | 0 | 0.0 | 0.41 | 0.76 | 0.44 |
-| `ctov:village/plains` | 39 | 0.29 | 0.06 | 0 | 0.0 | 0 | 0.44 | 0.16 |
-| `ctov:village/beach` | 38 | 0.51 | 0.03 | 0 | 0.0 | 0 | 0.7 | 0.32 |
-| `ctov:village/halloween` | 38 | 0.59 | 0.03 | 0 | 0.0 | 0 | 0.74 | 0.34 |
-| `ctov:village/mesa` | 37 | 0.42 | 0.03 | 0 | 0.0 | 0 | 0.57 | 0.28 |
-| `ctov:village/taiga` | 36 | 0.33 | 0.03 | 0 | 0.0 | 0 | 0.44 | 0.16 |
-| `ctov:village/plains_fortified` | 35 | 0.28 | 0 | 0 | 0.0 | 0 | 0.36 | 0.08 |
-| `ctov:village/jungle_tree` | 34 | 0.3 | 0.06 | 0 | 0.0 | 0 | 0.49 | 0.24 |
-| `ctov:village/savanna` | 34 | 0.29 | 0.06 | 0 | 0.0 | 0 | 0.42 | 0.18 |
-| `ctov:village/jungle` | 33 | 0.44 | 0.06 | 0 | 0.0 | 0 | 0.64 | 0.32 |
-| `ctov:village/mountain` | 33 | 0.39 | 0.03 | 0 | 0.0 | 0 | 0.57 | 0.27 |
-| `ctov:village/mountain_alpine` | 33 | 0.45 | 0 | 0 | 0.0 | 0 | 0.61 | 0.27 |
-| `ctov:village/swamp` | 33 | 0.46 | 0.03 | 0 | 0.0 | 0 | 0.61 | 0.29 |
-| `ctov:village/snowy_igloo` | 31 | 0.42 | 0.03 | 0 | 0.0 | 0 | 0.57 | 0.27 |
-| `ctov:village/christmas` | 30 | 0.4 | 0.06 | 0 | 0.0 | 0 | 0.59 | 0.3 |
-| ... 44 smaller groups | | | | | | | | |
+| `ctov:village/plains` | 39 | 0.26 | 0.06 | 0 | 0.0 | 0 | 0.4 | 0.12 |
+| `ctov:village/beach` | 38 | 0.49 | 0.03 | 0 | 0.0 | 0 | 0.67 | 0.29 |
+| `ctov:village/halloween` | 38 | 0.56 | 0.03 | 0 | 0.0 | 0 | 0.7 | 0.3 |
+| `ctov:village/mesa` | 37 | 0.38 | 0.03 | 0 | 0.0 | 0 | 0.51 | 0.21 |
+| `ctov:village/taiga` | 36 | 0.28 | 0.03 | 0 | 0.0 | 0 | 0.38 | 0.09 |
+| `ctov:village/plains_fortified` | 35 | 0.27 | 0 | 0 | 0.0 | 0 | 0.35 | 0.06 |
+| `ctov:village/jungle_tree` | 34 | 0.24 | 0.06 | 0 | 0.0 | 0 | 0.4 | 0.15 |
+| `ctov:village/savanna` | 34 | 0.24 | 0.06 | 0 | 0.0 | 0 | 0.36 | 0.12 |
+| `ctov:village/jungle` | 33 | 0.43 | 0.06 | 0 | 0.0 | 0 | 0.63 | 0.31 |
+| `ctov:village/mountain` | 33 | 0.36 | 0.03 | 0 | 0.0 | 0 | 0.53 | 0.23 |
+| `ctov:village/mountain_alpine` | 33 | 0.43 | 0 | 0 | 0.0 | 0 | 0.59 | 0.25 |
+| `ctov:village/swamp` | 33 | 0.44 | 0.03 | 0 | 0.0 | 0 | 0.59 | 0.27 |
+| `ctov:village/snowy_igloo` | 31 | 0.37 | 0.03 | 0 | 0.0 | 0 | 0.51 | 0.21 |
+| ... 45 smaller groups | | | | | | | | |
 
-## Temples, Mansions & Outposts (`temple`) - 80 structure groups
+## Temples, Mansions & Outposts (`temple`) - 81 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
+| `betterdeserttemples:desert_temple` **(measured)** | 69.0 | 1.52 | 0.9 | 0.03 | 0.03 | 0 | 2.43 | 1.67 |
+| `dungeons_arise:illager_fort` **(measured)** | 61.0 | 1.39 | 1.02 | 0 | 0.0 | 0.45 | 2.43 | 1.69 |
+| `cataclysm:abandoned_village` **(measured)** | 43.0 | 1.45 | 0.98 | 0.03 | 0.03 | 0.39 | 2.4 | 1.68 |
 | `minecraft:illager_mansion` | 358 | 1.52 | 0.93 | 0 | 0.0 | 0 | 3.08 | 1.91 |
 | `nova_structures:witch_villa` | 155 | 1.55 | 0.9 | 0 | 0.0 | 0 | 2.28 | 1.61 |
 | `nova_structures:lone_citadel` | 117 | 1.18 | 0.9 | 0 | 0.0 | 0 | 2.01 | 1.39 |
@@ -233,42 +238,42 @@ Tables classified: 932 - inject tables: 292 - placed but unassigned (no Horizon 
 | `repurposed_structures:mansions/taiga` | 79 | 1.19 | 0.9 | 0 | 0.0 | 0 | 2.0 | 1.43 |
 | `repurposed_structures:mansions/snowy` | 78 | 1.2 | 0.9 | 0 | 0.0 | 0 | 1.99 | 1.43 |
 | `structory:ruin` | 60 | 1.89 | 0.9 | 0 | 0.0 | 0 | 2.4 | 1.65 |
-| `dungeons_arise:illager_fort` | 44 | 1.19 | 0.9 | 0 | 0.0 | 0 | 2.01 | 1.41 |
 | `dungeons_arise:mushroom_mines` | 44 | 0 | 0.88 | 0 | 0.0 | 0 | 1.98 | 1.41 |
-| `kaisyn:outpost/camps` | 44 | 0.67 | 0.27 | 0 | 0.0 | 0 | 0.93 | 0.64 |
+| `kaisyn:outpost/camps` | 44 | 0.61 | 0.25 | 0 | 0.0 | 0 | 0.87 | 0.61 |
 | `kaisyn:ships/pillager_outpost_ocean` | 42 | 0.43 | 0.34 | 0 | 0.0 | 0.47 | 1.06 | 0.67 |
 | `dungeons_arise:aviary` | 37 | 1.18 | 0.9 | 0.03 | 0.03 | 0 | 2.01 | 1.4 |
 | `repurposed_structures:pyramids` | 32 | 1.2 | 1.9 | 0 | 0.0 | 3.0 | 4.39 | 3.2 |
-| `betterdeserttemples:hall_room` | 30 | 1.12 | 0.91 | 0.03 | 0.03 | 0 | 2.01 | 1.4 |
-| `cataclysm:cursed_pyramid` | 26 | 1.2 | 0.65 | 0 | 0.0 | 0 | 1.9 | 1.33 |
-| `cataclysm:abandoned_village` | 24 | 1.2 | 0.9 | 0.03 | 0.03 | 0 | 2.01 | 1.41 |
-| ... 55 smaller groups | | | | | | | | |
+| `betterdeserttemples:hall_room` | 30 | 0.95 | 0.83 | 0.03 | 0.03 | 0 | 1.75 | 1.23 |
+| ... 56 smaller groups | | | | | | | | |
 
-## Underground Dungeons (`underground`) - 23 structure groups
+## Underground Dungeons (`underground`) - 28 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
+| `irons_spellbooks:citadel` **(measured)** | 136.0 | 2.06 | 0.7 | 0 | 0.0 | 1.17 | 2.89 | 2.2 |
+| `minecraft:ancient_city` **(measured)** | 103.0 | 0.8 | 1.29 | 0.01 | 0.01 | 3.22 | 3.67 | 2.5 |
+| `minecraft:mansion` **(measured)** | 28.0 | 1.43 | 0.9 | 0 | 0.0 | 0.04 | 2.26 | 1.56 |
+| `minecraft:stronghold` **(measured)** | 20.0 | 0.32 | 0.04 | 0 | 0.0 | 0.08 | 0.34 | 0.22 |
+| `minecraft:village_plains` **(measured)** | 17.0 | 0.2 | 0.08 | 0 | 0.0 | 0.08 | 0.25 | 0.17 |
 | `nova_structures:creeping_crypt` | 153 | 1.38 | 0 | 0 | 0.0 | 0 | 1.38 | 0.92 |
 | `nova_structures:undead_crypt` | 145 | 1.45 | 0 | 0 | 0.0 | 0 | 1.16 | 0.72 |
 | `nova_structures:remnant` | 130 | 1.3 | 0 | 0 | 0.0 | 0 | 0.59 | 0.35 |
 | `minecraft:illager_mansion/manor_fixed` | 112 | 1.17 | 0.14 | 0 | 0.0 | 0 | 1.04 | 0.66 |
 | `nova_structures:bunker` | 87 | 1.53 | 0.25 | 0 | 0.0 | 0 | 1.07 | 0.74 |
 | `betterstrongholds:rooms` | 66 | 1.39 | 0.24 | 0 | 0.0 | 0 | 1.4 | 0.9 |
-| `betterdungeons:small_dungeon` | 53 | 1.38 | 0.27 | 0 | 0.0 | 0 | 1.38 | 0.9 |
+| `betterdungeons:small_dungeon` | 53 | 0.56 | 0 | 0 | 0.0 | 0 | 0.71 | 0.44 |
 | `betterstrongholds:treasure` | 33 | 0.09 | 0.25 | 0 | 0.0 | 0 | 1.1 | 0.71 |
-| `terralith:underground` | 26 | 1.4 | 0.26 | 0 | 0.0 | 0 | 1.4 | 0.91 |
+| `terralith:underground` | 26 | 0.35 | 0.02 | 0 | 0.0 | 0 | 0.42 | 0.26 |
 | `betterdungeons:skeleton_dungeon` | 17 | 1.4 | 0.25 | 0 | 0.0 | 0 | 1.4 | 0.9 |
-| `betterdungeons:zombie_dungeon` | 7 | 1.4 | 0.25 | 0 | 0.0 | 0 | 1.4 | 0.9 |
-| `explorify:ruins` | 7 | 0.47 | 0.28 | 0 | 0.0 | 0 | 0.7 | 0.49 |
+| `betterdungeons:zombie_dungeon` | 7 | 0.14 | 0 | 0 | 0.0 | 0 | 0.13 | 0.08 |
+| `explorify:ruins` | 7 | 0.39 | 0.26 | 0 | 0.0 | 0 | 0.64 | 0.44 |
 | `betterstrongholds:terminators` | 5 | 0.09 | 0 | 0 | 0.0 | 0 | 0.06 | 0.04 |
-| `explorify:mausoleum` | 4 | 0.1 | 0.02 | 0 | 0.0 | 0 | 0.1 | 0.07 |
-| `kaisyn:village/savanna_plateau_ramshackled` | 4 | 0.1 | 0.02 | 0 | 0.0 | 0 | 0.1 | 0.07 |
-| `ars_nouveau:wilden_den_top` | 2 | 0.05 | 0.01 | 0 | 0.0 | 0 | 0.05 | 0.03 |
-| `ars_nouveau:wilden_den_top_defender` | 2 | 0.05 | 0.01 | 0 | 0.0 | 0 | 0.05 | 0.03 |
-| `ars_nouveau:wilden_den_top_hunter` | 2 | 0.05 | 0.01 | 0 | 0.0 | 0 | 0.05 | 0.03 |
-| `ars_nouveau:wilden_den_top_stalker` | 2 | 0.05 | 0.01 | 0 | 0.0 | 0 | 0.05 | 0.03 |
+| `explorify:mausoleum` | 4 | 0.04 | 0 | 0 | 0.0 | 0 | 0.05 | 0.03 |
+| `kaisyn:village/savanna_plateau_ramshackled` | 4 | 0.04 | 0 | 0 | 0.0 | 0 | 0.05 | 0.03 |
+| `ars_nouveau:wilden_den_top` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
+| `ars_nouveau:wilden_den_top_defender` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
+| `ars_nouveau:wilden_den_top_hunter` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
+| `ars_nouveau:wilden_den_top_stalker` | 2 | 0.02 | 0 | 0 | 0.0 | 0 | 0.03 | 0.02 |
 | `betterstrongholds:stairs` | 2 | 0.03 | 0 | 0 | 0.0 | 0 | 0.02 | 0.02 |
-| `betterstrongholds:statues` | 2 | 0.03 | 0 | 0 | 0.0 | 0 | 0.02 | 0.02 |
-| `ars_nouveau:wilden_den_bottom` | 1 | 0.03 | 0.01 | 0 | 0.0 | 0 | 0.03 | 0.02 |
-| `dungeons_arise:illager_hall` | 1 | 0.02 | 0 | 0 | 0.0 | 0 | 0.01 | 0.01 |
+| ... 3 smaller groups | | | | | | | | |
 

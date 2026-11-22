@@ -7,6 +7,14 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterfortresses:chests/keep"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/obsidian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:pipeline/rare"
         }
       ]
     }

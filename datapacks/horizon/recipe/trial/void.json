@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "horizon_trials",
+  "ingredients": [
+    {
+      "item": "horizon:ancient_core"
+    },
+    {
+      "item": "horizon:ancient_core"
+    },
+    {
+      "item": "horizon:starlit_voidglass"
+    },
+    {
+      "item": "horizon:starlit_voidglass"
+    },
+    {
+      "item": "horizon:starlit_voidglass"
+    },
+    {
+      "item": "horizon:starlit_voidglass"
+    },
+    {
+      "item": "minecraft:popped_chorus_fruit"
+    },
+    {
+      "item": "minecraft:ender_pearl"
+    }
+  ],
+  "result": {
+    "id": "gateways:gate_pearl",
+    "count": 1,
+    "components": {
+      "gateways:gateway": "horizon:trial/void"
+    }
+  }
+}

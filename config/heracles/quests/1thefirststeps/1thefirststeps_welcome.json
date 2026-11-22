@@ -10,7 +10,8 @@
     "description": [
       "The world is enormous. Mountains here are real mountains, and with Voxy you can see them from very far away.",
       "This book is a guide, not a checklist: every chapter is optional. Follow what interests you.",
-      "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls)."
+      "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls).",
+      "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it."
     ],
     "groups": {
       "1 - The First Steps": {

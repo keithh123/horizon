@@ -8,13 +8,14 @@
     },
     "title": "Plasma Engineering",
     "description": [
-      "Build MI's fusion reactor."
+      "Build MI's fusion reactor (needs a Starforged Heart).",
+      "&7(Item task: the controller block.)"
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          120
+          108
         ]
       }
     }

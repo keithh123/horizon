@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplyswords:iron_greathammer"
+      }
+    },
+    "title": "Breaker",
+    "description": [
+      "&eHeavy melee and stagger:&r greathammers, greataxes, claymores. Slow swings, big hits, knockback and armour shred.",
+      "Look for &eBreach&r (armour pierce, Echoing Fossils), &eBallast&r and &eWarlord&r gems; Cataclysm gear for late game."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          36
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

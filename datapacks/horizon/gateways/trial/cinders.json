@@ -1,0 +1,93 @@
+{
+  "size": "medium",
+  "color": "#ff7a2a",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "minecraft:blaze",
+          "count": 4
+        },
+        {
+          "entity": "minecraft:wither_skeleton",
+          "count": 3
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1200,
+      "setup_time": 160
+    },
+    {
+      "entities": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "count": 5
+        },
+        {
+          "entity": "minecraft:magma_cube",
+          "count": 4
+        },
+        {
+          "entity": "minecraft:blaze",
+          "count": 3
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1600,
+      "setup_time": 160
+    },
+    {
+      "entities": [
+        {
+          "entity": "cataclysm:ignited_revenant",
+          "count": 2
+        },
+        {
+          "entity": "cataclysm:ignited_berserker",
+          "count": 3
+        },
+        {
+          "entity": "minecraft:blaze",
+          "count": 3
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 2000,
+      "setup_time": 160
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:counted",
+      "count": 2,
+      "reward": {
+        "type": "apotheosis:affix_item",
+        "rarities": [
+          "apotheosis:rare",
+          "apotheosis:epic"
+        ]
+      }
+    },
+    {
+      "type": "apotheosis:gem",
+      "gems": [
+        "apotheosis:the_nether/inferno",
+        "apotheosis:the_nether/blood_lord",
+        "apotheosis:the_nether/molten_breach"
+      ],
+      "purities": [
+        "flawed",
+        "normal",
+        "flawless"
+      ]
+    },
+    {
+      "type": "gateways:experience",
+      "experience": 1800,
+      "orb_size": 50
+    }
+  ]
+}

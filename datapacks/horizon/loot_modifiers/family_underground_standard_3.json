@@ -11,6 +11,22 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterdungeons:zombie_dungeon/chests/tombstone"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/simple_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/dungeons/deep"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/dungeons/mushroom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "terralith:underground/chest"
         }
       ]
     }

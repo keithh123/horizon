@@ -55,3 +55,20 @@ real work, especially gameplay balance and a multiplayer session with players co
 Server-only log notes (harmless): Relics' client-only `ScreenMixin` is skipped on the dedicated server
 ("invalid dist"), and a Tectonic `fabric:overlays` metadata condition is reported. Both appear without
 any functional effect.
+
+
+---
+
+# Addendum: 0.2.0 (2026-11-21)
+
+| Check | Result |
+|---|---|
+| Dependency check | 0 failures. Subtle Effects/Fzzy range was a checker false positive; real client loaded both. |
+| Client launch (fresh instance, 116 mods) | Reached the title screen in ~42 s. Errors in log: only known noise (GeckoLib x3, Xaero version check, `fabric:overlays`, 4 upstream advancements). |
+| Loot calibration | 25 structures measured on a headless server; budgets regenerated; generators idempotent across two runs. |
+| Headless server smoke | Boots, 0 Horizon loot/recipe/quest errors, audits run. Not a gameplay test. |
+| Profiles | performance / cinematic / balanced switch correctly on the test instance (options, effects, memory). |
+
+**Not tested (no hands-on session was possible):** textures and tooltips in-game, quest completion and reward claiming, Lootr, trophies, Trials, combat, spellcasting, machines, AE2, frame rates/Spark profiles, `minecraft:end_city` calibration, multiplayer. A fresh Prism import of the 0.2.0 `.mrpack` is recorded below once run.
+
+**0.2.0 release package (verified 2026-11-21):** `dist/ProjectHorizon-0.2.0.mrpack` (sha256 `4803c7447f316776dbecd018280e839f863e99aa6fd6060a1311fcbebacd9fdb`, 118 files, 116 mods). Fresh Prism import: all 118 files match their sha512, 943/943 override files present, launches to the title screen in ~39 s with 5 logged errors (the known GeckoLib/Xaero/advancement/`fabric:overlays` noise).

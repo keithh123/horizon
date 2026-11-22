@@ -8,7 +8,8 @@
     },
     "title": "Ley Lines",
     "description": [
-      "Waystones cannot be crafted cheaply: find one in a village and activate it. A warp stone needs a Wayfarer Shard."
+      "Waystones stand in villages and some ruins. Right-click one to activate it - it becomes a fast-travel destination.",
+      "A personal &eWarp Stone&r costs a Wayfarer Shard; &eWarp Scrolls&r turn up in village chests."
     ],
     "groups": {
       "2 - The Wild Frontier": {
@@ -28,10 +29,8 @@
   ],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "waystones:warp_stone",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:block_interaction",
+      "block": "#waystones:waystones"
     }
   },
   "rewards": {

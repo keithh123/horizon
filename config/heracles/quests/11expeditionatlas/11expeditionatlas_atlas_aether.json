@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:glowstone"
+      }
+    },
+    "title": "The Aether",
+    "description": [
+      "&7Stage: mid&r",
+      "Floating islands and three dungeons (Slider, Valkyrie Queen, Sun Spirit). Falling is the danger; the gear line is unique.",
+      "",
+      "&ePrepare:&r Slow falling / feather falling, a pickaxe for dungeon doors, ranged weapons for zephyrs.",
+      "&eSignature rewards:&r Skyward Plumes (exchange for Solar/Lightning gems), Aether accessories and dungeon keys (upstream).",
+      "&eComing back:&r Dungeons are one-time; plumes from ruined portals and bosses.",
+      "&eFeeds into:&r Plumes -> mobility gems; Aether gear is a sidegrade line."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          288
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/aether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

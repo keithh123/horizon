@@ -6,7 +6,11 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_camp/chest"
+          "loot_table_id": "repurposed_structures:chests/ancient_cities/nether"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/ancient_cities/nether_magma_box"
         }
       ]
     }

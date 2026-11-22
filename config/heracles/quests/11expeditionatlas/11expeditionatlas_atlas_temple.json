@@ -1,0 +1,50 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:chiseled_sandstone"
+      }
+    },
+    "title": "Temples, Mansions & Outposts",
+    "description": [
+      "&7Stage: mid&r",
+      "Trapped temples, illager strongholds and mansions. Puzzles, traps and organised enemies guarding one real treasure room.",
+      "",
+      "&ePrepare:&r Diamond gear or good affixes, fire resistance for pyramids, a bow.",
+      "&eSignature rewards:&r Ancient Cores in treasure rooms, higher-rarity affix rolls in the vault, charts to landmarks.",
+      "&eComing back:&r Mansions and outposts are rare per region; each is a one-time clear.",
+      "&eFeeds into:&r Cores -> ME controller, socketing, epic ink."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          180
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/temple"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

@@ -8,7 +8,8 @@
     },
     "title": "Something Old",
     "description": [
-      "Explore any ruin, camp or shrine. Small sites hold &bWayfarer Shards&r - the first exploration relic."
+      "Find any roadside ruin, camp, shrine or watchtower. Small sites are where &aWayfarer Shards&r come from.",
+      "Completes when you step inside one (also if you already have)."
     ],
     "groups": {
       "2 - The Wild Frontier": {
@@ -26,10 +27,10 @@
   "dependencies": [],
   "tasks": {
     "t0": {
-      "type": "heracles:item",
-      "item": "horizon:wayfarer_shard",
-      "amount": 1,
-      "collection": "AUTOMATIC"
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/roadside"
+      ]
     }
   },
   "rewards": {

@@ -1,0 +1,151 @@
+{
+  "type": "apotheosis:salvaging",
+  "input": [
+    {
+      "item": "simplyswords:arcanethyst"
+    },
+    {
+      "item": "simplyswords:bloodwake"
+    },
+    {
+      "item": "simplyswords:bramblethorn"
+    },
+    {
+      "item": "simplyswords:brimstone_claymore"
+    },
+    {
+      "item": "simplyswords:caelestis"
+    },
+    {
+      "item": "simplyswords:chompolotl"
+    },
+    {
+      "item": "simplyswords:dawnquiver"
+    },
+    {
+      "item": "simplyswords:dormant_relic"
+    },
+    {
+      "item": "simplyswords:emberblade"
+    },
+    {
+      "item": "simplyswords:emberlash"
+    },
+    {
+      "item": "simplyswords:flamewind"
+    },
+    {
+      "item": "simplyswords:frostfall"
+    },
+    {
+      "item": "simplyswords:hearthflame"
+    },
+    {
+      "item": "simplyswords:hiveheart"
+    },
+    {
+      "item": "simplyswords:icewhisper"
+    },
+    {
+      "item": "simplyswords:livyatan"
+    },
+    {
+      "item": "simplyswords:mjolnir"
+    },
+    {
+      "item": "simplyswords:molten_edge"
+    },
+    {
+      "item": "simplyswords:ribboncleaver"
+    },
+    {
+      "item": "simplyswords:riftmane"
+    },
+    {
+      "item": "simplyswords:shadowsting"
+    },
+    {
+      "item": "simplyswords:slumbering_lichblade"
+    },
+    {
+      "item": "simplyswords:soulkeeper"
+    },
+    {
+      "item": "simplyswords:soulpyre"
+    },
+    {
+      "item": "simplyswords:soulrender"
+    },
+    {
+      "item": "simplyswords:soulstealer"
+    },
+    {
+      "item": "simplyswords:stars_edge"
+    },
+    {
+      "item": "simplyswords:stormbringer"
+    },
+    {
+      "item": "simplyswords:storms_edge"
+    },
+    {
+      "item": "simplyswords:stormscale"
+    },
+    {
+      "item": "simplyswords:tempest"
+    },
+    {
+      "item": "simplyswords:thunderbrand"
+    },
+    {
+      "item": "simplyswords:toxic_longsword"
+    },
+    {
+      "item": "simplyswords:twisted_blade"
+    },
+    {
+      "item": "simplyswords:watcher_claymore"
+    },
+    {
+      "item": "simplyswords:watching_warglaive"
+    },
+    {
+      "item": "simplyswords:waxweaver"
+    },
+    {
+      "item": "simplyswords:whisperwind"
+    },
+    {
+      "item": "simplyswords:wickpiercer"
+    },
+    {
+      "item": "simplyswords:wraithfang"
+    }
+  ],
+  "outputs": [
+    {
+      "min_count": 2,
+      "max_count": 4,
+      "stack": {
+        "id": "horizon:wayfarer_shard",
+        "count": 1
+      }
+    },
+    {
+      "min_count": 0,
+      "max_count": 1,
+      "stack": {
+        "id": "horizon:ancient_core",
+        "count": 1
+      }
+    },
+    {
+      "min_count": 2,
+      "max_count": 4,
+      "stack": {
+        "id": "apotheosis:gem_dust",
+        "count": 1
+      }
+    }
+  ]
+}

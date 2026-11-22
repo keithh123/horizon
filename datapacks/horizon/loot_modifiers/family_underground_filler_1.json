@@ -7,10 +7,6 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "betterdungeons:zombie_dungeon/chests/common"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "betterstrongholds:chests/library_md"
         }
       ]
     }

@@ -14,10 +14,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:mood/fisherman"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "structory:mood/grassy"
         },
         {

@@ -6,31 +6,35 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/bandit/desert"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_cold/large"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/bandit/desert_copper"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_cold/small"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/boat/loot"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_hot/large"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/farm_ruin"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_hot/small"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/mine/loot"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_icy/large"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:outcast/settlement"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_icy/small"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "structory:ruin/ruin"
+          "loot_table_id": "repurposed_structures:chests/ruins/land_warm/large"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/ruins/land_warm/small"
         }
       ]
     }

@@ -6,19 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/monuments/desert"
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_big"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/monuments/icy"
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_main"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/monuments/jungle"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/monuments/nether"
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_small"
         }
       ]
     }

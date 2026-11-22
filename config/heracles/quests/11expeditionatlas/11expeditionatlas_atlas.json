@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:filled_map"
+      }
+    },
+    "title": "Reading the Atlas",
+    "description": [
+      "Every structure in this world belongs to an expedition family with its own rewards. Each quest in this chapter",
+      "explains one family: what it is, how to prepare, what it gives, and why it is worth coming back.",
+      "Rewards are budgeted per structure: a palace is worth more than a shrine, but no single place floods you.",
+      "&7Each quest completes the first time you step inside a structure of that family (also retroactively)."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:map",
+        "count": 2
+      }
+    }
+  }
+}

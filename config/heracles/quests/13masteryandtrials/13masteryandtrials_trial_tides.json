@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "gateways:gate_pearl"
+      }
+    },
+    "title": "Trial of the Tides",
+    "description": [
+      "A Gateways to Eternity trial: 3 fixed waves, fixed enemy counts, a visible timer.",
+      "Cost: 1x ancient core, 4x tidebound doubloon, 2x prismarine crystals (+ ender pearl).",
+      "Rewards: affix gear, gems and XP - never relics. Fight it in the open, away from your base.",
+      "&7Completes when you are within 48 blocks of the gate as its last wave falls."
+    ],
+    "groups": {
+      "13 - Mastery and Trials": {
+        "position": [
+          48,
+          216
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "13masteryandtrials_builds"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:trial/tides"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

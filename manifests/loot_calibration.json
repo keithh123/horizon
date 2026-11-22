@@ -1,0 +1,710 @@
+{
+ "betterdeserttemples:desert_temple": {
+  "containers": 275,
+  "measured": {
+   "_stacks": 1077.5,
+   "exploration_map": 1.75,
+   "horizon:ancient_core": 1.75,
+   "horizon:starforged_heart": 0.05,
+   "horizon:wayfarer_shard": 8.7
+  },
+  "tables": {
+   "apotheosis:chests/chest_valuable": 1.0,
+   "artifacts:chests/campsite_barrel": 41.0,
+   "artifacts:chests/campsite_chest": 16.0,
+   "betterdeserttemples:chests/food_storage": 4.0,
+   "betterdeserttemples:chests/lab": 2.0,
+   "betterdeserttemples:chests/library": 3.0,
+   "betterdeserttemples:chests/pharaoh_hidden": 1.0,
+   "betterdeserttemples:chests/pot": 2.0,
+   "betterdeserttemples:chests/statue": 1.0,
+   "betterdeserttemples:chests/storage": 11.0,
+   "betterdeserttemples:chests/tomb_pharaoh": 2.0,
+   "betterdeserttemples:chests/wardrobe": 4.0,
+   "minecraft:archaeology/desert_pyramid": 23.0,
+   "minecraft:chests/desert_pyramid": 8.0,
+   "minecraft:chests/simple_dungeon": 10.0,
+   "minecraft:chests/trial_chambers/corridor": 5.0,
+   "minecraft:chests/trial_chambers/entrance": 2.0,
+   "minecraft:chests/trial_chambers/intersection_barrel": 1.0,
+   "minecraft:chests/trial_chambers/reward": 2.0,
+   "minecraft:dispensers/trial_chambers/chamber": 68.0,
+   "minecraft:pots/trial_chambers/corridor": 45.0,
+   "repurposed_structures:chests/dungeons/deep": 15.0,
+   "terralith:underground/chest": 8.0
+  }
+ },
+ "betterfortresses:fortress": {
+  "containers": 99,
+  "measured": {
+   "_stacks": 552.45,
+   "exploration_map": 2.65,
+   "horizon:ancient_core": 3.1,
+   "horizon:cinder_idol": 13.95,
+   "horizon:starforged_heart": 0.1
+  },
+  "tables": {
+   "betterfortresses:chests/extra": 6.0,
+   "betterfortresses:chests/hall": 3.0,
+   "betterfortresses:chests/keep": 35.0,
+   "betterfortresses:chests/obsidian": 5.0,
+   "betterfortresses:chests/puzzle": 1.0,
+   "betterfortresses:chests/quarters": 3.0,
+   "betterfortresses:chests/storage": 2.0,
+   "incendium:pipeline/common": 2.0,
+   "incendium:pipeline/junk": 11.0,
+   "incendium:pipeline/rare": 1.0,
+   "minecraft:chests/nether_bridge": 5.0,
+   "nova_structures:chests/piglin_camp/chest": 1.0,
+   "repurposed_structures:chests/dungeons/nether": 15.0,
+   "repurposed_structures:chests/ruins/nether": 9.0
+  }
+ },
+ "cataclysm:abandoned_village": {
+  "containers": 643,
+  "measured": {
+   "_stacks": 1038.2,
+   "exploration_map": 1.15,
+   "horizon:ancient_core": 1.05,
+   "horizon:starforged_heart": 0.1,
+   "horizon:tidebound_doubloon": 0.45,
+   "horizon:wayfarer_shard": 3.35
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 19.0,
+   "artifacts:chests/campsite_chest": 8.0,
+   "cataclysm:chests/abandoned": 19.0,
+   "cataclysm:chests/abandoned_treasure": 5.0,
+   "minecraft:chests/simple_dungeon": 5.0,
+   "minecraft:chests/trial_chambers/corridor": 12.0,
+   "minecraft:chests/trial_chambers/intersection_barrel": 1.0,
+   "minecraft:chests/trial_chambers/reward": 2.0,
+   "minecraft:dispensers/trial_chambers/chamber": 26.0,
+   "minecraft:pots/trial_chambers/corridor": 44.0,
+   "nova_structures:archaelogy/conduit_ruin": 460.0,
+   "nova_structures:chests/conduit_ruin/conduit_ruin_big": 2.0,
+   "nova_structures:chests/conduit_ruin/conduit_ruin_small": 8.0,
+   "nova_structures:pots/pot_conduit_ruin": 27.0,
+   "repurposed_structures:chests/dungeons/deep": 4.0
+  }
+ },
+ "ctov:large/village_plains": {
+  "containers": 217,
+  "measured": {
+   "_stacks": 1646.25,
+   "exploration_map": 3.9,
+   "horizon:ancient_core": 1.0,
+   "horizon:wayfarer_shard": 12.35
+  },
+  "tables": {
+   "apotheosis:chests/spawner_brutal": 6.0,
+   "apotheosis:chests/spawner_swarm": 2.0,
+   "artifacts:chests/campsite_barrel": 25.0,
+   "artifacts:chests/campsite_chest": 13.0,
+   "ctov:chests/village/village_farm": 3.0,
+   "ctov:chests/village/village_library": 2.0,
+   "ctov:chests/village/village_smith": 2.0,
+   "irons_spellbooks:chests/priest_house": 2.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/simple_dungeon": 19.0,
+   "minecraft:chests/village/village_butcher": 4.0,
+   "minecraft:chests/village/village_cartographer": 8.0,
+   "minecraft:chests/village/village_fisher": 2.0,
+   "minecraft:chests/village/village_plains_house": 66.0,
+   "minecraft:chests/village/village_shepherd": 4.0,
+   "minecraft:chests/village/village_temple": 16.0,
+   "repurposed_structures:chests/dungeons/deep": 21.0,
+   "repurposed_structures:chests/dungeons/ocean": 3.0,
+   "structory:mood/fisherman": 6.0,
+   "structory:outcast/boat/loot": 1.0,
+   "terralith:underground/chest": 11.0
+  }
+ },
+ "dungeons_arise:bandit_towers": {
+  "containers": 542,
+  "measured": {
+   "_stacks": 3120.9,
+   "exploration_map": 5.15,
+   "horizon:ancient_core": 11.95,
+   "horizon:starforged_heart": 5.95,
+   "horizon:wayfarer_shard": 21.9
+  },
+  "tables": {
+   "apotheosis:chests/spawner_brutal": 1.0,
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 31.0,
+   "artifacts:chests/campsite_chest": 15.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_barrels": 154.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_gardens": 8.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_normal": 108.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_rooms": 41.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_supply": 21.0,
+   "dungeons_arise:chests/bandit_towers/bandit_towers_treasure": 47.0,
+   "dungeons_arise:chests/desert_city_big": 14.0,
+   "dungeons_arise:chests/desert_city_medium": 9.0,
+   "minecraft:chests/simple_dungeon": 30.0,
+   "minecraft:chests/trial_chambers/corridor": 1.0,
+   "minecraft:chests/trial_chambers/entrance": 1.0,
+   "minecraft:chests/trial_chambers/reward": 2.0,
+   "minecraft:chests/trial_chambers/supply": 1.0,
+   "minecraft:pots/trial_chambers/corridor": 16.0,
+   "repurposed_structures:chests/dungeons/deep": 17.0,
+   "terralith:underground/chest": 24.0
+  }
+ },
+ "dungeons_arise:heavenly_conqueror": {
+  "containers": 35,
+  "measured": {
+   "_stacks": 260.3,
+   "horizon:ancient_core": 1.2,
+   "horizon:starforged_heart": 0.8,
+   "horizon:tidebound_doubloon": 0.2,
+   "horizon:wayfarer_shard": 4.4
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 8.0,
+   "artifacts:chests/campsite_chest": 4.0,
+   "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_barrels": 10.0,
+   "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_normal": 4.0,
+   "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_treasure": 2.0,
+   "minecraft:chests/shipwreck_map": 1.0,
+   "minecraft:chests/shipwreck_treasure": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 4.0
+  }
+ },
+ "dungeons_arise:illager_fort": {
+  "containers": 75,
+  "measured": {
+   "_stacks": 450.95,
+   "exploration_map": 2.9,
+   "horizon:ancient_core": 1.75,
+   "horizon:tidebound_doubloon": 0.8,
+   "horizon:wayfarer_shard": 4.3
+  },
+  "tables": {
+   "artifacts:chests/campsite_barrel": 1.0,
+   "artifacts:chests/campsite_chest": 1.0,
+   "dungeons_arise:chests/illager_fort/illager_fort_barrels": 30.0,
+   "dungeons_arise:chests/illager_fort/illager_fort_normal": 9.0,
+   "dungeons_arise:chests/illager_fort/illager_fort_treasure": 12.0,
+   "dungeons_arise:chests/illager_fortress_small": 2.0,
+   "minecraft:archaeology/ocean_ruin_cold": 10.0,
+   "minecraft:chests/shipwreck_map": 1.0,
+   "minecraft:chests/shipwreck_supply": 1.0,
+   "minecraft:chests/shipwreck_treasure": 1.0,
+   "minecraft:chests/underwater_ruin_small": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 6.0
+  }
+ },
+ "dungeons_arise:keep_kayra": {
+  "containers": 222,
+  "measured": {
+   "_stacks": 1483.75,
+   "exploration_map": 0.1,
+   "horizon:ancient_core": 4.8,
+   "horizon:starforged_heart": 1.6,
+   "horizon:wayfarer_shard": 10.65
+  },
+  "tables": {
+   "apotheosis:chests/spawner_brutal": 1.0,
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 48.0,
+   "artifacts:chests/campsite_chest": 18.0,
+   "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_normal": 1.0,
+   "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_supply": 1.0,
+   "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater": 1.0,
+   "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure": 4.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal": 7.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure": 10.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal": 19.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure": 12.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_normal": 24.0,
+   "dungeons_arise:chests/keep_kayra/keep_kayra_treasure": 12.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/simple_dungeon": 25.0,
+   "nova_structures:chests/food_supply": 2.0,
+   "nova_structures:pots/pot_tavern": 8.0,
+   "repurposed_structures:chests/dungeons/deep": 12.0,
+   "repurposed_structures:trapped_chests/pyramids/ocean": 4.0,
+   "terralith:underground/chest": 11.0
+  }
+ },
+ "dungeons_arise:kisegi_sanctuary": {
+  "containers": 544,
+  "measured": {
+   "_stacks": 1838.3,
+   "horizon:ancient_core": 1.9,
+   "horizon:starforged_heart": 0.6,
+   "horizon:tidebound_doubloon": 0.45,
+   "horizon:wayfarer_shard": 6.7
+  },
+  "tables": {
+   "artifacts:chests/campsite_barrel": 17.0,
+   "artifacts:chests/campsite_chest": 6.0,
+   "dungeons_arise:archeology/kisegi_sanctuary/kisegi_sanctuary_archeology": 16.0,
+   "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_basement": 12.0,
+   "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_normal": 68.0,
+   "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_top": 25.0,
+   "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_treasure": 11.0,
+   "dungeons_arise:pots/kisegi_sanctuary/kisegi_sanctuary_pots": 324.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/shipwreck_map": 1.0,
+   "minecraft:chests/shipwreck_supply": 2.0,
+   "minecraft:chests/shipwreck_treasure": 1.0,
+   "minecraft:chests/simple_dungeon": 1.0,
+   "minecraft:chests/trial_chambers/corridor": 2.0,
+   "minecraft:chests/trial_chambers/entrance": 1.0,
+   "minecraft:chests/trial_chambers/reward": 2.0,
+   "minecraft:dispensers/trial_chambers/chamber": 19.0,
+   "minecraft:pots/trial_chambers/corridor": 27.0,
+   "repurposed_structures:chests/dungeons/deep": 6.0,
+   "repurposed_structures:chests/dungeons/ocean": 2.0
+  }
+ },
+ "dungeons_arise:mechanical_nest": {
+  "containers": 508,
+  "measured": {
+   "_stacks": 2725.2,
+   "exploration_map": 2.1,
+   "horizon:ancient_core": 9.8,
+   "horizon:starforged_heart": 3.9,
+   "horizon:wayfarer_shard": 29.0
+  },
+  "tables": {
+   "apotheosis:chests/chest_valuable": 4.0,
+   "apotheosis:chests/spawner_brutal": 1.0,
+   "apotheosis:chests/spawner_swarm": 3.0,
+   "artifacts:chests/campsite_barrel": 42.0,
+   "artifacts:chests/campsite_chest": 14.0,
+   "betterdungeons:zombie_dungeon/chests/common": 12.0,
+   "betterdungeons:zombie_dungeon/chests/special": 2.0,
+   "betterdungeons:zombie_dungeon/chests/tombstone": 4.0,
+   "dungeons_arise:chests/illager_campsite/illager_campsite_map": 1.0,
+   "dungeons_arise:chests/illager_campsite/illager_campsite_supply": 12.0,
+   "dungeons_arise:chests/illager_campsite/illager_campsite_tent": 9.0,
+   "dungeons_arise:chests/mechanical_nest/mechanical_nest_equipment": 20.0,
+   "dungeons_arise:chests/mechanical_nest/mechanical_nest_normal": 127.0,
+   "dungeons_arise:chests/mechanical_nest/mechanical_nest_supply": 85.0,
+   "dungeons_arise:chests/mechanical_nest/mechanical_nest_treasure": 23.0,
+   "minecraft:archaeology/ocean_ruin_cold": 1.0,
+   "minecraft:chests/simple_dungeon": 33.0,
+   "minecraft:chests/trial_chambers/corridor": 6.0,
+   "minecraft:chests/trial_chambers/intersection_barrel": 1.0,
+   "minecraft:chests/trial_chambers/reward": 2.0,
+   "minecraft:chests/village/village_taiga_house": 1.0,
+   "minecraft:dispensers/trial_chambers/chamber": 11.0,
+   "minecraft:dispensers/trial_chambers/corridor": 1.0,
+   "minecraft:pots/trial_chambers/corridor": 48.0,
+   "repurposed_structures:chests/dungeons/deep": 28.0,
+   "repurposed_structures:chests/dungeons/mushroom": 6.0,
+   "structory:outcast/generic/bandit": 3.0,
+   "terralith:underground/chest": 8.0
+  }
+ },
+ "dungeons_arise:mining_complex": {
+  "containers": 907,
+  "measured": {
+   "_stacks": 1521.8,
+   "exploration_map": 10.95,
+   "horizon:ancient_core": 1.0,
+   "horizon:tidebound_doubloon": 4.15,
+   "horizon:wayfarer_shard": 3.95
+  },
+  "tables": {
+   "artifacts:chests/campsite_barrel": 5.0,
+   "artifacts:chests/campsite_chest": 3.0,
+   "betteroceanmonuments:chests/upper_side_chamber": 1.0,
+   "dungeons_arise:chests/mining_complex/mining_complex_barrel": 67.0,
+   "dungeons_arise:chests/mining_complex/mining_complex_dripstone_normal": 1.0,
+   "dungeons_arise:chests/mining_complex/mining_complex_facility_normal": 11.0,
+   "dungeons_arise:chests/mining_complex/mining_complex_lush_normal": 4.0,
+   "dungeons_arise:pots/mining_complex/mining_complex_pots": 43.0,
+   "minecraft:archaeology/ocean_ruin_cold": 44.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/trial_chambers/corridor": 4.0,
+   "minecraft:chests/trial_chambers/entrance": 2.0,
+   "minecraft:chests/trial_chambers/intersection_barrel": 1.0,
+   "minecraft:chests/trial_chambers/reward": 3.0,
+   "minecraft:chests/underwater_ruin_big": 1.0,
+   "minecraft:chests/underwater_ruin_small": 5.0,
+   "minecraft:dispensers/trial_chambers/chamber": 18.0,
+   "minecraft:pots/trial_chambers/corridor": 46.0,
+   "nova_structures:archaelogy/conduit_ruin": 574.0,
+   "nova_structures:chests/conduit_ruin/conduit_ruin_big": 3.0,
+   "nova_structures:chests/conduit_ruin/conduit_ruin_small": 14.0,
+   "nova_structures:pots/pot_conduit_ruin": 48.0,
+   "structory:mood/fisherman": 7.0,
+   "structory:outcast/boat/loot": 1.0
+  }
+ },
+ "dungeons_arise:plague_asylum": {
+  "containers": 187,
+  "measured": {
+   "_stacks": 1460.15,
+   "exploration_map": 0.3,
+   "horizon:ancient_core": 7.05,
+   "horizon:starforged_heart": 3.9,
+   "horizon:tidebound_doubloon": 2.3,
+   "horizon:wayfarer_shard": 18.35
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 18.0,
+   "artifacts:chests/campsite_chest": 6.0,
+   "betterdungeons:small_dungeon/chests/loot_piles": 4.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_barrels": 22.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_cells": 9.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_normal": 9.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_potions": 18.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_storage": 6.0,
+   "dungeons_arise:chests/plague_asylum/plague_asylum_treasure": 8.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_barrels": 14.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_enchants": 2.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_supply": 8.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure": 4.0,
+   "explorify:chest/supply_cache": 2.0,
+   "minecraft:chests/abandoned_mineshaft": 3.0,
+   "minecraft:chests/buried_treasure": 1.0,
+   "minecraft:chests/simple_dungeon": 31.0,
+   "repurposed_structures:chests/dungeons/deep": 17.0,
+   "repurposed_structures:trapped_chests/pyramids/ocean": 3.0,
+   "structory:outcast/boat/loot": 1.0
+  }
+ },
+ "dungeons_arise:shiraz_palace": {
+  "containers": 197,
+  "measured": {
+   "_stacks": 2138.6,
+   "exploration_map": 0.15,
+   "horizon:ancient_core": 2.85,
+   "horizon:starforged_heart": 0.95,
+   "horizon:wayfarer_shard": 5.2
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 25.0,
+   "artifacts:chests/campsite_chest": 8.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_elite": 7.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_gardens": 48.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_library": 18.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_normal": 6.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_rooms": 12.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_supply": 14.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_towers": 14.0,
+   "dungeons_arise:chests/shiraz_palace/shiraz_palace_treasure": 3.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/simple_dungeon": 2.0,
+   "minecraft:dispensers/trial_chambers/chamber": 7.0,
+   "minecraft:pots/trial_chambers/corridor": 15.0,
+   "repurposed_structures:chests/dungeons/deep": 4.0,
+   "repurposed_structures:trapped_chests/pyramids/ocean": 4.0,
+   "structory:mood/fisherman": 7.0,
+   "structory:outcast/boat/loot": 1.0
+  }
+ },
+ "dungeons_arise:thornborn_towers": {
+  "containers": 143,
+  "measured": {
+   "_stacks": 843.5,
+   "exploration_map": 0.95,
+   "horizon:ancient_core": 3.8,
+   "horizon:starforged_heart": 2.4,
+   "horizon:tidebound_doubloon": 1.45,
+   "horizon:wayfarer_shard": 16.55
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 4.0,
+   "artifacts:chests/campsite_chest": 1.0,
+   "betterdungeons:small_dungeon/chests/loot_piles": 1.0,
+   "dungeons_arise:chests/thornborn_towers/thornborn_towers_barrels": 75.0,
+   "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms": 10.0,
+   "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms": 10.0,
+   "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure": 6.0,
+   "minecraft:archaeology/ocean_ruin_cold": 13.0,
+   "minecraft:chests/abandoned_mineshaft": 3.0,
+   "minecraft:chests/shipwreck_supply": 1.0,
+   "minecraft:chests/simple_dungeon": 10.0,
+   "minecraft:chests/underwater_ruin_small": 2.0,
+   "repurposed_structures:chests/dungeons/deep": 6.0
+  }
+ },
+ "dungeons_arise:undead_pirate_ship": {
+  "containers": 48,
+  "measured": {
+   "_stacks": 309.4,
+   "exploration_map": 0.25,
+   "horizon:ancient_core": 0.5,
+   "horizon:tidebound_doubloon": 1.9,
+   "horizon:wayfarer_shard": 2.45
+  },
+  "tables": {
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 1.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_barrels": 14.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_enchants": 2.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_supply": 8.0,
+   "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_treasure": 4.0,
+   "minecraft:chests/simple_dungeon": 8.0,
+   "minecraft:chests/village/village_weaponsmith": 1.0,
+   "nova_structures:chests/dungeon_2": 3.0,
+   "nova_structures:pots/pot_generic_ruin": 2.0,
+   "repurposed_structures:chests/dungeons/deep": 4.0
+  }
+ },
+ "incendium:forbidden_castle": {
+  "containers": 115,
+  "measured": {
+   "_stacks": 1059.45,
+   "horizon:ancient_core": 0.55,
+   "horizon:cinder_idol": 4.7,
+   "horizon:starforged_heart": 0.05,
+   "horizon:wayfarer_shard": 0.25
+  },
+  "tables": {
+   "incendium:castle/barrel/alchemist": 5.0,
+   "incendium:castle/barrel/barracks": 5.0,
+   "incendium:castle/barrel/food": 17.0,
+   "incendium:castle/barrel/food_low": 42.0,
+   "incendium:castle/barrel/generic": 1.0,
+   "incendium:castle/barrel/generic_big": 1.0,
+   "incendium:castle/barrel/ice": 2.0,
+   "incendium:castle/barrel/library": 1.0,
+   "incendium:castle/barrel/library_low": 4.0,
+   "incendium:castle/barrel/lumber": 1.0,
+   "incendium:castle/barrel/lumber_big": 1.0,
+   "incendium:castle/barrel/random": 1.0,
+   "incendium:castle/tower_barrel": 6.0,
+   "incendium:reactor/junk": 5.0,
+   "incendium:reactor/treasure": 1.0,
+   "incendium:reactor/waste": 9.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "repurposed_structures:chests/dungeons/nether": 12.0
+  }
+ },
+ "incendium:sanctum": {
+  "containers": 138,
+  "measured": {
+   "_stacks": 711.65,
+   "horizon:ancient_core": 3.4,
+   "horizon:cinder_idol": 9.6,
+   "horizon:starforged_heart": 0.15,
+   "horizon:wayfarer_shard": 0.5
+  },
+  "tables": {
+   "incendium:reactor/junk": 2.0,
+   "incendium:reactor/waste": 2.0,
+   "incendium:sanctum/banners": 1.0,
+   "incendium:sanctum/brewery": 7.0,
+   "incendium:sanctum/coffin": 4.0,
+   "incendium:sanctum/common_loot": 37.0,
+   "incendium:sanctum/junk_loot": 49.0,
+   "incendium:sanctum/lower_loot": 11.0,
+   "incendium:sanctum/tax_collector": 2.0,
+   "irons_spellbooks:chests/battleground/burial_loot": 2.0,
+   "minecraft:chests/bastion_bridge": 5.0,
+   "minecraft:chests/bastion_other": 3.0,
+   "minecraft:chests/bastion_treasure": 3.0,
+   "repurposed_structures:chests/dungeons/nether": 5.0,
+   "repurposed_structures:chests/temples/basalt": 3.0,
+   "repurposed_structures:dispensers/temples/basalt": 2.0
+  }
+ },
+ "irons_spellbooks:citadel": {
+  "containers": 278,
+  "measured": {
+   "_stacks": 1701.0,
+   "exploration_map": 1.05,
+   "horizon:ancient_core": 2.5,
+   "horizon:tidebound_doubloon": 4.35,
+   "horizon:wayfarer_shard": 15.5
+  },
+  "tables": {
+   "apotheosis:chests/chest_valuable": 3.0,
+   "apotheosis:chests/spawner_brutal": 3.0,
+   "apotheosis:chests/spawner_swarm": 5.0,
+   "artifacts:chests/campsite_barrel": 36.0,
+   "artifacts:chests/campsite_chest": 11.0,
+   "betterdungeons:small_dungeon/chests/loot_piles": 1.0,
+   "dungeons_arise:chests/illager_corsair/illager_corsair_barrels": 8.0,
+   "dungeons_arise:chests/illager_corsair/illager_corsair_supply": 4.0,
+   "dungeons_arise:chests/illager_corsair/illager_corsair_treasure": 3.0,
+   "irons_spellbooks:chests/citadel/citadel_bookshelf": 14.0,
+   "irons_spellbooks:chests/citadel/rampart_chest": 3.0,
+   "irons_spellbooks:chests/citadel/rampart_supplies": 9.0,
+   "irons_spellbooks:chests/generic_magic_treasure": 5.0,
+   "minecraft:archaeology/ocean_ruin_cold": 14.0,
+   "minecraft:archaeology/trail_ruins_common": 49.0,
+   "minecraft:archaeology/trail_ruins_rare": 18.0,
+   "minecraft:chests/buried_treasure": 2.0,
+   "minecraft:chests/simple_dungeon": 51.0,
+   "minecraft:chests/underwater_ruin_small": 2.0,
+   "minecraft:chests/village/village_weaponsmith": 1.0,
+   "nova_structures:chests/dungeon_2": 3.0,
+   "nova_structures:pots/pot_generic_ruin": 2.0,
+   "nova_structures:pots/pot_wild_ruin": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 26.0,
+   "repurposed_structures:chests/dungeons/ocean": 1.0,
+   "terralith:underground/chest": 3.0
+  }
+ },
+ "minecraft:ancient_city": {
+  "containers": 179,
+  "measured": {
+   "_stacks": 1493.75,
+   "horizon:ancient_core": 10.15,
+   "horizon:cinder_idol": 0.45,
+   "horizon:echoing_fossil": 17.9,
+   "horizon:tidebound_doubloon": 2.3,
+   "horizon:wayfarer_shard": 11.55
+  },
+  "tables": {
+   "apotheosis:chests/chest_valuable": 1.0,
+   "apotheosis:chests/spawner_brutal": 2.0,
+   "artifacts:chests/campsite_barrel": 54.0,
+   "artifacts:chests/campsite_chest": 15.0,
+   "betterdungeons:small_dungeon/chests/loot_piles": 1.0,
+   "minecraft:archaeology/trail_ruins_common": 4.0,
+   "minecraft:chests/ancient_city": 18.0,
+   "minecraft:chests/ancient_city_ice_box": 1.0,
+   "minecraft:chests/buried_treasure": 3.0,
+   "minecraft:chests/simple_dungeon": 39.0,
+   "repurposed_structures:chests/bastions/underground/other": 2.0,
+   "repurposed_structures:chests/bastions/underground/treasure": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 21.0,
+   "repurposed_structures:chests/dungeons/snow": 1.0,
+   "terralith:underground/chest": 16.0
+  }
+ },
+ "minecraft:bastion_remnant": {
+  "containers": 31,
+  "measured": {
+   "_stacks": 297.8,
+   "exploration_map": 1.0,
+   "horizon:ancient_core": 1.9,
+   "horizon:cinder_idol": 10.75,
+   "horizon:wayfarer_shard": 0.25
+  },
+  "tables": {
+   "minecraft:chests/bastion_bridge": 1.0,
+   "minecraft:chests/bastion_hoglin_stable": 5.0,
+   "minecraft:chests/bastion_other": 11.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "repurposed_structures:chests/dungeons/nether": 8.0,
+   "repurposed_structures:chests/ruins/nether": 5.0
+  }
+ },
+ "minecraft:mansion": {
+  "containers": 46,
+  "measured": {
+   "_stacks": 407.3,
+   "exploration_map": 0.6,
+   "horizon:ancient_core": 1.8,
+   "horizon:tidebound_doubloon": 0.15,
+   "horizon:wayfarer_shard": 8.95
+  },
+  "tables": {
+   "apotheosis:chests/chest_valuable": 1.0,
+   "apotheosis:chests/spawner_brutal": 1.0,
+   "apotheosis:chests/spawner_swarm": 1.0,
+   "artifacts:chests/campsite_barrel": 9.0,
+   "artifacts:chests/campsite_chest": 6.0,
+   "minecraft:chests/shipwreck_supply": 1.0,
+   "minecraft:chests/simple_dungeon": 4.0,
+   "minecraft:chests/woodland_mansion": 9.0,
+   "repurposed_structures:chests/dungeons/deep": 10.0,
+   "repurposed_structures:chests/dungeons/ocean": 1.0,
+   "structory:mood/fisherman": 2.0,
+   "structory:outcast/boat/loot": 1.0
+  }
+ },
+ "minecraft:mineshaft": {
+  "containers": 15,
+  "measured": {
+   "_stacks": 89.5,
+   "horizon:ancient_core": 0.15,
+   "horizon:tidebound_doubloon": 0.2,
+   "horizon:wayfarer_shard": 1.3
+  },
+  "tables": {
+   "artifacts:chests/campsite_barrel": 6.0,
+   "artifacts:chests/campsite_chest": 4.0,
+   "minecraft:chests/ruined_portal": 1.0,
+   "minecraft:chests/shipwreck_map": 1.0,
+   "minecraft:chests/shipwreck_supply": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 2.0
+  }
+ },
+ "minecraft:stronghold": {
+  "containers": 41,
+  "measured": {
+   "_stacks": 297.35,
+   "horizon:ancient_core": 0.2,
+   "horizon:tidebound_doubloon": 0.7,
+   "horizon:wayfarer_shard": 1.75
+  },
+  "tables": {
+   "apotheosis:chests/spawner_brutal": 1.0,
+   "artifacts:chests/campsite_barrel": 5.0,
+   "minecraft:archaeology/ocean_ruin_cold": 8.0,
+   "minecraft:chests/abandoned_mineshaft": 1.0,
+   "minecraft:chests/simple_dungeon": 5.0,
+   "minecraft:chests/stronghold_corridor": 4.0,
+   "minecraft:chests/stronghold_crossing": 2.0,
+   "minecraft:chests/stronghold_library": 3.0,
+   "minecraft:chests/trial_chambers/entrance": 3.0,
+   "minecraft:chests/underwater_ruin_small": 1.0,
+   "repurposed_structures:chests/dungeons/deep": 3.0,
+   "repurposed_structures:trapped_chests/pyramids/ocean": 4.0,
+   "terralith:underground/chest": 1.0
+  }
+ },
+ "minecraft:village_plains": {
+  "containers": 27,
+  "measured": {
+   "_stacks": 165.4,
+   "exploration_map": 0.5,
+   "horizon:ancient_core": 0.15,
+   "horizon:tidebound_doubloon": 0.7,
+   "horizon:wayfarer_shard": 1.45
+  },
+  "tables": {
+   "artifacts:chests/campsite_barrel": 1.0,
+   "artifacts:chests/campsite_chest": 1.0,
+   "betterdungeons:small_dungeon/chests/loot_piles": 1.0,
+   "irons_spellbooks:chests/component_storage": 1.0,
+   "irons_spellbooks:chests/priest_house": 2.0,
+   "minecraft:archaeology/ocean_ruin_cold": 6.0,
+   "minecraft:chests/simple_dungeon": 3.0,
+   "minecraft:chests/underwater_ruin_small": 1.0,
+   "minecraft:chests/village/village_plains_house": 2.0,
+   "minecraft:chests/village/village_tannery": 1.0,
+   "minecraft:chests/village/village_weaponsmith": 1.0,
+   "nova_structures:chests/dungeon_2": 3.0,
+   "nova_structures:pots/pot_generic_ruin": 2.0,
+   "repurposed_structures:chests/dungeons/deep": 2.0
+  }
+ },
+ "nova_structures:end_castle": {
+  "containers": 368,
+  "measured": {
+   "_stacks": 1412.4,
+   "horizon:ancient_core": 2.15,
+   "horizon:starforged_heart": 0.3,
+   "horizon:starlit_voidglass": 4.95
+  },
+  "tables": {
+   "minecraft:chests/end_city_treasure": 16.0,
+   "nova_structures:chests/end_castle/castle_bar": 11.0,
+   "nova_structures:chests/end_castle/castle_brewing": 23.0,
+   "nova_structures:chests/end_castle/lesser_loot": 54.0,
+   "nova_structures:chests/end_castle/rocket_barrel": 16.0,
+   "nova_structures:chests/end_castle/supply": 66.0,
+   "nova_structures:pots/end_castle/pot_end_castle": 178.0,
+   "repurposed_structures:chests/shipwrecks/end/supply": 1.0,
+   "repurposed_structures:shulker_boxes/dungeons/end": 3.0
+  }
+ }
+}

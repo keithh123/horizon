@@ -6,14 +6,6 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/common"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/junk"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "incendium:pipeline/uncommon"
         }
       ]

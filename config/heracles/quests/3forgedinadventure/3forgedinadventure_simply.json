@@ -8,13 +8,14 @@
     },
     "title": "A Blade of Choice",
     "description": [
-      "Simply Swords weapons are sidegrades with movesets from Better Combat. Try a few - none is strictly best."
+      "Simply Swords weapons are sidegrades with movesets from Better Combat. Try a few - none is strictly best.",
+      "Uniques have their own abilities; duplicates salvage into shards at Apotheosis' salvaging table."
     ],
     "groups": {
       "3 - Forged in Adventure": {
         "position": [
           48,
-          80
+          72
         ]
       }
     }

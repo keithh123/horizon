@@ -303,6 +303,15 @@ def main():
                   + "".join(f"  event.add('horizon:{k}', [" + ", ".join(f"Text.translate('tooltip.horizon.{k}.{n}').gray()" for n in range(len(v))) + "])\n"
                             for k, v in tips.items()) + "})\n", encoding="utf-8")
     written.append(cp.relative_to(KJ).as_posix())
+    data = {"partyRadius": LEG["party_radius"],
+            "legends": {b["id"]: {"path": b["id"].split(":")[1], "tier": b["tier"], "name": b["name"]} for b in LEG["bosses"]},
+            "tiers": {"horizon:wayfarer_shard": 1, "horizon:ancient_core": 2, "horizon:starforged_heart": 3,
+                      **{f"horizon:{it[0]}": 1 for it in ITEMS[3:]}},
+            "names": {f"horizon:{it[0]}": it[1] for it in ITEMS}}
+    dp = KJ / "startup_scripts/horizon_data.js"
+    dp.write_text(hdr + "// Data shared with server/client scripts (global may only be assigned in startup scripts).\n"
+                  "global.HORIZON = " + json.dumps(data, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    written.append(dp.relative_to(KJ).as_posix())
     OWNED.write_text(json.dumps({"generator": "scripts/gen_assets.py", "files": sorted(written)}, indent=1) + "\n")
     print(f"{len(ITEMS)} items, {len(LEG['bosses'])} trophies, {len(written)} files")
 

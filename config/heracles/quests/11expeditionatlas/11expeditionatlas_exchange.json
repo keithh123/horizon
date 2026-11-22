@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:cinder_idol"
+      }
+    },
+    "title": "Expedition Exchange",
+    "description": [
+      "Each realm has its own token: Tidebound Doubloons (ocean), Cinder Idols (Nether), Starlit Voidglass (End),",
+      "Skyward Plumes (Aether), Echoing Fossils (the Deep) and Honeyed Seals (Bumblezone).",
+      "6 tokens + 2 gem dust buy a &echosen&r Apotheosis gem at its lowest purity - then cut it up yourself.",
+      "This is targeted progress, not a shop: no affix gear, no top purities, and tokens cannot be crafted."
+    ],
+    "groups": {
+      "11 - Expedition Atlas": {
+        "position": [
+          48,
+          468
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "11expeditionatlas_atlas"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "#horizon:tokens",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 4
+      }
+    }
+  }
+}
