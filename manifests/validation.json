@@ -220,32 +220,32 @@
   "unverified": "FA mob animations not inspected visually"
  },
  "snowyleavesplus": {
-  "evidence": "compiles against NeoForge 21.1.267 (scripts/build_ports.py)",
-  "unverified": "NOT yet tested in game - compiled only"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loaded into a world generated without it; under snow with randomTickSpeed 600 a leaf reached snowiness=full (execute if block), whitened tint visible",
+  "unverified": "dedicated-server pairing not tested"
  },
  "armour-sound-tweak-updated": {
-  "evidence": "compiles against NeoForge 21.1.267 (scripts/build_ports.py)",
-  "unverified": "NOT yet tested in game - compiled only"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, inventory opened with no errors",
+  "unverified": "equip sound not audible to automated test"
  },
  "eating-animation": {
-  "evidence": "compiles against NeoForge 21.1.267 (scripts/build_ports.py)",
-  "unverified": "NOT yet tested in game - compiled only"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads, item predicates registered, no errors",
+  "unverified": "eating frames not observed (automation cannot hold right-click)"
  },
  "item-landing-sound": {
-  "evidence": "compiles against NeoForge 21.1.267 (scripts/build_ports.py)",
-  "unverified": "NOT yet tested in game - compiled only"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; item dropped and landed with no errors",
+  "unverified": "sound not audible to automated test"
  },
  "better-smoke": {
-  "evidence": "compiles against NeoForge 21.1.267 (scripts/build_ports.py)",
-  "unverified": "NOT yet tested in game - compiled only"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): campfires produce billowing clustered smoke plumes; no errors",
+  "unverified": "wind/config screen not exercised"
  },
  "grandteleport-neoforge": {
-  "evidence": "metadata repack fixes FML InvalidModFileException; client launch: loads, reaches title (44-50 s, 178 jars); crashes a dedicated server (client classes) -> shipped client-only",
-  "unverified": "teleport transition not triggered in game"
+  "evidence": "metadata repack fixes FML InvalidModFileException; client launch OK; in game /tp plays the teleport transition; crashes a dedicated server (client classes) -> shipped client-only",
+  "unverified": ""
  },
  "CF:weather-glass": {
-  "evidence": "0.6.2 release for 1.21.1 NeoForge, PolyForm Shield 1.0.0 (redistributable), sha512 pinned",
-  "unverified": "NOT yet tested in game"
+  "evidence": "in game (HorizonTest, 0.3.0 candidate, shaders on): loads; frost/snow overlay seen on glass during snowfall",
+  "unverified": "rain droplets not inspected"
  },
  "particle-rain": {
   "evidence": "already locked in 0.2.0",

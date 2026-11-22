@@ -20,6 +20,9 @@
   Effectual trails and Streams Reflowing particles.
 - Fixes found by testing: Visual Overhaul first-launch NPE (seed config), Grand Teleport invalid version string and
   server crash, checker quirks (Clavis/Lootr Maven ordering, More Sounds optional `forge`), patch_configs syntax/idempotency.
+- Bug fix (0.2.0): Incendium function/component tables (armour-stand heads, artifacts, castle/base) were in the nether
+  family; Incendium rolls them via /loot every second and Apotheosis' gem modifier threw. Excluded; only the Incendium
+  castle group moves (core 0.68 -> 0.64, still under budget). Verified in game after /reload.
 - Tooling: probe_expansion.py, build_ports.py, remap_intermediary.py, gen_checklist.py; server_test.py LOCATEAUDIT.
 - Not changed: 0.2.0 mods' versions, calibrated loot, existing quests (10 legend quests appended by the generator), saves.
 

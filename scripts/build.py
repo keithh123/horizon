@@ -187,6 +187,10 @@ def instance(name, groups):
     print("pruned stale pack files:", prune_mirrored(mc, stage))
     copy_overrides(mc)
     (mc / "resourcepacks").mkdir(exist_ok=True)
+    for old in KNOWN_OLD:   # Punchy Moves flags FA Player Extension by file presence, not by enabled state
+        stale = mc / "resourcepacks" / old.removeprefix("file/")
+        if stale.exists():
+            stale.unlink()
     for s in L.get("resourcepacks", []):
         shutil.copy2(fetch(s), mc / "resourcepacks" / s["file"])
     set_resourcepacks(mc / "options.txt", L.get("resourcepacks", []))

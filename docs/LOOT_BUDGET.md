@@ -7,7 +7,7 @@ and gem numbers are the expected count of injected affix items / gems on top of 
 Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include
 repeated jigsaw pieces; the solver budgets those structures from the measured counts.
 
-Tables classified: 1043 - inject tables: 314 - placed but unassigned (no Horizon injection): 105
+Tables classified: 982 - inject tables: 313 - placed but unassigned (no Horizon injection): 106
 
 ## The Aether (`aether`) - 1 structure groups
 
@@ -116,7 +116,7 @@ Tables classified: 1043 - inject tables: 314 - placed but unassigned (no Horizon
 | `minecraft:bastion_remnant` **(measured)** | 31.0 | 0.35 | 0.28 | 0 | 0.0 | 1.33 | 1.12 | 0.77 |
 | `mmr:1_21_0/nether_mineshaft` | 132 | 0 | 0.49 | 0.05 | 0.05 | 2.11 | 1.71 | 0.98 |
 | `nova_structures:nether_port` | 93 | 0 | 0.7 | 0 | 0.0 | 2.46 | 1.98 | 1.4 |
-| `incendium:castle` | 76 | 0 | 0.68 | 0.05 | 0.05 | 1.88 | 1.58 | 1.1 |
+| `incendium:castle` | 74 | 0 | 0.64 | 0.05 | 0.05 | 1.67 | 1.45 | 1.0 |
 | `incendium:quartz_flats` | 44 | 0 | 0.7 | 0 | 0.0 | 2.5 | 1.99 | 1.39 |
 | `betterfortresses:halls` | 43 | 0 | 0.23 | 0 | 0.0 | 1.24 | 0.87 | 0.6 |
 | `betterfortresses:keep` | 42 | 0 | 0.43 | 0 | 0.0 | 0.9 | 0.9 | 0.61 |

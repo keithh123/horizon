@@ -6,11 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:castle/base/blackstone"
+          "loot_table_id": "incendium:cvill/blacksmith"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:castle/king_statue"
+          "loot_table_id": "incendium:cvill/butcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:cvill/medium"
         }
       ]
     }

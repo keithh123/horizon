@@ -460,6 +460,10 @@
       "nether"
     ],
     [
+      "^incendium:(artifact|castle/(base|stand)|entity|hovering_inferno|ghastling|iron_nuggets)/",
+      null
+    ],
+    [
       "^incendium:",
       "nether"
     ],

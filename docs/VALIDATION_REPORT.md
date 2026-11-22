@@ -82,6 +82,7 @@ structures located in natural Terralith/Tectonic terrain and audited (lich tower
 Voxy on: Spatial GUI inventory + EMI, F3 metrics; profile switcher for all three profiles on a copy of real configs;
 generator pipeline twice (idempotent); 0.2.0 loot groups unchanged (0 of the existing groups differ).
 
-Not done yet: in-game test of the 5 source ports and Weather Glass; Better Combat/spell/Punchy animation interplay;
+Ports in game: Snowy Leaves (state + tint), Better Smoke (plumes), Grand Teleport (transition), Weather Glass (frost) observed; all 7 load without errors. Fresh Prism import of the 0.3.0 .mrpack: 191/191 files match the lock hashes, title screen in 39 s.
+Not done yet: eating frames and port sounds (not observable by automation); Better Combat/spell/Punchy animation interplay;
 AE2 terminal screens under Spatial GUI; shader visual check of Better Clouds/Interactive Foliage; matched performance
-comparison; multiplayer with real players; fresh Prism import of the 0.3.0 .mrpack (see below when done).
+comparison; multiplayer with real players.

@@ -39,3 +39,9 @@ bash scripts/smoke.sh                  # launch the dev instance and summarise e
 ```
 
 Jar downloads are cached in `~/.cache/project-horizon/jars` (override with `PH_CACHE`).
+
+## 0.3.0 import note
+
+Prism warns ("Easy There!") that 7 jars are not hosted on Modrinth/CurseForge. They are the ports and redistributable
+jars listed in docs/PORTS.md, built from `ports/`; tick "I trust this modpack" to continue. Cinematic Interactions is
+not included (CurseForge-only, All Rights Reserved); install it yourself from CurseForge if wanted (untested).

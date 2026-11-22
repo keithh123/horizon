@@ -638,7 +638,7 @@
       "chance": 0.09,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:castle/base/blackstone|castle/king_statue|sanctum/coffin)"
+        "path_regex": "(?:sanctum/coffin)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",
@@ -662,7 +662,7 @@
       "chance": 0.14,
       "pattern": {
         "domain": "incendium",
-        "path_regex": "(?:artifact/banners/blade|artifact/banners/ominous|artifact/banners/poppy|artifact/banners/sanctum|artifact/firestorm_drop|artifact/misc/restless_nature|artifact/patron/daybreaker|artifact/patron/holy_wrath|artifact/patron/scouts_battle_helm|artifact/patron/scroll_of_returning|artifact/patron/warping_witherblade|artifact/potions/bad_omen|artifact/potions/death|artifact/potions/elixer_of_undying|artifact/potions/eternal_glowing|artifact/potions/miners_ale|artifact/potions/sus_brew|artifact/ragnarok_drop|artifact/scarlet_or_sacrifice|artifact/scroll_drop|artifact/shield/necrotic_shield|artifact/shield/prismatic_shield|artifact/shield/radiation_shield|artifact/tool/cake_batter|artifact/tool/hazmat_suit|artifact/tool/hefty_pickaxe|artifact/tool/infernal_feather|artifact/tool/infernal_wings|artifact/tool/torch_of_lunacy|artifact/tool/unstable_powder|artifact/trailblazer_drop|artifact/weapon/blazing_hatchet|artifact/weapon/chilling_blade|artifact/weapon/firestorm|artifact/weapon/greatsword_of_sacrifice|artifact/weapon/multiplex_crossbow|artifact/weapon/ragnarok|artifact/weapon/scarlet_dagger|artifact/weapon/sentrys_wrath|artifact/weapon/trailblazer|artifact/weapon/voltaic_trident|artifact/weapon/withersbane|castle/base/brewing|castle/base/gold|castle/base/gold_big|castle/base/gold_small|castle/base/gold_stackable|castle/base/head_self|castle/base/random_blocks|castle/base/rare_potion|castle/base/tools|castle/base/tools_armor|castle/base/unbreaking_efficiency|castle/base/wood|castle/blacksmith/boots|castle/blacksmith/chestplate|castle/blacksmith/helmet|castle/blacksmith/leggings|castle/entity/alchemist|castle/entity/any|castle/entity/knight|castle/entity/scout|castle/stand/armor|castle/stand/boots|castle/stand/chestplate|castle/stand/helmet|castle/stand/leggings|cvill/mob/brewer|cvill/mob/guard|cvill/mob/miner|cvill/wood|ghastling|hovering_inferno|hovering_inferno/extras|iron_nuggets|lab/basalt|lab/piglin_loot|sanctum/potions|sanctum/potionsfull)"
+        "path_regex": "(?:castle/blacksmith/boots|castle/blacksmith/chestplate|castle/blacksmith/helmet|castle/blacksmith/leggings|castle/entity/alchemist|castle/entity/any|castle/entity/knight|castle/entity/scout|castle/king_statue|cvill/mob/brewer|cvill/mob/guard|cvill/mob/miner|cvill/wood|ghastling|hovering_inferno|iron_nuggets|lab/basalt|lab/piglin_loot|sanctum/potions|sanctum/potionsfull)"
       },
       "gems": [
         "apotheosis:the_nether/inferno",

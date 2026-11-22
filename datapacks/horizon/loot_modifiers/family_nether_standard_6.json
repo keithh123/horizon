@@ -6,15 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/blacksmith"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/butcher"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/medium"
+          "loot_table_id": "minecraft:chests/bastion_hoglin_stable"
         }
       ]
     }

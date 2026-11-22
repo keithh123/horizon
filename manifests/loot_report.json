@@ -1,6 +1,6 @@
 {
- "tables_classified": 1043,
- "inject_tables": 314,
+ "tables_classified": 982,
+ "inject_tables": 313,
  "by_family": {
   "aether": 22,
   "arcane": 79,
@@ -9,7 +9,7 @@
   "end": 22,
   "hive": 47,
   "landmark": 62,
-  "nether": 215,
+  "nether": 154,
   "ocean": 28,
   "roadside": 111,
   "settlement": 126,
@@ -40,6 +40,7 @@
   "gazebo:chests/gazebo",
   "iceandfire:chest/village_scribe",
   "immersiveengineering:chests/engineers_house",
+  "incendium:castle/base/blackstone",
   "incendium:castle/tower_floor_low",
   "irons_jewelry:chests/village/village_jeweler",
   "jellyfishing:chests/village_house",
@@ -895,13 +896,13 @@
   {
    "group": "incendium:castle",
    "family": "nether",
-   "containers": 76,
+   "containers": 74,
    "calibrated": false,
-   "core": 0.68,
-   "token": 1.88,
-   "affix": 1.58,
-   "gem": 1.1,
    "heart": 0.05,
+   "core": 0.64,
+   "token": 1.67,
+   "affix": 1.45,
+   "gem": 1.0,
    "p_heart_ge1": 0.05
   },
   {

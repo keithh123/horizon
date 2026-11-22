@@ -6,15 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mmr:nether_mineshaft/miner_chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mmr:nether_mineshaft/miner_chest_2"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mmr:nether_mineshaft/miner_chest_3"
+          "loot_table_id": "nova_structures:chests/nether_port/nether_port_chest"
         }
       ]
     }

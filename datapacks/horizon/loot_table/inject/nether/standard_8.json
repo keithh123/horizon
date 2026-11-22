@@ -6,7 +6,22 @@
       "conditions": [
         {
           "condition": "minecraft:random_chance",
-          "chance": 0.014
+          "chance": 0.037
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "horizon:ancient_core"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.067
         }
       ],
       "entries": [
