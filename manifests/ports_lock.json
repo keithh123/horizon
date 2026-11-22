@@ -1,0 +1,21 @@
+{
+  "ports": [
+    {
+      "name": "grandteleport",
+      "file": "GrandTeleport-NeoForge-1.21.1-1.0.1-horizon1.jar",
+      "kind": "repack",
+      "side": {
+        "client": "required",
+        "server": "optional"
+      },
+      "license": "MIT",
+      "replaces_slug": "grandteleport-neoforge",
+      "upstream": "https://modrinth.com/mod/grandteleport-neoforge/version/c8G8d2Nt",
+      "size": 1289744,
+      "hashes": {
+        "sha1": "586b41eb6859e59eae8366c8275c9aa2c5550545",
+        "sha512": "95a092cec5be1b740e2c5436a91dd5ef9208f84aaef0ec6700fb534a5cfa2177c948bec73399ccd96f86a1dd6e5aa123f7563e4b9b0ded3c1a1e7c13a0bb8951"
+      }
+    }
+  ]
+}

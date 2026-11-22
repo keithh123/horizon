@@ -1,14 +1,20 @@
 {
- "mods_seen": 142,
- "dependency_entries": 418,
- "failures": [],
+ "mods_seen": 207,
+ "dependency_entries": 588,
+ "failures": [
+  "more-sounds: optional forge [52,) is present but version 21.1.267 is out of range (FML rejects this)",
+  "clavis: optional lootr [1.21-1.10.35.96,) is present but version 1.21.1-1.11.38.127 is out of range (FML rejects this)"
+ ],
  "warnings": [
   "subtle-effects: requires fzzy_config [0.7.7+1.21,), found 0.7.7+fix1+1.21+neoforge [checker ordering quirk: accepted by FML, confirmed by 0.2.0 client launch]",
+  "seamless-sleep: requires minecraft [1.21, 1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
+  "spider-overhaul: requires minecraft [1.21], found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "better-modlist: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "the-undergarden: requires minecraft [1.21], found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "jei: requires minecraft [1.21, 1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "iris: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "when-dungeons-arise: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
+  "infinity-cave: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "voxy: Fabric jar (voxy 0.2.16-beta, minecraft ['1.21.11']) - loaded by Roxy, not FML; verified by launch, not by this checker"
  ]
 }

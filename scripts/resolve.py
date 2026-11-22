@@ -81,7 +81,8 @@ def main():
             "version_id": v["id"], "version": v["version_number"], "channel": v["version_type"],
             "published": v["date_published"][:10], "loaders": v["loaders"], "game_versions": v["game_versions"],
             "file": f["filename"], "url": f["url"], "size": f["size"], "hashes": f["hashes"],
-            "client_side": proj["client_side"], "server_side": proj["server_side"],
+            "client_side": entry.get("side", {}).get("client", proj["client_side"]),
+            "server_side": entry.get("side", {}).get("server", proj["server_side"]),
             "license": proj["license"]["id"], "group": group if not parent else "dependency",
             "why": entry.get("why", f"Required dependency of {parent}"),
             "required_by": [parent] if parent else [],
@@ -109,11 +110,23 @@ def main():
         shaders.append({"slug": s["slug"], "version": v["version_number"], "version_id": v["id"], "file": f["filename"],
                         "url": f["url"], "size": f["size"], "hashes": f["hashes"], "why": s["why"]})
 
+    packs = []  # resource packs: exact version pinned in the roster, applied in roster order (first = lowest priority)
+    for s in roster.get("resourcepacks", []):
+        v = get(f"/version/{s['pin']}")
+        if not v:
+            problems.append(f"resource pack version missing {s}")
+            continue
+        f = next((x for x in v["files"] if x["primary"]), v["files"][0])
+        proj = get(f"/project/{v['project_id']}")
+        packs.append({"slug": s["slug"], "title": proj["title"], "project_id": v["project_id"], "version": v["version_number"],
+                      "version_id": v["id"], "file": f["filename"], "url": f["url"], "size": f["size"], "hashes": f["hashes"],
+                      "license": proj["license"]["id"], "pack_format_note": s.get("note", ""), "why": s["why"]})
+
     mods = sorted(resolved.values(), key=lambda m: (m["group"], m["slug"]))
     lock = {"minecraft": mc, "loader": loader, "loader_version": roster["loader_version"],
-            "generated": time.strftime("%Y-%m-%d"), "mods": mods, "shaders": shaders, "problems": problems}
+            "generated": time.strftime("%Y-%m-%d"), "mods": mods, "shaders": shaders, "resourcepacks": packs, "problems": problems}
     (ROOT / "manifests/lock.json").write_text(json.dumps(lock, indent=2))
-    print(f"{len(mods)} mods ({sum(1 for m in mods if m['group']=='dependency')} deps), {len(shaders)} shaders")
+    print(f"{len(mods)} mods ({sum(1 for m in mods if m['group']=='dependency')} deps), {len(shaders)} shaders, {len(packs)} resource packs")
     for m in mods:
         if m["group"] == "dependency":
             print(f"  dep {m['slug']:32} {m['version']:34} <- {', '.join(sorted(set(m['required_by'])))}")

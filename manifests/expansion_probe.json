@@ -1,0 +1,8619 @@
+[
+ {
+  "requested": "Weather glass",
+  "slug": "CF:weather-glass",
+  "audit_status": "Native build",
+  "audit_version": "0.6.0 beta (NeoForge 1.21.1)",
+  "kind": "mod",
+  "platform": "curseforge"
+ },
+ {
+  "requested": "punchy moves",
+  "slug": "punchymoves",
+  "audit_status": "Native build",
+  "audit_version": "1.0.9b (beta; neoforge)",
+  "kind": "mod",
+  "project_id": "mzgtK8pY",
+  "title": "Punchy! Moves",
+  "project_type": "mod",
+  "client": "unknown",
+  "server": "unknown",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1",
+   "1.21.11",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "8dHgPPh6",
+    "number": "1.0.9b",
+    "type": "beta",
+    "date": "2026-11-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-moves-1.0.9b-neoforge-1.21.1.jar",
+    "size": 1283504,
+    "deps": [
+     {
+      "slug": "fluid-foolish",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "cinematic interactions",
+  "slug": "CF:cinematic-interactions",
+  "audit_status": "Native build",
+  "audit_version": "0.18.30 beta (NeoForge 1.21.1)",
+  "kind": "mod",
+  "platform": "curseforge"
+ },
+ {
+  "requested": "visuality",
+  "slug": "visuality-forge",
+  "audit_status": "Existing port",
+  "audit_version": "3.0.0 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "z13R7Et1",
+  "title": "Visuality: Reforged",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/DragonsPlusMinecraft/VisualityReforged",
+  "issues": "https://github.com/DragonsPlusMinecraft/VisualityReforged/issues",
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.5",
+   "1.21.6",
+   "1.21.8",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "kOdevgPm",
+    "number": "3.0.0",
+    "type": "release",
+    "date": "2026-08-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "visuality-forge-3.0.0.jar",
+    "size": 132898,
+    "deps": []
+   },
+   {
+    "id": "ZBidwV02",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-08-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "visuality-forge-2.1.0.jar",
+    "size": 115765,
+    "deps": []
+   },
+   {
+    "id": "9331fSfU",
+    "number": "2.0.5",
+    "type": "release",
+    "date": "2024-10-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "visuality-forge-2.0.5.jar",
+    "size": 112796,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "better clouds",
+  "slug": "better-clouds",
+  "audit_status": "Native build",
+  "audit_version": "1.13.11+1.21.1-neoforge-release (release; neoforge)",
+  "kind": "mod",
+  "project_id": "5srFLIaK",
+  "title": "Better Clouds",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MPL-2.0",
+  "source": "https://github.com/Qendolin/better-clouds",
+  "issues": "https://github.com/Qendolin/better-clouds/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "UvRCtZxT",
+    "number": "1.13.11+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-09-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.11+1.21.1-neoforge.jar",
+    "size": 817079,
+    "deps": [
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "CGLjCdKF",
+    "number": "1.13.9+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-09-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.9+1.21.1-neoforge.jar",
+    "size": 816969,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "w0azz5HH",
+    "number": "1.13.8+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-09-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.8+1.21.1-neoforge.jar",
+    "size": 817034,
+    "deps": [
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "98i9IvGb",
+    "number": "1.13.7+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-09-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.7+1.21.1-neoforge.jar",
+    "size": 817032,
+    "deps": [
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "XK8POrWQ",
+    "number": "1.13.6+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-07-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.6+1.21.1-neoforge.jar",
+    "size": 815478,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "rj65x08X",
+    "number": "1.13.5+1.21.1-neoforge-release",
+    "type": "release",
+    "date": "2026-07-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "better-clouds-1.13.5+1.21.1-neoforge.jar",
+    "size": 815310,
+    "deps": [
+     {
+      "slug": "iris",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "sodium",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "snowy leaves plus",
+  "slug": "snowyleavesplus",
+  "audit_status": "Port needed",
+  "audit_version": "mc1.21.1-0.1.12 (beta; fabric,quilt)",
+  "kind": "mod",
+  "project_id": "of7wIinq",
+  "title": "SnowyLeavesPlus",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "MPL-2.0",
+  "source": "https://github.com/theRookieCoder/SnowyLeavesPlus",
+  "issues": "https://github.com/theRookieCoder/SnowyLeavesPlus/issues",
+  "loaders": [
+   "fabric",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.4",
+   "1.21.5",
+   "1.21.6",
+   "1.21.7",
+   "1.21.8",
+   "1.21.9"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21",
+   "fabric:1.21-pre4",
+   "fabric:1.21.1",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9",
+   "quilt:1.21",
+   "quilt:1.21-pre4",
+   "quilt:1.21.1",
+   "quilt:1.21.4",
+   "quilt:1.21.5",
+   "quilt:1.21.6",
+   "quilt:1.21.7",
+   "quilt:1.21.8",
+   "quilt:1.21.9"
+  ]
+ },
+ {
+  "requested": "particle rain",
+  "slug": "particle-rain",
+  "audit_status": "Already in Horizon",
+  "audit_version": "v4.0.4+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "nrikgvxm",
+  "title": "Particle Rain",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/PigCart/particle-rain",
+  "issues": "https://github.com/PigCart/particle-rain/issues?q=is%3Aissue",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "26.1-snapshot-1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3",
+   "26w14a"
+  ],
+  "already_locked": true,
+  "versions": [
+   {
+    "id": "DW2m22Qi",
+    "number": "v4.0.4+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.4+1.21.1-neoforge.jar",
+    "size": 626707,
+    "deps": []
+   },
+   {
+    "id": "inhna3NE",
+    "number": "v4.0.3+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.3+1.21.1-neoforge.jar",
+    "size": 623684,
+    "deps": []
+   },
+   {
+    "id": "RxfaR4ud",
+    "number": "v4.0.2+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.2+1.21.1-neoforge.jar",
+    "size": 623257,
+    "deps": []
+   },
+   {
+    "id": "caOF42Gm",
+    "number": "v4.0.1+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.1+1.21.1-neoforge.jar",
+    "size": 623001,
+    "deps": []
+   },
+   {
+    "id": "afsEq2Ie",
+    "number": "v4.0.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.0+1.21.1-neoforge.jar",
+    "size": 622979,
+    "deps": []
+   },
+   {
+    "id": "k32OBTlL",
+    "number": "v4-beta.11+1.21.1-neoforge",
+    "type": "beta",
+    "date": "2026-08-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "particlerain-4.0.0-beta.11+1.21.1-neoforge.jar",
+    "size": 618131,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "falling tree",
+  "slug": "fallingtree",
+  "audit_status": "Native build",
+  "audit_version": "1.21.1-1.21.1.11 (release; fabric,forge,neoforge)",
+  "kind": "mod",
+  "project_id": "Fb4jn8m6",
+  "title": "FallingTree",
+  "project_type": "mod",
+  "client": "optional",
+  "server": "required",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/RakambdaOrg/FallingTree",
+  "issues": "https://github.com/RakambdaOrg/FallingTree/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "26.1",
+   "26.1-snapshot-6",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "wxGXaJMA",
+    "number": "1.21.1-1.21.1.11",
+    "type": "release",
+    "date": "2025-08-01",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.11.jar",
+    "size": 496356,
+    "deps": [
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "kHb8t0xv",
+    "number": "1.21.1-1.21.1.10",
+    "type": "release",
+    "date": "2025-07-01",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.10.jar",
+    "size": 491837,
+    "deps": [
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "UJFIzvL3",
+    "number": "1.21.1-1.21.1.9",
+    "type": "release",
+    "date": "2025-06-16",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.9.jar",
+    "size": 480841,
+    "deps": [
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "pLoQCXwM",
+    "number": "1.21.1-1.21.1.8",
+    "type": "release",
+    "date": "2025-05-27",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.8.jar",
+    "size": 477670,
+    "deps": [
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "JtSM2Voq",
+    "number": "1.21.1-1.21.1.7",
+    "type": "release",
+    "date": "2025-03-05",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.7.jar",
+    "size": 468618,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "d4Vwh7lX",
+    "number": "1.21.1-1.21.1.6",
+    "type": "release",
+    "date": "2025-02-26",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "FallingTree-1.21.1-1.21.1.6.jar",
+    "size": 468618,
+    "deps": [
+     {
+      "slug": "fabric-api",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "modmenu",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "cozy critters and creepy crawlies",
+  "slug": "cosy-critters",
+  "audit_status": "Native build",
+  "audit_version": "v0.3.3+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "61PI8Hzj",
+  "title": "Cosy Critters & Creepy Crawlies",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/PigCart/cosy-critters",
+  "issues": "https://github.com/PigCart/cosy-critters/issues?q=is%3Aissue",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3",
+   "26w14a"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "QnJ9WVDV",
+    "number": "v0.3.3+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-07-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+    "size": 99302,
+    "deps": []
+   },
+   {
+    "id": "xjfSBf8L",
+    "number": "v0.3.2+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-04-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.3.2+1.21.1-neoforge.jar",
+    "size": 98864,
+    "deps": []
+   },
+   {
+    "id": "6cZ4GRV6",
+    "number": "v0.3.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-03-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.3.0+1.21.1-neoforge.jar",
+    "size": 93212,
+    "deps": []
+   },
+   {
+    "id": "FSYfDH3A",
+    "number": "v0.2.1+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-01-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.2.1+1.21.1-neoforge.jar",
+    "size": 86113,
+    "deps": []
+   },
+   {
+    "id": "GUp49dNY",
+    "number": "v0.2.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.2.0+1.21.1-neoforge.jar",
+    "size": 77518,
+    "deps": []
+   },
+   {
+    "id": "Enpo7bPg",
+    "number": "v0.1.2+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-10-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cosycritters-0.1.2+1.21.1-neoforge.jar",
+    "size": 73783,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "interactive foliage",
+  "slug": "mc2-interactive-foliage",
+  "audit_status": "Native build",
+  "audit_version": "2.2.1-neoforge+1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "ba5MV2CF",
+  "title": "Interactive Foliage",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": "https://github.com/Kart0/mc2-interactivefoliage/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.11",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "oKmXJIL5",
+    "number": "2.2.1-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-10-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-2.2.1-neoforge+1.21.1.jar",
+    "size": 381069,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "D3Cajmzf",
+    "number": "2.2.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-10-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-2.2.0-neoforge+1.21.1.jar",
+    "size": 376456,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "wyQ8QFgr",
+    "number": "2.1.1-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-10-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-2.1.1-neoforge+1.21.1.jar",
+    "size": 309935,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "lOLxlJJJ",
+    "number": "2.1.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-10-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-2.1.0-neoforge+1.21.1.jar",
+    "size": 303244,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "szHc87G5",
+    "number": "2.0.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-09-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-2.0.0-neoforge+1.21.1.jar",
+    "size": 259837,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "V2mVk8al",
+    "number": "1.3.1-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-09-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "mc2_interactivefoliage-1.3.1-neoforge+1.21.1.jar",
+    "size": 113132,
+    "deps": [
+     {
+      "slug": "sway",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "atmospherics",
+  "slug": "atmospherics",
+  "audit_status": "Native build",
+  "audit_version": "2.6.5.2 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "ft2cYBpB",
+  "title": "ATMOSPHERICS",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.11",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "yJJkB7Qc",
+    "number": "2.6.5.2",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "atmospherics-2.6.5-mc-1.21.1.jar",
+    "size": 2342565,
+    "deps": []
+   },
+   {
+    "id": "5Z6JuGV7",
+    "number": "1.0",
+    "type": "alpha",
+    "date": "2026-03-22",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "atmospherica-1.0.0.jar",
+    "size": 68738,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "TW\u2019s decorative food",
+  "slug": "decorative-food",
+  "audit_status": "Native build",
+  "audit_version": "1.21.1-2.0.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "656seq5J",
+  "title": "TW\u2018s  Decorative Food",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "MIT",
+  "source": "https://github.com/666daji/Decorative-Food",
+  "issues": "https://github.com/666daji/Decorative-Food/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.4",
+   "1.20.5",
+   "1.20.6",
+   "1.21.1",
+   "1.21.5",
+   "1.21.8"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "WktBUUVN",
+    "number": "1.21.1-2.0.1-neoforge",
+    "type": "release",
+    "date": "2026-09-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "tw-decorative-food-1.21.1-2.0.1-neoforge.jar",
+    "size": 431554,
+    "deps": []
+   },
+   {
+    "id": "n2ejmM9d",
+    "number": "1.21.1-1.1.8-neoforge",
+    "type": "release",
+    "date": "2026-05-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "tw-decorative-food-1.21.1-1.1.8-neoforge.jar",
+    "size": 431441,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "fancy world animations",
+  "slug": "fwa",
+  "audit_status": "Native build",
+  "audit_version": "1.3.8 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "IAzUFvS6",
+  "title": "Fancy World Animations [FWA]",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/maDU59/FancyWorldAnimations",
+  "issues": "https://github.com/maDU59/FancyWorldAnimations/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "26.1-rc-2",
+   "26.1-rc-3",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "o7bsv488",
+    "number": "1.3.8",
+    "type": "release",
+    "date": "2026-11-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.3.8.jar",
+    "size": 410804,
+    "deps": []
+   },
+   {
+    "id": "rPdp8rQH",
+    "number": "1.3.7-patch.2",
+    "type": "release",
+    "date": "2026-11-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.3.7-patch.2.jar",
+    "size": 410221,
+    "deps": []
+   },
+   {
+    "id": "qNdUlgqb",
+    "number": "1.3.7",
+    "type": "release",
+    "date": "2026-11-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.3.7.jar",
+    "size": 409874,
+    "deps": []
+   },
+   {
+    "id": "ElMgmNhI",
+    "number": "1.3.4",
+    "type": "release",
+    "date": "2026-11-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.3.4.jar",
+    "size": 406749,
+    "deps": []
+   },
+   {
+    "id": "79A6vRlK",
+    "number": "1.2.31",
+    "type": "release",
+    "date": "2026-06-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.2.31.jar",
+    "size": 385558,
+    "deps": []
+   },
+   {
+    "id": "BZ6qguar",
+    "number": "1.2.30",
+    "type": "release",
+    "date": "2026-06-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fwa+1.21.1-neoforge-1.2.30.jar",
+    "size": 383601,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "grand teleport (gtp)",
+  "slug": "grandteleport-neoforge",
+  "audit_status": "Existing port",
+  "audit_version": "neoforge-1.0.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "PsllFHj8",
+  "title": "GrandTeleport NeoForge",
+  "project_type": "mod",
+  "client": "required",
+  "server": "optional",
+  "license": "MIT",
+  "source": "https://github.com/f65q4fffs/GrandTeleport-NeoForge",
+  "issues": null,
+  "loaders": [
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "c8G8d2Nt",
+    "number": "neoforge-1.0.1",
+    "type": "release",
+    "date": "2026-07-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "GrandTeleport-NeoForge-1.21.1-neoforge-1.0.1.jar",
+    "size": 1291839,
+    "deps": []
+   },
+   {
+    "id": "SRYiyHAS",
+    "number": "1.0.0",
+    "type": "release",
+    "date": "2026-07-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "GrandTeleport-NeoForge-1.21.1-1.0.0.jar",
+    "size": 100303,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "visual overhaul",
+  "slug": "visual-overhaul",
+  "audit_status": "Native build",
+  "audit_version": "5.2.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "YQnwl5Vv",
+  "title": "Visual Overhaul",
+  "project_type": "mod",
+  "client": "optional",
+  "server": "optional",
+  "license": "MIT",
+  "source": "https://github.com/TeamMidnightDust/VisualOverhaul",
+  "issues": "https://github.com/TeamMidnightDust/VisualOverhaul/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.20.4",
+   "1.21",
+   "1.21.1",
+   "1.21.4",
+   "22w42a"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "TMOdQHDi",
+    "number": "5.2.1-neoforge",
+    "type": "release",
+    "date": "2024-06-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "visualoverhaul-neoforge-5.2.1.jar",
+    "size": 189281,
+    "deps": [
+     {
+      "slug": "midnightlib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "inventory particles",
+  "slug": "inventory-particles",
+  "audit_status": "Native build",
+  "audit_version": "4.0.0+1.21.1+neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "XYnKrsxH",
+  "title": "Inventory Particles",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-ND-4.0",
+  "source": "https://github.com/LopyMine/Inventory-Particles",
+  "issues": "https://github.com/LopyMine/Inventory-Particles/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "qixkxVRf",
+    "number": "4.0.0+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-11-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-4.0.0+1.21.1+neoforge.jar",
+    "size": 2051369,
+    "deps": [
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "tIeIGFCs",
+    "number": "3.2.0+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-09-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-3.2.0+1.21.1+neoforge.jar",
+    "size": 1677419,
+    "deps": [
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "Kc7YntZN",
+    "number": "3.1.0+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-09-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-3.1.0+1.21.1+neoforge.jar",
+    "size": 1677417,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "YVWIP5nv",
+    "number": "3.0.0+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-08-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-3.0.0+1.21.1+neoforge.jar",
+    "size": 1676676,
+    "deps": [
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "GjoaAaKJ",
+    "number": "2.6.0+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-07-11",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-2.6.0+1.21.1+neoforge.jar",
+    "size": 1664805,
+    "deps": [
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "ofnmN7tD",
+    "number": "2.5.1+1.21.1+neoforge",
+    "type": "release",
+    "date": "2026-06-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "InventoryParticles-2.5.1+1.21.1+neoforge.jar",
+    "size": 1643521,
+    "deps": [
+     {
+      "slug": "particle-effects",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "inventory-interactions",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mossylib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "blooming biosphere",
+  "slug": "blooming-biosphere",
+  "audit_status": "Datapack available",
+  "audit_version": "1.1.6 (release; fabric,forge,quilt)",
+  "kind": "mod",
+  "project_id": "Ds9FyUc7",
+  "title": "Blooming Biosphere",
+  "project_type": "mod",
+  "client": "optional",
+  "server": "required",
+  "license": "CC-BY-NC-SA-4.0",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "datapack",
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.7",
+   "1.21.8",
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "datapack:1.21",
+   "datapack:1.21.1",
+   "datapack:1.21.10",
+   "datapack:1.21.11",
+   "datapack:1.21.2",
+   "datapack:1.21.3",
+   "datapack:1.21.4",
+   "datapack:1.21.5",
+   "datapack:1.21.6",
+   "datapack:1.21.7",
+   "datapack:1.21.8",
+   "datapack:1.21.9",
+   "fabric:1.21",
+   "fabric:1.21.1",
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.2",
+   "fabric:1.21.3",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9",
+   "forge:1.21",
+   "forge:1.21.1",
+   "forge:1.21.10",
+   "forge:1.21.11",
+   "forge:1.21.2",
+   "forge:1.21.3"
+  ]
+ },
+ {
+  "requested": "streams reflowing",
+  "slug": "streams-reflowing",
+  "audit_status": "Native build",
+  "audit_version": "2.17.5 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "oLS8HdJ1",
+  "title": "Streams Reflowing",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": "https://github.com/nice-john/SR-Public/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.5",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "9Phpmmh2",
+    "number": "2.17.5",
+    "type": "release",
+    "date": "2026-11-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.17.5.jar",
+    "size": 3540813,
+    "deps": []
+   },
+   {
+    "id": "7KEOHG7c",
+    "number": "2.17.4",
+    "type": "release",
+    "date": "2026-11-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.17.4.jar",
+    "size": 3540833,
+    "deps": []
+   },
+   {
+    "id": "ktZSuv7E",
+    "number": "2.17.3",
+    "type": "release",
+    "date": "2026-11-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.17.3.jar",
+    "size": 3538767,
+    "deps": []
+   },
+   {
+    "id": "uKeyx6DB",
+    "number": "2.17.1",
+    "type": "release",
+    "date": "2026-11-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.17.1.jar",
+    "size": 3478133,
+    "deps": []
+   },
+   {
+    "id": "pVaBUJk8",
+    "number": "2.17.0",
+    "type": "release",
+    "date": "2026-11-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.17.0.jar",
+    "size": 3478032,
+    "deps": []
+   },
+   {
+    "id": "4LJBMyPK",
+    "number": "2.16.2",
+    "type": "release",
+    "date": "2026-10-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "StreamsReflowing-1.21.1-neoforge-2.16.2.jar",
+    "size": 3410117,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "wet sand",
+  "slug": "wet-sand",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "aCchvKq6",
+  "title": "Wet sand",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "GPL-3.0-only",
+  "source": "https://github.com/HearthianDev/wet-sand",
+  "issues": "https://github.com/HearthianDev/wet-sand/issues",
+  "loaders": [
+   "fabric"
+  ],
+  "game_versions_tail": [
+   "1.21.6",
+   "1.21.7",
+   "1.21.9",
+   "26.1",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.9"
+  ]
+ },
+ {
+  "requested": "soft leaves",
+  "slug": "soft-leaves",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "2VPEkVF7",
+  "title": "Soft Leaves",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/payangar-dev/soft-leaves",
+  "issues": "https://github.com/payangar-dev/soft-leaves/issues",
+  "loaders": [
+   "fabric",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.6",
+   "1.21.7",
+   "1.21.8",
+   "1.21.9",
+   "26.1.2",
+   "26.2"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9",
+   "neoforge:1.21.10",
+   "neoforge:1.21.11",
+   "neoforge:1.21.5",
+   "neoforge:1.21.6",
+   "neoforge:1.21.7",
+   "neoforge:1.21.8",
+   "neoforge:1.21.9"
+  ]
+ },
+ {
+  "requested": "smooth loading screen",
+  "slug": "smooth-loading-screen",
+  "audit_status": "Native build",
+  "audit_version": "1.0.12+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "LkxC6kKT",
+  "title": "Smooth Loading Screen",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": "https://bugs.techytechster.tech/?project=smooth-loading-screen",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "ub5aGHzh",
+    "number": "1.0.12+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.12+1.21.1-neoforge.jar",
+    "size": 1805417,
+    "deps": []
+   },
+   {
+    "id": "EPlyTRXa",
+    "number": "1.0.11+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.11+1.21.1-neoforge.jar",
+    "size": 1788293,
+    "deps": []
+   },
+   {
+    "id": "pjOKRuPI",
+    "number": "1.0.10+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.10+1.21.1-neoforge.jar",
+    "size": 1757571,
+    "deps": []
+   },
+   {
+    "id": "W7lyUPqr",
+    "number": "1.0.9+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-06",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.9+1.21.1-neoforge.jar",
+    "size": 1763817,
+    "deps": []
+   },
+   {
+    "id": "M5iPgVwU",
+    "number": "1.0.8+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.8+1.21.1-neoforge.jar",
+    "size": 1735097,
+    "deps": []
+   },
+   {
+    "id": "QgE4Ybf3",
+    "number": "1.0.7+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "smoothloadingscreen-1.0.7+1.21.1-neoforge.jar",
+    "size": 1650169,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "last world panorama",
+  "slug": "last-world-panorama",
+  "audit_status": "Native build",
+  "audit_version": "v1.0 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "F1KVNatg",
+  "title": "Last World Panorama",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "xVX9iy6y",
+    "number": "v1.0",
+    "type": "release",
+    "date": "2026-11-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "last-world-panorama-neoforge-1.21.1.jar",
+    "size": 21731,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "particle interactions",
+  "slug": "particle-interactions",
+  "audit_status": "Native build",
+  "audit_version": "0.4.1 (beta; neoforge)",
+  "kind": "mod",
+  "project_id": "xFCYuAs8",
+  "title": "Particle Interactions",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-NC-4.0",
+  "source": "https://github.com/Enchanted-Games/block-place-particles",
+  "issues": "https://github.com/Enchanted-Games/block-place-particles/issues",
+  "loaders": [
+   "fabric",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "26.1-snapshot-4",
+   "26.1-snapshot-6",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "Js4y2r4d",
+    "number": "0.4.1",
+    "type": "beta",
+    "date": "2025-03-06",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.4.1-neoforge-mc1.21.1.jar",
+    "size": 322743,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "fBKZEGGe",
+    "number": "0.4",
+    "type": "beta",
+    "date": "2024-11-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.4-neoforge-mc1.21.1.jar",
+    "size": 322638,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "vC3EFzzN",
+    "number": "0.3.2",
+    "type": "beta",
+    "date": "2024-10-31",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.3.2-neoforge-mc1.21.1.jar",
+    "size": 274116,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "cPowo6sW",
+    "number": "0.3",
+    "type": "beta",
+    "date": "2024-10-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.3-neoforge-mc1.21.1.jar",
+    "size": 273997,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "zFxDd93B",
+    "number": "0.2",
+    "type": "beta",
+    "date": "2024-09-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.2-neoforge-mc1.21.1.jar",
+    "size": 218707,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "GK6vSTfr",
+    "number": "0.1.2",
+    "type": "beta",
+    "date": "2024-09-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "eg_particle_interactions-0.1.2-neoforge-mc1.21.jar",
+    "size": 148867,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "better smoke",
+  "slug": "better-smoke",
+  "audit_status": "Port needed",
+  "audit_version": "0.1.2+1.21-1.21.8 (release; fabric)",
+  "kind": "mod",
+  "project_id": "Effrh3ze",
+  "title": "Better Smoke",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21",
+   "fabric:1.21.1",
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.2",
+   "fabric:1.21.3",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9"
+  ]
+ },
+ {
+  "requested": "footprint particle",
+  "slug": "footprintparticle",
+  "audit_status": "Native build",
+  "audit_version": "0.7.1+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "xZQOoOaY",
+  "title": "FootprintParticle",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "GPL-3.0-or-later",
+  "source": "https://github.com/Rivmun/FootprintParticle",
+  "issues": "https://github.com/Rivmun/FootprintParticle/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "2V0cTg06",
+    "number": "0.7.1+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "footprintparticle-0.7.1+1.21.1-neoforge.jar",
+    "size": 72360,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "pehkui",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "vTusvLkP",
+    "number": "0.7.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "footprintparticle-0.7.0+1.21.1-neoforge.jar",
+    "size": 65588,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "y7EunQuM",
+    "number": "0.6.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-10-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "footprintparticle-0.6.0+1.21.1-neoforge.jar",
+    "size": 58091,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Spatial GUI (confirmed)",
+  "slug": "spatial-gui",
+  "audit_status": "Native build",
+  "audit_version": "1.12.0-neoforge+1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "zLBn2IE4",
+  "title": "Spatial GUI",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/tastytrash/Spatial-GUI",
+  "issues": "https://github.com/tastytrash/Spatial-GUI/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.11",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "wSnOpypP",
+    "number": "1.12.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.12.0+1.21.1-neoforge.jar",
+    "size": 768551,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "lIrOZYKI",
+    "number": "1.11.1-hotfix-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-11",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.11.1-hotfix+1.21.1-neoforge.jar",
+    "size": 744167,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "6MAcxsm8",
+    "number": "1.11.1-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-11",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.11.1+1.21.1-neoforge.jar",
+    "size": 744157,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "4EaJojZ1",
+    "number": "1.11.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.11.0+1.21.1-neoforge.jar",
+    "size": 741689,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "AhKh60tY",
+    "number": "1.10.1-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.10.1+1.21.1-neoforge.jar",
+    "size": 728764,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "CqSxvyBv",
+    "number": "1.10.0-neoforge+1.21.1",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "spatial-gui-1.10.0+1.21.1-neoforge.jar",
+    "size": 728330,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "satisfying buttons",
+  "slug": "satisfying-buttons",
+  "audit_status": "Native build",
+  "audit_version": "1.1.2 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "Zf8HMFM5",
+  "title": "Satisfying Buttons",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-Tonis-MMC-License",
+  "source": "https://github.com/nthxny/SatisfyingButtons",
+  "issues": "https://github.com/nthxny/SatisfyingButtons/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.18.2",
+   "1.19.2",
+   "1.20",
+   "1.20.1",
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "EssE56Wf",
+    "number": "1.1.2",
+    "type": "release",
+    "date": "2024-09-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "satisfying_buttons-neoforge-1.1.2-1.21.1.jar",
+    "size": 82520,
+    "deps": []
+   },
+   {
+    "id": "FfUDYCOV",
+    "number": "1.1.1",
+    "type": "release",
+    "date": "2024-09-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "satisfying_buttons-neoforge-1.1.1-1.21.1.jar",
+    "size": 82396,
+    "deps": []
+   },
+   {
+    "id": "yTqcztsz",
+    "number": "1.1.0",
+    "type": "release",
+    "date": "2024-09-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "satisfying_buttons-neoforge-1.1.0-1.21.1.jar",
+    "size": 82396,
+    "deps": []
+   },
+   {
+    "id": "MkqZhBVj",
+    "number": "1.0.0",
+    "type": "release",
+    "date": "2024-08-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "satisfying_buttons-neoforge-1.0.0-1.21.1.jar",
+    "size": 78474,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "cool rain",
+  "slug": "cool-rain-reforged",
+  "audit_status": "Existing port",
+  "audit_version": "1.0.2 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "IgftU6Mn",
+  "title": "Cool Rain Reforged",
+  "project_type": "mod",
+  "client": "unknown",
+  "server": "unknown",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/Leclowndu93150/Cool-Rain",
+  "issues": "https://github.com/Leclowndu93150/Cool-Rain/issues",
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1",
+   "1.21.10",
+   "26.1",
+   "26.1.1",
+   "26.1.2"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "SwSSfJQQ",
+    "number": "1.0.2",
+    "type": "release",
+    "date": "2026-09-06",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "coolrain-1.21.1-NeoForge-1.0.2.jar",
+    "size": 4151295,
+    "deps": []
+   },
+   {
+    "id": "8UlyMRh2",
+    "number": "1.0.1",
+    "type": "release",
+    "date": "2025-12-31",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "coolrain-1.21.1-NeoForge-1.0.1.jar",
+    "size": 4148178,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "amor sound tweak updated",
+  "slug": "armour-sound-tweak-updated",
+  "audit_status": "Port needed",
+  "audit_version": "1.0.2-fabric-1.21 (release; fabric,quilt)",
+  "kind": "mod",
+  "project_id": "zN5Zb52E",
+  "title": "Armour Sound Tweak Updated",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "Apache-2.0",
+  "source": "https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated",
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21",
+   "1.21.1",
+   "1.21.2",
+   "1.21.3",
+   "1.21.4"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21",
+   "fabric:1.21.1",
+   "fabric:1.21.2",
+   "fabric:1.21.3",
+   "fabric:1.21.4",
+   "quilt:1.21",
+   "quilt:1.21.1",
+   "quilt:1.21.2",
+   "quilt:1.21.3",
+   "quilt:1.21.4"
+  ]
+ },
+ {
+  "requested": "item landing sound",
+  "slug": "item-landing-sound",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "T18xfcmD",
+  "title": "Item Landing Sound",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric"
+  ],
+  "game_versions_tail": [
+   "1.21.4",
+   "1.21.5",
+   "1.21.6",
+   "1.21.7",
+   "1.21.8",
+   "1.21.9"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.3",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9"
+  ]
+ },
+ {
+  "requested": "sounds",
+  "slug": "sound",
+  "audit_status": "Native build",
+  "audit_version": "2.4.22+lts+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "ZouiUX7t",
+  "title": "Sounds",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/IMB11-Mods/JavaEditionMods/tree/main/sounds",
+  "issues": "https://github.com/IMB11-Mods/JavaEditionMods/issues/new/choose",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "kti7i9SG",
+    "number": "2.4.22+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.22+lts+1.21.1-neoforge.jar",
+    "size": 8732437,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mru",
+      "version_id": "qYqVf5jP",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "2xpUPoMI",
+    "number": "2.4.21+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.21+lts+1.21.1-neoforge.jar",
+    "size": 8732321,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "mru",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "svX1K2lk",
+    "number": "2.4.20+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.20+lts+1.21.1-neoforge.jar",
+    "size": 8732353,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "mru",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "UkaOdOBt",
+    "number": "2.4.19+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.19+lts+1.21.1-neoforge.jar",
+    "size": 8732355,
+    "deps": [
+     {
+      "slug": "mru",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "IliWO68S",
+    "number": "2.4.18+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-12-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.18+lts+1.21.1-neoforge.jar",
+    "size": 8733818,
+    "deps": [
+     {
+      "slug": "mru",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "TIlzr9Zf",
+    "number": "2.4.17+lts+1.21.1-neoforge",
+    "type": "release",
+    "date": "2025-11-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "sounds-2.4.17+lts+1.21.1-neoforge.jar",
+    "size": 8733600,
+    "deps": [
+     {
+      "slug": "mru",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "rsls",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "more sounds",
+  "slug": "more-sounds",
+  "audit_status": "Native build",
+  "audit_version": "1.21.x-0.3.0-neoforge (beta; neoforge)",
+  "kind": "mod",
+  "project_id": "8jvcOd6S",
+  "title": "More Sounds",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "GPL-3.0-only",
+  "source": "https://github.com/DVOA1/More-Sounds",
+  "issues": "https://github.com/DVOA1/More-Sounds/issues?q=sort%3Aupdated-desc+is%3Aissue+is%3Aopen",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.6",
+   "1.21.1",
+   "1.21.2",
+   "1.21.3",
+   "1.21.4",
+   "1.21.5"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "s0FVNDXY",
+    "number": "1.21.x-0.3.0-neoforge",
+    "type": "beta",
+    "date": "2026-04-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "more_sounds-1.21.x-0.3.0-beta.jar",
+    "size": 697823,
+    "deps": []
+   },
+   {
+    "id": "IID4glci",
+    "number": "1.21.x-0.2.0-beta",
+    "type": "beta",
+    "date": "2026-03-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "more_sounds-1.21.x-0.2.0-beta.jar",
+    "size": 694789,
+    "deps": [
+     {
+      "slug": "sophisticated-core",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "sound",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "ae2",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jei",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "2v4RpMY7",
+    "number": "0.1.1-beta",
+    "type": "beta",
+    "date": "2025-05-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "more_sounds-0.1.1-beta.jar",
+    "size": 644455,
+    "deps": [
+     {
+      "slug": "sophisticated-core",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "sound",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "i4PMpdFY",
+    "number": "0.1.0-beta",
+    "type": "beta",
+    "date": "2025-05-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "more_sounds-0.1.0-beta.1.jar",
+    "size": 644491,
+    "deps": [
+     {
+      "slug": "sound",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "sophisticated-core",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "subtle effects",
+  "slug": "subtle-effects",
+  "audit_status": "Already in Horizon",
+  "audit_version": "1.15.3 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "4q8UOK1d",
+  "title": "Subtle Effects",
+  "project_type": "mod",
+  "client": "required",
+  "server": "optional",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/MincraftEinstein/SubtleEffects",
+  "issues": "https://github.com/MincraftEinstein/SubtleEffects/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.8",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": true,
+  "versions": [
+   {
+    "id": "1Cj3QYAu",
+    "number": "1.15.3",
+    "type": "release",
+    "date": "2026-11-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.15.3.jar",
+    "size": 3477966,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "w4f4zz6I",
+    "number": "1.15.2-hotfix.1",
+    "type": "release",
+    "date": "2026-11-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.15.2-hotfix.1.jar",
+    "size": 3476220,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "Xbx8Sis8",
+    "number": "1.15.2",
+    "type": "release",
+    "date": "2026-11-13",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.15.2.jar",
+    "size": 3476198,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ReUDmzrA",
+    "number": "1.15.1",
+    "type": "release",
+    "date": "2026-10-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.15.1.jar",
+    "size": 3445062,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "LKvZcuE0",
+    "number": "1.15.0",
+    "type": "release",
+    "date": "2026-10-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.15.0.jar",
+    "size": 3439842,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "s3Fo4cDk",
+    "number": "1.14.3",
+    "type": "release",
+    "date": "2026-04-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SubtleEffects-neoforge-1.21.1-1.14.3.jar",
+    "size": 3306773,
+    "deps": [
+     {
+      "slug": "fzzy-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "vocal villagers",
+  "slug": "vvi",
+  "audit_status": "Resource pack available",
+  "audit_version": "1.5 (release; minecraft)",
+  "kind": "resourcepack",
+  "project_id": "SEt2q8cl",
+  "title": "Vocal Villagers",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-NC-SA-4.0",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w46a",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "dYoh6GWk",
+    "number": "1.5",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.5.zip",
+    "size": 1148267,
+    "deps": []
+   },
+   {
+    "id": "B0ExDjpO",
+    "number": "1.4",
+    "type": "release",
+    "date": "2026-06-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.4.zip",
+    "size": 1148298,
+    "deps": []
+   },
+   {
+    "id": "5z3uFKoA",
+    "number": "1.3",
+    "type": "release",
+    "date": "2026-06-07",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.3.zip",
+    "size": 1148314,
+    "deps": []
+   },
+   {
+    "id": "ekl7GAgD",
+    "number": "1.2",
+    "type": "release",
+    "date": "2025-06-21",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.2.zip",
+    "size": 1148286,
+    "deps": []
+   },
+   {
+    "id": "1G5ieTXP",
+    "number": "1.1",
+    "type": "release",
+    "date": "2024-11-21",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.1.zip",
+    "size": 1121894,
+    "deps": []
+   },
+   {
+    "id": "RAGn3PbI",
+    "number": "1.0",
+    "type": "release",
+    "date": "2024-04-20",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "\u00a7a\u00a7lVocal Villagers \u00a7r\u00a771.0.zip",
+    "size": 1107237,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "fresh n\u2019 musical",
+  "slug": "",
+  "audit_status": "Excluded by user",
+  "audit_version": "",
+  "kind": "unresolved",
+  "platform": "none"
+ },
+ {
+  "requested": "sound controller",
+  "slug": "sound-controller",
+  "audit_status": "Native build",
+  "audit_version": "1.4.0-mc1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "uY9zbflw",
+  "title": "Sound Controller",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/BVengo/sound-controller",
+  "issues": "https://github.com/BVengo/sound-controller/issues",
+  "loaders": [
+   "fabric",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "3TaQzJJO",
+    "number": "1.4.0-mc1.21.1",
+    "type": "release",
+    "date": "2026-08-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "soundcontroller-neoforge-1.4.0-mc1.21.1.jar",
+    "size": 143696,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "cave dust",
+  "slug": "cave-dust-rethinking",
+  "audit_status": "Existing port",
+  "audit_version": "3.4.0+1.21.1-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "7pdlDpFR",
+  "title": "Cave Dust Rethinking",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MPL-2.0",
+  "source": "https://github.com/Toffiks/cave_dust_rethinking",
+  "issues": "https://github.com/Toffiks/cave_dust_rethinking/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1",
+   "1.21.11",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "lPnsGznY",
+    "number": "3.4.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-09-25",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cave_dust_rethinking-3.4.0+1.21.1-neoforge.jar",
+    "size": 134941,
+    "deps": []
+   },
+   {
+    "id": "jcxbhkXe",
+    "number": "3.3.1+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cavedust-3.3.1+1.21.1-neoforge.jar",
+    "size": 136287,
+    "deps": []
+   },
+   {
+    "id": "HkVONoNT",
+    "number": "3.3.0+1.21.1-neoforge",
+    "type": "release",
+    "date": "2026-08-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cavedust-3.3.0+1.21.1-neoforge.jar",
+    "size": 135953,
+    "deps": []
+   },
+   {
+    "id": "lffloJtX",
+    "number": "3.2.1+1.21.1-neoforge",
+    "type": "beta",
+    "date": "2026-08-25",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cavedust-3.2.1+1.21.1-neoforge.jar",
+    "size": 134418,
+    "deps": []
+   },
+   {
+    "id": "Hlu9Vof8",
+    "number": "3.2.0+1.21.1-neoforge",
+    "type": "alpha",
+    "date": "2026-07-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cavedust-3.2.0+1.21.1-neoforge.jar",
+    "size": 221349,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "auto third person",
+  "slug": "auto-third-person",
+  "audit_status": "Native build",
+  "audit_version": "2.2-neo-1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "ANu8FMzT",
+  "title": "Auto Third Person",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-or-later",
+  "source": "https://github.com/quat1024/AutoThirdPerson",
+  "issues": "https://github.com/quat1024/AutoThirdPerson/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21",
+   "1.21.1",
+   "1.21.5",
+   "1.4.7",
+   "1.7.10"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "o2kINZoC",
+    "number": "2.2-neo-1.21.1",
+    "type": "release",
+    "date": "2025-05-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "auto_third_person-neo-1.21.1-2.2.jar",
+    "size": 47890,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "advancement plaques",
+  "slug": "advancement-plaques",
+  "audit_status": "Native build",
+  "audit_version": "1.6.8 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "9NM0dXub",
+  "title": "Advancement Plaques",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-NC-ND-4.0",
+  "source": "https://github.com/AHilyard/AdvancementPlaques/",
+  "issues": "https://discord.gg/UCKjnamDaW",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.4",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "OWylG33I",
+    "number": "1.6.8",
+    "type": "release",
+    "date": "2024-11-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+    "size": 195730,
+    "deps": [
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "eating animation",
+  "slug": "eating-animation",
+  "audit_status": "Target uncertain",
+  "audit_version": "1.9.72 (release; fabric)",
+  "kind": "mod",
+  "project_id": "rUgZvGzi",
+  "title": "Eating Animation",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/Theoness1/EatingAnimation",
+  "issues": "https://github.com/Theoness1/EatingAnimation/issues",
+  "loaders": [
+   "fabric"
+  ],
+  "game_versions_tail": [
+   "1.20.3",
+   "1.20.4",
+   "1.20.6",
+   "1.21",
+   "1.21.1",
+   "1.21.3"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21",
+   "fabric:1.21.1",
+   "fabric:1.21.3"
+  ]
+ },
+ {
+  "requested": "clear despawn",
+  "slug": "cleardespawn-reborn",
+  "audit_status": "Existing port",
+  "audit_version": "1.2.0+neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "y5PXdGkM",
+  "title": "ClearDespawn Reborn",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "IFOUpgMy",
+    "number": "1.2.0+neoforge",
+    "type": "release",
+    "date": "2026-07-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "cleardespawn-reborn-1.2.0+mc1.21.1-neoforge.jar",
+    "size": 12418,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "perception",
+  "slug": "perception",
+  "audit_status": "Native build",
+  "audit_version": "0.2.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "P8STLvzB",
+  "title": "Perception",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/Octo-Studios/perception",
+  "issues": "https://github.com/Octo-Studios/perception/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21",
+   "1.21.1",
+   "1.21.11",
+   "1.21.4",
+   "1.21.8",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "W5IQteYO",
+    "number": "0.2.1",
+    "type": "release",
+    "date": "2026-03-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.2.1+1.21.1.jar",
+    "size": 78664,
+    "deps": []
+   },
+   {
+    "id": "eFzzv5vq",
+    "number": "0.1.6",
+    "type": "release",
+    "date": "2025-08-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.1.6+1.21.1.jar",
+    "size": 68739,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "XIPYKoxp",
+    "number": "0.1.5",
+    "type": "release",
+    "date": "2025-08-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.1.5+1.21.1.jar",
+    "size": 68465,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "Znu2Fu0c",
+    "number": "0.1.4",
+    "type": "release",
+    "date": "2025-04-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.1.4+1.21.1.jar",
+    "size": 69233,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "WpgODzrq",
+    "number": "0.1.3",
+    "type": "release",
+    "date": "2025-04-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.1.3+1.21.1.jar",
+    "size": 67525,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "IwK1MBLi",
+    "number": "0.1.2.1",
+    "type": "release",
+    "date": "2025-01-09",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Perception-NEOFORGE-0.1.2.1+1.21.1.jar",
+    "size": 64242,
+    "deps": [
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "fresh animations",
+  "slug": "fresh-animations",
+  "audit_status": "Resource pack available",
+  "audit_version": "1.11.2 (release; minecraft)",
+  "kind": "resourcepack",
+  "project_id": "50dA9Sha",
+  "title": "Fresh Animations",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-See-Terms-of-Use-in-Description",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "HC1XRKGD",
+    "number": "1.11.2",
+    "type": "release",
+    "date": "2026-11-01",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.11.2_1.20+.zip",
+    "size": 742790,
+    "deps": []
+   },
+   {
+    "id": "aQjwvDfY",
+    "number": "1.11.1",
+    "type": "release",
+    "date": "2026-10-19",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.11.1_1.20+.zip",
+    "size": 743793,
+    "deps": []
+   },
+   {
+    "id": "KYOqeb1P",
+    "number": "1.11.0",
+    "type": "release",
+    "date": "2026-10-19",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.11_1.20+.zip",
+    "size": 744174,
+    "deps": []
+   },
+   {
+    "id": "xN57JJts",
+    "number": "1.10.4",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.10.4.zip",
+    "size": 850941,
+    "deps": []
+   },
+   {
+    "id": "F9QwVhGH",
+    "number": "1.10.3",
+    "type": "release",
+    "date": "2025-12-19",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.10.3.zip",
+    "size": 855766,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "kJAJJOwD",
+    "number": "1.10.2",
+    "type": "release",
+    "date": "2025-11-22",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshAnimations_v1.10.2.zip",
+    "size": 834451,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "legendary tooltips",
+  "slug": "legendary-tooltips",
+  "audit_status": "Native build",
+  "audit_version": "1.5.5 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "atHH8NyV",
+  "title": "Legendary Tooltips",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-NC-ND-4.0",
+  "source": "https://github.com/AHilyard/LegendaryTooltips/",
+  "issues": "https://discord.gg/UCKjnamDaW",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.4",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "BabRJO04",
+    "number": "1.5.5",
+    "type": "release",
+    "date": "2025-04-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+    "size": 81808,
+    "deps": [
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "FJ3AM4a2",
+    "number": "1.5.4",
+    "type": "release",
+    "date": "2025-04-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "LegendaryTooltips-1.21.1-neoforge-1.5.4.jar",
+    "size": 81577,
+    "deps": [
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ohm2eYj2",
+    "number": "1.5.3",
+    "type": "release",
+    "date": "2025-04-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "LegendaryTooltips-1.21.1-neoforge-1.5.3.jar",
+    "size": 81348,
+    "deps": [
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "Nay1mU9d",
+    "number": "1.5.2",
+    "type": "release",
+    "date": "2025-04-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "LegendaryTooltips-1.21.1-neoforge-1.5.2.jar",
+    "size": 80842,
+    "deps": [
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "mETd5tfg",
+    "number": "1.4.11",
+    "type": "release",
+    "date": "2024-08-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "LegendaryTooltips-1.21-neoforge-1.4.11.jar",
+    "size": 53238,
+    "deps": [
+     {
+      "slug": "equipment-compare",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "iceberg",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "prism-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "homesteads villager expansion",
+  "slug": "homesteads",
+  "audit_status": "Native build",
+  "audit_version": "3.0.0 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "6ItsEKMh",
+  "title": "Homesteads - Villager Expansion & New Professions",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "cLqsoOGy",
+    "number": "3.0.0",
+    "type": "release",
+    "date": "2026-10-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "homesteads-3.0.0-for-neoforge-1.21.1.jar",
+    "size": 1006976,
+    "deps": []
+   },
+   {
+    "id": "BJknEPC5",
+    "number": "2.0.2",
+    "type": "release",
+    "date": "2026-09-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "homesteads-2.0.2-for-neoforge-1.21.1.jar",
+    "size": 633966,
+    "deps": []
+   },
+   {
+    "id": "opF2Oi7g",
+    "number": "2.0.1",
+    "type": "release",
+    "date": "2026-08-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "homesteads-2.0.1-for-neoforge-1.21.1.jar",
+    "size": 634291,
+    "deps": []
+   },
+   {
+    "id": "XknGijgC",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2026-03-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "homesteads-2.0.0-for-neoforge-1.21.1.jar",
+    "size": 634289,
+    "deps": []
+   },
+   {
+    "id": "tVEUVqrN",
+    "number": "1.0.0",
+    "type": "release",
+    "date": "2025-08-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "homesteads-1.0.0-neoforge-for-1.21.1.jar",
+    "size": 594555,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "seamless sleep",
+  "slug": "seamless-sleep",
+  "audit_status": "Native build",
+  "audit_version": "neoforge-1.21+1.21.1-2.5.3 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "IyHq05yB",
+  "title": "Seamless Sleep",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/GabrielFl4/Seamless-Sleep-MultiLoader",
+  "issues": "https://github.com/GabrielFl4/Seamless-Sleep-MultiLoader/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.7",
+   "1.21.8",
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.2"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "Lw02ZJke",
+    "number": "neoforge-1.21+1.21.1-2.5.3",
+    "type": "release",
+    "date": "2026-03-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "seamlesssleep-neoforge-1.21-2.5.3.jar",
+    "size": 148048,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "OGpCiExr",
+    "number": "neoforge-1.21+1.21.1-2.5.2",
+    "type": "release",
+    "date": "2026-02-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "seamlesssleep-neoforge-1.21-2.5.2.jar",
+    "size": 148180,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ZW6KipjH",
+    "number": "neoforge-1.21.1-2.5.1",
+    "type": "release",
+    "date": "2026-02-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "seamlesssleep-neoforge-1.21.1-2.5.1.jar",
+    "size": 140443,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "windy",
+  "slug": "windy",
+  "audit_status": "Native build",
+  "audit_version": "1.1.1+1.21-neoforge (release; neoforge)",
+  "kind": "mod",
+  "project_id": "EwYg6C78",
+  "title": "Windy",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/BonfireMC-Studios/Windy",
+  "issues": "https://github.com/BonfireMC-Studios/Windy/issues",
+  "loaders": [
+   "fabric",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "xcBfBf8H",
+    "number": "1.1.1+1.21-neoforge",
+    "type": "release",
+    "date": "2025-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "windy-1.1.1+1.21-neoforge.jar",
+    "size": 33416,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "iPuro5ro",
+    "number": "1.1.0+1.21-neoforge",
+    "type": "release",
+    "date": "2025-11-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "windy-1.1.0+1.21-neoforge.jar",
+    "size": 31502,
+    "deps": [
+     {
+      "slug": "yacl",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "effectual",
+  "slug": "effectual",
+  "audit_status": "Native build",
+  "audit_version": "1.4.2-1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "OoF97Pto",
+  "title": "Effectual",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/iMeeTake/Effectual",
+  "issues": "https://github.com/iMeeTake/Effectual/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.6",
+   "1.21.7",
+   "1.21.8",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "BM24IMvt",
+    "number": "1.4.2-1.21.1",
+    "type": "release",
+    "date": "2026-09-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "effectual-neoforge-1.4.2-1.21.1.jar",
+    "size": 331597,
+    "deps": [
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "tlib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "DDImNMLy",
+    "number": "1.4.1-1.21.1",
+    "type": "release",
+    "date": "2026-07-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "effectual-neoforge-1.4.1-1.21.1.jar",
+    "size": 323108,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "tlib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "7UXCh4CN",
+    "number": "1.4.0-1.21.1",
+    "type": "release",
+    "date": "2026-06-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "effectual-neoforge-1.4.0-1.21.1.jar",
+    "size": 376149,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "tlib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "gnSRYw7a",
+    "number": "1.3.1-1.21.1",
+    "type": "release",
+    "date": "2026-01-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "effectual-neoforge-1.3.1-1.21.1.jar",
+    "size": 156581,
+    "deps": [
+     {
+      "slug": "tlib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "NvViVJDn",
+    "number": "1.3.0-1.21.1",
+    "type": "release",
+    "date": "2025-12-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "effectual-neoforge-1.3.0-1.21.1.jar",
+    "size": 157353,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "architectury-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "tlib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "actually 3d stuff",
+  "slug": "actually-3d-stuff",
+  "audit_status": "Pack adaptation needed",
+  "audit_version": "",
+  "kind": "resourcepack",
+  "project_id": "405SacPR",
+  "title": "Actually 3D Stuff",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "26.1.2",
+   "26.2",
+   "26.3",
+   "26.4-snapshot-1",
+   "26.4-snapshot-2",
+   "26.4-snapshot-3"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "minecraft:1.21.10",
+   "minecraft:1.21.11",
+   "minecraft:1.21.9"
+  ]
+ },
+ {
+  "requested": "fire rekindled",
+  "slug": "fire-rekindled",
+  "audit_status": "Resource pack available",
+  "audit_version": "0.21 (release; minecraft)",
+  "kind": "resourcepack",
+  "project_id": "lBQSreft",
+  "title": "Fire Rekindled",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/Tectato/Fire_Rekindled",
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w38a",
+   "24w39a",
+   "24w40a",
+   "24w44a",
+   "24w45a",
+   "24w46a"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "WkrPuvYe",
+    "number": "0.21",
+    "type": "release",
+    "date": "2026-02-22",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fire_Rekindled.zip",
+    "size": 2170058,
+    "deps": []
+   },
+   {
+    "id": "VLcJz5n8",
+    "number": "0.20",
+    "type": "release",
+    "date": "2025-12-09",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fire_Rekindled.zip",
+    "size": 2469890,
+    "deps": []
+   },
+   {
+    "id": "pVUgaGeY",
+    "number": "0.19",
+    "type": "release",
+    "date": "2025-10-05",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fire_Rekindled.zip",
+    "size": 2444098,
+    "deps": []
+   },
+   {
+    "id": "QkwQFwsv",
+    "number": "0.18",
+    "type": "release",
+    "date": "2025-01-25",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fire_Rekindled.zip",
+    "size": 2309887,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "swinging lanterns",
+  "slug": "swinging-lanterns",
+  "audit_status": "Native build",
+  "audit_version": "1.21.1-2.1.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "3IOcW74j",
+  "title": "Swinging Lanterns",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": "https://github.com/Rilith/SwingingLanterns-Issues/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.11",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "wKAcUxnv",
+    "number": "1.21.1-2.1.1",
+    "type": "release",
+    "date": "2026-11-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.1.1.jar",
+    "size": 2117169,
+    "deps": []
+   },
+   {
+    "id": "NVMhADM3",
+    "number": "1.21.1-2.1.0",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.1.0.jar",
+    "size": 2100773,
+    "deps": []
+   },
+   {
+    "id": "SkZnkEns",
+    "number": "1.21.1-2.0.4",
+    "type": "release",
+    "date": "2026-10-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+    "size": 941433,
+    "deps": []
+   },
+   {
+    "id": "dKExHT6I",
+    "number": "1.21.1-2.0.3",
+    "type": "release",
+    "date": "2026-10-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.0.3.jar",
+    "size": 900984,
+    "deps": []
+   },
+   {
+    "id": "60UtScdT",
+    "number": "1.21.1-2.0.2",
+    "type": "release",
+    "date": "2026-09-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.0.2.jar",
+    "size": 894300,
+    "deps": []
+   },
+   {
+    "id": "F5oLD6IY",
+    "number": "1.21.1-2.0.1",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "swinginglanterns-neoforge-1.21.1-2.0.1.jar",
+    "size": 885990,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "bosses of mass destruction",
+  "slug": "bosses-of-mass-destruction-forge",
+  "audit_status": "Existing port",
+  "audit_version": "1.3.3 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "hFUzfDsn",
+  "title": "Bosses of Mass Destruction Forge",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE",
+  "issues": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/issues",
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.20.4",
+   "1.21",
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "snhDYBxP",
+    "number": "1.3.3",
+    "type": "release",
+    "date": "2026-07-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "BOMD-NeoForge-1.21-1.3.3.jar",
+    "size": 1952017,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cerbons-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "HMIiPvSY",
+    "number": "1.3.2",
+    "type": "release",
+    "date": "2025-01-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "BOMD-NeoForge-1.21-1.3.2.jar",
+    "size": 1951866,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cerbons-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "r1Fqu5Sx",
+    "number": "1.3.1",
+    "type": "release",
+    "date": "2025-01-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "BOMD-NeoForge-1.21-1.3.1.jar",
+    "size": 1951817,
+    "deps": [
+     {
+      "slug": "cerbons-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "e3YzmR87",
+    "number": "1.3.0",
+    "type": "release",
+    "date": "2024-12-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "BOMD-NeoForge-1.21-1.3.0.jar",
+    "size": 1951813,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cerbons-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "iron\u2019s simple blood",
+  "slug": "irons-simple-blood",
+  "audit_status": "Native build",
+  "audit_version": "1.21.1-1.0.5 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "l7Ddlxg5",
+  "title": "Iron's Simple Blood",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1",
+   "26.1.2"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "ay2cFXz0",
+    "number": "1.21.1-1.0.5",
+    "type": "release",
+    "date": "2026-10-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "simpleblood-1.21.1-1.0.5.jar",
+    "size": 71624,
+    "deps": []
+   },
+   {
+    "id": "YStIsByV",
+    "number": "1.21.1-1.0.4",
+    "type": "release",
+    "date": "2026-08-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "simpleblood-1.21.1-1.0.4.jar",
+    "size": 71704,
+    "deps": []
+   },
+   {
+    "id": "YnPPVhjF",
+    "number": "1.21.1-1.0.3",
+    "type": "release",
+    "date": "2026-07-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "simpleblood-1.21.1-1.0.3.jar",
+    "size": 67253,
+    "deps": []
+   },
+   {
+    "id": "Iq03P6ne",
+    "number": "1.21.1-1.0.2",
+    "type": "release",
+    "date": "2026-06-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "simpleblood-1.21.1-1.0.2.jar",
+    "size": 61114,
+    "deps": []
+   },
+   {
+    "id": "nu8X7mau",
+    "number": "1.21.1-1.0.1",
+    "type": "release",
+    "date": "2026-06-19",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "simpleblood-1.21.1-1.0.1.jar",
+    "size": 59038,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "spider overhaul",
+  "slug": "spider-overhaul",
+  "audit_status": "Native build",
+  "audit_version": "0.1.0-NeoForge-v1.21 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "jEnrr5I7",
+  "title": "Spider Overhaul",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/Chybx/Spider-Overhaul",
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "EjlpAlgq",
+    "number": "0.1.0-NeoForge-v1.21",
+    "type": "release",
+    "date": "2026-10-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.1.0-NeoForge-v1.21.jar",
+    "size": 566365,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "gz6BfcyM",
+    "number": "0.0.6-NeoForge-v1.21",
+    "type": "beta",
+    "date": "2026-08-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.0.6-NeoForge-v1.21.jar",
+    "size": 521177,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "6HYAHkUk",
+    "number": "0.0.5-NeoForge-v1.21",
+    "type": "beta",
+    "date": "2026-08-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.0.5-NeoForge-v1.21.jar",
+    "size": 520686,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "1rvtAvGz",
+    "number": "0.0.4-NeoForge-v1.21",
+    "type": "beta",
+    "date": "2026-08-07",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.0.4-NeoForge-v1.21.jar",
+    "size": 508880,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "TVBooDu8",
+    "number": "0.0.3-NeoForge-v1.21",
+    "type": "beta",
+    "date": "2026-08-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.0.3-NeoForge-v1.21.jar",
+    "size": 507088,
+    "deps": []
+   },
+   {
+    "id": "FNv6MFWZ",
+    "number": "0.0.2-NeoForge-v1.21",
+    "type": "beta",
+    "date": "2026-08-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "SpiderOverhaul-0.0.2-NeoForge-v1.21.jar",
+    "size": 506881,
+    "deps": [
+     {
+      "slug": "cloth-config",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "animated hearts",
+  "slug": "animated-hearts",
+  "audit_status": "Resource pack available",
+  "audit_version": "1.0.0 (release; minecraft)",
+  "kind": "resourcepack",
+  "project_id": "95qgryoK",
+  "title": "Animated Hearts",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "pBvCUtye",
+    "number": "1.0.0",
+    "type": "release",
+    "date": "2026-09-22",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Animated Hearts.zip",
+    "size": 7093,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "moog\u2019s mineshafts reimagined",
+  "slug": "mmr-moogs-mineshafts-reimagined",
+  "audit_status": "Native build",
+  "audit_version": "1.1.0 (release; fabric,forge,neoforge)",
+  "kind": "mod",
+  "project_id": "z25hqseO",
+  "title": "MMR - Moog's Mineshafts Reimagined",
+  "project_type": "mod",
+  "client": "unsupported",
+  "server": "required",
+  "license": "GPL-3.0-only",
+  "source": "https://github.com/FinnSetchell/MoogsMineshaftsReimagined",
+  "issues": "https://github.com/FinnSetchell/MoogsMineshaftsReimagined/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "JJc7pNHb",
+    "number": "1.1.0",
+    "type": "release",
+    "date": "2026-10-01",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
+    "size": 5067871,
+    "deps": [
+     {
+      "slug": "moogs-structure-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "gQlqjs2o",
+    "number": "1.0.3",
+    "type": "release",
+    "date": "2026-06-24",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "MoogsMineshaftsReimagined-1.21-1.0.3.jar",
+    "size": 1818889,
+    "deps": [
+     {
+      "slug": "moogs-structure-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "2Sq5BzBC",
+    "number": "1.0.1",
+    "type": "alpha",
+    "date": "2026-06-17",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "MoogsMineshaftsReimagined-1.21-1.0.1.jar",
+    "size": 1819675,
+    "deps": [
+     {
+      "slug": "moogs-structure-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "kX3rZab5",
+    "number": "1.0.0",
+    "type": "alpha",
+    "date": "2026-06-10",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge"
+    ],
+    "file": "MoogsMineshaftsReimagined-1.21-1.0.0.jar",
+    "size": 1679176,
+    "deps": [
+     {
+      "slug": "moogs-structure-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "cube animals",
+  "slug": "CF:cube-animals",
+  "audit_status": "Port likely needed",
+  "audit_version": "2.3 beta Fabric 1.21.1; NeoForge target unverified",
+  "kind": "mod",
+  "platform": "curseforge"
+ },
+ {
+  "requested": "infinity cave",
+  "slug": "infinity-cave",
+  "audit_status": "Native build",
+  "audit_version": "0.7 (beta; neoforge)",
+  "kind": "mod",
+  "project_id": "DEq97NAA",
+  "title": "Infinity Cave",
+  "project_type": "mod",
+  "client": "optional",
+  "server": "required",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/Frozeh/infinity-cave",
+  "issues": "https://github.com/Frozeh/infinity-cave/issues",
+  "loaders": [
+   "datapack",
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.6",
+   "1.21.7",
+   "1.21.8",
+   "1.21.9",
+   "26.1.2",
+   "26.2"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "6XJT5mi4",
+    "number": "0.7",
+    "type": "beta",
+    "date": "2024-12-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "infinity_cave-0.7-NeoForge-1.21.1.jar",
+    "size": 7226784,
+    "deps": []
+   },
+   {
+    "id": "JYmVFZJJ",
+    "number": "0.61",
+    "type": "beta",
+    "date": "2024-11-08",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "infinity_cave-neoforge-0.61.jar",
+    "size": 9026478,
+    "deps": [
+     {
+      "slug": "lithostitched",
+      "version_id": "wHZ4Skp8",
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "3zhoAnWN",
+    "number": "0.6",
+    "type": "beta",
+    "date": "2024-09-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "infinity_cave-0.6.jar",
+    "size": 9021911,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "grim kingdoms",
+  "slug": "grim-kingdoms-lost-structures-ruins",
+  "audit_status": "Native build",
+  "audit_version": "2.0.3+mod (release; fabric,forge,neoforge,quilt)",
+  "kind": "mod",
+  "project_id": "f4d4E9De",
+  "title": "Grim kingdoms: Lost structures & ruins",
+  "project_type": "mod",
+  "client": "optional",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "datapack",
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "2HwCrjkl",
+    "number": "2.0.3+mod",
+    "type": "release",
+    "date": "2026-07-17",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-2.0.3.jar",
+    "size": 10281208,
+    "deps": []
+   },
+   {
+    "id": "7XkoC8I2",
+    "number": "2.0.2+mod",
+    "type": "release",
+    "date": "2026-07-17",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-2.0.2.jar",
+    "size": 10280486,
+    "deps": []
+   },
+   {
+    "id": "LDDC2Pt3",
+    "number": "2.0.1+mod",
+    "type": "beta",
+    "date": "2026-07-14",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-2.0.1.jar",
+    "size": 10106685,
+    "deps": []
+   },
+   {
+    "id": "laV8fs9S",
+    "number": "2.0+mod",
+    "type": "beta",
+    "date": "2026-07-12",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-2.0.jar",
+    "size": 9847153,
+    "deps": []
+   },
+   {
+    "id": "SJSK4VBR",
+    "number": "v1.0.3+mod",
+    "type": "release",
+    "date": "2026-03-19",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-v1.0.3.jar",
+    "size": 7066736,
+    "deps": []
+   },
+   {
+    "id": "q45VENHI",
+    "number": "v1.0.2+mod",
+    "type": "release",
+    "date": "2026-03-18",
+    "loaders": [
+     "fabric",
+     "forge",
+     "neoforge",
+     "quilt"
+    ],
+    "file": "grim-kingdoms-lost-structures-ruins-v1.0.2.jar",
+    "size": 7067084,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "respawn recap",
+  "slug": "respawn-recap",
+  "audit_status": "Native build",
+  "audit_version": "1.2.1-1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "rgcja1LM",
+  "title": "Respawn Recap",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": "https://github.com/DialingSpoon527/Respawn-Recap",
+  "issues": "https://github.com/DialingSpoon527/Respawn-Recap/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "Fg8rbqaT",
+    "number": "1.2.1-1.21.1",
+    "type": "release",
+    "date": "2026-10-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "respawnrecap-neoforge-1.2.1-1.21.1.jar",
+    "size": 5513909,
+    "deps": [
+     {
+      "slug": "kotlin-for-forge",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "MSD4HTbC",
+    "number": "1.2.0-1.21.1",
+    "type": "release",
+    "date": "2026-09-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "respawnrecap-neoforge-1.2.0-1.21.1.jar",
+    "size": 5513616,
+    "deps": [
+     {
+      "slug": "kotlin-for-forge",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ZORxCAr0",
+    "number": "1.1.0-1.21.1",
+    "type": "release",
+    "date": "2026-09-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "respawnrecap-neoforge-1.1.0-1.21.1.jar",
+    "size": 7420469,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "punchy",
+  "slug": "punchy-fpa",
+  "audit_status": "Native build",
+  "audit_version": "3.2b (release; neoforge)",
+  "kind": "mod",
+  "project_id": "8aoMKplv",
+  "title": "Punchy!",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": "https://discord.gg/CXttaCyGCN",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3",
+   "26.4-snapshot-2"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "aVZEe0j8",
+    "number": "3.2b",
+    "type": "release",
+    "date": "2026-11-12",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-3.2b-neoforge-1.21.1.jar",
+    "size": 4523878,
+    "deps": []
+   },
+   {
+    "id": "83nCNSX4",
+    "number": "3.0",
+    "type": "release",
+    "date": "2026-10-29",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-3.0-neoforge-1.21.1-birthday.jar",
+    "size": 3067299,
+    "deps": []
+   },
+   {
+    "id": "pk9eILcr",
+    "number": "2.8g",
+    "type": "beta",
+    "date": "2026-10-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-2.8g-neoforge-1.21.1.jar",
+    "size": 2056747,
+    "deps": []
+   },
+   {
+    "id": "RYt48afN",
+    "number": "2.6.2",
+    "type": "beta",
+    "date": "2026-07-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-2.6.2-neoforge-1.21.1.jar",
+    "size": 1714297,
+    "deps": []
+   },
+   {
+    "id": "NhhrvhDb",
+    "number": "2.5",
+    "type": "beta",
+    "date": "2026-04-25",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-2.5-neoforge-1.21.1.jar",
+    "size": 1598846,
+    "deps": []
+   },
+   {
+    "id": "vNpvd7eU",
+    "number": "2.0",
+    "type": "beta",
+    "date": "2026-01-23",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "punchy-2.0-neoforge-1.21.1.jar",
+    "size": 636657,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "tight fire",
+  "slug": "tightfire",
+  "audit_status": "Port needed",
+  "audit_version": "1.0-SNAPSHOT (release; fabric,quilt)",
+  "kind": "mod",
+  "project_id": "jExZM2Rj",
+  "title": "Tightfire",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/AmyMialeeMods/tightfire",
+  "issues": "https://github.com/AmyMialeeMods/tightfire/issues",
+  "loaders": [
+   "fabric",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21",
+   "fabric:1.21.1",
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.3",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9",
+   "quilt:1.21",
+   "quilt:1.21.1",
+   "quilt:1.21.10",
+   "quilt:1.21.11",
+   "quilt:1.21.3",
+   "quilt:1.21.4",
+   "quilt:1.21.5",
+   "quilt:1.21.6",
+   "quilt:1.21.7",
+   "quilt:1.21.8",
+   "quilt:1.21.9"
+  ]
+ },
+ {
+  "requested": "enchantment glint outline",
+  "slug": "enchantment-glint-outline",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "Qx2rzv1x",
+  "title": "Enchantment Glint Outline",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC0-1.0",
+  "source": "https://github.com/Da0neDatGotAway/better-enchants",
+  "issues": "https://github.com/Da0neDatGotAway/better-enchants/issues",
+  "loaders": [
+   "fabric"
+  ],
+  "game_versions_tail": [
+   "1.21.8",
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": [
+   "fabric:1.21.10",
+   "fabric:1.21.11",
+   "fabric:1.21.4",
+   "fabric:1.21.5",
+   "fabric:1.21.6",
+   "fabric:1.21.7",
+   "fabric:1.21.8",
+   "fabric:1.21.9"
+  ]
+ },
+ {
+  "requested": "fantasy armor",
+  "slug": "fantasy_armor",
+  "audit_status": "Native build",
+  "audit_version": "1.3.1-1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "oVmpjYQ5",
+  "title": "Fantasy Armor (Medieval Series)",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/kend1e/FANTASY-ARMOR",
+  "issues": "https://github.com/kend1e/FANTASY-ARMOR/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.1",
+   "1.21.10",
+   "1.21.11",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "zp0jA17O",
+    "number": "1.3.1-1.21.1",
+    "type": "release",
+    "date": "2026-11-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy-armor-1.3.1-1.21.1-neoforge.jar",
+    "size": 581620,
+    "deps": [
+     {
+      "slug": "fantasy_weapons",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "4NIBWWcq",
+    "number": "1.3-1.21.1",
+    "type": "release",
+    "date": "2026-10-25",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy-armor-1.3-1.21.1-neoforge.jar",
+    "size": 580554,
+    "deps": []
+   },
+   {
+    "id": "Ibkb2q3C",
+    "number": "1.2.4-1.21.1",
+    "type": "release",
+    "date": "2026-03-31",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy_armor-neoforge-1.2.4-1.21.1.jar",
+    "size": 537069,
+    "deps": []
+   },
+   {
+    "id": "NdADwHae",
+    "number": "1.2.3-1.21.1",
+    "type": "release",
+    "date": "2026-03-27",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy_armor-neoforge-1.2.3-1.21.1.jar",
+    "size": 537027,
+    "deps": []
+   },
+   {
+    "id": "rGIvliMs",
+    "number": "1.2.1-1.21.1",
+    "type": "release",
+    "date": "2026-01-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy_armor-neoforge-1.2.1-1.21.1.jar",
+    "size": 535214,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "fantasy_weapons",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "5QiRps2k",
+    "number": "1.2-1.21.1",
+    "type": "release",
+    "date": "2026-01-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy_armor-neoforge-1.2-1.21.1.jar",
+    "size": 533092,
+    "deps": [
+     {
+      "slug": "fantasy_weapons",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "fantasy weapons",
+  "slug": "fantasy_weapons",
+  "audit_status": "Native build",
+  "audit_version": "1.0-1.21.1 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "rsBLWxD0",
+  "title": "Fantasy Weapons (Medieval Series)",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": "https://github.com/kend1e/FANTASY-WEAPONS",
+  "issues": "https://github.com/kend1e/FANTASY-WEAPONS/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.1",
+   "1.21.10",
+   "1.21.11",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "KTq0GVPl",
+    "number": "1.0-1.21.1",
+    "type": "release",
+    "date": "2026-10-25",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "fantasy-weapons-1.0-1.21.1-neoforge.jar",
+    "size": 241315,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "L_ender\u2019s cataclysm",
+  "slug": "l_enders-cataclysm",
+  "audit_status": "Already in Horizon",
+  "audit_version": "3.33 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "46KJle7n",
+  "title": "L_Ender's Cataclysm",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "CC-BY-NC-ND-4.0",
+  "source": "https://github.com/lender544/new1.20.1/tree/master",
+  "issues": null,
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.19.2",
+   "1.20.1",
+   "1.21.1",
+   "1.21.5"
+  ],
+  "already_locked": true,
+  "versions": [
+   {
+    "id": "PsPYpoCC",
+    "number": "3.33",
+    "type": "release",
+    "date": "2026-09-20",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+    "size": 73375667,
+    "deps": [
+     {
+      "slug": "lionfish-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "curios",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "695vQRhD",
+    "number": "3.32",
+    "type": "release",
+    "date": "2026-07-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.32.jar",
+    "size": 73362730,
+    "deps": [
+     {
+      "slug": "curios",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "lionfish-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "bC6QOYxp",
+    "number": "3.31-optimaztion2",
+    "type": "release",
+    "date": "2026-06-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.31-optimaztion2.jar",
+    "size": 73362723,
+    "deps": [
+     {
+      "slug": "curios",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "lionfish-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "axOt8N57",
+    "number": "3.31-optimaztion",
+    "type": "release",
+    "date": "2026-06-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.31-optimaztion.jar",
+    "size": 73355331,
+    "deps": []
+   },
+   {
+    "id": "uvjXrHuz",
+    "number": "3.31",
+    "type": "release",
+    "date": "2026-06-14",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.31.jar",
+    "size": 73346531,
+    "deps": [
+     {
+      "slug": "lionfish-api",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "curios",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ulbHcO9y",
+    "number": "3.30",
+    "type": "release",
+    "date": "2026-06-10",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "L_Ender's Cataclysm 1.21.1-3.30.jar",
+    "size": 73346293,
+    "deps": [
+     {
+      "slug": "curios",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "lionfish-api",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "primal",
+  "slug": "mod-primal",
+  "audit_status": "Likely match",
+  "audit_version": "1.1.6 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "41B2buzz",
+  "title": "Primal",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "MIT",
+  "source": "https://github.com/AngelDGr/Primal",
+  "issues": "https://github.com/AngelDGr/Primal/issues",
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "bjAno6mP",
+    "number": "1.1.6",
+    "type": "release",
+    "date": "2026-05-01",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.6+1.21.jar",
+    "size": 13075156,
+    "deps": []
+   },
+   {
+    "id": "pqobC1Qz",
+    "number": "1.1.5",
+    "type": "release",
+    "date": "2026-04-11",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.5+1.21.jar",
+    "size": 12758284,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "LRZOIBju",
+    "number": "1.1.4",
+    "type": "release",
+    "date": "2026-03-31",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.4+1.21.jar",
+    "size": 12746585,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "6NlF8y2Y",
+    "number": "1.1.3",
+    "type": "release",
+    "date": "2026-03-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.3+1.21.jar",
+    "size": 12718013,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "POKJElaP",
+    "number": "1.1.2",
+    "type": "release",
+    "date": "2026-03-27",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.2+1.21.jar",
+    "size": 12691810,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "nbzBwkQL",
+    "number": "1.1.1",
+    "type": "release",
+    "date": "2026-03-26",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "primal-1.1.1+1.21.jar",
+    "size": 12683554,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "mob dismemberment",
+  "slug": "mob-dismemberment-unofficial-modern-port",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "Wbk01tTx",
+  "title": "Mob Dismemberment [UNOFFICIAL MODERN PORT]",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/ThatSoulyGuy/Mob-Dismemberment",
+  "issues": "https://github.com/ThatSoulyGuy/Mob-Dismemberment/issues",
+  "loaders": [
+   "forge"
+  ],
+  "game_versions_tail": [
+   "1.20.1"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": []
+ },
+ {
+  "requested": "Fuer dungeon spawner",
+  "slug": "feur-dungeon-spawner",
+  "audit_status": "Port needed",
+  "audit_version": "",
+  "kind": "mod",
+  "project_id": "1x7vcRlh",
+  "title": "Feur Dungeon Spawner",
+  "project_type": "mod",
+  "client": "unsupported",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "forge"
+  ],
+  "game_versions_tail": [
+   "1.20.1"
+  ],
+  "already_locked": false,
+  "versions": [],
+  "other_builds": []
+ },
+ {
+  "requested": "bosses\u2019 rise",
+  "slug": "bossesrise",
+  "audit_status": "Native build",
+  "audit_version": "2.1.2 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "q2bV1Tm1",
+  "title": "Bosses'Rise",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1",
+   "1.21.2",
+   "1.21.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "lE9PF6Wp",
+    "number": "2.1.2",
+    "type": "release",
+    "date": "2026-05-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+    "size": 23943105,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "FQB6F9rj",
+    "number": "2.1.1",
+    "type": "release",
+    "date": "2026-05-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.1.1-neo-1.21.1.jar",
+    "size": 24312264,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "RXf8YZ79",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2026-05-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.1.0-neo-1.21.1.jar",
+    "size": 24056592,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "r4Y3IifM",
+    "number": "2.0.13",
+    "type": "release",
+    "date": "2026-05-02",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.0.13-neo-1.21.1.jar",
+    "size": 20904868,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "ac2ec3Mz",
+    "number": "2.0.12",
+    "type": "release",
+    "date": "2026-03-27",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.0.12-neo-1.21.1.jar",
+    "size": 20707172,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "wpeymTE7",
+    "number": "2.0.11",
+    "type": "release",
+    "date": "2026-03-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "block_factorys_bosses-2.0.11-neo-1.21.1.jar",
+    "size": 20705794,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": "gFmrC8Ru",
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "wither: reincarnated",
+  "slug": "wither-reincarnated",
+  "audit_status": "Native build",
+  "audit_version": "1.0.5 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "YDc8cRWF",
+  "title": "Wither: Reincarnated",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "6d4I4VPO",
+    "number": "1.0.5",
+    "type": "release",
+    "date": "2026-07-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "witherreincarnated-1.21.1-1.0.5.jar",
+    "size": 12616597,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "companions",
+  "slug": "companions-mod",
+  "audit_status": "Native build",
+  "audit_version": "1.3.9 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "ArBFNu9T",
+  "title": "Companions!",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "GPL-3.0-only",
+  "source": "https://github.com/Xylonity/Companions",
+  "issues": "https://github.com/Xylonity/Companions/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.20",
+   "1.20.1",
+   "1.21",
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "ZPnBgXjW",
+    "number": "1.3.9",
+    "type": "release",
+    "date": "2026-11-21",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.9.jar",
+    "size": 7204213,
+    "deps": [
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "JcFu0L9W",
+    "number": "1.3.8",
+    "type": "release",
+    "date": "2026-11-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.8.jar",
+    "size": 7203706,
+    "deps": [
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "l19HmglM",
+    "number": "1.3.7",
+    "type": "release",
+    "date": "2026-11-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.7.jar",
+    "size": 7203405,
+    "deps": [
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "6tlvtOV5",
+    "number": "1.3.6",
+    "type": "release",
+    "date": "2026-10-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.6.jar",
+    "size": 7193991,
+    "deps": [
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "aXNdSwfw",
+    "number": "1.3.5",
+    "type": "release",
+    "date": "2026-09-24",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.5.jar",
+    "size": 7189936,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "sK2wnpkC",
+    "number": "1.3.4",
+    "type": "release",
+    "date": "2026-09-11",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "companions-neoforge-1.21.1-1.3.4.jar",
+    "size": 7189704,
+    "deps": [
+     {
+      "slug": "geckolib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "knight-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "clavis",
+  "slug": "clavis",
+  "audit_status": "Native build",
+  "audit_version": "0.2.13 (release; neoforge)",
+  "kind": "mod",
+  "project_id": "y9Xnig6p",
+  "title": "Clavis",
+  "project_type": "mod",
+  "client": "required",
+  "server": "required",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "fabric",
+   "neoforge"
+  ],
+  "game_versions_tail": [
+   "1.21.1"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "pncc8FpD",
+    "number": "0.2.13",
+    "type": "release",
+    "date": "2026-03-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.13+1.21.1.jar",
+    "size": 322447,
+    "deps": [
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "zMLkWHdV",
+    "number": "0.2.12",
+    "type": "release",
+    "date": "2026-03-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.12+1.21.1.jar",
+    "size": 322471,
+    "deps": [
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "L7yxmu4t",
+    "number": "0.2.11",
+    "type": "release",
+    "date": "2026-01-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.11+1.21.1.jar",
+    "size": 319294,
+    "deps": [
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "OHyClNyr",
+    "number": "0.2.10",
+    "type": "release",
+    "date": "2025-12-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.10+1.21.1.jar",
+    "size": 319377,
+    "deps": [
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "C0DA8tCL",
+    "number": "0.2.9",
+    "type": "release",
+    "date": "2025-11-30",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.9+1.21.1.jar",
+    "size": 317538,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "frxbY6Tz",
+    "number": "0.2.8",
+    "type": "release",
+    "date": "2025-11-28",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "Clavis-NEOFORGE-0.2.8+1.21.1.jar",
+    "size": 317694,
+    "deps": [
+     {
+      "slug": "shatterbyte-lib",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "lootr",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "[EMF] Entity Model Features",
+  "slug": "entity-model-features",
+  "audit_status": "addon",
+  "audit_version": "3.3.12-neoforge-1.21",
+  "kind": "mod",
+  "project_id": "4I1XuqiY",
+  "title": "[EMF] Entity Model Features",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/Traben-0/Entity_Model_Features",
+  "issues": "https://github.com/Traben-0/Entity_Model_Features/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "24w46a",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "197m3VoU",
+    "number": "3.3.12-neoforge-1.21",
+    "type": "release",
+    "date": "2026-10-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.12-1.21-neoforge.jar",
+    "size": 656382,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "bRlX1x4e",
+    "number": "3.3.11-neoforge-1.21",
+    "type": "release",
+    "date": "2026-10-05",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.11-1.21-neoforge.jar",
+    "size": 655485,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "YRkPwUTR",
+    "number": "3.3.10-neoforge-1.21",
+    "type": "release",
+    "date": "2026-10-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.10-1.21-neoforge.jar",
+    "size": 655582,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "gEOHNhtN",
+    "number": "3.3.9-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.9-1.21-neoforge.jar",
+    "size": 641785,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "bL49L0tN",
+    "number": "3.3.8-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.8-1.21-neoforge.jar",
+    "size": 641248,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "5AMSii6O",
+    "number": "3.3.7-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_model_features-3.3.7-1.21-neoforge.jar",
+    "size": 636503,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "[ETF] Entity Texture Features",
+  "slug": "entitytexturefeatures",
+  "audit_status": "addon",
+  "audit_version": "7.2.7-neoforge-1.21",
+  "kind": "mod",
+  "project_id": "BVzZfTc1",
+  "title": "[ETF] Entity Texture Features",
+  "project_type": "mod",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LGPL-3.0-only",
+  "source": "https://github.com/Traben-0/Entity_Texture_Features",
+  "issues": "https://github.com/Traben-0/Entity_Texture_Features/issues",
+  "loaders": [
+   "fabric",
+   "forge",
+   "neoforge",
+   "quilt"
+  ],
+  "game_versions_tail": [
+   "24w46a",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "1DVPB3a4",
+    "number": "7.2.7-neoforge-1.21",
+    "type": "release",
+    "date": "2026-11-03",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.7-1.21-neoforge.jar",
+    "size": 811876,
+    "deps": []
+   },
+   {
+    "id": "lwNx1nD1",
+    "number": "7.2.6-neoforge-1.21",
+    "type": "release",
+    "date": "2026-10-15",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.6-1.21-neoforge.jar",
+    "size": 807089,
+    "deps": []
+   },
+   {
+    "id": "CfQJbv1u",
+    "number": "7.2.5-neoforge-1.21",
+    "type": "release",
+    "date": "2026-10-04",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.5-1.21-neoforge.jar",
+    "size": 806812,
+    "deps": []
+   },
+   {
+    "id": "HOizEpC7",
+    "number": "7.2.4-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-18",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.4-1.21-neoforge.jar",
+    "size": 790080,
+    "deps": []
+   },
+   {
+    "id": "Y1KtOkZf",
+    "number": "7.2.3-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-17",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.3-1.21-neoforge.jar",
+    "size": 784617,
+    "deps": []
+   },
+   {
+    "id": "BoYfMj0y",
+    "number": "7.2.2-neoforge-1.21",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "neoforge"
+    ],
+    "file": "entity_texture_features-7.2.2-1.21-neoforge.jar",
+    "size": 784568,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Extensions",
+  "slug": "fresh-animations-extensions",
+  "audit_status": "addon",
+  "audit_version": "1.10.1",
+  "kind": "resourcepack",
+  "project_id": "YAVTU8mK",
+  "title": "Fresh Animations: Extensions",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "zphVu6Oe",
+    "number": "1.10.1",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.10.1.zip",
+    "size": 548952,
+    "deps": []
+   },
+   {
+    "id": "p8o4859E",
+    "number": "1.10.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.10.zip",
+    "size": 548687,
+    "deps": []
+   },
+   {
+    "id": "RfJ3uz2J",
+    "number": "1.8.1",
+    "type": "release",
+    "date": "2026-04-20",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.8.1.zip",
+    "size": 425088,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "9rbQZuzp",
+    "number": "1.8.0",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.8.zip",
+    "size": 423589,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "hGa4E44T",
+    "number": "1.7.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.7.zip",
+    "size": 404107,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "SKZV9hLY",
+    "number": "1.6.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+All_Extensions-v1.6.zip",
+    "size": 591615,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Creepers",
+  "slug": "fresh-animations-creepers",
+  "audit_status": "addon",
+  "audit_version": "2.2.0",
+  "kind": "resourcepack",
+  "project_id": "AhPf2E1u",
+  "title": "Fresh Animations: Creepers",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "b90eVujh",
+    "number": "2.2.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Creepers-v2.2.zip",
+    "size": 81283,
+    "deps": []
+   },
+   {
+    "id": "GrfbfoJB",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Creepers-v2.1.zip",
+    "size": 80737,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "mlhCsduS",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Creepers-v2.0.zip",
+    "size": 80721,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "5yXgJ4DQ",
+    "number": "1.2.0",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Creepers-v1.2.zip",
+    "size": 43666,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Details",
+  "slug": "fresh-animations-details",
+  "audit_status": "addon",
+  "audit_version": "2.4.0",
+  "kind": "resourcepack",
+  "project_id": "lctgpCsu",
+  "title": "Fresh Animations: Details",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "XM8VyQLk",
+    "number": "2.4.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Details-v2.4.zip",
+    "size": 400883,
+    "deps": []
+   },
+   {
+    "id": "tGydmcT3",
+    "number": "2.2.1",
+    "type": "release",
+    "date": "2026-04-20",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Details-v2.2.1.zip",
+    "size": 289745,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "aGcATdfb",
+    "number": "2.2.0",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Details-v2.2.zip",
+    "size": 289009,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "e1JuXBMJ",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Details-v2.1.zip",
+    "size": 271087,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "jNfQp80z",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Details-v2.0.zip",
+    "size": 271064,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "1pXgu9Ua",
+    "number": "s-1.1.0",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Slamacow-v1.1.zip",
+    "size": 55273,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Emissive",
+  "slug": "fresh-animations-emissive",
+  "audit_status": "addon",
+  "audit_version": "1.7.0",
+  "kind": "resourcepack",
+  "project_id": "VRS2YQn9",
+  "title": "Fresh Animations: Emissive",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "A3tITCIa",
+    "number": "1.7.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.7.zip",
+    "size": 103295,
+    "deps": []
+   },
+   {
+    "id": "byyyyS7z",
+    "number": "1.6.0",
+    "type": "release",
+    "date": "2026-04-27",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.6.zip",
+    "size": 93695,
+    "deps": []
+   },
+   {
+    "id": "eAOCN5QT",
+    "number": "1.5.0",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.5.zip",
+    "size": 91157,
+    "deps": []
+   },
+   {
+    "id": "ovyufcaT",
+    "number": "1.4.1",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.4.1.zip",
+    "size": 90645,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "p1CvjVoo",
+    "number": "1.4.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.4.zip",
+    "size": 90623,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "d15TJ2lQ",
+    "number": "1.3.0",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Emissive-v1.3.zip",
+    "size": 70778,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Quivers",
+  "slug": "fresh-animations-quivers",
+  "audit_status": "addon",
+  "audit_version": "2.3.0",
+  "kind": "resourcepack",
+  "project_id": "T4pK4GiQ",
+  "title": "Fresh Animations: Quivers",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "dxPm8dtx",
+    "number": "2.3.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Quivers-v2.3.zip",
+    "size": 90466,
+    "deps": []
+   },
+   {
+    "id": "RLEhLx95",
+    "number": "2.2.0",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Quivers-v2.2.zip",
+    "size": 89828,
+    "deps": []
+   },
+   {
+    "id": "rMtbRkiD",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Quivers-v2.1.zip",
+    "size": 87660,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "1ap8M7l6",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Quivers-v2.0.zip",
+    "size": 87644,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "SGybtFFn",
+    "number": "1.1.1",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Quivers-v1.1.1.zip",
+    "size": 65565,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Spiders",
+  "slug": "fresh-animations-spiders",
+  "audit_status": "addon",
+  "audit_version": "2.3.1",
+  "kind": "resourcepack",
+  "project_id": "aqKnWmBf",
+  "title": "Fresh Animations: Spiders",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "KGZz80AO",
+    "number": "2.3.1",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v2.3.1.zip",
+    "size": 78134,
+    "deps": []
+   },
+   {
+    "id": "BGPlulVm",
+    "number": "2.3.0",
+    "type": "release",
+    "date": "2026-10-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v2.3.zip",
+    "size": 77869,
+    "deps": []
+   },
+   {
+    "id": "26pzeVJN",
+    "number": "2.2.0",
+    "type": "release",
+    "date": "2026-04-27",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v2.2.zip",
+    "size": 77869,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "5OKQMF8g",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v2.1.zip",
+    "size": 77409,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "qyvLrJt8",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v2.0.zip",
+    "size": 77393,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "zSpdVb49",
+    "number": "1.1.0",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Spiders-v1.1.zip",
+    "size": 70821,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Objects",
+  "slug": "fresh-animations-objects",
+  "audit_status": "addon",
+  "audit_version": "2.1.2",
+  "kind": "resourcepack",
+  "project_id": "23O9JVMV",
+  "title": "Fresh Animations: Objects",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "AIGgXNdl",
+    "number": "2.1.2",
+    "type": "release",
+    "date": "2026-06-23",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Objects-v2.1.2.zip",
+    "size": 142277,
+    "deps": []
+   },
+   {
+    "id": "Qf2NGZhY",
+    "number": "2.1.1",
+    "type": "release",
+    "date": "2026-05-23",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Objects-v2.1.1.zip",
+    "size": 142288,
+    "deps": []
+   },
+   {
+    "id": "uuAA3kpY",
+    "number": "2.1.0",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Objects-v2.1.zip",
+    "size": 143577,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "75biIxsj",
+    "number": "2.0.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Objects-v2.0.zip",
+    "size": 144147,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "HYi4S0w7",
+    "number": "1.1.1",
+    "type": "release",
+    "date": "2025-09-15",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Objects-v1.1.1.zip",
+    "size": 85588,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Classic Horses",
+  "slug": "fresh-animations-classic-horses",
+  "audit_status": "addon",
+  "audit_version": "1.5.0",
+  "kind": "resourcepack",
+  "project_id": "rrRWRbvm",
+  "title": "Fresh Animations: Classic Horses",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "WHIXEmWJ",
+    "number": "1.5.0",
+    "type": "release",
+    "date": "2026-02-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Classic_Horses-v1.5.zip",
+    "size": 327497,
+    "deps": []
+   },
+   {
+    "id": "swGJSVSG",
+    "number": "1.4.1",
+    "type": "release",
+    "date": "2025-12-04",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Classic_Horses-v1.4.1.zip",
+    "size": 256655,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "1Vycq2Wg",
+    "number": "1.4.0",
+    "type": "release",
+    "date": "2025-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Classic_Horses-v1.4.zip",
+    "size": 256633,
+    "deps": [
+     {
+      "slug": "fresh-animations",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Player Extension",
+  "slug": "fa-player-extension",
+  "audit_status": "addon",
+  "audit_version": "1.1.0",
+  "kind": "resourcepack",
+  "project_id": "TAIMVZCL",
+  "title": "Fresh Animations: Player Extension",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.21.9",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "Wj7NeGjP",
+    "number": "1.1.0",
+    "type": "release",
+    "date": "2026-06-14",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Player-v1.1.zip",
+    "size": 110203,
+    "deps": []
+   },
+   {
+    "id": "io7wLL8n",
+    "number": "1.0.0",
+    "type": "release",
+    "date": "2026-01-05",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA+Player-v1.0.zip",
+    "size": 124472,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Animations: Player Compats",
+  "slug": "fresh-animations-player-compats",
+  "audit_status": "addon",
+  "audit_version": "1.3.1",
+  "kind": "resourcepack",
+  "project_id": "Om9U7Mdv",
+  "title": "Fresh Animations: Player Compats",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w38a",
+   "24w39a",
+   "24w40a",
+   "24w44a",
+   "24w45a",
+   "24w46a"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "cQ48zoin",
+    "number": "1.3.1",
+    "type": "release",
+    "date": "2026-11-02",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA-Player-Compats-1.3.1-mc1.21.1.zip",
+    "size": 24162,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "orbital-railgun",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "AGhal1bN",
+    "number": "1.3",
+    "type": "release",
+    "date": "2026-10-28",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA-Player-Compats-1.3-mc1.21.1.zip",
+    "size": 24724,
+    "deps": [
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "gD0X0yWd",
+    "number": "1.2",
+    "type": "release",
+    "date": "2026-10-28",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA-Player-Compats-1.2-mc1.21.1.zip",
+    "size": 23054,
+    "deps": [
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "w11HbwrM",
+    "number": "1.1",
+    "type": "release",
+    "date": "2026-10-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA-Player-Compats-1.1-mc1.21.1.zip",
+    "size": 81740,
+    "deps": [
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "HcFj9lDp",
+    "number": "1.0",
+    "type": "release",
+    "date": "2026-10-24",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA-Player-Compats-1.0-mc1.21.1.zip",
+    "size": 67603,
+    "deps": [
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "X07eaubI",
+    "number": "0.1",
+    "type": "release",
+    "date": "2026-10-23",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FA Player Compats.zip",
+    "size": 67315,
+    "deps": [
+     {
+      "slug": "mqnazM0E",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "etched",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "fa-player-extension",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "borninchaos",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "caverns-and-chasms",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "musket-mod",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "jadens-nether-expansion",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "artifacts",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "kaleidoscopetavern",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "flashier-flashlights",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "irons-artifice",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "biomancy",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "farmers-delight",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "more-critters",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "alexs-caves",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "F.M.R.P",
+  "slug": "freshly-modded",
+  "audit_status": "addon",
+  "audit_version": "3.0.5",
+  "kind": "resourcepack",
+  "project_id": "u4nhiAdP",
+  "title": "F.M.R.P",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "CC-BY-NC-SA-4.0",
+  "source": null,
+  "issues": "https://github.com/SebSemos/F.M.R.P-Freshly-Modded-/issues",
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w46a",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "ck5iB4VE",
+    "number": "3.0.5",
+    "type": "release",
+    "date": "2026-09-26",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.5.zip",
+    "size": 619427,
+    "deps": [
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "Ii3H1pwD",
+    "number": "3.0.4",
+    "type": "release",
+    "date": "2026-08-20",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.4.zip",
+    "size": 619427,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "XRTUXlMK",
+    "number": "3.0.3",
+    "type": "release",
+    "date": "2026-06-28",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.3.zip",
+    "size": 622594,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "h4Cret6t",
+    "number": "3.0.2",
+    "type": "release",
+    "date": "2026-05-14",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.2.zip",
+    "size": 622593,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   },
+   {
+    "id": "KEHIpS8i",
+    "number": "3.0.1",
+    "type": "release",
+    "date": "2026-03-31",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.1.zip",
+    "size": 622605,
+    "deps": [
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "HE4BFvNb",
+    "number": "3.0.0",
+    "type": "release",
+    "date": "2026-03-29",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Freshly Modded 3.0.0.zip",
+    "size": 619351,
+    "deps": [
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cape-addon",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "semos-cosmetic-addon-lib",
+      "version_id": null,
+      "type": "optional"
+     },
+     {
+      "slug": "semos-animations-lib",
+      "version_id": null,
+      "type": "optional"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Compats",
+  "slug": "fresh-compats",
+  "audit_status": "addon",
+  "audit_version": "v1.6",
+  "kind": "resourcepack",
+  "project_id": "nOD7MgEz",
+  "title": "Fresh Compats",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "MIT",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "1.20.1",
+   "1.20.2",
+   "1.20.4",
+   "1.21.1",
+   "1.21.4",
+   "1.21.5"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "EHQK5l1g",
+    "number": "v1.6",
+    "type": "release",
+    "date": "2025-06-03",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "FreshCompats_v1.6.zip",
+    "size": 514819,
+    "deps": [
+     {
+      "slug": "entity-model-features",
+      "version_id": null,
+      "type": "required"
+     },
+     {
+      "slug": "entitytexturefeatures",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "requested": "Fresh Illager Mod Compats",
+  "slug": "fresh-illager-mod-compats",
+  "audit_status": "addon",
+  "audit_version": "5.0",
+  "kind": "resourcepack",
+  "project_id": "LcyJHdDB",
+  "title": "Fresh Illager Mod Compats",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w46a",
+   "26.1",
+   "26.1.1",
+   "26.1.2",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "WszsRxtW",
+    "number": "5.0",
+    "type": "release",
+    "date": "2026-10-03",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "5.0 FA Illager Mod Compats.zip",
+    "size": 2109829,
+    "deps": []
+   },
+   {
+    "id": "goM8iljy",
+    "number": "4.9",
+    "type": "release",
+    "date": "2026-09-28",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "4.9 FA Illager Mod Compats.zip",
+    "size": 2102439,
+    "deps": []
+   },
+   {
+    "id": "Tkignfxk",
+    "number": "4.8",
+    "type": "release",
+    "date": "2026-09-27",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "4.8 FA Illager Mod Compats.zip",
+    "size": 2102364,
+    "deps": []
+   },
+   {
+    "id": "lnurpKE6",
+    "number": "4.7",
+    "type": "release",
+    "date": "2026-09-18",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "4.7 FA Illager Mod Compats.zip",
+    "size": 2084227,
+    "deps": []
+   },
+   {
+    "id": "I72cqmG4",
+    "number": "4.6",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "4.6 FA Illager Mod Compats.zip",
+    "size": 2089300,
+    "deps": []
+   },
+   {
+    "id": "I4ZS1uNa",
+    "number": "4.5",
+    "type": "release",
+    "date": "2026-09-16",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "4.5 FA Illager Mod Compats.zip",
+    "size": 2089280,
+    "deps": []
+   }
+  ]
+ },
+ {
+  "requested": "Fluid & Foolish",
+  "slug": "fluid-foolish",
+  "audit_status": "addon",
+  "audit_version": "1.0.1",
+  "kind": "resourcepack",
+  "project_id": "fQdwNxte",
+  "title": "Fluid & Foolish",
+  "project_type": "resourcepack",
+  "client": "required",
+  "server": "unsupported",
+  "license": "LicenseRef-All-Rights-Reserved",
+  "source": null,
+  "issues": null,
+  "loaders": [
+   "minecraft"
+  ],
+  "game_versions_tail": [
+   "24w40a",
+   "24w44a",
+   "24w45a",
+   "24w46a",
+   "26.2",
+   "26.3"
+  ],
+  "already_locked": false,
+  "versions": [
+   {
+    "id": "UAp4jRDk",
+    "number": "1.0.1",
+    "type": "release",
+    "date": "2026-11-02",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fluid & Foolish 1.0.1.zip",
+    "size": 1881476,
+    "deps": [
+     {
+      "slug": "punchymoves",
+      "version_id": null,
+      "type": "required"
+     }
+    ]
+   },
+   {
+    "id": "4DiI0DAK",
+    "number": "1.0",
+    "type": "release",
+    "date": "2026-10-30",
+    "loaders": [
+     "minecraft"
+    ],
+    "file": "Fluid & Foolish 1.0-hotfix.zip",
+    "size": 296058,
+    "deps": []
+   }
+  ]
+ }
+]

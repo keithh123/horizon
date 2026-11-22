@@ -49,8 +49,24 @@ EDITS = {
 }
 
 
+# Files shipped verbatim (needed before a mod's first launch, so there is no generated default to patch).
+SEEDS = {
+    "visualoverhaul.json": ('{
+  "firstLaunch": false
+}
+',
+                            "Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib "
+                            "registers it (NPE at Options.loadSelectedResourcePacks). Its built-in packs are enabled by build.py instead."),
+}
+
+
 def main():
     report = []
+    for rel, (text, why) in SEEDS.items():
+        out = OUT / rel
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(text, encoding="utf-8")
+        report.append(f"| `{rel}` | (seed file) | {why} |")
     for rel, edits in EDITS.items():
         text = (SRC / rel).read_text(encoding="utf-8")
         for pat, rep, why in edits:

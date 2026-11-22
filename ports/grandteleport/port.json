@@ -1,0 +1,26 @@
+{
+  "kind": "repack",
+  "output": "GrandTeleport-NeoForge-1.21.1-1.0.1-horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "optional"
+  },
+  "license": "MIT",
+  "replaces_slug": "grandteleport-neoforge",
+  "upstream": {
+    "page": "https://modrinth.com/mod/grandteleport-neoforge/version/c8G8d2Nt",
+    "url": "https://cdn.modrinth.com/data/PsllFHj8/versions/c8G8d2Nt/GrandTeleport-NeoForge-1.21.1-neoforge-1.0.1.jar",
+    "sha512": "fa1ec16d48d6b91bdbd84b93ec4f346d24e63ac550be597341f905192e5981881f9ee372278deb93a3171bd2b3e26e76e0634c1c4c11a44c8a3999f07531c7a3",
+    "version": "neoforge-1.0.1"
+  },
+  "attribution": "Original Fabric mod by hookuru_; NeoForge port by cfrsh (MIT). Metadata-only repack by Project Horizon.",
+  "changes": "neoforge.mods.toml version 'neoforge-1.0.1' -> '1.0.1'. FML 4.0.45 rejects the original with InvalidModFileException (Illegal version number). No code changes.",
+  "edits": {
+    "META-INF/neoforge.mods.toml": [
+      [
+        "version=\"neoforge-1.0.1\"",
+        "version=\"1.0.1\""
+      ]
+    ]
+  }
+}

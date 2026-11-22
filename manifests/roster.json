@@ -391,6 +391,281 @@
         "slug": "subtle-effects",
         "why": "Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config."
       }
+    ],
+    "fx": [
+      {
+        "slug": "visuality-forge",
+        "why": "Visuality: hit/crystal/water-splash particles. Ambient-particle overlap with Subtle Effects resolved in config.",
+        "pin": "kOdevgPm"
+      },
+      {
+        "slug": "better-clouds",
+        "why": "Better Clouds: Sodium/Iris-aware cloud renderer. Profile-controlled.",
+        "pin": "UvRCtZxT"
+      },
+      {
+        "slug": "cosy-critters",
+        "why": "Cozy Critters & Creepy Crawlies: client-side ambient critters. Profile-controlled density.",
+        "pin": "QnJ9WVDV"
+      },
+      {
+        "slug": "mc2-interactive-foliage",
+        "why": "Interactive Foliage: plants bend around entities (needs Sway).",
+        "pin": "oKmXJIL5"
+      },
+      {
+        "slug": "atmospherics",
+        "why": "ATMOSPHERICS: client-side atmosphere polish.",
+        "pin": "yJJkB7Qc"
+      },
+      {
+        "slug": "fwa",
+        "why": "Fancy World Animations: block open/close animations. Lantern swing owned by Swinging Lanterns.",
+        "pin": "o7bsv488"
+      },
+      {
+        "slug": "visual-overhaul",
+        "why": "Visual Overhaul: model polish for vanilla blocks/items.",
+        "pin": "TMOdQHDi"
+      },
+      {
+        "slug": "inventory-particles",
+        "why": "Inventory Particles: particles on item interactions in GUIs.",
+        "pin": "qixkxVRf"
+      },
+      {
+        "slug": "particle-interactions",
+        "why": "Particle Interactions (beta, exact target build).",
+        "pin": "Js4y2r4d",
+        "allow": "beta"
+      },
+      {
+        "slug": "footprintparticle",
+        "why": "Footprint Particle: footprints on soft blocks. Profile-controlled.",
+        "pin": "2V0cTg06"
+      },
+      {
+        "slug": "cave-dust-rethinking",
+        "why": "Cave Dust: underground dust particles; owns cave dust (Subtle Effects equivalent off).",
+        "pin": "lPnsGznY"
+      },
+      {
+        "slug": "perception",
+        "why": "Perception: visual feedback effects.",
+        "pin": "W5IQteYO"
+      },
+      {
+        "slug": "windy",
+        "why": "Windy: wind-gust particles. Profile-controlled.",
+        "pin": "xcBfBf8H"
+      },
+      {
+        "slug": "effectual",
+        "why": "Effectual: ambient particles; overlapping Subtle Effects categories disabled.",
+        "pin": "BM24IMvt"
+      },
+      {
+        "slug": "swinging-lanterns",
+        "why": "Swinging Lanterns: owns lantern animation.",
+        "pin": "wKAcUxnv"
+      },
+      {
+        "slug": "cleardespawn-reborn",
+        "why": "Clear Despawn: items blink before despawning.",
+        "pin": "IFOUpgMy"
+      }
+    ],
+    "audio": [
+      {
+        "slug": "sound",
+        "why": "Sounds: UI/item/block sound polish.",
+        "pin": "kti7i9SG"
+      },
+      {
+        "slug": "more-sounds",
+        "why": "More Sounds (beta, exact target build).",
+        "pin": "s0FVNDXY",
+        "allow": "beta"
+      },
+      {
+        "slug": "sound-controller",
+        "why": "Sound Controller: per-sound volume control for overlapping sound mods.",
+        "pin": "3TaQzJJO"
+      },
+      {
+        "slug": "cool-rain-reforged",
+        "why": "Cool Rain: rain sound variants.",
+        "pin": "SwSSfJQQ"
+      },
+      {
+        "slug": "satisfying-buttons",
+        "why": "Satisfying Buttons: GUI button feedback.",
+        "pin": "EssE56Wf"
+      }
+    ],
+    "camera_anim": [
+      {
+        "slug": "punchymoves",
+        "why": "Punchy Moves: first-person attack animations (beta). Fluid & Foolish (its required animation pack) is installed as a resource pack.",
+        "pin": "8dHgPPh6",
+        "allow": "beta",
+        "skip_deps": [
+          "fQdwNxte"
+        ],
+        "side": {
+          "client": "required",
+          "server": "unsupported"
+        }
+      },
+      {
+        "slug": "punchy-fpa",
+        "why": "Punchy!: first-person animation overhaul.",
+        "pin": "aVZEe0j8"
+      },
+      {
+        "slug": "auto-third-person",
+        "why": "Auto Third Person: camera while riding/swimming/gliding.",
+        "pin": "o2kINZoC"
+      },
+      {
+        "slug": "seamless-sleep",
+        "why": "Seamless Sleep: smooth time passage while sleeping.",
+        "pin": "Lw02ZJke"
+      },
+      {
+        "slug": "respawn-recap",
+        "why": "Respawn Recap: death recap screen.",
+        "pin": "Fg8rbqaT"
+      }
+    ],
+    "ui": [
+      {
+        "slug": "spatial-gui",
+        "why": "Spatial GUI (confirmed by user).",
+        "pin": "wSnOpypP"
+      },
+      {
+        "slug": "advancement-plaques",
+        "why": "Advancement Plaques: toast replacement.",
+        "pin": "OWylG33I"
+      },
+      {
+        "slug": "legendary-tooltips",
+        "why": "Legendary Tooltips: rarity tooltip borders.",
+        "pin": "BabRJO04"
+      },
+      {
+        "slug": "smooth-loading-screen",
+        "why": "Smooth Loading Screen.",
+        "pin": "ub5aGHzh"
+      },
+      {
+        "slug": "last-world-panorama",
+        "why": "Last World Panorama: title panorama from the last world.",
+        "pin": "xVX9iy6y"
+      }
+    ],
+    "world_ext": [
+      {
+        "slug": "fallingtree",
+        "why": "FallingTree: whole-tree felling.",
+        "pin": "wxGXaJMA"
+      },
+      {
+        "slug": "streams-reflowing",
+        "why": "Streams Reflowing: flowing streams worldgen. New chunks only.",
+        "pin": "9Phpmmh2"
+      },
+      {
+        "slug": "homesteads",
+        "why": "Homesteads: villager homestead structures.",
+        "pin": "cLqsoOGy"
+      },
+      {
+        "slug": "mmr-moogs-mineshafts-reimagined",
+        "why": "Moog's Mineshafts Reimagined (overlaps YUNG's Better Mineshafts; see COMPATIBILITY.md).",
+        "pin": "JJc7pNHb"
+      },
+      {
+        "slug": "infinity-cave",
+        "why": "Infinity Cave: cave generation; mod wrapper as advised for Terralith users. Beta.",
+        "pin": "6XJT5mi4",
+        "allow": "beta"
+      },
+      {
+        "slug": "grim-kingdoms-lost-structures-ruins",
+        "why": "Grim Kingdoms: lost structures/ruins.",
+        "pin": "2HwCrjkl"
+      },
+      {
+        "slug": "decorative-food",
+        "why": "TW's Decorative Food: placeable food decor.",
+        "pin": "WktBUUVN"
+      }
+    ],
+    "content_ext": [
+      {
+        "slug": "bosses-of-mass-destruction-forge",
+        "why": "Bosses of Mass Destruction (existing NeoForge port).",
+        "pin": "snhDYBxP"
+      },
+      {
+        "slug": "spider-overhaul",
+        "why": "Spider Overhaul.",
+        "pin": "EjlpAlgq"
+      },
+      {
+        "slug": "fantasy_armor",
+        "why": "Fantasy Armor.",
+        "pin": "zp0jA17O"
+      },
+      {
+        "slug": "fantasy_weapons",
+        "why": "Fantasy Weapons.",
+        "pin": "KTq0GVPl"
+      },
+      {
+        "slug": "mod-primal",
+        "why": "Primal.",
+        "pin": "bjAno6mP"
+      },
+      {
+        "slug": "bossesrise",
+        "why": "Bosses' Rise.",
+        "pin": "lE9PF6Wp"
+      },
+      {
+        "slug": "wither-reincarnated",
+        "why": "Wither: Reincarnated.",
+        "pin": "6d4I4VPO"
+      },
+      {
+        "slug": "companions-mod",
+        "why": "Companions! (confirmed by user).",
+        "pin": "ZPnBgXjW"
+      },
+      {
+        "slug": "clavis",
+        "why": "Clavis: key-and-lock dungeon loot.",
+        "pin": "pncc8FpD"
+      },
+      {
+        "slug": "irons-simple-blood",
+        "why": "Iron's Simple Blood.",
+        "pin": "ay2cFXz0"
+      }
+    ],
+    "animation": [
+      {
+        "slug": "entity-model-features",
+        "why": "EMF: required for Fresh Animations (no OptiFine).",
+        "pin": "197m3VoU"
+      },
+      {
+        "slug": "entitytexturefeatures",
+        "why": "ETF: required for Fresh Animations and emissives.",
+        "pin": "1DVPB3a4"
+      }
     ]
   },
   "shaders": [
@@ -422,5 +697,52 @@
     "loot-beams-refork": "Apotheosis already draws rarity beams/particles for affix items; a second beam renderer duplicates them. Horizon finds use server-side pickup feedback instead.",
     "explorers-compass / natures-compass": "Point-to-anything compasses remove discovery. Clues come from exploration maps in loot and quest guidance instead.",
     "yungs-cave-biomes": "Adds cave biomes = a second biome source under Terralith's cave biomes."
-  }
+  },
+  "resourcepacks": [
+    {
+      "slug": "vvi",
+      "pin": "dYoh6GWk",
+      "why": "Vocal Villagers: villager voice sounds."
+    },
+    {
+      "slug": "fire-rekindled",
+      "pin": "WkrPuvYe",
+      "why": "Fire Rekindled: fire texture overhaul."
+    },
+    {
+      "slug": "animated-hearts",
+      "pin": "pBvCUtye",
+      "why": "Animated Hearts: HUD heart animation."
+    },
+    {
+      "slug": "fresh-animations",
+      "pin": "HC1XRKGD",
+      "why": "Fresh Animations base (EMF/ETF)."
+    },
+    {
+      "slug": "fresh-animations-extensions",
+      "pin": "zphVu6Oe",
+      "why": "Official FA extensions bundle; individual components NOT installed (duplicates)."
+    },
+    {
+      "slug": "fa-player-extension",
+      "pin": "Wj7NeGjP",
+      "why": "FA player animations."
+    },
+    {
+      "slug": "fresh-animations-player-compats",
+      "pin": "cQ48zoin",
+      "why": "Conditional FA player patches (Artifacts, Farmers Delight present)."
+    },
+    {
+      "slug": "freshly-modded",
+      "pin": "ck5iB4VE",
+      "why": "F.M.R.P: FA-style models for supported modded mobs."
+    },
+    {
+      "slug": "fluid-foolish",
+      "pin": "UAp4jRDk",
+      "why": "Required animation pack for Punchy Moves (separate from FA mob stack)."
+    }
+  ]
 }
