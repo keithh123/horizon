@@ -1,0 +1,14 @@
+{
+  "kind": "gradle",
+  "output": "item_landing_sound-1.0.2-neoforge.1.21.1.horizon1.jar",
+  "built_jar": "item_landing_sound-1.0.2-neoforge.1.21.1.horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "CC0-1.0",
+  "replaces_slug": "item-landing-sound",
+  "source": "https://modrinth.com/mod/item-landing-sound/version/cOUzpazV (jar; no public repository)",
+  "attribution": "Item Landing Sound by ExiledLizard635 (bundled LICENSE: CC0-1.0; metadata: MIT). Logic recovered from the published jar and re-implemented for NeoForge 1.21.1 by Project Horizon.",
+  "changes": "NeoForge client tick; client command registered once (upstream re-registered every tick). Client-only."
+}

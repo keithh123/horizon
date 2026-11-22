@@ -118,7 +118,9 @@ def set_resourcepacks(options: Path, packs):
     options.write_text(chr(10).join(lines) + chr(10))
 
 
-KNOWN_OLD = set()  # file names of resource packs shipped by earlier versions (none before 0.3.0)
+# file/<name> entries Horizon itself enabled at some point (pruned when no longer shipped; anything else the player
+# added is kept). FA Player Extension/Compats were enabled by 0.3.0 candidates before Punchy Moves ruled them out.
+KNOWN_OLD = {"file/FA+Player-v1.1.zip", "file/FA-Player-Compats-1.3.1-mc1.21.1.zip", "file/Freshly Modded 3.0.5.zip"}
 
 
 def env(m):

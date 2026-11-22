@@ -1,0 +1,18 @@
+{
+  "kind": "verbatim",
+  "output": "weatherglass-0.6.2-1.21.1-neoforge.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "PolyForm-Shield-1.0.0",
+  "replaces_slug": "CF:weather-glass",
+  "upstream": {
+    "page": "https://www.curseforge.com/minecraft/mc-mods/weather-glass/files/9613334",
+    "url": "https://www.curseforge.com/api/v1/mods/1757481/files/9613334/download",
+    "sha512": "5c95620c73512355103743625636d5f912aecd95619f4453fd501f6d2141b1067b6d46905e4c77707aadabc1ad39d229761973d44ff280ff36cde16eeb9e8c01",
+    "version": "0.6.2 (release) for 1.21.1 NeoForge"
+  },
+  "attribution": "Weather Glass by duffopuffo, PolyForm Shield 1.0.0 (license text ships inside the jar). CurseForge-only; shipped unmodified in client-overrides because the license permits redistribution with its notice.",
+  "changes": "None (verbatim). Audit listed 0.6.0 beta; 0.6.2 is now a release explicitly for 1.21.1 NeoForge (rechecked 2026-11-21)."
+}

@@ -18,6 +18,23 @@
       }
     },
     {
+      "name": "bettersmoke",
+      "file": "bettersmoke-0.1.2-neoforge.1.21.1.horizon1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": "better-smoke",
+      "upstream": "https://modrinth.com/mod/better-smoke/version/9It7IoUE (jar; no public repository)",
+      "size": 234058,
+      "hashes": {
+        "sha1": "1dd438e3fb13eefae6616a31d8668dc235d14583",
+        "sha512": "9c52a7700427a152efb8ceb51274bea5e608f5b1bb5051d52ebf32dd7b71197629df19458464c859cb41b3ee47f645e3c4063f840424a5fd2f9184b8e6a53cce"
+      }
+    },
+    {
       "name": "eatinganimation",
       "file": "eatinganimationid-1.9.72-neoforge.1.21.1.horizon1.jar",
       "kind": "gradle",
@@ -52,6 +69,23 @@
       }
     },
     {
+      "name": "itemlandingsound",
+      "file": "item_landing_sound-1.0.2-neoforge.1.21.1.horizon1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "CC0-1.0",
+      "replaces_slug": "item-landing-sound",
+      "upstream": "https://modrinth.com/mod/item-landing-sound/version/cOUzpazV (jar; no public repository)",
+      "size": 41278,
+      "hashes": {
+        "sha1": "249ad24c70359cd19328cb96f17472687ed232f9",
+        "sha512": "27c95a53843df7b6f34b71d07edb9ced2e3685907d7079fce3181ff9369f9703580961d42f61a94a0e54b7ee9970b83eab0fc623e844ff6b9d0544d46dd2f262"
+      }
+    },
+    {
       "name": "snowyleavesplus",
       "file": "snowyleavesplus-0.1.12-neoforge.1.21.1.horizon1.jar",
       "kind": "gradle",
@@ -66,6 +100,23 @@
       "hashes": {
         "sha1": "2cb6ee904e3c50f1ce19489ed0e0af3699d225f6",
         "sha512": "ebae0880773bbb19152813b3fd084a1ff711f115009b8a95d8abd3f16f9b3a7052b1d9df83e03bc298256634f4950278442372b7cbb1a9e908d0f63da3daba24"
+      }
+    },
+    {
+      "name": "weatherglass",
+      "file": "weatherglass-0.6.2-1.21.1-neoforge.jar",
+      "kind": "verbatim",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "PolyForm-Shield-1.0.0",
+      "replaces_slug": "CF:weather-glass",
+      "upstream": "https://www.curseforge.com/minecraft/mc-mods/weather-glass/files/9613334",
+      "size": 616874,
+      "hashes": {
+        "sha1": "3d62931b46a993bfdb58f99e3de1f11530dc5bc4",
+        "sha512": "5c95620c73512355103743625636d5f912aecd95619f4453fd501f6d2141b1067b6d46905e4c77707aadabc1ad39d229761973d44ff280ff36cde16eeb9e8c01"
       }
     }
   ]

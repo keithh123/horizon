@@ -13,6 +13,7 @@ Order (each step owns disjoint outputs, see docs/BUILDING.md):
   patch_configs      the config files listed in its EDITS (needs a launched dev instance; --no-configs skips)
   gen_profiles       profiles/shader_options.json
   gen_docs           docs/MODLIST.md
+  gen_checklist      docs/EXPANSION_CHECKLIST.md (audit + roster + lock + ports + manifests/validation.json)
 Then the whole pipeline runs a second time and every owned output is hashed before/after: any difference
 means a generator is not deterministic and the build fails.
 """
@@ -23,8 +24,8 @@ ROOT = Path(__file__).resolve().parent.parent
 LONG = chr(92) * 2 + '?' + chr(92)
 if os.name == "nt" and not str(ROOT).startswith(LONG):
     ROOT = Path(LONG + str(ROOT))
-OWNED_DIRS = ["datapacks", "kubejs", "config", "manifests", "profiles", "docs/LOOT_BUDGET.md", "docs/MODLIST.md"]
-SKIP = {"lock.json", "deps_report.json"}   # lock carries a date; resolve is network-dependent
+OWNED_DIRS = ["datapacks", "kubejs", "config", "manifests", "profiles", "docs/LOOT_BUDGET.md", "docs/MODLIST.md", "docs/EXPANSION_CHECKLIST.md"]
+SKIP = {"lock.json", "deps_report.json", "ports_lock.json"}   # lock carries a date; resolve is network-dependent
 
 
 def step(*args):
@@ -58,6 +59,7 @@ def pipeline(offline, configs):
         step("scripts/patch_configs.py")
     step("scripts/gen_profiles.py")
     step("scripts/gen_docs.py")
+    step("scripts/gen_checklist.py")
 
 
 def main():

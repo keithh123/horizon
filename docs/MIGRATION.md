@@ -43,3 +43,15 @@ sinks.
 
 Restore the world backup into the 0.1.0 instance. Do not open a world that has been played in 0.2.0 with 0.1.0:
 Lootr chests, trophies, tokens and Corpse entities would be lost (unknown blocks/items are removed on load).
+
+## 0.2.0 -> 0.3.0
+
+- Existing 0.2.0 worlds load (the test world was generated without the expansion and opened with it).
+- **New chunks only:** Streams Reflowing rivers, Grim Kingdoms, Homesteads, Moog's Mineshafts, Bosses of Mass
+  Destruction, Bosses' Rise, Companions and Spider Overhaul structures, Primal animals' biome spawns. Already generated
+  terrain keeps its old structures; explore new regions (or a new world) to find them.
+- SnowyLeavesPlus adds a `snowiness` property to vanilla leaves (default none): old saves load unchanged; removing the
+  mod later returns leaves to their normal state.
+- Not included on purpose: Infinity Cave and Blooming Biosphere would rewrite the overworld height/terrain of existing
+  saves (see docs/EXPANSION_CHECKLIST.md).
+- Back up worlds first; the update replaces pack-owned folders (kubejs data, quests) as before.

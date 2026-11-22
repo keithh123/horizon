@@ -1,0 +1,1820 @@
+{
+  "checked": "2026-11-21",
+  "target": "Minecraft 1.21.1 / NeoForge 21.1.267 / Java 21",
+  "horizon_version": "0.2.0",
+  "locked_mods": 116,
+  "scope": "Catalog and source/config inspection only. No installation, porting or runtime compatibility test. Native build means an exact target release is listed, not proof the entire combination works. Dependencies are declared metadata, not a resolved/tested selection.",
+  "rows": [
+    {
+      "requested": "Weather glass",
+      "slug": "CF:weather-glass",
+      "status": "Native build",
+      "notes": "0.6.0 beta NeoForge 1.21.1 is explicitly listed. Newer 0.6.2 exists elsewhere; use the exact target file. Test glass rendering with Iris and Particle Rain.",
+      "sources": [
+        "https://www.curseforge.com/minecraft/mc-mods/weather-glass/files/all"
+      ],
+      "version": "0.6.0 beta (NeoForge 1.21.1)",
+      "file": "",
+      "side": "",
+      "license": "",
+      "source_code": "",
+      "dependencies": [],
+      "project": "weather-glass",
+      "kind": "mod"
+    },
+    {
+      "requested": "punchy moves",
+      "slug": "punchymoves",
+      "status": "Native build",
+      "notes": "Third-person animations and camera. Requires a compatible animation resource pack such as Fluid & Foolish; the author says the mod ships without animations. Check Better Combat, spellcasting and other camera controllers.",
+      "sources": [
+        "https://modrinth.com/mod/punchymoves",
+        "https://modrinth.com/mod/punchymoves/version/8dHgPPh6"
+      ],
+      "version": "1.0.9b (beta; neoforge)",
+      "file": "punchy-moves-1.0.9b-neoforge-1.21.1.jar",
+      "side": "client: unknown; server: unknown",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "fQdwNxte",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Punchy! Moves",
+      "kind": "mod"
+    },
+    {
+      "requested": "cinematic interactions",
+      "slug": "CF:cinematic-interactions",
+      "status": "Native build",
+      "notes": "NeoForge Beta 1.21.1 0.18.30 is explicitly listed. Test workstation scenes with KubeJS-modified recipes, EMI/JEI and modded menus. Separate from Spatial GUI.",
+      "sources": [
+        "https://www.curseforge.com/minecraft/mc-mods/cinematic-interactions/files/all"
+      ],
+      "version": "0.18.30 beta (NeoForge 1.21.1)",
+      "file": "",
+      "side": "",
+      "license": "",
+      "source_code": "",
+      "dependencies": [],
+      "project": "cinematic-interactions",
+      "kind": "mod"
+    },
+    {
+      "requested": "visuality",
+      "slug": "visuality-forge",
+      "status": "Existing port",
+      "notes": "Original Visuality is Fabric/Quilt; Visuality: Reforged has native NeoForge 1.21.1 files. Overlaps Subtle Effects, Effectual and other particles.",
+      "sources": [
+        "https://modrinth.com/mod/visuality-forge",
+        "https://modrinth.com/mod/visuality-forge/version/kOdevgPm"
+      ],
+      "version": "3.0.0 (release; neoforge)",
+      "file": "visuality-forge-3.0.0.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/DragonsPlusMinecraft/VisualityReforged",
+      "dependencies": [],
+      "project": "Visuality: Reforged",
+      "kind": "mod"
+    },
+    {
+      "requested": "better clouds",
+      "slug": "better-clouds",
+      "status": "Native build",
+      "notes": "Author lists Iris and Complementary support. Configure which system renders clouds; verify the pinned shader/LOD combination and GPU cost.",
+      "sources": [
+        "https://modrinth.com/mod/better-clouds",
+        "https://modrinth.com/mod/better-clouds/version/UvRCtZxT"
+      ],
+      "version": "1.13.11+1.21.1-neoforge-release (release; neoforge)",
+      "file": "better-clouds-1.13.11+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MPL-2.0",
+      "source_code": "https://github.com/Qendolin/better-clouds",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "AANobbMI",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "YL57xq9U",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "Better Clouds",
+      "kind": "mod"
+    },
+    {
+      "requested": "snowy leaves plus",
+      "slug": "snowyleavesplus",
+      "status": "Port needed",
+      "notes": "1.21.1 files are Fabric/Quilt; no exact NeoForge build found. Requires loader port. Check interaction with shader foliage and other leaf replacements.",
+      "sources": [
+        "https://modrinth.com/mod/snowyleavesplus",
+        "https://modrinth.com/mod/snowyleavesplus/version/52o5JfvA"
+      ],
+      "version": "mc1.21.1-0.1.12 (beta; fabric,quilt)",
+      "file": "snowyleavesplus-mc1.21.1.jar",
+      "side": "client: required; server: required",
+      "license": "MPL-2.0",
+      "source_code": "https://github.com/theRookieCoder/SnowyLeavesPlus",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "SnowyLeavesPlus",
+      "kind": "mod"
+    },
+    {
+      "requested": "particle rain",
+      "slug": "particle-rain",
+      "status": "Already in Horizon",
+      "notes": "Already in the current lock. Do not install another copy; coordinate weather rendering with other requested effects.",
+      "sources": [
+        "https://modrinth.com/mod/particle-rain",
+        "https://modrinth.com/mod/particle-rain/version/DW2m22Qi"
+      ],
+      "version": "v4.0.4+1.21.1-neoforge (release; neoforge)",
+      "file": "particlerain-4.0.4+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/PigCart/particle-rain",
+      "dependencies": [],
+      "project": "Particle Rain",
+      "kind": "mod",
+      "current_horizon_version": "v4.0.4+1.21.1-neoforge"
+    },
+    {
+      "requested": "falling tree",
+      "slug": "fallingtree",
+      "status": "Native build",
+      "notes": "Likely FallingTree by Rakambda. Panda's Falling Trees also has a native target build if the desired effect is a physical falling-tree animation; these are different projects. Select one.",
+      "sources": [
+        "https://modrinth.com/mod/fallingtree",
+        "https://modrinth.com/mod/fallingtree/version/wxGXaJMA"
+      ],
+      "version": "1.21.1-1.21.1.11 (release; fabric,forge,neoforge)",
+      "file": "FallingTree-1.21.1-1.21.1.11.jar",
+      "side": "client: optional; server: required",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/RakambdaOrg/FallingTree",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "mOgUt4GM",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "FallingTree",
+      "kind": "mod"
+    },
+    {
+      "requested": "cozy critters and creepy crawlies",
+      "slug": "cosy-critters",
+      "status": "Native build",
+      "notes": "Correct title is Cosy Critters & Creepy Crawlies. Client ambient creatures; inspect optional Hat Man feature and particle budgets rather than assuming all additions are ordinary animals.",
+      "sources": [
+        "https://modrinth.com/mod/cosy-critters",
+        "https://modrinth.com/mod/cosy-critters/version/QnJ9WVDV"
+      ],
+      "version": "v0.3.3+1.21.1-neoforge (release; neoforge)",
+      "file": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/PigCart/cosy-critters",
+      "dependencies": [],
+      "project": "Cosy Critters & Creepy Crawlies",
+      "kind": "mod"
+    },
+    {
+      "requested": "interactive foliage",
+      "slug": "mc2-interactive-foliage",
+      "status": "Native build",
+      "notes": "Client foliage movement. Test against Complementary waving plants, leaf models and culling to avoid double movement.",
+      "sources": [
+        "https://modrinth.com/mod/mc2-interactive-foliage",
+        "https://modrinth.com/mod/mc2-interactive-foliage/version/oKmXJIL5"
+      ],
+      "version": "2.2.1-neoforge+1.21.1 (release; neoforge)",
+      "file": "mc2_interactivefoliage-2.2.1-neoforge+1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "Gj6Yce3v",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Interactive Foliage",
+      "kind": "mod"
+    },
+    {
+      "requested": "atmospherics",
+      "slug": "atmospherics",
+      "status": "Native build",
+      "notes": "Matched ATMOSPHERICS, not Create: Atmospherics or Atmospheric. Biome sky/fog/cloud controls need testing with Iris, Complementary and Voxy.",
+      "sources": [
+        "https://modrinth.com/mod/atmospherics",
+        "https://modrinth.com/mod/atmospherics/version/yJJkB7Qc"
+      ],
+      "version": "2.6.5.2 (release; neoforge)",
+      "file": "atmospherics-2.6.5-mc-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "ATMOSPHERICS",
+      "kind": "mod"
+    },
+    {
+      "requested": "TW’s decorative food",
+      "slug": "decorative-food",
+      "status": "Native build",
+      "notes": "Exact NeoForge 1.21.1 file exists. Both-side content; validate Farmer's Delight food coverage, recipes and placed-food behavior.",
+      "sources": [
+        "https://modrinth.com/mod/decorative-food",
+        "https://modrinth.com/mod/decorative-food/version/WktBUUVN"
+      ],
+      "version": "1.21.1-2.0.1-neoforge (release; neoforge)",
+      "file": "tw-decorative-food-1.21.1-2.0.1-neoforge.jar",
+      "side": "client: required; server: required",
+      "license": "MIT",
+      "source_code": "https://github.com/666daji/Decorative-Food",
+      "dependencies": [],
+      "project": "TW‘s  Decorative Food",
+      "kind": "mod"
+    },
+    {
+      "requested": "fancy world animations",
+      "slug": "fwa",
+      "status": "Native build",
+      "notes": "Block animations include lantern motion. Disable duplicate lantern animation if Swinging Lanterns is also used; test custom blocks and Iris.",
+      "sources": [
+        "https://modrinth.com/mod/fwa",
+        "https://modrinth.com/mod/fwa/version/o7bsv488"
+      ],
+      "version": "1.3.8 (release; neoforge)",
+      "file": "fwa+1.21.1-neoforge-1.3.8.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/maDU59/FancyWorldAnimations",
+      "dependencies": [],
+      "project": "Fancy World Animations [FWA]",
+      "kind": "mod"
+    },
+    {
+      "requested": "grand teleport (gtp)",
+      "slug": "grandteleport-neoforge",
+      "status": "Existing port",
+      "notes": "Original gtp is Fabric. GrandTeleport NeoForge provides a 1.21.1 port. Validate Waystones, portals and dimension changes; avoid competing camera transitions.",
+      "sources": [
+        "https://modrinth.com/mod/grandteleport-neoforge",
+        "https://modrinth.com/mod/grandteleport-neoforge/version/c8G8d2Nt"
+      ],
+      "version": "neoforge-1.0.1 (release; neoforge)",
+      "file": "GrandTeleport-NeoForge-1.21.1-neoforge-1.0.1.jar",
+      "side": "client: required; server: optional",
+      "license": "MIT",
+      "source_code": "https://github.com/f65q4fffs/GrandTeleport-NeoForge",
+      "dependencies": [],
+      "project": "GrandTeleport NeoForge",
+      "kind": "mod"
+    },
+    {
+      "requested": "visual overhaul",
+      "slug": "visual-overhaul",
+      "status": "Native build",
+      "notes": "Exact NeoForge build exists. Check overlap with FWA, item animation and shader effects.",
+      "sources": [
+        "https://modrinth.com/mod/visual-overhaul",
+        "https://modrinth.com/mod/visual-overhaul/version/TMOdQHDi"
+      ],
+      "version": "5.2.1-neoforge (release; neoforge)",
+      "file": "visualoverhaul-neoforge-5.2.1.jar",
+      "side": "client: optional; server: optional",
+      "license": "MIT",
+      "source_code": "https://github.com/TeamMidnightDust/VisualOverhaul",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "codAaoxh",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Visual Overhaul",
+      "kind": "mod"
+    },
+    {
+      "requested": "inventory particles",
+      "slug": "inventory-particles",
+      "status": "Native build",
+      "notes": "Check effects inside EMI/JEI and Sophisticated inventories; bound particle cost on large item lists.",
+      "sources": [
+        "https://modrinth.com/mod/inventory-particles",
+        "https://modrinth.com/mod/inventory-particles/version/qixkxVRf"
+      ],
+      "version": "4.0.0+1.21.1+neoforge (release; neoforge)",
+      "file": "InventoryParticles-4.0.0+1.21.1+neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "CC-BY-ND-4.0",
+      "source_code": "https://github.com/LopyMine/Inventory-Particles",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "PLAGcSFJ",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "ffLDUGbm",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "FCzmUKBr",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "Inventory Particles",
+      "kind": "mod"
+    },
+    {
+      "requested": "blooming biosphere",
+      "slug": "blooming-biosphere",
+      "status": "Datapack available",
+      "notes": "1.21.1 datapack exists even though the wrapped mod is not tagged NeoForge for this version. This is a full biome overhaul, not just decorative particles. Requires a deliberate Terralith/Tectonic compatibility decision and exact-version compatibility data pack; do not blindly stack.",
+      "sources": [
+        "https://modrinth.com/mod/blooming-biosphere",
+        "https://modrinth.com/mod/blooming-biosphere/version/WcsKmqxW"
+      ],
+      "version": "1.1.6 (release; fabric,forge,quilt)",
+      "file": "blooming-biospshere-v1.1.6.jar",
+      "side": "client: optional; server: required",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Blooming Biosphere",
+      "kind": "mod"
+    },
+    {
+      "requested": "streams reflowing",
+      "slug": "streams-reflowing",
+      "status": "Native build",
+      "notes": "Native build exists; author describes terrain-mod compatibility. Still test real Terralith/Tectonic terrain, structure banks, worldgen cost and Voxy ingestion. New terrain changes need new chunks.",
+      "sources": [
+        "https://modrinth.com/mod/streams-reflowing",
+        "https://modrinth.com/mod/streams-reflowing/version/9Phpmmh2"
+      ],
+      "version": "2.17.5 (release; neoforge)",
+      "file": "StreamsReflowing-1.21.1-neoforge-2.17.5.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Streams Reflowing",
+      "kind": "mod"
+    },
+    {
+      "requested": "wet sand",
+      "slug": "wet-sand",
+      "status": "Port needed",
+      "notes": "Only Fabric releases found and none tagged 1.21.1. Needs a version backport plus NeoForge port. The dedicated-server-fix fork also lacks the exact target. GPL source link is available; confirm license terms for any adaptation.",
+      "sources": [
+        "https://modrinth.com/mod/wet-sand"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: required",
+      "license": "GPL-3.0-only",
+      "source_code": "https://github.com/HearthianDev/wet-sand",
+      "dependencies": [],
+      "project": "Wet sand",
+      "kind": "mod"
+    },
+    {
+      "requested": "soft leaves",
+      "slug": "soft-leaves",
+      "status": "Port needed",
+      "notes": "NeoForge releases exist for newer versions, but none for 1.21.1. Backport needed; changes leaf collision/gameplay, not merely appearance. Source link exists but listing is All Rights Reserved.",
+      "sources": [
+        "https://modrinth.com/mod/soft-leaves"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/payangar-dev/soft-leaves",
+      "dependencies": [],
+      "project": "Soft Leaves",
+      "kind": "mod"
+    },
+    {
+      "requested": "smooth loading screen",
+      "slug": "smooth-loading-screen",
+      "status": "Native build",
+      "notes": "Native build exists. Test world transitions alongside Last World Panorama, Respawn Recap and camera mods.",
+      "sources": [
+        "https://modrinth.com/mod/smooth-loading-screen",
+        "https://modrinth.com/mod/smooth-loading-screen/version/ub5aGHzh"
+      ],
+      "version": "1.0.12+1.21.1-neoforge (release; neoforge)",
+      "file": "smoothloadingscreen-1.0.12+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Smooth Loading Screen",
+      "kind": "mod"
+    },
+    {
+      "requested": "last world panorama",
+      "slug": "last-world-panorama",
+      "status": "Native build",
+      "notes": "Native build exists. Client panorama capture; test shader capture and load/save overhead.",
+      "sources": [
+        "https://modrinth.com/mod/last-world-panorama",
+        "https://modrinth.com/mod/last-world-panorama/version/xVX9iy6y"
+      ],
+      "version": "v1.0 (release; neoforge)",
+      "file": "last-world-panorama-neoforge-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Last World Panorama",
+      "kind": "mod"
+    },
+    {
+      "requested": "particle interactions",
+      "slug": "particle-interactions",
+      "status": "Native build",
+      "notes": "Original project now has a native target build. The old Forgified project is unnecessary for this target. Disable overlapping action particles where needed.",
+      "sources": [
+        "https://modrinth.com/mod/particle-interactions",
+        "https://modrinth.com/mod/particle-interactions/version/Js4y2r4d"
+      ],
+      "version": "0.4.1 (beta; neoforge)",
+      "file": "eg_particle_interactions-0.4.1-neoforge-mc1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "CC-BY-NC-4.0",
+      "source_code": "https://github.com/Enchanted-Games/block-place-particles",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Particle Interactions",
+      "kind": "mod"
+    },
+    {
+      "requested": "better smoke",
+      "slug": "better-smoke",
+      "status": "Port needed",
+      "notes": "Matched recent Better Smoke (campfire smoke), not old bettersmoke. Exact target is Fabric only. Native feature overlap in Subtle Effects may avoid a port, but is not the same mod.",
+      "sources": [
+        "https://modrinth.com/mod/better-smoke",
+        "https://modrinth.com/mod/better-smoke/version/9It7IoUE"
+      ],
+      "version": "0.1.2+1.21-1.21.8 (release; fabric)",
+      "file": "bettersmoke-0.1.2+1.21-1.21.8.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Better Smoke",
+      "kind": "mod"
+    },
+    {
+      "requested": "footprint particle",
+      "slug": "footprintparticle",
+      "status": "Native build",
+      "notes": "Exact Footprint Particle project has native target files. Do not confuse with footprint-particles. Imprint is another native alternative, not an additional required mod.",
+      "sources": [
+        "https://modrinth.com/mod/footprintparticle",
+        "https://modrinth.com/mod/footprintparticle/version/2V0cTg06"
+      ],
+      "version": "0.7.1+1.21.1-neoforge (release; neoforge)",
+      "file": "footprintparticle-0.7.1+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "GPL-3.0-or-later",
+      "source_code": "https://github.com/Rivmun/FootprintParticle",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "t5W7Jfwy",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "FootprintParticle",
+      "kind": "mod"
+    },
+    {
+      "requested": "Spatial GUI (confirmed)",
+      "slug": "spatial-gui",
+      "status": "Native build",
+      "notes": "Confirmed by user: Spatial GUI (3D interfaces), with NeoForge 1.21.1. Requires YACL; test EMI/JEI, AE2, Heracles and camera ownership.",
+      "sources": [
+        "https://modrinth.com/mod/spatial-gui",
+        "https://modrinth.com/mod/spatial-gui/version/wSnOpypP"
+      ],
+      "version": "1.12.0-neoforge+1.21.1 (release; neoforge)",
+      "file": "spatial-gui-1.12.0+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/tastytrash/Spatial-GUI",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Spatial GUI",
+      "kind": "mod"
+    },
+    {
+      "requested": "satisfying buttons",
+      "slug": "satisfying-buttons",
+      "status": "Native build",
+      "notes": "Native build exists. Check duplicate click sounds/animations with Sounds and other GUI mods.",
+      "sources": [
+        "https://modrinth.com/mod/satisfying-buttons",
+        "https://modrinth.com/mod/satisfying-buttons/version/EssE56Wf"
+      ],
+      "version": "1.1.2 (release; neoforge)",
+      "file": "satisfying_buttons-neoforge-1.1.2-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-Tonis-MMC-License",
+      "source_code": "https://github.com/nthxny/SatisfyingButtons",
+      "dependencies": [],
+      "project": "Satisfying Buttons",
+      "kind": "mod"
+    },
+    {
+      "requested": "cool rain",
+      "slug": "cool-rain-reforged",
+      "status": "Existing port",
+      "notes": "Original Cool Rain is Fabric. Cool Rain Reforged has native NeoForge 1.21.1. Rain audio overlaps Sounds, AmbientSounds and Particle Rain effects.",
+      "sources": [
+        "https://modrinth.com/mod/cool-rain-reforged",
+        "https://modrinth.com/mod/cool-rain-reforged/version/SwSSfJQQ"
+      ],
+      "version": "1.0.2 (release; neoforge)",
+      "file": "coolrain-1.21.1-NeoForge-1.0.2.jar",
+      "side": "client: unknown; server: unknown",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/Leclowndu93150/Cool-Rain",
+      "dependencies": [],
+      "project": "Cool Rain Reforged",
+      "kind": "mod"
+    },
+    {
+      "requested": "amor sound tweak updated",
+      "slug": "armour-sound-tweak-updated",
+      "status": "Port needed",
+      "notes": "Correct title Armour Sound Tweak Updated. Exact 1.21.1 files are Fabric/Quilt. Loader port needed unless Sounds already supplies the desired equip feedback.",
+      "sources": [
+        "https://modrinth.com/mod/armour-sound-tweak-updated",
+        "https://modrinth.com/mod/armour-sound-tweak-updated/version/oKQBywyE"
+      ],
+      "version": "1.0.2-fabric-1.21 (release; fabric,quilt)",
+      "file": "armour-sound-tweak-updated-1.0.2-1.21.jar",
+      "side": "client: required; server: unsupported",
+      "license": "Apache-2.0",
+      "source_code": "https://github.com/yourlocalfinancialadvisor/ArmourSoundTweakUpdated",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "P7dR8mSH",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "codAaoxh",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "mOgUt4GM",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "Armour Sound Tweak Updated",
+      "kind": "mod"
+    },
+    {
+      "requested": "item landing sound",
+      "slug": "item-landing-sound",
+      "status": "Port needed",
+      "notes": "Only Fabric files found, starting with newer versions than 1.21.1. Requires version backport and NeoForge port; check equivalent Sounds behavior first.",
+      "sources": [
+        "https://modrinth.com/mod/item-landing-sound"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Item Landing Sound",
+      "kind": "mod"
+    },
+    {
+      "requested": "sounds",
+      "slug": "sound",
+      "status": "Native build",
+      "notes": "Matched Sounds by IMB11, slug sound. Native target build exists. This is the base for More Sounds; coordinate inventory/equip/landing audio instead of layering duplicate sounds.",
+      "sources": [
+        "https://modrinth.com/mod/sound",
+        "https://modrinth.com/mod/sound/version/kti7i9SG"
+      ],
+      "version": "2.4.22+lts+1.21.1-neoforge (release; neoforge)",
+      "file": "sounds-2.4.22+lts+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/IMB11-Mods/JavaEditionMods/tree/main/sounds",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "SKW62Pht",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": "qYqVf5jP",
+          "project_id": "SNVQ2c0g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Sounds",
+      "kind": "mod"
+    },
+    {
+      "requested": "more sounds",
+      "slug": "more-sounds",
+      "status": "Native build",
+      "notes": "Addon to Sounds, not a replacement. Native target file exists; ensure its required Sounds version and modded sound coverage are satisfied.",
+      "sources": [
+        "https://modrinth.com/mod/more-sounds",
+        "https://modrinth.com/mod/more-sounds/version/s0FVNDXY"
+      ],
+      "version": "1.21.x-0.3.0-neoforge (beta; neoforge)",
+      "file": "more_sounds-1.21.x-0.3.0-beta.jar",
+      "side": "client: required; server: required",
+      "license": "GPL-3.0-only",
+      "source_code": "https://github.com/DVOA1/More-Sounds",
+      "dependencies": [],
+      "project": "More Sounds",
+      "kind": "mod"
+    },
+    {
+      "requested": "subtle effects",
+      "slug": "subtle-effects",
+      "status": "Already in Horizon",
+      "notes": "Already in 0.2.0 lock at 1.15.3. Central overlap point for particles and sounds; tune it before adding all other effects.",
+      "sources": [
+        "https://modrinth.com/mod/subtle-effects",
+        "https://modrinth.com/mod/subtle-effects/version/1Cj3QYAu"
+      ],
+      "version": "1.15.3 (release; neoforge)",
+      "file": "SubtleEffects-neoforge-1.21.1-1.15.3.jar",
+      "side": "client: required; server: optional",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/MincraftEinstein/SubtleEffects",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "hYykXjDp",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Subtle Effects",
+      "kind": "mod",
+      "current_horizon_version": "1.15.3"
+    },
+    {
+      "requested": "vocal villagers",
+      "slug": "vvi",
+      "status": "Resource pack available",
+      "notes": "Resource pack, not a loader-specific mod. 1.21.1 pack available. Sound overrides can mask other villager audio packs; choose priority.",
+      "sources": [
+        "https://modrinth.com/resourcepack/vvi",
+        "https://modrinth.com/resourcepack/vvi/version/dYoh6GWk"
+      ],
+      "version": "1.5 (release; minecraft)",
+      "file": "§a§lVocal Villagers §r§71.5.zip",
+      "side": "client: required; server: unsupported",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Vocal Villagers",
+      "kind": "resourcepack"
+    },
+    {
+      "requested": "fresh n’ musical",
+      "slug": "",
+      "status": "Excluded by user",
+      "notes": "User explicitly removed Fresh n’ Musical from scope; do not install or port it.",
+      "sources": [
+        "https://www.youtube.com/watch?v=eE5jDVFYse4"
+      ],
+      "version": "",
+      "file": "",
+      "side": "",
+      "license": "",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Exact project unresolved",
+      "kind": "unresolved"
+    },
+    {
+      "requested": "sound controller",
+      "slug": "sound-controller",
+      "status": "Native build",
+      "notes": "Native target build exists. Useful for tuning overlap, but it does not itself resolve duplicate sound events.",
+      "sources": [
+        "https://modrinth.com/mod/sound-controller",
+        "https://modrinth.com/mod/sound-controller/version/3TaQzJJO"
+      ],
+      "version": "1.4.0-mc1.21.1 (release; neoforge)",
+      "file": "soundcontroller-neoforge-1.4.0-mc1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/BVengo/sound-controller",
+      "dependencies": [],
+      "project": "Sound Controller",
+      "kind": "mod"
+    },
+    {
+      "requested": "cave dust",
+      "slug": "cave-dust-rethinking",
+      "status": "Existing port",
+      "notes": "Original Cave Dust is Fabric. Cave Dust Rethinking has NeoForge 1.21.1. Overlaps cave ambient particles in other requested effects.",
+      "sources": [
+        "https://modrinth.com/mod/cave-dust-rethinking",
+        "https://modrinth.com/mod/cave-dust-rethinking/version/lPnsGznY"
+      ],
+      "version": "3.4.0+1.21.1-neoforge (release; neoforge)",
+      "file": "cave_dust_rethinking-3.4.0+1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MPL-2.0",
+      "source_code": "https://github.com/Toffiks/cave_dust_rethinking",
+      "dependencies": [],
+      "project": "Cave Dust Rethinking",
+      "kind": "mod"
+    },
+    {
+      "requested": "auto third person",
+      "slug": "auto-third-person",
+      "status": "Native build",
+      "notes": "Native target build exists. Competes with Punchy Moves, Spatial GUI and other camera switching; define action priorities.",
+      "sources": [
+        "https://modrinth.com/mod/auto-third-person",
+        "https://modrinth.com/mod/auto-third-person/version/o2kINZoC"
+      ],
+      "version": "2.2-neo-1.21.1 (release; neoforge)",
+      "file": "auto_third_person-neo-1.21.1-2.2.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LGPL-3.0-or-later",
+      "source_code": "https://github.com/quat1024/AutoThirdPerson",
+      "dependencies": [],
+      "project": "Auto Third Person",
+      "kind": "mod"
+    },
+    {
+      "requested": "advancement plaques",
+      "slug": "advancement-plaques",
+      "status": "Native build",
+      "notes": "Native target build exists. Check dependency versions and UI coexistence with Heracles notifications.",
+      "sources": [
+        "https://modrinth.com/mod/advancement-plaques",
+        "https://modrinth.com/mod/advancement-plaques/version/OWylG33I"
+      ],
+      "version": "1.6.8 (release; neoforge)",
+      "file": "AdvancementPlaques-1.21.1-neoforge-1.6.8.jar",
+      "side": "client: required; server: unsupported",
+      "license": "CC-BY-NC-ND-4.0",
+      "source_code": "https://github.com/AHilyard/AdvancementPlaques/",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1OE8wbN0",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "5faXoLqX",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Advancement Plaques",
+      "kind": "mod"
+    },
+    {
+      "requested": "eating animation",
+      "slug": "eating-animation",
+      "status": "Target uncertain",
+      "notes": "Original mod is Fabric on 1.21.1. Existing Eating Animations NeoForge port is tagged 1.21, not 1.21.1: candidate for metadata/jar validation and launch test, not proof a new code port is required. Test against Punchy/Cinematic Interactions.",
+      "sources": [
+        "https://modrinth.com/mod/eating-animation",
+        "https://modrinth.com/mod/eating-animation/version/KWZCioh0"
+      ],
+      "version": "1.9.72 (release; fabric)",
+      "file": "eating-animation-1.21+1.9.72.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/Theoness1/EatingAnimation",
+      "dependencies": [],
+      "project": "Eating Animation",
+      "kind": "mod"
+    },
+    {
+      "requested": "clear despawn",
+      "slug": "cleardespawn-reborn",
+      "status": "Existing port",
+      "notes": "ClearDespawn Reborn provides native NeoForge 1.21.1. Blinking is visual only; check shader rendering and custom item effects.",
+      "sources": [
+        "https://modrinth.com/mod/cleardespawn-reborn",
+        "https://modrinth.com/mod/cleardespawn-reborn/version/IFOUpgMy"
+      ],
+      "version": "1.2.0+neoforge (release; neoforge)",
+      "file": "cleardespawn-reborn-1.2.0+mc1.21.1-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "",
+      "dependencies": [],
+      "project": "ClearDespawn Reborn",
+      "kind": "mod"
+    },
+    {
+      "requested": "perception",
+      "slug": "perception",
+      "status": "Native build",
+      "notes": "Matched Octo Studios' Perception. Native target build exists. Inspect dependencies and overlap with Subtle Effects and Effectual.",
+      "sources": [
+        "https://modrinth.com/mod/perception",
+        "https://modrinth.com/mod/perception/version/W5IQteYO"
+      ],
+      "version": "0.2.1 (release; neoforge)",
+      "file": "Perception-NEOFORGE-0.2.1+1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/Octo-Studios/perception",
+      "dependencies": [],
+      "project": "Perception",
+      "kind": "mod"
+    },
+    {
+      "requested": "fresh animations",
+      "slug": "fresh-animations",
+      "status": "Resource pack available",
+      "notes": "Resource pack with exact 1.21.1-compatible release. Needs compatible EMF and ETF on NeoForge, not OptiFine. See dedicated animation-set audit.",
+      "sources": [
+        "https://modrinth.com/resourcepack/fresh-animations",
+        "https://modrinth.com/resourcepack/fresh-animations/version/HC1XRKGD"
+      ],
+      "version": "1.11.2 (release; minecraft)",
+      "file": "FreshAnimations_v1.11.2_1.20+.zip",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-See-Terms-of-Use-in-Description",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Fresh Animations",
+      "kind": "resourcepack"
+    },
+    {
+      "requested": "legendary tooltips",
+      "slug": "legendary-tooltips",
+      "status": "Native build",
+      "notes": "Native target build exists. Check Iceberg/other declared dependencies and interaction with Apotheosis rarity effects, Simply Tooltips and EMI/JEI tooltips.",
+      "sources": [
+        "https://modrinth.com/mod/legendary-tooltips",
+        "https://modrinth.com/mod/legendary-tooltips/version/BabRJO04"
+      ],
+      "version": "1.5.5 (release; neoforge)",
+      "file": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
+      "side": "client: required; server: unsupported",
+      "license": "CC-BY-NC-ND-4.0",
+      "source_code": "https://github.com/AHilyard/LegendaryTooltips/",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "5faXoLqX",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "1OE8wbN0",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Legendary Tooltips",
+      "kind": "mod"
+    },
+    {
+      "requested": "homesteads villager expansion",
+      "slug": "homesteads",
+      "status": "Native build",
+      "notes": "Native build exists. Structure/villager content; check CTOV, Towns and Towers, professions, biome tags and structure density.",
+      "sources": [
+        "https://modrinth.com/mod/homesteads",
+        "https://modrinth.com/mod/homesteads/version/cLqsoOGy"
+      ],
+      "version": "3.0.0 (release; neoforge)",
+      "file": "homesteads-3.0.0-for-neoforge-1.21.1.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Homesteads - Villager Expansion & New Professions",
+      "kind": "mod"
+    },
+    {
+      "requested": "seamless sleep",
+      "slug": "seamless-sleep",
+      "status": "Native build",
+      "notes": "Native build exists. Sleep/time transition: test multiplayer sleep voting, dimension rules and interaction with weather, camera and shader transitions.",
+      "sources": [
+        "https://modrinth.com/mod/seamless-sleep",
+        "https://modrinth.com/mod/seamless-sleep/version/Lw02ZJke"
+      ],
+      "version": "neoforge-1.21+1.21.1-2.5.3 (release; neoforge)",
+      "file": "seamlesssleep-neoforge-1.21-2.5.3.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/GabrielFl4/Seamless-Sleep-MultiLoader",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Seamless Sleep",
+      "kind": "mod"
+    },
+    {
+      "requested": "windy",
+      "slug": "windy",
+      "status": "Native build",
+      "notes": "Native target build exists. Bound ambient particle count; distinguish particles from shader foliage movement.",
+      "sources": [
+        "https://modrinth.com/mod/windy",
+        "https://modrinth.com/mod/windy/version/xcBfBf8H"
+      ],
+      "version": "1.1.1+1.21-neoforge (release; neoforge)",
+      "file": "windy-1.1.1+1.21-neoforge.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/BonfireMC-Studios/Windy",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1eAoo2KR",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Windy",
+      "kind": "mod"
+    },
+    {
+      "requested": "effectual",
+      "slug": "effectual",
+      "status": "Native build",
+      "notes": "Native target build exists. Atmospheric particles overlap Visuality, Subtle Effects, Perception and Cave Dust.",
+      "sources": [
+        "https://modrinth.com/mod/effectual",
+        "https://modrinth.com/mod/effectual/version/BM24IMvt"
+      ],
+      "version": "1.4.2-1.21.1 (release; neoforge)",
+      "file": "effectual-neoforge-1.4.2-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/iMeeTake/Effectual",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "lhGA9TYQ",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "sBn7rVvc",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Effectual",
+      "kind": "mod"
+    },
+    {
+      "requested": "actually 3d stuff",
+      "slug": "actually-3d-stuff",
+      "status": "Pack adaptation needed",
+      "notes": "Only 1.21.9+ releases found. Resource/model backport needed; author targets Hold My Items, whose 1.21.1 build found here is Fabric only. Static-model adaptation may be feasible, but full intended behavior is not confirmed on NeoForge.",
+      "sources": [
+        "https://modrinth.com/resourcepack/actually-3d-stuff"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Actually 3D Stuff",
+      "kind": "resourcepack"
+    },
+    {
+      "requested": "fire rekindled",
+      "slug": "fire-rekindled",
+      "status": "Resource pack available",
+      "notes": "Resource pack has a 1.21.1-compatible release. PBR/emissive behavior depends on shader settings. CTM add-on is separate and conditional; do not assume a texture pack requires a loader port.",
+      "sources": [
+        "https://modrinth.com/resourcepack/fire-rekindled",
+        "https://modrinth.com/resourcepack/fire-rekindled/version/WkrPuvYe"
+      ],
+      "version": "0.21 (release; minecraft)",
+      "file": "Fire_Rekindled.zip",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/Tectato/Fire_Rekindled",
+      "dependencies": [],
+      "project": "Fire Rekindled",
+      "kind": "resourcepack"
+    },
+    {
+      "requested": "swinging lanterns",
+      "slug": "swinging-lanterns",
+      "status": "Native build",
+      "notes": "Native target build exists. Overlap with FWA lantern animation; choose one implementation per block.",
+      "sources": [
+        "https://modrinth.com/mod/swinging-lanterns",
+        "https://modrinth.com/mod/swinging-lanterns/version/wKAcUxnv"
+      ],
+      "version": "1.21.1-2.1.1 (release; neoforge)",
+      "file": "swinginglanterns-neoforge-1.21.1-2.1.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Swinging Lanterns",
+      "kind": "mod"
+    },
+    {
+      "requested": "bosses of mass destruction",
+      "slug": "bosses-of-mass-destruction-forge",
+      "status": "Existing port",
+      "notes": "Original is Fabric. Existing Forge/NeoForge port includes NeoForge 1.21.1. Test boss spawning/structures, loot tiers, spells and dependencies; this avoids a new full port.",
+      "sources": [
+        "https://modrinth.com/mod/bosses-of-mass-destruction-forge",
+        "https://modrinth.com/mod/bosses-of-mass-destruction-forge/version/snhDYBxP"
+      ],
+      "version": "1.3.3 (release; neoforge)",
+      "file": "BOMD-NeoForge-1.21-1.3.3.jar",
+      "side": "client: required; server: required",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "8BmcQJ2H",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "GkIc6rRo",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Bosses of Mass Destruction Forge",
+      "kind": "mod"
+    },
+    {
+      "requested": "iron’s simple blood",
+      "slug": "irons-simple-blood",
+      "status": "Native build",
+      "notes": "Native target build exists. Check particles and custom entity models against Fresh Animations/EMF and other combat feedback.",
+      "sources": [
+        "https://modrinth.com/mod/irons-simple-blood",
+        "https://modrinth.com/mod/irons-simple-blood/version/ay2cFXz0"
+      ],
+      "version": "1.21.1-1.0.5 (release; neoforge)",
+      "file": "simpleblood-1.21.1-1.0.5.jar",
+      "side": "client: required; server: required",
+      "license": "MIT",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Iron's Simple Blood",
+      "kind": "mod"
+    },
+    {
+      "requested": "spider overhaul",
+      "slug": "spider-overhaul",
+      "status": "Native build",
+      "notes": "Native target build exists. High-priority model/animation check with FA Spiders and dismemberment; version support does not establish that both can control the same spider renderer.",
+      "sources": [
+        "https://modrinth.com/mod/spider-overhaul",
+        "https://modrinth.com/mod/spider-overhaul/version/EjlpAlgq"
+      ],
+      "version": "0.1.0-NeoForge-v1.21 (release; neoforge)",
+      "file": "SpiderOverhaul-0.1.0-NeoForge-v1.21.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/Chybx/Spider-Overhaul",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "9s6osm5g",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Spider Overhaul",
+      "kind": "mod"
+    },
+    {
+      "requested": "animated hearts",
+      "slug": "animated-hearts",
+      "status": "Resource pack available",
+      "notes": "Resource-pack interpretation has 1.21.1 support. Separate animated-heart mod also has native NeoForge support if that is what was intended; choose deliberately. Test Apotheosis extra health, absorption and status hearts.",
+      "sources": [
+        "https://modrinth.com/resourcepack/animated-hearts",
+        "https://modrinth.com/resourcepack/animated-hearts/version/pBvCUtye"
+      ],
+      "version": "1.0.0 (release; minecraft)",
+      "file": "Animated Hearts.zip",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Animated Hearts",
+      "kind": "resourcepack"
+    },
+    {
+      "requested": "moog’s mineshafts reimagined",
+      "slug": "mmr-moogs-mineshafts-reimagined",
+      "status": "Native build",
+      "notes": "Native target build exists. Audit overlap with YUNG's Better Mineshafts and Repurposed Structures; may require choosing variants or configuring density. New chunks needed.",
+      "sources": [
+        "https://modrinth.com/mod/mmr-moogs-mineshafts-reimagined",
+        "https://modrinth.com/mod/mmr-moogs-mineshafts-reimagined/version/JJc7pNHb"
+      ],
+      "version": "1.1.0 (release; fabric,forge,neoforge)",
+      "file": "MoogsMineshaftsReimagined-universal-1.21-1.1.0.jar",
+      "side": "client: unsupported; server: required",
+      "license": "GPL-3.0-only",
+      "source_code": "https://github.com/FinnSetchell/MoogsMineshaftsReimagined",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "1oUDhxuy",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "MMR - Moog's Mineshafts Reimagined",
+      "kind": "mod"
+    },
+    {
+      "requested": "cube animals",
+      "slug": "CF:cube-animals",
+      "status": "Port likely needed",
+      "notes": "Exact 1.21.1 file located is cubeanimals-2.3-1.21.1-BETA.jar for Fabric. Newer NeoForge files are for 26.x. No exact NeoForge 1.21.1 file verified; loader port or backport route requires further author/source confirmation. ARR listing, no source link verified.",
+      "sources": [
+        "https://www.curseforge.com/minecraft/mc-mods/cube-animals/files/all"
+      ],
+      "version": "2.3 beta Fabric 1.21.1; NeoForge target unverified",
+      "file": "",
+      "side": "",
+      "license": "",
+      "source_code": "",
+      "dependencies": [],
+      "project": "cube-animals",
+      "kind": "mod"
+    },
+    {
+      "requested": "infinity cave",
+      "slug": "infinity-cave",
+      "status": "Native build",
+      "notes": "Native target mod wrapper exists. Author explicitly says use mod version for Terralith and warns of early-beta incompatibilities. Major underground/world-height and RPG progression integration; test separately before adopting.",
+      "sources": [
+        "https://modrinth.com/mod/infinity-cave",
+        "https://modrinth.com/mod/infinity-cave/version/6XJT5mi4"
+      ],
+      "version": "0.7 (beta; neoforge)",
+      "file": "infinity_cave-0.7-NeoForge-1.21.1.jar",
+      "side": "client: optional; server: required",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/Frozeh/infinity-cave",
+      "dependencies": [],
+      "project": "Infinity Cave",
+      "kind": "mod"
+    },
+    {
+      "requested": "grim kingdoms",
+      "slug": "grim-kingdoms-lost-structures-ruins",
+      "status": "Native build",
+      "notes": "Native mod wrapper and datapack builds exist. Choose standard OR Vanilla Edition, not both. Standard includes hidden special vanilla-based items; audit loot and structure density.",
+      "sources": [
+        "https://modrinth.com/mod/grim-kingdoms-lost-structures-ruins",
+        "https://modrinth.com/mod/grim-kingdoms-lost-structures-ruins/version/2HwCrjkl"
+      ],
+      "version": "2.0.3+mod (release; fabric,forge,neoforge,quilt)",
+      "file": "grim-kingdoms-lost-structures-ruins-2.0.3.jar",
+      "side": "client: optional; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Grim kingdoms: Lost structures & ruins",
+      "kind": "mod"
+    },
+    {
+      "requested": "respawn recap",
+      "slug": "respawn-recap",
+      "status": "Native build",
+      "notes": "Native target build exists. Test respawn state, camera ownership, death/recovery UI and dimension transitions.",
+      "sources": [
+        "https://modrinth.com/mod/respawn-recap",
+        "https://modrinth.com/mod/respawn-recap/version/Fg8rbqaT"
+      ],
+      "version": "1.2.1-1.21.1 (release; neoforge)",
+      "file": "respawnrecap-neoforge-1.2.1-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "MIT",
+      "source_code": "https://github.com/DialingSpoon527/Respawn-Recap",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "ordsPcFz",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Respawn Recap",
+      "kind": "mod"
+    },
+    {
+      "requested": "punchy",
+      "slug": "punchy-fpa",
+      "status": "Native build",
+      "notes": "Matched Punchy! first-person animation mod, not unrelated Punchy color resource pack. Native build exists. Author advertises Better Combat support; still test exact installed combat and spell versions.",
+      "sources": [
+        "https://modrinth.com/mod/punchy-fpa",
+        "https://modrinth.com/mod/punchy-fpa/version/aVZEe0j8"
+      ],
+      "version": "3.2b (release; neoforge)",
+      "file": "punchy-3.2b-neoforge-1.21.1.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Punchy!",
+      "kind": "mod"
+    },
+    {
+      "requested": "tight fire",
+      "slug": "tightfire",
+      "status": "Port needed",
+      "notes": "Exact project found by ID jExZM2Rj. 1.21.1 Fabric/Quilt build exists; NeoForge loader port needed. Coordinate with Fire Rekindled and other fire rendering.",
+      "sources": [
+        "https://modrinth.com/mod/tightfire",
+        "https://modrinth.com/mod/tightfire/version/NJCeyKqT"
+      ],
+      "version": "1.0-SNAPSHOT (release; fabric,quilt)",
+      "file": "tightfire-1.21.1-1.0-SNAPSHOT.jar",
+      "side": "client: required; server: unsupported",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/AmyMialeeMods/tightfire",
+      "dependencies": [],
+      "project": "Tightfire",
+      "kind": "mod"
+    },
+    {
+      "requested": "enchantment glint outline",
+      "slug": "enchantment-glint-outline",
+      "status": "Port needed",
+      "notes": "Only Fabric builds found, 1.21.4+ rather than 1.21.1. Version backport and loader port required. Must test altered item rendering with Iris/Sodium/Punchy.",
+      "sources": [
+        "https://modrinth.com/mod/enchantment-glint-outline"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: unsupported",
+      "license": "CC0-1.0",
+      "source_code": "https://github.com/Da0neDatGotAway/better-enchants",
+      "dependencies": [],
+      "project": "Enchantment Glint Outline",
+      "kind": "mod"
+    },
+    {
+      "requested": "fantasy armor",
+      "slug": "fantasy_armor",
+      "status": "Native build",
+      "notes": "Likely Fantasy Armor (Medieval Series). Native target build exists. Evaluate attributes/loot alongside Apotheosis and Cataclysm; armor animation poses need checking.",
+      "sources": [
+        "https://modrinth.com/mod/fantasy_armor",
+        "https://modrinth.com/mod/fantasy_armor/version/zp0jA17O"
+      ],
+      "version": "1.3.1-1.21.1 (release; neoforge)",
+      "file": "fantasy-armor-1.3.1-1.21.1-neoforge.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/kend1e/FANTASY-ARMOR",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "rsBLWxD0",
+          "file_name": null,
+          "dependency_type": "optional"
+        },
+        {
+          "version_id": null,
+          "project_id": "8BmcQJ2H",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Fantasy Armor (Medieval Series)",
+      "kind": "mod"
+    },
+    {
+      "requested": "fantasy weapons",
+      "slug": "fantasy_weapons",
+      "status": "Native build",
+      "notes": "Likely Fantasy Weapons (Medieval Series). Native target build exists. Check real Better Combat movesets/compatibility addon requirements and balance with Simply Swords.",
+      "sources": [
+        "https://modrinth.com/mod/fantasy_weapons",
+        "https://modrinth.com/mod/fantasy_weapons/version/KTq0GVPl"
+      ],
+      "version": "1.0-1.21.1 (release; neoforge)",
+      "file": "fantasy-weapons-1.0-1.21.1-neoforge.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "https://github.com/kend1e/FANTASY-WEAPONS",
+      "dependencies": [],
+      "project": "Fantasy Weapons (Medieval Series)",
+      "kind": "mod"
+    },
+    {
+      "requested": "L_ender’s cataclysm",
+      "slug": "l_enders-cataclysm",
+      "status": "Already in Horizon",
+      "notes": "Already present at 3.33 in current lock. Extend integration, do not install duplicate jars.",
+      "sources": [
+        "https://modrinth.com/mod/l_enders-cataclysm",
+        "https://modrinth.com/mod/l_enders-cataclysm/version/PsPYpoCC"
+      ],
+      "version": "3.33 (release; neoforge)",
+      "file": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "side": "client: required; server: required",
+      "license": "CC-BY-NC-ND-4.0",
+      "source_code": "https://github.com/lender544/new1.20.1/tree/master",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "FoVacERa",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "vvuO3ImH",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "L_Ender's Cataclysm",
+      "kind": "mod",
+      "current_horizon_version": "3.33"
+    },
+    {
+      "requested": "primal",
+      "slug": "mod-primal",
+      "status": "Likely match",
+      "notes": "Likely Primal (wilderness/animals), which has native target builds. Not Primal Magick or Primal Winter; confirm intended project before selecting. Check spawn density and Terralith biome tags.",
+      "sources": [
+        "https://modrinth.com/mod/mod-primal",
+        "https://modrinth.com/mod/mod-primal/version/bjAno6mP"
+      ],
+      "version": "1.1.6 (release; neoforge)",
+      "file": "primal-1.1.6+1.21.jar",
+      "side": "client: required; server: required",
+      "license": "MIT",
+      "source_code": "https://github.com/AngelDGr/Primal",
+      "dependencies": [],
+      "project": "Primal",
+      "kind": "mod"
+    },
+    {
+      "requested": "mob dismemberment",
+      "slug": "mob-dismemberment-unofficial-modern-port",
+      "status": "Port needed",
+      "notes": "Existing unofficial modern port only lists Forge 1.20.1. Needs version/loader port. LGPL source is linked; test fresh/custom mob renderers and avoid assuming every modded mob is supported.",
+      "sources": [
+        "https://modrinth.com/mod/mob-dismemberment-unofficial-modern-port"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: required; server: unsupported",
+      "license": "LGPL-3.0-only",
+      "source_code": "https://github.com/ThatSoulyGuy/Mob-Dismemberment",
+      "dependencies": [],
+      "project": "Mob Dismemberment [UNOFFICIAL MODERN PORT]",
+      "kind": "mod"
+    },
+    {
+      "requested": "Fuer dungeon spawner",
+      "slug": "feur-dungeon-spawner",
+      "status": "Port needed",
+      "notes": "Correct name Feur Dungeon Spawner. Found Forge 1.20.1 releases only. Needs 1.21.1 NeoForge port; ARR and no source link verified, so author cooperation/permission is a practical blocker.",
+      "sources": [
+        "https://modrinth.com/mod/feur-dungeon-spawner"
+      ],
+      "version": "",
+      "file": "",
+      "side": "client: unsupported; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Feur Dungeon Spawner",
+      "kind": "mod"
+    },
+    {
+      "requested": "bosses’ rise",
+      "slug": "bossesrise",
+      "status": "Native build",
+      "notes": "Native target build exists. Check dependencies, worldgen, loot and combat system overlap; do not add Epic Fight merely because a showcase uses it.",
+      "sources": [
+        "https://modrinth.com/mod/bossesrise",
+        "https://modrinth.com/mod/bossesrise/version/lE9PF6Wp"
+      ],
+      "version": "2.1.2 (release; neoforge)",
+      "file": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [
+        {
+          "version_id": "gFmrC8Ru",
+          "project_id": "8BmcQJ2H",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Bosses'Rise",
+      "kind": "mod"
+    },
+    {
+      "requested": "wither: reincarnated",
+      "slug": "wither-reincarnated",
+      "status": "Native build",
+      "notes": "Native target build exists. Test Wither behavior, loot, summon/kill advancements and existing Horizon quests/rewards.",
+      "sources": [
+        "https://modrinth.com/mod/wither-reincarnated",
+        "https://modrinth.com/mod/wither-reincarnated/version/6d4I4VPO"
+      ],
+      "version": "1.0.5 (release; neoforge)",
+      "file": "witherreincarnated-1.21.1-1.0.5.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [],
+      "project": "Wither: Reincarnated",
+      "kind": "mod"
+    },
+    {
+      "requested": "companions",
+      "slug": "companions-mod",
+      "status": "Native build",
+      "notes": "User confirmed companions-mod. Companions! by Satschifaction has native NeoForge 1.21.1 release 1.3.9. Check creature spawning, AI, tame/pet behavior, biome tags and server/client dependency versions.",
+      "sources": [
+        "https://modrinth.com/mod/companions-mod",
+        "https://modrinth.com/mod/companions-mod/version/ZPnBgXjW"
+      ],
+      "version": "1.3.9 (release; neoforge)",
+      "file": "companions-neoforge-1.21.1-1.3.9.jar",
+      "side": "client: required; server: required",
+      "license": "GPL-3.0-only",
+      "source_code": "https://github.com/Xylonity/Companions",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "hAnl9nbm",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "8BmcQJ2H",
+          "file_name": null,
+          "dependency_type": "required"
+        }
+      ],
+      "project": "Companions!",
+      "kind": "mod"
+    },
+    {
+      "requested": "clavis",
+      "slug": "clavis",
+      "status": "Native build",
+      "notes": "Native target build exists. Locked-chest minigame integration needs tests with generated structure chests, global loot modifiers, multiplayer and any per-player loot system.",
+      "sources": [
+        "https://modrinth.com/mod/clavis",
+        "https://modrinth.com/mod/clavis/version/pncc8FpD"
+      ],
+      "version": "0.2.13 (release; neoforge)",
+      "file": "Clavis-NEOFORGE-0.2.13+1.21.1.jar",
+      "side": "client: required; server: required",
+      "license": "LicenseRef-All-Rights-Reserved",
+      "source_code": "",
+      "dependencies": [
+        {
+          "version_id": null,
+          "project_id": "RH2KUdKJ",
+          "file_name": null,
+          "dependency_type": "required"
+        },
+        {
+          "version_id": null,
+          "project_id": "EltpO5cN",
+          "file_name": null,
+          "dependency_type": "optional"
+        }
+      ],
+      "project": "Clavis",
+      "kind": "mod"
+    }
+  ],
+  "animation_addons": [
+    {
+      "project": "[EMF] Entity Model Features",
+      "slug": "entity-model-features",
+      "version": "3.3.12-neoforge-1.21",
+      "kind": "mod",
+      "url": "https://modrinth.com/mod/entity-model-features",
+      "license": "LGPL-3.0-only"
+    },
+    {
+      "project": "[ETF] Entity Texture Features",
+      "slug": "entitytexturefeatures",
+      "version": "7.2.7-neoforge-1.21",
+      "kind": "mod",
+      "url": "https://modrinth.com/mod/entitytexturefeatures",
+      "license": "LGPL-3.0-only"
+    },
+    {
+      "project": "Fresh Animations: Extensions",
+      "slug": "fresh-animations-extensions",
+      "version": "1.10.1",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-extensions",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Creepers",
+      "slug": "fresh-animations-creepers",
+      "version": "2.2.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-creepers",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Details",
+      "slug": "fresh-animations-details",
+      "version": "2.4.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-details",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Emissive",
+      "slug": "fresh-animations-emissive",
+      "version": "1.7.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-emissive",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Quivers",
+      "slug": "fresh-animations-quivers",
+      "version": "2.3.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-quivers",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Spiders",
+      "slug": "fresh-animations-spiders",
+      "version": "2.3.1",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-spiders",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Objects",
+      "slug": "fresh-animations-objects",
+      "version": "2.1.2",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-objects",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Classic Horses",
+      "slug": "fresh-animations-classic-horses",
+      "version": "1.5.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-classic-horses",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Player Extension",
+      "slug": "fa-player-extension",
+      "version": "1.1.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fa-player-extension",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fresh Animations: Player Compats",
+      "slug": "fresh-animations-player-compats",
+      "version": "1.3.1",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-animations-player-compats",
+      "license": "MIT"
+    },
+    {
+      "project": "F.M.R.P",
+      "slug": "freshly-modded",
+      "version": "3.0.5",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/freshly-modded",
+      "license": "CC-BY-NC-SA-4.0"
+    },
+    {
+      "project": "Fresh Compats",
+      "slug": "fresh-compats",
+      "version": "v1.6",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-compats",
+      "license": "MIT"
+    },
+    {
+      "project": "Fresh Illager Mod Compats",
+      "slug": "fresh-illager-mod-compats",
+      "version": "5.0",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fresh-illager-mod-compats",
+      "license": "LicenseRef-All-Rights-Reserved"
+    },
+    {
+      "project": "Fluid & Foolish",
+      "slug": "fluid-foolish",
+      "version": "1.0.1",
+      "kind": "resourcepack",
+      "url": "https://modrinth.com/resourcepack/fluid-foolish",
+      "license": "LicenseRef-All-Rights-Reserved"
+    }
+  ],
+  "guidance": [
+    {
+      "title": "What the verdicts mean",
+      "text": "Exact-target catalog audit for Minecraft 1.21.1, NeoForge 21.1.267, Java 21, checked 21 November 2026. Horizon source is now 0.2.0 with 116 locked mods. Native build means a file is listed for this exact game/loader pair. It does not mean the combined pack has been launched or proven compatible. No mods were installed, no code was ported, and no existing game files were changed. Dependencies still need exact-version resolution before installation."
+    },
+    {
+      "title": "Current scope",
+      "text": "Spatial GUI and Companions! (companions-mod) were confirmed by the user. Fresh n’ Musical was explicitly excluded. Fantasy Armor and Fantasy Weapons are split into separate rows; Sounds + More Sounds are also split. There are 73 tracked rows, 72 active. FallingTree, ATMOSPHERICS, Animated Hearts and Primal retain identity notes where similarly named projects exist."
+    },
+    {
+      "title": "Player animation and camera ownership",
+      "text": "Punchy!, Punchy! Moves, FA Player Extension, Better Combat, Eating Animation, Cinematic Interactions, Auto Third Person, Spatial GUI, Grand Teleport, Respawn Recap and Seamless Sleep affect overlapping actions or camera states. Native availability is not proof they all work together. Give combat/spellcasting their own tested animation path; configure per-screen and per-action exclusions. Test actual melee, aiming, eating, spellcasting, riding, inventory, teleport, sleep and respawn. Do not layer multiple player rigs blindly."
+    },
+    {
+      "title": "Particle and sound overlap",
+      "text": "Subtle Effects is already locked at 1.15.3; Particle Rain is already present. Visuality, Effectual, Perception, Cave Dust, Better Smoke, Windy, Footprint Particle and Particle Interactions overlap parts of this coverage. Sounds, More Sounds, AmbientSounds, Cool Rain and separate equip/landing sounds can duplicate events. Tune per-effect ownership and profile budgets. FWA and Swinging Lanterns both animate lanterns. These are integration risks, not observed crash reports."
+    },
+    {
+      "title": "Terrain and structure integration",
+      "text": "Blooming Biosphere has a 1.21.1 datapack; it is not simply a foliage cosmetic. Its author describes an Overworld biome overhaul and provides a Tectonic compatibility project. That does not establish compatibility with the combined Terralith/Tectonic stack. Infinity Cave has a native mod wrapper and explicitly tells Terralith users to use the mod version; its author also warns about beta compatibility. Streams Reflowing advertises terrain compatibility, but the actual pack still needs seed/worldgen/performance tests. Moog’s Mineshafts overlaps YUNG’s/Repurposed mineshafts. Grim Kingdoms, Homesteads and new bosses need spacing and loot-budget integration. No worldgen addition should silently replace old chunks."
+    },
+    {
+      "title": "Porting and permission",
+      "text": "No target build found means a port/backport is needed for the exact identified project unless an unlisted compatible build is supplied. It is not proof a project can legally or practically be ported. Feur is All Rights Reserved with no verified source link; Cube Animals is also ARR with no verified source route here. Soft Leaves exposes a source link but lists ARR. Confirm permission before distributing modifications. Public source does not automatically grant permission. Resource-pack adaptation is a different task from a mod-loader port."
+    },
+    {
+      "title": "Prism packaging",
+      "text": "The current project builds a Modrinth .mrpack. CurseForge-only availability and runtime compatibility are separate questions: Weather Glass, Cinematic Interactions and Cube Animals were checked on their author-published CurseForge file lists. Preserve permitted downloads or use an appropriate manifest/manual download path. Do not assume any available jar may be embedded in the pack."
+    },
+    {
+      "title": "Fresh Animations: coherent base",
+      "text": "Use Fresh Animations 1.11.2 for 1.20+ (the file explicitly includes 1.21.1), with NeoForge EMF and ETF. Candidate catalog files: EMF 3.3.12-neoforge-1.21 and ETF 7.2.7-neoforge-1.21; resolve their mutual minimum versions and test with the pinned renderer. Do not install OptiFine into the Sodium/Iris stack."
+    },
+    {
+      "title": "Fresh Animations: official extensions",
+      "text": "Fresh Animations: Extensions 1.10.1 combines Creepers, Details, Emissive, Quivers, Spiders, Objects and Classic Horses. Place the extension pack above the base in resource-pack priority. The separate component projects are catalogued below for selective use; do not install all individual components on top of the combined bundle. Spider Overhaul may replace the renderer or models that FA Spiders expects; test or select one approach."
+    },
+    {
+      "title": "Fresh Animations: player and modded coverage",
+      "text": "FA Player Extension 1.1.0 (see exact version in the addon list if upstream metadata changes) is optional and must be tested against Better Combat, Punchy Moves and spellcasting. Player Compats is a conditional patch, not universal support for all modded items. F.M.R.P 3.0.5 provides modded-entity coverage and optionally uses Semos Animations Lib; check actual supported mobs. Fresh Compats targets Supplementaries, Quark, Sleep Tight and You’ve Goat to be Kidding Me, which are not in the current lock. Fresh Illager Mod Compats likewise only earns inclusion for actual supported mods. These packs do not magically animate every Cataclysm, GeckoLib or Companions entity."
+    },
+    {
+      "title": "Fresh Animations: scope of addon search",
+      "text": "Audited the author’s public Modrinth project catalog plus relevant public mod-compat packs. Official patches for Rotten Creatures, Boy Why You So Ears, BARCHED, Spawn, More Mob Variants, Variants and Ventures, Barely Default and other art families are conditional on those projects being installed. Some official model ports are membership early access; they were not downloaded or treated as freely available. Arbitrary third-party texture overhauls are alternatives requiring matching FA patches, not an instruction to stack every addon on the internet."
+    },
+    {
+      "title": "Animation pack priority",
+      "text": "Working proposal, highest priority first: small proven per-mod/player compatibility patches; chosen official FA extension bundle or selected individual components; FA Player Extension only if selected; Fresh Animations base; ordinary base textures. Follow each patch author’s order when more specific. Resolve overlapping entity/model paths deliberately. Keep Punchy Moves’ required Fluid & Foolish animation pack separate from the FA mob stack and test interactions."
+    },
+    {
+      "title": "What remains before calling the pack compatible",
+      "text": "Resolve dependencies and minimum NeoForge versions; inspect mod descriptors for misleading catalog tags; staged launch test; shader and Voxy checks; representative combat/camera/UI actions; structure/loot checks in new chunks; multiplayer server-side separation; matched frame-time and worldgen measurements. No individual catalog entry is an acceptance test for the whole requested stack."
+    }
+  ]
+}

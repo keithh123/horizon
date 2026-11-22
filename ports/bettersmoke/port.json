@@ -1,0 +1,14 @@
+{
+  "kind": "gradle",
+  "output": "bettersmoke-0.1.2-neoforge.1.21.1.horizon1.jar",
+  "built_jar": "bettersmoke-0.1.2-neoforge.1.21.1.horizon1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "replaces_slug": "better-smoke",
+  "source": "https://modrinth.com/mod/better-smoke/version/9It7IoUE (jar; no public repository)",
+  "attribution": "Better Smoke by Marlilo (MIT). Recovered from the published jar (Vineflower), remapped with scripts/remap_intermediary.py, ported to NeoForge 1.21.1 by Project Horizon.",
+  "changes": "Fabric entry points -> NeoForge @Mod(dist=CLIENT); config dir via FMLPaths; config screen via IConfigScreenFactory; datagen entry dropped; refmap not needed (Mojang names at runtime). Mixin logic unchanged. Client-only."
+}

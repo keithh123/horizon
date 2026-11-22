@@ -31,7 +31,7 @@ EPOCH = (1980, 2, 1, 0, 0, 0)
 
 def fetch(url, sha512):
     CACHE.mkdir(parents=True, exist_ok=True)
-    dest = CACHE / url.rsplit("/", 1)[1].replace("%20", " ")
+    dest = CACHE / (url.rsplit("/", 1)[1].replace("%20", " ") if not url.endswith("/download") else url.split("/files/")[1].replace("/download", ".jar"))
     if not (dest.exists() and hashlib.sha512(dest.read_bytes()).hexdigest() == sha512):
         with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
             data = r.read()
@@ -59,7 +59,11 @@ def read_zip(path):
 def build(name, spec):
     out = DIST / spec["output"]
     kind = spec["kind"]
-    if kind in ("repack", "wrap"):
+    if kind == "verbatim":   # third-party jar whose license permits redistribution, shipped byte-for-byte
+        src = fetch(spec["upstream"]["url"], spec["upstream"]["sha512"])
+        out.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, out)
+    elif kind in ("repack", "wrap"):
         src = fetch(spec["upstream"]["url"], spec["upstream"]["sha512"])
         entries = read_zip(src)
         prefix = spec.get("strip_prefix", "")

@@ -1,0 +1,22 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "bettersmoke"
+version = "${mod_version}"
+displayName = "Better Smoke (NeoForge port)"
+logoFile = "assets/bettersmoke/icon.png"
+authors = "Marlilo; NeoForge 1.21.1 port for Project Horizon"
+credits = "Better Smoke 0.1.2 (MIT). No public source; recovered from the published jar and ported to NeoForge."
+description = "Client-side campfire smoke overhaul for campsites, chimneys and smokestacks."
+
+[[mixins]]
+config = "bettersmoke.client.mixins.json"
+
+[[dependencies.bettersmoke]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"

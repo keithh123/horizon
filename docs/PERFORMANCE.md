@@ -39,3 +39,15 @@ large factories, Spark profiles.
 - Voxy uses a sparse 4 GB geometry buffer on NVIDIA (driver-managed). VRAM usage depends on how far the horizon has been generated.
 - With shaders on, Create's Flywheel falls back from instanced rendering to `off`. This is expected Iris behaviour, so very large contraption farms cost more FPS with shaders on.
 - Lithium and ModernFix both patch `SortedArraySet.removeIf`. The log reports an overwrite conflict, both mods handle it, and no functional impact was seen.
+
+## 0.3.0 expansion (preliminary, not a matched comparison)
+
+In world, Balanced profile, Iris + Complementary Reimagined, Voxy on, 2560x1417, RTX 5070 / Ryzen 5 9600X:
+51 fps (p50 49, p99.5 21), integrated server 9.6 ms/tick. Caveats: Voxy World Gen was still generating
+(3.1k done / 48k queued), heap capped at 7 GB (another Minecraft instance was using RAM), LAN open. A matched 0.2.0 vs
+0.3.0 run (same seed, position, warm cache, 10 GB) has **not** been done. Dedicated server with the expansion: 20 TPS,
+1.4-3.7 ms/tick overall during structure location and boss tests.
+
+New profile-controlled costs (profiles/effects.json): Better Clouds (off in Performance), Cozy Critters caps,
+Windy, Cave Dust density, Interactive Foliage waving, Effectual trails, Streams Reflowing particle scan
+(512 blocks / 1000 per tick by default -> 96/150 Performance, 192/400 Balanced, 320/700 Cinematic).

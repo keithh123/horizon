@@ -1,4 +1,4 @@
-# Mod list - Project Horizon 0.2.0
+# Mod list - Project Horizon 0.3.0
 
 Minecraft 1.21.1 - NeoForge 21.1.267 - 176 mods - generated 2026-11-21 from `manifests/lock.json`.
 

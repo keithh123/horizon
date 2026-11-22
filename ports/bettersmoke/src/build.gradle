@@ -1,0 +1,4 @@
+plugins { id 'net.neoforged.moddev' }
+ext { modId = 'bettersmoke'; modVersion = '0.1.2-neoforge.1.21.1.horizon1' }
+group = 'net.marlilo'
+apply from: '../../_gradle/port.gradle'

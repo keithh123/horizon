@@ -747,11 +747,6 @@
       "reason": "Patches for illager mods that are not in Horizon."
     },
     {
-      "slug": "fresh-animations-creepers/details/emissive/quivers/spiders/objects/classic-horses",
-      "status": "not installed (duplicate)",
-      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
-    },
-    {
       "slug": "fa-player-extension",
       "status": "not installed (FA addon, conflicts with requested Punchy Moves)",
       "reason": "In game (0.3.0 candidate) Punchy Moves shows a Conflicting Animations screen: \"Punchy Moves is not compatible with Fresh Animations: Player Extension\". Punchy Moves is a requested entry; the player extension is optional, so player animation is owned by Punchy/Punchy Moves (+ Better Combat for its weapons)."
@@ -760,6 +755,91 @@
       "slug": "fresh-animations-player-compats",
       "status": "not installed (requires FA Player Extension)",
       "reason": "Declares FA Player Extension as required; removed with it."
+    },
+    {
+      "slug": "blooming-biosphere",
+      "status": "blocked",
+      "reason": "1.1.6 exists only as a datapack / Fabric-Forge jar. Its data overrides minecraft:dimension/overworld (Terralith's biome source), minecraft:worldgen/noise_settings/overworld (Tectonic's) and 37 vanilla biomes, so installing it replaces Terralith or Tectonic terrain; its Tectonic compat exists only for 1.21.5+. Needs a merged biome source/noise router; new worlds only."
+    },
+    {
+      "slug": "actually-3d-stuff",
+      "status": "blocked",
+      "reason": "Resource pack exists only for 1.21.9+ (item-definition files + 1.21.9 overlays/core shaders). The item switching could be expressed with neoforge:separate_transforms, but the 3D models use free element rotation angles (12.5, 15, 25 deg..., 360+ elements) that the 1.21.1 model loader rejects; adapting means snapping angles (visible distortion) or a model-loader patch."
+    },
+    {
+      "slug": "CF:cinematic-interactions",
+      "status": "blocked (distribution)",
+      "reason": "Native NeoForge 1.21.1 build exists on CurseForge only, licensed All Rights Reserved: it cannot be embedded in the .mrpack and Modrinth packs cannot reference CurseForge downloads. Manual install possible per docs/EXPANSION_CHECKLIST.md; not tested in this pass."
+    },
+    {
+      "slug": "CF:cube-animals",
+      "status": "blocked",
+      "reason": "CurseForge-only, All Rights Reserved, no NeoForge 1.21.1 build and no public source: a port needs the author's permission and source."
+    },
+    {
+      "slug": "soft-leaves",
+      "status": "blocked (license)",
+      "reason": "Source is public but All Rights Reserved; NeoForge builds exist only for 1.21.5+. A back-port would need the author's permission."
+    },
+    {
+      "slug": "tightfire",
+      "status": "blocked (license)",
+      "reason": "Fabric only, All Rights Reserved; porting needs the author's permission."
+    },
+    {
+      "slug": "feur-dungeon-spawner",
+      "status": "blocked",
+      "reason": "All Rights Reserved, no source, no NeoForge 1.21.1 build."
+    },
+    {
+      "slug": "wet-sand",
+      "status": "not ported yet",
+      "reason": "GPL-3.0 source available (1.21.4+ Fabric, Mojang-mapped). Port is permitted but invasive: it replaces the vanilla minecraft:sand/red_sand/suspicious_sand registrations through a Registry.register mixin, uses 1.21.2+ Properties.setId, and its mod id wet-sand is invalid on NeoForge. Deferred, not attempted in this pass."
+    },
+    {
+      "slug": "enchantment-glint-outline",
+      "status": "not ported yet",
+      "reason": "CC0 source (Da0neDatGotAway/better-enchants) currently targets 26.2 (~2.9k lines of render code); the 1.21.4-era revision has not been ported in this pass."
+    },
+    {
+      "slug": "mob-dismemberment-unofficial-modern-port",
+      "status": "not ported yet",
+      "reason": "LGPL-3.0 source exists only for Forge 1.20.1 (~1.1k lines); a NeoForge 1.21.1 port was not attempted in this pass."
+    },
+    {
+      "slug": "fresh-animations-creepers",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-details",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-emissive",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-quivers",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-spiders",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-objects",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fresh-animations-classic-horses",
+      "status": "not installed (duplicate)",
+      "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
     }
   ]
 }

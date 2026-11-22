@@ -72,3 +72,16 @@ any functional effect.
 **Not tested (no hands-on session was possible):** textures and tooltips in-game, quest completion and reward claiming, Lootr, trophies, Trials, combat, spellcasting, machines, AE2, frame rates/Spark profiles, `minecraft:end_city` calibration, multiplayer. A fresh Prism import of the 0.2.0 `.mrpack` is recorded below once run.
 
 **0.2.0 release package (verified 2026-11-21):** `dist/ProjectHorizon-0.2.0.mrpack` (sha256 `4803c7447f316776dbecd018280e839f863e99aa6fd6060a1311fcbebacd9fdb`, 118 files, 116 mods). Fresh Prism import: all 118 files match their sha512, 943/943 override files present, launches to the title screen in ~39 s with 5 logged errors (the known GeckoLib/Xaero/advancement/`fabric:overlays` noise).
+
+## 0.3.0 expansion
+
+Done: dependency ranges for 205 mod ids (2 launch-verified checker quirks); client launch to title with all jars
+(44-50 s); dedicated server start + 3 test runs (`tests/expansion_smoke.txt`): new loot tables through the Horizon GLMs,
+structures located in natural Terralith/Tectonic terrain and audited (lich tower 0.9 Ancient Core per clear vs budget
+1.0), 12 new bosses/mobs summoned, Legend hook fired for 7 bosses, 20 TPS, Nether/End load; in world with shaders and
+Voxy on: Spatial GUI inventory + EMI, F3 metrics; profile switcher for all three profiles on a copy of real configs;
+generator pipeline twice (idempotent); 0.2.0 loot groups unchanged (0 of the existing groups differ).
+
+Not done yet: in-game test of the 5 source ports and Weather Glass; Better Combat/spell/Punchy animation interplay;
+AE2 terminal screens under Spatial GUI; shader visual check of Better Clouds/Interactive Foliage; matched performance
+comparison; multiplayer with real players; fresh Prism import of the 0.3.0 .mrpack (see below when done).

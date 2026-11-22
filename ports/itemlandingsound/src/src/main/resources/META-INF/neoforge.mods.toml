@@ -1,0 +1,19 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "CC0-1.0"
+
+[[mods]]
+modId = "item_landing_sound"
+version = "${mod_version}"
+displayName = "Item Landing Sound (NeoForge port)"
+logoFile = "icon.png"
+authors = "ExiledLizard635; NeoForge 1.21.1 port for Project Horizon"
+credits = "Original Fabric mod item-landing-sound 1.0.2 (CC0-1.0 / MIT). Ported from the published jar; no public source."
+description = "Dropped items make a sound when they land."
+
+[[dependencies.item_landing_sound]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"
