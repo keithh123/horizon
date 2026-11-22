@@ -1,20 +1,252 @@
 {
-  "_comment": "Ambient-effect levels used by apply-profile.ps1 (profile key 'effects'). Only Subtle Effects keys that exist in its generated defaults (0.2.0 test launch). Files are created on first launch; missing files are skipped. Gameplay is unaffected.",
+  "_comment": "Ambient-effect levels used by apply-profile.ps1 (profile key 'effects'). Only Subtle Effects keys that exist in its generated defaults (0.2.0 test launch). Files are created on first launch; missing files are skipped. Gameplay is unaffected. 0.3.0: also Better Clouds, Cozy Critters, Windy, Cave Dust, Interactive Foliage (waving only; bending stays), Effectual (heavy trails), Streams Reflowing client particles (default scan radius 512 / 1000 per tick is expensive). Keys verified against the 0.3.0 candidate's generated configs (config_defaults/).",
   "levels": {
     "minimal": {
-      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 3, "enableParticleCulling": "true"}},
-      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 0.1, "pollenDensity": 0.1, "sculkDustDensity": 0.1, "flameGeyserSpawnChance": 1, "smokeGeyserSpawnChance": 1, "bubbleGeyserSpawnChance": 1}},
-      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.1, "lanternSparksDensity": 1, "lavaSparksDensity": 0.25}}
+      "config/subtle_effects/general.toml": {
+        "format": "toml",
+        "set": {
+          "particleRenderDistance": 3,
+          "enableParticleCulling": "true"
+        }
+      },
+      "config/subtle_effects/environment.toml": {
+        "format": "toml",
+        "set": {
+          "mushroomSporeDensity": 0.1,
+          "pollenDensity": 0.1,
+          "sculkDustDensity": 0.1,
+          "flameGeyserSpawnChance": 1,
+          "smokeGeyserSpawnChance": 1,
+          "bubbleGeyserSpawnChance": 1
+        }
+      },
+      "config/subtle_effects/blocks.toml": {
+        "format": "toml",
+        "set": {
+          "rainWaterRipplesDensity": 0.1,
+          "lanternSparksDensity": 1,
+          "lavaSparksDensity": 0.25
+        }
+      },
+      "config/betterclouds-v1.json": {
+        "format": "json",
+        "set": {
+          "enabled": false
+        }
+      },
+      "config/cosycritters.json": {
+        "format": "json",
+        "set": {
+          "maxBirds": 10,
+          "maxMoths": 2,
+          "maxSpiders": 4
+        }
+      },
+      "config/windy-config.json": {
+        "format": "json",
+        "set": {
+          "spawnWind": false
+        }
+      },
+      "config/cavedust.json": {
+        "format": "json",
+        "set": {
+          "particleMultiplier": 4
+        }
+      },
+      "config/mc2_interactivefoliage.json": {
+        "format": "json",
+        "set": {
+          "wavingFoliage": false,
+          "wavingLeaves": false,
+          "weatherWind": false
+        }
+      },
+      "config/effectual.json": {
+        "format": "json",
+        "set": {
+          "airTrail": false,
+          "runDust": false,
+          "snowResidue": false,
+          "bubbleChests": false
+        }
+      },
+      "config/streamsreflowing-client.properties": {
+        "format": "properties",
+        "set": {
+          "particleDensity": 0.25,
+          "maxStreamParticlesPerTick": 150,
+          "streamParticleScanRadius": 96,
+          "waterfallFoam": 1,
+          "streamDebris": "false"
+        }
+      }
     },
     "balanced": {
-      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 5, "enableParticleCulling": "true"}},
-      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 0.5, "pollenDensity": 0.75, "sculkDustDensity": 0.25, "flameGeyserSpawnChance": 5, "smokeGeyserSpawnChance": 5, "bubbleGeyserSpawnChance": 5}},
-      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.35, "lanternSparksDensity": 5, "lavaSparksDensity": 1.0}}
+      "config/subtle_effects/general.toml": {
+        "format": "toml",
+        "set": {
+          "particleRenderDistance": 5,
+          "enableParticleCulling": "true"
+        }
+      },
+      "config/subtle_effects/environment.toml": {
+        "format": "toml",
+        "set": {
+          "mushroomSporeDensity": 0.5,
+          "pollenDensity": 0.75,
+          "sculkDustDensity": 0.25,
+          "flameGeyserSpawnChance": 5,
+          "smokeGeyserSpawnChance": 5,
+          "bubbleGeyserSpawnChance": 5
+        }
+      },
+      "config/subtle_effects/blocks.toml": {
+        "format": "toml",
+        "set": {
+          "rainWaterRipplesDensity": 0.35,
+          "lanternSparksDensity": 5,
+          "lavaSparksDensity": 1.0
+        }
+      },
+      "config/betterclouds-v1.json": {
+        "format": "json",
+        "set": {
+          "enabled": true,
+          "distance": 3.0
+        }
+      },
+      "config/cosycritters.json": {
+        "format": "json",
+        "set": {
+          "maxBirds": 30,
+          "maxMoths": 6,
+          "maxSpiders": 10
+        }
+      },
+      "config/windy-config.json": {
+        "format": "json",
+        "set": {
+          "spawnWind": true,
+          "windFrequency": 0.6
+        }
+      },
+      "config/cavedust.json": {
+        "format": "json",
+        "set": {
+          "particleMultiplier": 10
+        }
+      },
+      "config/mc2_interactivefoliage.json": {
+        "format": "json",
+        "set": {
+          "wavingFoliage": true,
+          "wavingLeaves": true,
+          "weatherWind": true
+        }
+      },
+      "config/effectual.json": {
+        "format": "json",
+        "set": {
+          "airTrail": true,
+          "runDust": true,
+          "snowResidue": true,
+          "bubbleChests": true
+        }
+      },
+      "config/streamsreflowing-client.properties": {
+        "format": "properties",
+        "set": {
+          "particleDensity": 0.6,
+          "maxStreamParticlesPerTick": 400,
+          "streamParticleScanRadius": 192,
+          "waterfallFoam": 2,
+          "streamDebris": "true"
+        }
+      }
     },
     "full": {
-      "config/subtle_effects/general.toml": {"format": "toml", "set": {"particleRenderDistance": 8, "enableParticleCulling": "true"}},
-      "config/subtle_effects/environment.toml": {"format": "toml", "set": {"mushroomSporeDensity": 1.0, "pollenDensity": 1.5, "sculkDustDensity": 0.5, "flameGeyserSpawnChance": 8, "smokeGeyserSpawnChance": 8, "bubbleGeyserSpawnChance": 8}},
-      "config/subtle_effects/blocks.toml": {"format": "toml", "set": {"rainWaterRipplesDensity": 0.6, "lanternSparksDensity": 8, "lavaSparksDensity": 1.5}}
+      "config/subtle_effects/general.toml": {
+        "format": "toml",
+        "set": {
+          "particleRenderDistance": 8,
+          "enableParticleCulling": "true"
+        }
+      },
+      "config/subtle_effects/environment.toml": {
+        "format": "toml",
+        "set": {
+          "mushroomSporeDensity": 1.0,
+          "pollenDensity": 1.5,
+          "sculkDustDensity": 0.5,
+          "flameGeyserSpawnChance": 8,
+          "smokeGeyserSpawnChance": 8,
+          "bubbleGeyserSpawnChance": 8
+        }
+      },
+      "config/subtle_effects/blocks.toml": {
+        "format": "toml",
+        "set": {
+          "rainWaterRipplesDensity": 0.6,
+          "lanternSparksDensity": 8,
+          "lavaSparksDensity": 1.5
+        }
+      },
+      "config/betterclouds-v1.json": {
+        "format": "json",
+        "set": {
+          "enabled": true,
+          "distance": 4.0
+        }
+      },
+      "config/cosycritters.json": {
+        "format": "json",
+        "set": {
+          "maxBirds": 50,
+          "maxMoths": 8,
+          "maxSpiders": 16
+        }
+      },
+      "config/windy-config.json": {
+        "format": "json",
+        "set": {
+          "spawnWind": true,
+          "windFrequency": 1.0
+        }
+      },
+      "config/cavedust.json": {
+        "format": "json",
+        "set": {
+          "particleMultiplier": 14
+        }
+      },
+      "config/mc2_interactivefoliage.json": {
+        "format": "json",
+        "set": {
+          "wavingFoliage": true,
+          "wavingLeaves": true,
+          "weatherWind": true
+        }
+      },
+      "config/effectual.json": {
+        "format": "json",
+        "set": {
+          "airTrail": true,
+          "runDust": true,
+          "snowResidue": true,
+          "bubbleChests": true
+        }
+      },
+      "config/streamsreflowing-client.properties": {
+        "format": "properties",
+        "set": {
+          "particleDensity": 1.0,
+          "maxStreamParticlesPerTick": 700,
+          "streamParticleScanRadius": 320,
+          "waterfallFoam": 3,
+          "streamDebris": "true"
+        }
+      }
     }
   }
 }

@@ -719,16 +719,6 @@
       "why": "Official FA extensions bundle; individual components NOT installed (duplicates)."
     },
     {
-      "slug": "fa-player-extension",
-      "pin": "Wj7NeGjP",
-      "why": "FA player animations."
-    },
-    {
-      "slug": "fresh-animations-player-compats",
-      "pin": "cQ48zoin",
-      "why": "Conditional FA player patches (Artifacts, Farmers Delight present)."
-    },
-    {
       "slug": "fluid-foolish",
       "pin": "UAp4jRDk",
       "why": "Required animation pack for Punchy Moves (separate from FA mob stack)."
@@ -760,6 +750,16 @@
       "slug": "fresh-animations-creepers/details/emissive/quivers/spiders/objects/classic-horses",
       "status": "not installed (duplicate)",
       "reason": "Already contained in Fresh Animations: Extensions 1.10.1 (installed); stacking components duplicates the same model paths."
+    },
+    {
+      "slug": "fa-player-extension",
+      "status": "not installed (FA addon, conflicts with requested Punchy Moves)",
+      "reason": "In game (0.3.0 candidate) Punchy Moves shows a Conflicting Animations screen: \"Punchy Moves is not compatible with Fresh Animations: Player Extension\". Punchy Moves is a requested entry; the player extension is optional, so player animation is owned by Punchy/Punchy Moves (+ Better Combat for its weapons)."
+    },
+    {
+      "slug": "fresh-animations-player-compats",
+      "status": "not installed (requires FA Player Extension)",
+      "reason": "Declares FA Player Extension as required; removed with it."
     }
   ]
 }

@@ -1,5 +1,10 @@
 | File | Setting | Reason |
 |---|---|---|
+| `effectual.json` | `"caveDust": false` | Cave Dust owns underground dust (no double dust layers). |
+| `effectual.json` | `"snowFootprints": false` | Footprint Particle owns footprints. |
+| `effectual.json` | `"lanternImprovements": false` | Swinging Lanterns owns lantern behaviour. |
+| `punchy_moves/camera.json` | `"elytraCamera": false` | Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state. |
+| `visualoverhaul.json` | (seed file) | Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib registers it (NPE at Options.loadSelectedResourcePacks; client crash, tested). Its built-in packs still load (visualoverhaul:rounddiscs seen in the pack list). |
 | `apotheosis/apotheosis.cfg` | `B:"Restrict Charms to Curios"=true` | Potion charms only work from curio slots - stops 20 charms in an inventory stacking buffs. |
 | `apotheosis/apotheosis.cfg` | `I:"Boss Spawn Cooldown"=6000` | Apotheosis bosses stay special next to Mowzie's/Cataclysm encounters. |
 | `simplyswords/weapon_attributes.toml` | `iron_damageModifier = 1.0` | iron Simply Swords weapons: +3 -> +1 so they sidegrade vanilla/Apotheosis weapons instead of replacing them. |

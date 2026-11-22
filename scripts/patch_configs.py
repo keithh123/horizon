@@ -51,26 +51,53 @@ EDITS = {
 
 # Files shipped verbatim (needed before a mod's first launch, so there is no generated default to patch).
 SEEDS = {
-    "visualoverhaul.json": ('{
-  "firstLaunch": false
-}
-',
+    "visualoverhaul.json": ('{\n  "firstLaunch": false\n}\n',
                             "Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib "
-                            "registers it (NPE at Options.loadSelectedResourcePacks). Its built-in packs are enabled by build.py instead."),
+                            "registers it (NPE at Options.loadSelectedResourcePacks; client crash, tested). Its built-in packs still "
+                            "load (visualoverhaul:rounddiscs seen in the pack list)."),
+}
+
+
+# 0.3.0 expansion: pristine first-launch defaults are snapshotted in config_defaults/ (captured from the
+# ProjectHorizon-expansion candidate before any override was shipped), so these edits stay idempotent.
+DEFAULTS = ROOT / "config_defaults"
+EXPANSION_EDITS = {
+    "effectual.json": [
+        ('"caveDust": true', '"caveDust": false', "Cave Dust owns underground dust (no double dust layers)."),
+        ('"snowFootprints": true', '"snowFootprints": false', "Footprint Particle owns footprints."),
+        ('"lanternImprovements": true', '"lanternImprovements": false', "Swinging Lanterns owns lantern behaviour."),
+    ],
+    "punchy_moves/camera.json": [
+        ('"elytraCamera": true', '"elytraCamera": false', "Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state."),
+    ],
 }
 
 
 def main():
     report = []
+    for rel, edits in EXPANSION_EDITS.items():
+        text = (DEFAULTS / rel).read_text(encoding="utf-8")
+        for old, new, why in edits:
+            if text.count(old) != 1:
+                raise SystemExit(f"{rel}: {old!r} matched {text.count(old)} times")
+            text = text.replace(old, new)
+            report.append(f"| `{rel}` | `{new}` | {why} |")
+        out = OUT / rel
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_bytes(text.encode("utf-8"))
     for rel, (text, why) in SEEDS.items():
         out = OUT / rel
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(text, encoding="utf-8")
+        out.write_bytes(text.encode("utf-8"))   # LF, byte-identical across runs/OSes
         report.append(f"| `{rel}` | (seed file) | {why} |")
     for rel, edits in EDITS.items():
+        if not (SRC / rel).exists():
+            raise SystemExit(f"{SRC / rel} missing: launch the dev instance once (PH_INSTANCE) or use build_all --no-configs")
         text = (SRC / rel).read_text(encoding="utf-8")
         for pat, rep, why in edits:
             text, n = re.subn(pat, rep, text, flags=re.M)
+            if n == 0 and len(re.findall("^" + re.escape(rep) + "$", text, flags=re.M)) + text.count(rep) >= 1:
+                n = 1   # source instance already carries the shipped value (overrides were copied into it): idempotent
             if n != 1:
                 raise SystemExit(f"{rel}: pattern {pat!r} matched {n} times")
             report.append(f"| `{rel}` | `{rep.strip()}` | {why} |")
