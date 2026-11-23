@@ -10,14 +10,14 @@
     "description": [
       "Wrought chambers underground hold the Ferrous Wroughtnaut. Hit it from behind. First defeat: Ancient Core + trophy.",
       "",
-      "&aObjective:&r Defeat the Ferrous Wroughtnaut in a Wrought chamber.",
-      "&bWhy it matters:&r First defeat grants an Ancient Core and a trophy for your base."
+      "&aDo:&r Defeat the Ferrous Wroughtnaut in a Wrought chamber.",
+      "&6You get:&r First defeat grants an Ancient Core and a trophy for your base."
     ],
     "groups": {
       "2 - The Wild Frontier": {
         "position": [
-          96,
-          36
+          88,
+          40
         ]
       }
     }

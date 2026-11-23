@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "aether:entities/valkyrie_queen"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/valkyrie_queen"
+}

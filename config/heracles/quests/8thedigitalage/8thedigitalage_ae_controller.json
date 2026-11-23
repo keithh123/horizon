@@ -10,13 +10,13 @@
     "description": [
       "An ME controller needs an &bAncient Core&r - the digital age starts with an expedition.",
       "",
-      "&aObjective:&r Craft an ME controller.",
-      "&bWhy it matters:&r The controller requires an Ancient Core, which ties AE2 to expeditions."
+      "&aDo:&r Craft an ME controller.",
+      "&6You get:&r The controller requires an Ancient Core, which ties AE2 to expeditions."
     ],
     "groups": {
       "8 - The Digital Age": {
         "position": [
-          96,
+          88,
           0
         ]
       }

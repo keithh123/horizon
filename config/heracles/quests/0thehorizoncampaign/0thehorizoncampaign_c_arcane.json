@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:inscription_table"
+      }
+    },
+    "title": "{\"text\": \"Whispers of Magic\"}",
+    "description": [
+      "Enter an arcane site: mage towers, catacombs, pyromancer towers. Scrolls, spellbooks and elemental gear.",
+      "",
+      "&aDo:&r Enter an arcane site.",
+      "&6You get:&r Spell scrolls, ink and arcane essence."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          264,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_frontier"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/arcane"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:arcane_essence",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

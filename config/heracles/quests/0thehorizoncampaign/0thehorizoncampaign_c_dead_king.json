@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:wither_skeleton_skull"
+      }
+    },
+    "title": "{\"text\": \"Hunt: The Dead King\"}",
+    "description": [
+      "Optional. The catacombs' ruler is a hard fight for a first dungeon boss. First defeat: Ancient Core and a trophy.",
+      "",
+      "&aDo:&r Defeat the Dead King.",
+      "&6You get:&r Ancient Core, trophy and golden apples."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          308,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_arcane"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/dead_king"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

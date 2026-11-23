@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:obsidian"
+      }
+    },
+    "title": "{\"text\": \"Down the Hatch\"}",
+    "description": [
+      "Incendium reshapes the Nether into huge, hostile biomes. Bring fire resistance and a lot of blocks.",
+      "",
+      "&aDo:&r Enter the Nether.",
+      "&6You get:&r Opens Incendium biomes and nether-era materials."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          264,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_frontier"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_nether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:cooked_porkchop",
+        "count": 16
+      }
+    }
+  }
+}

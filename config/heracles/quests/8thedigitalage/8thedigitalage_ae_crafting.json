@@ -10,13 +10,13 @@
     "description": [
       "Build a crafting CPU and encode patterns.",
       "",
-      "&aObjective:&r Build a crafting CPU.",
-      "&bWhy it matters:&r Autocrafting turns storage into production."
+      "&aDo:&r Build a crafting CPU.",
+      "&6You get:&r Autocrafting turns storage into production."
     ],
     "groups": {
       "8 - The Digital Age": {
         "position": [
-          144,
+          132,
           0
         ]
       }

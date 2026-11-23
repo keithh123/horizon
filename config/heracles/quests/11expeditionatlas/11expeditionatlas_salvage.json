@@ -12,14 +12,14 @@
       "also give an Ancient Core) at Apotheosis' salvaging table. Only loot-only items salvage - nothing farmable.",
       "&7(Item task: build a salvaging table.)",
       "",
-      "&aObjective:&r Craft a salvaging table.",
-      "&bWhy it matters:&r Turns unwanted duplicates into shards, gem dust and sometimes cores."
+      "&aDo:&r Craft a salvaging table.",
+      "&6You get:&r Turns unwanted duplicates into shards, gem dust and sometimes cores."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          504
+          240,
+          138
         ]
       }
     }

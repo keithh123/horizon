@@ -13,13 +13,13 @@
       "Rewards are budgeted per structure: a palace is worth more than a shrine, but no single place floods you.",
       "&7Each quest completes the first time you step inside a structure of that family (also retroactively).",
       "",
-      "&aObjective:&r Click Check.",
-      "&bWhy it matters:&r Each following quest explains one structure family before you travel."
+      "&aDo:&r Click Check.",
+      "&6You get:&r Each following quest explains one structure family before you travel."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          0,
+          80,
           0
         ]
       }

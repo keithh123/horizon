@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:compass"
+      }
+    },
+    "title": "{\"text\": \"Act I: The Horizon Calls\"}",
+    "description": [
+      "&6ACT I - THE BEGINNING&r",
+      "Something lies past the edge of every map: old ruins, sleeping giants, doors in the sky. You have a pack, a pickaxe",
+      "and a long road. This chapter is the recommended path through Project Horizon; every other chapter is a side road.",
+      "",
+      "&aDo:&r Click Check.",
+      "&6You get:&r Opens the campaign. Everything else is optional."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:cooked_beef",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:torch",
+        "count": 16
+      }
+    }
+  }
+}

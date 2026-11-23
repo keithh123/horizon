@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:filled_map"
+      }
+    },
+    "title": "{\"text\": \"The Explorer's Ledger\"}",
+    "description": [
+      "Discovery milestones for travellers. Each entry completes the first time you reach the place (retroactive for structures),",
+      "and pays in supplies that make the next trip easier.",
+      "",
+      "&aDo:&r Click Check.",
+      "&6You get:&r A map and a spyglass."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:map",
+        "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:spyglass",
+        "count": 1
+      }
+    }
+  }
+}

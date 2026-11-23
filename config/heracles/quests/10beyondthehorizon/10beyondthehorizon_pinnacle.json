@@ -10,14 +10,14 @@
     "description": [
       "The highest world tier. Everything is lethal; everything is worth it.",
       "",
-      "&aObjective:&r Reach the Pinnacle world tier.",
-      "&bWhy it matters:&r The highest tier; every gem can reach Perfect purity."
+      "&aDo:&r Reach the Pinnacle world tier.",
+      "&6You get:&r The highest tier; every gem can reach Perfect purity."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          36
+          80
         ]
       }
     }

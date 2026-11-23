@@ -55,3 +55,11 @@ Lootr chests, trophies, tokens and Corpse entities would be lost (unknown blocks
 - Not included on purpose: Infinity Cave and Blooming Biosphere would rewrite the overworld height/terrain of existing
   saves (see docs/EXPANSION_CHECKLIST.md).
 - Back up worlds first; the update replaces pack-owned folders (kubejs data, quests) as before.
+
+## 0.3.2 candidate: worldgen and loot changes (existing saves)
+
+- `dungeons_arise:major_structures` spacing 60/44 -> 44/30. Chunks already generated keep their structures; only newly generated
+  chunks use the denser grid, so a migrated world can show two landmark densities (and rarely two landmarks closer than before).
+  Measured nearest landmark from spawn on 3 fresh seeds: 4031/3273/1924 blocks before, 734/3757/1627 after (mean -34%, one seed worse).
+- 75 village-house and shop loot tables that no installed jar defined (their chests were empty) now exist as small themed
+  tables (`horizon:fallback/*`, with a 12% Wayfarer Shard chance). Containers already opened stay as they are.

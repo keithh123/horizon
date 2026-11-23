@@ -10,13 +10,13 @@
     "description": [
       "A Frostmaw sleeps in cold biomes. Optional, dangerous - and its first defeat gives you an Ancient Core and a trophy.",
       "",
-      "&aObjective:&r Defeat a Frostmaw in a cold biome.",
-      "&bWhy it matters:&r First defeat grants an Ancient Core and a trophy for your base."
+      "&aDo:&r Defeat a Frostmaw in a cold biome.",
+      "&6You get:&r First defeat grants an Ancient Core and a trophy for your base."
     ],
     "groups": {
       "2 - The Wild Frontier": {
         "position": [
-          96,
+          88,
           0
         ]
       }

@@ -11,14 +11,14 @@
       "Waystones stand in villages and some ruins. Right-click one to activate it - it becomes a fast-travel destination.",
       "A personal &eWarp Stone&r costs a Wayfarer Shard; &eWarp Scrolls&r turn up in village chests.",
       "",
-      "&aObjective:&r Right-click a waystone to activate it.",
-      "&bWhy it matters:&r Activated waystones become free fast-travel points, so long trips stop costing a day."
+      "&aDo:&r Right-click a waystone to activate it.",
+      "&6You get:&r Activated waystones become free fast-travel points, so long trips stop costing a day."
     ],
     "groups": {
       "2 - The Wild Frontier": {
         "position": [
-          48,
-          0
+          44,
+          40
         ]
       }
     }

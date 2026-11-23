@@ -10,14 +10,14 @@
     "description": [
       "Ascent loot is strong - so are the monsters.",
       "",
-      "&aObjective:&r Reach the Ascent world tier.",
-      "&bWhy it matters:&r Ascent loot is strong, and so are the monsters; prepare before you push."
+      "&aDo:&r Reach the Ascent world tier.",
+      "&6You get:&r Ascent loot is strong, and so are the monsters; prepare before you push."
     ],
     "groups": {
       "3 - Forged in Adventure": {
         "position": [
-          96,
-          36
+          88,
+          40
         ]
       }
     }

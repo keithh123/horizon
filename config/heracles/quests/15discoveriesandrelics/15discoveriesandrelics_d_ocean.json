@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:prismarine_bricks"
+      }
+    },
+    "title": "{\"text\": \"The Deep Blue\"}",
+    "description": [
+      "Enter an ocean structure: monuments, wrecks, sunken ruins.",
+      "",
+      "&aDo:&r Enter an ocean structure.",
+      "&6You get:&r A Heart of the Sea for conduits."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/ocean"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:heart_of_the_sea",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

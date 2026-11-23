@@ -10,14 +10,14 @@
     "description": [
       "Build a glowstone portal to the Aether. Three dungeons, three bosses.",
       "",
-      "&aObjective:&r Light an Aether portal and enter.",
-      "&bWhy it matters:&r A sky realm with three dungeons and the Skyward Plume token."
+      "&aDo:&r Light an Aether portal and enter.",
+      "&6You get:&r A sky realm with three dungeons and the Skyward Plume token."
     ],
     "groups": {
       "4 - Forgotten Realms": {
         "position": [
           0,
-          36
+          0
         ]
       }
     }

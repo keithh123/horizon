@@ -13,14 +13,14 @@
       "6 tokens + 2 gem dust buy a &echosen&r Apotheosis gem at its lowest purity - then cut it up yourself.",
       "This is targeted progress, not a shop: no affix gear, no top purities, and tokens cannot be crafted.",
       "",
-      "&aObjective:&r Obtain any realm token (see the list above).",
-      "&bWhy it matters:&r Tokens are the only way to buy a specific gem, so they make dungeon runs targeted."
+      "&aDo:&r Obtain any realm token (see the list above).",
+      "&6You get:&r Tokens are the only way to buy a specific gem, so they make dungeon runs targeted."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          468
+          240,
+          50
         ]
       }
     }

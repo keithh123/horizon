@@ -1,0 +1,62 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:dragon_egg"
+      }
+    },
+    "title": "{\"text\": \"Conqueror of Calamity\"}",
+    "description": [
+      "Defeat every Cataclysm boss: the pack's hardest combat milestone.",
+      "",
+      "&aDo:&r Defeat every Cataclysm boss.",
+      "&6You get:&r Netherite scrap, a crown hat and a big XP payout."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          528,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ignis",
+    "0thehorizoncampaign_c_summit"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "cataclysm:kill_all_bosses"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_scrap",
+        "count": 4
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 30
+    },
+    "r2": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:bigcrown",
+        "count": 1
+      }
+    }
+  }
+}

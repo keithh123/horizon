@@ -10,13 +10,13 @@
     "description": [
       "Defeat the Sun Spirit atop the gold dungeon (first defeat: Starforged Heart + trophy).",
       "",
-      "&aObjective:&r Defeat the Sun Spirit atop the gold dungeon.",
-      "&bWhy it matters:&r First defeat grants a Starforged Heart, needed for the highest tech tiers."
+      "&aDo:&r Defeat the Sun Spirit atop the gold dungeon.",
+      "&6You get:&r First defeat grants a Starforged Heart, needed for the highest tech tiers."
     ],
     "groups": {
       "4 - Forgotten Realms": {
         "position": [
-          96,
+          88,
           0
         ]
       }

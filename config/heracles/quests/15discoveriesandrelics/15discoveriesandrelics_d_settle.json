@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bell"
+      }
+    },
+    "title": "{\"text\": \"Roads and Roofs\"}",
+    "description": [
+      "Walk into a settlement structure.",
+      "",
+      "&aDo:&r Enter a settlement structure.",
+      "&6You get:&r Food for the road."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/settlement"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bread",
+        "count": 16
+      }
+    }
+  }
+}

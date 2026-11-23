@@ -1,0 +1,63 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_sword"
+      }
+    },
+    "title": "{\"text\": \"Act III: The Rising Threat\"}",
+    "description": [
+      "&6ACT III - THE RISING THREAT&r",
+      "Ascent loot is strong, and so are the monsters. Dimensions, deeper dungeons and Cataclysm's champions come online.",
+      "",
+      "&aDo:&r Reach the Ascent world tier.",
+      "&6You get:&r Strong loot and strong monsters; gem dust and XP bottles help."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          308,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_nether",
+    "0thehorizoncampaign_c_underground"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/ascent"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "count": 16
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

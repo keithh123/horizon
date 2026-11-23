@@ -10,13 +10,13 @@
     "description": [
       "Sigils of Socketing add gem slots. An Ancient Core + 2 gem dust makes two. &7(Item task.)",
       "",
-      "&aObjective:&r Obtain a Sigil of Socketing.",
-      "&bWhy it matters:&r Sockets let your best weapon carry gems, which is the core Apotheosis upgrade."
+      "&aDo:&r Obtain a Sigil of Socketing.",
+      "&6You get:&r Sockets let your best weapon carry gems, which is the core Apotheosis upgrade."
     ],
     "groups": {
       "3 - Forged in Adventure": {
         "position": [
-          96,
+          88,
           0
         ]
       }

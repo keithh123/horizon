@@ -1,0 +1,15 @@
+# Natural-discovery route (headless): /locate each structure on an unexplored seed, load it, roll every container.
+# LOCATE lines record the distance a player would travel; audit lines record what the stage pays.
+kubejs errors server
+# EARLY: settlement and roadside
+LOCATEAUDIT minecraft:village_plains 70 100
+LOCATEAUDIT dungeons_arise:bathhouse 50 100
+LOCATEAUDIT nova_structures:ruin_town 60 100
+# MID: arcane, landmark, crypt
+LOCATEAUDIT irons_spellbooks:catacombs 70 100
+LOCATEAUDIT dungeons_arise:keep_kayra 110 50
+LOCATEAUDIT nova_structures:creeping_crypt 50 100
+# LATE: ocean, ancient city, boss landmark
+LOCATEAUDIT cataclysm:sunken_city 90 50
+LOCATEAUDIT minecraft:ancient_city 90 50
+neoforge tps

@@ -10,14 +10,14 @@
     "description": [
       "Wireless terminals put the network in your pocket - on expeditions too. &7(Item task.)",
       "",
-      "&aObjective:&r Craft a wireless terminal.",
-      "&bWhy it matters:&r Reach your network away from base, including on expeditions."
+      "&aDo:&r Craft a wireless terminal.",
+      "&6You get:&r Reach your network away from base, including on expeditions."
     ],
     "groups": {
       "8 - The Digital Age": {
         "position": [
-          144,
-          36
+          132,
+          40
         ]
       }
     }

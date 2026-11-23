@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "undergarden:catalyst"
+      }
+    },
+    "title": "{\"text\": \"The Dim World\"}",
+    "description": [
+      "A catalyst lights a portal to the dim world below. Its own metals, its own gear line.",
+      "",
+      "&aDo:&r Enter the Undergarden.",
+      "&6You get:&r Echoing Fossils and Undergarden gear."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          352,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "undergarden:undergarden/enter_undergarden"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:cooked_beef",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

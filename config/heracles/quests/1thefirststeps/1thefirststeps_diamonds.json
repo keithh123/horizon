@@ -10,14 +10,14 @@
     "description": [
       "Deep caves under Terralith's mountains hide diamonds - and danger.",
       "",
-      "&aObjective:&r Mine a diamond.",
-      "&bWhy it matters:&r Diamonds unlock enchanting tables, better tools and the later gem tiers."
+      "&aDo:&r Mine a diamond.",
+      "&6You get:&r Diamonds unlock enchanting tables, better tools and the later gem tiers."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
-          192,
-          72
+          176,
+          80
         ]
       }
     }

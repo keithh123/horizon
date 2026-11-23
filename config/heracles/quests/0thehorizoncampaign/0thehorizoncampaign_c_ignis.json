@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:blaze_rod"
+      }
+    },
+    "title": "{\"text\": \"Hunt: The Flame Knight\"}",
+    "description": [
+      "Ignis waits in the Burning Arena. First defeat: Starforged Heart and a trophy.",
+      "",
+      "&aDo:&r Defeat Ignis.",
+      "&6You get:&r Starforged Heart, trophy, gem dust and diamonds."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          396,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_cataclysm"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ignis"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 24
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

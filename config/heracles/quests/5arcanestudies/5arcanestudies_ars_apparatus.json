@@ -10,14 +10,14 @@
     "description": [
       "The apparatus crafts most Ars items and enchants gear.",
       "",
-      "&aObjective:&r Craft an Enchanting Apparatus.",
-      "&bWhy it matters:&r It crafts most Ars items and unlocks the upgrade path."
+      "&aDo:&r Craft an Enchanting Apparatus.",
+      "&6You get:&r It crafts most Ars items and unlocks the upgrade path."
     ],
     "groups": {
       "5 - Arcane Studies": {
         "position": [
-          96,
-          0
+          88,
+          40
         ]
       }
     }

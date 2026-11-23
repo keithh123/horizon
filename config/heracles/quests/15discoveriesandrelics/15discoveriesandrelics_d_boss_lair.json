@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_bars"
+      }
+    },
+    "title": "{\"text\": \"Arenas\"}",
+    "description": [
+      "Enter a boss lair structure: the arenas where legends sleep.",
+      "",
+      "&aDo:&r Enter a boss lair.",
+      "&6You get:&r Golden apples and XP."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          132,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/boss_lair"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 12
+    }
+  }
+}

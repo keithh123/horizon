@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_block"
+      }
+    },
+    "title": "{\"text\": \"Hunt: Iron in the Dark\"}",
+    "description": [
+      "Optional. The Ferrous Wroughtnaut guards chambers underground. Strike from behind.",
+      "",
+      "&aDo:&r Defeat the Ferrous Wroughtnaut.",
+      "&6You get:&r Ancient Core, a trophy and golden apples."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          220,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ferrous_wroughtnaut"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

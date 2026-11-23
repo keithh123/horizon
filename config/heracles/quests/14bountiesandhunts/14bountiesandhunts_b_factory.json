@@ -1,0 +1,85 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_block"
+      }
+    },
+    "title": "{\"text\": \"Bounty: The Block Factory Five\"}",
+    "description": [
+      "Defeat the Yeti, the Sandworm, the Kraken, the Infernal Dragon and the Underworld Knight.",
+      "",
+      "&aDo:&r Defeat all five Block Factory bosses.",
+      "&6You get:&r Gem dust and diamonds."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          320
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/yeti"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/sandworm"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/kraken"
+      ]
+    },
+    "t3": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/infernal_dragon"
+      ]
+    },
+    "t4": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/underworld_knight"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 24
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

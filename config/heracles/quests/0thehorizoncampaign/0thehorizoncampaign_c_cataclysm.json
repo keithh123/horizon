@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_scrap"
+      }
+    },
+    "title": "{\"text\": \"Calamity Rising\"}",
+    "description": [
+      "Find a Cataclysm structure. These legendary arenas hold the pack's hardest fights.",
+      "",
+      "&aDo:&r Find any Cataclysm structure.",
+      "&6You get:&r Unlocks the pack's hardest legends; a totem for the road."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          352,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "cataclysm:root"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:totem_of_undying",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

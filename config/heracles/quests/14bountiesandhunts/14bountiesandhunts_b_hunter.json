@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_sword"
+      }
+    },
+    "title": "{\"text\": \"First Blood\"}",
+    "description": [
+      "Bring down any hostile mob. Everybody starts somewhere.",
+      "",
+      "&aDo:&r Kill any hostile mob.",
+      "&6You get:&r Food to start the hunt."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          44,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_board"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/kill_a_mob"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:cooked_beef",
+        "count": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:glowstone"
+      }
+    },
+    "title": "{\"text\": \"Skyward Bound\"}",
+    "description": [
+      "Light a glowstone portal to the Aether. A calm sky realm with three dungeons and the Skyward Plume token.",
+      "",
+      "&aDo:&r Light an Aether portal and enter.",
+      "&6You get:&r A gentler realm with its own dungeons."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          352,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "aether:enter_aether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:feather",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

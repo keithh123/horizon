@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bow"
+      }
+    },
+    "title": "{\"text\": \"Sniper Duel\"}",
+    "description": [
+      "Land a skeleton shot from at least 50 blocks. Pays in arrows.",
+      "",
+      "&aDo:&r Complete the vanilla Sniper Duel advancement.",
+      "&6You get:&r Spectral arrows for ranged builds."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/sniper_duel"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:spectral_arrow",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:arrow",
+        "count": 32
+      }
+    }
+  }
+}

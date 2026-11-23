@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:honeycomb"
+      }
+    },
+    "title": "{\"text\": \"Honey and Danger\"}",
+    "description": [
+      "Enter a hive family structure.",
+      "",
+      "&aDo:&r Enter a hive structure.",
+      "&6You get:&r Honey."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/hive"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:honey_bottle",
+        "count": 6
+      }
+    }
+  }
+}

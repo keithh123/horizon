@@ -10,14 +10,14 @@
     "description": [
       "Deep in the Ancient Factory.",
       "",
-      "&aObjective:&r Defeat the Harbinger in the Ancient Factory.",
-      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
+      "&aDo:&r Defeat the Harbinger in the Ancient Factory.",
+      "&6You get:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
-          48,
-          108
+          44,
+          120
         ]
       }
     }

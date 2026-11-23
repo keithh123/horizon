@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_upgrade_smithing_template"
+      }
+    },
+    "title": "{\"text\": \"Smithing with Style\"}",
+    "description": [
+      "Apply any armour trim at a smithing table.",
+      "",
+      "&aDo:&r Apply an armour trim.",
+      "&6You get:&r Emeralds for trading."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/trim_with_any_armor_pattern"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:emerald",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

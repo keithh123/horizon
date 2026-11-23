@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:lectern"
+      }
+    },
+    "title": "{\"text\": \"The Bounty Board\"}",
+    "description": [
+      "Optional hunts with a purpose. Every bounty is a real challenge you can complete in normal play, and each completes automatically",
+      "(also retroactively). Pay-outs are supplies and upgrade materials, never relics.",
+      "",
+      "&aDo:&r Click Check.",
+      "&6You get:&r Two name tags to start."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:name_tag",
+        "count": 2
+      }
+    }
+  }
+}

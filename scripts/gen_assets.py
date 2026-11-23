@@ -280,7 +280,7 @@ def main():
         tips[bid] = [("Awarded for the first defeat of " + b["name"] + "."), "A display piece for the Hall of Legends."]
         rarity = "epic" if b["tier"] == "major" else "rare"
         blocks.append(f"  event.create('horizon:{bid}').displayName(Text.translate('block.horizon.{bid}'))"
-                      f".parentModel('horizon:block/trophy_base').textures({{base: 'horizon:block/trophy_pedestal', emblem: 'horizon:block/{bid}'}})"
+                      f".modelGenerator(mg => {{ mg.parent('horizon:block/trophy_base'); mg.textures({{base: 'horizon:block/trophy_pedestal', emblem: 'horizon:block/{bid}'}}) }})"
                       f".box(2, 0, 2, 14, 15, 14).notSolid().defaultCutout().hardness(1.5).resistance(6).stoneSoundType()"
                       f".lightLevel(0.4).item(i => i.rarity('{rarity}').maxStackSize(1))\n")
     for k, v in tips.items():

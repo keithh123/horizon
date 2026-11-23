@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "aether:gold_dungeon_key"
+      }
+    },
+    "title": "{\"text\": \"Bounty: Sky Wardens\"}",
+    "description": [
+      "Defeat the Slider, the Valkyrie Queen and the Sun Spirit.",
+      "",
+      "&aDo:&r Defeat all three Aether bosses.",
+      "&6You get:&r Gem dust and diamonds."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          240
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/slider"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/valkyrie_queen"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/sun_spirit"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 24
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

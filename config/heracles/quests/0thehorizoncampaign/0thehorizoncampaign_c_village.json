@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:bell"
+      }
+    },
+    "title": "{\"text\": \"Safe Harbour\"}",
+    "description": [
+      "Trade with a villager. Villages are safe harbours and sell maps, emeralds and gear.",
+      "",
+      "&aDo:&r Trade with a villager once.",
+      "&6You get:&r Emeralds, maps and charts to your first landmark."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          132,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ruin"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/trade"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:emerald",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

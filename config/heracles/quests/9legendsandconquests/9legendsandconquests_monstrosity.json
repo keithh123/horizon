@@ -10,14 +10,14 @@
     "description": [
       "Found in the Soul Blacksmith.",
       "",
-      "&aObjective:&r Defeat the Netherite Monstrosity.",
-      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
+      "&aDo:&r Defeat the Netherite Monstrosity.",
+      "&6You get:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
-          48,
-          36
+          44,
+          40
         ]
       }
     }

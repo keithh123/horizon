@@ -16,14 +16,14 @@
       "&eComing back:&r Found everywhere; the main shard income while travelling.",
       "&eFeeds into:&r Shards -> warp stones, gem dust, backpack upgrades.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any roadside ruins & camps structure (early game).",
+      "&6You get:&r Wayfarer Shards, occasional charts to temples and arcane sites."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          36
+          40,
+          50
         ]
       }
     }

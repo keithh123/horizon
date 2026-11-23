@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:beacon"
+      }
+    },
+    "title": "{\"text\": \"Summit Tier\"}",
+    "description": [
+      "Summit brings mythic affixes and the deadliest world bosses.",
+      "",
+      "&aDo:&r Reach the Summit world tier.",
+      "&6You get:&r Mythic affixes; scrap for netherite upgrades."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          484,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_dragon"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/summit"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 32
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_scrap",
+        "count": 2
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
+    }
+  }
+}

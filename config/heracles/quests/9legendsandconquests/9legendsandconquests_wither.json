@@ -11,14 +11,14 @@
       "Summon and defeat the Wither. The first defeat (per player) gives a Starforged Heart and a trophy;",
       "later Withers drop their nether star only, so a Wither farm cannot mint relics.",
       "",
-      "&aObjective:&r Summon and defeat the Wither.",
-      "&bWhy it matters:&r First defeat per player grants a Starforged Heart; later ones cannot be farmed for hearts."
+      "&aDo:&r Summon and defeat the Wither.",
+      "&6You get:&r First defeat per player grants a Starforged Heart; later ones cannot be farmed for hearts."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
           0,
-          36
+          40
         ]
       }
     }

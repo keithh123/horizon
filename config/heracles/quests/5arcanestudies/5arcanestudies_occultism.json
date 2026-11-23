@@ -10,14 +10,14 @@
     "description": [
       "Occultism summons spirits that mine, craft and store for you.",
       "",
-      "&aObjective:&r Craft chalk and open the Occultism guide.",
-      "&bWhy it matters:&r Spirits automate mining, crafting and storage without power."
+      "&aDo:&r Craft chalk and open the Occultism guide.",
+      "&6You get:&r Spirits automate mining, crafting and storage without power."
     ],
     "groups": {
       "5 - Arcane Studies": {
         "position": [
           0,
-          72
+          80
         ]
       }
     }

@@ -1,0 +1,73 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:end_crystal"
+      }
+    },
+    "title": "{\"text\": \"Bounty: End Cabal\"}",
+    "description": [
+      "Defeat the Ender Guardian, the Ender Golem and the Ender Dragon.",
+      "",
+      "&aDo:&r Defeat the Ender Guardian, Ender Golem and the Dragon.",
+      "&6You get:&r Gem dust and netherite scrap."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          400
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ender_guardian"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ender_golem"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ender_dragon"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 32
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_scrap",
+        "count": 2
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 25
+    }
+  }
+}

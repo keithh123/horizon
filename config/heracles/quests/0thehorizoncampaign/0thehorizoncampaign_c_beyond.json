@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:lodestone"
+      }
+    },
+    "title": "{\"text\": \"Act V: Beyond the Horizon\"}",
+    "description": [
+      "&6ACT V - BEYOND THE CAMPAIGN&r",
+      "The story is told, the world is not. What remains is mastery: every legend, every realm, every structure family,",
+      "and the Horizon Gauntlet. See the Bounties and Discoveries chapters for the checklist.",
+      "",
+      "&aDo:&r Click Check.",
+      "&6You get:&r Opens the post-campaign mastery list."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          572,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_pinnacle",
+    "0thehorizoncampaign_c_conqueror"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

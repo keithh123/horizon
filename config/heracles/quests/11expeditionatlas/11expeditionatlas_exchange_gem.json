@@ -10,14 +10,14 @@
     "description": [
       "Craft any Expedition Exchange gem (EMI: search the horizon_exchange recipes).",
       "",
-      "&aObjective:&r Craft any Exchange gem (EMI: search horizon_exchange).",
-      "&bWhy it matters:&r Shows the token to gem loop works on your save."
+      "&aDo:&r Craft any Exchange gem (EMI: search horizon_exchange).",
+      "&6You get:&r Shows the token to gem loop works on your save."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          96,
-          0
+          240,
+          94
         ]
       }
     }

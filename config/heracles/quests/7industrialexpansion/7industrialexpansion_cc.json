@@ -11,14 +11,14 @@
       "CC: Tweaked computers and turtles can script anything.",
       "&7(Item task.)",
       "",
-      "&aObjective:&r Craft a computer.",
-      "&bWhy it matters:&r Programmable automation for any machine in the pack."
+      "&aDo:&r Craft a computer.",
+      "&6You get:&r Programmable automation for any machine in the pack."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          108
+          120
         ]
       }
     }

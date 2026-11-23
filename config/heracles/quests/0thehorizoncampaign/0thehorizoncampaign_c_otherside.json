@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:echo_shard"
+      }
+    },
+    "title": "{\"text\": \"Through the Silence\"}",
+    "description": [
+      "Beyond the Ancient Cities lies the Otherside. Silence is a weapon here: do not wake the Warden.",
+      "",
+      "&aDo:&r Enter the Otherside.",
+      "&6You get:&r Deeper and Darker's strongest gear."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          352,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "deeperdarker:main/enter_otherside"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

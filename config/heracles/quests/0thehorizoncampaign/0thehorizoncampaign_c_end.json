@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_eye"
+      }
+    },
+    "title": "{\"text\": \"Act IV: The Final Challenges\"}",
+    "description": [
+      "&6ACT IV - THE FINAL CHALLENGES&r",
+      "The End is a full expedition area, not a finish line. Gear up with Ascent loot, gems and a full set of buffs.",
+      "",
+      "&aDo:&r Enter the End.",
+      "&6You get:&r Starlit Voidglass and Nullscape's expedition zone."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          396,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent",
+    "0thehorizoncampaign_c_cataclysm"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_end"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

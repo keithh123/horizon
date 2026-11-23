@@ -10,14 +10,14 @@
     "description": [
       "Craft a spell book and design your first glyph combination.",
       "",
-      "&aObjective:&r Craft a Novice Spell Book.",
-      "&bWhy it matters:&r A spell book is how you cast; glyphs are unlocked by crafting them."
+      "&aDo:&r Craft a Novice Spell Book.",
+      "&6You get:&r A spell book is how you cast; glyphs are unlocked by crafting them."
     ],
     "groups": {
       "5 - Arcane Studies": {
         "position": [
-          48,
-          0
+          44,
+          40
         ]
       }
     }

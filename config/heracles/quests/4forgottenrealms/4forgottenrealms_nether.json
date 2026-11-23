@@ -10,14 +10,14 @@
     "description": [
       "Incendium reshapes the Nether into huge, hostile biomes.",
       "",
-      "&aObjective:&r Enter the Nether.",
-      "&bWhy it matters:&r Opens Incendium's biomes, fortresses and the materials for Nether-era gear."
+      "&aDo:&r Enter the Nether.",
+      "&6You get:&r Opens Incendium's biomes, fortresses and the materials for Nether-era gear."
     ],
     "groups": {
       "4 - Forgotten Realms": {
         "position": [
           0,
-          0
+          40
         ]
       }
     }

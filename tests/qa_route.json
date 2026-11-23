@@ -1,0 +1,11 @@
+{
+  "_comment": "Fixed-seed route for /horizon-qa shaders (Solas vs other shaders, Voxy LOD). Coordinates are for this seed only; yaw/pitch fixed so screenshots are comparable.",
+  "seed": "horizon-qa-shaders-1",
+  "dwell_ticks": 200,
+  "waypoints": [
+    {"name": "spawn-ground", "x": 0, "y": 100, "z": 0, "yaw": 0, "pitch": 5},
+    {"name": "sunrise-ridge", "x": 400, "y": 140, "z": -400, "yaw": 90, "pitch": 0},
+    {"name": "voxy-horizon", "x": 800, "y": 200, "z": 800, "yaw": 180, "pitch": -2},
+    {"name": "water-edge", "x": -600, "y": 90, "z": 300, "yaw": 270, "pitch": 10}
+  ]
+}

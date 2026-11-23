@@ -10,14 +10,14 @@
     "description": [
       "Mekanism's infuser makes steel and alloys.",
       "",
-      "&aObjective:&r Craft a metallurgic infuser.",
-      "&bWhy it matters:&r Steel and alloys are required for most Mekanism machines."
+      "&aDo:&r Craft a metallurgic infuser.",
+      "&6You get:&r Steel and alloys are required for most Mekanism machines."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          0
+          40
         ]
       }
     }

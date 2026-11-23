@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_pickaxe"
+      }
+    },
+    "title": "{\"text\": \"Iron Age\"}",
+    "description": [
+      "Iron is the first real upgrade: armour, a shield and a bucket.",
+      "",
+      "&aDo:&r Smelt an iron ingot.",
+      "&6You get:&r Iron armour and a shield make early fights survivable."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          44,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_begin"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/smelt_iron"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:shield",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:coal",
+        "count": 16
+      }
+    }
+  }
+}

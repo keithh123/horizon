@@ -16,14 +16,14 @@
       "&eComing back:&r Iron's structures are spread far apart; the Dead King's catacombs are a one-time boss lair.",
       "&eFeeds into:&r Magic route: scrolls -> spellbook; cores -> epic ink.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any arcane sites structure (mid game).",
+      "&6You get:&r Scrolls and inks (upstream tables, unchanged), Ancient Cores in treasure, Iron's spell gear."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          216
+          40,
+          166
         ]
       }
     }

@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:mossy_cobblestone"
+      }
+    },
+    "title": "{\"text\": \"A Road Less Walked\"}",
+    "description": [
+      "Step inside any roadside ruin, camp or shrine. Small sites hand out Wayfarer Shards: the pack's travel currency.",
+      "",
+      "&aDo:&r Enter any roadside ruin, camp or shrine.",
+      "&6You get:&r Starts your Wayfarer Shard income and hands out a chart."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          88,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_iron",
+    "0thehorizoncampaign_c_bed"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/roadside"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:map",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:loottable",
+      "loot_table": "horizon:rewards/quest/chart_temple"
+    }
+  }
+}

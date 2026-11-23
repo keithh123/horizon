@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:sculk_shrieker"
+      }
+    },
+    "title": "{\"text\": \"Echoes\"}",
+    "description": [
+      "Enter a deep structure: Ancient Cities, Undergarden catacombs, Otherside temples.",
+      "",
+      "&aDo:&r Enter a deep structure.",
+      "&6You get:&r Echo shards."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          88,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_ocean"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/deep"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:echo_shard",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

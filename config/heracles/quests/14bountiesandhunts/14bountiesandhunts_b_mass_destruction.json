@@ -1,0 +1,79 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:obsidian"
+      }
+    },
+    "title": "{\"text\": \"Bounty: Mass Destruction\"}",
+    "description": [
+      "Defeat the Lich, the Obsidilith, the Gauntlet and the Void Blossom.",
+      "",
+      "&aDo:&r Defeat all four BOMD bosses.",
+      "&6You get:&r Gem dust and a netherite scrap."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          280
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/lich"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/obsidilith"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/gauntlet"
+      ]
+    },
+    "t3": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/void_blossom"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 24
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:netherite_scrap",
+        "count": 1
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

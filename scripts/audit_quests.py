@@ -29,7 +29,7 @@ for qid, q in quests.items():
     if re.match(r"(?i)new quest|untitled|todo|placeholder", t) or len(t) < 4:
         problems.append(f"{qid}: placeholder title {t!r}")
     titles.setdefault(t.lower(), []).append(qid)
-    if "Objective:" not in desc or "Why it matters:" not in desc:
+    if "Do:" not in desc or "You get:" not in desc:
         problems.append(f"{qid}: missing objective/why lines")
     if not q["tasks"]:
         problems.append(f"{qid}: no tasks")

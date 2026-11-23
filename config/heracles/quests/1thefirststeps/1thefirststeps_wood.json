@@ -10,13 +10,13 @@
     "description": [
       "Gather wood for tools and a first shelter.",
       "",
-      "&aObjective:&r Collect 16 logs of any kind.",
-      "&bWhy it matters:&r Planks, sticks and a crafting table are the base of every tool you will make."
+      "&aDo:&r Collect 16 logs of any kind.",
+      "&6You get:&r Planks, sticks and a crafting table are the base of every tool you will make."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
-          48,
+          44,
           0
         ]
       }

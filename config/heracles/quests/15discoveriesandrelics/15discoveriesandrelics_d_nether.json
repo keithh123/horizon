@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:blackstone"
+      }
+    },
+    "title": "{\"text\": \"Brimstone\"}",
+    "description": [
+      "Enter a Nether family structure.",
+      "",
+      "&aDo:&r Enter a Nether structure.",
+      "&6You get:&r Golden apples."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          160
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/nether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    }
+  }
+}

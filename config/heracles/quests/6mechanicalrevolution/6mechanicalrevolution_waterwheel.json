@@ -10,13 +10,13 @@
     "description": [
       "Place a water wheel in flowing water to generate stress units.",
       "",
-      "&aObjective:&r Place a water wheel in flowing water.",
-      "&bWhy it matters:&r First free source of rotation."
+      "&aDo:&r Place a water wheel in flowing water.",
+      "&6You get:&r First free source of rotation."
     ],
     "groups": {
       "6 - Mechanical Revolution": {
         "position": [
-          48,
+          44,
           0
         ]
       }

@@ -1,0 +1,6 @@
+locate structure #horizon:family/landmark
+WAIT 3
+locate structure #horizon:family/temple
+WAIT 3
+locate structure #horizon:family/ocean
+WAIT 3

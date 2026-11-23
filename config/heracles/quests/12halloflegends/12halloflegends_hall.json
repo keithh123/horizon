@@ -13,13 +13,13 @@
       "The reward is once per player, so summonable bosses (Wither, Warden, re-summoned Dragon) cannot be farmed for relics.",
       "&7Each quest completes when you are credited with the kill (also retroactively).",
       "",
-      "&aObjective:&r Click Check.",
-      "&bWhy it matters:&r Explains how first-defeat relics, trophies and hearts work."
+      "&aDo:&r Click Check.",
+      "&6You get:&r Explains how first-defeat relics, trophies and hearts work."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          0,
+          120,
           0
         ]
       }

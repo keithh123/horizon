@@ -11,14 +11,14 @@
       "The dragon is a beginning. Its first defeat gives a Starforged Heart and a trophy;",
       "re-summoned dragons give their usual drops only.",
       "",
-      "&aObjective:&r Defeat the Ender Dragon.",
-      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy; the End then opens fully."
+      "&aDo:&r Defeat the Ender Dragon.",
+      "&6You get:&r First defeat grants a Starforged Heart and a trophy; the End then opens fully."
     ],
     "groups": {
       "4 - Forgotten Realms": {
         "position": [
-          96,
-          72
+          88,
+          80
         ]
       }
     }

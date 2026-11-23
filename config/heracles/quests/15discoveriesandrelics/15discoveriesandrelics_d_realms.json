@@ -1,0 +1,81 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_pearl"
+      }
+    },
+    "title": "{\"text\": \"Walker Between Worlds\"}",
+    "description": [
+      "Set foot in the Nether, the End, the Aether, the Undergarden and the Otherside.",
+      "",
+      "&aDo:&r Enter all five other dimensions.",
+      "&6You get:&r Gem dust and XP."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          176,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_nether",
+    "15discoveriesandrelics_d_aether",
+    "15discoveriesandrelics_d_end",
+    "15discoveriesandrelics_d_deep"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_nether"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/enter_the_end"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "aether:enter_aether"
+      ]
+    },
+    "t3": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "undergarden:undergarden/enter_undergarden"
+      ]
+    },
+    "t4": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "deeperdarker:main/enter_otherside"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 32
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 25
+    }
+  }
+}

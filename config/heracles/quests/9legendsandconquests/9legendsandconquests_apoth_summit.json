@@ -10,14 +10,14 @@
     "description": [
       "Summit: mythic affixes and the deadliest bosses.",
       "",
-      "&aObjective:&r Reach the Summit world tier.",
-      "&bWhy it matters:&r Mythic affixes drop, and the deadliest bosses spawn."
+      "&aDo:&r Reach the Summit world tier.",
+      "&6You get:&r Mythic affixes drop, and the deadliest bosses spawn."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
           0,
-          108
+          120
         ]
       }
     }

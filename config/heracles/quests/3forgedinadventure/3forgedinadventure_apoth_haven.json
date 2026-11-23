@@ -10,8 +10,8 @@
     "description": [
       "Apotheosis loot is tiered. Your world tier rises as you progress, unlocking rarer affixes.",
       "",
-      "&aObjective:&r Reach the Haven world tier (earned automatically).",
-      "&bWhy it matters:&r World tier controls which affixes and gems can drop."
+      "&aDo:&r Reach the Haven world tier (earned automatically).",
+      "&6You get:&r World tier controls which affixes and gems can drop."
     ],
     "groups": {
       "3 - Forged in Adventure": {

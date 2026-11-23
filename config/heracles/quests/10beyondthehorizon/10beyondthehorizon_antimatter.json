@@ -10,13 +10,13 @@
     "description": [
       "The SPS turns polonium into antimatter.",
       "",
-      "&aObjective:&r Make antimatter in an SPS.",
-      "&bWhy it matters:&r Antimatter is Mekanism's final resource."
+      "&aDo:&r Make antimatter in an SPS.",
+      "&6You get:&r Antimatter is Mekanism's final resource."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
-          48,
+          44,
           0
         ]
       }

@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "companions:entities/sacred_pontiff"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/sacred_pontiff"
+}

@@ -16,14 +16,14 @@
       "&eComing back:&r Trading (villagers restock), new villages in new regions. Containers do not refill.",
       "&eFeeds into:&r Building (regional styles), travel (warp scrolls, waystones), clues to landmarks.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any settlements structure (early game).",
+      "&6You get:&r Surveyor's Charts (exploration maps to nearby landmarks) in cartographer chests."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          0
+          0,
+          50
         ]
       }
     }

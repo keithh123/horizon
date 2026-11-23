@@ -10,13 +10,13 @@
     "description": [
       "Refine oil into fuels and plastics.",
       "",
-      "&aObjective:&r Build a distillation tower.",
-      "&bWhy it matters:&r Refines oil into fuels and plastics for late recipes."
+      "&aDo:&r Build a distillation tower.",
+      "&6You get:&r Refines oil into fuels and plastics for late recipes."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
-          96,
+          88,
           0
         ]
       }

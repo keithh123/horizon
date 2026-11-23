@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:crossbow"
+      }
+    },
+    "title": "{\"text\": \"Arbalistic\"}",
+    "description": [
+      "Kill five unique mobs with a single crossbow shot.",
+      "",
+      "&aDo:&r Complete the vanilla Arbalistic advancement.",
+      "&6You get:&r Rockets for crossbows and a diamond pair."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          132,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_sniper"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/arbalistic"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:firework_rocket",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 2
+      }
+    }
+  }
+}

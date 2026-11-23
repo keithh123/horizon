@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:starforged_heart"
+      }
+    },
+    "title": "{\"text\": \"Heart of the Stars\"}",
+    "description": [
+      "Hold a Starforged Heart: a legendary vault or a great boss's first defeat.",
+      "",
+      "&aDo:&r Hold a Starforged Heart.",
+      "&6You get:&r Diamonds."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          132,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_relic_core"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:starforged_heart",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

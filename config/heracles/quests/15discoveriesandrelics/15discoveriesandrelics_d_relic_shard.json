@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:wayfarer_shard"
+      }
+    },
+    "title": "{\"text\": \"Wayfarer's Token\"}",
+    "description": [
+      "Hold a Wayfarer Shard. Small sites are generous: roadside ruins and village chests.",
+      "",
+      "&aDo:&r Hold a Wayfarer Shard.",
+      "&6You get:&r Iron."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          200
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:wayfarer_shard",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 8
+      }
+    }
+  }
+}

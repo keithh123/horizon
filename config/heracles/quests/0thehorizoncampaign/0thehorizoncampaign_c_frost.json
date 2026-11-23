@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:blue_ice"
+      }
+    },
+    "title": "{\"text\": \"Hunt: The Frozen Tyrant\"}",
+    "description": [
+      "Optional. A Frostmaw sleeps in cold biomes. First defeat: Ancient Core and a trophy.",
+      "",
+      "&aDo:&r Defeat a Frostmaw.",
+      "&6You get:&r Ancient Core, a trophy and golden apples."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          220,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/frostmaw"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

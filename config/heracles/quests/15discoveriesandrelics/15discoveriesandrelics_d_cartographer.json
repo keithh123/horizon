@@ -1,0 +1,140 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:globe_banner_pattern"
+      }
+    },
+    "title": "{\"text\": \"Master Cartographer\"}",
+    "description": [
+      "Enter at least one structure of every family: settlement, roadside, underground, temple, arcane, landmark, ocean, nether, end,",
+      "aether, deep, hive and boss lair.",
+      "",
+      "&aDo:&r Enter every structure family.",
+      "&6You get:&r Gem dust, a hat and XP."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          176,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_boss_lair",
+    "15discoveriesandrelics_d_aether",
+    "15discoveriesandrelics_d_end",
+    "15discoveriesandrelics_d_deep",
+    "15discoveriesandrelics_d_nether",
+    "15discoveriesandrelics_d_hive",
+    "15discoveriesandrelics_d_temple"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/settlement"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/roadside"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/underground"
+      ]
+    },
+    "t3": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/temple"
+      ]
+    },
+    "t4": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/arcane"
+      ]
+    },
+    "t5": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/landmark"
+      ]
+    },
+    "t6": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/ocean"
+      ]
+    },
+    "t7": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/nether"
+      ]
+    },
+    "t8": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/end"
+      ]
+    },
+    "t9": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/aether"
+      ]
+    },
+    "t10": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/deep"
+      ]
+    },
+    "t11": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/hive"
+      ]
+    },
+    "t12": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/boss_lair"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 48
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:explorerhat",
+        "count": 1
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 40
+    }
+  }
+}

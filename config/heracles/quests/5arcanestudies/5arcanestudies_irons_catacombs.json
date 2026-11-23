@@ -11,14 +11,14 @@
       "The Dead King waits in the catacombs. Prepare.",
       "His first defeat gives an Ancient Core and a trophy.",
       "",
-      "&aObjective:&r Enter the Catacombs.",
-      "&bWhy it matters:&r The Dead King's first defeat grants an Ancient Core and a trophy."
+      "&aDo:&r Enter the Catacombs.",
+      "&6You get:&r The Dead King's first defeat grants an Ancient Core and a trophy."
     ],
     "groups": {
       "5 - Arcane Studies": {
         "position": [
-          96,
-          36
+          88,
+          0
         ]
       }
     }

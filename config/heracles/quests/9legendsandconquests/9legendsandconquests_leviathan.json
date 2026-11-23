@@ -10,14 +10,14 @@
     "description": [
       "Beneath the Sunken City.",
       "",
-      "&aObjective:&r Defeat the Leviathan under the Sunken City.",
-      "&bWhy it matters:&r First defeat grants a Starforged Heart and a trophy."
+      "&aDo:&r Defeat the Leviathan under the Sunken City.",
+      "&6You get:&r First defeat grants a Starforged Heart and a trophy."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
-          48,
-          72
+          44,
+          80
         ]
       }
     }

@@ -1,0 +1,127 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:trophy_ignis"
+      }
+    },
+    "title": "{\"text\": \"Keeper of the Hall\"}",
+    "description": [
+      "Defeat every great legend: Dragon, Wither, Warden, Ignis, Monstrosity, Harbinger, Leviathan, Ender Guardian, Maledictus,",
+      "Ancient Remnant, Scylla, Sun Spirit and Stalker. Rewarded by the Hall of Legends with a pearl for the Gauntlet.",
+      "",
+      "&aDo:&r Defeat all 13 great legends.",
+      "&6You get:&r Crown hat; unlocks the Gauntlet via the Hall of Legends."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          616,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_beyond"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ender_dragon"
+      ]
+    },
+    "t1": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/wither"
+      ]
+    },
+    "t2": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/warden"
+      ]
+    },
+    "t3": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ignis"
+      ]
+    },
+    "t4": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/netherite_monstrosity"
+      ]
+    },
+    "t5": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/the_harbinger"
+      ]
+    },
+    "t6": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/the_leviathan"
+      ]
+    },
+    "t7": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ender_guardian"
+      ]
+    },
+    "t8": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/maledictus"
+      ]
+    },
+    "t9": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/ancient_remnant"
+      ]
+    },
+    "t10": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/scylla"
+      ]
+    },
+    "t11": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/sun_spirit"
+      ]
+    },
+    "t12": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/stalker"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "simplehats:crown",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 40
+    }
+  }
+}

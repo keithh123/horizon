@@ -10,14 +10,14 @@
     "description": [
       "Master Ars Nouveau.",
       "",
-      "&aObjective:&r Craft an Archmage Spell Book.",
-      "&bWhy it matters:&r Ars Nouveau's final book; every glyph tier is available."
+      "&aDo:&r Craft an Archmage Spell Book.",
+      "&6You get:&r Ars Nouveau's final book; every glyph tier is available."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          180
+          200
         ]
       }
     }

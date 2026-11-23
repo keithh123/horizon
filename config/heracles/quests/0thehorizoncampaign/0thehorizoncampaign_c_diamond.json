@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond_pickaxe"
+      }
+    },
+    "title": "{\"text\": \"Deep Veins\"}",
+    "description": [
+      "Caves under Terralith's mountains are deep and hostile. Bring torches and a way home.",
+      "",
+      "&aDo:&r Mine a diamond.",
+      "&6You get:&r Unlocks enchanting and the first gem tiers."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          88,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_iron"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:story/mine_diamond"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_carrot",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:arrow",
+        "count": 32
+      }
+    }
+  }
+}

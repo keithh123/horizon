@@ -10,13 +10,13 @@
     "description": [
       "Belts move items and power. Your first production line.",
       "",
-      "&aObjective:&r Craft a mechanical belt and move an item.",
-      "&bWhy it matters:&r Belts move items and power: your first production line."
+      "&aDo:&r Craft a mechanical belt and move an item.",
+      "&6You get:&r Belts move items and power: your first production line."
     ],
     "groups": {
       "6 - Mechanical Revolution": {
         "position": [
-          144,
+          132,
           0
         ]
       }

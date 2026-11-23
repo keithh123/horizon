@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:chiseled_stone_bricks"
+      }
+    },
+    "title": "{\"text\": \"Temples and Shrines\"}",
+    "description": [
+      "Enter a temple family structure.",
+      "",
+      "&aDo:&r Enter a temple structure.",
+      "&6You get:&r A golden apple and a Surveyor's Chart."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          44,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_start"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/temple"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:loottable",
+      "loot_table": "horizon:rewards/quest/chart_temple"
+    }
+  }
+}

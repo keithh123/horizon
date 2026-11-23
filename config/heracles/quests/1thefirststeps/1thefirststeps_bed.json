@@ -10,14 +10,14 @@
     "description": [
       "Sleep through your first night. Bosses and dungeons do not rest - you should.",
       "",
-      "&aObjective:&r Sleep in a bed through the night.",
-      "&bWhy it matters:&r Sets your spawn and skips night mobs while you build."
+      "&aDo:&r Sleep in a bed through the night.",
+      "&6You get:&r Sets your spawn and skips night mobs while you build."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
-          96,
-          36
+          88,
+          40
         ]
       }
     }

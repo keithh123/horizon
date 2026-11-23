@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core"
+      }
+    },
+    "title": "{\"text\": \"Ancient Hand\"}",
+    "description": [
+      "Hold an Ancient Core: a temple treasure room or a mini-boss's first defeat.",
+      "",
+      "&aDo:&r Hold an Ancient Core.",
+      "&6You get:&r Diamonds."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          88,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_relic_shard"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:ancient_core",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

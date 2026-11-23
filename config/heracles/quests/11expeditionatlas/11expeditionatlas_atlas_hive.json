@@ -16,14 +16,14 @@
       "&eComing back:&r Many sanctums and mazes; rewards scale with puzzle success.",
       "&eFeeds into:&r Seals -> utility gems; honey for food and building.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any the bumblezone structure (early-mid game).",
+      "&6You get:&r Honeyed Seals (exchange for Verdant/Splendor gems), puzzle-treasure cores. Failed-puzzle chests give little."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          144
+          80,
+          166
         ]
       }
     }

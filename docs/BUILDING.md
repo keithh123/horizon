@@ -57,3 +57,4 @@ Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_e
   `datapacks/.generated-portal-guards.json`); not part of `build_all.py` because Immersive Infinity is not in the roster.
 - `python scripts/patch_micimmptl.py <orig.jar> <patched.jar>` disables the Voxy mixins of Make it Compatible: Immersive Portals
   (incompatible with Voxy 0.2.16-beta). Instance-only: the add-on is not shipped.
+- `python scripts/patch_visualoverhaul.py <orig.jar> <patched.jar>` removes Visual Overhaul's first-launch resource-pack mixin (NPE in `MidnightConfig.write` when the main thread beats mod construction; seeding `visualoverhaul.json` does not prevent it). Built-in packs must be enabled once by hand.

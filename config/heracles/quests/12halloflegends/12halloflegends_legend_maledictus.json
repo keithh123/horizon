@@ -10,14 +10,14 @@
     "description": [
       "A great legend. First defeat: Starforged Heart + trophy.",
       "",
-      "&aObjective:&r Defeat Maledictus.",
-      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
+      "&aDo:&r Defeat Maledictus (Cataclysm: Nether and End).",
+      "&6You get:&r Starforged Heart + trophy, first kill only."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          48,
-          324
+          200,
+          108
         ]
       }
     }

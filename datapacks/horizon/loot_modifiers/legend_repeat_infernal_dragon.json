@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "block_factorys_bosses:entities/infernal_dragon"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/infernal_dragon"
+}

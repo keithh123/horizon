@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "irons_spellbooks:entities/dead_king"
+    }
+  ],
+  "table": "horizon:inject/legend_repeat/dead_king"
+}

@@ -10,13 +10,13 @@
     "description": [
       "Brass unlocks logistics, mechanical crafters and arms.",
       "",
-      "&aObjective:&r Make a brass ingot.",
-      "&bWhy it matters:&r Brass unlocks logistics, mechanical crafters and arms."
+      "&aDo:&r Make a brass ingot.",
+      "&6You get:&r Brass unlocks logistics, mechanical crafters and arms."
     ],
     "groups": {
       "6 - Mechanical Revolution": {
         "position": [
-          192,
+          176,
           0
         ]
       }

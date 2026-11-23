@@ -10,14 +10,14 @@
     "description": [
       "A great legend. First defeat: Starforged Heart + trophy.",
       "",
-      "&aObjective:&r Defeat Warden.",
-      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
+      "&aDo:&r Defeat Warden (Overworld and Vanilla).",
+      "&6You get:&r Starforged Heart + trophy, first kill only."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          48,
-          72
+          80,
+          50
         ]
       }
     }

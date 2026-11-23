@@ -10,14 +10,14 @@
     "description": [
       "Defeat every Cataclysm boss.",
       "",
-      "&aObjective:&r Defeat every Cataclysm boss.",
-      "&bWhy it matters:&r The pack's hardest combat milestone."
+      "&aDo:&r Defeat every Cataclysm boss.",
+      "&6You get:&r The pack's hardest combat milestone."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          0
+          40
         ]
       }
     }

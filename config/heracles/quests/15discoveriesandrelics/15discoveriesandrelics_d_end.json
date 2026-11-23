@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:end_stone"
+      }
+    },
+    "title": "{\"text\": \"Void Frontier\"}",
+    "description": [
+      "Enter an End family structure.",
+      "",
+      "&aDo:&r Enter an End structure.",
+      "&6You get:&r Ender pearls."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          132,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/end"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ender_pearl",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 12
+    }
+  }
+}

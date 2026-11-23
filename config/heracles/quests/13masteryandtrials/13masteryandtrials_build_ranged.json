@@ -11,14 +11,14 @@
       "&eRanged:&r bows and crossbows take Apotheosis ranged affixes (arrow damage/velocity, snipe, volley).",
       "Solar and Lightning gems (Skyward Plumes) suit fast bows; arrow quivers from Relics help.",
       "",
-      "&aObjective:&r Click Check once you have read the guide.",
-      "&bWhy it matters:&r Helps pick gems and gear for bows."
+      "&aDo:&r Click Check once you have read the guide.",
+      "&6You get:&r Helps pick gems and gear for bows."
     ],
     "groups": {
       "13 - Mastery and Trials": {
         "position": [
-          48,
-          108
+          120,
+          50
         ]
       }
     }

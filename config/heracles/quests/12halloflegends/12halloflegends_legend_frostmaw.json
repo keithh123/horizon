@@ -10,14 +10,14 @@
     "description": [
       "A lesser legend. First defeat: Ancient Core + trophy.",
       "",
-      "&aObjective:&r Defeat Frostmaw.",
-      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
+      "&aDo:&r Defeat Frostmaw (Mowzie's Mobs).",
+      "&6You get:&r Ancient Core + trophy, first kill only."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          48,
-          684
+          0,
+          282
         ]
       }
     }

@@ -11,14 +11,14 @@
       "Powah: generators and the energizing orb, easy to scale.",
       "&7(Item task - Powah has no advancements.)",
       "",
-      "&aObjective:&r Craft an Energizing Orb.",
-      "&bWhy it matters:&r Simple scalable power generation."
+      "&aDo:&r Craft an Energizing Orb.",
+      "&6You get:&r Simple scalable power generation."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          72
+          80
         ]
       }
     }

@@ -16,14 +16,14 @@
       "&eComing back:&r The outer End is effectively endless; cities repeat with variety thanks to Nullscape terrain.",
       "&eFeeds into:&r Voidglass -> end gems; hearts -> late tech.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any end expeditions structure (late game).",
+      "&6You get:&r Starlit Voidglass (exchange for Endersurge/Mageslayer gems), elytra, Ancient Cores, rare Starforged Hearts in city treasure."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          396
+          80,
+          224
         ]
       }
     }

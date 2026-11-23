@@ -16,14 +16,14 @@
       "&eComing back:&r Incendium structures are large and widely spaced; the Nether is 8x faster to travel.",
       "&eFeeds into:&r Idols -> nether gems; cores -> sockets; netherite.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any nether expeditions structure (mid game).",
+      "&6You get:&r Cinder Idols (exchange for Inferno/Blood Lord/Molten Breach gems), Ancient Cores, bastion treasure hearts (rare)."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          252
+          0,
+          224
         ]
       }
     }

@@ -11,14 +11,14 @@
       "Modern Industrialization starts with steam. Its multiblocks grow into a real industrial base.",
       "Completes on MI's bronze furnace advancement.",
       "",
-      "&aObjective:&r Craft a bronze furnace (Modern Industrialization).",
-      "&bWhy it matters:&r Steam age is MI's start; multiblocks grow from here."
+      "&aDo:&r Craft a bronze furnace (Modern Industrialization).",
+      "&6You get:&r Steam age is MI's start; multiblocks grow from here."
     ],
     "groups": {
       "7 - Industrial Expansion": {
         "position": [
           0,
-          36
+          0
         ]
       }
     }

@@ -10,14 +10,14 @@
     "description": [
       "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet.",
       "",
-      "&aObjective:&r Defeat every great legend, then click Check.",
-      "&bWhy it matters:&r Its reward opens the Horizon Gauntlet, the hardest fight in the pack."
+      "&aDo:&r Defeat every great legend, then click Check.",
+      "&6You get:&r Its reward opens the Horizon Gauntlet, the hardest fight in the pack."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          96,
-          0
+          120,
+          514
         ]
       }
     }

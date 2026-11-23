@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond_sword"
+      }
+    },
+    "title": "{\"text\": \"Monster Hunter\"}",
+    "description": [
+      "Defeat one of every hostile mob in the game, modded dimensions excepted: the classic long hunt.",
+      "",
+      "&aDo:&r Kill every hostile mob type (vanilla advancement).",
+      "&6You get:&r Diamonds, gem dust and a big XP payout."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          88,
+          160
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:adventure/kill_all_mobs"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 24
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 25
+    }
+  }
+}

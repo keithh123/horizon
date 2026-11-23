@@ -1,0 +1,19 @@
+# nearest structure per reward family from spawn (seed horizon-qa-3)
+locate structure #horizon:family/settlement
+WAIT 3
+locate structure #horizon:family/roadside
+WAIT 3
+locate structure #horizon:family/underground
+WAIT 3
+locate structure #horizon:family/temple
+WAIT 3
+locate structure #horizon:family/arcane
+WAIT 3
+locate structure #horizon:family/landmark
+WAIT 3
+locate structure #horizon:family/ocean
+WAIT 3
+locate structure #horizon:family/hive
+WAIT 3
+locate structure #horizon:family/boss_lair
+WAIT 3

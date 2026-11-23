@@ -1,0 +1,49 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:glowstone"
+      }
+    },
+    "title": "{\"text\": \"Sky Realm\"}",
+    "description": [
+      "Enter an Aether structure.",
+      "",
+      "&aDo:&r Enter an Aether structure.",
+      "&6You get:&r Feathers."
+    ],
+    "groups": {
+      "15 - Discoveries and Relics": {
+        "position": [
+          132,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "15discoveriesandrelics_d_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/aether"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:feather",
+        "count": 16
+      }
+    }
+  }
+}

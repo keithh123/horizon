@@ -10,13 +10,13 @@
     "description": [
       "Smelt iron. Most of the pack's machines start here.",
       "",
-      "&aObjective:&r Smelt an iron ingot in a furnace.",
-      "&bWhy it matters:&r Iron makes buckets, shears, armour and most machine parts."
+      "&aDo:&r Smelt an iron ingot in a furnace.",
+      "&6You get:&r Iron makes buckets, shears, armour and most machine parts."
     ],
     "groups": {
       "1 - The First Steps": {
         "position": [
-          144,
+          132,
           0
         ]
       }

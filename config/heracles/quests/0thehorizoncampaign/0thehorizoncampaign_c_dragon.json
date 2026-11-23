@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:dragon_head"
+      }
+    },
+    "title": "{\"text\": \"The Dragon Falls\"}",
+    "description": [
+      "Defeat the Ender Dragon. First defeat: Starforged Heart and a trophy; re-summoned dragons give only vanilla drops.",
+      "",
+      "&aDo:&r Defeat the Ender Dragon.",
+      "&6You get:&r Starforged Heart, trophy and diamonds."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          440,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_end"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "minecraft:end/kill_dragon"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 6
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 20
+    }
+  }
+}

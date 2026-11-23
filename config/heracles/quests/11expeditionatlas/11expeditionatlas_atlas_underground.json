@@ -16,14 +16,14 @@
       "&eComing back:&r Spawners can be kept and modified (Apothic Spawners). Mineshafts are huge but low value per chest.",
       "&eFeeds into:&r Spawners -> mob farms (bounded by spawner count), cores -> sockets.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any underground dungeons structure (early-mid game).",
+      "&6You get:&r Shards in volume, the first Ancient Cores, spawners for Apothic Spawners."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          72
+          0,
+          108
         ]
       }
     }

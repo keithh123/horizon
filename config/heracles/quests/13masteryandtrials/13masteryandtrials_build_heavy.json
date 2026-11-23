@@ -11,14 +11,14 @@
       "&eHeavy melee and stagger:&r greathammers, greataxes, claymores. Slow swings, big hits, knockback and armour shred.",
       "Look for &eBreach&r (armour pierce, Echoing Fossils), &eBallast&r and &eWarlord&r gems; Cataclysm gear for late game.",
       "",
-      "&aObjective:&r Click Check once you have read the guide.",
-      "&bWhy it matters:&r Helps pick gems and gear for heavy melee."
+      "&aDo:&r Click Check once you have read the guide.",
+      "&6You get:&r Helps pick gems and gear for heavy melee."
     ],
     "groups": {
       "13 - Mastery and Trials": {
         "position": [
-          48,
-          36
+          40,
+          50
         ]
       }
     }

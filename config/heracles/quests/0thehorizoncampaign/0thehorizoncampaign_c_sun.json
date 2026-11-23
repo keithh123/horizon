@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "aether:gold_dungeon_key"
+      }
+    },
+    "title": "{\"text\": \"Hunt: The Sun Spirit\"}",
+    "description": [
+      "The Aether's final guardian. First defeat: Starforged Heart and a trophy.",
+      "",
+      "&aDo:&r Defeat the Sun Spirit.",
+      "&6You get:&r Starforged Heart, trophy and gem dust."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          440,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_slider"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/sun_spirit"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

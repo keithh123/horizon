@@ -16,14 +16,14 @@
       "&eComing back:&r One clear each; there are dozens per world. Visible from far away thanks to Voxy, so they double as navigation.",
       "&eFeeds into:&r Hearts -> fusion, 256M storage, enhancement sigils, legendary ink.",
       "",
-      "&aObjective:&r Step inside any structure of this family.",
-      "&bWhy it matters:&r Knowing what a family offers before you go makes the trip worth it."
+      "&aDo:&r Walk into any great landmarks structure (mid-late game).",
+      "&6You get:&r The Starforged Heart jackpot (vault rooms only), several Ancient Cores, epic/mythic affix rolls in vaults."
     ],
     "groups": {
       "11 - Expedition Atlas": {
         "position": [
-          48,
-          360
+          80,
+          50
         ]
       }
     }

@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:deepslate_bricks"
+      }
+    },
+    "title": "{\"text\": \"Under the Hills\"}",
+    "description": [
+      "Enter an underground family structure: mineshafts, crypts and dungeons. Darker, trappier, more generous.",
+      "",
+      "&aDo:&r Enter an underground structure.",
+      "&6You get:&r Darker dungeons with iron and generous chests."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          264,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_frontier"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:atlas/underground"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:iron_ingot",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

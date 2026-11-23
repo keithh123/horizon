@@ -11,14 +11,14 @@
       "Craft a gem cutting table, then cut gems up toward Perfect purity. Gem dust comes from salvaging and shards.",
       "&7(Item task: the table itself. Apotheosis has no advancement for gem purity.)",
       "",
-      "&aObjective:&r Craft a gem cutting table.",
-      "&bWhy it matters:&r Gem cutting is the long game of every build: Perfect gems are the strongest bonuses."
+      "&aDo:&r Craft a gem cutting table.",
+      "&6You get:&r Gem cutting is the long game of every build: Perfect gems are the strongest bonuses."
     ],
     "groups": {
       "13 - Mastery and Trials": {
         "position": [
-          48,
-          360
+          240,
+          0
         ]
       }
     }

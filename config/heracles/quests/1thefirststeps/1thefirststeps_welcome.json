@@ -12,11 +12,9 @@
       "This book is a guide, not a checklist: every chapter is optional. Follow what interests you.",
       "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls).",
       "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it.",
-      "&7(Click Check below. Before 0.3.1 this waited on the vanilla crafting-table advancement, which needs wood -",
-      "the very thing the next quest asks for - so Timber! could never unlock.)",
       "",
-      "&aObjective:&r Click Check, then claim the reward.",
-      "&bWhy it matters:&r It opens the whole chain, and its reward is the physical Quest Book (right-click, or the button under your inventory)."
+      "&aDo:&r Click Check, then claim the reward.",
+      "&6You get:&r The reward is the Quest Book item: right-click it, or use the button under your inventory."
     ],
     "groups": {
       "1 - The First Steps": {

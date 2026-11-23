@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:nether_star"
+      }
+    },
+    "title": "{\"text\": \"Hunt: The Withering\"}",
+    "description": [
+      "Summon and defeat the Wither. A single Starforged Heart for the first victory only.",
+      "",
+      "&aDo:&r Defeat the Wither.",
+      "&6You get:&r Nether star plus a heart on the first kill."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          352,
+          160
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_ascent"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:legend/wither"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 4
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 15
+    }
+  }
+}

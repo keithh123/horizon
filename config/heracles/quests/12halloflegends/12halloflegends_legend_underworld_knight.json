@@ -10,14 +10,14 @@
     "description": [
       "A lesser legend. First defeat: Ancient Core + trophy.",
       "",
-      "&aObjective:&r Defeat Underworld Knight.",
-      "&bWhy it matters:&r First defeat grants its relic and a trophy for your base; later kills do not."
+      "&aDo:&r Defeat Underworld Knight (Block Factory's Bosses).",
+      "&6You get:&r Ancient Core + trophy, first kill only."
     ],
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          48,
-          1224
+          160,
+          398
         ]
       }
     }

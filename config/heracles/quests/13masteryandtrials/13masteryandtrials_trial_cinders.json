@@ -13,14 +13,14 @@
       "Rewards: affix gear, gems and XP - never relics. Fight it in the open, away from your base.",
       "&7Completes when you are within 48 blocks of the gate as its last wave falls.",
       "",
-      "&aObjective:&r Start the gate and survive every wave.",
-      "&bWhy it matters:&r Trials pay affix gear and gems on a fixed schedule; they never pay relics."
+      "&aDo:&r Pay the cost at the gate and survive every wave.",
+      "&6You get:&r Affix gear, gems and XP. No relics."
     ],
     "groups": {
       "13 - Mastery and Trials": {
         "position": [
-          48,
-          252
+          40,
+          118
         ]
       }
     }

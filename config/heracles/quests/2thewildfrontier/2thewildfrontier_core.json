@@ -11,14 +11,14 @@
       "Ancient Cores come from temple and landmark treasure rooms and from a mini-boss's first defeat.",
       "They build the ME controller and socketing sigils. &7(Item task.)",
       "",
-      "&aObjective:&r Hold one Ancient Core.",
-      "&bWhy it matters:&r Cores gate the ME controller and gem socketing, so tech and gear progress both depend on expeditions."
+      "&aDo:&r Hold one Ancient Core.",
+      "&6You get:&r Cores gate the ME controller and gem socketing, so tech and gear progress both depend on expeditions."
     ],
     "groups": {
       "2 - The Wild Frontier": {
         "position": [
-          96,
-          72
+          88,
+          80
         ]
       }
     }

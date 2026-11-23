@@ -1,0 +1,56 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond_sword"
+      }
+    },
+    "title": "{\"text\": \"Frontier Tier\"}",
+    "description": [
+      "Apotheosis world tiers are the pack's difficulty dial. Frontier brings purple and gold affixes, and stronger monsters.",
+      "",
+      "&aDo:&r Reach the Frontier world tier.",
+      "&6You get:&r Rarer affixes; gem dust to start socketing."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          220,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_landmark"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "apotheosis:progression/frontier"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 8
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "count": 8
+      }
+    }
+  }
+}

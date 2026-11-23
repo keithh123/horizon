@@ -10,14 +10,14 @@
     "description": [
       "Defeat a Warden. The first defeat counts for a heart; summoned Wardens after that do not.",
       "",
-      "&aObjective:&r Defeat a Warden.",
-      "&bWhy it matters:&r First defeat counts toward a heart; summoned Wardens afterwards do not."
+      "&aDo:&r Defeat a Warden.",
+      "&6You get:&r First defeat counts toward a heart; summoned Wardens afterwards do not."
     ],
     "groups": {
       "9 - Legends and Conquests": {
         "position": [
           0,
-          72
+          80
         ]
       }
     }

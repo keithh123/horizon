@@ -11,14 +11,14 @@
       "Simply Swords weapons are sidegrades with movesets from Better Combat. Try a few - none is strictly best.",
       "Uniques have their own abilities; duplicates salvage into shards at Apotheosis' salvaging table.",
       "",
-      "&aObjective:&r Obtain any Simply Swords weapon.",
-      "&bWhy it matters:&r Weapon type decides your combos and playstyle: sample a few before committing."
+      "&aDo:&r Obtain any Simply Swords weapon.",
+      "&6You get:&r Weapon type decides your combos and playstyle: sample a few before committing."
     ],
     "groups": {
       "3 - Forged in Adventure": {
         "position": [
-          48,
-          72
+          44,
+          80
         ]
       }
     }

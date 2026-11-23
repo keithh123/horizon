@@ -10,14 +10,14 @@
     "description": [
       "Discover every Bumblezone biome.",
       "",
-      "&aObjective:&r Discover every Bumblezone biome.",
-      "&bWhy it matters:&r Completing the realm rewards Honeyed Seals for the Exchange."
+      "&aDo:&r Discover every Bumblezone biome.",
+      "&6You get:&r Completing the realm rewards Honeyed Seals for the Exchange."
     ],
     "groups": {
       "10 - Beyond the Horizon": {
         "position": [
           0,
-          216
+          240
         ]
       }
     }

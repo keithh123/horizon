@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "gateways:gate_pearl"
+      }
+    },
+    "title": "{\"text\": \"The Final Trial\"}",
+    "description": [
+      "Spend the pearl from the Hall of Legends and survive every wave of the hardest trial.",
+      "",
+      "&aDo:&r Complete the Horizon Gauntlet trial.",
+      "&6You get:&r Final campaign milestone and a large gem dust payout."
+    ],
+    "groups": {
+      "0 - The Horizon Campaign": {
+        "position": [
+          660,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0thehorizoncampaign_c_curator"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:trial/horizon"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 64
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 50
+    }
+  }
+}

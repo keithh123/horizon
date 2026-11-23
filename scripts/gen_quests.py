@@ -13,7 +13,8 @@ Design rules (checked at build time):
   * Boss relics come from horizon:legend/* first-kill advancements, never from quest rewards.
   * No quest reward may complete another quest's item task (no reward chains / shortcuts).
 """
-import json, os, shutil
+import json, os, shutil, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -49,9 +50,7 @@ C["1 - The First Steps"] = [
      ["The world is enormous. Mountains here are real mountains, and with Voxy you can see them from very far away.",
       "This book is a guide, not a checklist: every chapter is optional. Follow what interests you.",
       "Press &eJ&r any time to reopen it (keybinds are searchable in Options > Controls).",
-      "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it.",
-      "&7(Click Check below. Before 0.3.1 this waited on the vanilla crafting-table advancement, which needs wood -",
-      "the very thing the next quest asks for - so Timber! could never unlock.)"],
+      "Dying drops your items into a &ecorpse&r at the spot (also in the void): go back for it."],
      [], [("check",)], [("item", "minecraft:bread", 8), ("item", "heracles:quest_book", 1)]),
     ("wood", "Timber!", "minecraft:oak_log", ["Gather wood for tools and a first shelter."], ["welcome"],
      [("item", "#minecraft:logs", 16)], [("item", "minecraft:torch", 16)]),
@@ -260,6 +259,25 @@ C["10 - Beyond the Horizon"] = [
 ]
 
 # ---------------------------------------------------------------- new chapters
+
+# realm / encounter groups for the Hall of Legends layout (display only; quest ids and prerequisites are unchanged)
+REALMS = [
+    ("Overworld and Vanilla", ["ender_dragon", "wither", "warden", "elder_guardian", "stalker", "dead_king"]),
+    ("Cataclysm: Nether and End", ["ignis", "netherite_monstrosity", "the_harbinger", "ender_guardian", "ender_golem", "maledictus"]),
+    ("Cataclysm: Sea, Sand and Ruins", ["the_leviathan", "scylla", "ancient_remnant", "the_prowler", "clawdian"]),
+    ("The Aether", ["slider", "valkyrie_queen", "sun_spirit"]),
+    ("Mowzie's Mobs", ["frostmaw", "ferrous_wroughtnaut", "umvuthi", "sculptor"]),
+    ("Bosses of Mass Destruction", ["lich", "obsidilith", "gauntlet", "void_blossom"]),
+    ("Block Factory's Bosses", ["yeti", "sandworm", "kraken", "infernal_dragon", "underworld_knight"]),
+    ("Other realms", ["forgotten_guardian", "cosmic_crystal_entity", "sacred_pontiff"]),
+]
+REALM_OF = {f"legend_{b}": r for r, bs in REALMS for b in bs}
+MAJOR_IDS = {f"legend_{b['id'].split(':')[1]}" for b in LEG["bosses"] if b["tier"] == "major"}
+_all = [b["id"].split(":")[1] for b in LEG["bosses"]]
+assert sorted(_all) == sorted(x for _, bs in REALMS for x in bs), "REALMS must list every boss exactly once"
+
+ATLAS_GROUPS = [("Roads and settlements", ["settlement", "roadside", "landmark"]), ("Underground and sea", ["underground", "ocean", "deep"]),
+                ("Magic and nature", ["temple", "arcane", "hive"]), ("Other dimensions", ["nether", "aether", "end"]), ("Boss lairs", ["boss_lair"])]
 ATLAS_ORDER = ["settlement", "roadside", "underground", "ocean", "hive", "temple", "arcane", "nether", "aether", "deep", "landmark", "end", "boss_lair"]
 atlas = [("atlas", "Reading the Atlas", "minecraft:filled_map",
           ["Every structure in this world belongs to an expedition family with its own rewards. Each quest in this chapter",
@@ -349,10 +367,19 @@ mastery.append(("perfect_gem", "Gem Cutter's Bench", "apotheosis:gem_cutting_tab
                 ["builds"], [("item", "apotheosis:gem_cutting_table", 1)], [("xp", 20)]))
 C["13 - Mastery and Trials"] = mastery
 
+# ---------------------------------------------------------------- 0.5 campaign / bounty / discovery chapters
+import quest_campaign as _qc
+_rest = dict(C)
+C.clear()
+C[_qc.CAMPAIGN] = _qc.C[_qc.CAMPAIGN]
+C.update(_rest)
+C[_qc.BOUNTY] = _qc.C[_qc.BOUNTY]
+C[_qc.DISCOVER] = _qc.C[_qc.DISCOVER]
+
 # ---------------------------------------------------------------- objective + why-it-matters lines
 # (objective, why). Every quest gets both; the generated chapters (atlas, legends, trials) use templates below.
 GUIDE = {
- "welcome": ("Click Check, then claim the reward.", "It opens the whole chain, and its reward is the physical Quest Book (right-click, or the button under your inventory)."),
+ "welcome": ("Click Check, then claim the reward.", "The reward is the Quest Book item: right-click it, or use the button under your inventory."),
  "wood": ("Collect 16 logs of any kind.", "Planks, sticks and a crafting table are the base of every tool you will make."),
  "stone_age": ("Mine stone with a wooden pickaxe.", "Stone tools and a furnace are the gate to iron."),
  "iron": ("Smelt an iron ingot in a furnace.", "Iron makes buckets, shears, armour and most machine parts."),
@@ -445,15 +472,22 @@ GUIDE = {
 }
 
 
+GUIDE.update(_qc.GUIDE)
+
+
 def objective_why(qid, title):
     if qid in GUIDE:
         return GUIDE[qid]
     if qid.startswith("atlas_"):
-        return ("Step inside any structure of this family.", "Knowing what a family offers before you go makes the trip worth it.")
+        d = F[qid[6:]]
+        sig = d["signature"].split(";")[0].rstrip(".")
+        return (f"Walk into any {d['title'].lower()} structure ({d['stage']} game).", sig + ".")
     if qid.startswith("legend_"):
-        return (f"Defeat {title}.", "First defeat grants its relic and a trophy for your base; later kills do not.")
+        major = qid in MAJOR_IDS
+        return (f"Defeat {title} ({REALM_OF.get(qid, 'anywhere')}).",
+                ("Starforged Heart" if major else "Ancient Core") + " + trophy, first kill only.")
     if qid.startswith("trial_"):
-        return ("Start the gate and survive every wave.", "Trials pay affix gear and gems on a fixed schedule; they never pay relics.")
+        return ("Pay the cost at the gate and survive every wave.", "Affix gear, gems and XP. No relics.")
     raise SystemExit(f"quest {qid} has no objective/why line")
 
 
@@ -527,18 +561,64 @@ def no_reward_shortcuts():
         raise SystemExit("reward shortcuts: " + "; ".join(bad))
 
 
-def layout(quests):
+def grid(rows, pos, x0=0, y0=0, dx=40, dy=44, wrap=7):
+    """rows: list of lists of quest ids; each row wraps at `wrap` nodes. Returns next free y."""
+    y = y0
+    for row in rows:
+        for i, qid in enumerate(row):
+            pos[qid] = [x0 + (i % wrap) * dx, y + (i // wrap) * dy]
+        y += ((len(row) - 1) // wrap + 1) * dy + 14
+    return y
+
+
+def layout(chapter, quests):
+    ids = [q[0] for q in quests]
+    pos = {}
+    if chapter.endswith("Hall of Legends"):
+        pos["hall"] = [3 * 40, 0]
+        rows = [[f"legend_{b}" for b in bs] for _, bs in REALMS]
+        y = grid(rows, pos, y0=50)
+        pos["hall_complete"] = [3 * 40, y]
+        return pos
+    if chapter.endswith("Expedition Atlas"):
+        pos["atlas"] = [2 * 40, 0]
+        y = grid([[f"atlas_{f}" for f in fs] for _, fs in ATLAS_GROUPS], pos, y0=50, wrap=3, dx=40)
+        # exchange / salvage / gem to the right of the clusters
+        for i, q in enumerate(["exchange", "exchange_gem", "salvage"]):
+            pos[q] = [6 * 40, 50 + i * 44]
+        return pos
+    if chapter.endswith("Mastery and Trials"):
+        pos["builds"] = [3 * 40, 0]
+        builds = [i for i in ids if i.startswith("build_")]
+        trials = [i for i in ids if i.startswith("trial_")]
+        y = grid([builds], pos, y0=50, wrap=6)
+        pos["perfect_gem"] = [6 * 40, 0]
+        grid([trials], pos, y0=y + 10, wrap=6)
+        return pos
+    # default: columns by depth; the longest prerequisite chain stays on row 0 as the main path, side branches fall below it
+    byid = {q[0]: q for q in quests}
     depth = {}
-    def d(q):
-        if q[0] not in depth:
-            depth[q[0]] = 0 if not q[4] else 1 + max(d(next(x for x in quests if x[0] == dep)) for dep in q[4])
-        return depth[q[0]]
-    rows, pos = {}, {}
-    for q in quests:
-        col = d(q)
-        row = rows.get(col, 0)
-        rows[col] = row + 1
-        pos[q[0]] = [col * 48, row * 36]
+    def d(i):
+        if i not in depth:
+            deps = byid[i][4]
+            depth[i] = 0 if not deps else 1 + max(d(x) for x in deps)
+        return depth[i]
+    for i in ids:
+        d(i)
+    main, cur = set(), max(ids, key=lambda i: (depth[i], -ids.index(i)))
+    while cur:
+        main.add(cur)
+        deps = byid[cur][4]
+        cur = max(deps, key=lambda x: depth[x]) if deps else None
+    rows = {}
+    for i in ids:
+        col = depth[i]
+        if i in main:
+            row = 0
+        else:
+            rows[col] = rows.get(col, 0) + 1
+            row = rows[col]
+        pos[i] = [col * 44, row * 40]
     return pos
 
 
@@ -548,7 +628,7 @@ def main():
     total = 0
     for chapter, quests in C.items():
         ids = {q[0] for q in quests}
-        pos = layout(quests)
+        pos = layout(chapter, quests)
         folder = "".join(ch for ch in chapter.lower() if ch.isalnum())
         for qid, title, icon, desc, deps, tasks, rewards in quests:
             for dep in deps:
@@ -557,7 +637,7 @@ def main():
             assert title.strip() and not title.lower().startswith("new quest"), qid
             quest = {
                 "display": {"icon": {"type": "heracles:item", "item": {"id": check("item", icon)}},
-                            "title": json.dumps({"text": title}), "description": desc + ["", "&aObjective:&r " + obj, "&bWhy it matters:&r " + why], "groups": {chapter: {"position": pos[qid]}}},
+                            "title": json.dumps({"text": title}), "description": desc + ["", "&aDo:&r " + obj, "&6You get:&r " + why], "groups": {chapter: {"position": pos[qid]}}},
                 "settings": {"hidden": "LOCKED", "unlockNotification": True},
                 "dependencies": [f"{folder}_{d}" for d in deps],
                 "tasks": {f"t{i}": task(t) for i, t in enumerate(tasks)},

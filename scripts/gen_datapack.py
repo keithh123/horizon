@@ -111,7 +111,7 @@ DISABLE_ORES = [
 ]
 # ------------------------------------------------------- 2. structure spacing
 STRUCTURE_SETS = [
-    ("dungeons_arise:major_structures", 60, 44, "rare/legendary landmarks"),
+    ("dungeons_arise:major_structures", 44, 30, "rare/legendary landmarks (was 60/44; nearest landmark was 1.9-4.0 km from spawn on 3 seeds)"),
     ("mowziesmobs:frostmaw_spawns", 40, 16, "rare mini-boss"),
     ("mowziesmobs:monasteries", 36, 14, "rare mini-boss"),
     ("mowziesmobs:umvuthana_groves", 36, 14, "rare mini-boss"),
@@ -428,6 +428,42 @@ def emit_legends():
     return mods
 
 
+# ---------------------------------------------------------------- dead loot-table references
+FALLBACK_KINDS = {   # keyword in the table path -> kind; first match wins
+    "scholar": r"(wizard|occultist|scribe|library|book|alchemist|monk|obelisk|shrine|jewel)",
+    "arms": r"(gunsmith|barracks|archery|smith|hunter|miner|mechanic|engineer)",
+    "pantry": r"(tavern|cooker|kennel|butcher|horticulturist|botanist|oceanograph|netherolog|climatolog|petshop|gazebo|windmill|scavenger)",
+}
+FALLBACK_POOLS = {
+    "house": [("minecraft:bread", 1, 4, 8), ("minecraft:apple", 1, 3, 6), ("minecraft:emerald", 1, 3, 5), ("minecraft:torch", 2, 8, 6), ("minecraft:paper", 1, 4, 4), ("minecraft:iron_ingot", 1, 2, 3)],
+    "scholar": [("minecraft:paper", 2, 6, 8), ("minecraft:book", 1, 2, 6), ("minecraft:lapis_lazuli", 2, 6, 5), ("minecraft:experience_bottle", 1, 1, 2), ("minecraft:emerald", 1, 2, 4)],
+    "arms": [("minecraft:iron_nugget", 3, 9, 8), ("minecraft:arrow", 4, 12, 6), ("minecraft:leather", 1, 3, 5), ("minecraft:iron_ingot", 1, 3, 4), ("minecraft:emerald", 1, 2, 4)],
+    "pantry": [("minecraft:bread", 2, 5, 8), ("minecraft:cooked_beef", 1, 3, 5), ("minecraft:carrot", 2, 6, 6), ("minecraft:baked_potato", 1, 4, 5), ("minecraft:emerald", 1, 2, 3)],
+}
+
+
+def emit_fallbacks():
+    """Village-house and shop templates from other mods reference loot tables that no installed jar defines (80 ids in
+    0.3.1), so every such chest was empty. Define each missing id as a small themed table (+ a modest Wayfarer Shard chance)."""
+    kinds = defaultdict(int)
+    for k, entries in FALLBACK_POOLS.items():
+        write(f"horizon/loot_table/fallback/{k}.json", {"type": "minecraft:chest", "pools": [
+            {"rolls": {"min": 2, "max": 4}, "entries": [
+                {"type": "minecraft:item", "name": n, "weight": w, "functions": [{"function": "minecraft:set_count", "count": {"min": lo, "max": hi}}]}
+                for n, lo, hi, w in entries]},
+            {"rolls": 1, "conditions": [{"condition": "minecraft:random_chance", "chance": 0.12}],
+             "entries": [{"type": "minecraft:item", "name": FAM["items"]["shard"]}]}]})
+    for t in sorted(AUDIT["per_table"]):
+        if t in IDS["loot_table"] or not is_container_table(t) or not role_of(t) or t.startswith("wares:"):
+            continue
+        ns, path = t.split(":", 1)
+        kind = next((k for k, rx in FALLBACK_KINDS.items() if re.search(rx, path)), "house")
+        write(f"{ns}/loot_table/{path}.json", {"type": "minecraft:chest", "pools": [
+            {"rolls": 1, "entries": [{"type": "minecraft:loot_table", "value": f"horizon:fallback/{kind}"}]}]})
+        kinds[kind] += 1
+    return dict(kinds)
+
+
 # ---------------------------------------------------------------- 5. atlas
 def emit_atlas():
     fam_structs = defaultdict(list)
@@ -651,6 +687,8 @@ def main():
     na, ng = emit_apotheosis(classes, chance)
     mods += emit_legends()
     atlas = emit_atlas()
+    fb = emit_fallbacks()
+    print("fallback loot tables:", fb)
     nx, ns_, nt = emit_expeditions()
     write("neoforge/loot_modifiers/global_loot_modifiers.json", {"replace": False, "entries": mods})
     for clue in FAM["clue_maps"]:   # quest-reward charts (Heracles loot-table reward)
