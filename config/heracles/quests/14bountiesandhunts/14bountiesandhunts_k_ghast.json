@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:ghast_tear"
+      }
+    },
+    "title": "{\"text\": \"Contract: Tear Collector\"}",
+    "description": [
+      "Four ghast tears. Mind the fireballs: reflect them with a sword.",
+      "",
+      "&aDo:&r Hold 4 ghast tears.",
+      "&6You get:&r Gem dust."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          308,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_k_blaze"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:ghast_tear",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

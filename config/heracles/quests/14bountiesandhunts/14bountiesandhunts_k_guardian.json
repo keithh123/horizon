@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:prismarine_shard"
+      }
+    },
+    "title": "{\"text\": \"Contract: Deep Salvage\"}",
+    "description": [
+      "Sixteen prismarine shards from ocean monuments.",
+      "",
+      "&aDo:&r Hold 16 prismarine shards.",
+      "&6You get:&r A Heart of the Sea and diamonds."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          264,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:prismarine_shard",
+      "amount": 16,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:heart_of_the_sea",
+        "count": 1
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 2
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

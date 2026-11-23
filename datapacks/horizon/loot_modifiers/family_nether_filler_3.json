@@ -6,39 +6,95 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:castle/barrel/nuggets"
+          "loot_table_id": "incendium:castle/barrel/alchemist"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:castle/barrel/pigstep"
+          "loot_table_id": "incendium:castle/barrel/barracks"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/mob/lumberjack"
+          "loot_table_id": "incendium:castle/barrel/blacksmith"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/base/common"
+          "loot_table_id": "incendium:castle/barrel/food"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/base/junk"
+          "loot_table_id": "incendium:castle/barrel/food_low"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/base/uncommon"
+          "loot_table_id": "incendium:castle/barrel/generic"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/piglin_donjon/donjon_generic"
+          "loot_table_id": "incendium:castle/barrel/generic_big"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/shipwrecks/crimson/supply"
+          "loot_table_id": "incendium:castle/barrel/ice"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/shipwrecks/warped/supply"
+          "loot_table_id": "incendium:castle/barrel/library"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/library_low"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/lumber"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/lumber_big"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/monument"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/barrel/random"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:castle/tower_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:reactor/junk"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:reactor/waste"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:sanctum/brewery"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:sanctum/common_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:sanctum/junk_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:nether_mineshaft/supply_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:nether_mineshaft/supply_barrel_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:nether_mineshaft/supply_barrel_3"
         }
       ]
     }

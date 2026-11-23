@@ -595,6 +595,8 @@ def layout(chapter, quests):
         pos["perfect_gem"] = [6 * 40, 0]
         grid([trials], pos, y0=y + 10, wrap=6)
         return pos
+    if chapter in _qc.POS:
+        return {k: [v[0] * 44, v[1] * 40] for k, v in _qc.POS[chapter].items()} |                {i: [0, 0] for i in ids if i not in _qc.POS[chapter]}
     # default: columns by depth; the longest prerequisite chain stays on row 0 as the main path, side branches fall below it
     byid = {q[0]: q for q in quests}
     depth = {}

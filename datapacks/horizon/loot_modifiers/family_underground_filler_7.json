@@ -6,11 +6,15 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mmr:mineshaft/common"
+          "loot_table_id": "mmr:jungle_mineshaft/supply_barrel"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "mmr:mineshaft/uncommon"
+          "loot_table_id": "mmr:jungle_mineshaft/supply_barrel_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mmr:jungle_mineshaft/supply_barrel_3"
         }
       ]
     }

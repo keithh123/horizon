@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/nether_port/nether_port_supplies"
+          "loot_table_id": "incendium:pipeline/uncommon"
         }
       ]
     }

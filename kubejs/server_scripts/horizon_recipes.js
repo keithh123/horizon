@@ -70,4 +70,11 @@ ServerEvents.recipes(event => {
   event.shaped('sophisticatedbackpacks:stack_upgrade_omega_tier', ['S4S', '4C4', 'S4S'], {
     S: SHARD, '4': 'sophisticatedbackpacks:stack_upgrade_tier_4', C: CORE
   }).id('horizon:backpacks/omega_stack_upgrade')
+
+  // --- 0.5 magic bridge: Iron's arcane essence and Ars source gems convert 1:1 (no net gain: the lapis/amethyst is the fee),
+  //     so a caster who explores for one mod's drops can use them in the other.
+  event.shapeless('2x ars_nouveau:source_gem', ['irons_spellbooks:arcane_essence', 'irons_spellbooks:arcane_essence', 'minecraft:lapis_lazuli'])
+    .id('horizon:magic/essence_to_source')
+  event.shapeless('2x irons_spellbooks:arcane_essence', ['ars_nouveau:source_gem', 'ars_nouveau:source_gem', 'minecraft:amethyst_shard'])
+    .id('horizon:magic/source_to_essence')
 })

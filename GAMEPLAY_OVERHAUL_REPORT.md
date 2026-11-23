@@ -18,3 +18,11 @@ Client rendering of the quest book, actually completing quests, repeat-drop beha
 ## Not done
 Dungeon loot identities, gear rebalance, mod-to-mod recipe links, kill-count bounties, a .mrpack build, world-visible lore.
 Performance work was out of scope as instructed; trophies untouched.
+
+## Second pass (same night)
+- Instance: new Prism instance `ProjectHorizon-0.5` (cloned from 0.3.1 without saves, keeps the hand-added Immersive Portals mods). 0.3.1 received the same content.
+  `dist/ProjectHorizon-0.5.0.mrpack` rebuilt. Backups of the old 0.3.1 config/data: `ProjectHorizon-0.3.1/_backup/pre-0.5-overhaul-*`.
+- Added: 7 item contracts, chapter layouts, family loot extras, magic bridge recipes (see QUEST_AUDIT.md, LOOT_BALANCE_REPORT.md).
+- Tested: full headless smoke (kubejs 0 failed recipes, 4 structure loot audits), and a real client launch of 0.5 auto-joining a copied world:
+  quests loaded without per-quest errors. NOT tested: visuals, claiming rewards, repeat drops, family extras in real chests.
+- Not done: kill-count bounties (format unverifiable), gear rebalance (no values changed), pushing to a git remote (the repo has none).

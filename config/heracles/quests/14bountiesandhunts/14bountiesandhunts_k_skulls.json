@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:wither_skeleton_skull"
+      }
+    },
+    "title": "{\"text\": \"Contract: Bone Orchard\"}",
+    "description": [
+      "Three wither skeleton skulls from the fortress halls.",
+      "",
+      "&aDo:&r Hold 3 wither skeleton skulls.",
+      "&6You get:&r Diamonds."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          308,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_k_blaze"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:wither_skeleton_skull",
+      "amount": 3,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:diamond",
+        "count": 3
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 12
+    }
+  }
+}

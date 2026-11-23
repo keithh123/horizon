@@ -1,0 +1,39 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/blue_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/green_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/purple_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/red_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/sudoku_failed"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/white_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "the_bumblezone:structures/sempiternal_sanctum/yellow_generic"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/hive/filler_4"
+}

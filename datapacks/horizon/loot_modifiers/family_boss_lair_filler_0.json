@@ -1,0 +1,19 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/dragon_tower_common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "block_factorys_bosses:chests/underworld_arena_common"
+        }
+      ]
+    }
+  ],
+  "table": "horizon:inject/boss_lair/filler_0"
+}

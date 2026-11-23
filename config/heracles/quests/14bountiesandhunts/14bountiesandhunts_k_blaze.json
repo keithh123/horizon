@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:blaze_rod"
+      }
+    },
+    "title": "{\"text\": \"Contract: Fortress Raider\"}",
+    "description": [
+      "Bring proof from the Nether fortresses: 12 blaze rods.",
+      "",
+      "&aDo:&r Hold 12 blaze rods.",
+      "&6You get:&r Golden apples and food for the road."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          264,
+          40
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:blaze_rod",
+      "amount": 12,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:golden_apple",
+        "count": 2
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:cooked_porkchop",
+        "count": 16
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 8
+    }
+  }
+}

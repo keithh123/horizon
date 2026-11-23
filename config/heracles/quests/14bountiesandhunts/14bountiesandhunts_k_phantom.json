@@ -1,0 +1,54 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:phantom_membrane"
+      }
+    },
+    "title": "{\"text\": \"Contract: Insomniac\"}",
+    "description": [
+      "Twelve phantom membranes. Stay awake, then fight the sky.",
+      "",
+      "&aDo:&r Hold 12 phantom membranes.",
+      "&6You get:&r XP bottles."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          220,
+          80
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:phantom_membrane",
+      "amount": 12,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:experience_bottle",
+        "count": 12
+      }
+    },
+    "r1": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 6
+    }
+  }
+}

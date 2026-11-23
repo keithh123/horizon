@@ -6,27 +6,39 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/farmer"
+          "loot_table_id": "incendium:castle/barrel/nuggets"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/low"
+          "loot_table_id": "incendium:castle/barrel/pigstep"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:cvill/lumberjack"
+          "loot_table_id": "incendium:cvill/mob/lumberjack"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:quartz_flats/ghastling_food"
+          "loot_table_id": "incendium:pipeline/base/common"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:quartz_flats/kitchen_basic"
+          "loot_table_id": "incendium:pipeline/base/junk"
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:quartz_flats/kitchen_junk"
+          "loot_table_id": "incendium:pipeline/base/uncommon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_donjon/donjon_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/crimson/supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/warped/supply"
         }
       ]
     }

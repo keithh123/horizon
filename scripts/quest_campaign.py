@@ -158,6 +158,32 @@ C[BOUNTY] = [
      [("item", "apotheosis:gem_dust", 24), ("item", "minecraft:diamond", 4), ("xp", 15)]),
 ]
 
+C[BOUNTY] += [
+    ("k_blaze", "Contract: Fortress Raider", "minecraft:blaze_rod", ["Bring proof from the Nether fortresses: 12 blaze rods."], ["b_hunter"],
+     [("item", "minecraft:blaze_rod", 12)], [("item", "minecraft:golden_apple", 2), ("item", "minecraft:cooked_porkchop", 16), ("xp", 8)]),
+    ("k_ghast", "Contract: Tear Collector", "minecraft:ghast_tear", ["Four ghast tears. Mind the fireballs: reflect them with a sword."], ["k_blaze"],
+     [("item", "minecraft:ghast_tear", 4)], [("item", "apotheosis:gem_dust", 12), ("xp", 10)]),
+    ("k_skulls", "Contract: Bone Orchard", "minecraft:wither_skeleton_skull", ["Three wither skeleton skulls from the fortress halls."], ["k_blaze"],
+     [("item", "minecraft:wither_skeleton_skull", 3)], [("item", "minecraft:diamond", 3), ("xp", 12)]),
+    ("k_phantom", "Contract: Insomniac", "minecraft:phantom_membrane", ["Twelve phantom membranes. Stay awake, then fight the sky."], ["b_hunter"],
+     [("item", "minecraft:phantom_membrane", 12)], [("item", "minecraft:experience_bottle", 12), ("xp", 6)]),
+    ("k_shulker", "Contract: Shell Game", "minecraft:shulker_shell", ["Four shulker shells from End cities."], ["b_hunter"],
+     [("item", "minecraft:shulker_shell", 4)], [("item", "apotheosis:gem_dust", 16), ("item", "minecraft:diamond", 2), ("xp", 12)]),
+    ("k_breeze", "Contract: Wind Chaser", "minecraft:breeze_rod", ["Eight breeze rods from the trial chambers."], ["b_hunter"],
+     [("item", "minecraft:breeze_rod", 8)], [("item", "apotheosis:gem_dust", 16), ("item", "minecraft:arrow", 32), ("xp", 10)]),
+    ("k_guardian", "Contract: Deep Salvage", "minecraft:prismarine_shard", ["Sixteen prismarine shards from ocean monuments."], ["b_hunter"],
+     [("item", "minecraft:prismarine_shard", 16)], [("item", "minecraft:heart_of_the_sea", 1), ("item", "minecraft:diamond", 2), ("xp", 10)]),
+]
+K_GUIDE = ({
+    "k_blaze": ("Hold 12 blaze rods.", "Golden apples and food for the road."),
+    "k_ghast": ("Hold 4 ghast tears.", "Gem dust."),
+    "k_skulls": ("Hold 3 wither skeleton skulls.", "Diamonds."),
+    "k_phantom": ("Hold 12 phantom membranes.", "XP bottles."),
+    "k_shulker": ("Hold 4 shulker shells.", "Gem dust and diamonds."),
+    "k_breeze": ("Hold 8 breeze rods.", "Gem dust and arrows."),
+    "k_guardian": ("Hold 16 prismarine shards.", "A Heart of the Sea and diamonds."),
+})
+
 C[DISCOVER] = [
     ("d_start", "The Explorer's Ledger", "minecraft:filled_map",
      ["Discovery milestones for travellers. Each entry completes the first time you reach the place (retroactive for structures),",
@@ -266,4 +292,30 @@ GUIDE = {
     "d_relic_core": ("Hold an Ancient Core.", "Diamonds."),
     "d_relic_heart": ("Hold a Starforged Heart.", "Diamonds."),
     "d_realms": ("Enter all five other dimensions.", "Gem dust and XP."),
+}
+
+
+GUIDE.update(K_GUIDE)
+
+# explicit (column, row) layouts so each act reads left to right
+POS = {
+    CAMPAIGN: {
+        "c_begin": (0, 3), "c_iron": (1, 2), "c_bed": (1, 4), "c_diamond": (2, 1), "c_ruin": (2, 3), "c_village": (3, 3),
+        "c_landmark": (4, 2), "c_frost": (5, 0), "c_wrought": (5, 1), "c_frontier": (5, 3),
+        "c_nether": (6, 2), "c_underground": (6, 4), "c_arcane": (6, 5), "c_dead_king": (7, 5),
+        "c_ascent": (7, 3), "c_aether": (8, 0), "c_slider": (9, 0), "c_sun": (10, 0),
+        "c_undergarden": (8, 1), "c_otherside": (8, 2), "c_cataclysm": (8, 4), "c_ignis": (9, 4), "c_wither": (8, 5),
+        "c_end": (9, 3), "c_dragon": (10, 3), "c_summit": (11, 3), "c_conqueror": (12, 4), "c_pinnacle": (12, 2),
+        "c_beyond": (13, 3), "c_curator": (14, 3), "c_gauntlet": (15, 3),
+    },
+    BOUNTY: {"b_board": (4, 0),
+        "b_hunter": (4, 1), "b_sniper": (0, 2), "b_bullseye": (1, 2), "b_arbalist": (0, 3), "b_trim": (2, 2), "b_totem": (3, 2), "b_hero": (3, 3),
+        "b_monsters": (2, 3),
+        "b_wrought_trio": (0, 5), "b_aether_trio": (1, 5), "b_mass_destruction": (2, 5), "b_factory": (3, 5),
+        "b_sea_raiders": (4, 5), "b_end_cabal": (5, 5), "b_nether_cabal": (6, 5), "b_quiet": (7, 5),
+        "k_blaze": (6, 1), "k_ghast": (7, 0), "k_skulls": (7, 2), "k_phantom": (5, 2), "k_shulker": (5, 3), "k_breeze": (6, 3), "k_guardian": (6, 2)},
+    DISCOVER: {"d_start": (3, 0),
+        "d_settle": (1, 1), "d_temple": (2, 1), "d_ocean": (3, 1), "d_hive": (4, 1), "d_nether": (5, 1),
+        "d_deep": (3, 2), "d_landmark": (1, 2), "d_boss_lair": (1, 3), "d_aether": (0, 3), "d_end": (2, 3),
+        "d_cartographer": (3, 4), "d_relic_shard": (5, 2), "d_relic_core": (5, 3), "d_relic_heart": (5, 4), "d_realms": (4, 4)},
 }

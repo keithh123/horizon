@@ -6,7 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:pipeline/uncommon"
+          "loot_table_id": "incendium:lab/junk"
         }
       ]
     }

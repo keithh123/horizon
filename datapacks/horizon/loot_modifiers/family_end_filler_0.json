@@ -6,7 +6,19 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "nova_structures:chests/end_lighthouse/supply_lighthouse"
+          "loot_table_id": "nova_structures:chests/end_castle/lesser_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/rocket_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/end_castle/supply"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "repurposed_structures:chests/shipwrecks/end/supply"
         }
       ]
     }

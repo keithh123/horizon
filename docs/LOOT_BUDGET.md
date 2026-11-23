@@ -7,7 +7,7 @@ and gem numbers are the expected count of injected affix items / gems on top of 
 Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include
 repeated jigsaw pieces; the solver budgets those structures from the measured counts.
 
-Tables classified: 982 - inject tables: 313 - placed but unassigned (no Horizon injection): 106
+Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon injection): 106
 
 ## The Aether (`aether`) - 1 structure groups
 

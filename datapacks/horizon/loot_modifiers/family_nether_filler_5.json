@@ -6,7 +6,27 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "incendium:lab/junk"
+          "loot_table_id": "incendium:cvill/farmer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:cvill/low"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:cvill/lumberjack"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:quartz_flats/ghastling_food"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:quartz_flats/kitchen_basic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "incendium:quartz_flats/kitchen_junk"
         }
       ]
     }

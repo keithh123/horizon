@@ -6,15 +6,7 @@
       "terms": [
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/strongholds/nether_hallway"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/strongholds/nether_library"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
-          "loot_table_id": "repurposed_structures:chests/strongholds/nether_storage_room"
+          "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_generic"
         }
       ]
     }

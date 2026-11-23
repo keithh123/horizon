@@ -1,0 +1,61 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:breeze_rod"
+      }
+    },
+    "title": "{\"text\": \"Contract: Wind Chaser\"}",
+    "description": [
+      "Eight breeze rods from the trial chambers.",
+      "",
+      "&aDo:&r Hold 8 breeze rods.",
+      "&6You get:&r Gem dust and arrows."
+    ],
+    "groups": {
+      "14 - Bounties and Hunts": {
+        "position": [
+          264,
+          120
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "14bountiesandhunts_b_hunter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "minecraft:breeze_rod",
+      "amount": 8,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:item",
+      "item": {
+        "id": "apotheosis:gem_dust",
+        "count": 16
+      }
+    },
+    "r1": {
+      "type": "heracles:item",
+      "item": {
+        "id": "minecraft:arrow",
+        "count": 32
+      }
+    },
+    "r2": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}
