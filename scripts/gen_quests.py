@@ -260,21 +260,46 @@ C["10 - Beyond the Horizon"] = [
 
 # ---------------------------------------------------------------- new chapters
 
-# realm / encounter groups for the Hall of Legends layout (display only; quest ids and prerequisites are unchanged)
+# Hall of Legends: one small tree per realm, left to right (great-legend realms in the middle, under the Curator).
+# boss -> (prerequisite boss or None = the Hall, column inside the realm, row). Prerequisites follow each mod's own
+# progression (Aether keys, Deeper Darker's Otherside behind the Warden, Ender Golems guarding the Ender Guardian ...).
+# Great legends never wait on a lesser one (except the Aether, where the game itself requires it), so the Curator only
+# needs each realm's last great legend: every great legend is still required, through the chain.
+# Kill credit is retroactive, so a boss beaten out of order completes as soon as its node unlocks.
 REALMS = [
-    ("Overworld and Vanilla", ["ender_dragon", "wither", "warden", "elder_guardian", "stalker", "dead_king"]),
-    ("Cataclysm: Nether and End", ["ignis", "netherite_monstrosity", "the_harbinger", "ender_guardian", "ender_golem", "maledictus"]),
-    ("Cataclysm: Sea, Sand and Ruins", ["the_leviathan", "scylla", "ancient_remnant", "the_prowler", "clawdian"]),
-    ("The Aether", ["slider", "valkyrie_queen", "sun_spirit"]),
-    ("Mowzie's Mobs", ["frostmaw", "ferrous_wroughtnaut", "umvuthi", "sculptor"]),
-    ("Bosses of Mass Destruction", ["lich", "obsidilith", "gauntlet", "void_blossom"]),
-    ("Block Factory's Bosses", ["yeti", "sandworm", "kraken", "infernal_dragon", "underworld_knight"]),
-    ("Other realms", ["forgotten_guardian", "cosmic_crystal_entity", "sacred_pontiff"]),
+    ("Mowzie's Mobs", {"ferrous_wroughtnaut": (None, 0.5, 1), "frostmaw": ("ferrous_wroughtnaut", 0, 2),
+                       "umvuthi": ("ferrous_wroughtnaut", 1, 2), "sculptor": ("umvuthi", 1, 3)}),
+    ("Bosses of Mass Destruction", {"lich": (None, 0.5, 1), "obsidilith": ("lich", 0, 2), "gauntlet": ("lich", 1, 2),
+                                    "void_blossom": ("gauntlet", 1, 3)}),
+    ("Overworld and Vanilla", {"elder_guardian": (None, 0, 1), "wither": (None, 1, 1), "ender_dragon": ("wither", 1, 2),
+                               "warden": (None, 2, 1), "stalker": ("warden", 2, 2), "dead_king": ("warden", 3, 2)}),
+    ("Cataclysm: Nether and End", {"netherite_monstrosity": (None, 0, 1), "ignis": ("netherite_monstrosity", 0, 2),
+                                   "maledictus": ("ignis", 0, 3), "ender_guardian": (None, 1.5, 1),
+                                   "the_harbinger": ("ender_guardian", 1, 2), "ender_golem": ("ender_guardian", 2, 2)}),
+    ("Cataclysm: Sea, Sand and Ruins", {"the_leviathan": (None, 0.5, 1), "scylla": ("the_leviathan", 0, 2),
+                                        "clawdian": ("the_leviathan", 1, 2), "ancient_remnant": (None, 2, 1),
+                                        "the_prowler": ("ancient_remnant", 2, 2)}),
+    ("The Aether", {"slider": (None, 0, 1), "valkyrie_queen": ("slider", 0, 2), "sun_spirit": ("valkyrie_queen", 0, 3)}),
+    ("Block Factory's Bosses", {"yeti": (None, 0.5, 1), "kraken": ("yeti", 0, 2), "infernal_dragon": ("kraken", 0, 3),
+                                "sandworm": ("yeti", 1, 2), "underworld_knight": ("sandworm", 1, 3)}),
+    ("Other realms", {"forgotten_guardian": (None, 0, 1), "cosmic_crystal_entity": (None, 1, 1.4), "sacred_pontiff": (None, 2, 1)}),
 ]
-REALM_OF = {f"legend_{b}": r for r, bs in REALMS for b in bs}
+LEGEND_TREE = {b: v for _, t in REALMS for b, v in t.items()}
+REALM_OF = {f"legend_{b}": r for r, t in REALMS for b in t}
 MAJOR_IDS = {f"legend_{b['id'].split(':')[1]}" for b in LEG["bosses"] if b["tier"] == "major"}
 _all = [b["id"].split(":")[1] for b in LEG["bosses"]]
-assert sorted(_all) == sorted(x for _, bs in REALMS for x in bs), "REALMS must list every boss exactly once"
+assert sorted(_all) == sorted(LEGEND_TREE), "REALMS must list every boss exactly once"
+assert all(p is None or p in LEGEND_TREE for p, _, _ in LEGEND_TREE.values()), "REALMS prerequisite is not a boss"
+# Curator prerequisites: great legends that no other great legend builds on
+_major_parents = {LEGEND_TREE[m[7:]][0] for m in MAJOR_IDS}
+CURATOR_DEPS = sorted(m for m in MAJOR_IDS if m[7:] not in _major_parents)
+def _ancestors(b):
+    out = set()
+    while b:
+        out.add(b)
+        b = LEGEND_TREE[b][0]
+    return out
+assert {m[7:] for m in MAJOR_IDS} <= set().union(*(_ancestors(m[7:]) for m in CURATOR_DEPS)), "Curator must cover every great legend"
 
 ATLAS_GROUPS = [("Roads and settlements", ["settlement", "roadside", "landmark"]), ("Underground and sea", ["underground", "ocean", "deep"]),
                 ("Magic and nature", ["temple", "arcane", "hive"]), ("Other dimensions", ["nether", "aether", "end"]), ("Boss lairs", ["boss_lair"])]
@@ -320,10 +345,11 @@ for b in LEG["bosses"]:
     tier = "great" if b["tier"] == "major" else "lesser"
     legends.append((f"legend_{p}", b["name"], f"horizon:trophy_{p}",
                     [f"A {tier} legend. First defeat: {'Starforged Heart' if b['tier'] == 'major' else 'Ancient Core'} + trophy."],
-                    ["hall"], [("adv", f"horizon:legend/{p}")], [("xp", 10 if b["tier"] == "major" else 5)]))
-majors = [f"legend_{b['id'].split(':')[1]}" for b in LEG["bosses"] if b["tier"] == "major"]
+                    [f"legend_{LEGEND_TREE[p][0]}" if LEGEND_TREE[p][0] else "hall"],
+                    [("adv", f"horizon:legend/{p}")], [("xp", 10 if b["tier"] == "major" else 5)]))
 legends.append(("hall_complete", "Curator of Legends", "minecraft:lodestone",
-                ["Defeat every great legend. The reward is a pearl for the Horizon Gauntlet."], majors, [("check",)],
+                ["Defeat every great legend. The reward is a pearl for the Horizon Gauntlet.",
+                 "&7Each realm's path ends in its greatest foe; the Curator waits at the end of all of them."], CURATOR_DEPS, [("check",)],
                 [("item", "gateways:gate_pearl", 1, {"gateways:gateway": "horizon:trial/horizon"}), ("xp", 50), ("item", "simplehats:crown", 1)]))
 C["12 - Hall of Legends"] = legends
 
@@ -339,7 +365,7 @@ mastery = [("builds", "Choosing a Build", "minecraft:armor_stand",
             ["&eHeavy melee and stagger:&r greathammers, greataxes, claymores. Slow swings, big hits, knockback and armour shred.",
              "Look for &eBreach&r (armour pierce, Echoing Fossils), &eBallast&r and &eWarlord&r gems; Cataclysm gear for late game."],
             ["builds"], [("check",)], [("xp", 3)]),
-           ("build_tank", "Bulwark", "minecraft:shield",
+           ("build_tank", "Bulwark", "minecraft:iron_chestplate",  # shield renders blank in Heracles (special item renderer)
             ["&eDefensive sustain:&r shields, armour/protection affixes, life steal and regeneration.",
              "Look for &eGuardian&r (Echoing Fossils) and &eLunar&r gems, Relics with healing, Farmer's Delight buffs."],
             ["builds"], [("check",)], [("xp", 3)]),
@@ -575,10 +601,22 @@ def layout(chapter, quests):
     ids = [q[0] for q in quests]
     pos = {}
     if chapter.endswith("Hall of Legends"):
-        pos["hall"] = [3 * 40, 0]
-        rows = [[f"legend_{b}" for b in bs] for _, bs in REALMS]
-        y = grid(rows, pos, y0=50)
-        pos["hall_complete"] = [3 * 40, y]
+        # realm trees side by side under the Hall, lifted into a shallow arch (outer realms sit higher),
+        # Curator under the middle where the great-legend paths end
+        dx, dy, gap = 36, 46, 0.9
+        widths = [max(c for _, c, _ in t.values()) + 1 for _, t in REALMS]
+        total = sum(widths) + gap * (len(REALMS) - 1)
+        x, cols = 0.0, []
+        for w in widths:
+            cols.append(x)
+            x += w + gap
+        mid = (total - 1) / 2
+        for (_, t), x0, w in zip(REALMS, cols, widths):
+            lift = ((x0 + (w - 1) / 2 - mid) / mid) ** 2 * 34
+            for b, (_, c, r) in t.items():
+                pos[f"legend_{b}"] = [round((x0 + c) * dx), round(r * dy + 30 - lift)]
+        pos["hall"] = [round(mid * dx), -20]
+        pos["hall_complete"] = [round(mid * dx), max(y for _, y in pos.values()) + 70]
         return pos
     if chapter.endswith("Expedition Atlas"):
         pos["atlas"] = [2 * 40, 0]

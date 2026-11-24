@@ -16,8 +16,8 @@
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          0,
-          50
+          245,
+          116
         ]
       }
     }
@@ -27,7 +27,7 @@
     "unlockNotification": true
   },
   "dependencies": [
-    "12halloflegends_hall"
+    "12halloflegends_legend_wither"
   ],
   "tasks": {
     "t0": {

@@ -16,8 +16,8 @@
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          80,
-          224
+          666,
+          161
         ]
       }
     }
@@ -27,7 +27,7 @@
     "unlockNotification": true
   },
   "dependencies": [
-    "12halloflegends_hall"
+    "12halloflegends_legend_valkyrie_queen"
   ],
   "tasks": {
     "t0": {

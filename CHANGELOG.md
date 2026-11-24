@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.5 quest-book fixes and accessory/zoom mods (2026-11-23, not yet built or launched)
+
+- **Trophy icons (chapters 0, 12):** the `ProjectHorizon-0.5` instance still had the pre-0.3.1 `horizon_items.js`
+  (`.parentModel().textures()`), so every `horizon:trophy_*` rendered as a missing texture. The repo and the 0.5 .mrpack were
+  already correct; the instance copy was replaced (old copy in `.horizon/backup-0.5-instance-*`).
+- **Hall of Legends (chapter 12)** is now branched: one small tree per realm, following each mod's own progression
+  (Slider > Valkyrie Queen > Sun Spirit, Warden > Stalker, Netherite Monstrosity > Ignis > Maledictus, Ender Guardian > Harbinger /
+  Ender Golem, Leviathan > Scylla / Clawdian, ...), laid out as a shallow arch under the Hall. Great legends never wait on a
+  lesser one except in the Aether. The Curator now links to the 7 realm-final great legends, which still require all 13 through
+  their chains. Quest ids are unchanged; kill credit is retroactive, so out-of-order kills complete when the node unlocks.
+- **Bulwark (chapter 13):** icon `minecraft:shield` rendered blank in Heracles; now `minecraft:iron_chestplate`.
+- **Mods added to the roster (pinned to the jars added to the 0.5 instance):** Accessories, Accessories Compat Layer,
+  Accessories Compat Vanilla, Accessorify, Dream Relics, Terra Curio, Immersive Lanterns (+ TxniLib), Sodium Dynamic Lights
+  (+ Sodium Options API), Cinematic Zoom, Resourcify, More Mouse Tweaks, Mouse Tweaks x Accessories Fix. Lock 177 -> 191, no
+  existing version changed, no declared incompatibilities. Not yet: `index_ids`, docs, .mrpack build, any launch.
+  Dream Relics and Terra Curio items are outside the loot budget until audited.
+
 ## 0.3.1 hand-added Immersive Portals instance: crash fixes (2026-11-22)
 
 Immersive Portals, Immersive Infinity, immptl-compat and Make it Compatible: Immersive Portals are **not** in the pack

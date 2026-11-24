@@ -17,7 +17,7 @@
       "12 - Hall of Legends": {
         "position": [
           0,
-          282
+          91
         ]
       }
     }
@@ -27,7 +27,7 @@
     "unlockNotification": true
   },
   "dependencies": [
-    "12halloflegends_hall"
+    "12halloflegends_legend_ferrous_wroughtnaut"
   ],
   "tasks": {
     "t0": {

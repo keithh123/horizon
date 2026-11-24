@@ -9,6 +9,7 @@
     "title": "{\"text\": \"Curator of Legends\"}",
     "description": [
       "Defeat every great legend. The reward is a pearl for the Horizon Gauntlet.",
+      "&7Each realm's path ends in its greatest foe; the Curator waits at the end of all of them.",
       "",
       "&aDo:&r Defeat every great legend, then click Check.",
       "&6You get:&r Its reward opens the Horizon Gauntlet, the hardest fight in the pack."
@@ -16,8 +17,8 @@
     "groups": {
       "12 - Hall of Legends": {
         "position": [
-          120,
-          514
+          455,
+          238
         ]
       }
     }
@@ -27,19 +28,13 @@
     "unlockNotification": true
   },
   "dependencies": [
-    "12halloflegends_legend_ender_dragon",
-    "12halloflegends_legend_wither",
-    "12halloflegends_legend_warden",
-    "12halloflegends_legend_ignis",
-    "12halloflegends_legend_netherite_monstrosity",
-    "12halloflegends_legend_the_harbinger",
-    "12halloflegends_legend_the_leviathan",
-    "12halloflegends_legend_ender_guardian",
-    "12halloflegends_legend_maledictus",
     "12halloflegends_legend_ancient_remnant",
+    "12halloflegends_legend_ender_dragon",
+    "12halloflegends_legend_maledictus",
     "12halloflegends_legend_scylla",
+    "12halloflegends_legend_stalker",
     "12halloflegends_legend_sun_spirit",
-    "12halloflegends_legend_stalker"
+    "12halloflegends_legend_the_harbinger"
   ],
   "tasks": {
     "t0": {

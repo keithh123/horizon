@@ -3,7 +3,7 @@
     "icon": {
       "type": "heracles:item",
       "item": {
-        "id": "minecraft:shield"
+        "id": "minecraft:iron_chestplate"
       }
     },
     "title": "{\"text\": \"Bulwark\"}",

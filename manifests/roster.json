@@ -44,6 +44,11 @@
       {
         "slug": "reeses-sodium-options",
         "why": "Usable video settings UI for Sodium's expanded option set."
+      },
+      {
+        "slug": "sodium-dynamic-lights",
+        "why": "Dynamic lighting from held/worn light sources, with Sodium options integration.",
+        "pin": "XI0WLXdn"
       }
     ],
     "performance": [
@@ -236,6 +241,39 @@
       {
         "slug": "gateways-to-eternity",
         "why": "Bounded, readable wave challenges (fixed waves, fixed entity counts, visible timer). Activates the gateway data Apotheosis already ships and hosts Horizon's late-game Trials, which consume exploration relics instead of producing them."
+      },
+      {
+        "slug": "accessories",
+        "why": "Accessory slot framework (Wisp Forest); Curios mods are routed into it by the compat layer, one accessory UI for the whole pack.",
+        "pin": "dy9BbDEy",
+        "allow": "beta"
+      },
+      {
+        "slug": "accessories-compat-layer",
+        "why": "Routes the Curios API (Artifacts, Relics, Dream Relics) into Accessories so every accessory shares one set of slots.",
+        "pin": "UB8bxpVn"
+      },
+      {
+        "slug": "accessories-compat-vanilla",
+        "why": "Elytra and Totem of Undying can be worn in Accessories slots.",
+        "pin": "GGU6F1wa"
+      },
+      {
+        "slug": "accessorify",
+        "why": "Spyglass, lantern, clock, compass and other vanilla tools work from an accessory slot.",
+        "pin": "IuFUIaK4",
+        "allow": "beta"
+      },
+      {
+        "slug": "dream-relics",
+        "why": "Extra unique accessories. Not yet in the loot budget (docs/LOOT_BUDGET.md).",
+        "pin": "6xSRRULo",
+        "allow": "beta"
+      },
+      {
+        "slug": "terra-curio",
+        "why": "Terraria-style accessories. Not yet in the loot budget (docs/LOOT_BUDGET.md).",
+        "pin": "mCth2g0T"
       }
     ],
     "magic": [
@@ -376,6 +414,26 @@
       {
         "slug": "corpse",
         "why": "Death recovery: items stay in a corpse at the death spot (also for void deaths) instead of despawning, so dying costs a trip back, not the whole kit."
+      },
+      {
+        "slug": "cinematiczoom",
+        "why": "Smooth client-side zoom for scouting distant terrain and structures.",
+        "pin": "G8sxo7kj"
+      },
+      {
+        "slug": "resourcify",
+        "why": "In-game browser/updater for resource packs, data packs and shaders.",
+        "pin": "5KyUPNjh"
+      },
+      {
+        "slug": "moremousetweaks",
+        "why": "Extra inventory mouse shortcuts on top of Mouse Tweaks.",
+        "pin": "vsHdE5kj"
+      },
+      {
+        "slug": "mousetweaks-x-accessories-fix",
+        "why": "Stops Mouse Tweaks' wheel tweak misbehaving in the Accessories screen.",
+        "pin": "znY5vYq7"
       }
     ],
     "atmosphere": [
@@ -390,6 +448,11 @@
       {
         "slug": "subtle-effects",
         "why": "Configurable ambient polish (fireflies, sparks, steam, dust, biome particles). Weather particles stay with Particle Rain; overlapping options are disabled in config."
+      },
+      {
+        "slug": "immersive-lanterns",
+        "why": "Lanterns worn on the belt light the way (dynamic light) and swing with movement.",
+        "pin": "CaxJ3tAY"
       }
     ],
     "fx": [
