@@ -1,4 +1,8 @@
-dist/
+# Keep the packaged modpacks and local mod jars with the project on GitHub.
+/dist/*
+!/dist/*.mrpack
+/ports/dist/*
+!/ports/dist/*.jar
 .cache/
 __pycache__/
 ports/*/src/build/

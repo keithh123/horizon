@@ -24,6 +24,11 @@ LAUNCH_VERIFIED = {("subtle-effects", "fzzy_config", "0.7.7+fix1+1.21+neoforge")
                    ("clavis", "lootr", "1.21.1-1.11.38.127"),
                    # NeoForge provides no 'forge' mod id, so FML skips this optional dep; PLATFORM maps forge only for old ranges. Client loaded.
                    ("more-sounds", "forge", "21.1.267")}
+KNOWN_BAD = [
+    (("accessories_compat_layer", "[,0.1.13]"), ("curios", "[9.6.0,)"),
+     "CuriosEntityManagerMixin finds no target in Curios 9.6 (slot building moved to rebuildEntitySlots); "
+     "world load crashes. Keep Curios at 9.5.1 until the compat layer supports 9.6."),
+]
 PLATFORM = {"minecraft": "1.21.1", "neoforge": "21.1.267", "forge": "21.1.267", "javafml": "4", "java": "21"}
 
 
@@ -84,10 +89,22 @@ def scan(z, owner, mods, deps, fabric):
             v = m.get("version", "?")
             if "${" in v:
                 v = manifest_version(z) or v
-            mods.setdefault(m["modId"], (v, owner))
+            prev = mods.get(m["modId"])
+            # A standalone jar beats a jar-in-jar copy (FML resolves to the standalone, e.g. Aether's nested Accessories).
+            if prev is None or (" > " in prev[1] and " > " not in owner):
+                mods[m["modId"]] = (v, owner)
         for mid, lst in (t.get("dependencies") or {}).items():
+            if isinstance(lst, dict):
+                lst = [lst]
+            elif not isinstance(lst, list):
+                print(f"WARN {owner}: skipped non-table dependencies.{mid} in mods.toml")
+                continue
             for d in lst:
-                deps.append((owner, mid, d))
+                if isinstance(d, dict) and "modId" in d:
+                    deps.append((owner, mid, d))
+                else:
+                    # e.g. modelfix's [[dependencies.1.21-1.10]]: TOML reads the dotted key as nested tables.
+                    print(f"WARN {owner}: skipped malformed dependencies.{mid} entry in mods.toml")
     elif "fabric.mod.json" in names:
         try:
             fabric.append((owner, json.loads(z.read("fabric.mod.json").decode("utf-8", "ignore"))))
@@ -131,6 +148,10 @@ def main():
             warn.append(f"{owner}: optional {mid} {rng}, found {have[0]} [checker quirk: accepted by FML, confirmed by client launch]")
         elif typ == "optional" and have and not in_range(have[0], rng):
             fail.append(f"{owner}: optional {mid} {rng} is present but version {have[0]} is out of range (FML rejects this)")
+    # Version pairs that pass every mods.toml range but crash at runtime (mixin target gone). Found by launch.
+    for (a, a_rng), (b, b_rng), why in KNOWN_BAD:
+        if a in mods and b in mods and in_range(mods[a][0], a_rng) and in_range(mods[b][0], b_rng):
+            fail.append(f"{a} {mods[a][0]} + {b} {mods[b][0]}: {why}")
     for owner, fm in fabric:
         warn.append(f"{owner}: Fabric jar ({fm.get('id')} {fm.get('version')}, minecraft {fm.get('depends', {}).get('minecraft')}) - "
                     "loaded by Roxy, not FML; verified by launch, not by this checker")

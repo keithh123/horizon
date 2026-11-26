@@ -1,0 +1,7 @@
+# Chunky pre-generation of the qa_route.json area (all four waypoints + ~100 blocks). Console has no world context, so select it.
+chunky world minecraft:overworld
+chunky corners -700 -500 900 900
+chunky quiet 30
+chunky start
+WAITLOG Task.finished 3600
+chunky progress

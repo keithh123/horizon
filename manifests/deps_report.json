@@ -1,6 +1,6 @@
 {
- "mods_seen": 206,
- "dependency_entries": 589,
+ "mods_seen": 279,
+ "dependency_entries": 798,
  "failures": [],
  "warnings": [
   "subtle-effects: requires fzzy_config [0.7.7+1.21,), found 0.7.7+fix1+1.21+neoforge [checker ordering quirk: accepted by FML, confirmed by 0.2.0 client launch]",
@@ -10,6 +10,7 @@
   "spider-overhaul: requires minecraft [1.21], found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "better-modlist: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "the-undergarden: requires minecraft [1.21], found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
+  "moreculling: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "jei: requires minecraft [1.21, 1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "iris: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",
   "when-dungeons-arise: requires minecraft [1.21,1.21.1), found 1.21.1 (from platform) [system mod: accepted by FML 4.0.45, confirmed by launch log]",

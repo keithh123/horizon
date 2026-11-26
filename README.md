@@ -1,10 +1,10 @@
 # Project Horizon
 
 An exploration-first RPG and technology modpack for **Minecraft 1.21.1 / NeoForge 21.1.267**, built for
-Prism Launcher. 177 mods + 8 locally built/ported jars (docs/PORTS.md), Voxy long-distance terrain, Complementary shaders, a 143-quest guide, and
+Prism Launcher. 248 mods + 8 locally built/ported jars (docs/PORTS.md), Voxy long-distance terrain, Complementary shaders, a 214-quest guide, and
 exploration relics that tie dungeons to factories.
 
-- **Install:** import `dist/ProjectHorizon-0.3.1.mrpack` in Prism. See [docs/INSTALLATION.md](docs/INSTALLATION.md).
+- **Install:** import `dist/ProjectHorizon-0.5.0.mrpack` in Prism (rebuild it first: the current file predates the 0.5 mod additions). The reference instance is the `ProjectHorizon-0.5` Prism instance; the roster tracks its mods (`instance_only` in `manifests/roster.json` lists the jars Modrinth cannot supply). See [docs/INSTALLATION.md](docs/INSTALLATION.md).
 - **What's inside:** [docs/MODLIST.md](docs/MODLIST.md)
 - **How it fits together:** [docs/PROGRESSION.md](docs/PROGRESSION.md)
 - **Why these versions, renderer setup:** [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)

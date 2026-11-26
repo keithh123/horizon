@@ -67,7 +67,7 @@ def main():
                 resolved[pid]["required_by"].append(parent)
             continue
         if pid in frozen or entry.get("pin"):
-            v = get(f"/version/{frozen.get(pid) or entry['pin']}")
+            v = get(f"/version/{entry.get('pin') or frozen[pid]}")  # an explicit roster pin beats the frozen lock
         else:
             lds = [entry.get("loader_override", loader)]
             vs = get(f"/project/{pid}/version", loaders=json.dumps(lds), game_versions=json.dumps([mc])) or []

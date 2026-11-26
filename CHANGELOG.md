@@ -16,6 +16,26 @@
   (+ Sodium Options API), Cinematic Zoom, Resourcify, More Mouse Tweaks, Mouse Tweaks x Accessories Fix. Lock 177 -> 191, no
   existing version changed, no declared incompatibilities. Not yet: `index_ids`, docs, .mrpack build, any launch.
   Dream Relics and Terra Curio items are outside the loot budget until audited.
+- **`ProjectHorizon-0.5` is now the reference instance.** Every jar in it that Modrinth can supply is pinned in the roster
+  (lock 191 -> 248, incl. auto dependency Hybrid API); the 8 that Modrinth cannot supply are listed under `instance_only`
+  in `manifests/roster.json`. Regions Unexplored, YUNG's Cave Biomes and IDAS were removed from `rejected`; Sinytra Connector
+  is now in the pack. The instance has a second Terralith jar (`Terralith_1.21.x_v2.6.2.jar`) that is not in the roster,
+  and is missing Hybrid API (required by Hybrid Aquatic). Not launched, not built.
+  Instance fixed after that: the extra Terralith jar is `.disabled`, Hybrid API 1.1.3 installed (sha512 checked against the lock).
+- **Removed again: Immersive Lanterns, Sodium Dynamic Lights, Sodium Options API, TxniLib** (lock 248 -> 244). First launch stopped
+  on "reeses_sodium_options is incompatible with sodiumoptionsapi". Options API (last build 2025-01) requires Reese's, and
+  every Reese's build for Sodium 0.8 declares Options API incompatible, so neither order loads; Sodium Dynamic Lights needs
+  Options API and Immersive Lanterns 1.0.6 hard-requires Sodium Dynamic Lights. Reese's stays. The jars are `.disabled` in
+  the instance; reasons are in the roster's `rejected`. A static scan of every enabled jar's mods.toml found no other active
+  incompatibility (the nine other declarations are version ranges the installed versions are past).
+- **World-load crash fixed: Curios 9.6.0 -> 9.5.1.** Opening or creating a world crashed with
+  `CuriosEntityManagerMixin ... failed injection check` (Accessories Compat Layer 0.1.13). Curios 9.6.0 (2026-11-19) moved
+  entity-slot building from `apply()` into `rebuildEntitySlots(Registry)`, so the compat layer's mixin has no target; no newer
+  compat layer exists yet. Every Curios dependent accepts 9.5.1. Roster pins `yohfFbgD`; in the instance the 9.6.0 jar is in
+  `minecraft/mods-disabled/` and 9.5.1 is installed (sha512 checked). `resolve.py`: a roster `pin` now beats `--frozen`.
+  `check_deps.py`: new `KNOWN_BAD` pair rule, standalone jars beat jar-in-jar copies (Aether's nested Accessories beta.48 was
+  masking beta.54), malformed dependency tables (modelfix) are skipped. **TerraBlender 4.1.0.8** added to the roster
+  (lock 244 -> 245): YUNG's Cave Biomes and Regions Unexplored require it but Modrinth metadata omits it. Checker: 0 failures.
 
 ## 0.3.1 hand-added Immersive Portals instance: crash fixes (2026-11-22)
 

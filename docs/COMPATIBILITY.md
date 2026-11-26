@@ -55,13 +55,15 @@ warnings at startup. These are expected and harmless.
 | Crash: `irons_spellbooks requires irons_lib [2,3)` | Undeclared dependency | Added `irons-lib` 1.21.1-2.4.0. |
 | Prism import silently skipped 16 mods | Modrinth `client_side: unsupported` on worldgen/structure mods was copied into the pack's `env` | Pack builder now installs every mod on the client, because singleplayer runs an integrated server. |
 | Prism import offered to untick core mods | Modrinth `optional` side flag copied into `env` | Only the alternate shader is optional now. |
+| Crash on world load/create: `CuriosEntityManagerMixin ... failed injection check, Scanned 0 target(s)` | Curios 9.6.0 moved entity-slot building out of `CuriosEntityManager.apply()`; Accessories Compat Layer 0.1.13 wraps a `Map.entrySet()` call there. Both declare compatible ranges | Curios pinned to 9.5.1 in the roster; `check_deps.py` `KNOWN_BAD` fails on the pair. |
+| YUNG's Cave Biomes / Regions Unexplored need TerraBlender | Required in their mods.toml, missing from Modrinth metadata, so the resolver never locked it | `terrablender` 4.1.0.8 added to the roster. |
 | `Failed to load options` (all defaults lost) | Shipped `options.txt` had no `version:` line, so the LWJGL2 key fixer ran | `version:3955` added. |
 
 ## Mixing rules followed
 
-- One biome foundation (Terralith + Tectonic, an officially paired set). BoP, Regions Unexplored and BWG are rejected so two biome placers never stack.
+- Biome foundation: Terralith + Tectonic (an officially paired set). Since 0.5 the owner also runs Regions Unexplored and YUNG's Cave Biomes on top of it (unverified stacking: check biome placement on a new world). BoP and BWG stay rejected.
 - One LOD renderer (Voxy). One shader loader (Iris). No OptiFine-style or alternative renderers.
-- No Connector/Sinytra: the only Fabric jar is Voxy, loaded by Roxy.
+- Since 0.5, Sinytra Connector is in the pack (it was in the owner's 0.5 instance). Voxy is still loaded by Roxy.
 - No experimental optimizers (C2ME is alpha, Noisium is stale for 1.21.1).
 - Every jar comes from Modrinth with its sha512 pinned in `manifests/lock.json`. Nothing third-party is redistributed.
 
