@@ -22,7 +22,8 @@ def main():
         text = re.sub(rf"(?m)^{k}=.*$", f"{k}={v}", text) if re.search(rf"(?m)^{k}=", text) else text + f"\n{k}={v}\n"
     props.write_text(text)
     args = (sdir / "user_jvm_args.txt").read_text().split()
-    cmd = ["java", *args, "@libraries/net/neoforged/neoforge/21.1.267/win_args.txt", "nogui"]
+    argfile = "win_args.txt" if os.name == "nt" else "unix_args.txt"
+    cmd = ["java", *args, f"@libraries/net/neoforged/neoforge/21.1.267/{argfile}", "nogui"]
     log = (sdir / "logs" / f"test-{world}.log")
     log.parent.mkdir(exist_ok=True)
     out = open(log, "w", encoding="utf-8", errors="replace")

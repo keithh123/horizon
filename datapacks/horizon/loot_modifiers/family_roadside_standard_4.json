@@ -10,10 +10,6 @@
         },
         {
           "condition": "neoforge:loot_table_id",
-          "loot_table_id": "minecraft:chests/igloo_chest"
-        },
-        {
-          "condition": "neoforge:loot_table_id",
           "loot_table_id": "nova_structures:chests/jungle_ruins/jungle_ruins_house"
         },
         {

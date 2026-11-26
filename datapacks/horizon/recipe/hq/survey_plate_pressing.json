@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "horizon:survey_blank"
+    }
+  ],
+  "results": [
+    {
+      "id": "horizon:survey_plate",
+      "count": 1
+    }
+  ]
+}

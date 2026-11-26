@@ -1,5 +1,41 @@
 # Changelog
 
+## 0.6.0 - the headquarters campaign (2026-11-26)
+
+**Campaign.** A Meridian Survey Charter, placed anywhere in the open world, anchors six stations commissioned in order:
+I. Outpost, II. Workshop, III. Expedition Hall (2 of 3 regions), IV. Arcane Conservatory (1 of Ars / Iron's / Occultism),
+V. Foundry and Logistics (1 of Mekanism / MI / Powah), VI. Observatory and Horizon Beacon (3 of 7 realms, 2 of 13 great
+legends, 1 of 3 trials). Source of truth: `manifests/headquarters.json`; generator `scripts/gen_headquarters.py`; server
+ledger `kubejs/server_scripts/horizon_headquarters.js` (authoritative, idempotent, party-aware, migration-versioned).
+- Charter panel (chat-based screen with clickable, server-revalidated buttons): status, ticks/crosses per requirement,
+  alternatives, contribution counts, next unlock, [Commission], [Contribute], services, members, invite/leave.
+- Proof without borrowed machines: bounded room scan around the charter, builtin "machine ran" advancements, and receipts that
+  exist only as machine output (Survey Plate = Create pressing; enriched iron; energized steel).
+- Services: Supply Crate (daily, per headquarters; Foundry upgrades it), Tide/Archive/Landmark/Lair/Horizon charts (per
+  player, cost a map + Wayfarer Shards), Ward of Passage (resistance + fire resistance, daily). No service mints relics.
+- New items/blocks (original art, `art/horizon/*.txt`): Founding Kit (given once per player, old saves too), Survey Charter,
+  Survey Blank/Plate, Discovery Case, Observatory Lens (one Starforged Heart), Horizon Beacon, six Station Emblems.
+- Quests: new main spine `0 - Headquarters Campaign` (19 quests, mirrors of the ledger, XP-only rewards). The 0.5 acts chapter
+  is now `0b - The Expedition Road (branch)` with the same folder and ids; all 214 old ids preserved. Atlas quests gain a
+  "Brings home" line per structure family. Quest audit now rejects overlapping icons and non-mirror stage quests.
+- Optional plans: 7 Create schematics (`schematics/`, incl. a ruined-outpost restoration) with material bills (docs/HQ_PLANS.md).
+- Progression graph with alternatives per requirement; the build fails on a luck-only bottleneck (docs/HQ_GRAPH.md).
+- Cues: `cue.commission`, `cue.contribution`, `cue.finale` (vanilla events, subtitled; subtitles now also in KubeJS lang).
+
+**Mods.** Added Construction Sticks 1.5.0, FramedBlocks 10.6.3, Handcrafted 4.0.3, Create Deco 2.1.3, Comforts 9.0.5;
+First-person Model 2.7.3 + Not Enough Animations 1.12.7 + FPM Compat 1.2.1 as a disabled optional preset; Fresh Compats v1.6
+shipped but not enabled. Deferred with reasons: AStages, Open Parties and Claims, Exposure and the other conditional
+candidates (docs/HQ_BASELINE.md). No mod upgraded or removed.
+
+**Server fixes (the dedicated server did not boot in 0.5).** Controlify marked client-only; Terra Curio replaced by
+`ports/terracurio` (LGPL repack moving its embedded ParticleStorm's GeckoLib mixins to the client list). `build.py server`
+and `server_test.py` run on Linux. `build_ports.py` gains `nested_edits`.
+
+**Build.** `gen_headquarters.py` and the Node ledger tests (`tests/hq_sim.js`) are in `build_all.py` and in the
+quick-check routing; generated outputs regenerated from the real lock (the committed ones came from a partial jar index);
+`.gitattributes` keeps generated files LF on every platform; new `scripts/mrpack_install.py` (headless .mrpack install + verify).
+
+
 ## 0.5 quest-book fixes and accessory/zoom mods (2026-11-23, not yet built or launched)
 
 - **Trophy icons (chapters 0, 12):** the `ProjectHorizon-0.5` instance still had the pre-0.3.1 `horizon_items.js`

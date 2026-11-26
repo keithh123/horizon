@@ -420,11 +420,6 @@
         "why": "Extra unique accessories. Not yet in the loot budget (docs/LOOT_BUDGET.md).",
         "pin": "6xSRRULo",
         "allow": "beta"
-      },
-      {
-        "slug": "terra-curio",
-        "why": "Terraria-style accessories. Not yet in the loot budget (docs/LOOT_BUDGET.md).",
-        "pin": "mCth2g0T"
       }
     ],
     "magic": [
@@ -593,8 +588,12 @@
       },
       {
         "slug": "controlify",
-        "why": "Controller support.",
-        "pin": "RqsNKKLK"
+        "why": "Controller support. 0.6: client-only (its bootstrap loads client Screen classes); marked server-unsupported after it crashed a dedicated server at mod construction.",
+        "pin": "RqsNKKLK",
+        "side": {
+          "client": "required",
+          "server": "unsupported"
+        }
       },
       {
         "slug": "smooth-swapping",
@@ -1009,6 +1008,53 @@
         "slug": "simple-hats",
         "why": "Simple Hats: wearable hats (head slot). 0.3.1: a few rare hats are quest and dungeon rewards (horizon loot + KubeJS), the rest unlocked by the mod's own system."
       }
+    ],
+    "headquarters": [
+      {
+        "slug": "construction-sticks",
+        "pin": "5dwDOCYP",
+        "why": "0.6 headquarters: survival construction assistance. Copper stick at Outpost, iron at Workshop, diamond + replacement template at Foundry. Block entities may not be placed by sticks (config), so storage contents cannot be duplicated."
+      },
+      {
+        "slug": "framedblocks",
+        "pin": "5g0Yxvfb",
+        "why": "0.6 headquarters: the one architectural shape system (roofs, beams, observatory frames) that takes any block's texture. Block-entity camouflage is off by default (FramedBlocks default; verified in config)."
+      },
+      {
+        "slug": "handcrafted",
+        "pin": "JfqnpP2Z",
+        "why": "0.6 headquarters: furniture for inhabited interiors (Resourceful Lib already in the pack). Guide pages name a small palette instead of the whole catalogue."
+      },
+      {
+        "slug": "create-deco",
+        "pin": "qrcMVoBD",
+        "why": "0.6 headquarters: industrial language for Workshop/Foundry (catwalks, lamps, bricks). Jar declares create [6.0.7,6.1.0); the pack runs Create 6.0.10."
+      },
+      {
+        "slug": "comforts",
+        "pin": "3kpPjcTc",
+        "why": "0.6 headquarters: sleeping bags and hammocks for expeditions. Comforts cancels PlayerSetSpawnEvent for its own beds, so the headquarters respawn point is kept."
+      }
+    ],
+    "first_person": [
+      {
+        "slug": "first-person-model",
+        "pin": "eaj8cYpD",
+        "disabled_by_default": true,
+        "why": "0.6 optional first-person preset (ships disabled): body in first person. Client test matrix against Punchy!/Better Combat/spellcasting not run - enable by hand together with NEA and FPM Compat."
+      },
+      {
+        "slug": "not-enough-animations",
+        "pin": "f9RkhlA0",
+        "disabled_by_default": true,
+        "why": "0.6 optional first-person preset (ships disabled): required by First-person Model."
+      },
+      {
+        "slug": "fpm-x-compat",
+        "pin": "QJKhUegk",
+        "disabled_by_default": true,
+        "why": "0.6 optional first-person preset (ships disabled): FPM bridges for Better Combat/Accessories."
+      }
     ]
   },
   "shaders": [
@@ -1058,7 +1104,12 @@
     "loot-beams-refork": "Apotheosis already draws rarity beams/particles for affix items; a second beam renderer duplicates them. Horizon finds use server-side pickup feedback instead.",
     "explorers-compass / natures-compass": "Point-to-anything compasses remove discovery. Clues come from exploration maps in loot and quest guidance instead.",
     "biomes-o-plenty / oh-the-biomes-weve-gone": "Would stack another biome-placement system on top of Terralith + Regions Unexplored.",
-    "sodium-dynamic-lights / sodium-options-api / immersive-lanterns": "0.5: Sodium Options API (last build 2025-01) requires Reese's Sodium Options, and every Reese's for Sodium 0.8 declares Options API incompatible, so neither loads. Sodium Dynamic Lights needs Options API; Immersive Lanterns 1.0.6 hard-requires Sodium Dynamic Lights."
+    "sodium-dynamic-lights / sodium-options-api / immersive-lanterns": "0.5: Sodium Options API (last build 2025-01) requires Reese's Sodium Options, and every Reese's for Sodium 0.8 declares Options API incompatible, so neither loads. Sodium Dynamic Lights needs Options API; Immersive Lanterns 1.0.6 hard-requires Sodium Dynamic Lights.",
+    "astages": "0.6: researched, deferred. ARR; the headquarters ledger needs no recipe locks (stage unlocks are rewards and services), so no AStages API is required. Revisit if infrastructure recipe gating becomes a goal.",
+    "open-parties-and-claims": "0.6: researched, deferred. Beta; its claims would need a fake-player/spell/Gateways test matrix not available here. Headquarters membership (charter invite/join) is built into horizon_headquarters.js; Xaero maps are unaffected.",
+    "exposure / exposure-catalog": "0.6: conditional, not added. The Visual Overhaul camera-controls conflict was reported on Fabric 1.20.1; no NeoForge 1.21.1 client test was possible here. Photo objectives are not part of the campaign.",
+    "sound-physics-remastered / autohud / fancymenu / chipped / rechiseled / copycats / create-connected / interiors / amendments / bountiful / patchouli": "0.6: not added; each needs client audio/visual/UI comparison that this release could not perform. Charter panel + quest book cover onboarding (no Patchouli); authored charter services replace Bountiful errands.",
+    "combat-roll / cameraoverhaul / dynamic-crosshair / lambdynamiclights / ryoamiclights": "0.6: experiments only, not added (first-person and lighting ownership unchanged; see docs/ART_DIRECTION.md)."
   },
   "resourcepacks": [
     {
@@ -1100,6 +1151,12 @@
       "slug": "fluid-foolish",
       "pin": "UAp4jRDk",
       "why": "Required animation pack for Punchy Moves (separate from FA mob stack)."
+    },
+    {
+      "slug": "fresh-compats",
+      "pin": "EHQK5l1g",
+      "enabled_by_default": false,
+      "why": "0.6: Fresh Animations support for Quark/Supplementaries (both are now in the roster; the old exclusion reason was stale). Ships available but NOT enabled: no in-game visual check of its Quark bee variants against Dynamic Trees/EMF has been made. Enable above Fresh Animations in Resource Packs."
     }
   ],
   "excluded": [
@@ -1113,11 +1170,6 @@
       "slug": "freshly-modded",
       "status": "not installed (FA addon)",
       "reason": "F.M.R.P 3.0.5 only ships EMF models for friendsandfoes, frostiful, guardvillagers, savage_and_ravage and takesapillage; none is in Horizon, so it would animate nothing."
-    },
-    {
-      "slug": "fresh-compats",
-      "status": "not installed (FA addon)",
-      "reason": "Targets Supplementaries, Quark, Sleep Tight and You've Goat to be Kidding Me; none is in Horizon."
     },
     {
       "slug": "fresh-illager-mod-compats",
@@ -1208,6 +1260,11 @@
       "slug": "fresh-animations-extensions",
       "status": "replaced",
       "reason": "0.3.1: the All-Extensions bundle was replaced by the individual Details, Emissive and Quivers packs (pinned in the roster); Objects, Spiders, Creepers and Classic Horses are held back, Player stays dropped (Punchy Moves conflict)."
+    },
+    {
+      "slug": "terra-curio",
+      "status": "replaced by port terracurio (0.6)",
+      "reason": "Terra Curio 1.1.1 embeds ParticleStorm 1.0.5, whose GeckoLib mixins are declared common although MolangQueriesMixin loads net.minecraft.client.Minecraft: every dedicated server crashed at mod loading. Both LGPL-3.0; ports/terracurio moves those mixins to the client list (docs/PORTS.md). Same items and ids, so worlds are unaffected."
     }
   ],
   "instance_only": {

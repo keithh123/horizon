@@ -72,6 +72,24 @@ if first:
     if "1thefirststeps_wood" in quests and quests["1thefirststeps_wood"]["dependencies"] != ["1thefirststeps_welcome"]:
         problems.append("wood quest prerequisite changed")
 
+# readable chapter maps: no two quests of one chapter on the same spot (icons are 24 px; closer than 24 px overlaps)
+for chapter in {g for q in quests.values() for g in q["display"]["groups"]}:
+    pts = [(qid, q["display"]["groups"][chapter]["position"]) for qid, q in quests.items() if chapter in q["display"]["groups"]]
+    for i, (a, pa) in enumerate(pts):
+        for b, pb in pts[i + 1:]:
+            if abs(pa[0] - pb[0]) < 24 and abs(pa[1] - pb[1]) < 24:
+                problems.append(f"{chapter}: {a} and {b} overlap at {pa} / {pb}")
+
+# headquarters spine: stage quests complete only on ledger mirrors and pay XP only (station rewards come from the charter)
+hq = {k: v for k, v in quests.items() if k.startswith("0headquarterscampaign_hq_")}
+for qid, q in hq.items():
+    for r in q["rewards"].values():
+        if r["type"] != "heracles:xp":
+            problems.append(f"{qid}: headquarters quests reward XP only (charter pays station rewards once per headquarters)")
+    stage_like = qid.count("_") == 2 and qid.split("_hq_")[1] not in ("charter", "plates", "lens", "beyond")
+    if stage_like and [t.get("type") for t in q["tasks"].values()] != ["heracles:advancement"]:
+        problems.append(f"{qid}: a stage quest must complete on its horizon:hq/* mirror advancement only")
+
 print(f"{len(quests)} quests audited, {len(problems)} problems")
 for p in problems:
     print(" -", p)

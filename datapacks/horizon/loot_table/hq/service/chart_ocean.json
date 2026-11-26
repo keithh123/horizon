@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "horizon:hq_chart/chart_ocean",
+              "decoration": "minecraft:monument",
+              "zoom": 2,
+              "search_radius": 50,
+              "skip_existing_chunks": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "target": "item_name",
+              "name": {
+                "text": "Tide Chart",
+                "color": "aqua",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

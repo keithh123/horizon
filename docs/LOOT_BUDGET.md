@@ -7,7 +7,7 @@ and gem numbers are the expected count of injected affix items / gems on top of 
 Rows marked **(measured)** use container counts from real placed structures (`scripts/calibrate.py`), which include
 repeated jigsaw pieces; the solver budgets those structures from the measured counts.
 
-Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon injection): 106
+Tables classified: 982 - inject tables: 319 - placed but unassigned (no Horizon injection): 502
 
 ## The Aether (`aether`) - 1 structure groups
 
@@ -54,7 +54,7 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `undergarden:catacombs` | 11 | 0 | 1.0 | 0 | 0.0 | 2.51 | 2.0 | 1.4 |
 | `undergarden:depleted_mine` | 3 | 0 | 1.0 | 0 | 0.0 | 2.5 | 1.75 | 1.28 |
 
-## End Expeditions (`end`) - 7 structure groups
+## End Expeditions (`end`) - 19 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -63,8 +63,20 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `repurposed_structures:ancient_cities/end` | 14 | 0 | 0.99 | 0 | 0.0 | 3.0 | 3.0 | 2.0 |
 | `cataclysm:ruined_citadel` | 13 | 0.05 | 0.35 | 0.13 | 0.12 | 0.53 | 0.74 | 0.49 |
 | `nova_structures:end_lighthouse` | 8 | 0 | 0 | 0 | 0.0 | 3.0 | 3.0 | 2.0 |
+| `adorabuild_structures:ancient_palace_1` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
+| `adorabuild_structures:ancient_palace_2` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
+| `adorabuild_structures:ancient_palace_3` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
+| `adorabuild_structures:end_temple_large_1` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
 | `explorify:end_shipwreck` | 4 | 0 | 0.18 | 0.06 | 0.06 | 0.26 | 0.34 | 0.22 |
+| `adorabuild_structures:end_temple_small_1` | 2 | 0 | 0.09 | 0.03 | 0.03 | 0.13 | 0.17 | 0.11 |
 | `repurposed_structures:ruined_portals` | 2 | 0 | 1.0 | 0 | 0.0 | 2.1 | 1.2 | 0.9 |
+| `adorabuild_structures:end_bubble_medium_1` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_house_medium_1` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_house_medium_2` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_house_medium_3` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_house_small_1` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_house_small_2` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
+| `adorabuild_structures:end_ship_small_1` | 1 | 0 | 0.04 | 0.02 | 0.02 | 0.07 | 0.08 | 0.06 |
 
 ## The Bumblezone (`hive`) - 19 structure groups
 
@@ -106,7 +118,7 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `dungeons_arise:heavenly_challenger` | 12 | 1.31 | 0.98 | 0.16 | 0.15 | 0 | 1.56 | 1.12 |
 | `dungeons_arise:heavenly_rider` | 9 | 3.0 | 1.0 | 1.0 | 0.75 | 0 | 2.45 | 1.65 |
 
-## Nether Expeditions (`nether`) - 37 structure groups
+## Nether Expeditions (`nether`) - 50 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -133,11 +145,11 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `repurposed_structures:shipwrecks/nether` | 10 | 0 | 0.7 | 0.05 | 0.05 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:cities/nether` | 8 | 0 | 0.7 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
 | `repurposed_structures:strongholds/nether` | 8 | 0 | 0 | 0 | 0.0 | 2.5 | 2.0 | 1.4 |
-| `nova_structures:donjon` | 6 | 0.6 | 0.11 | 0.01 | 0.01 | 0.33 | 0.88 | 0.64 |
-| `repurposed_structures:ruins/nether` | 5 | 0 | 0.03 | 0 | 0.0 | 0.16 | 0.1 | 0.07 |
-| ... 12 smaller groups | | | | | | | | |
+| `structures:pillager_castle` | 8 | 0.06 | 0.1 | 0 | 0.0 | 0.16 | 0.23 | 0.16 |
+| `adorabuild_structures:blackstone_bastion_medium_3` | 6 | 0 | 0.17 | 0.01 | 0.01 | 0.42 | 0.37 | 0.26 |
+| ... 25 smaller groups | | | | | | | | |
 
-## Ocean Expeditions (`ocean`) - 14 structure groups
+## Ocean Expeditions (`ocean`) - 22 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -151,12 +163,20 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `repurposed_structures:monuments/icy` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `repurposed_structures:monuments/jungle` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
 | `repurposed_structures:monuments/nether` | 8 | 0.8 | 0.4 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
+| `adorabuild_structures:bamboo_raft_1` | 3 | 0.05 | 0.09 | 0 | 0.0 | 0.28 | 0.25 | 0.17 |
 | `dungeons_arise:fishing_hut` | 3 | 0.8 | 0 | 0 | 0.0 | 2.0 | 1.4 | 1.0 |
+| `adorabuild_structures:oak_ship_1` | 2 | 0.0 | 0.09 | 0 | 0.0 | 0.23 | 0.22 | 0.15 |
+| `adorabuild_structures:ocean_temple_medium_1` | 2 | 0.07 | 0.03 | 0 | 0.0 | 0.17 | 0.12 | 0.08 |
 | `dungeons_arise:typhon` | 2 | 0 | 0.4 | 0 | 0.0 | 2.0 | 1.2 | 0.9 |
+| `hopo:underwater_city` | 2 | 0 | 0.11 | 0 | 0.0 | 0.28 | 0.25 | 0.18 |
+| `adorabuild_structures:cherry_raft_1` | 1 | 0 | 0.09 | 0 | 0.0 | 0.23 | 0.21 | 0.15 |
+| `adorabuild_structures:ocean_temple_medium_2` | 1 | 0.03 | 0.02 | 0 | 0.0 | 0.08 | 0.06 | 0.04 |
+| `adorabuild_structures:sand_castle_tiny_1` | 1 | 0 | 0.06 | 0 | 0.0 | 0.14 | 0.13 | 0.09 |
+| `adorabuild_structures:spruce_ship_1` | 1 | 0 | 0.09 | 0 | 0.0 | 0.23 | 0.21 | 0.15 |
 | `betteroceanmonuments:start` | 1 | 0.03 | 0.02 | 0 | 0.0 | 0.08 | 0.06 | 0.04 |
 | `dungeons_arise:lighthouse` | 1 | 0.6 | 0.4 | 0 | 0.0 | 1.05 | 0.6 | 0.45 |
 
-## Roadside Ruins & Camps (`roadside`) - 35 structure groups
+## Roadside Ruins & Camps (`roadside`) - 37 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -185,9 +205,9 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `dungeons_arise:merchant_campsite` | 9 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `betterwitchhuts:witch_hut` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
 | `dungeons_arise:small_blimp` | 5 | 0.7 | 0.03 | 0 | 0.0 | 0 | 0.4 | 0.25 |
-| ... 10 smaller groups | | | | | | | | |
+| ... 12 smaller groups | | | | | | | | |
 
-## Settlements (`settlement`) - 110 structure groups
+## Settlements (`settlement`) - 156 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -216,9 +236,9 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `ctov:village/mountain_alpine` | 33 | 0.43 | 0 | 0 | 0.0 | 0 | 0.59 | 0.25 |
 | `ctov:village/swamp` | 33 | 0.44 | 0.03 | 0 | 0.0 | 0 | 0.59 | 0.27 |
 | `ctov:village/snowy_igloo` | 31 | 0.37 | 0.03 | 0 | 0.0 | 0 | 0.51 | 0.21 |
-| ... 85 smaller groups | | | | | | | | |
+| ... 131 smaller groups | | | | | | | | |
 
-## Temples, Mansions & Outposts (`temple`) - 81 structure groups
+## Temples, Mansions & Outposts (`temple`) - 94 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -247,9 +267,9 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `dungeons_arise:aviary` | 37 | 1.18 | 0.9 | 0.03 | 0.03 | 0 | 2.01 | 1.4 |
 | `repurposed_structures:pyramids` | 32 | 1.2 | 1.9 | 0 | 0.0 | 3.0 | 4.39 | 3.2 |
 | `betterdeserttemples:hall_room` | 30 | 0.95 | 0.83 | 0.03 | 0.03 | 0 | 1.75 | 1.23 |
-| ... 56 smaller groups | | | | | | | | |
+| ... 69 smaller groups | | | | | | | | |
 
-## Underground Dungeons (`underground`) - 36 structure groups
+## Underground Dungeons (`underground`) - 54 structure groups
 
 | Structure group | Containers | Shards | Cores | Hearts | P(>=1 heart) | Tokens | Affix items | Gems |
 |---|---|---|---|---|---|---|---|---|
@@ -276,7 +296,7 @@ Tables classified: 982 - inject tables: 318 - placed but unassigned (no Horizon 
 | `betterstrongholds:treasure` | 33 | 0.09 | 0.25 | 0 | 0.0 | 0 | 1.1 | 0.71 |
 | `terralith:underground` | 26 | 0.35 | 0.02 | 0 | 0.0 | 0 | 0.42 | 0.26 |
 | `betterdungeons:skeleton_dungeon` | 17 | 1.4 | 0.25 | 0 | 0.0 | 0 | 1.4 | 0.9 |
-| `betterdungeons:zombie_dungeon` | 7 | 0.14 | 0 | 0 | 0.0 | 0 | 0.13 | 0.08 |
-| `explorify:ruins` | 7 | 0.39 | 0.26 | 0 | 0.0 | 0 | 0.64 | 0.44 |
-| ... 11 smaller groups | | | | | | | | |
+| `structures:dungeon` | 12 | 0.12 | 0 | 0 | 0.0 | 0 | 0.16 | 0.1 |
+| `mvs:1_21_0` | 8 | 0.67 | 0.22 | 0 | 0.0 | 0.47 | 0.89 | 0.58 |
+| ... 29 smaller groups | | | | | | | | |
 

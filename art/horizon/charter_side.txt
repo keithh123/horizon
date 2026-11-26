@@ -1,0 +1,27 @@
+@ block
+K 2b1d12
+W 5a3b22
+w 7a5230
+v 9c6b3e
+C 8c4a2f
+c b86b3e
+B a9822f
+b f2d27a
+T 2aa9a0
+---
+CcccccccccccccCC
+wwwwvwwwwwwvwwww
+wvwwwwwwvwwwwwvw
+WWWWWWWWWWWWWWWW
+wwwwwBBBBBBwwwww
+wvwwBbbbbbbBwvww
+wwwwBbbTTbbBwwww
+wwvwBbTbbTbBwwvw
+wwwwBbbbbbbBwwww
+wvwwwBBBBBBwwwvw
+WWWWWWWWWWWWWWWW
+wwwvwwwwwwvwwwww
+wwwwwwvwwwwwwvww
+wvwwwwwwwwwwwwww
+CcccccccccccccCC
+KKKKKKKKKKKKKKKK

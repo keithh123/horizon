@@ -22,7 +22,8 @@ UA = {"User-Agent": "project-horizon-builder/0.1"}
 # repo dir -> path inside .minecraft
 OVERRIDES = {"config": "config", "defaultconfigs": "defaultconfigs", "kubejs": "kubejs",
              "datapacks": "kubejs/data", "resourcepacks": "resourcepacks",
-             "shaderpacks": "shaderpacks", "profiles": "horizon-profiles", "options": "."}
+             "shaderpacks": "shaderpacks", "profiles": "horizon-profiles", "options": ".",
+             "schematics": "schematics"}   # schematics: optional headquarters plans (Create reads .minecraft/schematics)
 
 
 def lock():
@@ -112,12 +113,13 @@ def set_resourcepacks(options: Path, packs):
     """Enable the pack's resource packs in lock order (first = lowest priority) above vanilla/mod resources,
     keeping any extra packs the player enabled (they stay on top)."""
     lines = options.read_text().splitlines() if options.exists() else []
-    ours = ["vanilla", "mod_resources"] + [f"file/{p['file']}" for p in packs] + [f"file/{n}" for n in LOCAL_PACKS]
+    # packs with enabled_by_default=false ship in resourcepacks/ but are left for the player to enable (unverified visuals)
+    ours = ["vanilla", "mod_resources"] + [f"file/{p['file']}" for p in packs if p.get("enabled_by_default", True)] + [f"file/{n}" for n in LOCAL_PACKS]
     old = next((l for l in lines if l.startswith("resourcePacks:")), None)
     extra = []
     if old:
         try:
-            extra = [x for x in json.loads(old.split(":", 1)[1]) if x not in ours and x not in KNOWN_OLD]
+            extra = [x for x in json.loads(old.split(":", 1)[1]) if x not in ours and x not in KNOWN_OLD]   # incl. optional packs the player enabled
         except ValueError:
             pass
     line = "resourcePacks:" + json.dumps(ours + extra, separators=(",", ":"))
@@ -257,8 +259,8 @@ def server(target: Path, accept_eula: bool, variant=None):
     with server-side mods and the server-relevant overrides. eula.txt is written only when the
     operator explicitly passes --accept-eula."""
     L = lock()
-    if not (target / "run.bat").exists():
-        raise SystemExit(f"{target} is not an installed NeoForge server (no run.bat)")
+    if not (target / "run.bat").exists() and not (target / "run.sh").exists():
+        raise SystemExit(f"{target} is not an installed NeoForge server (no run.bat / run.sh)")
     mods = [m for m in L["mods"] if m["server_side"] != "unsupported" and not m.get("disabled_by_default")]
     (target / "mods").mkdir(exist_ok=True)
     sports = [p for p in ports(variant) if p["side"]["server"] != "unsupported"]

@@ -1,3 +1,27 @@
+# Migrating a 0.5 world to 0.6 (headquarters campaign)
+
+**Back up the world first.** 0.6 adds 8 mods (5 content, 3 disabled first-person jars) and one resource pack (not enabled);
+no mod was removed or upgraded, no terrain provider changed, no registry id was renamed.
+
+1. Import `ProjectHorizon-0.6.0.mrpack` as a new Prism instance (recommended) and copy `saves/<world>` across, or update in
+   place (Prism: Import/Update from the mrpack). Do not copy `kubejs/` or `config/heracles/` from the old instance.
+2. On first login each player receives one **Founding Kit** (existing players too). Unpack it, place the Survey Charter where
+   your base already is, and click **Found a headquarters here**.
+3. **Legacy commissioning path:** everything already achieved counts. Location, boss, realm, trial and machine advancements
+   are read retroactively, so a 0.5 base usually satisfies most requirements at once. What still has to be done by hand:
+   the room checks (blocks at the station), the receipts (press four Survey Plates; enriched iron / energized steel / MI
+   steel for the Foundry route) and the stage contributions. There is no automatic grant of stages for old saves: that would
+   be an unverified claim of a working workshop.
+4. Quest ids from 0.5 are unchanged (214 of 214); the old `0 - The Horizon Campaign` chapter is now labelled
+   `0b - The Expedition Road (branch)` with the same folder and ids, so progress is kept. 19 new quests form the
+   `0 - Headquarters Campaign` spine.
+5. Existing machines keep working: 0.6 adds no recipe locks or item-use restrictions.
+6. The Terrain Diffusion (Windows) local variant and its worlds are not touched by the portable pack; keep using that
+   instance for those worlds.
+
+Ledger versioning: `horizon_hq` carries `v` (ledger version) and each headquarters its own `v`; `migrateHq` only ever adds
+missing fields and never drops stages, options or facts. Unreadable records are left untouched in NBT and logged.
+
 # Migrating a 0.1.0 world to 0.2.0
 
 **Back up the world first** (copy `saves/<world>` somewhere safe). Nothing in 0.2.0 deletes or regenerates

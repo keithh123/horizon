@@ -1,5 +1,72 @@
 # Progression design
 
+## 0.6: the headquarters campaign (main spine)
+
+The core loop: **improve headquarters -> prepare an expedition -> recover knowledge or relics -> bring discoveries home ->
+commission a new capability -> venture farther.** Six stations are commissioned in a fixed order at a player-placed
+**Meridian Survey Charter**, anywhere in the normal overworld. Nothing is placed or overwritten for you; the optional plans
+(docs/HQ_PLANS.md) are Create schematics you print or copy only if you want them.
+
+| Stage | Commissioned by (summary; full reference: docs/HEADQUARTERS.md) | Unlocks |
+|---|---|---|
+| I. Outpost | bed spawn near the charter, 2 storage blocks, cartography table, crops/animals, first ruin or settlement | copper Construction Stick, building kit, Surveyor's Chart |
+| II. Workshop | a Create press that has actually made sheets, at the station, plus four pressed Survey Plates and a local dungeon/temple/ocean/arcane discovery | iron stick, schematic tools, millstone + fan, daily Supply Crate |
+| III. Expedition Hall | equipment bench, archive, Discovery Case or trophy; **two of three** regions (Drowned Coast, Hollow Roads, High Landmarks) | regional chart services (permanent per region), warp scrolls, backpack |
+| IV. Arcane Conservatory | **one of** Ars Nouveau apparatus, Iron's anvil + inscription table, or an Occultism ritual + bowl; an Ancient Core | Ward of Passage (resistance + fire resistance, daily), lair charts |
+| V. Foundry and Logistics | precision mechanisms, a storage controller (AE2 / Sophisticated / Occultism), **one of** Mekanism, MI or Powah with a processing receipt | diamond stick + replacement template, mechanical crafters, larger crate |
+| VI. Observatory and Horizon Beacon | Observatory Lens (one Starforged Heart) at the station, 3 of 7 realms, 2 of 13 great legends, 1 of 3 Horizon Trials | Horizon Beacon, explorer's hat, Horizon Charts; post-campaign Gauntlet |
+
+Roles: **Create** is the mechanical foundation (stages II and V). The primary electrical route is a free choice between
+**Mekanism** (processing/ore multiplication), **Modern Industrialization** (multiblock heavy industry) and **Powah**
+(simple generation); the three checklists are equivalent, so nobody builds a duplicate factory. **AE2** (or Sophisticated
+Storage / Occultism storage) is logistics. Relics gate milestones only (Conservatory: 1 Ancient Core; Lens: 1 Starforged
+Heart; Hall's High Landmarks route: 1 Core); components and decorative blocks stay ordinary recipes.
+
+### What each check proves (no borrowed machines)
+
+- **Rooms** are checked by a bounded scan around the bound charter (21 x 13 x 21 blocks, loaded chunks only, on click only).
+  A machine in your inventory never counts; it must stand at the station.
+- **Processing** is proven by builtin advancements that fire only when the machine works (Create's `mechanical_press` fires
+  when a press makes sheets) and by **receipts** that exist only as a machine's output (Survey Plate = Create pressing of a
+  Survey Blank; enriched iron = Mekanism enrichment; energized steel = Powah orb). Receipts are consumed once.
+- **Expeditions** are location advancements for a structure family (`horizon:atlas/*`), dimension entry, first-kill legend
+  advancements and Gateways trial completion. They are retroactive: anything a member has already done counts.
+- Exact proofs per requirement: docs/HEADQUARTERS.md; alternatives and luck: docs/HQ_GRAPH.md.
+
+### Authority and state
+
+- The **ledger** in the world's `kubejs_persistent_data.nbt` (`horizon_hq`) is the only source of truth. Quests in
+  `0 - Headquarters Campaign` and the `horizon:hq/*` advancements are **mirrors**: their only criterion is
+  `minecraft:impossible`, granted by the server after it wrote the ledger. A Check click or a client can never grant a stage.
+- Every button is a chat command the server re-validates: membership, distance to the bound charter (8 blocks), prerequisite
+  stages, requirements, contribution. Contributions are counted first and consumed all-or-nothing; the stage is written
+  before rewards are paid; a second click (or a replayed command) finds the stage recorded and does nothing.
+- Stage rewards are paid **once per headquarters** to the member who commissions. Quest rewards on the spine are XP only.
+- **Unlock vs service:** commissioned stages are permanent (remodel freely). Services (Supply Crate, charts, Ward) need a bound,
+  intact charter; a dormant station keeps every stage but pauses services.
+
+### Parties
+
+- A headquarters is founded by one player at a charter. Members **invite** by name (`[Invite]`), the invitee clicks **Join**.
+  One headquarters per player; distinct headquarters are fully independent (no server-wide stage exists).
+- Evidence is pooled: an advancement any member has been seen holding is recorded as a fact for the station, so an offline
+  member's earlier expedition still counts. Facts are recorded at login and whenever a member uses the charter.
+- Late joiners receive the mirrors (quest progress) of stages already commissioned but **no stage rewards**. Leavers keep
+  their mirrors and everything personal; the station keeps its progress. If the founder leaves, ownership passes to the next
+  member; a station with no members releases its charter and its record stays for admin recovery.
+- Boss relics are untouched: `horizon:legend/*` still pays one relic + trophy per player on their first kill (party credit by
+  distance as in 0.5). Headquarters requirements read those advancements but never pay relics.
+- Services: Supply Crates are per headquarters (a party does not multiply them); charts and the Ward are per player.
+
+### Recovery and administration (op level 2, `/horizon hqadmin ...`)
+
+`list`, `info <hq>`, `resync` (re-grant mirrors to online members), `unbind <hq>`, `addmember <hq> <player>`,
+`fixture <hq> <stage>` (marks a stage for testing; flagged `fixture`, never pays rewards), `selftest` (disposable worlds only).
+Breaking a charter: members may (station goes dormant, progress kept); non-members cannot. A charter destroyed by
+explosion is detected the next time someone near it uses the station. Place a new charter and click **Bind/Move
+headquarters here** to relocate; stages stay commissioned and room checks use the new location.
+
+
 ## Pillars and roles
 
 | Pillar | Mods | Role |

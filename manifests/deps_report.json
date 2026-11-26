@@ -1,6 +1,6 @@
 {
- "mods_seen": 279,
- "dependency_entries": 798,
+ "mods_seen": 296,
+ "dependency_entries": 852,
  "failures": [],
  "warnings": [
   "subtle-effects: requires fzzy_config [0.7.7+1.21,), found 0.7.7+fix1+1.21+neoforge [checker ordering quirk: accepted by FML, confirmed by 0.2.0 client launch]",

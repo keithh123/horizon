@@ -1,0 +1,18 @@
+# Headquarters dedicated-server smoke (python scripts/server_test.py <server> hqtest <seed> tests/server_hq.txt).
+# Disposable worlds only: the selftest places blocks at y=200 above spawn and creates a test headquarters.
+WAIT 10
+horizon hqadmin list
+horizon hqadmin selftest
+WAIT 5
+reload
+WAITLOG Reloaded|reload 120
+WAIT 5
+horizon hqadmin selftest
+WAIT 5
+horizon hqadmin list
+horizon hqadmin info hq1
+execute in minecraft:overworld run loot spawn 0 260 0 loot horizon:hq/service/supply_crate_plus
+execute in minecraft:overworld run loot spawn 0 260 0 loot horizon:hq/service/chart_ocean
+horizon hqadmin fixture hq1 hall
+horizon hqadmin fixture hq99 hall
+horizon hqadmin resync

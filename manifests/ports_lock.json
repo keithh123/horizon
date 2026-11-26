@@ -175,6 +175,24 @@
       }
     },
     {
+      "name": "terracurio",
+      "file": "terra_curio-1.1.1-horizon1.jar",
+      "kind": "repack",
+      "side": {
+        "client": "required",
+        "server": "required"
+      },
+      "license": "LGPL-3.0",
+      "replaces_slug": "terra-curio",
+      "variant": null,
+      "upstream": "https://modrinth.com/mod/terra-curio/version/mCth2g0T",
+      "size": 1796734,
+      "hashes": {
+        "sha1": "5a49974842a4f2e68be35f462ac36d8511dcf661",
+        "sha512": "6ca029e9ba6103c07e4d711caac6de676621c41d241cf342d0b36aa8d73fde46fcb8267114144e21bc26477a1e869952665b499bddeb2ae2cf8c67acc215514f"
+      }
+    },
+    {
       "name": "weatherglass",
       "file": "weatherglass-0.6.2-1.21.1-neoforge.jar",
       "kind": "verbatim",

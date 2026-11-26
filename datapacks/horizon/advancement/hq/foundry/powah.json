@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/foundry",
+  "display": {
+    "icon": {
+      "id": "powah:energizing_orb"
+    },
+    "title": {
+      "text": "Powah energizing"
+    },
+    "description": {
+      "text": "Simple, scalable generators. Energized steel proves the orb ran."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "mekanism:enrichment_chamber"
+      }
+    },
+    "title": "{\"text\": \"Mekanism processing\"}",
+    "description": [
+      "Ore multiplication and chemistry. Enriched iron proves the chamber ran.",
+      "",
+      "&eCounts:&r Build an Enrichment Chamber",
+      "&eContribution:&r 16x enriched iron",
+      "&eAdds to the station:&r Ore doubling for the station's supply lines.",
+      "",
+      "&aDo:&r Contribute Mekanism processing at the charter panel.",
+      "&6You get:&r Ore doubling for the station's supply lines."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          360,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_conservatory"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/foundry/mekanism"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

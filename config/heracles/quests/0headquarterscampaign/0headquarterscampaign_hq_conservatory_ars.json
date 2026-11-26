@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "ars_nouveau:enchanting_apparatus"
+      }
+    },
+    "title": "{\"text\": \"Source Study (Ars Nouveau)\"}",
+    "description": [
+      "Utility magic and automation: an Enchanting Apparatus at the station.",
+      "",
+      "&eCounts:&r Craft an Enchanting Apparatus; The apparatus stands at the station",
+      "&eContribution:&r 8x source gem",
+      "&eAdds to the station:&r Source studies on the archive shelves.",
+      "",
+      "&aDo:&r Contribute Source Study (Ars Nouveau) at the charter panel.",
+      "&6You get:&r Source studies on the archive shelves."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          280,
+          190
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_hall"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/conservatory/ars"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

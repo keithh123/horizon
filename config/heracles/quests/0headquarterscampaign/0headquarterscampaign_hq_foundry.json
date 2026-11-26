@@ -1,0 +1,57 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:emblem_foundry"
+      }
+    },
+    "title": "{\"text\": \"V. Foundry and Logistics\"}",
+    "description": [
+      "&6STATION V&r  Assemble precision mechanisms, run one electrical processing route and network your storage.",
+      "",
+      "&eWhy:&r Automated supplies, a better construction stick and the logistics the observatory will depend on.",
+      "",
+      "&eNeeds at the station:&r",
+      "&7- Assemble a Precision Mechanism (Create sequenced assembly)&r",
+      "&7- A storage network controller at the station (AE2, Sophisticated Storage or Occultism)&r",
+      "&7- Primary electrical route: 1 of 3 (see the branches)&r",
+      "&eContribution (consumed once):&r 2x precision mechanism, 16x brass ingot",
+      "&eUnlocks:&r A diamond Construction Stick with the replacement template, mechanical crafters, and a larger daily Supply Crate.",
+      "&7Commission it from the charter panel. This quest completes by itself when the station records it.&r",
+      "",
+      "&aDo:&r Commission Foundry and Logistics at your charter.",
+      "&6You get:&r Observatory: build the lens, walk three realms, defeat two great legends and pass a Horizon Trial."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          400,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_conservatory"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/foundry"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 11
+    }
+  }
+}

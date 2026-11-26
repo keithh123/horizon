@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/foundry",
+  "display": {
+    "icon": {
+      "id": "horizon:emblem_observatory"
+    },
+    "title": {
+      "text": "VI. Observatory and Horizon Beacon"
+    },
+    "description": {
+      "text": "Set an Observatory Lens at the station, chart three realms, defeat two great legends and pass one Horizon Trial."
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@ block
+K 2b1d12
+B a9822f
+b d9b24a
+y f2d27a
+T 1f6f6a
+t 2aa9a0
+L 6ee6d8
+l d6fffa
+---
+KKKKKKKKKKKKKKKK
+KbbbbbbbbbbbbbbK
+KbBBBByyyyBBBBbK
+KbBByBBBBBByBBbK
+KbByBTTTTTTBBBbK
+KbyBTttttttTBybK
+KbyBTtLLLLtTByBK
+KbyBTtLllLtTByBK
+KbyBTtLlLLtTByBK
+KbyBTtLLLLtTByBK
+KbBBTttttttTBBbK
+KbByBTTTTTTByBbK
+KbBByBBBBBByBBbK
+KbBBBByyyyBBBBbK
+KbbbbbbbbbbbbbbK
+KKKKKKKKKKKKKKKK

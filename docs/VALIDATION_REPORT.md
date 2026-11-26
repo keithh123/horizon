@@ -1,3 +1,60 @@
+# Validation report: Project Horizon 0.6.0 (headquarters campaign)
+
+Date: 2026-11-26. Machine: Linux container, 4 vCPU, 15 GB RAM, OpenJDK 21.0.13, no GPU, **no graphical client and no second
+player**. Evidence files: `tests/evidence/server_hq_2026-11-26.txt`, `tests/hq_sim.js`, `.horizon/logs/` (local), build log
+lines quoted below. Earlier sections of this report (0.1-0.5) describe the Windows reference machine and stay valid for what
+0.6 did not change.
+
+## Passed (0.6)
+
+| Test | Evidence |
+|---|---|
+| Static: stage graph acyclic and ordered, choice minimums satisfiable, every id valid, no relic in any reward/service/supply/kit, no stage refunds its own cost, every requirement kind implemented | `gen_headquarters.py` validation (aborts the build otherwise) |
+| Static: no luck-only bottleneck (each required discovery has >= 3 eligible destinations or sits in a choice) | `docs/HQ_GRAPH.md`, enforced by `gen_headquarters.py` |
+| Static: 233 quests, 0 audit problems (incl. new rules: no overlapping icons, stage quests complete only on ledger mirrors, XP-only spine rewards); all 214 0.5 quest ids present | `audit_quests.py`; id comparison against `HEAD` |
+| Static: dependency ranges for 296 mod ids (lock + shipped ports), 0 failures | `manifests/deps_report.json` |
+| Ledger state paths: 71 checks - unmet requirements, prerequisite order, exact consumption, double click, partial contribution not consumed, remote click refused, borrowed machine refused, press-never-ran refused, invites, late joiner (mirrors, no rewards), offline member's facts, login catch-up, replayed sync, independent stations, cannot join twice, owner leaving, last member leaving, mirrors never revoked, 2-of-3 regions, repeated contribution no-op, optional third region, non-member cannot break anchor, dormant station, relocation keeps stages, destroyed anchor, hq/player service scopes and cooldowns, Foundry crate replacement, fixtures unrewarded, migration, full campaign with each reward exactly once and one finale | `node tests/hq_sim.js` -> 71 passed, 0 failed |
+| Dedicated server boots (fresh world) with all 0.6 content | "Done" in 108-115 s; KubeJS: startup 3/3 and server 4/4 scripts, 0 errors, 0 warnings; 16 recipes added, 0 failed |
+| Real adapter on the dedicated server, before and after `/reload`: found, persistence, unmet refusal, room scan incl. `#c:chests` tag, Outpost commission with exact consumption and rewards (copper stick, emblem, chart), double-commission no-op, Create pressing recipe loaded, Workshop refused until "press ran", Workshop commissioned, plates consumed, iron stick, Supply Crate loot + cooldown, destroyed charter -> dormant with stages kept, dormant refusal, rebind | `/horizon hqadmin selftest`: 23 passed, 0 failed (twice). FakePlayer fixture - see limits |
+| Ledger survives a full server restart | second boot lists `hq1 ... stages=3/6`, `hq2 ... 2/6` |
+| Service/chart loot tables roll real items from the console | `Dropped 1 [Tide Chart]`, `[Surveyor's Chart]`, `[Lair Chart]`, Foundry crate `Dropped 7 items` |
+| All 7 optional plans are valid structure NBT with valid block states | `/place template` of each: "Loaded template ..." x7 |
+| Generator ownership / idempotence | see "Release build" below |
+
+## Failed, then fixed (0.6)
+
+| Problem | Fix |
+|---|---|
+| **0.5's dedicated server could not boot**: Controlify (client-only) crashed mod construction | roster side override `server: unsupported` |
+| Terra Curio's embedded ParticleStorm declared client-touching GeckoLib mixins as common -> MixinTransformerError on every server | `ports/terracurio` (LGPL repack, mixins moved to the client list) |
+| KubeJS 2101 Rhino: block-scoped `const`/`let` in functions -> "redeclaration of var" at run time; `Level.getGameTime()` invisible; `server.getLevel(key)` and `BlockState.is(TagKey)` ambiguous; `level.dimension` is KubeJS's property | function-scoped `var`; `levelData.getGameTime()`; level lookup by iteration; explicit overload `['is(net.minecraft.tags.TagKey)']`; `dimensionKey` (found with an on-server interop probe) |
+| Loot with a player context turns exploration maps into Supplementaries' Cartographer's Quill | documented (KNOWN_ISSUES #23); the selftest accepts the quill |
+| A bulk "client-only" detection loop misattributed six server mods from mixin warnings | reverted before any build; only Controlify kept (verified by boot) |
+| Scanners ignored shipped port jars (Terra Curio vanished from ids/loot audit after becoming a port) | `scripts/shipped.py` adds default-variant ports to index_ids/audit_loot/check_deps/gen_datapack |
+
+## Not verified (0.6) - needs a client and/or a second player
+
+- Charter panel in a real client: layout, hovers, click handling at small/large GUI scales, controller (Controlify) use.
+- Real-player advancement reading/granting by the ledger (FakePlayer advancements are no-ops, so the selftest injects facts).
+- Two-player invite/join/leave, concurrent clicks from two clients, offline credit with real players.
+- Stages III-VI in survival (exercised only in `hq_sim.js` and by fixtures); Gateways trial completion credit; the finale sequence on screen.
+- New mods in a client: Construction Sticks charging/undo, FramedBlocks camo/culling/shaders, Handcrafted, Create Deco,
+  Comforts with Seamless Sleep; Fresh Compats visuals; First-person Model matrix; Terra Curio/ParticleStorm client effects.
+- Art in game (only an 8x contact sheet was inspected), sounds against rain/machinery/combat, subtitles.
+- Client performance (frame-time percentiles, memory, GC), shader/no-shader comparisons, Voxy chain in all dimensions.
+- A Prism import of the new .mrpack (Prism not available): replaced by a headless install + byte verification (below).
+
+## Release build and packaging (0.6)
+
+| Check | Result |
+|---|---|
+| `python scripts/build_all.py --no-configs --mrpack` (frozen resolve online; every generator twice) | **idempotent: 1386 owned files identical across two full runs**; `hq_sim` 71/71 in both runs; 233 quests |
+| `patch_configs.py` | **skipped deliberately** (`--no-configs`): it reads a launched Windows dev instance, absent here. Its owned files are the 0.5 versions, unchanged |
+| `dist/ProjectHorizon-0.6.0.mrpack` | 267 index files, 4.7 MB |
+| Headless client install (`scripts/mrpack_install.py ... --side client`) | 267 index files hash-checked, 1370 override files byte-identical, 261 entries in `mods/` (Clavis + the 3 first-person jars `.disabled`), **0 problems**; Fresh Compats present, not enabled in `options.txt` |
+| Headless server install (`--side server`) | 186 index files + server overrides, 188 mod entries; identical to the mod set booted in the server tests except Clavis `.disabled` |
+| Graphify refresh + `tests/test_horizon_graph.py` | 9/9 tests (incl. new headquarters stage/option/mirror and ownership checks); graph: 6 hq stages, 8 services, 233 quests |
+
 # Validation report: Project Horizon 0.1.0
 
 Date: 2026-11-21. Machine: Ryzen 5 9600X, 32 GB, RTX 5070, Windows 11, Prism Launcher 11.1.1.

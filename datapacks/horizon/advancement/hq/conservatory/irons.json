@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/conservatory",
+  "display": {
+    "icon": {
+      "id": "irons_spellbooks:arcane_anvil"
+    },
+    "title": {
+      "text": "Spell Forge (Iron's Spells)"
+    },
+    "description": {
+      "text": "Combat magic: an Arcane Anvil and an Inscription Table at the station."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

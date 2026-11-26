@@ -1,1127 +1,1140 @@
 {
-  "_comment": [
-    "Curated reward identities for Project Horizon (read by scripts/gen_datapack.py).",
-    "tables: ordered [regex, family] rules over loot-table ids; FIRST match wins. Unmatched tables get no Horizon injection.",
-    "structures: ordered [regex, family] rules over structure ids, used for #horizon:family/<id> tags (advancements, maps, quests).",
-    "roles: a table's role comes from the first role regex that matches its path (vault > filler > standard).",
-    "budget: EXPECTED count per full clear of ONE structure (template group). The generator solves per-table chances so that",
-    "no structure group exceeds its budget (shared tables take the minimum), then clamps to max_chance.",
-    "split: how a family's budget for each reward is shared between roles (missing roles hand their share to the next role).",
-    "Relic tiers stay the same three currencies; regional tokens are horizontal (where you went), not a fourth tier."
-  ],
-  "roles": {
-    "vault": "(treasure|elite|vault|throne|hoard|secret|reward|apex|pharaoh|jackpot|puzzle_treasure|sudoku_success|legendary|_high$|/rare$|keep$|obsidian$|coffin)",
-    "filler": "(junk|food|kitchen|suppl|storage|barrel|generic|common|normal|garden|rooms|library|bookshelf|lesser|_low$|/low$|filler|waste|mess|quarters|hallway|corridor|grave|wool|cask|housing|failed|lumberjack|farmer|brewery|component)",
-    "skip": "(^|/)(pots?|pot_[a-z_]+|archaeology|archeology|archaelogy|dispensers?|spawn_bonus_chest|inject)(/|$)"
+ "_comment": [
+  "Curated reward identities for Project Horizon (read by scripts/gen_datapack.py).",
+  "tables: ordered [regex, family] rules over loot-table ids; FIRST match wins. Unmatched tables get no Horizon injection.",
+  "structures: ordered [regex, family] rules over structure ids, used for #horizon:family/<id> tags (advancements, maps, quests).",
+  "roles: a table's role comes from the first role regex that matches its path (vault > filler > standard).",
+  "budget: EXPECTED count per full clear of ONE structure (template group). The generator solves per-table chances so that",
+  "no structure group exceeds its budget (shared tables take the minimum), then clamps to max_chance.",
+  "split: how a family's budget for each reward is shared between roles (missing roles hand their share to the next role).",
+  "Relic tiers stay the same three currencies; regional tokens are horizontal (where you went), not a fourth tier."
+ ],
+ "roles": {
+  "vault": "(treasure|elite|vault|throne|hoard|secret|reward|apex|pharaoh|jackpot|puzzle_treasure|sudoku_success|legendary|_high$|/rare$|keep$|obsidian$|coffin)",
+  "filler": "(junk|food|kitchen|suppl|storage|barrel|generic|common|normal|garden|rooms|library|bookshelf|lesser|_low$|/low$|filler|waste|mess|quarters|hallway|corridor|grave|wool|cask|housing|failed|lumberjack|farmer|brewery|component)",
+  "skip": "(^|/)(pots?|pot_[a-z_]+|archaeology|archeology|archaelogy|dispensers?|spawn_bonus_chest|inject)(/|$)"
+ },
+ "split": {
+  "heart": {
+   "vault": 1.0
   },
-  "split": {
-    "heart": {
-      "vault": 1.0
+  "core": {
+   "vault": 0.7,
+   "standard": 0.3,
+   "filler": 0.0
+  },
+  "shard": {
+   "standard": 0.6,
+   "filler": 0.4,
+   "vault": 0.0
+  },
+  "token": {
+   "vault": 0.35,
+   "standard": 0.5,
+   "filler": 0.15
+  },
+  "affix": {
+   "vault": 0.45,
+   "standard": 0.4,
+   "filler": 0.15
+  },
+  "gem": {
+   "vault": 0.45,
+   "standard": 0.4,
+   "filler": 0.15
+  }
+ },
+ "max_chance": {
+  "heart": 0.5,
+  "core": 0.5,
+  "shard": 0.6,
+  "token": 0.7,
+  "affix": 0.6,
+  "gem": 0.45
+ },
+ "items": {
+  "shard": "horizon:wayfarer_shard",
+  "core": "horizon:ancient_core",
+  "heart": "horizon:starforged_heart"
+ },
+ "families": {
+  "settlement": {
+   "title": "Settlements",
+   "stage": "early",
+   "icon": "minecraft:bell",
+   "identity": "Villages, taverns and towns: safe, social, full of supplies. Cartographers sell and stash the maps that point to everything else.",
+   "prep": "None. Bring emeralds.",
+   "signature": "Surveyor's Charts (exploration maps to nearby landmarks) in cartographer chests; warp scrolls; food and building blocks.",
+   "repeat": "Trading (villagers restock), new villages in new regions. Containers do not refill.",
+   "connects": "Building (regional styles), travel (warp scrolls, waystones), clues to landmarks.",
+   "budget": {
+    "shard": 0.8,
+    "affix": 1.0,
+    "gem": 0.5
+   },
+   "extras": [
+    {
+     "match": "cartographer|library|tavern_upstairs",
+     "entry": "map:horizon:clue/landmark",
+     "chance": 0.35,
+     "name": "Surveyor's Chart"
     },
-    "core": {
-      "vault": 0.7,
-      "standard": 0.3,
-      "filler": 0.0
-    },
-    "shard": {
-      "standard": 0.6,
-      "filler": 0.4,
-      "vault": 0.0
-    },
-    "token": {
-      "vault": 0.35,
-      "standard": 0.5,
-      "filler": 0.15
-    },
-    "affix": {
-      "vault": 0.45,
-      "standard": 0.4,
-      "filler": 0.15
-    },
-    "gem": {
-      "vault": 0.45,
-      "standard": 0.4,
-      "filler": 0.15
+    {
+     "match": ".",
+     "entry": "item:waystones:warp_scroll",
+     "chance": 0.04,
+     "count": [
+      1,
+      2
+     ]
     }
+   ],
+   "home": "Outpost: food, beds and trade lead to your first station; villagers sell the maps that point outward."
   },
-  "max_chance": {
-    "heart": 0.5,
+  "roadside": {
+   "title": "Roadside Ruins & Camps",
+   "stage": "early",
+   "icon": "minecraft:mossy_cobblestone",
+   "identity": "Small, quick discoveries between destinations: ruins, shrines, camps, guide posts, watchtowers. Five minutes each.",
+   "prep": "Stone tools, food. Occasionally a few hostile mobs.",
+   "signature": "Wayfarer Shards, occasional charts to temples and arcane sites.",
+   "repeat": "Found everywhere; the main shard income while travelling.",
+   "connects": "Shards -> warp stones, gem dust, backpack upgrades.",
+   "budget": {
+    "shard": 0.7,
+    "core": 0.03,
+    "affix": 0.4,
+    "gem": 0.25
+   },
+   "extras": [
+    {
+     "match": ".",
+     "entry": "map:horizon:clue/temple",
+     "chance": 0.05,
+     "name": "Weathered Chart"
+    }
+   ],
+   "home": "Outpost: the first ruin is the Outpost's discovery; Wayfarer Shards buy survey charts and Discovery Cases."
+  },
+  "underground": {
+   "title": "Underground Dungeons",
+   "stage": "early-mid",
+   "icon": "minecraft:spawner",
+   "identity": "Spawner rooms, mineshafts, crypts and strongholds. Dark, cramped, spawner-driven.",
+   "prep": "Iron armour, torches, a shield. Strongholds: diamond gear.",
+   "signature": "Shards in volume, the first Ancient Cores, spawners for Apothic Spawners.",
+   "repeat": "Spawners can be kept and modified (Apothic Spawners). Mineshafts are huge but low value per chest.",
+   "connects": "Spawners -> mob farms (bounded by spawner count), cores -> sockets.",
+   "budget": {
+    "shard": 1.4,
+    "core": 0.25,
+    "affix": 1.4,
+    "gem": 0.9
+   },
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:iron_ingot",
+     "chance": 0.25,
+     "count": [
+      2,
+      5
+     ]
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:diamond",
+     "chance": 0.03
+    }
+   ],
+   "home": "Workshop discovery; the Hollow Roads expedition for the Expedition Hall. Iron and tools feed the press line."
+  },
+  "temple": {
+   "title": "Temples, Mansions & Outposts",
+   "stage": "mid",
+   "icon": "minecraft:chiseled_sandstone",
+   "identity": "Trapped temples, illager strongholds and mansions. Puzzles, traps and organised enemies guarding one real treasure room.",
+   "prep": "Diamond gear or good affixes, fire resistance for pyramids, a bow.",
+   "signature": "Ancient Cores in treasure rooms, higher-rarity affix rolls in the vault, charts to landmarks.",
+   "repeat": "Mansions and outposts are rare per region; each is a one-time clear.",
+   "connects": "Cores -> ME controller, socketing, epic ink.",
+   "budget": {
+    "shard": 1.2,
+    "core": 0.9,
+    "heart": 0.03,
+    "affix": 2.0,
+    "gem": 1.4
+   },
+   "apotheosis_vault_rarities": [
+    "apotheosis:rare",
+    "apotheosis:epic"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "map:horizon:clue/landmark",
+     "chance": 0.06,
+     "name": "Surveyor's Chart"
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:gold_ingot",
+     "chance": 0.2,
+     "count": [
+      1,
+      4
+     ]
+    }
+   ],
+   "home": "Workshop discovery; Archive Charts (Hollow Roads) point here. Ancient Cores commission the Conservatory."
+  },
+  "arcane": {
+   "title": "Arcane Sites",
+   "stage": "mid",
+   "icon": "irons_spellbooks:inscription_table",
+   "identity": "Mage towers, citadels, pyromancer and ice-spider lairs, catacombs: Iron's Spells' own structures and Terralith's mage towers.",
+   "prep": "Magic resistance (Iron's), mana regen, a way to fight casters at range.",
+   "signature": "Scrolls and inks (upstream tables, unchanged), Ancient Cores in treasure, Iron's spell gear.",
+   "repeat": "Iron's structures are spread far apart; the Dead King's catacombs are a one-time boss lair.",
+   "connects": "Magic route: scrolls -> spellbook; cores -> epic ink.",
+   "budget": {
+    "shard": 0.8,
+    "core": 0.7,
+    "affix": 1.2,
+    "gem": 1.2
+   },
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:irons_spellbooks:arcane_essence",
+     "chance": 0.22,
+     "count": [
+      1,
+      3
+     ]
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:experience_bottle",
+     "chance": 0.1,
+     "count": [
+      1,
+      2
+     ]
+    }
+   ],
+   "home": "The Hollow Roads expedition (Expedition Hall). Arcane essence is its contribution and powers the Spell Forge route."
+  },
+  "landmark": {
+   "title": "Great Landmarks",
+   "stage": "mid-late",
+   "icon": "minecraft:spyglass",
+   "identity": "When Dungeons Arise and Cataclysm's open structures: castles, palaces, sanctuaries you can see on the horizon. Hours to clear, many floors, elite mobs.",
+   "prep": "Enchanted diamond/netherite or rare+ affixes, healing, a backpack, a waystone or warp scroll home.",
+   "signature": "The Starforged Heart jackpot (vault rooms only), several Ancient Cores, epic/mythic affix rolls in vaults.",
+   "repeat": "One clear each; there are dozens per world. Visible from far away thanks to Voxy, so they double as navigation.",
+   "connects": "Hearts -> fusion, 256M storage, enhancement sigils, legendary ink.",
+   "budget": {
+    "shard": 3.0,
+    "core": 2.5,
+    "heart": 1.2,
+    "affix": 5.0,
+    "gem": 3.0
+   },
+   "apotheosis_vault_rarities": [
+    "apotheosis:rare",
+    "apotheosis:epic",
+    "apotheosis:mythic"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:diamond",
+     "chance": 0.1,
+     "count": [
+      1,
+      2
+     ]
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:ender_pearl",
+     "chance": 0.18,
+     "count": [
+      1,
+      2
+     ]
+    }
+   ],
+   "home": "The High Landmarks expedition (Expedition Hall). Ancient Cores from treasure rooms; Landmark Charts point here."
+  },
+  "ocean": {
+   "title": "Ocean Expeditions",
+   "stage": "early-late",
+   "icon": "minecraft:heart_of_the_sea",
+   "identity": "Shipwrecks, sunken ruins, monuments, pirate ships, galleys and the Sunken City. Breath and visibility are the real enemy.",
+   "prep": "Respiration/Aqua Affinity, night vision, a boat, doors or conduit for air. Monuments: Mining Fatigue cure (milk).",
+   "signature": "Tidebound Doubloons (exchange for Lunar/Slipstream gems), buried-treasure cores, Heart of the Sea.",
+   "repeat": "Oceans are vast and cheap to cross by boat; many small wrecks keep doubloon income steady.",
+   "connects": "Doubloons -> targeted gems; cores -> sockets; monument prismarine for building.",
+   "budget": {
+    "shard": 0.8,
+    "core": 0.4,
+    "token": 2.0,
+    "affix": 1.4,
+    "gem": 1.0
+   },
+   "token": "horizon:tidebound_doubloon",
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:nautilus_shell",
+     "chance": 0.06
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:prismarine_crystals",
+     "chance": 0.2,
+     "count": [
+      2,
+      5
+     ]
+    }
+   ],
+   "home": "The Drowned Coast expedition (Expedition Hall). Tidebound Doubloons are its contribution; Tide Charts point here."
+  },
+  "nether": {
+   "title": "Nether Expeditions",
+   "stage": "mid",
+   "icon": "minecraft:crying_obsidian",
+   "identity": "Incendium's castles, sanctums, reactors and labs, YUNG's fortresses, bastions and piglin donjons. Hostile terrain, ranged and fire damage everywhere.",
+   "prep": "Fire resistance, gold armour piece, blast protection, a bow, a way home.",
+   "signature": "Cinder Idols (exchange for Inferno/Blood Lord/Molten Breach gems), Ancient Cores, bastion treasure hearts (rare).",
+   "repeat": "Incendium structures are large and widely spaced; the Nether is 8x faster to travel.",
+   "connects": "Idols -> nether gems; cores -> sockets; netherite.",
+   "budget": {
+    "core": 0.7,
+    "heart": 0.05,
+    "token": 2.5,
+    "affix": 2.0,
+    "gem": 1.4
+   },
+   "token": "horizon:cinder_idol",
+   "apotheosis_gems": [
+    "apotheosis:the_nether/inferno",
+    "apotheosis:the_nether/blood_lord",
+    "apotheosis:the_nether/molten_breach"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:gold_ingot",
+     "chance": 0.28,
+     "count": [
+      2,
+      6
+     ]
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:blaze_rod",
+     "chance": 0.08
+    }
+   ],
+   "home": "A realm for the Observatory. Cinder Idols buy the Cinders trial that can complete stage VI."
+  },
+  "end": {
+   "title": "End Expeditions",
+   "stage": "late",
+   "icon": "minecraft:end_crystal",
+   "identity": "Nullscape's End: end cities, End castles and lighthouses, wrecks drifting over the void.",
+   "prep": "Elytra or slow falling, feather falling, ender pearls, ranged weapons for shulkers.",
+   "signature": "Starlit Voidglass (exchange for Endersurge/Mageslayer gems), elytra, Ancient Cores, rare Starforged Hearts in city treasure.",
+   "repeat": "The outer End is effectively endless; cities repeat with variety thanks to Nullscape terrain.",
+   "connects": "Voidglass -> end gems; hearts -> late tech.",
+   "budget": {
+    "core": 1.0,
+    "heart": 0.25,
+    "token": 3.0,
+    "affix": 3.0,
+    "gem": 2.0
+   },
+   "token": "horizon:starlit_voidglass",
+   "apotheosis_vault_rarities": [
+    "apotheosis:epic",
+    "apotheosis:mythic"
+   ],
+   "apotheosis_gems": [
+    "apotheosis:the_end/endersurge",
+    "apotheosis:the_end/mageslayer"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:ender_pearl",
+     "chance": 0.28,
+     "count": [
+      1,
+      3
+     ]
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:chorus_fruit",
+     "chance": 0.3,
+     "count": [
+      2,
+      6
+     ]
+    }
+   ],
+   "home": "A realm for the Observatory. Starlit Voidglass buys the Void trial; the Dragon is a great legend."
+  },
+  "aether": {
+   "title": "The Aether",
+   "stage": "mid",
+   "icon": "minecraft:glowstone",
+   "identity": "Floating islands and three dungeons (Slider, Valkyrie Queen, Sun Spirit). Falling is the danger; the gear line is unique.",
+   "prep": "Slow falling / feather falling, a pickaxe for dungeon doors, ranged weapons for zephyrs.",
+   "signature": "Skyward Plumes (exchange for Solar/Lightning gems), Aether accessories and dungeon keys (upstream).",
+   "repeat": "Dungeons are one-time; plumes from ruined portals and bosses.",
+   "connects": "Plumes -> mobility gems; Aether gear is a sidegrade line.",
+   "budget": {
     "core": 0.5,
-    "shard": 0.6,
-    "token": 0.7,
-    "affix": 0.6,
-    "gem": 0.45
+    "token": 2.0,
+    "affix": 1.0,
+    "gem": 0.8
+   },
+   "token": "horizon:skyward_plume",
+   "home": "A realm for the Observatory. The Sun Spirit is a great legend; plumes feed the Horizon Gauntlet."
   },
-  "items": {
-    "shard": "horizon:wayfarer_shard",
-    "core": "horizon:ancient_core",
-    "heart": "horizon:starforged_heart"
-  },
-  "families": {
-    "settlement": {
-      "title": "Settlements",
-      "stage": "early",
-      "icon": "minecraft:bell",
-      "identity": "Villages, taverns and towns: safe, social, full of supplies. Cartographers sell and stash the maps that point to everything else.",
-      "prep": "None. Bring emeralds.",
-      "signature": "Surveyor's Charts (exploration maps to nearby landmarks) in cartographer chests; warp scrolls; food and building blocks.",
-      "repeat": "Trading (villagers restock), new villages in new regions. Containers do not refill.",
-      "connects": "Building (regional styles), travel (warp scrolls, waystones), clues to landmarks.",
-      "budget": {
-        "shard": 0.8,
-        "affix": 1.0,
-        "gem": 0.5
-      },
-      "extras": [
-        {
-          "match": "cartographer|library|tavern_upstairs",
-          "entry": "map:horizon:clue/landmark",
-          "chance": 0.35,
-          "name": "Surveyor's Chart"
-        },
-        {
-          "match": ".",
-          "entry": "item:waystones:warp_scroll",
-          "chance": 0.04,
-          "count": [
-            1,
-            2
-          ]
-        }
-      ]
-    },
-    "roadside": {
-      "title": "Roadside Ruins & Camps",
-      "stage": "early",
-      "icon": "minecraft:mossy_cobblestone",
-      "identity": "Small, quick discoveries between destinations: ruins, shrines, camps, guide posts, watchtowers. Five minutes each.",
-      "prep": "Stone tools, food. Occasionally a few hostile mobs.",
-      "signature": "Wayfarer Shards, occasional charts to temples and arcane sites.",
-      "repeat": "Found everywhere; the main shard income while travelling.",
-      "connects": "Shards -> warp stones, gem dust, backpack upgrades.",
-      "budget": {
-        "shard": 0.7,
-        "core": 0.03,
-        "affix": 0.4,
-        "gem": 0.25
-      },
-      "extras": [
-        {
-          "match": ".",
-          "entry": "map:horizon:clue/temple",
-          "chance": 0.05,
-          "name": "Weathered Chart"
-        }
-      ]
-    },
-    "underground": {
-      "title": "Underground Dungeons",
-      "stage": "early-mid",
-      "icon": "minecraft:spawner",
-      "identity": "Spawner rooms, mineshafts, crypts and strongholds. Dark, cramped, spawner-driven.",
-      "prep": "Iron armour, torches, a shield. Strongholds: diamond gear.",
-      "signature": "Shards in volume, the first Ancient Cores, spawners for Apothic Spawners.",
-      "repeat": "Spawners can be kept and modified (Apothic Spawners). Mineshafts are huge but low value per chest.",
-      "connects": "Spawners -> mob farms (bounded by spawner count), cores -> sockets.",
-      "budget": {
-        "shard": 1.4,
-        "core": 0.25,
-        "affix": 1.4,
-        "gem": 0.9
-      },
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:iron_ingot",
-          "chance": 0.25,
-          "count": [
-            2,
-            5
-          ]
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:diamond",
-          "chance": 0.03
-        }
-      ]
-    },
-    "temple": {
-      "title": "Temples, Mansions & Outposts",
-      "stage": "mid",
-      "icon": "minecraft:chiseled_sandstone",
-      "identity": "Trapped temples, illager strongholds and mansions. Puzzles, traps and organised enemies guarding one real treasure room.",
-      "prep": "Diamond gear or good affixes, fire resistance for pyramids, a bow.",
-      "signature": "Ancient Cores in treasure rooms, higher-rarity affix rolls in the vault, charts to landmarks.",
-      "repeat": "Mansions and outposts are rare per region; each is a one-time clear.",
-      "connects": "Cores -> ME controller, socketing, epic ink.",
-      "budget": {
-        "shard": 1.2,
-        "core": 0.9,
-        "heart": 0.03,
-        "affix": 2.0,
-        "gem": 1.4
-      },
-      "apotheosis_vault_rarities": [
-        "apotheosis:rare",
-        "apotheosis:epic"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "map:horizon:clue/landmark",
-          "chance": 0.06,
-          "name": "Surveyor's Chart"
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:gold_ingot",
-          "chance": 0.2,
-          "count": [
-            1,
-            4
-          ]
-        }
-      ]
-    },
-    "arcane": {
-      "title": "Arcane Sites",
-      "stage": "mid",
-      "icon": "irons_spellbooks:inscription_table",
-      "identity": "Mage towers, citadels, pyromancer and ice-spider lairs, catacombs: Iron's Spells' own structures and Terralith's mage towers.",
-      "prep": "Magic resistance (Iron's), mana regen, a way to fight casters at range.",
-      "signature": "Scrolls and inks (upstream tables, unchanged), Ancient Cores in treasure, Iron's spell gear.",
-      "repeat": "Iron's structures are spread far apart; the Dead King's catacombs are a one-time boss lair.",
-      "connects": "Magic route: scrolls -> spellbook; cores -> epic ink.",
-      "budget": {
-        "shard": 0.8,
-        "core": 0.7,
-        "affix": 1.2,
-        "gem": 1.2
-      },
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:irons_spellbooks:arcane_essence",
-          "chance": 0.22,
-          "count": [
-            1,
-            3
-          ]
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:experience_bottle",
-          "chance": 0.1,
-          "count": [
-            1,
-            2
-          ]
-        }
-      ]
-    },
-    "landmark": {
-      "title": "Great Landmarks",
-      "stage": "mid-late",
-      "icon": "minecraft:spyglass",
-      "identity": "When Dungeons Arise and Cataclysm's open structures: castles, palaces, sanctuaries you can see on the horizon. Hours to clear, many floors, elite mobs.",
-      "prep": "Enchanted diamond/netherite or rare+ affixes, healing, a backpack, a waystone or warp scroll home.",
-      "signature": "The Starforged Heart jackpot (vault rooms only), several Ancient Cores, epic/mythic affix rolls in vaults.",
-      "repeat": "One clear each; there are dozens per world. Visible from far away thanks to Voxy, so they double as navigation.",
-      "connects": "Hearts -> fusion, 256M storage, enhancement sigils, legendary ink.",
-      "budget": {
-        "shard": 3.0,
-        "core": 2.5,
-        "heart": 1.2,
-        "affix": 5.0,
-        "gem": 3.0
-      },
-      "apotheosis_vault_rarities": [
-        "apotheosis:rare",
-        "apotheosis:epic",
-        "apotheosis:mythic"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:diamond",
-          "chance": 0.1,
-          "count": [
-            1,
-            2
-          ]
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:ender_pearl",
-          "chance": 0.18,
-          "count": [
-            1,
-            2
-          ]
-        }
-      ]
-    },
-    "ocean": {
-      "title": "Ocean Expeditions",
-      "stage": "early-late",
-      "icon": "minecraft:heart_of_the_sea",
-      "identity": "Shipwrecks, sunken ruins, monuments, pirate ships, galleys and the Sunken City. Breath and visibility are the real enemy.",
-      "prep": "Respiration/Aqua Affinity, night vision, a boat, doors or conduit for air. Monuments: Mining Fatigue cure (milk).",
-      "signature": "Tidebound Doubloons (exchange for Lunar/Slipstream gems), buried-treasure cores, Heart of the Sea.",
-      "repeat": "Oceans are vast and cheap to cross by boat; many small wrecks keep doubloon income steady.",
-      "connects": "Doubloons -> targeted gems; cores -> sockets; monument prismarine for building.",
-      "budget": {
-        "shard": 0.8,
-        "core": 0.4,
-        "token": 2.0,
-        "affix": 1.4,
-        "gem": 1.0
-      },
-      "token": "horizon:tidebound_doubloon",
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:nautilus_shell",
-          "chance": 0.06
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:prismarine_crystals",
-          "chance": 0.2,
-          "count": [
-            2,
-            5
-          ]
-        }
-      ]
-    },
-    "nether": {
-      "title": "Nether Expeditions",
-      "stage": "mid",
-      "icon": "minecraft:crying_obsidian",
-      "identity": "Incendium's castles, sanctums, reactors and labs, YUNG's fortresses, bastions and piglin donjons. Hostile terrain, ranged and fire damage everywhere.",
-      "prep": "Fire resistance, gold armour piece, blast protection, a bow, a way home.",
-      "signature": "Cinder Idols (exchange for Inferno/Blood Lord/Molten Breach gems), Ancient Cores, bastion treasure hearts (rare).",
-      "repeat": "Incendium structures are large and widely spaced; the Nether is 8x faster to travel.",
-      "connects": "Idols -> nether gems; cores -> sockets; netherite.",
-      "budget": {
-        "core": 0.7,
-        "heart": 0.05,
-        "token": 2.5,
-        "affix": 2.0,
-        "gem": 1.4
-      },
-      "token": "horizon:cinder_idol",
-      "apotheosis_gems": [
-        "apotheosis:the_nether/inferno",
-        "apotheosis:the_nether/blood_lord",
-        "apotheosis:the_nether/molten_breach"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:gold_ingot",
-          "chance": 0.28,
-          "count": [
-            2,
-            6
-          ]
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:blaze_rod",
-          "chance": 0.08
-        }
-      ]
-    },
-    "end": {
-      "title": "End Expeditions",
-      "stage": "late",
-      "icon": "minecraft:end_crystal",
-      "identity": "Nullscape's End: end cities, End castles and lighthouses, wrecks drifting over the void.",
-      "prep": "Elytra or slow falling, feather falling, ender pearls, ranged weapons for shulkers.",
-      "signature": "Starlit Voidglass (exchange for Endersurge/Mageslayer gems), elytra, Ancient Cores, rare Starforged Hearts in city treasure.",
-      "repeat": "The outer End is effectively endless; cities repeat with variety thanks to Nullscape terrain.",
-      "connects": "Voidglass -> end gems; hearts -> late tech.",
-      "budget": {
-        "core": 1.0,
-        "heart": 0.25,
-        "token": 3.0,
-        "affix": 3.0,
-        "gem": 2.0
-      },
-      "token": "horizon:starlit_voidglass",
-      "apotheosis_vault_rarities": [
-        "apotheosis:epic",
-        "apotheosis:mythic"
-      ],
-      "apotheosis_gems": [
-        "apotheosis:the_end/endersurge",
-        "apotheosis:the_end/mageslayer"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:ender_pearl",
-          "chance": 0.28,
-          "count": [
-            1,
-            3
-          ]
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:chorus_fruit",
-          "chance": 0.3,
-          "count": [
-            2,
-            6
-          ]
-        }
-      ]
-    },
-    "aether": {
-      "title": "The Aether",
-      "stage": "mid",
-      "icon": "minecraft:glowstone",
-      "identity": "Floating islands and three dungeons (Slider, Valkyrie Queen, Sun Spirit). Falling is the danger; the gear line is unique.",
-      "prep": "Slow falling / feather falling, a pickaxe for dungeon doors, ranged weapons for zephyrs.",
-      "signature": "Skyward Plumes (exchange for Solar/Lightning gems), Aether accessories and dungeon keys (upstream).",
-      "repeat": "Dungeons are one-time; plumes from ruined portals and bosses.",
-      "connects": "Plumes -> mobility gems; Aether gear is a sidegrade line.",
-      "budget": {
-        "core": 0.5,
-        "token": 2.0,
-        "affix": 1.0,
-        "gem": 0.8
-      },
-      "token": "horizon:skyward_plume"
-    },
-    "deep": {
-      "title": "The Deep (Otherside & Undergarden)",
-      "stage": "mid-late",
-      "icon": "minecraft:echo_shard",
-      "identity": "Ancient Cities, Deeper and Darker's Otherside temples and the Undergarden's catacombs and camps. Sound and darkness matter.",
-      "prep": "Swift Sneak, night vision, wool to muffle steps, a plan for the Warden.",
-      "signature": "Echoing Fossils (exchange for Breach/Guardian gems), Ancient Cores, ancient-city hearts (rare), Warden carapace (upstream).",
-      "repeat": "Each Ancient City and Otherside temple is a one-time clear; the Undergarden is a self-contained dimension.",
-      "connects": "Fossils -> armour-piercing/defence gems; cores -> sockets.",
-      "budget": {
-        "core": 1.0,
-        "heart": 0.2,
-        "token": 2.5,
-        "affix": 2.0,
-        "gem": 1.4
-      },
-      "token": "horizon:echoing_fossil",
-      "apotheosis_vault_rarities": [
-        "apotheosis:rare",
-        "apotheosis:epic",
-        "apotheosis:mythic"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:echo_shard",
-          "chance": 0.1
-        }
-      ]
-    },
-    "hive": {
-      "title": "The Bumblezone",
-      "stage": "early-mid",
-      "icon": "minecraft:honeycomb",
-      "identity": "A whole dimension of puzzles: cell mazes, the Sempiternal Sanctum's colour puzzles, battle cubes and parkour. Brains over armour.",
-      "prep": "Bee-friendly gear (Bumblezone's own), patience. Solving puzzles gives the better chests.",
-      "signature": "Honeyed Seals (exchange for Verdant/Splendor gems), puzzle-treasure cores. Failed-puzzle chests give little.",
-      "repeat": "Many sanctums and mazes; rewards scale with puzzle success.",
-      "connects": "Seals -> utility gems; honey for food and building.",
-      "budget": {
-        "shard": 1.0,
-        "core": 0.35,
-        "token": 2.0,
-        "affix": 0.8,
-        "gem": 0.6
-      },
-      "token": "horizon:honeyed_seal",
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:honey_bottle",
-          "chance": 0.3,
-          "count": [
-            1,
-            3
-          ]
-        }
-      ]
-    },
-    "boss_lair": {
-      "title": "Boss Lairs",
-      "stage": "late",
-      "icon": "minecraft:wither_skeleton_skull",
-      "identity": "Cataclysm's arenas, Mowzie's monasteries, Aether dungeon reward rooms. The boss is the point; chests are the bonus.",
-      "prep": "Your best build. Read the boss: telegraphs are visible on every profile.",
-      "signature": "The boss drop and first-kill trophy/heart (see legends). Chests give cores and strong affix gear.",
-      "repeat": "First kill is the big reward (once per player); some Cataclysm bosses can be re-summoned for gear, not relics.",
-      "connects": "Trophies for the Hall of Legends; cores -> sockets.",
-      "budget": {
-        "core": 1.0,
-        "affix": 3.0,
-        "gem": 2.0
-      },
-      "apotheosis_vault_rarities": [
-        "apotheosis:epic",
-        "apotheosis:mythic"
-      ],
-      "extras": [
-        {
-          "match": ".",
-          "entry": "item:minecraft:golden_apple",
-          "chance": 0.22
-        },
-        {
-          "match": ".",
-          "entry": "item:minecraft:experience_bottle",
-          "chance": 0.3,
-          "count": [
-            2,
-            5
-          ]
-        }
-      ]
+  "deep": {
+   "title": "The Deep (Otherside & Undergarden)",
+   "stage": "mid-late",
+   "icon": "minecraft:echo_shard",
+   "identity": "Ancient Cities, Deeper and Darker's Otherside temples and the Undergarden's catacombs and camps. Sound and darkness matter.",
+   "prep": "Swift Sneak, night vision, wool to muffle steps, a plan for the Warden.",
+   "signature": "Echoing Fossils (exchange for Breach/Guardian gems), Ancient Cores, ancient-city hearts (rare), Warden carapace (upstream).",
+   "repeat": "Each Ancient City and Otherside temple is a one-time clear; the Undergarden is a self-contained dimension.",
+   "connects": "Fossils -> armour-piercing/defence gems; cores -> sockets.",
+   "budget": {
+    "core": 1.0,
+    "heart": 0.2,
+    "token": 2.5,
+    "affix": 2.0,
+    "gem": 1.4
+   },
+   "token": "horizon:echoing_fossil",
+   "apotheosis_vault_rarities": [
+    "apotheosis:rare",
+    "apotheosis:epic",
+    "apotheosis:mythic"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:echo_shard",
+     "chance": 0.1
     }
+   ],
+   "home": "Undergarden and Otherside are Observatory realms; fossils feed the Horizon Gauntlet."
   },
-  "tables": [
-    [
-      "^(horizon|artifacts|apotheosis):(inject|rewards)",
-      null
-    ],
-    [
-      "^lootr:",
-      null
-    ],
-    [
-      "^minecraft:chests/(village/|illager_mansion/kitchen)",
-      "settlement"
-    ],
-    [
-      "^ctov:",
-      "settlement"
-    ],
-    [
-      "^kaisyn:village/",
-      "settlement"
-    ],
-    [
-      "^kaisyn:outpost/",
-      "temple"
-    ],
-    [
-      "^terralith:village/",
-      "settlement"
-    ],
-    [
-      "^repurposed_structures:chests/(villages|cities/overworld)/",
-      "settlement"
-    ],
-    [
-      "^nova_structures:chests/(tavern|hamlet|village|firewatch)",
-      "settlement"
-    ],
-    [
-      "^structory:(mood|harvest/old_manor|harvest/manor)",
-      "settlement"
-    ],
-    [
-      "^explorify:chest/(dark_forest_settlement|tavern|farmstead)",
-      "settlement"
-    ],
-    [
-      "^dungeons_arise:chests/(illager_corsair|illager_galley|undead_pirate_ship|typhon|lighthouse|fishing_hut)",
-      "ocean"
-    ],
-    [
-      "^dungeons_arise:chests/(small_prairie_house|giant_mushroom|mushroom_house|mushroom_village|merchant_campsite|illager_campsite|wishing_well|bandit_village|small_blimp|jungle_tree_house|bathhouse)",
-      "roadside"
-    ],
-    [
-      "^dungeons_arise:chests/(scorched_mines)",
-      "nether"
-    ],
-    [
-      "^dungeons_arise:chests/(illager_fort|mushroom_mines|mines_treasure|aviary|illager_windmill|foundry|infested_temple|mining_system|abandoned_temple|monastery|ceryneian_hind|coliseum|illager_hall)",
-      "temple"
-    ],
-    [
-      "^dungeons_arise:chests/greenwood_pub",
-      "settlement"
-    ],
-    [
-      "^dungeons_arise:chests/(heavenly_)",
-      "landmark"
-    ],
-    [
-      "^dungeons_arise:",
-      "landmark"
-    ],
-    [
-      "^cataclysm:chests/(acropolis|frosted_prison|amethyst_nest|ancient_factory|burning_arena|soul_black_smith|cursed_pyramid)",
-      "boss_lair"
-    ],
-    [
-      "^cataclysm:chests/(abandoned|desert)",
-      "temple"
-    ],
-    [
-      "^cataclysm:chests/ruined_citadel",
-      "end"
-    ],
-    [
-      "^cataclysm:",
-      "landmark"
-    ],
-    [
-      "^minecraft:chests/(shipwreck_|underwater_ruin_|buried_treasure)",
-      "ocean"
-    ],
-    [
-      "^betteroceanmonuments:",
-      "ocean"
-    ],
-    [
-      "^repurposed_structures:chests/shipwrecks/(crimson|warped|nether_bricks)",
-      "nether"
-    ],
-    [
-      "^repurposed_structures:chests/shipwrecks/end",
-      "end"
-    ],
-    [
-      "^repurposed_structures:chests/(shipwrecks|temples/ocean|monuments/|ruins/ocean)",
-      "ocean"
-    ],
-    [
-      "^nova_structures:chests/(conduit|sunken|ship_wreck|shipwreck)",
-      "ocean"
-    ],
-    [
-      "^minecraft:chests/(nether_bridge|bastion_)",
-      "nether"
-    ],
-    [
-      "^incendium:(artifact|castle/(base|stand)|entity|hovering_inferno|ghastling|iron_nuggets)/",
-      null
-    ],
-    [
-      "^incendium:",
-      "nether"
-    ],
-    [
-      "^betterfortresses:",
-      "nether"
-    ],
-    [
-      "^betterdungeons:small_nether_dungeon",
-      "nether"
-    ],
-    [
-      "^repurposed_structures:chests/[a-z_/]*(nether|crimson|warped|basalt|soul|wasteland|bastion)",
-      "nether"
-    ],
-    [
-      "^nova_structures:chests/(nether|piglin|donjon|skeleton_camp|nether_skeleton)",
-      "nether"
-    ],
-    [
-      "^minecraft:chests/end_city_treasure",
-      "end"
-    ],
-    [
-      "^repurposed_structures:chests/[a-z_/]*end",
-      "end"
-    ],
-    [
-      "^nova_structures:chests/end",
-      "end"
-    ],
-    [
-      "^explorify:chest/end",
-      "end"
-    ],
-    [
-      "^nullscape:",
-      "end"
-    ],
-    [
-      "^aether:chests/dungeon/[a-z]+/[a-z]+_dungeon_reward",
-      "boss_lair"
-    ],
-    [
-      "^aether:",
-      "aether"
-    ],
-    [
-      "^minecraft:chests/ancient_city",
-      "deep"
-    ],
-    [
-      "^repurposed_structures:chests/ancient_cities",
-      "deep"
-    ],
-    [
-      "^deeperdarker:",
-      "deep"
-    ],
-    [
-      "^undergarden:",
-      "deep"
-    ],
-    [
-      "^the_bumblezone:",
-      "hive"
-    ],
-    [
-      "^irons_spellbooks:",
-      "arcane"
-    ],
-    [
-      "^terralith:mage",
-      "arcane"
-    ],
-    [
-      "^mowziesmobs:",
-      "boss_lair"
-    ],
-    [
-      "^minecraft:chests/(jungle_temple|desert_pyramid|woodland_mansion|illager_mansion/|pillager_outpost)",
-      "temple"
-    ],
-    [
-      "^betterdeserttemples:",
-      "temple"
-    ],
-    [
-      "^betterjungletemples:",
-      "temple"
-    ],
-    [
-      "^repurposed_structures:chests/(pyramids|temples|mansions|outposts|igloos|fortresses)/",
-      "temple"
-    ],
-    [
-      "^nova_structures:chests/(illager|badlands_miner|witch_villa|stray_fort|lone_citadel)",
-      "temple"
-    ],
-    [
-      "^apotheosis:chests/tome_tower",
-      "temple"
-    ],
-    [
-      "^structory:(ruin/taiga/illager|outcast/generic/bandit)",
-      "temple"
-    ],
-    [
-      "^minecraft:chests/(simple_dungeon|abandoned_mineshaft|stronghold_)",
-      "underground"
-    ],
-    [
-      "^betterdungeons:",
-      "underground"
-    ],
-    [
-      "^betterstrongholds:",
-      "underground"
-    ],
-    [
-      "^bettermineshafts:",
-      "underground"
-    ],
-    [
-      "^repurposed_structures:chests/(dungeons|mineshafts|strongholds)/",
-      "underground"
-    ],
-    [
-      "^nova_structures:chests/(creeping_crypt|undead_crypt|bunker|crypt|deepslate)",
-      "underground"
-    ],
-    [
-      "^terralith:underground",
-      "underground"
-    ],
-    [
-      "^minecraft:chests/(ruined_portal|igloo_chest)",
-      "roadside"
-    ],
-    [
-      "^repurposed_structures:chests/(ruined_portals|ruins)/",
-      "roadside"
-    ],
-    [
-      "^explorify:",
-      "roadside"
-    ],
-    [
-      "^structory:",
-      "roadside"
-    ],
-    [
-      "^yungsextras:",
-      "roadside"
-    ],
-    [
-      "^betterwitchhuts:",
-      "roadside"
-    ],
-    [
-      "^terralith:",
-      "roadside"
-    ],
-    [
-      "^nova_structures:chests/",
-      "roadside"
-    ],
-    [
-      "^bosses_of_mass_destruction:chests/",
-      "boss_lair"
-    ],
-    [
-      "^block_factorys_bosses:(chests/|kraken$)",
-      "boss_lair"
-    ],
-    [
-      "^homesteads:loot/homesteads",
-      "settlement"
-    ],
-    [
-      "^homesteads:loot/prospector",
-      "roadside"
-    ],
-    [
-      "^mmr:nether_mineshaft",
-      "nether"
-    ],
-    [
-      "^mmr:",
-      "underground"
-    ]
-  ],
-  "structures": [
-    [
-      "^minecraft:(village_|plains_village)",
-      "settlement"
-    ],
-    [
-      "^ctov:(large|medium|small)/",
-      "settlement"
-    ],
-    [
-      "^towns_and_towers:(exclusives/)?village",
-      "settlement"
-    ],
-    [
-      "^repurposed_structures:(village_|city_overworld)",
-      "settlement"
-    ],
-    [
-      "^terralith:(fortified_|valley_lodge)",
-      "settlement"
-    ],
-    [
-      "^nova_structures:(tavern|hamlet|firewatch)",
-      "settlement"
-    ],
-    [
-      "^explorify:(tavern|farmstead|dark_forest_settlement)",
-      "settlement"
-    ],
-    [
-      "^dungeons_arise:(illager_corsair|illager_galley|undead_pirate_ship|typhon|lighthouse|fishing_hut)$",
-      "ocean"
-    ],
-    [
-      "^dungeons_arise:(giant_mushroom|mushroom_house|mushroom_village|merchant_campsite|illager_campsite|wishing_well|bandit_village|small_blimp|jungle_tree_house|bathhouse)$",
-      "roadside"
-    ],
-    [
-      "^dungeons_arise:scorched_mines$",
-      "nether"
-    ],
-    [
-      "^dungeons_arise:(illager_fort|mushroom_mines|mines_treasure|aviary|illager_windmill|foundry|infested_temple|mining_system|abandoned_temple|monastery|ceryneian_hind|coliseum|illager_hall)$",
-      "temple"
-    ],
-    [
-      "^dungeons_arise:greenwood_pub$",
-      "settlement"
-    ],
-    [
-      "^dungeons_arise:",
-      "landmark"
-    ],
-    [
-      "^cataclysm:(acropolis|frosted_prison|amethyst_nest|ancient_factory|burning_arena|soul_black_smith|cursed_pyramid|sunken_city)$",
-      "boss_lair"
-    ],
-    [
-      "^cataclysm:(abandoned_|desert_)",
-      "temple"
-    ],
-    [
-      "^cataclysm:ruined_citadel$",
-      "end"
-    ],
-    [
-      "^cataclysm:",
-      "landmark"
-    ],
-    [
-      "^minecraft:(shipwreck|ocean_ruin|buried_treasure|monument)",
-      "ocean"
-    ],
-    [
-      "^betteroceanmonuments:",
-      "ocean"
-    ],
-    [
-      "^repurposed_structures:(monument_|temple_ocean|ancient_city_ocean|outpost_ocean)",
-      "ocean"
-    ],
-    [
-      "^nova_structures:conduit_ruin",
-      "ocean"
-    ],
-    [
-      "^minecraft:(fortress|bastion_remnant|ruined_portal_nether)",
-      "nether"
-    ],
-    [
-      "^incendium:",
-      "nether"
-    ],
-    [
-      "^betterfortresses:",
-      "nether"
-    ],
-    [
-      "^repurposed_structures:[a-z_]*(nether|crimson|warped|basalt|soul|wasteland|bastion)",
-      "nether"
-    ],
-    [
-      "^nova_structures:(nether|piglin|skeleton_camp)",
-      "nether"
-    ],
-    [
-      "^minecraft:end_city",
-      "end"
-    ],
-    [
-      "^repurposed_structures:[a-z_]*end$",
-      "end"
-    ],
-    [
-      "^nova_structures:end_",
-      "end"
-    ],
-    [
-      "^explorify:end_shipwreck",
-      "end"
-    ],
-    [
-      "^nullscape:",
-      "end"
-    ],
-    [
-      "^aether:(bronze|silver|gold)_dungeon",
-      "boss_lair"
-    ],
-    [
-      "^aether:",
-      "aether"
-    ],
-    [
-      "^minecraft:ancient_city",
-      "deep"
-    ],
-    [
-      "^deeperdarker:",
-      "deep"
-    ],
-    [
-      "^undergarden:",
-      "deep"
-    ],
-    [
-      "^the_bumblezone:",
-      "hive"
-    ],
-    [
-      "^irons_spellbooks:",
-      "arcane"
-    ],
-    [
-      "^terralith:mage",
-      "arcane"
-    ],
-    [
-      "^mowziesmobs:",
-      "boss_lair"
-    ],
-    [
-      "^minecraft:(jungle_pyramid|desert_pyramid|mansion|pillager_outpost|trial_chambers)",
-      "temple"
-    ],
-    [
-      "^betterdeserttemples:|^betterjungletemples:",
-      "temple"
-    ],
-    [
-      "^towns_and_towers:(exclusives/)?pillager_outpost",
-      "temple"
-    ],
-    [
-      "^ctov:pillager_outpost",
-      "temple"
-    ],
-    [
-      "^repurposed_structures:(pyramid_|temple_|mansion_|outpost_|fortress_jungle)",
-      "temple"
-    ],
-    [
-      "^nova_structures:(illager|badlands_miner|lone_citadel|stray_fort|shrine_combat)",
-      "temple"
-    ],
-    [
-      "^apotheosis:tower",
-      "temple"
-    ],
-    [
-      "^minecraft:(mineshaft|stronghold)",
-      "underground"
-    ],
-    [
-      "^bettermineshafts:|^betterdungeons:|^betterstrongholds:",
-      "underground"
-    ],
-    [
-      "^repurposed_structures:(mineshaft_|stronghold_)",
-      "underground"
-    ],
-    [
-      "^nova_structures:(creeping_crypt|bunker|deepslate_camp|undead_crypt)",
-      "underground"
-    ],
-    [
-      "^terralith:underground",
-      "underground"
-    ],
-    [
-      "^ars_nouveau:",
-      "underground"
-    ],
-    [
-      "^minecraft:(ruined_portal|igloo|trail_ruins|swamp_hut|desert_well)",
-      "roadside"
-    ],
-    [
-      "^repurposed_structures:(ruins_land|ruined_portal|igloo_)",
-      "roadside"
-    ],
-    [
-      "^(explorify|structory|yungsextras|betterwitchhuts|terralith|nova_structures):",
-      "roadside"
-    ],
-    [
-      "^bosses_of_mass_destruction:",
-      "boss_lair"
-    ],
-    [
-      "^block_factorys_bosses:",
-      "boss_lair"
-    ],
-    [
-      "^homesteads:prospector",
-      "roadside"
-    ],
-    [
-      "^homesteads:",
-      "settlement"
-    ],
-    [
-      "^mmr:nether",
-      "nether"
-    ],
-    [
-      "^mmr:",
-      "underground"
-    ],
-    [
-      "^grim_kingdoms:(glimmervault_fortress|frostbloom_bastion|glacierfall_keep|frozen_onion_fort|grain_sack_(fort|keep|hold)|chill_hallmanor|eldermoor)",
-      "temple"
-    ],
-    [
-      "^grim_kingdoms:",
-      "roadside"
-    ],
-    [
-      "^companions:companions_(babayaga|monkey_temple|teddytower|factory)",
-      "temple"
-    ],
-    [
-      "^companions:",
-      "roadside"
-    ],
-    [
-      "^spider_overhaul:",
-      "underground"
-    ]
-  ],
-  "clue_maps": {
-    "landmark": {
-      "from": [
-        "landmark"
-      ],
-      "decoration": "minecraft:target_x",
-      "search_radius": 40
-    },
-    "temple": {
-      "from": [
-        "temple",
-        "arcane"
-      ],
-      "decoration": "minecraft:red_x",
-      "search_radius": 30
+  "hive": {
+   "title": "The Bumblezone",
+   "stage": "early-mid",
+   "icon": "minecraft:honeycomb",
+   "identity": "A whole dimension of puzzles: cell mazes, the Sempiternal Sanctum's colour puzzles, battle cubes and parkour. Brains over armour.",
+   "prep": "Bee-friendly gear (Bumblezone's own), patience. Solving puzzles gives the better chests.",
+   "signature": "Honeyed Seals (exchange for Verdant/Splendor gems), puzzle-treasure cores. Failed-puzzle chests give little.",
+   "repeat": "Many sanctums and mazes; rewards scale with puzzle success.",
+   "connects": "Seals -> utility gems; honey for food and building.",
+   "budget": {
+    "shard": 1.0,
+    "core": 0.35,
+    "token": 2.0,
+    "affix": 0.8,
+    "gem": 0.6
+   },
+   "token": "horizon:honeyed_seal",
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:honey_bottle",
+     "chance": 0.3,
+     "count": [
+      1,
+      3
+     ]
     }
+   ],
+   "home": "The Bumblezone is an Observatory realm; Honeyed Seals feed the Horizon Gauntlet."
   },
-  "vanilla_structures": [
-    "minecraft:village_plains",
-    "minecraft:village_desert",
-    "minecraft:village_savanna",
-    "minecraft:village_snowy",
-    "minecraft:village_taiga",
-    "minecraft:desert_pyramid",
-    "minecraft:jungle_pyramid",
-    "minecraft:mansion",
-    "minecraft:pillager_outpost",
-    "minecraft:shipwreck",
-    "minecraft:shipwreck_beached",
-    "minecraft:ocean_ruin_cold",
-    "minecraft:ocean_ruin_warm",
-    "minecraft:buried_treasure",
-    "minecraft:monument",
-    "minecraft:fortress",
-    "minecraft:bastion_remnant",
-    "minecraft:end_city",
-    "minecraft:ancient_city",
-    "minecraft:mineshaft",
-    "minecraft:mineshaft_mesa",
-    "minecraft:stronghold",
-    "minecraft:ruined_portal",
-    "minecraft:ruined_portal_nether",
-    "minecraft:igloo",
-    "minecraft:trail_ruins",
-    "minecraft:swamp_hut",
-    "minecraft:trial_chambers"
+  "boss_lair": {
+   "title": "Boss Lairs",
+   "stage": "late",
+   "icon": "minecraft:wither_skeleton_skull",
+   "identity": "Cataclysm's arenas, Mowzie's monasteries, Aether dungeon reward rooms. The boss is the point; chests are the bonus.",
+   "prep": "Your best build. Read the boss: telegraphs are visible on every profile.",
+   "signature": "The boss drop and first-kill trophy/heart (see legends). Chests give cores and strong affix gear.",
+   "repeat": "First kill is the big reward (once per player); some Cataclysm bosses can be re-summoned for gear, not relics.",
+   "connects": "Trophies for the Hall of Legends; cores -> sockets.",
+   "budget": {
+    "core": 1.0,
+    "affix": 3.0,
+    "gem": 2.0
+   },
+   "apotheosis_vault_rarities": [
+    "apotheosis:epic",
+    "apotheosis:mythic"
+   ],
+   "extras": [
+    {
+     "match": ".",
+     "entry": "item:minecraft:golden_apple",
+     "chance": 0.22
+    },
+    {
+     "match": ".",
+     "entry": "item:minecraft:experience_bottle",
+     "chance": 0.3,
+     "count": [
+      2,
+      5
+     ]
+    }
+   ],
+   "home": "Great legends for the Observatory (two of thirteen); Lair Charts from the Conservatory point here."
+  }
+ },
+ "tables": [
+  [
+   "^(horizon|artifacts|apotheosis):(inject|rewards)",
+   null
+  ],
+  [
+   "^lootr:",
+   null
+  ],
+  [
+   "^minecraft:chests/(village/|illager_mansion/kitchen)",
+   "settlement"
+  ],
+  [
+   "^ctov:",
+   "settlement"
+  ],
+  [
+   "^kaisyn:village/",
+   "settlement"
+  ],
+  [
+   "^kaisyn:outpost/",
+   "temple"
+  ],
+  [
+   "^terralith:village/",
+   "settlement"
+  ],
+  [
+   "^repurposed_structures:chests/(villages|cities/overworld)/",
+   "settlement"
+  ],
+  [
+   "^nova_structures:chests/(tavern|hamlet|village|firewatch)",
+   "settlement"
+  ],
+  [
+   "^structory:(mood|harvest/old_manor|harvest/manor)",
+   "settlement"
+  ],
+  [
+   "^explorify:chest/(dark_forest_settlement|tavern|farmstead)",
+   "settlement"
+  ],
+  [
+   "^dungeons_arise:chests/(illager_corsair|illager_galley|undead_pirate_ship|typhon|lighthouse|fishing_hut)",
+   "ocean"
+  ],
+  [
+   "^dungeons_arise:chests/(small_prairie_house|giant_mushroom|mushroom_house|mushroom_village|merchant_campsite|illager_campsite|wishing_well|bandit_village|small_blimp|jungle_tree_house|bathhouse)",
+   "roadside"
+  ],
+  [
+   "^dungeons_arise:chests/(scorched_mines)",
+   "nether"
+  ],
+  [
+   "^dungeons_arise:chests/(illager_fort|mushroom_mines|mines_treasure|aviary|illager_windmill|foundry|infested_temple|mining_system|abandoned_temple|monastery|ceryneian_hind|coliseum|illager_hall)",
+   "temple"
+  ],
+  [
+   "^dungeons_arise:chests/greenwood_pub",
+   "settlement"
+  ],
+  [
+   "^dungeons_arise:chests/(heavenly_)",
+   "landmark"
+  ],
+  [
+   "^dungeons_arise:",
+   "landmark"
+  ],
+  [
+   "^cataclysm:chests/(acropolis|frosted_prison|amethyst_nest|ancient_factory|burning_arena|soul_black_smith|cursed_pyramid)",
+   "boss_lair"
+  ],
+  [
+   "^cataclysm:chests/(abandoned|desert)",
+   "temple"
+  ],
+  [
+   "^cataclysm:chests/ruined_citadel",
+   "end"
+  ],
+  [
+   "^cataclysm:",
+   "landmark"
+  ],
+  [
+   "^minecraft:chests/(shipwreck_|underwater_ruin_|buried_treasure)",
+   "ocean"
+  ],
+  [
+   "^betteroceanmonuments:",
+   "ocean"
+  ],
+  [
+   "^repurposed_structures:chests/shipwrecks/(crimson|warped|nether_bricks)",
+   "nether"
+  ],
+  [
+   "^repurposed_structures:chests/shipwrecks/end",
+   "end"
+  ],
+  [
+   "^repurposed_structures:chests/(shipwrecks|temples/ocean|monuments/|ruins/ocean)",
+   "ocean"
+  ],
+  [
+   "^nova_structures:chests/(conduit|sunken|ship_wreck|shipwreck)",
+   "ocean"
+  ],
+  [
+   "^minecraft:chests/(nether_bridge|bastion_)",
+   "nether"
+  ],
+  [
+   "^incendium:(artifact|castle/(base|stand)|entity|hovering_inferno|ghastling|iron_nuggets)/",
+   null
+  ],
+  [
+   "^incendium:",
+   "nether"
+  ],
+  [
+   "^betterfortresses:",
+   "nether"
+  ],
+  [
+   "^betterdungeons:small_nether_dungeon",
+   "nether"
+  ],
+  [
+   "^repurposed_structures:chests/[a-z_/]*(nether|crimson|warped|basalt|soul|wasteland|bastion)",
+   "nether"
+  ],
+  [
+   "^nova_structures:chests/(nether|piglin|donjon|skeleton_camp|nether_skeleton)",
+   "nether"
+  ],
+  [
+   "^minecraft:chests/end_city_treasure",
+   "end"
+  ],
+  [
+   "^repurposed_structures:chests/[a-z_/]*end",
+   "end"
+  ],
+  [
+   "^nova_structures:chests/end",
+   "end"
+  ],
+  [
+   "^explorify:chest/end",
+   "end"
+  ],
+  [
+   "^nullscape:",
+   "end"
+  ],
+  [
+   "^aether:chests/dungeon/[a-z]+/[a-z]+_dungeon_reward",
+   "boss_lair"
+  ],
+  [
+   "^aether:",
+   "aether"
+  ],
+  [
+   "^minecraft:chests/ancient_city",
+   "deep"
+  ],
+  [
+   "^repurposed_structures:chests/ancient_cities",
+   "deep"
+  ],
+  [
+   "^deeperdarker:",
+   "deep"
+  ],
+  [
+   "^undergarden:",
+   "deep"
+  ],
+  [
+   "^the_bumblezone:",
+   "hive"
+  ],
+  [
+   "^irons_spellbooks:",
+   "arcane"
+  ],
+  [
+   "^terralith:mage",
+   "arcane"
+  ],
+  [
+   "^mowziesmobs:",
+   "boss_lair"
+  ],
+  [
+   "^minecraft:chests/(jungle_temple|desert_pyramid|woodland_mansion|illager_mansion/|pillager_outpost)",
+   "temple"
+  ],
+  [
+   "^betterdeserttemples:",
+   "temple"
+  ],
+  [
+   "^betterjungletemples:",
+   "temple"
+  ],
+  [
+   "^repurposed_structures:chests/(pyramids|temples|mansions|outposts|igloos|fortresses)/",
+   "temple"
+  ],
+  [
+   "^nova_structures:chests/(illager|badlands_miner|witch_villa|stray_fort|lone_citadel)",
+   "temple"
+  ],
+  [
+   "^apotheosis:chests/tome_tower",
+   "temple"
+  ],
+  [
+   "^structory:(ruin/taiga/illager|outcast/generic/bandit)",
+   "temple"
+  ],
+  [
+   "^minecraft:chests/(simple_dungeon|abandoned_mineshaft|stronghold_)",
+   "underground"
+  ],
+  [
+   "^betterdungeons:",
+   "underground"
+  ],
+  [
+   "^betterstrongholds:",
+   "underground"
+  ],
+  [
+   "^bettermineshafts:",
+   "underground"
+  ],
+  [
+   "^repurposed_structures:chests/(dungeons|mineshafts|strongholds)/",
+   "underground"
+  ],
+  [
+   "^nova_structures:chests/(creeping_crypt|undead_crypt|bunker|crypt|deepslate)",
+   "underground"
+  ],
+  [
+   "^terralith:underground",
+   "underground"
+  ],
+  [
+   "^minecraft:chests/(ruined_portal|igloo_chest)",
+   "roadside"
+  ],
+  [
+   "^repurposed_structures:chests/(ruined_portals|ruins)/",
+   "roadside"
+  ],
+  [
+   "^explorify:",
+   "roadside"
+  ],
+  [
+   "^structory:",
+   "roadside"
+  ],
+  [
+   "^yungsextras:",
+   "roadside"
+  ],
+  [
+   "^betterwitchhuts:",
+   "roadside"
+  ],
+  [
+   "^terralith:",
+   "roadside"
+  ],
+  [
+   "^nova_structures:chests/",
+   "roadside"
+  ],
+  [
+   "^bosses_of_mass_destruction:chests/",
+   "boss_lair"
+  ],
+  [
+   "^block_factorys_bosses:(chests/|kraken$)",
+   "boss_lair"
+  ],
+  [
+   "^homesteads:loot/homesteads",
+   "settlement"
+  ],
+  [
+   "^homesteads:loot/prospector",
+   "roadside"
+  ],
+  [
+   "^mmr:nether_mineshaft",
+   "nether"
+  ],
+  [
+   "^mmr:",
+   "underground"
   ]
+ ],
+ "structures": [
+  [
+   "^minecraft:(village_|plains_village)",
+   "settlement"
+  ],
+  [
+   "^ctov:(large|medium|small)/",
+   "settlement"
+  ],
+  [
+   "^towns_and_towers:(exclusives/)?village",
+   "settlement"
+  ],
+  [
+   "^repurposed_structures:(village_|city_overworld)",
+   "settlement"
+  ],
+  [
+   "^terralith:(fortified_|valley_lodge)",
+   "settlement"
+  ],
+  [
+   "^nova_structures:(tavern|hamlet|firewatch)",
+   "settlement"
+  ],
+  [
+   "^explorify:(tavern|farmstead|dark_forest_settlement)",
+   "settlement"
+  ],
+  [
+   "^dungeons_arise:(illager_corsair|illager_galley|undead_pirate_ship|typhon|lighthouse|fishing_hut)$",
+   "ocean"
+  ],
+  [
+   "^dungeons_arise:(giant_mushroom|mushroom_house|mushroom_village|merchant_campsite|illager_campsite|wishing_well|bandit_village|small_blimp|jungle_tree_house|bathhouse)$",
+   "roadside"
+  ],
+  [
+   "^dungeons_arise:scorched_mines$",
+   "nether"
+  ],
+  [
+   "^dungeons_arise:(illager_fort|mushroom_mines|mines_treasure|aviary|illager_windmill|foundry|infested_temple|mining_system|abandoned_temple|monastery|ceryneian_hind|coliseum|illager_hall)$",
+   "temple"
+  ],
+  [
+   "^dungeons_arise:greenwood_pub$",
+   "settlement"
+  ],
+  [
+   "^dungeons_arise:",
+   "landmark"
+  ],
+  [
+   "^cataclysm:(acropolis|frosted_prison|amethyst_nest|ancient_factory|burning_arena|soul_black_smith|cursed_pyramid|sunken_city)$",
+   "boss_lair"
+  ],
+  [
+   "^cataclysm:(abandoned_|desert_)",
+   "temple"
+  ],
+  [
+   "^cataclysm:ruined_citadel$",
+   "end"
+  ],
+  [
+   "^cataclysm:",
+   "landmark"
+  ],
+  [
+   "^minecraft:(shipwreck|ocean_ruin|buried_treasure|monument)",
+   "ocean"
+  ],
+  [
+   "^betteroceanmonuments:",
+   "ocean"
+  ],
+  [
+   "^repurposed_structures:(monument_|temple_ocean|ancient_city_ocean|outpost_ocean)",
+   "ocean"
+  ],
+  [
+   "^nova_structures:conduit_ruin",
+   "ocean"
+  ],
+  [
+   "^minecraft:(fortress|bastion_remnant|ruined_portal_nether)",
+   "nether"
+  ],
+  [
+   "^incendium:",
+   "nether"
+  ],
+  [
+   "^betterfortresses:",
+   "nether"
+  ],
+  [
+   "^repurposed_structures:[a-z_]*(nether|crimson|warped|basalt|soul|wasteland|bastion)",
+   "nether"
+  ],
+  [
+   "^nova_structures:(nether|piglin|skeleton_camp)",
+   "nether"
+  ],
+  [
+   "^minecraft:end_city",
+   "end"
+  ],
+  [
+   "^repurposed_structures:[a-z_]*end$",
+   "end"
+  ],
+  [
+   "^nova_structures:end_",
+   "end"
+  ],
+  [
+   "^explorify:end_shipwreck",
+   "end"
+  ],
+  [
+   "^nullscape:",
+   "end"
+  ],
+  [
+   "^aether:(bronze|silver|gold)_dungeon",
+   "boss_lair"
+  ],
+  [
+   "^aether:",
+   "aether"
+  ],
+  [
+   "^minecraft:ancient_city",
+   "deep"
+  ],
+  [
+   "^deeperdarker:",
+   "deep"
+  ],
+  [
+   "^undergarden:",
+   "deep"
+  ],
+  [
+   "^the_bumblezone:",
+   "hive"
+  ],
+  [
+   "^irons_spellbooks:",
+   "arcane"
+  ],
+  [
+   "^terralith:mage",
+   "arcane"
+  ],
+  [
+   "^mowziesmobs:",
+   "boss_lair"
+  ],
+  [
+   "^minecraft:(jungle_pyramid|desert_pyramid|mansion|pillager_outpost|trial_chambers)",
+   "temple"
+  ],
+  [
+   "^betterdeserttemples:|^betterjungletemples:",
+   "temple"
+  ],
+  [
+   "^towns_and_towers:(exclusives/)?pillager_outpost",
+   "temple"
+  ],
+  [
+   "^ctov:pillager_outpost",
+   "temple"
+  ],
+  [
+   "^repurposed_structures:(pyramid_|temple_|mansion_|outpost_|fortress_jungle)",
+   "temple"
+  ],
+  [
+   "^nova_structures:(illager|badlands_miner|lone_citadel|stray_fort|shrine_combat)",
+   "temple"
+  ],
+  [
+   "^apotheosis:tower",
+   "temple"
+  ],
+  [
+   "^minecraft:(mineshaft|stronghold)",
+   "underground"
+  ],
+  [
+   "^bettermineshafts:|^betterdungeons:|^betterstrongholds:",
+   "underground"
+  ],
+  [
+   "^repurposed_structures:(mineshaft_|stronghold_)",
+   "underground"
+  ],
+  [
+   "^nova_structures:(creeping_crypt|bunker|deepslate_camp|undead_crypt)",
+   "underground"
+  ],
+  [
+   "^terralith:underground",
+   "underground"
+  ],
+  [
+   "^ars_nouveau:",
+   "underground"
+  ],
+  [
+   "^minecraft:(ruined_portal|igloo|trail_ruins|swamp_hut|desert_well)",
+   "roadside"
+  ],
+  [
+   "^repurposed_structures:(ruins_land|ruined_portal|igloo_)",
+   "roadside"
+  ],
+  [
+   "^(explorify|structory|yungsextras|betterwitchhuts|terralith|nova_structures):",
+   "roadside"
+  ],
+  [
+   "^bosses_of_mass_destruction:",
+   "boss_lair"
+  ],
+  [
+   "^block_factorys_bosses:",
+   "boss_lair"
+  ],
+  [
+   "^homesteads:prospector",
+   "roadside"
+  ],
+  [
+   "^homesteads:",
+   "settlement"
+  ],
+  [
+   "^mmr:nether",
+   "nether"
+  ],
+  [
+   "^mmr:",
+   "underground"
+  ],
+  [
+   "^grim_kingdoms:(glimmervault_fortress|frostbloom_bastion|glacierfall_keep|frozen_onion_fort|grain_sack_(fort|keep|hold)|chill_hallmanor|eldermoor)",
+   "temple"
+  ],
+  [
+   "^grim_kingdoms:",
+   "roadside"
+  ],
+  [
+   "^companions:companions_(babayaga|monkey_temple|teddytower|factory)",
+   "temple"
+  ],
+  [
+   "^companions:",
+   "roadside"
+  ],
+  [
+   "^spider_overhaul:",
+   "underground"
+  ]
+ ],
+ "clue_maps": {
+  "landmark": {
+   "from": [
+    "landmark"
+   ],
+   "decoration": "minecraft:target_x",
+   "search_radius": 40
+  },
+  "temple": {
+   "from": [
+    "temple",
+    "arcane"
+   ],
+   "decoration": "minecraft:red_x",
+   "search_radius": 30
+  }
+ },
+ "vanilla_structures": [
+  "minecraft:village_plains",
+  "minecraft:village_desert",
+  "minecraft:village_savanna",
+  "minecraft:village_snowy",
+  "minecraft:village_taiga",
+  "minecraft:desert_pyramid",
+  "minecraft:jungle_pyramid",
+  "minecraft:mansion",
+  "minecraft:pillager_outpost",
+  "minecraft:shipwreck",
+  "minecraft:shipwreck_beached",
+  "minecraft:ocean_ruin_cold",
+  "minecraft:ocean_ruin_warm",
+  "minecraft:buried_treasure",
+  "minecraft:monument",
+  "minecraft:fortress",
+  "minecraft:bastion_remnant",
+  "minecraft:end_city",
+  "minecraft:ancient_city",
+  "minecraft:mineshaft",
+  "minecraft:mineshaft_mesa",
+  "minecraft:stronghold",
+  "minecraft:ruined_portal",
+  "minecraft:ruined_portal_nether",
+  "minecraft:igloo",
+  "minecraft:trail_ruins",
+  "minecraft:swamp_hut",
+  "minecraft:trial_chambers"
+ ]
 }

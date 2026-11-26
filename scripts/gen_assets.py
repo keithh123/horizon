@@ -1,6 +1,7 @@
 """Generate Horizon's custom item/block assets and their KubeJS registration from one source of truth.
 
-Reads  manifests/legends.json (trophies) + the ITEMS table below (relics, regional tokens).
+Reads  manifests/legends.json (trophies) + the ITEMS table below (relics, regional tokens)
+       + manifests/headquarters.json (charter, campaign items/blocks, stage emblems) + art/horizon/*.txt (pixel masters).
 Writes (owned, listed in kubejs/.generated-assets.json):
   kubejs/assets/horizon/textures/item/*.png       16x16 pixel art, drawn procedurally (no third-party art)
   kubejs/assets/horizon/textures/block/*.png      trophy pedestal + per-boss emblem
@@ -20,7 +21,24 @@ if os.name == "nt" and not str(ROOT).startswith(LONG):
 KJ = ROOT / "kubejs"
 OWNED = KJ / ".generated-assets.json"
 LEG = json.loads((ROOT / "manifests/legends.json").read_text(encoding="utf-8"))
+HQ = json.loads((ROOT / "manifests/headquarters.json").read_text(encoding="utf-8"))
+ART = ROOT / "art" / "horizon"
 written = []
+
+
+def art(name):
+    """Render an editable pixel master (art/horizon/<name>.txt: palette lines, '---', 16 rows of 16 chars)."""
+    head, rows = (ART / f"{name}.txt").read_text(encoding="utf-8").split("\n---\n", 1)
+    pal = {".": (0, 0, 0, 0)}
+    for line in head.splitlines():
+        if line.startswith("@") or not line.strip():
+            continue
+        ch, hx = line.split()
+        pal[ch] = (*rgb(hx[:6]), int(hx[6:8], 16) if len(hx) > 6 else 255)
+    grid = [r for r in rows.splitlines() if r]
+    if len(grid) != 16 or any(len(r) != 16 for r in grid):
+        raise SystemExit(f"art/horizon/{name}.txt must be 16x16")
+    return [[pal[c] for c in r] for r in grid]
 
 # id, name, rarity, stack, glow, tooltip lines (gray), shape, palette [dark, mid, light, accent]
 ITEMS = [
@@ -283,6 +301,55 @@ def main():
                       f".modelGenerator(mg => {{ mg.parent('horizon:block/trophy_base'); mg.textures({{base: 'horizon:block/trophy_pedestal', emblem: 'horizon:block/{bid}'}}) }})"
                       f".box(2, 0, 2, 14, 15, 14).notSolid().defaultCutout().hardness(1.5).resistance(6).stoneSoundType()"
                       f".lightLevel(0.4).item(i => i.rarity('{rarity}').maxStackSize(1))\n")
+    # ---- headquarters campaign (manifests/headquarters.json)
+    for iid, it in HQ["items"].items():
+        path = iid.split(":")[1]
+        png(KJ / f"assets/horizon/textures/item/{path}.png", art(it["art"]))
+        lang[f"item.horizon.{path}"] = it["name"]
+        tips[path] = it["tip"]
+        js.append(f"  event.create('{iid}').texture('horizon:item/{path}').rarity('{it['rarity']}').maxStackSize({it['stack']})\n")
+    for name in ("charter_top", "charter_side", "charter_bottom", "discovery_case", "observatory_lens",
+                 "horizon_beacon_side", "horizon_beacon_top", "emblem_pedestal"):
+        png(KJ / f"assets/horizon/textures/block/{name}.png", art(name))
+    cube = {"horizon:survey_charter": ("minecraft:block/cube_bottom_top", {"top": "horizon:block/charter_top", "side": "horizon:block/charter_side", "bottom": "horizon:block/charter_bottom"}),
+            "horizon:discovery_case": ("minecraft:block/cube_all", {"all": "horizon:block/discovery_case"}),
+            "horizon:observatory_lens": ("minecraft:block/cube_all", {"all": "horizon:block/observatory_lens"}),
+            "horizon:horizon_beacon": ("minecraft:block/cube_column", {"end": "horizon:block/horizon_beacon_top", "side": "horizon:block/horizon_beacon_side"})}
+    for bid, b in HQ["blocks"].items():
+        path = bid.split(":")[1]
+        parent, tex = cube[bid]
+        lang[f"block.horizon.{path}"] = b["name"]
+        tips[path] = b["tip"]
+        glass = path == "discovery_case"
+        blocks.append(f"  event.create('{bid}').displayName(Text.translate('block.horizon.{path}'))"
+                      f".modelGenerator(mg => {{ mg.parent('{parent}'); mg.textures({json.dumps(tex)}) }})"
+                      + (".notSolid().defaultCutout()" if glass else "")
+                      + f".hardness(2).resistance(6).{'glass' if glass else 'wood'}SoundType()"
+                      + (f".lightLevel({b['light']})" if b["light"] else "")
+                      + f".item(i => i.rarity('{'epic' if path in ('horizon_beacon', 'observatory_lens') else 'uncommon'}').maxStackSize({1 if path == 'horizon_beacon' else 16}))\n")
+    emodel = {"parent": "minecraft:block/block", "textures": {"particle": "#base"},
+              "display": {"gui": {"rotation": [30, 225, 0], "translation": [0, 1, 0], "scale": [0.8, 0.8, 0.8]}},
+              "elements": [
+                  {"from": [3, 0, 3], "to": [13, 2, 13], "faces": {f: {"texture": "#base"} for f in ("down", "up", "north", "south", "east", "west")}},
+                  {"from": [7, 2, 7], "to": [9, 4, 9], "faces": {f: {"texture": "#base"} for f in ("up", "north", "south", "east", "west")}},
+                  {"from": [2, 4, 7.5], "to": [14, 16, 8.5], "faces": {"north": {"texture": "#emblem"}, "south": {"texture": "#emblem"},
+                                                                   "east": {"texture": "#base"}, "west": {"texture": "#base"}, "up": {"texture": "#base"}}}]}
+    ep = KJ / "assets/horizon/models/block/emblem_base.json"
+    ep.write_text(json.dumps(emodel, indent=1), encoding="utf-8")
+    written.append(ep.relative_to(KJ).as_posix())
+    for st in HQ["stages"]:
+        eid = "emblem_" + st["id"]
+        png(KJ / f"assets/horizon/textures/block/{eid}.png", art(eid))
+        lang[f"block.horizon.{eid}"] = f"Station Emblem: {st['numeral']}. {st['title']}"
+        tips[eid] = [f"Awarded once when a headquarters commissions stage {st['numeral']}.", "Stand it in the room it names."]
+        blocks.append(f"  event.create('horizon:{eid}').displayName(Text.translate('block.horizon.{eid}'))"
+                      f".modelGenerator(mg => {{ mg.parent('horizon:block/emblem_base'); mg.textures({{base: 'horizon:block/emblem_pedestal', emblem: 'horizon:block/{eid}'}}) }})"
+                      f".box(2, 0, 2, 14, 16, 14).notSolid().defaultCutout().hardness(1.5).resistance(6).woodSoundType()"
+                      f".lightLevel(0.2).item(i => i.rarity('uncommon').maxStackSize(1))\n")
+    for cue, text in (("item_found", "Item discovered"), ("rare_loot", "Rare loot"), ("mythic", "Mythic discovery"), ("trophy", "Trophy earned"),
+                      ("legend_slain", "Legend slain"), ("quest_claim", "Quest rewards claimed"), ("commission", "Station commissioned"),
+                      ("contribution", "Survey contribution accepted"), ("finale", "The Lantern Line answers")):
+        lang[f"horizon.subtitle.{cue}"] = text   # also in the Horizon-16x pack; here so subtitles read correctly without it
     for k, v in tips.items():
         for n, line in enumerate(v):
             lang[f"tooltip.horizon.{k}.{n}"] = line

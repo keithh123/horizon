@@ -92,8 +92,8 @@ an untested interaction works.
 | Fresh Animations: Player Extension | `fa-player-extension` | not installed (FA addon, conflicts with requested Punchy Moves) | - | In game (0.3.0 candidate) Punchy Moves shows a Conflicting Animations screen: "Punchy Moves is not compatible with Fresh Animations: Player Extension". Punchy Moves is a requested entry; the player extension is optional, so player animation is owned by Punchy/Punchy Moves (+ Better Combat for its weapons). |
 | Fresh Animations: Player Compats | `fresh-animations-player-compats` | not installed (requires FA Player Extension) | - | Declares FA Player Extension as required; removed with it. |
 | F.M.R.P | `freshly-modded` | not installed (FA addon) | - | F.M.R.P 3.0.5 only ships EMF models for friendsandfoes, frostiful, guardvillagers, savage_and_ravage and takesapillage; none is in Horizon, so it would animate nothing. |
-| Fresh Compats | `fresh-compats` | not installed (FA addon) | - | Targets Supplementaries, Quark, Sleep Tight and You've Goat to be Kidding Me; none is in Horizon. |
+| Fresh Compats | `fresh-compats` | implemented (resource pack) | v1.6 |  |
 | Fresh Illager Mod Compats | `fresh-illager-mod-compats` | not installed (FA addon) | - | Patches for illager mods that are not in Horizon. |
 | Fluid & Foolish | `fluid-foolish` | implemented (resource pack) | 1.0.1 | client launch: loads, reaches title (44-50 s, 178 jars): packs active in order (resourcePacks line verified in log); FA mob animations not inspected visually |
 
-Totals: already in Horizon: 3, blocked: 7, excluded by user: 1, implemented: 65, not installed: 9, not ported yet: 3, replaced: 1
+Totals: already in Horizon: 3, blocked: 7, excluded by user: 1, implemented: 66, not installed: 8, not ported yet: 3, replaced: 1

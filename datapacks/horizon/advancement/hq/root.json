@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "horizon:survey_charter"
+    },
+    "title": {
+      "text": "The Lantern Line"
+    },
+    "description": {
+      "text": "Headquarters campaign: plant a Survey Charter and commission six stations."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/spruce_planks.png"
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

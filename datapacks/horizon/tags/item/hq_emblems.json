@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "horizon:emblem_conservatory",
+    "horizon:emblem_foundry",
+    "horizon:emblem_hall",
+    "horizon:emblem_observatory",
+    "horizon:emblem_outpost",
+    "horizon:emblem_workshop"
+  ]
+}

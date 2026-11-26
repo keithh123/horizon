@@ -85,6 +85,26 @@ class HorizonGraphTests(unittest.TestCase):
         self.assertIn("gen_datapack.py", result.stdout)
         self.assertIn("gen_assets.py", result.stdout)
 
+    def test_headquarters_stages_options_and_mirrors(self):
+        hq = graph.read("manifests/headquarters.json")
+        stages = {"horizon_hq_stage:" + s["id"] for s in hq["stages"]}
+        self.assertEqual(stages, {k for k in self.nodes if k.startswith("horizon_hq_stage:")})
+        options = {f"horizon_hq_option:{s['id']}/{o['id']}" for s in hq["stages"] for o in (s.get("choices") or {}).get("options", [])}
+        self.assertEqual(options, {k for k in self.nodes if k.startswith("horizon_hq_option:")})
+        expected = {("horizon_hq_stage:" + s["id"], "horizon_hq_stage:" + r) for s in hq["stages"] for r in s["requires"]}
+        actual = {(e["source"], e["target"]) for e in self.edges if e["relation"] == "requires_stage"}
+        self.assertEqual(expected, actual)
+        mirrored = {e["target"] for e in self.edges if e["relation"] == "mirrors"}
+        self.assertEqual(stages | options, mirrored)   # every stage and option has a quest that mirrors it
+
+    def test_headquarters_generator_ownership(self):
+        reads = {(e["source"], e["target"]) for e in self.edges if e["relation"] == "reads"}
+        src = "horizon_file:manifests/headquarters.json"
+        for gen in ("gen_headquarters", "gen_assets", "gen_quests"):   # script files reuse the code-AST node ids
+            self.assertIn(("scripts_" + gen, src), reads)
+        made = {(e["source"], e["target"]) for e in self.edges if e["relation"] == "generated_by"}
+        self.assertTrue(any(s.endswith("horizon_hq_data") and t == "scripts_gen_headquarters" for s, t in made), made)
+        self.assertIn(("kubejs_server_scripts_horizon_headquarters", "kubejs_startup_scripts_horizon_hq_data"), reads)
 
 if __name__ == "__main__":
     unittest.main()

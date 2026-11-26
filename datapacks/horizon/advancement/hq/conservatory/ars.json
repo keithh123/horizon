@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/conservatory",
+  "display": {
+    "icon": {
+      "id": "ars_nouveau:enchanting_apparatus"
+    },
+    "title": {
+      "text": "Source Study (Ars Nouveau)"
+    },
+    "description": {
+      "text": "Utility magic and automation: an Enchanting Apparatus at the station."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

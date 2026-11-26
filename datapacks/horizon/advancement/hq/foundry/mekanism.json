@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/foundry",
+  "display": {
+    "icon": {
+      "id": "mekanism:enrichment_chamber"
+    },
+    "title": {
+      "text": "Mekanism processing"
+    },
+    "description": {
+      "text": "Ore multiplication and chemistry. Enriched iron proves the chamber ran."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

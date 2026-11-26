@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:ancient_core"
+      }
+    },
+    "title": "{\"text\": \"The High Landmarks\"}",
+    "description": [
+      "Great landmarks and the mini-bosses that keep them. Bring rare gear, healing and a way home.",
+      "",
+      "&eCounts:&r Enter a great landmark; Defeat any landmark mini-boss",
+      "&eContribution:&r 1x ancient core",
+      "&eAdds to the station:&r Landmark charts: the survey desk can draw maps to great landmarks.",
+      "",
+      "&aDo:&r Contribute The High Landmarks at the charter panel.",
+      "&6You get:&r Landmark charts: the survey desk can draw maps to great landmarks."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          280,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_workshop"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/hall/highlands"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

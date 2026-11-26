@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/workshop",
+  "display": {
+    "icon": {
+      "id": "horizon:emblem_hall"
+    },
+    "title": {
+      "text": "III. Expedition Hall"
+    },
+    "description": {
+      "text": "Furnish an equipment bench, an archive lectern and a discovery display, then finish two of three regional expeditions."
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

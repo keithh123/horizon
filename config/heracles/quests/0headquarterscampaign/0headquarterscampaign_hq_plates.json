@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:survey_plate"
+      }
+    },
+    "title": "{\"text\": \"Pressed True\"}",
+    "description": [
+      "Craft Survey Blanks (andesite alloy, copper ingot, iron nugget) and put them under a Create &eMechanical Press&r",
+      "on a depot or belt. Only a press makes Survey Plates. The Workshop consumes four.",
+      "",
+      "&aDo:&r Hold 4 Survey Plates pressed by a Mechanical Press.",
+      "&6You get:&r Proof that your press line runs; the Workshop needs them."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          120,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_outpost"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:survey_plate",
+      "amount": 4,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

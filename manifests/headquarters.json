@@ -1,0 +1,280 @@
+{
+ "_comment": [
+  "Project Horizon headquarters campaign - the single curated source for the six commissioning stages.",
+  "Read by scripts/gen_headquarters.py (advancements, recipes, service loot, server data, docs/HEADQUARTERS.md),",
+  "scripts/gen_assets.py (items, blocks, textures, lang) and scripts/gen_quests.py (the '0 - Headquarters Campaign' spine).",
+  "Authority: kubejs/server_scripts/horizon_headquarters.js keeps the canonical ledger on the server; every horizon:hq/*",
+  "advancement and quest is a mirror of that ledger and never a way to earn a stage.",
+  "Stable ids: stage/option/requirement/service ids below are save data. Rename the title, never the id."
+ ],
+ "schema": 1,
+ "ledger_version": 1,
+ "fiction": {
+  "company": "the Meridian Survey",
+  "network": "the Lantern Line",
+  "premise": [
+   "Long before the villages, a frontier survey company strung a line of observatories across the continent: the Lantern Line.",
+   "Each station watched one horizon and sent what it saw to the next. The line went dark, the stations fell, and the maps were scattered.",
+   "You carry the last charter of the Meridian Survey. Plant it anywhere, restore a station around it, and relight the line one horizon at a time."
+  ],
+  "symbol": "a turquoise survey chevron over a copper meridian ring"
+ },
+ "charter": {
+  "block": "horizon:survey_charter",
+  "interaction_radius": 8,
+  "scan": {"horizontal": 10, "down": 4, "up": 8},
+  "action_cooldown_ticks": 10,
+  "kit": "horizon:founding_kit"
+ },
+ "receipts": {
+  "horizon:survey_blank": "Crafted. Only becomes a Survey Plate under a Create Mechanical Press.",
+  "horizon:survey_plate": "Exists only as the output of create:pressing horizon:survey_blank - proof that a press line ran.",
+  "create:precision_mechanism": "Create sequenced assembly output (rarely found in loot) - proof of a working assembly line.",
+  "mekanism:enriched_iron": "Output of Mekanism's Enrichment Chamber - proof that a powered processing machine ran.",
+  "powah:steel_energized": "Output of Powah's Energizing Orb - proof that a powered orb ran.",
+  "modern_industrialization:steel_ingot": "Produced by MI steam/electric blast furnaces (Mekanism makes a different steel id)."
+ },
+ "stages": [
+  {
+   "id": "outpost", "numeral": "I", "title": "Outpost", "icon": "horizon:emblem_outpost",
+   "summary": "Plant the charter, sleep at home, store what you find, set up a survey table and walk to the nearest ruin.",
+   "log": "Station founded. The charter is planted, a bed is made and the first map table is cold but level. Somewhere close there is a ruin; the old line always passed near one.",
+   "why": "A home you respawn at, storage you trust, and a first lead pointing away from it.",
+   "requires": [],
+   "requirements": [
+    {"id": "home_spawn", "kind": "respawn_near", "radius": 24, "text": "Sleep in a bed within 24 blocks of the charter", "proves": "The commissioning player's respawn point is set within 24 blocks of the anchor."},
+    {"id": "storage", "kind": "block_any", "blocks": ["#c:chests", "minecraft:barrel"], "count": 2, "text": "Place 2 chests or barrels near the charter", "proves": "Two storage blocks stand within the scan volume around the anchor at commissioning time."},
+    {"id": "survey_table", "kind": "block_any", "blocks": ["minecraft:cartography_table"], "count": 1, "text": "Place a cartography table (the survey station)", "proves": "A cartography table stands within the scan volume."},
+    {"id": "food", "kind": "adv_any", "advs": ["minecraft:husbandry/plant_seed", "minecraft:husbandry/breed_an_animal"], "count": 1, "text": "Plant a crop or breed animals (reliable food)", "proves": "A member holds a vanilla husbandry advancement."},
+    {"id": "first_ruin", "kind": "adv_any", "advs": ["horizon:atlas/roadside", "horizon:atlas/settlement"], "count": 1, "text": "Step inside any roadside ruin, camp or settlement", "proves": "A member has stood inside a structure of the roadside or settlement family (location advancement)."}
+   ],
+   "cost": [["minecraft:paper", 3], ["minecraft:torch", 8]],
+   "rewards": [["constructionstick:copper_stick", 1], ["minecraft:stone_bricks", 64], ["minecraft:spruce_planks", 64], ["minecraft:spruce_log", 16], ["minecraft:lantern", 8], ["minecraft:glass_pane", 16], ["create:empty_schematic", 2], ["horizon:emblem_outpost", 1]],
+   "reward_loot": ["horizon:rewards/quest/chart_temple"],
+   "services": [],
+   "unlocks": "A copper Construction Stick, a timber-and-stone building kit and a Surveyor's Chart to the nearest temple or arcane site.",
+   "next": "Workshop: press your first Survey Plates on a Create line."
+  },
+  {
+   "id": "workshop", "numeral": "II", "title": "Workshop", "icon": "horizon:emblem_workshop",
+   "summary": "Run a Create press line, press Survey Plates, add a construction station and bring back a find from a dungeon, temple or wreck.",
+   "log": "The press is turning. The first plates came off it true enough to survey with, and the station can build for itself again.",
+   "why": "Production at home: better building reach, a supply crate every day and real processing instead of hand crafting.",
+   "requires": ["outpost"],
+   "requirements": [
+    {"id": "press_ran", "kind": "adv", "adv": "create:mechanical_press", "text": "Make sheets with a Mechanical Press", "proves": "Create's builtin trigger fires only when a press actually produces sheets (not on crafting or placing)."},
+    {"id": "press_here", "kind": "block_any", "blocks": ["create:mechanical_press"], "count": 1, "text": "A Mechanical Press stands at the station", "proves": "A press is within the scan volume."},
+    {"id": "line_here", "kind": "block_any", "blocks": ["create:depot", "create:basin", "create:belt"], "count": 1, "text": "A depot, basin or belt feeds the press", "proves": "A feed block is within the scan volume."},
+    {"id": "construction_station", "kind": "block_any", "blocks": ["create:schematic_table", "minecraft:crafting_table"], "count": 1, "text": "Place a schematic table or crafting table (construction station)", "proves": "A construction workstation is within the scan volume."},
+    {"id": "local_expedition", "kind": "adv_any", "advs": ["horizon:atlas/underground", "horizon:atlas/temple", "horizon:atlas/ocean", "horizon:atlas/arcane"], "count": 1, "text": "Enter a dungeon, temple, ocean ruin or arcane site", "proves": "A member stood inside one of four common structure families."}
+   ],
+   "cost": [["horizon:survey_plate", 4], ["create:andesite_alloy", 8]],
+   "rewards": [["constructionstick:iron_stick", 1], ["create:schematic_and_quill", 1], ["create:empty_schematic", 4], ["create:millstone", 1], ["create:encased_fan", 1], ["minecraft:copper_block", 4], ["horizon:emblem_workshop", 1]],
+   "reward_loot": [],
+   "services": ["supply_crate"],
+   "unlocks": "An iron Construction Stick, Create's schematic tools, a millstone and fan for ore processing, and the daily Supply Crate service.",
+   "next": "Expedition Hall: prepare for, and finish, two of three regional expeditions."
+  },
+  {
+   "id": "hall", "numeral": "III", "title": "Expedition Hall", "icon": "horizon:emblem_hall",
+   "summary": "Furnish an equipment bench, an archive lectern and a discovery display, then finish two of three regional expeditions.",
+   "log": "The hall is open. The archive holds what the line knew about two regions, and the cases already hold something the old surveyors never saw.",
+   "why": "Each region you finish permanently adds its own charts to the station's survey desk.",
+   "requires": ["workshop"],
+   "requirements": [
+    {"id": "equipment_bench", "kind": "block_any", "blocks": ["minecraft:smithing_table", "minecraft:anvil", "minecraft:chipped_anvil", "minecraft:damaged_anvil", "minecraft:grindstone"], "count": 1, "text": "An equipment bench: smithing table, anvil or grindstone", "proves": "An equipment workstation is within the scan volume."},
+    {"id": "archive", "kind": "block_any", "blocks": ["minecraft:lectern", "minecraft:chiseled_bookshelf"], "count": 1, "text": "An archive: a lectern or chiseled bookshelf", "proves": "An archive block is within the scan volume."},
+    {"id": "display", "kind": "block_any", "blocks": ["horizon:discovery_case", "horizon:trophy_*"], "count": 1, "text": "A Discovery Case or any boss trophy on display", "proves": "A Horizon display block is within the scan volume."}
+   ],
+   "choices": {
+    "id": "region", "min": 2, "title": "Regional expeditions",
+    "text": "Finish any two. The third stays open as an optional adventure and still adds its charts later.",
+    "options": [
+     {"id": "coast", "title": "The Drowned Coast", "icon": "horizon:tidebound_doubloon",
+      "summary": "Wrecks, sunken ruins and monuments. Bring a boat, Respiration and night vision.",
+      "requirements": [{"id": "ocean_found", "kind": "adv", "adv": "horizon:atlas/ocean", "text": "Enter an ocean structure", "proves": "Location advancement for the ocean family."}],
+      "cost": [["horizon:tidebound_doubloon", 3], ["minecraft:prismarine_shard", 8]],
+      "services": ["survey_ocean"],
+      "contribution": "Tide charts: the survey desk can draw maps to ocean ruins and monuments."},
+     {"id": "hollows", "title": "The Hollow Roads", "icon": "irons_spellbooks:arcane_essence",
+      "summary": "Crypts, mines and mage towers under and around the hills. Bring a shield, torches and magic resistance.",
+      "requirements": [{"id": "underground_found", "kind": "adv", "adv": "horizon:atlas/underground", "text": "Enter an underground dungeon", "proves": "Location advancement for the underground family."},
+                       {"id": "arcane_found", "kind": "adv", "adv": "horizon:atlas/arcane", "text": "Enter an arcane site", "proves": "Location advancement for the arcane family."}],
+      "cost": [["irons_spellbooks:arcane_essence", 8], ["horizon:wayfarer_shard", 2]],
+      "services": ["survey_archive"],
+      "contribution": "Archive charts: the survey desk can draw maps to temples and arcane sites."},
+     {"id": "highlands", "title": "The High Landmarks", "icon": "horizon:ancient_core",
+      "summary": "Great landmarks and the mini-bosses that keep them. Bring rare gear, healing and a way home.",
+      "requirements": [{"id": "landmark_found", "kind": "adv", "adv": "horizon:atlas/landmark", "text": "Enter a great landmark", "proves": "Location advancement for the landmark family."},
+                       {"id": "keeper", "kind": "adv_any", "advs": ["horizon:legend/frostmaw", "horizon:legend/ferrous_wroughtnaut", "horizon:legend/umvuthi", "horizon:legend/dead_king", "horizon:legend/sculptor", "horizon:legend/yeti", "horizon:legend/sandworm", "horizon:legend/kraken", "horizon:legend/lich", "horizon:legend/clawdian", "horizon:legend/the_prowler"], "count": 1, "text": "Defeat any landmark mini-boss", "proves": "A member holds a first-kill legend advancement (relics from it stay personal)."}],
+      "cost": [["horizon:ancient_core", 1]],
+      "services": ["survey_landmark"],
+      "contribution": "Landmark charts: the survey desk can draw maps to great landmarks."}
+    ]
+   },
+   "cost": [["minecraft:book", 4], ["minecraft:map", 2]],
+   "rewards": [["waystones:warp_scroll", 4], ["sophisticatedbackpacks:backpack", 1], ["minecraft:spyglass", 1], ["horizon:emblem_hall", 1]],
+   "reward_loot": [],
+   "services": [],
+   "unlocks": "Warp scrolls and expedition gear; the survey desk keeps every regional chart you have contributed.",
+   "next": "Arcane Conservatory: commission one research room with Ars Nouveau, Iron's Spells or Occultism."
+  },
+  {
+   "id": "conservatory", "numeral": "IV", "title": "Arcane Conservatory", "icon": "horizon:emblem_conservatory",
+   "summary": "Commission one research or ritual room - Ars Nouveau, Iron's Spells or Occultism - and feed it an Ancient Core.",
+   "log": "The conservatory hums. Whatever the old surveyors used to see past the weather, we have something like it again.",
+   "why": "Expedition protection (the Ward of Passage) and the deep survey of boss lairs.",
+   "requires": ["hall"],
+   "requirements": [],
+   "choices": {
+    "id": "arcane", "min": 1, "title": "Research route",
+    "text": "Any one route commissions the room; the others stay full side paths with their own rewards.",
+    "options": [
+     {"id": "ars", "title": "Source Study (Ars Nouveau)", "icon": "ars_nouveau:enchanting_apparatus",
+      "summary": "Utility magic and automation: an Enchanting Apparatus at the station.",
+      "requirements": [{"id": "apparatus_made", "kind": "adv", "adv": "ars_nouveau:enchanting_apparatus", "text": "Craft an Enchanting Apparatus", "proves": "Ars Nouveau's advancement for the apparatus."},
+                       {"id": "apparatus_here", "kind": "block_any", "blocks": ["ars_nouveau:enchanting_apparatus"], "count": 1, "text": "The apparatus stands at the station", "proves": "Apparatus within the scan volume."}],
+      "cost": [["ars_nouveau:source_gem", 8]],
+      "services": [], "contribution": "Source studies on the archive shelves."},
+     {"id": "irons", "title": "Spell Forge (Iron's Spells)", "icon": "irons_spellbooks:arcane_anvil",
+      "summary": "Combat magic: an Arcane Anvil and an Inscription Table at the station.",
+      "requirements": [{"id": "anvil_made", "kind": "adv", "adv": "irons_spellbooks:irons_spellbooks/make_arcane_anvil", "text": "Craft an Arcane Anvil", "proves": "Iron's Spells advancement for the anvil."},
+                       {"id": "forge_here", "kind": "block_any", "blocks": ["irons_spellbooks:arcane_anvil", "irons_spellbooks:inscription_table"], "count": 2, "text": "Arcane Anvil and Inscription Table at the station", "proves": "Two Iron's workstations within the scan volume."}],
+      "cost": [["irons_spellbooks:arcane_essence", 16]],
+      "services": [], "contribution": "Inscription records on the archive shelves."},
+     {"id": "occultism", "title": "Spirit Circle (Occultism)", "icon": "occultism:golden_sacrificial_bowl",
+      "summary": "Spirits and rituals: a golden sacrificial bowl and a working summoning.",
+      "requirements": [{"id": "ritual_done", "kind": "adv_any", "advs": ["occultism:occultism/summon_foliot_lumberjack", "occultism:occultism/summon_foliot_otherstone_trader", "occultism:occultism/summon_djinni_crusher", "occultism:occultism/summon_djinni_smelter", "occultism:occultism/summon_afrit_smelter"], "count": 1, "text": "Complete a spirit summoning ritual", "proves": "Occultism ritual advancements fire on a completed ritual."},
+                       {"id": "bowl_here", "kind": "block_any", "blocks": ["occultism:golden_sacrificial_bowl"], "count": 1, "text": "A golden sacrificial bowl at the station", "proves": "Bowl within the scan volume."}],
+      "cost": [["occultism:chalk_white", 2]],
+      "services": [], "contribution": "Spirit ledgers on the archive shelves."}
+    ]
+   },
+   "cost": [["horizon:ancient_core", 1], ["minecraft:amethyst_shard", 16]],
+   "rewards": [["minecraft:golden_apple", 4], ["minecraft:experience_bottle", 16], ["horizon:emblem_conservatory", 1]],
+   "reward_loot": [],
+   "services": ["ward", "survey_lair"],
+   "unlocks": "The Ward of Passage (resistance and fire safety for an expedition, once per day per member) and lair charts to boss arenas.",
+   "next": "Foundry and Logistics: power, assembly and networked storage."
+  },
+  {
+   "id": "foundry", "numeral": "V", "title": "Foundry and Logistics", "icon": "horizon:emblem_foundry",
+   "summary": "Assemble precision mechanisms, run one electrical processing route and network your storage.",
+   "log": "The foundry is lit. The station feeds itself now; the survey crews carry what they need and bring back only what matters.",
+   "why": "Automated supplies, a better construction stick and the logistics the observatory will depend on.",
+   "requires": ["conservatory"],
+   "requirements": [
+    {"id": "assembly", "kind": "adv", "adv": "create:precision_mechanism", "text": "Assemble a Precision Mechanism (Create sequenced assembly)", "proves": "Create's advancement for holding a precision mechanism; the cost below consumes two."},
+    {"id": "storage_network", "kind": "block_any", "blocks": ["ae2:controller", "sophisticatedstorage:controller", "occultism:storage_controller"], "count": 1, "text": "A storage network controller at the station (AE2, Sophisticated Storage or Occultism)", "proves": "A storage controller block within the scan volume."}
+   ],
+   "choices": {
+    "id": "power", "min": 1, "title": "Primary electrical route",
+    "text": "Pick one. The checklists are equivalent, so you never build a duplicate factory to finish the stage.",
+    "options": [
+     {"id": "mekanism", "title": "Mekanism processing", "icon": "mekanism:enrichment_chamber",
+      "summary": "Ore multiplication and chemistry. Enriched iron proves the chamber ran.",
+      "requirements": [{"id": "enricher", "kind": "adv", "adv": "mekanism:enricher", "text": "Build an Enrichment Chamber", "proves": "Mekanism's advancement for the chamber."}],
+      "cost": [["mekanism:enriched_iron", 16]], "services": [], "contribution": "Ore doubling for the station's supply lines."},
+     {"id": "mi", "title": "Modern Industrialization", "icon": "modern_industrialization:electric_blast_furnace",
+      "summary": "Multiblock heavy industry. The Electric Blast Furnace is the gate.",
+      "requirements": [{"id": "ebf", "kind": "adv", "adv": "modern_industrialization:electric_blast_furnace", "text": "Build the Electric Blast Furnace", "proves": "MI's advancement for the multiblock."}],
+      "cost": [["modern_industrialization:steel_ingot", 16]], "services": [], "contribution": "Steel and alloys for the observatory frame."},
+     {"id": "powah", "title": "Powah energizing", "icon": "powah:energizing_orb",
+      "summary": "Simple, scalable generators. Energized steel proves the orb ran.",
+      "requirements": [{"id": "orb_here", "kind": "block_any", "blocks": ["powah:energizing_orb"], "count": 1, "text": "An Energizing Orb at the station", "proves": "Orb within the scan volume (Powah ships no advancements)."}],
+      "cost": [["powah:steel_energized", 16]], "services": [], "contribution": "A clean power trunk for the station."}
+    ]
+   },
+   "cost": [["create:precision_mechanism", 2], ["create:brass_ingot", 16]],
+   "rewards": [["constructionstick:diamond_stick", 1], ["constructionstick:template_replacement", 1], ["create:mechanical_crafter", 4], ["horizon:emblem_foundry", 1]],
+   "reward_loot": [],
+   "services": ["supply_crate_plus"],
+   "unlocks": "A diamond Construction Stick with the replacement template, mechanical crafters, and a larger daily Supply Crate.",
+   "next": "Observatory: build the lens, walk three realms, defeat two great legends and pass a Horizon Trial."
+  },
+  {
+   "id": "observatory", "numeral": "VI", "title": "Observatory and Horizon Beacon", "icon": "horizon:emblem_observatory",
+   "summary": "Set an Observatory Lens at the station, chart three realms, defeat two great legends and pass one Horizon Trial.",
+   "log": "The lens is set and the beacon is lit. Far off, on the last ridge we can see, another light answers. The Lantern Line is open.",
+   "why": "The capstone: the Horizon Beacon, the full survey desk and the post-campaign Gauntlet.",
+   "requires": ["foundry"],
+   "requirements": [
+    {"id": "lens_here", "kind": "block_any", "blocks": ["horizon:observatory_lens"], "count": 1, "text": "An Observatory Lens placed at the station", "proves": "The lens block (one Starforged Heart, crafted once) is within the scan volume."},
+    {"id": "realms", "kind": "adv_any", "advs": ["minecraft:story/enter_the_nether", "aether:enter_aether", "undergarden:undergarden/enter_undergarden", "deeperdarker:main/enter_otherside", "minecraft:story/enter_the_end", "horizon:realm/bumblezone", "horizon:realm/moon"], "count": 3, "text": "Members have entered 3 of 7 realms (Nether, Aether, Undergarden, Otherside, End, Bumblezone, Moon)", "proves": "Dimension-entry advancements, any three, across headquarters members."},
+    {"id": "great_legends", "kind": "adv_any", "advs": ["horizon:legend/ender_dragon", "horizon:legend/wither", "horizon:legend/warden", "horizon:legend/sun_spirit", "horizon:legend/ignis", "horizon:legend/netherite_monstrosity", "horizon:legend/the_harbinger", "horizon:legend/the_leviathan", "horizon:legend/ender_guardian", "horizon:legend/maledictus", "horizon:legend/ancient_remnant", "horizon:legend/scylla", "horizon:legend/stalker"], "count": 2, "text": "Members have defeated 2 great legends (any)", "proves": "First-kill legend advancements; hearts and trophies stay with whoever earned them."},
+    {"id": "trial", "kind": "adv_any", "advs": ["horizon:trial/tides", "horizon:trial/cinders", "horizon:trial/void"], "count": 1, "text": "Pass one Horizon Trial (Tides, Cinders or Void) at a Gateway", "proves": "Trial advancement granted on Gateways completion near the gate."}
+   ],
+   "cost": [["minecraft:amethyst_block", 8], ["minecraft:gold_block", 4], ["create:brass_ingot", 32], ["minecraft:glass", 32]],
+   "rewards": [["horizon:horizon_beacon", 1], ["simplehats:explorerhat", 1], ["minecraft:experience_bottle", 32], ["horizon:emblem_observatory", 1]],
+   "reward_loot": [],
+   "services": ["survey_horizon"],
+   "unlocks": "The Horizon Beacon (a light the whole valley can see), the explorer's hat, and full survey charts. Post-campaign: the Horizon Gauntlet.",
+   "next": "Beyond the line: every legend, every realm, and the Horizon Gauntlet."
+  }
+ ],
+ "services": {
+  "supply_crate": {"title": "Supply Crate", "kind": "loot", "scope": "hq", "cooldown_ticks": 24000, "loot": "horizon:hq/service/supply_crate", "cost": [],
+                   "text": "Once per day the station packs rations, torches and rope for one expedition.", "replaced_by": "supply_crate_plus"},
+  "supply_crate_plus": {"title": "Foundry Supply Crate", "kind": "loot", "scope": "hq", "cooldown_ticks": 24000, "loot": "horizon:hq/service/supply_crate_plus", "cost": [],
+                   "text": "The foundry's crate: more food, building stock and processed metals. Never relics."},
+  "survey_ocean": {"title": "Tide Chart", "kind": "loot", "scope": "player", "cooldown_ticks": 6000, "loot": "horizon:hq/service/chart_ocean", "cost": [["minecraft:map", 1], ["horizon:wayfarer_shard", 1]],
+                   "text": "A map to an ocean ruin or monument."},
+  "survey_archive": {"title": "Archive Chart", "kind": "loot", "scope": "player", "cooldown_ticks": 6000, "loot": "horizon:rewards/quest/chart_temple", "cost": [["minecraft:map", 1], ["horizon:wayfarer_shard", 1]],
+                   "text": "A map to a temple or arcane site."},
+  "survey_landmark": {"title": "Landmark Chart", "kind": "loot", "scope": "player", "cooldown_ticks": 6000, "loot": "horizon:rewards/quest/chart_landmark", "cost": [["minecraft:map", 1], ["horizon:wayfarer_shard", 2]],
+                   "text": "A map to a great landmark."},
+  "survey_lair": {"title": "Lair Chart", "kind": "loot", "scope": "player", "cooldown_ticks": 12000, "loot": "horizon:hq/service/chart_boss_lair", "cost": [["minecraft:map", 1], ["horizon:wayfarer_shard", 3]],
+                   "text": "A map to a boss arena."},
+  "survey_horizon": {"title": "Horizon Chart", "kind": "loot", "scope": "player", "cooldown_ticks": 6000, "loot": "horizon:hq/service/chart_horizon", "cost": [["minecraft:map", 1], ["horizon:wayfarer_shard", 1]],
+                   "text": "The observatory's chart: a landmark, lair or ocean site at random."},
+  "ward": {"title": "Ward of Passage", "kind": "effect", "scope": "player", "cooldown_ticks": 24000, "cost": [["minecraft:amethyst_shard", 2]],
+           "effects": [["minecraft:resistance", 6000, 0], ["minecraft:fire_resistance", 6000, 0]],
+           "text": "Five minutes of Resistance I and Fire Resistance for the road. No invulnerability."}
+ },
+ "charts": {
+  "chart_ocean": {"families": ["ocean"], "decoration": "minecraft:monument", "search_radius": 50, "name": "Tide Chart"},
+  "chart_boss_lair": {"families": ["boss_lair"], "decoration": "minecraft:target_x", "search_radius": 60, "name": "Lair Chart"},
+  "chart_horizon": {"families": ["landmark", "boss_lair", "ocean"], "decoration": "minecraft:red_x", "search_radius": 60, "name": "Horizon Chart"}
+ },
+ "supply": {
+  "supply_crate": [["minecraft:bread", 8, 12], ["minecraft:cooked_beef", 4, 8], ["minecraft:torch", 16, 32], ["supplementaries:rope", 8, 16], ["minecraft:arrow", 8, 16]],
+  "supply_crate_plus": [["farmersdelight:beef_stew", 2, 4], ["minecraft:golden_carrot", 8, 16], ["minecraft:torch", 32, 48], ["supplementaries:rope", 16, 32], ["minecraft:iron_ingot", 8, 16], ["create:brass_ingot", 4, 8], ["minecraft:stone_bricks", 32, 64]]
+ },
+ "realm_advancements": {
+  "bumblezone": "the_bumblezone:the_bumblezone",
+  "moon": "ad_astra:moon"
+ },
+ "blocks": {
+  "horizon:survey_charter": {"name": "Meridian Survey Charter", "art": "charter", "light": 0.0, "tip": ["Right-click: headquarters panel. Plant it where your base will grow.", "Breaking it never erases progress; place it again to relocate."]},
+  "horizon:discovery_case": {"name": "Discovery Case", "art": "discovery_case", "light": 0.3, "tip": ["Displays a discovery in the Expedition Hall.", "Counts as the hall's display, like any boss trophy."]},
+  "horizon:observatory_lens": {"name": "Observatory Lens", "art": "observatory_lens", "light": 0.6, "tip": ["The Observatory's great lens. Crafted once, from a Starforged Heart.", "Must stand at the station to commission stage VI."]},
+  "horizon:horizon_beacon": {"name": "Horizon Beacon", "art": "horizon_beacon", "light": 1.0, "tip": ["The relit Lantern Line. Awarded once per headquarters.", "Purely a light and a landmark; it does nothing else."]}
+ },
+ "items": {
+  "horizon:founding_kit": {"name": "Founding Kit", "art": "founding_kit", "rarity": "uncommon", "stack": 1, "tip": ["Right-click to unpack: a Survey Charter and a few supplies.", "Given once to each new player."]},
+  "horizon:survey_blank": {"name": "Survey Blank", "art": "survey_blank", "rarity": "common", "stack": 64, "tip": ["Press it under a Create Mechanical Press.", "The Workshop needs pressed plates, not blanks."]},
+  "horizon:survey_plate": {"name": "Survey Plate", "art": "survey_plate", "rarity": "common", "stack": 64, "tip": ["Pressed by a Mechanical Press. Proof that your line runs.", "Workshop commissioning consumes four."]}
+ },
+ "kit_contents": [["horizon:survey_charter", 1], ["minecraft:torch", 16], ["minecraft:bread", 6], ["minecraft:paper", 3], ["minecraft:oak_sapling", 2]],
+ "recipes": [
+  {"id": "survey_charter", "type": "shaped", "pattern": ["PCP", "LML", "PPP"], "key": {"P": "#minecraft:planks", "C": "minecraft:compass", "L": "minecraft:leather", "M": "minecraft:map"}, "result": ["horizon:survey_charter", 1],
+   "why": "A replacement charter costs ordinary early materials; progress lives in the ledger, not the block."},
+  {"id": "survey_blank", "type": "shapeless", "ingredients": ["create:andesite_alloy", "minecraft:copper_ingot", "minecraft:iron_nugget"], "result": ["horizon:survey_blank", 2],
+   "why": "Cheap; the proof is the pressing step."},
+  {"id": "survey_plate_pressing", "type": "create:pressing", "ingredients": ["horizon:survey_blank"], "result": ["horizon:survey_plate", 1],
+   "why": "The only source of Survey Plates."},
+  {"id": "discovery_case", "type": "shaped", "pattern": ["GGG", "GSG", "WWW"], "key": {"G": "minecraft:glass", "S": "horizon:wayfarer_shard", "W": "#minecraft:wooden_slabs"}, "result": ["horizon:discovery_case", 1],
+   "why": "Displays a find; the shard is the 'discovery' it holds, so the case is an exploration sink, not a relic source."},
+  {"id": "observatory_lens", "type": "shaped", "pattern": ["BGB", "GHG", "BSB"], "key": {"B": "create:brass_ingot", "G": "minecraft:tinted_glass", "H": "horizon:starforged_heart", "S": "minecraft:spyglass"}, "result": ["horizon:observatory_lens", 1],
+   "why": "The one late relic gate of the campaign: one heart, once."}
+ ],
+ "plans": [
+  {"id": "outpost", "title": "Starter Outpost", "file": "horizon_outpost.nbt", "stage": "outpost"},
+  {"id": "ruined_outpost", "title": "Ruined Survey Outpost (restoration)", "file": "horizon_ruined_outpost.nbt", "stage": "outpost"},
+  {"id": "workshop", "title": "Press Workshop", "file": "horizon_workshop.nbt", "stage": "workshop"},
+  {"id": "hall", "title": "Expedition Hall", "file": "horizon_hall.nbt", "stage": "hall"},
+  {"id": "conservatory", "title": "Arcane Conservatory", "file": "horizon_conservatory.nbt", "stage": "conservatory"},
+  {"id": "foundry", "title": "Foundry Bay", "file": "horizon_foundry.nbt", "stage": "foundry"},
+  {"id": "observatory", "title": "Observatory Tower", "file": "horizon_observatory.nbt", "stage": "observatory"}
+ ]
+}

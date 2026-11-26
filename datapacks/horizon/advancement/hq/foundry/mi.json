@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/foundry",
+  "display": {
+    "icon": {
+      "id": "modern_industrialization:electric_blast_furnace"
+    },
+    "title": {
+      "text": "Modern Industrialization"
+    },
+    "description": {
+      "text": "Multiblock heavy industry. The Electric Blast Furnace is the gate."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
