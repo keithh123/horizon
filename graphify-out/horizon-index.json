@@ -1,0 +1,16 @@
+{
+  "graphify_version": "0.9.121",
+  "source_sha256": "9cd92c760a999f12642d3b8535d2a810e6d0ace60ffaf7973b3689d5b8638657",
+  "source_files": 3695,
+  "graph_sha256": "18644ec74c75935256eb455dfff0ca1ba98f7e1d74daf7e3c01fd6e00a4af40e",
+  "coverage": "Local code AST + explicit Horizon JSON relationships; no LLM semantic extraction.",
+  "stats": {
+    "mods": 245,
+    "bosses": 36,
+    "loot_families": 13,
+    "trials": 4,
+    "quests": 214,
+    "nodes": 1491,
+    "edges": 3915
+  }
+}

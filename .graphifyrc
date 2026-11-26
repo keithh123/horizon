@@ -1,0 +1,4 @@
+# Small focused context first. Increase the budget only for a concrete gap.
+query_budget=1200
+query_depth=2
+viz_node_limit=5000

@@ -1,0 +1,56 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Grep",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "timeout": 10,
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/horizon_graph.py",
+              "hook-guard",
+              "search"
+            ],
+            "onFailure": "continue"
+          }
+        ]
+      },
+      {
+        "matcher": "Read|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "timeout": 10,
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/horizon_graph.py",
+              "hook-guard",
+              "read"
+            ],
+            "onFailure": "continue"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python",
+            "timeout": 10,
+            "args": [
+              "${CLAUDE_PROJECT_DIR}/scripts/horizon_graph.py",
+              "hook-guard",
+              "compact"
+            ],
+            "onFailure": "continue"
+          }
+        ]
+      }
+    ]
+  }
+}

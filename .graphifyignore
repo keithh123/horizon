@@ -1,0 +1,21 @@
+# Generated payloads and caches obscure the editable project architecture.
+.git/
+.horizon/
+.cache/
+graphify-out/
+dist/
+ports/dist/
+ports/*/src/build/
+ports/*/src/.gradle/
+ports/_gradle/
+ports/infinitycave/gen/
+datapacks/
+config/heracles/
+kubejs/assets/
+manifests/ids.json
+manifests/loot_audit.json
+manifests/loot_report.json
+manifests/salvage_report.json
+manifests/expansion_probe.json
+.claude/skills/graphify/
+__pycache__/

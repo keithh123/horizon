@@ -7,6 +7,7 @@ exploration relics that tie dungeons to factories.
 - **Install:** import `dist/ProjectHorizon-0.5.0.mrpack` in Prism (rebuild it first: the current file predates the 0.5 mod additions). The reference instance is the `ProjectHorizon-0.5` Prism instance; the roster tracks its mods (`instance_only` in `manifests/roster.json` lists the jars Modrinth cannot supply). See [docs/INSTALLATION.md](docs/INSTALLATION.md).
 - **What's inside:** [docs/MODLIST.md](docs/MODLIST.md)
 - **How it fits together:** [docs/PROGRESSION.md](docs/PROGRESSION.md)
+- **Code, mod and quest graph / efficient Claude workflow:** [docs/GRAPHIFY.md](docs/GRAPHIFY.md) · open `graphify-out/graph.html` for the interactive map.
 - **Why these versions, renderer setup:** [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md)
 - **Profiles and measurements:** [docs/PERFORMANCE.md](docs/PERFORMANCE.md)
 - **What was tested, what failed, what wasn't tested:** [docs/VALIDATION_REPORT.md](docs/VALIDATION_REPORT.md)
