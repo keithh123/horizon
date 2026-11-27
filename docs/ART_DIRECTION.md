@@ -46,13 +46,18 @@ sounds; **comparison against rain, machinery and combat was not possible here (u
 
 | Behaviour | Owner | Note |
 |---|---|---|
-| Attack arms / ordinary hand actions | Punchy! + Punchy! Moves | `isShowingArmsInFirstPerson=false` kept as the comparison point |
-| Body in first person | none by default; optional First-person Model preset (ships disabled) | full matrix (weapons, shield, bow, trident, spells, mounts, elytra, Curios) **not run** |
-| Camera by state, roll/shake | vanilla + Better Combat; no Camera Overhaul / Combat Roll | experiments only |
+| Ordinary player movement (idle, walk/run/sprint, sneak, crawl, climb, swim, fall/land, ride, elytra) | **FA Player Extension 1.1** (EMF) | 0.6.1; replaces Punchy! Moves, whose own code flags every FA Player pack as conflicting |
+| Combat actions (weapon swings, two-handed stances) | Better Combat 2.4 (PlayerAnimator) | per-body-part blending with FA Player by **Entity Player Compat 2.2.3** (one bridge; EMF Compat Core not added) |
+| Spellcasting poses | Iron's Spells (PlayerAnimator) | blended by Entity Player Compat |
+| Body in first person | **First-person Model 2.7.3, ON by default** (+ FPM x Compat for Better Combat and Accessories) | toggle in First-person Model's config / keybind; body pose comes from the third-person model above |
+| First-person hands and arms | Punchy! 3.2b | EPC's author recommends Punchy over FA Player's first-person hands with Better Combat |
+| Equipment/held poses (maps, lanterns, ladders) | Not Enough Animations 1.12.7 (EPC-compatible) | FA Player's torch/lantern poses are early-access only, not in the public 1.1 |
+| Eating/drinking | Eating Animation port (item frames) + Punchy (hand motion); Just 3D Potions bottle animation via Punchy | Fresh Food stays optional |
+| Camera by state | vanilla + Better Combat; Auto Third Person for vehicles/elytra | Punchy Moves' over-the-shoulder camera is gone with the mod; reduced bob in the Balanced/Performance profiles |
 | Rain visuals/audio | Particle Rain (existing) | no second rain layer |
 | Clouds | Better Clouds with shader clouds off in Complementary profiles (existing choice) | unchanged |
 | Ambient particles | Subtle Effects (existing) | Particular rejected earlier |
-| Handheld light | shader held-light only | no dynamic-light mod (Sodium Options API incompatibility recorded) |
+| Handheld light | shader held-light; Ars Nouveau's built-in dynamic lights (off until `/ars-light on`) | Horizon ships no dynamic-light mod. A player-added LambDynamicLights 4.8.11 (found in the 0.6.0 instance) is kept by the updater and works shaderless; it is not part of the pack |
 | Reward notifications | see table above | one owner each |
 
 ## Shader presentation

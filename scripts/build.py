@@ -97,7 +97,12 @@ def prune_mirrored(target: Path, staged: Path):
     return removed
 
 
-def copy_overrides(target: Path):
+# Player preference files: shipped for NEW installs, never overwritten on an existing one (0.6.0 copied options/options.txt
+# over the player's file on every update). Targeted, documented changes go through migrate_options() instead.
+PRESERVE_IF_PRESENT = {"options.txt", "config/iris.properties"}
+
+
+def copy_overrides(target: Path, existing: bool = False):
     for src, dst in OVERRIDES.items():
         s = ROOT / src
         if not s.exists():
@@ -105,6 +110,8 @@ def copy_overrides(target: Path):
         for f in s.rglob("*"):
             if f.is_file() and f.name != ".gitkeep" and not f.name.startswith(".generated"):
                 out = target / dst / f.relative_to(s)
+                if existing and out.exists() and out.relative_to(target).as_posix() in PRESERVE_IF_PRESENT:
+                    continue
                 out.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(f, out)
 
@@ -112,7 +119,8 @@ def copy_overrides(target: Path):
 def set_resourcepacks(options: Path, packs):
     """Enable the pack's resource packs in lock order (first = lowest priority) above vanilla/mod resources,
     keeping any extra packs the player enabled (they stay on top)."""
-    lines = options.read_text().splitlines() if options.exists() else []
+    # UTF-8 explicitly: pack names contain section signs (0.6.0 read cp1252 on Windows and duplicated them as mojibake)
+    lines = options.read_text(encoding="utf-8").splitlines() if options.exists() else []
     # packs with enabled_by_default=false ship in resourcepacks/ but are left for the player to enable (unverified visuals)
     ours = ["vanilla", "mod_resources"] + [f"file/{p['file']}" for p in packs if p.get("enabled_by_default", True)] + [f"file/{n}" for n in LOCAL_PACKS]
     old = next((l for l in lines if l.startswith("resourcePacks:")), None)
@@ -122,14 +130,32 @@ def set_resourcepacks(options: Path, packs):
             extra = [x for x in json.loads(old.split(":", 1)[1]) if x not in ours and x not in KNOWN_OLD]   # incl. optional packs the player enabled
         except ValueError:
             pass
+    rp = options.parent / "resourcepacks"
+    if rp.is_dir():   # drop enabled file/ entries whose zip/folder no longer exists (incl. 0.6.0's mojibake duplicates)
+        extra = [x for x in extra if not x.startswith("file/") or (rp / x[5:]).exists()]
     line = "resourcePacks:" + json.dumps(ours + extra, separators=(",", ":"))
-    lines = [l for l in lines if not l.startswith(("resourcePacks:", "incompatibleResourcePacks:"))] + [line, "incompatibleResourcePacks:[]"]
-    options.write_text(chr(10).join(lines) + chr(10))
+    # incompatibleResourcePacks = packs the player accepted although their pack_format is newer; Minecraft silently drops
+    # an enabled pack that is incompatible and not listed here. Ours: roster accept_newer_format; the player's: kept if still on.
+    accepted = [f"file/{p['file']}" for p in packs if p.get("accept_newer_format") and p.get("enabled_by_default", True)]
+    old_inc = next((l for l in lines if l.startswith("incompatibleResourcePacks:")), None)
+    if old_inc:
+        try:
+            accepted += [x for x in json.loads(old_inc.split(":", 1)[1]) if x in extra and x not in accepted]
+        except ValueError:
+            pass
+    inc = "incompatibleResourcePacks:" + json.dumps(accepted, separators=(",", ":"))
+    lines = [l for l in lines if not l.startswith(("resourcePacks:", "incompatibleResourcePacks:"))] + [line, inc]
+    options.write_text(chr(10).join(lines) + chr(10), encoding="utf-8")
 
 
-# file/<name> entries Horizon itself enabled at some point (pruned when no longer shipped; anything else the player
-# added is kept). FA Player Extension/Compats were enabled by 0.3.0 candidates before Punchy Moves ruled them out.
-KNOWN_OLD = {"file/FA+Player-v1.1.zip", "file/FA-Player-Compats-1.3.1-mc1.21.1.zip", "file/Freshly Modded 3.0.5.zip"}
+# file/<name> entries Horizon itself enabled or shipped at some point (pruned from the enabled list when no longer shipped;
+# anything else the player added is kept). 0.6.1: FA Player Extension is shipped again (Punchy Moves removed), so it is no
+# longer here; the 0.3.0 All-Extensions bundle duplicates Details/Emissive/Quivers/Objects; Fluid & Foolish was Punchy Moves'
+# animation pack.
+KNOWN_OLD = {"file/FA-Player-Compats-1.3.1-mc1.21.1.zip", "file/Freshly Modded 3.0.5.zip",
+             "file/FA+All_Extensions-v1.10.1.zip", "file/Fluid & Foolish 1.0.1.zip"}
+# files removed from resourcepacks/ on update (still on disk would let Punchy-era detection or duplicates come back)
+STALE_FILES = {"Fluid & Foolish 1.0.1.zip"}
 
 
 LOCAL_PACKS = ["Horizon-16x.zip"]   # built by scripts/gen_resourcepack.py into resourcepacks/; highest priority of ours
@@ -218,10 +244,13 @@ def instance(name, groups, variant=None):
         shutil.copy2(p["path"], mc / "mods" / p["file"])
     for i, m in enumerate(mods, 1):
         dest = mc / "mods" / m["file"]
+        twin = mc / "mods" / (m["file"] + ".disabled")
         if m.get("disabled_by_default") and not dest.exists():
-            dest = mc / "mods" / deployed(m)
+            dest = twin
         elif m.get("disabled_by_default"):
             pass                      # the player enabled it: keep their choice
+        elif twin.exists():
+            twin.unlink()             # now enabled by default (0.6.1 first-person preset): no stale .jar/.jar.disabled pair
         shutil.copy2(fetch(m), dest)
         print(f"[{i}/{len(mods)}] {dest.name}", flush=True)
     (mc / "mods" / ".horizon-managed.json").write_text(json.dumps(sorted(managed | wanted), indent=1))
@@ -234,24 +263,86 @@ def instance(name, groups, variant=None):
     shutil.rmtree(stage, ignore_errors=True)
     copy_overrides(stage)
     print("pruned stale pack files:", prune_mirrored(mc, stage))
-    copy_overrides(mc)
+    existing = (mc / "options.txt").exists()
+    copy_overrides(mc, existing=existing)
     (mc / "resourcepacks").mkdir(exist_ok=True)
-    for old in KNOWN_OLD:   # Punchy Moves flags FA Player Extension by file presence, not by enabled state
-        stale = mc / "resourcepacks" / old.removeprefix("file/")
+    for old in STALE_FILES:
+        stale = mc / "resourcepacks" / old
         if stale.exists():
             stale.unlink()
     for s in L.get("resourcepacks", []):
         shutil.copy2(fetch(s), mc / "resourcepacks" / s["file"])
     set_resourcepacks(mc / "options.txt", L.get("resourcepacks", []))
-    (inst / "mmc-pack.json").write_text(json.dumps({"formatVersion": 1, "components": [
+    if existing:
+        for line in migrate_options(mc / "options.txt"):
+            print("options.txt:", line)
+    write_pack_json(inst, L)
+    write_instance_cfg(inst, name)
+    print(f"instance {name}: {len(mods)} mods -> {inst}")
+
+
+MIN_RENDER_DISTANCE = 8   # see docs/KNOWN_ISSUES.md #29 (0.6.1): Voxy needs vanilla chunks around the camera
+
+
+def migrate_options(options: Path):
+    """Targeted, documented options.txt changes for an existing instance; every other key is the player's."""
+    lines = options.read_text(encoding="utf-8").splitlines()
+    out, changed = [], []
+    for l in lines:
+        k, _, v = l.partition(":")
+        if k == "renderDistance" and v.isdigit() and int(v) < MIN_RENDER_DISTANCE:
+            changed.append(f"renderDistance {v} -> {MIN_RENDER_DISTANCE} (Voxy LOD culling holes below this)")
+            l = f"renderDistance:{MIN_RENDER_DISTANCE}"
+        out.append(l)
+    if changed:
+        options.write_text("\n".join(out) + "\n", encoding="utf-8")
+    return changed
+
+
+def write_pack_json(inst: Path, L):
+    """mmc-pack.json: rewritten only when Minecraft/NeoForge differ (Prism keeps cached component metadata there)."""
+    f = inst / "mmc-pack.json"
+    want = {"net.minecraft": L["minecraft"], "net.neoforged": L["loader_version"]}
+    if f.exists():
+        try:
+            have = {c["uid"]: c.get("version") for c in json.loads(f.read_text())["components"]}
+            if all(have.get(k) == v for k, v in want.items()):
+                return
+        except (ValueError, KeyError):
+            pass
+    f.write_text(json.dumps({"formatVersion": 1, "components": [
         {"uid": "net.minecraft", "version": L["minecraft"], "important": True},
         {"uid": "net.neoforged", "version": L["loader_version"]}]}, indent=2))
+
+
+def write_instance_cfg(inst: Path, name: str):
+    """instance.cfg: an EXISTING instance keeps every key (uuid, name, Java path/memory, managed-pack identity, window and
+    UI state); only missing keys get Horizon's Balanced defaults. 0.6.0 rewrote the whole file, which would have dropped
+    the Prism UUID, the player's Java/memory choice and the managed-pack binding (fixed in 0.6.1)."""
+    f = inst / "instance.cfg"
     prof = json.loads((ROOT / "profiles/balanced.json").read_text())
-    cfg = {"ConfigVersion": "1.2", "InstanceType": "OneSix", "name": name, "iconKey": "default",
-           "OverrideMemory": "true", "MinMemAlloc": str(prof["jvm"]["min_mb"]), "MaxMemAlloc": str(prof["jvm"]["max_mb"]),
-           "OverrideJavaArgs": "true", "JvmArgs": prof["jvm"]["args"]}
-    (inst / "instance.cfg").write_text("[General]\n" + "".join(f"{k}={v}\n" for k, v in cfg.items()))
-    print(f"instance {name}: {len(mods)} mods -> {inst}")
+    defaults = {"ConfigVersion": "1.2", "InstanceType": "OneSix", "name": name, "iconKey": "default",
+                "OverrideMemory": "true", "MinMemAlloc": str(prof["jvm"]["min_mb"]), "MaxMemAlloc": str(prof["jvm"]["max_mb"]),
+                "OverrideJavaArgs": "true", "JvmArgs": prof["jvm"]["args"]}
+    if not f.exists():
+        f.write_text("[General]\n" + "".join(f"{k}={v}\n" for k, v in defaults.items()))
+        return
+    # existing instance: only identity keys may be added; memory/JVM/icon stay the player's (Prism defaults if absent)
+    defaults = {k: v for k, v in defaults.items() if k in ("ConfigVersion", "InstanceType", "name")}
+    lines = f.read_text(encoding="utf-8").splitlines()
+    have, section = set(), None
+    for l in lines:
+        if l.startswith("["):
+            section = l
+        elif section == "[General]" and "=" in l:
+            have.add(l.split("=", 1)[0])
+    missing = [f"{k}={v}" for k, v in defaults.items() if k not in have]
+    if missing:
+        i = lines.index("[General]") + 1 if "[General]" in lines else 0
+        if "[General]" not in lines:
+            lines.insert(0, "[General]"); i = 1
+        lines[i:i] = missing
+        f.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def server(target: Path, accept_eula: bool, variant=None):

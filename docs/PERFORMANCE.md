@@ -97,3 +97,20 @@ per-world pre-generation is not something the pack can ask of a player, and the 
   pre-generated travel, Voxy world generation under Create load. No GPU client was available. The 0.5 numbers above remain
   the latest measurements; FramedBlocks/Handcrafted/Create Deco scenes are unmeasured.
 
+
+## 0.6.1 (measured in a client, 2026-11-26)
+
+Same scene ((-838,112,266), overworld, clear, 25 one-second samples of Minecraft's FPS counter), RTX 5070 / Ryzen 5 9600X,
+2560x1440, on a copy of the player's world:
+
+| Build | Settings | FPS median | 5th percentile | min |
+|---|---|---|---|---|
+| 0.6.0 | render distance 2, shaders off | 189-196 | 170-178 | 108-149 |
+| 0.6.0 | render distance 2, Complementary Unbound | 118 | 118 | 118 |
+| 0.6.1 | render distance 8, shaders off | 152 | 82 | 66 |
+| 0.6.1 | render distance 8, Complementary Unbound | 80 | 60 | 59 |
+
+The drop is mostly the render-distance fix (8 instead of 2 = 4x the vanilla terrain radius that Voxy no longer has to
+cover) plus the new resource packs. If 80 FPS with shaders is too low on a given machine, lower the Voxy section distance or
+use the Performance profile (shaders off) before lowering the render distance below 8. Not measured: frame-time percentiles,
+GC/memory, a busy workshop, server tick cost, Cinematic profile.

@@ -664,13 +664,22 @@ function hqWithAnchorCheck(server, L, env, hq) {
 }
 
 // ---------------------------------------------------------------- events
+// KubeJS 2101: event.cancel()/exit()/success() THROW EventExit to leave the handler, so they must be the LAST statement.
+// 0.6.0 called cancel() first here and every charter click ended silently (tests/kubejs_lint.js now guards this).
 BlockEvents.rightClicked(HQ_CHARTER, event => {
   var p = event.player
-  if (!p || p.level.isClientSide() || String(event.hand) !== 'MAIN_HAND') return
-  event.cancel()
-  if (hqThrottle(p)) return
+  if (!p || p.level.isClientSide()) return
+  if (String(event.hand) !== 'MAIN_HAND') { event.cancel() }   // off-hand pass on the charter: consumed (0.6.1 client test placed an off-hand torch on it)
+  if (!hqThrottle(p)) {
+    try { hqCharterClick(p, event.block) }
+    catch (e) { console.error(`[horizon-hq] charter click: ${e} ${e.stack || ''}`); p.tell(HQT.red('The charter could not be read; nothing was changed. See the log.')) }
+  }
+  event.cancel()   // last: consumes the click (no block placement / off-hand use) and exits
+})
+
+function hqCharterClick(p, block) {
   var server = p.server
-  var anchor = hqAnchorOf(event.block)
+  var anchor = hqAnchorOf(block)
   p.persistentData.putString('horizon_hq_pending', JSON.stringify(anchor))
   var L = hqLoad(server)
   var env = hqEnv(server, L)
@@ -690,7 +699,7 @@ BlockEvents.rightClicked(HQ_CHARTER, event => {
   HQD.stages.length && p.tell(HQT.gray('Plant it where your base will grow. Six stations - Outpost, Workshop, Expedition Hall, Arcane Conservatory, Foundry and Observatory - are commissioned here, one after another.'))
   p.tell(Text.empty().append(btn('Found a headquarters here', HQ_CMD + 'found', 'Creates your station with this charter as its anchor. Friends join by invitation.', 'green')))
   hqSave(server, L)
-})
+}
 
 BlockEvents.placed(HQ_CHARTER, event => {
   var p = event.entity
@@ -705,7 +714,7 @@ BlockEvents.broken(HQ_CHARTER, event => {
   var L = hqLoad(server)
   var env = hqEnv(server, L)
   var r = HQCore.charterRemoved(L, env, hqAnchorOf(event.block), String(p.uuid), p.hasPermissions(2) && p.isCreative())
-  if (!r.allow) { event.cancel(); p.tell(HQT.yellow(r.msg)); return }
+  if (!r.allow) { p.tell(HQT.yellow(r.msg)); event.cancel() }   // cancel() exits: tell first
   hqSave(server, L)
   if (r.msg && r.hq) p.tell(HQT.yellow(r.msg))
 })

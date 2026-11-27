@@ -1,3 +1,36 @@
+# Validation report: Project Horizon 0.6.1 (visual, interaction and rendering repair)
+
+Date: 2026-11-26. Machine: the reference Windows PC (Ryzen 5 9600X, 32 GB, RTX 5070, 2560x1440), Prism 11.1.1, NeoForge 21.1.267.
+**Observation type: real client** (a disposable clone `ProjectHorizon-0.6.0-vtest` of the player's instance, running a COPY of
+the affected save "New World"), driven by `tests/client_qa/` (real use/attack keys via `KeyMapping.click`, real screens, Iris
+toggles, screenshots). No mouse/keyboard automation was used (desktop control was declined). Images: `tests/evidence/0.6.1/`.
+
+| Defect | Reproduced (old build) | Cause | Fix | Verified (new build) |
+|---|---|---|---|---|
+| D. Charter right-click did nothing | yes: two use-key clicks on the charter, empty hand, no chat output | `event.cancel()` throws `EventExit` in KubeJS 2101 (bytecode) and was the first statement | cancel last; off-hand consumed (server + `kubejs/client_scripts/horizon_charter_client.js`); `tests/kubejs_lint.js` | Kit unpack with torch in off hand -> place charter with the use key -> click -> "Meridian Survey Charter" panel -> [Found] -> "Headquarters founded" -> click -> Stage I panel (5 requirements with tick/cross and counts, contribution, unlocks, buttons) -> Commission refused "requirements missing"; repeated clicks; off-hand torch and main-hand stone no longer placed (D1) |
+| A. Attributes/Accessories buttons overlapped | yes (A1) | both default to the preview's top-right corner (Apothic (63,10) 10x10, Accessories (66,8) 8x8) | Apothic anchor top_left +3/+3 -> (28,10) | widget dump at GUI scale 2, 3 and auto(6): Apothic at guiLeft+28/guiTop+10, Accessories at +66/+8, Aether +27/+68, no overlap; clicking Apothic opens the Attributes panel (A2). Accessories' owo-lib button could not be clicked by the harness (owo layers do not receive `Screen.mouseClicked`); its position was verified, its click was not |
+| C. Shaders OFF: rain/thunder hid the landscape | yes, deterministic (C1, C2: per frame, not a chunk rebuild) | Weather Glass 0.6.2 (bisection C3/C4: not Roxy weather fog, Atmospherics, Sodium fog occlusion, particles or render distance) | Weather Glass moved to the lab variant | final build: shaders off clear/rain/thunder, shaders on (Unbound) clear/rain/thunder, shaders off again rain: landscape, water, foliage, rain visible (C5) |
+| B. X-ray holes while moving | not reproduced on demand at render distance 2 (route of 8 stops + revisit); Voxy itself warns in chat about rd < 3 | render distance 2 with Voxy | existing instances raised to rd 8 on update | route of 8 stops at rd 8, shaders off and on: no holes observed. Not a proof that the intermittent case cannot recur |
+| First person | - | First-person preset shipped disabled | FPM + NEA + FPM x Compat on, Entity Player Compat, FA Player Extension, Punchy Moves removed | body visible looking down; empty hand, pickaxe, sword swing, two-handed claymore (idle/sprint), shield, bow draw, map, torch/lantern, bread, potion, spellbook in first person; third-person front (F1, F2). Not run: crawling/climbing/swimming/elytra/mounts/boats, Iron's casting, armour/hat/accessory clipping, shaders-on first person |
+
+Measured (same scene: (-838,112,266), clear, 25 one-second FPS samples; Minecraft's own FPS counter, not frame-time percentiles):
+
+| Build / settings | FPS median | FPS 5th pct | min |
+|---|---|---|---|
+| 0.6.0, rd 2, shaders off | 189-196 | 170-178 | 108-149 |
+| 0.6.0, rd 2, Complementary Unbound | 118 | 118 | 118 |
+| 0.6.1, rd 8, shaders off | 152 | 82 | 66 |
+| 0.6.1, rd 8, Complementary Unbound | 80 | 60 | 59 |
+
+The 0.6.1 numbers include render distance 8 (four times the vanilla terrain radius) and the new packs; the cost is real and
+is the price of the render-distance fix. Not measured: frame-time percentiles, GC/memory, a busy workshop, server tick impact.
+
+Updater (`build.py instance` on the clone): instance.cfg byte-identical before/after; second run identical (options, cfg, mods);
+player jars kept; Punchy Moves and Weather Glass removed; `.jar.disabled` twins removed; `renderDistance 2 -> 8`.
+
+Not verified in 0.6.1: Nether/End/Aether and other dimensions, Workshop commissioning (needs a Create press run), multiplayer,
+Heracles book and AE2/Mekanism screens under the new GUI theme, Fresh Food with Modefite, boss bars, controller.
+
 # Validation report: Project Horizon 0.6.0 (headquarters campaign)
 
 Date: 2026-11-26. Machine: Linux container, 4 vCPU, 15 GB RAM, OpenJDK 21.0.13, no GPU, **no graphical client and no second

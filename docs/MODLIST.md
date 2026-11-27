@@ -1,6 +1,6 @@
-# Mod list - Project Horizon 0.6.0
+# Mod list - Project Horizon 0.6.1
 
-Minecraft 1.21.1 - NeoForge 21.1.267 - 252 mods - generated 2026-11-26 from `manifests/lock.json`.
+Minecraft 1.21.1 - NeoForge 21.1.267 - 253 mods - generated 2026-11-26 from `manifests/lock.json`.
 
 Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/server metadata (the pack installs everything on the client because singleplayer runs an integrated server).
 
@@ -22,7 +22,7 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 
 | Mod | Version | Channel | Side (c/s) | License | Why |
 |---|---|---|---|---|---|
-| [BadOptimizations](https://modrinth.com/project/g96Z4WVZ) | `2.4.1` | release | req/uns | MIT | Small client render optimisations. |
+| [BadOptimizations](https://modrinth.com/project/g96Z4WVZ) | `2.4.1` | release | req/uns | ISC | Small client render optimisations. |
 | [Clumps](https://modrinth.com/project/Wnxd13zP) | `19.0.0.1` | release | opt/opt | MIT | Groups XP orbs. |
 | [Cull Leaves](https://modrinth.com/project/GNxdLCoP) | `4.1.1+1.21.1-neoforge` | release | req/uns | MIT | Culls hidden leaf faces. |
 | [Dynamic FPS](https://modrinth.com/project/LQ3K71Q1) | `3.11.4` | release | req/uns | MIT | Lower FPS when the window is unfocused. |
@@ -272,3 +272,5 @@ Channel `beta`/`alpha` is the upstream author's label. Side = Modrinth client/se
 | exposure / exposure-catalog | 0.6: conditional, not added. The Visual Overhaul camera-controls conflict was reported on Fabric 1.20.1; no NeoForge 1.21.1 client test was possible here. Photo objectives are not part of the campaign. |
 | sound-physics-remastered / autohud / fancymenu / chipped / rechiseled / copycats / create-connected / interiors / amendments / bountiful / patchouli | 0.6: not added; each needs client audio/visual/UI comparison that this release could not perform. Charter panel + quest book cover onboarding (no Patchouli); authored charter services replace Bountiful errands. |
 | combat-roll / cameraoverhaul / dynamic-crosshair / lambdynamiclights / ryoamiclights | 0.6: experiments only, not added (first-person and lighting ownership unchanged; see docs/ART_DIRECTION.md). |
+| punchymoves / fluid-foolish | 0.6.1: superseded by FA Player Extension + Entity Player Compat as the player-movement owner. Punchy Moves animates the whole player body and its own ConflictingAnimationsState flags any FA Player pack (faplayer, freshanimationsplayer, playerextension); the two cannot both own the body. Punchy! (first-person hands) stays. |
+| cataclysm-reimagined | 0.6.1: v1.3.5's inventory models reference cataclysm:item/*_gui textures that exist in neither the pack nor Cataclysm 3.33 (22 'Missing textures in model' warnings in a client log, 0 without it): magenta icons. Native Cataclysm icons kept. |

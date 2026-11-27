@@ -766,21 +766,8 @@
     ],
     "camera_anim": [
       {
-        "slug": "punchymoves",
-        "why": "Punchy Moves: first-person attack animations (beta). Fluid & Foolish (its required animation pack) is installed as a resource pack.",
-        "pin": "8dHgPPh6",
-        "allow": "beta",
-        "skip_deps": [
-          "fQdwNxte"
-        ],
-        "side": {
-          "client": "required",
-          "server": "unsupported"
-        }
-      },
-      {
         "slug": "punchy-fpa",
-        "why": "Punchy!: first-person animation overhaul.",
+        "why": "Punchy!: owns FIRST-PERSON hand/arm animation (swings, tool use, Better Combat first-person compatible). Entity Player Compat's author recommends it to override FA Player Extension's first-person hands.",
         "pin": "aVZEe0j8"
       },
       {
@@ -1040,20 +1027,37 @@
       {
         "slug": "first-person-model",
         "pin": "eaj8cYpD",
-        "disabled_by_default": true,
-        "why": "0.6 optional first-person preset (ships disabled): body in first person. Client test matrix against Punchy!/Better Combat/spellcasting not run - enable by hand together with NEA and FPM Compat."
+        "why": "0.6.1 default ON: renders the player's body in first person (toggle: First-person Model config / keybind). Body pose comes from the third-person model (FA Player Extension via EMF, blended with PlayerAnimator by Entity Player Compat)."
       },
       {
         "slug": "not-enough-animations",
         "pin": "f9RkhlA0",
-        "disabled_by_default": true,
-        "why": "0.6 optional first-person preset (ships disabled): required by First-person Model."
+        "why": "0.6.1 default ON: required by the First-person Model preset; vanilla-pose additions (maps, ladders, eating) that Entity Player Compat lists as compatible."
       },
       {
         "slug": "fpm-x-compat",
         "pin": "QJKhUegk",
-        "disabled_by_default": true,
-        "why": "0.6 optional first-person preset (ships disabled): FPM bridges for Better Combat/Accessories."
+        "why": "0.6.1 default ON: First-person Model bridges for Better Combat and Accessories (hides head/hat accessories in first person, weapon poses)."
+      },
+      {
+        "slug": "entity-player-compat",
+        "pin": "QDxFSuUa",
+        "side": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "why": "0.6.1: per-body-part blending of EMF player animations (FA Player Extension) with PlayerAnimator (Better Combat, Iron's Spells casting). Native NeoForge 1.21.1, MIT. Chosen over EMF Compat Core + per-mod add-ons (one bridge, not a stack)."
+      }
+    ],
+    "visual_support": [
+      {
+        "slug": "modefite-item-definition-backport",
+        "pin": "cy8BkRZc",
+        "side": {
+          "client": "required",
+          "server": "unsupported"
+        },
+        "why": "0.6.1: native NeoForge 1.21.1 backport of the 1.21.4 item-model definitions (GPL-3.0); lets Fresh Food's items/ definitions work on 1.21.1 instead of editing its pack format."
       }
     ]
   },
@@ -1109,7 +1113,9 @@
     "open-parties-and-claims": "0.6: researched, deferred. Beta; its claims would need a fake-player/spell/Gateways test matrix not available here. Headquarters membership (charter invite/join) is built into horizon_headquarters.js; Xaero maps are unaffected.",
     "exposure / exposure-catalog": "0.6: conditional, not added. The Visual Overhaul camera-controls conflict was reported on Fabric 1.20.1; no NeoForge 1.21.1 client test was possible here. Photo objectives are not part of the campaign.",
     "sound-physics-remastered / autohud / fancymenu / chipped / rechiseled / copycats / create-connected / interiors / amendments / bountiful / patchouli": "0.6: not added; each needs client audio/visual/UI comparison that this release could not perform. Charter panel + quest book cover onboarding (no Patchouli); authored charter services replace Bountiful errands.",
-    "combat-roll / cameraoverhaul / dynamic-crosshair / lambdynamiclights / ryoamiclights": "0.6: experiments only, not added (first-person and lighting ownership unchanged; see docs/ART_DIRECTION.md)."
+    "combat-roll / cameraoverhaul / dynamic-crosshair / lambdynamiclights / ryoamiclights": "0.6: experiments only, not added (first-person and lighting ownership unchanged; see docs/ART_DIRECTION.md).",
+    "punchymoves / fluid-foolish": "0.6.1: superseded by FA Player Extension + Entity Player Compat as the player-movement owner. Punchy Moves animates the whole player body and its own ConflictingAnimationsState flags any FA Player pack (faplayer, freshanimationsplayer, playerextension); the two cannot both own the body. Punchy! (first-person hands) stays.",
+    "cataclysm-reimagined": "0.6.1: v1.3.5's inventory models reference cataclysm:item/*_gui textures that exist in neither the pack nor Cataclysm 3.33 (22 'Missing textures in model' warnings in a client log, 0 without it): magenta icons. Native Cataclysm icons kept."
   },
   "resourcepacks": [
     {
@@ -1126,6 +1132,62 @@
       "slug": "animated-hearts",
       "pin": "pBvCUtye",
       "why": "Animated Hearts: HUD heart animation."
+    },
+    {
+      "slug": "mandalas-gui-dark-mode",
+      "pin": "dIS5XmhL",
+      "why": "0.6.1 UI theme (default): restrained blue-gray dark GUI. 1.21.5 build: its description covers 1.20.5-1.21.5 but pack_format is 55, so Minecraft would drop it as incompatible; the updater records it in incompatibleResourcePacks (the player-accepted list) instead of editing the pack.",
+      "accept_newer_format": true
+    },
+    {
+      "slug": "unofficial-mandalas-gui-dark-mode-mod-compatibility",
+      "pin": "eRWE69oA",
+      "why": "0.6.1: Mandala dark textures for Accessories, Apothic Attributes, Curios, EMI, Aether, Farmer's Delight, Sophisticated Core, Corpse, Polymorph."
+    },
+    {
+      "slug": "mandalas-gui-compats-fixes",
+      "pin": "qoHD4A8G",
+      "why": "0.6.1: further Mandala mod coverage (Hybrid Aquatic and others); loaded above the unofficial pack."
+    },
+    {
+      "slug": "fancy-crops",
+      "pin": "ZJEBZjg6",
+      "why": "0.6.1: primary crop treatment (works with Farmer's Delight); 3D Crops Revamped is the rejected alternative."
+    },
+    {
+      "slug": "3d-default",
+      "pin": "ii4vkhQ0",
+      "why": "0.6.1: tactile vanilla block/item depth; lower priority than every explicit model pack."
+    },
+    {
+      "slug": "remodeled-doors",
+      "pin": "mvbC3veY",
+      "why": "0.6.1: 3D vanilla doors/trapdoors; above 3D Default."
+    },
+    {
+      "slug": "rails-3d",
+      "pin": "xgk7elPn",
+      "why": "0.6.1: vanilla rails only (Create tracks unaffected)."
+    },
+    {
+      "slug": "better-leaves",
+      "pin": "w4ReEpuG",
+      "why": "0.6.1: Motschen's Better Leaves 9.6, covers Dynamic Trees, Regions Unexplored, Quark, Ars Nouveau leaves (already downloaded by the player in 0.6.0)."
+    },
+    {
+      "slug": "fresh-flower-pots",
+      "pin": "YEM2pUsf",
+      "why": "0.6.1: detailed flower pots."
+    },
+    {
+      "slug": "fresh-flower-pots-compats",
+      "pin": "eM6rxXyE",
+      "why": "0.6.1: pots for Regions Unexplored, Deeper and Darker, Supplementaries, Creeper Overhaul."
+    },
+    {
+      "slug": "just-3d-potions",
+      "pin": "OsbdpM9c",
+      "why": "0.6.1: 3D potion bottles with Punchy! first-person bottle animation (explicit 1.21.1 release)."
     },
     {
       "slug": "fresh-animations",
@@ -1148,15 +1210,25 @@
       "why": "FA Quivers 2.3.0 (0.3.1): quivers on skeletons/players' backs; no conflict with Better Combat or Simply Swords."
     },
     {
-      "slug": "fluid-foolish",
-      "pin": "UAp4jRDk",
-      "why": "Required animation pack for Punchy Moves (separate from FA mob stack)."
+      "slug": "fresh-animations-objects",
+      "pin": "AIGgXNdl",
+      "why": "0.6.1: animated chests, boats, minecarts, shulkers (individual extension; the All Extensions bundle is not used)."
+    },
+    {
+      "slug": "fa-player-extension",
+      "pin": "Wj7NeGjP",
+      "why": "0.6.1: player movement owner (EMF). Blended with Better Combat/Iron's via Entity Player Compat."
+    },
+    {
+      "slug": "fresh-variants-and-ventures",
+      "pin": "Kg1L8En2",
+      "why": "0.6.1: Fresh Animations patch for the installed Variants & Ventures mobs."
     },
     {
       "slug": "fresh-compats",
       "pin": "EHQK5l1g",
-      "enabled_by_default": false,
-      "why": "0.6: Fresh Animations support for Quark/Supplementaries (both are now in the roster; the old exclusion reason was stale). Ships available but NOT enabled: no in-game visual check of its Quark bee variants against Dynamic Trees/EMF has been made. Enable above Fresh Animations in Resource Packs."
+      "enabled_by_default": true,
+      "why": "Fresh Animations support for Quark variants and Supplementaries entities; enabled in 0.6.1 after the client check."
     }
   ],
   "excluded": [
@@ -1265,6 +1337,16 @@
       "slug": "terra-curio",
       "status": "replaced by port terracurio (0.6)",
       "reason": "Terra Curio 1.1.1 embeds ParticleStorm 1.0.5, whose GeckoLib mixins are declared common although MolangQueriesMixin loads net.minecraft.client.Minecraft: every dedicated server crashed at mod loading. Both LGPL-3.0; ports/terracurio moves those mixins to the client list (docs/PORTS.md). Same items and ids, so worlds are unaffected."
+    },
+    {
+      "slug": "punchymoves",
+      "status": "replaced",
+      "reason": "0.6.1: replaced by FA Player Extension + Entity Player Compat as the player-movement owner; Punchy Moves animates the whole body and its ConflictingAnimationsState flags every FA Player pack. Punchy! (first-person hands) stays."
+    },
+    {
+      "slug": "fluid-foolish",
+      "status": "replaced",
+      "reason": "0.6.1: Punchy Moves' animation pack; removed with Punchy Moves."
     }
   ],
   "instance_only": {

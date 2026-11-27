@@ -69,6 +69,7 @@ def pipeline(offline, configs):
     step("scripts/gen_datapack.py")
     step("scripts/gen_headquarters.py")
     node("tests/hq_sim.js")
+    node("tests/kubejs_lint.js")
     step("scripts/gen_quests.py")
     step("scripts/audit_quests.py")
     step("scripts/gen_resourcepack.py")

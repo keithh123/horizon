@@ -207,7 +207,8 @@
       "hashes": {
         "sha1": "3d62931b46a993bfdb58f99e3de1f11530dc5bc4",
         "sha512": "5c95620c73512355103743625636d5f912aecd95619f4453fd501f6d2141b1067b6d46905e4c77707aadabc1ad39d229761973d44ff280ff36cde16eeb9e8c01"
-      }
+      },
+      "variant": "lab"
     }
   ]
 }

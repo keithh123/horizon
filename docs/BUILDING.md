@@ -35,6 +35,7 @@ deleted the whole `datapacks/` directory (taking the structure tag written by `g
 | `gen_docs.py` | lock, roster | `docs/MODLIST.md` |
 
 Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_events.js`, `kubejs/server_scripts/horizon_headquarters.js`,
+`kubejs/client_scripts/horizon_charter_client.js`, `manifests/visual_catalogue.json` (via `scripts/visual_catalogue.py`), `tests/kubejs_lint.js`, `tests/client_qa/*`,
 `config/constructionstick-startup.toml`, `art/horizon/*.txt`, `tests/hq_sim.js`, `tests/server_hq*.txt`,
 `kubejs/server_scripts/horizon_recipes.js`, everything in `manifests/*.json` that is listed as an input above,
 `profiles/*.json`, `profiles/apply-profile.ps1`, `profiles/effects.json`, `options/options.txt`, `tests/*.txt`.
@@ -73,3 +74,18 @@ Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_e
 - `python scripts/patch_micimmptl.py <orig.jar> <patched.jar>` disables the Voxy mixins of Make it Compatible: Immersive Portals
   (incompatible with Voxy 0.2.16-beta). Instance-only: the add-on is not shipped.
 - `python scripts/patch_visualoverhaul.py <orig.jar> <patched.jar>` removes Visual Overhaul's first-launch resource-pack mixin (NPE in `MidnightConfig.write` when the main thread beats mod construction; seeding `visualoverhaul.json` does not prevent it). Built-in packs must be enabled once by hand.
+
+## Client QA harness (0.6.1)
+
+`tests/client_qa/` drives a **disposable copy** of an instance through the real client, without mouse/keyboard input:
+`zz_horizon_qa.js` (copied into the clone's `kubejs/client_scripts/`, never shipped) polls `horizon_qa/cmd.json` and runs
+chat commands, the use/attack keys (`KeyMapping.click`, the same path a mouse click takes), screen widget dumps and clicks,
+GUI scale, render distance, Iris shader toggles, FPS sampling and screenshots. `qa.py` sends a batch and waits;
+`render_matrix.py` (shader/weather/LOD scenes), `fp_matrix.py` (first-person equipment), `thumbs.py` (review images) and
+`restart_vtest.ps1` (stops ONLY the clone's game, verified by its log lock, restores the test save from the backup).
+Limits: Rhino cannot see some methods (`getGameTime`, `setYRot`; use `/tp` rotations), `java.lang.Runtime` is class-filtered,
+and owo-lib layer buttons (Accessories) do not receive `Screen.mouseClicked` calls.
+
+`python scripts/build.py instance --name <existing>` keeps the instance's `instance.cfg` (UUID, name, Java, memory),
+`options.txt` (only `migrate_options` and the resource-pack lines change) and `config/iris.properties`; it is idempotent
+(second run changes nothing) and removes `.jar.disabled` twins of mods that are now enabled by default.

@@ -1,3 +1,17 @@
+# Updating a 0.6.0 instance to 0.6.1 (visual repair)
+
+**Back up first** (the reference PC's update made `C:/Users/Starl/HorizonBackups/ProjectHorizon-0.6.0_2026-11-26_pre-visual-repair`).
+No world data, quest id, ledger field or registry id changes. Run `python scripts/build.py instance --name ProjectHorizon-0.6.0`
+with the game closed:
+
+- Kept: instance name/UUID/Java/memory (`instance.cfg`), every `options.txt` key except the ones below, your shader choice
+  (`config/iris.properties`), jars you added yourself, resource packs you enabled yourself (they stay on top).
+- Changed in `options.txt`: `renderDistance` raised to 8 if it was lower; the Horizon pack list and order; Mandala's GUI added
+  to `incompatibleResourcePacks` (packs you had accepted there stay).
+- Mods: First-person Model, Not Enough Animations and FPM x Compat are enabled (their `.disabled` copies are removed); Entity
+  Player Compat and Modefite are added; Punchy! Moves and Weather Glass are removed.
+- Existing headquarters: unchanged. A charter that never answered in 0.6.0 now opens its panel on right-click.
+
 # Migrating a 0.5 world to 0.6 (headquarters campaign)
 
 **Back up the world first.** 0.6 adds 8 mods (5 content, 3 disabled first-person jars) and one resource pack (not enabled);

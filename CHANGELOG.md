@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.6.1 - visual, interaction and rendering repair (2026-11-26)
+
+Installed in place into the existing `ProjectHorizon-0.6.0` Prism instance (same name/UUID); the artifact is 0.6.1.
+
+**Fixed (each reproduced first in a real client on a copy of the affected world; docs/VALIDATION_REPORT.md 0.6.1).**
+- Survey Charter right-click did nothing: KubeJS 2101 `event.cancel()` throws `EventExit`; it was the handler's first
+  statement. `cancel()` is now last; the off-hand pass is consumed (an off-hand torch used to be placed against the charter);
+  new `tests/kubejs_lint.js` guards every KubeJS exit call.
+- Attributes and Accessories inventory buttons overlapped: Apothic's button moves to the preview's top-left corner (28,10).
+- Shaders OFF + rain/thunder hid the whole landscape: caused by Weather Glass 0.6.2 (client bisection); it moves to the lab
+  variant. Rain, splashes and ripples stay with Particle Rain.
+- Render distance 2 (Voxy warns about LOD culling below 3): existing instances are raised to at least 8 on update.
+- Updater (`build.py instance`): keeps instance.cfg identity/Java/memory, options.txt and the shader choice; UTF-8 pack names
+  (0.6.0 duplicated "Vocal Villagers" as mojibake); keeps the player's accepted-incompatible packs; removes stale
+  `.jar.disabled` twins; idempotent.
+
+**First person and animation.** First-person Model + Not Enough Animations + FPM x Compat now ship ON. FA Player Extension owns
+player movement, blended with Better Combat and Iron's casting by Entity Player Compat 2.2.3; Punchy! keeps first-person hands.
+Punchy! Moves and Fluid & Foolish are removed (Punchy Moves flags every FA Player pack as conflicting).
+
+**Visual stack.** Mandala's GUI Dark Mode + mod compatibility packs; Fresh Animations Objects, Player, V&V patch, Fresh Compats
+enabled; Fancy Crops, 3D Default, Remodeled Doors, 3D Rails, Better Leaves, Fresh Flower Pots (+compats), Just 3D Potions.
+Modefite added so a player-enabled Fresh Food works. Every one of the 73 researched projects has a recorded disposition:
+`manifests/visual_catalogue.json` (docs/RESOURCE_PACKS.md).
+
 ## 0.6.0 - the headquarters campaign (2026-11-26)
 
 **Campaign.** A Meridian Survey Charter, placed anywhere in the open world, anchors six stations commissioned in order:
