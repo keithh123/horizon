@@ -12,6 +12,7 @@ so per-structure totals are bounds (see docs/LOOT.md for in-game samples).
 import gzip, io, json, os, re, struct, zipfile
 from collections import defaultdict
 from pathlib import Path
+import sys as _sys; _sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 LONG = chr(92) * 2 + '?' + chr(92)
@@ -57,6 +58,7 @@ def read_nbt(data):
 
 def main():
     lock = json.loads((ROOT / "manifests/lock.json").read_text())
+    lock = __import__('shipped', fromlist=['with_ports']).with_ports(lock)   # + shipped port jars (scripts/shipped.py)
     templates = {}          # "ns:path" -> {table: count}
     nested = {}             # table -> [nested tables]
     processors = defaultdict(list)   # processor list -> tables

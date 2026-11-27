@@ -1,3 +1,93 @@
+# Validation report: Project Horizon 0.6.1 (visual, interaction and rendering repair)
+
+Date: 2026-11-26. Machine: the reference Windows PC (Ryzen 5 9600X, 32 GB, RTX 5070, 2560x1440), Prism 11.1.1, NeoForge 21.1.267.
+**Observation type: real client** (a disposable clone `ProjectHorizon-0.6.0-vtest` of the player's instance, running a COPY of
+the affected save "New World"), driven by `tests/client_qa/` (real use/attack keys via `KeyMapping.click`, real screens, Iris
+toggles, screenshots). No mouse/keyboard automation was used (desktop control was declined). Images: `tests/evidence/0.6.1/`.
+
+| Defect | Reproduced (old build) | Cause | Fix | Verified (new build) |
+|---|---|---|---|---|
+| D. Charter right-click did nothing | yes: two use-key clicks on the charter, empty hand, no chat output | `event.cancel()` throws `EventExit` in KubeJS 2101 (bytecode) and was the first statement | cancel last; off-hand consumed (server + `kubejs/client_scripts/horizon_charter_client.js`); `tests/kubejs_lint.js` | Kit unpack with torch in off hand -> place charter with the use key -> click -> "Meridian Survey Charter" panel -> [Found] -> "Headquarters founded" -> click -> Stage I panel (5 requirements with tick/cross and counts, contribution, unlocks, buttons) -> Commission refused "requirements missing"; repeated clicks; off-hand torch and main-hand stone no longer placed (D1) |
+| A. Attributes/Accessories buttons overlapped | yes (A1) | both default to the preview's top-right corner (Apothic (63,10) 10x10, Accessories (66,8) 8x8) | Apothic anchor top_left +3/+3 -> (28,10) | widget dump at GUI scale 2, 3 and auto(6): Apothic at guiLeft+28/guiTop+10, Accessories at +66/+8, Aether +27/+68, no overlap; clicking Apothic opens the Attributes panel (A2). Accessories' owo-lib button could not be clicked by the harness (owo layers do not receive `Screen.mouseClicked`); its position was verified, its click was not |
+| C. Shaders OFF: rain/thunder hid the landscape | yes, deterministic (C1, C2: per frame, not a chunk rebuild) | Weather Glass 0.6.2 (bisection C3/C4: not Roxy weather fog, Atmospherics, Sodium fog occlusion, particles or render distance) | Weather Glass moved to the lab variant | final build: shaders off clear/rain/thunder, shaders on (Unbound) clear/rain/thunder, shaders off again rain: landscape, water, foliage, rain visible (C5) |
+| B. X-ray holes while moving | not reproduced on demand at render distance 2 (route of 8 stops + revisit); Voxy itself warns in chat about rd < 3 | render distance 2 with Voxy | existing instances raised to rd 8 on update | route of 8 stops at rd 8, shaders off and on: no holes observed. Not a proof that the intermittent case cannot recur |
+| First person | - | First-person preset shipped disabled | FPM + NEA + FPM x Compat on, Entity Player Compat, FA Player Extension, Punchy Moves removed | body visible looking down; empty hand, pickaxe, sword swing, two-handed claymore (idle/sprint), shield, bow draw, map, torch/lantern, bread, potion, spellbook in first person; third-person front (F1, F2). Not run: crawling/climbing/swimming/elytra/mounts/boats, Iron's casting, armour/hat/accessory clipping, shaders-on first person |
+
+Measured (same scene: (-838,112,266), clear, 25 one-second FPS samples; Minecraft's own FPS counter, not frame-time percentiles):
+
+| Build / settings | FPS median | FPS 5th pct | min |
+|---|---|---|---|
+| 0.6.0, rd 2, shaders off | 189-196 | 170-178 | 108-149 |
+| 0.6.0, rd 2, Complementary Unbound | 118 | 118 | 118 |
+| 0.6.1, rd 8, shaders off | 152 | 82 | 66 |
+| 0.6.1, rd 8, Complementary Unbound | 80 | 60 | 59 |
+
+The 0.6.1 numbers include render distance 8 (four times the vanilla terrain radius) and the new packs; the cost is real and
+is the price of the render-distance fix. Not measured: frame-time percentiles, GC/memory, a busy workshop, server tick impact.
+
+Updater (`build.py instance` on the clone): instance.cfg byte-identical before/after; second run identical (options, cfg, mods);
+player jars kept; Punchy Moves and Weather Glass removed; `.jar.disabled` twins removed; `renderDistance 2 -> 8`.
+
+Not verified in 0.6.1: Nether/End/Aether and other dimensions, Workshop commissioning (needs a Create press run), multiplayer,
+Heracles book and AE2/Mekanism screens under the new GUI theme, Fresh Food with Modefite, boss bars, controller.
+
+# Validation report: Project Horizon 0.6.0 (headquarters campaign)
+
+Date: 2026-11-26. Machine: Linux container, 4 vCPU, 15 GB RAM, OpenJDK 21.0.13, no GPU, **no graphical client and no second
+player**. Evidence files: `tests/evidence/server_hq_2026-11-26.txt`, `tests/hq_sim.js`, `.horizon/logs/` (local), build log
+lines quoted below. Earlier sections of this report (0.1-0.5) describe the Windows reference machine and stay valid for what
+0.6 did not change.
+
+## Passed (0.6)
+
+| Test | Evidence |
+|---|---|
+| Static: stage graph acyclic and ordered, choice minimums satisfiable, every id valid, no relic in any reward/service/supply/kit, no stage refunds its own cost, every requirement kind implemented | `gen_headquarters.py` validation (aborts the build otherwise) |
+| Static: no luck-only bottleneck (each required discovery has >= 3 eligible destinations or sits in a choice) | `docs/HQ_GRAPH.md`, enforced by `gen_headquarters.py` |
+| Static: 233 quests, 0 audit problems (incl. new rules: no overlapping icons, stage quests complete only on ledger mirrors, XP-only spine rewards); all 214 0.5 quest ids present | `audit_quests.py`; id comparison against `HEAD` |
+| Static: dependency ranges for 296 mod ids (lock + shipped ports), 0 failures | `manifests/deps_report.json` |
+| Ledger state paths: 71 checks - unmet requirements, prerequisite order, exact consumption, double click, partial contribution not consumed, remote click refused, borrowed machine refused, press-never-ran refused, invites, late joiner (mirrors, no rewards), offline member's facts, login catch-up, replayed sync, independent stations, cannot join twice, owner leaving, last member leaving, mirrors never revoked, 2-of-3 regions, repeated contribution no-op, optional third region, non-member cannot break anchor, dormant station, relocation keeps stages, destroyed anchor, hq/player service scopes and cooldowns, Foundry crate replacement, fixtures unrewarded, migration, full campaign with each reward exactly once and one finale | `node tests/hq_sim.js` -> 71 passed, 0 failed |
+| Dedicated server boots (fresh world) with all 0.6 content | "Done" in 108-115 s; KubeJS: startup 3/3 and server 4/4 scripts, 0 errors, 0 warnings; 16 recipes added, 0 failed |
+| Real adapter on the dedicated server, before and after `/reload`: found, persistence, unmet refusal, room scan incl. `#c:chests` tag, Outpost commission with exact consumption and rewards (copper stick, emblem, chart), double-commission no-op, Create pressing recipe loaded, Workshop refused until "press ran", Workshop commissioned, plates consumed, iron stick, Supply Crate loot + cooldown, destroyed charter -> dormant with stages kept, dormant refusal, rebind | `/horizon hqadmin selftest`: 23 passed, 0 failed (twice). FakePlayer fixture - see limits |
+| Ledger survives a full server restart | second boot lists `hq1 ... stages=3/6`, `hq2 ... 2/6` |
+| Service/chart loot tables roll real items from the console | `Dropped 1 [Tide Chart]`, `[Surveyor's Chart]`, `[Lair Chart]`, Foundry crate `Dropped 7 items` |
+| All 7 optional plans are valid structure NBT with valid block states | `/place template` of each: "Loaded template ..." x7 |
+| Generator ownership / idempotence | see "Release build" below |
+
+## Failed, then fixed (0.6)
+
+| Problem | Fix |
+|---|---|
+| **0.5's dedicated server could not boot**: Controlify (client-only) crashed mod construction | roster side override `server: unsupported` |
+| Terra Curio's embedded ParticleStorm declared client-touching GeckoLib mixins as common -> MixinTransformerError on every server | `ports/terracurio` (LGPL repack, mixins moved to the client list) |
+| KubeJS 2101 Rhino: block-scoped `const`/`let` in functions -> "redeclaration of var" at run time; `Level.getGameTime()` invisible; `server.getLevel(key)` and `BlockState.is(TagKey)` ambiguous; `level.dimension` is KubeJS's property | function-scoped `var`; `levelData.getGameTime()`; level lookup by iteration; explicit overload `['is(net.minecraft.tags.TagKey)']`; `dimensionKey` (found with an on-server interop probe) |
+| Loot with a player context turns exploration maps into Supplementaries' Cartographer's Quill | documented (KNOWN_ISSUES #23); the selftest accepts the quill |
+| A bulk "client-only" detection loop misattributed six server mods from mixin warnings | reverted before any build; only Controlify kept (verified by boot) |
+| Scanners ignored shipped port jars (Terra Curio vanished from ids/loot audit after becoming a port) | `scripts/shipped.py` adds default-variant ports to index_ids/audit_loot/check_deps/gen_datapack |
+
+## Not verified (0.6) - needs a client and/or a second player
+
+- Charter panel in a real client: layout, hovers, click handling at small/large GUI scales, controller (Controlify) use.
+- Real-player advancement reading/granting by the ledger (FakePlayer advancements are no-ops, so the selftest injects facts).
+- Two-player invite/join/leave, concurrent clicks from two clients, offline credit with real players.
+- Stages III-VI in survival (exercised only in `hq_sim.js` and by fixtures); Gateways trial completion credit; the finale sequence on screen.
+- New mods in a client: Construction Sticks charging/undo, FramedBlocks camo/culling/shaders, Handcrafted, Create Deco,
+  Comforts with Seamless Sleep; Fresh Compats visuals; First-person Model matrix; Terra Curio/ParticleStorm client effects.
+- Art in game (only an 8x contact sheet was inspected), sounds against rain/machinery/combat, subtitles.
+- Client performance (frame-time percentiles, memory, GC), shader/no-shader comparisons, Voxy chain in all dimensions.
+- A Prism import of the new .mrpack (Prism not available): replaced by a headless install + byte verification (below).
+
+## Release build and packaging (0.6)
+
+| Check | Result |
+|---|---|
+| `python scripts/build_all.py --no-configs --mrpack` (frozen resolve online; every generator twice) | **idempotent: 1386 owned files identical across two full runs**; `hq_sim` 71/71 in both runs; 233 quests |
+| `patch_configs.py` | **skipped deliberately** (`--no-configs`): it reads a launched Windows dev instance, absent here. Its owned files are the 0.5 versions, unchanged |
+| `dist/ProjectHorizon-0.6.0.mrpack` | 267 index files, 4.7 MB |
+| Headless client install (`scripts/mrpack_install.py ... --side client`) | 267 index files hash-checked, 1370 override files byte-identical, 261 entries in `mods/` (Clavis + the 3 first-person jars `.disabled`), **0 problems**; Fresh Compats present, not enabled in `options.txt` |
+| Headless server install (`--side server`) | 186 index files + server overrides, 188 mod entries; identical to the mod set booted in the server tests except Clavis `.disabled` |
+| Graphify refresh + `tests/test_horizon_graph.py` | 9/9 tests (incl. new headquarters stage/option/mirror and ownership checks); graph: 6 hq stages, 8 services, 233 quests |
+
 # Validation report: Project Horizon 0.1.0
 
 Date: 2026-11-21. Machine: Ryzen 5 9600X, 32 GB, RTX 5070, Windows 11, Prism Launcher 11.1.1.

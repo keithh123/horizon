@@ -1,0 +1,48 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:observatory_lens"
+      }
+    },
+    "title": "{\"text\": \"The Great Lens\"}",
+    "description": [
+      "Brass, tinted glass, a spyglass and one &dStarforged Heart&r make the Observatory Lens.",
+      "Place it at the station: the Observatory needs to see it there.",
+      "",
+      "&aDo:&r Craft the Observatory Lens.",
+      "&6You get:&r The capstone's centrepiece: the only late relic gate of the campaign."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          440,
+          0
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_foundry"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:item",
+      "item": "horizon:observatory_lens",
+      "amount": 1,
+      "collection": "AUTOMATIC"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

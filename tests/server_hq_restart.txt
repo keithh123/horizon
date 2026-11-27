@@ -1,0 +1,8 @@
+# Second boot of the same world after tests/server_hq.txt: the ledger must survive a restart.
+WAIT 8
+horizon hqadmin list
+horizon hqadmin info hq1
+horizon hqadmin info hq2
+execute in minecraft:overworld run loot spawn 0 260 0 loot horizon:rewards/quest/chart_temple
+execute in minecraft:overworld run loot spawn 0 260 0 loot horizon:rewards/quest/chart_landmark
+execute in minecraft:overworld run loot spawn 0 260 0 loot horizon:hq/service/chart_boss_lair

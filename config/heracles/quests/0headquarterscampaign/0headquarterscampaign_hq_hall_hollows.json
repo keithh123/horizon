@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:arcane_essence"
+      }
+    },
+    "title": "{\"text\": \"The Hollow Roads\"}",
+    "description": [
+      "Crypts, mines and mage towers under and around the hills. Bring a shield, torches and magic resistance.",
+      "",
+      "&eCounts:&r Enter an underground dungeon; Enter an arcane site",
+      "&eContribution:&r 8x arcane essence, 2x wayfarer shard",
+      "&eAdds to the station:&r Archive charts: the survey desk can draw maps to temples and arcane sites.",
+      "",
+      "&aDo:&r Contribute The Hollow Roads at the charter panel.",
+      "&6You get:&r Archive charts: the survey desk can draw maps to temples and arcane sites."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          240,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_workshop"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/hall/hollows"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

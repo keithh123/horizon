@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:emblem_outpost"
+      }
+    },
+    "title": "{\"text\": \"I. Outpost\"}",
+    "description": [
+      "&6STATION I&r  Plant the charter, sleep at home, store what you find, set up a survey table and walk to the nearest ruin.",
+      "",
+      "&eWhy:&r A home you respawn at, storage you trust, and a first lead pointing away from it.",
+      "",
+      "&eNeeds at the station:&r",
+      "&7- Sleep in a bed within 24 blocks of the charter&r",
+      "&7- Place 2 chests or barrels near the charter&r",
+      "&7- Place a cartography table (the survey station)&r",
+      "&7- Plant a crop or breed animals (reliable food)&r",
+      "&7- Step inside any roadside ruin, camp or settlement&r",
+      "&eContribution (consumed once):&r 3x paper, 8x torch",
+      "&eUnlocks:&r A copper Construction Stick, a timber-and-stone building kit and a Surveyor's Chart to the nearest temple or arcane site.",
+      "&7Commission it from the charter panel. This quest completes by itself when the station records it.&r",
+      "",
+      "&aDo:&r Commission Outpost at your charter.",
+      "&6You get:&r Workshop: press your first Survey Plates on a Create line."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          80,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_charter"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/outpost"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 3
+    }
+  }
+}

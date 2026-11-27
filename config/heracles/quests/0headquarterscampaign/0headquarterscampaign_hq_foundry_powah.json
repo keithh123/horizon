@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "powah:energizing_orb"
+      }
+    },
+    "title": "{\"text\": \"Powah energizing\"}",
+    "description": [
+      "Simple, scalable generators. Energized steel proves the orb ran.",
+      "",
+      "&eCounts:&r An Energizing Orb at the station",
+      "&eContribution:&r 16x steel energized",
+      "&eAdds to the station:&r A clean power trunk for the station.",
+      "",
+      "&aDo:&r Contribute Powah energizing at the charter panel.",
+      "&6You get:&r A clean power trunk for the station."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          440,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_conservatory"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/foundry/powah"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

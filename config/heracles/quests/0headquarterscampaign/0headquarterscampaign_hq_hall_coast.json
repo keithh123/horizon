@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:tidebound_doubloon"
+      }
+    },
+    "title": "{\"text\": \"The Drowned Coast\"}",
+    "description": [
+      "Wrecks, sunken ruins and monuments. Bring a boat, Respiration and night vision.",
+      "",
+      "&eCounts:&r Enter an ocean structure",
+      "&eContribution:&r 3x tidebound doubloon, 8x prismarine shard",
+      "&eAdds to the station:&r Tide charts: the survey desk can draw maps to ocean ruins and monuments.",
+      "",
+      "&aDo:&r Contribute The Drowned Coast at the charter panel.",
+      "&6You get:&r Tide charts: the survey desk can draw maps to ocean ruins and monuments."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          200,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_workshop"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/hall/coast"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

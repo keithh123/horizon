@@ -1,0 +1,23 @@
+@ block
+W 5a3b22
+w 7a5230
+v 9c6b3e
+C 8c4a2f
+c b86b3e
+---
+cccccccccccccccc
+wwwwvwwwwwwvwwww
+wvwwwwwwvwwwwwvw
+WWWWWWWWWWWWWWWW
+wwwvwwwwwwvwwwww
+wwwwwwvwwwwwwvww
+WWWWWWWWWWWWWWWW
+wwwwvwwwwwwvwwww
+wvwwwwwwvwwwwwvw
+WWWWWWWWWWWWWWWW
+wwwvwwwwwwvwwwww
+wwwwwwvwwwwwwvww
+WWWWWWWWWWWWWWWW
+wwwwvwwwwwwvwwww
+wvwwwwwwvwwwwwvw
+CCCCCCCCCCCCCCCC

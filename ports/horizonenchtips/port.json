@@ -1,0 +1,13 @@
+{
+  "kind": "gradle",
+  "output": "horizon_enchtips-1.0.0-neoforge.1.21.1.jar",
+  "built_jar": "horizon_enchtips-1.0.0-neoforge.1.21.1.jar",
+  "side": {
+    "client": "required",
+    "server": "unsupported"
+  },
+  "license": "MIT",
+  "source": "ports/horizonenchtips/src (written for Project Horizon)",
+  "attribution": "Original code for Project Horizon.",
+  "changes": "Enchantment tooltips: collapsed hint '<key> for more info'; while the key (Shift by default, rebindable) is held, each enchantment shows its description (manifests/enchantment_tooltips.json via lang) and its incompatible enchantments in red, read from the game's exclusive sets."
+}

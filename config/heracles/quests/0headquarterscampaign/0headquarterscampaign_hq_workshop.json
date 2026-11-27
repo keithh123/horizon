@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:emblem_workshop"
+      }
+    },
+    "title": "{\"text\": \"II. Workshop\"}",
+    "description": [
+      "&6STATION II&r  Run a Create press line, press Survey Plates, add a construction station and bring back a find from a dungeon, temple or wreck.",
+      "",
+      "&eWhy:&r Production at home: better building reach, a supply crate every day and real processing instead of hand crafting.",
+      "",
+      "&eNeeds at the station:&r",
+      "&7- Make sheets with a Mechanical Press&r",
+      "&7- A Mechanical Press stands at the station&r",
+      "&7- A depot, basin or belt feeds the press&r",
+      "&7- Place a schematic table or crafting table (construction station)&r",
+      "&7- Enter a dungeon, temple, ocean ruin or arcane site&r",
+      "&eContribution (consumed once):&r 4x survey plate, 8x andesite alloy",
+      "&eUnlocks:&r An iron Construction Stick, Create's schematic tools, a millstone and fan for ore processing, and the daily Supply Crate service.",
+      "&7Commission it from the charter panel. This quest completes by itself when the station records it.&r",
+      "",
+      "&aDo:&r Commission Workshop at your charter.",
+      "&6You get:&r Expedition Hall: prepare for, and finish, two of three regional expeditions."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          160,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_outpost"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/workshop"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 5
+    }
+  }
+}

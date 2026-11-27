@@ -1,0 +1,18 @@
+{
+ "generator": "scripts/gen_headquarters.py",
+ "files": [
+  "startup_scripts/horizon_hq_data.js"
+ ],
+ "root_files": [
+  "docs/HEADQUARTERS.md",
+  "docs/HQ_GRAPH.md",
+  "docs/HQ_PLANS.md",
+  "schematics/horizon_conservatory.nbt",
+  "schematics/horizon_foundry.nbt",
+  "schematics/horizon_hall.nbt",
+  "schematics/horizon_observatory.nbt",
+  "schematics/horizon_outpost.nbt",
+  "schematics/horizon_ruined_outpost.nbt",
+  "schematics/horizon_workshop.nbt"
+ ]
+}

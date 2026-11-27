@@ -45,3 +45,14 @@ Jar downloads are cached in `~/.cache/project-horizon/jars` (override with `PH_C
 Prism warns ("Easy There!") that 7 jars are not hosted on Modrinth/CurseForge. They are the ports and redistributable
 jars listed in docs/PORTS.md, built from `ports/`; tick "I trust this modpack" to continue. Cinematic Interactions is
 not included (CurseForge-only, All Rights Reserved); install it yourself from CurseForge if wanted (untested).
+
+## 0.6 notes
+
+- Import `dist/ProjectHorizon-0.6.0.mrpack`. Optional/manual parts: the First-person Model preset (3 jars shipped as
+  `.disabled`), Fresh Compats (shipped, not enabled), Clavis (disabled), and the `instance_only` jars listed in
+  `manifests/roster.json` (not on Modrinth; Terrain Diffusion's Windows build must never go into a portable or server install).
+- Optional headquarters plans are in `.minecraft/schematics/horizon_*.nbt` (Create schematics; docs/HQ_PLANS.md).
+- **Dedicated server** (Linux or Windows): install NeoForge 21.1.267 (`java -jar neoforge-installer.jar --installServer`), then
+  `python scripts/build.py server <dir> --accept-eula` (you accept the Minecraft EULA by passing the flag). Client-only mods,
+  including Controlify, are left out; Terra Curio comes from the local port.
+

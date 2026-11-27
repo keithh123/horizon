@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/outpost",
+  "display": {
+    "icon": {
+      "id": "horizon:emblem_workshop"
+    },
+    "title": {
+      "text": "II. Workshop"
+    },
+    "description": {
+      "text": "Run a Create press line, press Survey Plates, add a construction station and bring back a find from a dungeon, temple or wreck."
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

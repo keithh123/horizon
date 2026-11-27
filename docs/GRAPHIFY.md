@@ -1,6 +1,6 @@
 # Graphify for Horizon and Claude
 
-Horizon uses Graphify 0.9.121, pinned in `scripts/horizon_graph.py`. The graph combines local code parsing with explicit links from Horizon's JSON. It covers mod requirements, the quest prerequisite chain, task/reward resource references, bosses, trials, loot families, and source-to-generator ownership. It does not change the modpack.
+Horizon uses Graphify 0.9.121, pinned in `scripts/horizon_graph.py`. The graph combines local code parsing with explicit links from Horizon's JSON. It covers mod requirements, the quest prerequisite chain, task/reward resource references, bosses, trials, loot families, the 0.6 headquarters stages/options/services (`horizon_hq_stage:*`, `requires_stage`, `mirrors` from quests), and source-to-generator ownership. It does not change the modpack.
 
 ## Start here
 

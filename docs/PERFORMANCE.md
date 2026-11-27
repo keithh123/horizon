@@ -83,3 +83,34 @@ z -500..900, 8,989 chunks, 4 min 24 s at ~34 chunks/s) was pre-generated headles
 Pre-generation removed the multi-second server stalls (worst tick gap 9.5 s -> 1.7 s) but not the routine tick jitter (p95/p99 unchanged),
 and frames got slightly worse (p99 34 -> 43 ms, one 2.8 s hitch), plausibly because Voxy now ingests thousands of existing chunks. A 4.5 minute
 per-world pre-generation is not something the pack can ask of a player, and the effect on typical ticks is nil in this test.
+
+## 0.6 headquarters: cost model and what was (not) measured
+
+- The charter does work **only on a player action**: one bounded scan of 21 x 13 x 21 blocks (5 733 block reads,
+  loaded chunks only) per panel/commission click, rate-limited to one action per player per 10 ticks. Nothing runs per tick,
+  no chunk is force-loaded, no entity or block entity ticks were added (charter, emblems, case, lens and beacon are plain
+  blocks; the beacon's light is a static light level).
+- The ledger is one compound in `kubejs_persistent_data.nbt`, one JSON string per headquarters (kilobytes).
+- Facts are read from at most 54 advancements per member, at login and on charter use.
+- Dedicated server (this container, 4 vCPU): boot to "Done" 108-115 s with 188 server jars; no per-tick cost to measure.
+- **Not measured in 0.6:** client frame times (p50/p95/p99), memory/GC, a developed-headquarters scene, fresh-chunk vs
+  pre-generated travel, Voxy world generation under Create load. No GPU client was available. The 0.5 numbers above remain
+  the latest measurements; FramedBlocks/Handcrafted/Create Deco scenes are unmeasured.
+
+
+## 0.6.1 (measured in a client, 2026-11-26)
+
+Same scene ((-838,112,266), overworld, clear, 25 one-second samples of Minecraft's FPS counter), RTX 5070 / Ryzen 5 9600X,
+2560x1440, on a copy of the player's world:
+
+| Build | Settings | FPS median | 5th percentile | min |
+|---|---|---|---|---|
+| 0.6.0 | render distance 2, shaders off | 189-196 | 170-178 | 108-149 |
+| 0.6.0 | render distance 2, Complementary Unbound | 118 | 118 | 118 |
+| 0.6.1 | render distance 8, shaders off | 152 | 82 | 66 |
+| 0.6.1 | render distance 8, Complementary Unbound | 80 | 60 | 59 |
+
+The drop is mostly the render-distance fix (8 instead of 2 = 4x the vanilla terrain radius that Voxy no longer has to
+cover) plus the new resource packs. If 80 FPS with shaders is too low on a given machine, lower the Voxy section distance or
+use the Performance profile (shaders off) before lowering the render distance below 8. Not measured: frame-time percentiles,
+GC/memory, a busy workshop, server tick cost, Cinematic profile.

@@ -44,7 +44,8 @@ EDITS = {
         (r'"service_threads": 4', '"service_threads": 3', "Balanced: leave CPU for worldgen + factories (6-core target)."),
     ],
     "iris.properties": [
-        (r"^shaderPack=$", f"shaderPack={SHADER}", "Complementary Reimagined (Voxy-aware since r5.8.1) is the default look."),
+        (r"^shaderPack=.*$", f"shaderPack={SHADER}", "Complementary Reimagined (Voxy-aware since r5.8.1) is the default look."),
+        (r"^enableShaders=.*$", "enableShaders=true", "Balanced default has shaders on; pinned so a source instance's test state cannot leak into the pack (0.6.1)."),
     ],
 }
 
@@ -85,6 +86,17 @@ EXPANSION_EDITS = {
     ],
     "punchy_moves/camera.json": [
         ('"elytraCamera": true', '"elytraCamera": false', "Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state."),
+    ],
+    "apotheosis/apothic_enchanting.cfg": [
+        ('B:"Enable Inlined Enchantment Descriptions"=false', 'B:"Enable Inlined Enchantment Descriptions"=false',
+         "0.6.1: kept OFF and shipped so updates reset it: Horizon Enchantment Tooltips (ports/horizonenchtips) owns descriptions (shown while Shift is held, with incompatible enchantments)."),
+    ],
+    # 0.6.1 visual repair: both inventory buttons defaulted to the top-right corner of the player preview and stacked
+    # (Apothic: x = guiLeft+25+(51-10)+X, y = guiTop+7+Y -> (63,10); Accessories: guiLeft+66, guiTop+8; from the jars).
+    "apotheosis/apothic_attributes.cfg": [
+        ('S:"GUI Button Offset Anchor Point"=top_right', 'S:"GUI Button Offset Anchor Point"=top_left',
+         "Attributes button moves to the preview's top-left corner (guiLeft+28, guiTop+10); Accessories keeps the top-right one."),
+        ('I:"GUI Button Offset X Offset"=-3', 'I:"GUI Button Offset X Offset"=3', "Same: 3 px inside the preview frame."),
     ],
 }
 

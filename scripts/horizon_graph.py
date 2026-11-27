@@ -158,6 +158,41 @@ class HorizonLinks:
             self.refs(key, trial["rewards"], source, f"/trials/{i}/rewards", "reward_reference")
         self.counts.update(bosses=len(bosses), loot_families=len(families), trials=len(trials))
 
+    def headquarters(self):
+        # 0.6 campaign: stages, choice options and services from manifests/headquarters.json, their prerequisites and the
+        # quests that mirror them. The ledger itself is runtime state (kubejs_persistent_data.nbt) and is not in the graph.
+        source = "manifests/headquarters.json"
+        hq = read(source)
+        stages = hq["stages"]
+        for i, st in enumerate(stages):
+            key = self.node("horizon_hq_stage:" + st["id"], f"{st['numeral']}. {st['title']} (headquarters stage)", source,
+                            f"/stages/{i}", edit_source=source, kind="hq_stage")
+            self.edge(key, self.file(source), "declared_in", source, f"/stages/{i}")
+            for j, req in enumerate(st["requires"]):
+                self.edge(key, "horizon_hq_stage:" + req, "requires_stage", source, f"/stages/{i}/requires/{j}")
+            self.refs(key, st["requirements"], source, f"/stages/{i}/requirements", "requirement_reference")
+            for j, c in enumerate(st["cost"]):
+                self.edge(key, self.resource(c[0], source), "consumes", source, f"/stages/{i}/cost/{j}")
+            self.refs(key, st["rewards"], source, f"/stages/{i}/rewards", "reward_reference")
+            for j, sv in enumerate(st["services"]):
+                self.edge(key, "horizon_hq_service:" + sv, "unlocks_service", source, f"/stages/{i}/services/{j}")
+            for j, o in enumerate((st.get("choices") or {}).get("options", [])):
+                ok = self.node(f"horizon_hq_option:{st['id']}/{o['id']}", f"{o['title']} ({st['title']} option)", source,
+                               f"/stages/{i}/choices/options/{j}", edit_source=source, kind="hq_option")
+                self.edge(ok, key, "option_of", source, f"/stages/{i}/choices/options/{j}")
+                self.refs(ok, o["requirements"], source, f"/stages/{i}/choices/options/{j}/requirements", "requirement_reference")
+                for k, c in enumerate(o["cost"]):
+                    self.edge(ok, self.resource(c[0], source), "consumes", source, f"/stages/{i}/choices/options/{j}/cost/{k}")
+                for k, sv in enumerate(o["services"]):
+                    self.edge(ok, "horizon_hq_service:" + sv, "unlocks_service", source, f"/stages/{i}/choices/options/{j}/services/{k}")
+        for name in hq["services"]:
+            key = self.node("horizon_hq_service:" + name, hq["services"][name]["title"] + " (charter service)", source,
+                            f"/services/{name}", edit_source=source, kind="hq_service")
+            self.edge(key, self.file(source), "declared_in", source, f"/services/{name}")
+        server = self.file("kubejs/server_scripts/horizon_headquarters.js")
+        self.edge(server, self.file("kubejs/startup_scripts/horizon_hq_data.js"), "reads", "docs/BUILDING.md")
+        self.counts.update(hq_stages=len(stages), hq_services=len(hq["services"]))
+
     def quests(self):
         paths = sorted((ROOT / "config/heracles/quests").rglob("*.json"))
         quests = {}
@@ -175,6 +210,13 @@ class HorizonLinks:
             self.edge(key, self.file("scripts/gen_quests.py"), "generated_by", source)
             self.refs(key, quest.get("tasks", {}), source, "/tasks", "task_reference")
             self.refs(key, quest.get("rewards", {}), source, "/rewards", "reward_reference")
+            for i, t in enumerate(quest.get("tasks", {}).values()):   # headquarters quests mirror ledger stages/options
+                for adv in t.get("advancements", []):
+                    if adv.startswith("horizon:hq/") and adv != "horizon:hq/root":
+                        rest = adv[len("horizon:hq/"):]
+                        target = ("horizon_hq_option:" if "/" in rest else "horizon_hq_stage:") + rest
+                        if target in self.nodes:
+                            self.edge(key, target, "mirrors", source, "/tasks")
         for key, quest, source in quests.values():
             for i, dependency in enumerate(quest.get("dependencies", [])):
                 if dependency not in quests:
@@ -187,12 +229,16 @@ class HorizonLinks:
         contracts = {
             "resolve": (["manifests/roster.json"], ["manifests/lock.json"]),
             "check_deps": (["manifests/lock.json"], ["manifests/deps_report.json"]),
-            "gen_assets": (["manifests/legends.json"], ["kubejs/.generated-assets.json"]),
+            "gen_assets": (["manifests/legends.json", "manifests/headquarters.json"], ["kubejs/.generated-assets.json"]),
+            "gen_headquarters": (["manifests/headquarters.json", "manifests/legends.json", "manifests/loot_families.json",
+                                  "manifests/expeditions.json", "manifests/ids.json"],
+                                 ["datapacks/.generated-hq.json", "kubejs/.generated-hq.json", "kubejs/startup_scripts/horizon_hq_data.js",
+                                  "docs/HEADQUARTERS.md", "docs/HQ_PLANS.md", "docs/HQ_GRAPH.md"]),
             "gen_datapack": (["manifests/loot_families.json", "manifests/legends.json",
                               "manifests/expeditions.json", "manifests/loot_calibration.json",
                               "manifests/loot_audit.json", "manifests/ids.json"],
                              ["datapacks/.generated.json", "docs/LOOT_BUDGET.md"]),
-            "gen_quests": (["manifests/loot_families.json", "manifests/legends.json",
+            "gen_quests": (["manifests/loot_families.json", "manifests/legends.json", "manifests/headquarters.json",
                             "manifests/expeditions.json", "manifests/ids.json"], ["config/heracles/groups.txt"]),
             "gen_docs": (["manifests/lock.json", "manifests/roster.json"], ["docs/MODLIST.md"]),
         }
@@ -215,6 +261,7 @@ class HorizonLinks:
     def finish(self):
         self.mods()
         self.gameplay()
+        self.headquarters()
         self.quests()
         self.ownership()
         self.data["nodes"] = list(self.nodes.values())
@@ -304,6 +351,7 @@ def main():
     if args[0] == "affected" and "--relation" not in args:
         for relation in ("reads", "generated_by", "configured_in", "declared_in", "resolved_in", "requires",
                          "requires_quest", "task_reference", "reward_reference", "consumes", "references_id",
+                         "requires_stage", "requirement_reference", "unlocks_service", "option_of", "mirrors",
                          "wave_entity_reference", "calls", "imports", "uses", "references", "inherits"):
             args.extend(["--relation", relation])
     return graphify(*args)

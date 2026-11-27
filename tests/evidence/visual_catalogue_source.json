@@ -1,0 +1,659 @@
+[
+ {
+  "title": "Fresh Animations",
+  "slug": "fresh-animations",
+  "version": "1.11.2",
+  "url": "https://modrinth.com/resourcepack/fresh-animations",
+  "category": "Animation",
+  "priority": "Keep",
+  "installed": "Active"
+ },
+ {
+  "title": "Fresh Animations: Details",
+  "slug": "fresh-animations-details",
+  "version": "2.4.0",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-details",
+  "category": "Animation",
+  "priority": "Keep",
+  "installed": "Active"
+ },
+ {
+  "title": "Fresh Animations: Emissive",
+  "slug": "fresh-animations-emissive",
+  "version": "1.7.0",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-emissive",
+  "category": "Animation",
+  "priority": "Keep",
+  "installed": "Active"
+ },
+ {
+  "title": "Fresh Animations: Quivers",
+  "slug": "fresh-animations-quivers",
+  "version": "2.3.0",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-quivers",
+  "category": "Animation",
+  "priority": "Keep",
+  "installed": "Active"
+ },
+ {
+  "title": "Fresh Animations: Objects",
+  "slug": "fresh-animations-objects",
+  "version": "2.1.2",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-objects",
+  "category": "Animation",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Animations: Player Extension",
+  "slug": "fa-player-extension",
+  "version": "1.1.0",
+  "url": "https://modrinth.com/resourcepack/fa-player-extension",
+  "category": "Animation",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Animations Patch - Variants and Ventures",
+  "slug": "fresh-variants-and-ventures",
+  "version": "1.0",
+  "url": "https://modrinth.com/resourcepack/fresh-variants-and-ventures",
+  "category": "Animation",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Compats",
+  "slug": "fresh-compats",
+  "version": "v1.6",
+  "url": "https://modrinth.com/resourcepack/fresh-compats",
+  "category": "Animation",
+  "priority": "Keep",
+  "installed": "Active"
+ },
+ {
+  "title": "Fresh Animations: Extensions",
+  "slug": "fresh-animations-extensions",
+  "version": "1.10.1",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-extensions",
+  "category": "Animation",
+  "priority": "Alternative",
+  "installed": "Installed, off"
+ },
+ {
+  "title": "Fresh Animations: Spiders",
+  "slug": "fresh-animations-spiders",
+  "version": "2.3.1",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-spiders",
+  "category": "Animation",
+  "priority": "Conditional",
+  "installed": "Installed, off"
+ },
+ {
+  "title": "Fresh Animations: Creepers",
+  "slug": "fresh-animations-creepers",
+  "version": "2.2.0",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-creepers",
+  "category": "Animation",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Animations: Classic Horses",
+  "slug": "fresh-animations-classic-horses",
+  "version": "1.5.0",
+  "url": "https://modrinth.com/resourcepack/fresh-animations-classic-horses",
+  "category": "Animation",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Just Expressions",
+  "slug": "just-expressions",
+  "version": "1.2.1",
+  "url": "https://modrinth.com/resourcepack/just-expressions",
+  "category": "Animation",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Animations: Player Extension + Just Expressions",
+  "slug": "fa-player-extension-plusjust-expressions",
+  "version": "1.2",
+  "url": "https://modrinth.com/resourcepack/fa-player-extension-plusjust-expressions",
+  "category": "Animation",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Moves",
+  "slug": "tras-fresh-player",
+  "version": "3.1",
+  "url": "https://modrinth.com/resourcepack/tras-fresh-player",
+  "category": "Animation",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Moves+",
+  "slug": "freshmoves",
+  "version": "1.20.5",
+  "url": "https://modrinth.com/resourcepack/freshmoves",
+  "category": "Animation",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "F.M.R.P",
+  "slug": "freshly-modded",
+  "version": "3.0.5",
+  "url": "https://modrinth.com/resourcepack/freshly-modded",
+  "category": "Animation",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Semos Animations Lib",
+  "slug": "semos-animations-lib",
+  "version": "2.0.4",
+  "url": "https://modrinth.com/resourcepack/semos-animations-lib",
+  "category": "Animation",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Food",
+  "slug": "fresh-food",
+  "version": "1.3.8",
+  "url": "https://modrinth.com/resourcepack/fresh-food",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "Installed, off"
+ },
+ {
+  "title": "Fresh XP Orbs",
+  "slug": "fresh-xp-orbs",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/fresh-xp-orbs",
+  "category": "Items",
+  "priority": "Later",
+  "installed": "Installed, off"
+ },
+ {
+  "title": "Just 3D Potions (Punchy!)",
+  "slug": "just-3d-potions",
+  "version": "1.2",
+  "url": "https://modrinth.com/resourcepack/just-3d-potions",
+  "category": "Items",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "AL's 3D Potions",
+  "slug": "als-3d-potions",
+  "version": "1.1.1",
+  "url": "https://modrinth.com/resourcepack/als-3d-potions",
+  "category": "Items",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Animated Items",
+  "slug": "animated-items",
+  "version": "1.6.3",
+  "url": "https://modrinth.com/resourcepack/animated-items",
+  "category": "Items",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Flowers and Plants",
+  "slug": "fresh-flowers-and-plants",
+  "version": "1.5",
+  "url": "https://modrinth.com/resourcepack/fresh-flowers-and-plants",
+  "category": "Items",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Simply Swords Reforged",
+  "slug": "simply-swords-reforged",
+  "version": "0.1",
+  "url": "https://modrinth.com/resourcepack/simply-swords-reforged",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Consistently 2D - Modded 3D Items Made 2D",
+  "slug": "consistently-2d",
+  "version": "1.0.0-neoforge",
+  "url": "https://modrinth.com/resourcepack/consistently-2d",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "L_Ender 's Cataclysm Reimagined",
+  "slug": "cataclysm-reimagined",
+  "version": "v1.3.5",
+  "url": "https://modrinth.com/resourcepack/cataclysm-reimagined",
+  "category": "Items",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "xali's Enchanted Books",
+  "slug": "xalis-enchanted-books",
+  "version": "1.0.0",
+  "url": "https://modrinth.com/resourcepack/xalis-enchanted-books",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "xali's Enchanted Books - Create Addon",
+  "slug": "xalis-enchanted-books-create-addon",
+  "version": "1.1.0",
+  "url": "https://modrinth.com/resourcepack/xalis-enchanted-books-create-addon",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Visual Enchantments",
+  "slug": "visual-enchantments",
+  "version": "4.0.0",
+  "url": "https://modrinth.com/resourcepack/visual-enchantments",
+  "category": "Items",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Motschen's Better Leaves",
+  "slug": "better-leaves",
+  "version": "9.6",
+  "url": "https://modrinth.com/resourcepack/better-leaves",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "Installed, off"
+ },
+ {
+  "title": "(Bee's) Fancy Crops",
+  "slug": "fancy-crops",
+  "version": "1.3",
+  "url": "https://modrinth.com/resourcepack/fancy-crops",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "3D crops Revamped",
+  "slug": "3d-crops",
+  "version": "3",
+  "url": "https://modrinth.com/resourcepack/3d-crops",
+  "category": "World",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Flower Pots",
+  "slug": "fresh-flower-pots",
+  "version": "1.5.4",
+  "url": "https://modrinth.com/resourcepack/fresh-flower-pots",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Flower Pots: Compats",
+  "slug": "fresh-flower-pots-compats",
+  "version": "8.0",
+  "url": "https://modrinth.com/resourcepack/fresh-flower-pots-compats",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "3D Default",
+  "slug": "3d-default",
+  "version": "1.16.0",
+  "url": "https://modrinth.com/resourcepack/3d-default",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "3D Default Compat",
+  "slug": "3d-default-compat",
+  "version": "1.0.1",
+  "url": "https://modrinth.com/resourcepack/3d-default-compat",
+  "category": "World",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Remodeled Doors 3D",
+  "slug": "remodeled-doors",
+  "version": "2.0",
+  "url": "https://modrinth.com/resourcepack/remodeled-doors",
+  "category": "World",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "3D Rails",
+  "slug": "rails-3d",
+  "version": "1.0",
+  "url": "https://modrinth.com/resourcepack/rails-3d",
+  "category": "World",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Better Lanterns",
+  "slug": "better-lanterns",
+  "version": "1.2+1.21",
+  "url": "https://modrinth.com/resourcepack/better-lanterns",
+  "category": "World",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Mandala's GUI - Dark mode",
+  "slug": "mandalas-gui-dark-mode",
+  "version": "2.1",
+  "url": "https://modrinth.com/resourcepack/mandalas-gui-dark-mode",
+  "category": "UI",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "(Unofficial) Mandala's GUI - Dark Mode Mod Compatibility",
+  "slug": "unofficial-mandalas-gui-dark-mode-mod-compatibility",
+  "version": "0.3",
+  "url": "https://modrinth.com/resourcepack/unofficial-mandalas-gui-dark-mode-mod-compatibility",
+  "category": "UI",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Mandala's GUI - Compats & Fixes",
+  "slug": "mandalas-gui-compats-fixes",
+  "version": "1.3.5",
+  "url": "https://modrinth.com/resourcepack/mandalas-gui-compats-fixes",
+  "category": "UI",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Colourful containers Dark Mode GUI",
+  "slug": "colourful-containers-dark-mode-gui",
+  "version": "26.2",
+  "url": "https://modrinth.com/resourcepack/colourful-containers-dark-mode-gui",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Colourful Containers - Modded Dark Mode GUI Compat",
+  "slug": "colourful-containers-modded-dark-mode-gui-compat",
+  "version": "6",
+  "url": "https://modrinth.com/resourcepack/colourful-containers-modded-dark-mode-gui-compat",
+  "category": "UI",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Colourful containers GUI",
+  "slug": "colourful-containers-gui",
+  "version": "26.2",
+  "url": "https://modrinth.com/resourcepack/colourful-containers-gui",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Unique Dark",
+  "slug": "unique-dark",
+  "version": "2.10",
+  "url": "https://modrinth.com/resourcepack/unique-dark",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fancy's GUI Overhaul",
+  "slug": "fancys-gui-overhaul",
+  "version": "6",
+  "url": "https://modrinth.com/resourcepack/fancys-gui-overhaul",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "GUI Revision",
+  "slug": "gui-revision",
+  "version": "2.2.0",
+  "url": "https://modrinth.com/resourcepack/gui-revision",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Updated GUI",
+  "slug": "updated-gui",
+  "version": "3",
+  "url": "https://modrinth.com/resourcepack/updated-gui",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Dark Smooth GUI",
+  "slug": "dark-smooth-gui",
+  "version": "0.14.1+1.20.5-1.21.5",
+  "url": "https://modrinth.com/resourcepack/dark-smooth-gui",
+  "category": "UI",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Icons",
+  "slug": "icons",
+  "version": "1.14",
+  "url": "https://modrinth.com/resourcepack/icons",
+  "category": "UI",
+  "priority": "Prioritize",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Enhanced Boss Bars",
+  "slug": "enhanced-boss-bars",
+  "version": "1.6",
+  "url": "https://modrinth.com/resourcepack/enhanced-boss-bars",
+  "category": "UI",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "AE Style Mekanism",
+  "slug": "applied-energistics-style-mekanism",
+  "version": "1.0",
+  "url": "https://modrinth.com/resourcepack/applied-energistics-style-mekanism",
+  "category": "UI",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Reimagined",
+  "slug": "reimagined",
+  "version": "v1.63.7",
+  "url": "https://modrinth.com/resourcepack/reimagined",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Reimagined | Fresh Animations Patch",
+  "slug": "reimagined-fresh-animations-patch",
+  "version": "v1.10a",
+  "url": "https://modrinth.com/resourcepack/reimagined-fresh-animations-patch",
+  "category": "Base looks",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Excalibur",
+  "slug": "excal",
+  "version": "26.3_01",
+  "url": "https://modrinth.com/resourcepack/excal",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Excalibur | Fresh Animations Support",
+  "slug": "excalibur-fresh-animations",
+  "version": "1.10.4_3",
+  "url": "https://modrinth.com/resourcepack/excalibur-fresh-animations",
+  "category": "Base looks",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Excalibur | Lootr Support",
+  "slug": "excalibur-lootr-support",
+  "version": "1.1",
+  "url": "https://modrinth.com/resourcepack/excalibur-lootr-support",
+  "category": "Base looks",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Alacrity",
+  "slug": "alacrity",
+  "version": "39",
+  "url": "https://modrinth.com/resourcepack/alacrity",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Patrix 32x",
+  "slug": "patrix-32x",
+  "version": "72",
+  "url": "https://modrinth.com/resourcepack/patrix-32x",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Faithful 32x",
+  "slug": "faithful-32x",
+  "version": "1.21.1-june-2026",
+  "url": "https://modrinth.com/resourcepack/faithful-32x",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Nature X (Resource Pack)",
+  "slug": "nature-x",
+  "version": "12.2",
+  "url": "https://modrinth.com/resourcepack/nature-x",
+  "category": "Base looks",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "BetterVanillaBuilding",
+  "slug": "bettervanillabuilding",
+  "version": "beta5",
+  "url": "https://modrinth.com/resourcepack/bettervanillabuilding",
+  "category": "Base looks",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Vanilla Ultra",
+  "slug": "vanilla-ultra-pbr",
+  "version": "0.9",
+  "url": "https://modrinth.com/resourcepack/vanilla-ultra-pbr",
+  "category": "Materials",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ },
+ {
+  "title": "AVPBR Retextured",
+  "slug": "avpbr-retextured",
+  "version": "R6",
+  "url": "https://modrinth.com/resourcepack/avpbr-retextured",
+  "category": "Materials",
+  "priority": "Alternative",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Dramatic Skys",
+  "slug": "dramatic-skys",
+  "version": "1.5.3.36.6",
+  "url": "https://modrinth.com/resourcepack/dramatic-skys",
+  "category": "Materials",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Create Energistics",
+  "slug": "create-energistics",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/create-energistics",
+  "category": "Base looks",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Animated Armor Trims",
+  "slug": "animated-armor-trims",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/animated-armor-trims",
+  "category": "Items",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Creeper Overhaul x Fresh Animations",
+  "slug": "creeper-overhaul-x-fresh-animations",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/creeper-overhaul-x-fresh-animations",
+  "category": "Animation",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Fresh Mowzie's Mobs textures",
+  "slug": "fresh-mowzies-mobs-textures",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/fresh-mowzies-mobs-textures",
+  "category": "Animation",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Better Dogs",
+  "slug": "better-dogs",
+  "version": "No listed 1.21.1 file",
+  "url": "https://modrinth.com/resourcepack/better-dogs",
+  "category": "Animation",
+  "priority": "Later",
+  "installed": "New candidate"
+ },
+ {
+  "title": "Better Cats x Fresh Animations",
+  "slug": "better-cats-x-fresh-animations",
+  "version": "1",
+  "url": "https://modrinth.com/resourcepack/better-cats-x-fresh-animations",
+  "category": "Animation",
+  "priority": "Conditional",
+  "installed": "New candidate"
+ }
+]

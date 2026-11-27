@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/hall",
+  "display": {
+    "icon": {
+      "id": "irons_spellbooks:arcane_essence"
+    },
+    "title": {
+      "text": "The Hollow Roads"
+    },
+    "description": {
+      "text": "Crypts, mines and mage towers under and around the hills. Bring a shield, torches and magic resistance."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

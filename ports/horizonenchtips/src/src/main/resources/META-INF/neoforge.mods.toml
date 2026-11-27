@@ -1,0 +1,17 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "horizon_enchtips"
+version = "${mod_version}"
+displayName = "Horizon Enchantment Tooltips"
+authors = "Project Horizon"
+description = "Hold a key (Shift by default) over an enchanted item or book to see what each enchantment does and which enchantments it cannot be combined with. Original code for Project Horizon."
+
+[[dependencies.horizon_enchtips]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "CLIENT"

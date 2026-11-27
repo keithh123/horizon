@@ -23,20 +23,27 @@ CAP = int(os.environ.get("HORIZON_LINES", 15))
 EX_OK, EX_FAIL, EX_USAGE, EX_CRASH, EX_TIMEOUT = 0, 1, 2, 3, 4
 
 # generators in build_all.py order (resolve needs the network and is opt-in)
-ORDER = ["check_deps", "index_ids", "audit_loot", "gen_assets", "gen_datapack", "gen_quests", "audit_quests",
+ORDER = ["check_deps", "index_ids", "audit_loot", "gen_assets", "gen_enchant_tooltips", "gen_datapack", "gen_headquarters", "hq_sim", "kubejs_lint", "gen_quests", "audit_quests",
          "gen_resourcepack", "patch_configs", "gen_profiles", "gen_docs", "gen_checklist"]
-DOWN = {"index_ids": ["gen_datapack", "gen_quests"], "audit_loot": ["gen_datapack"], "gen_assets": ["gen_quests"],
-        "gen_datapack": ["gen_quests"], "gen_quests": ["audit_quests"]}
+DOWN = {"index_ids": ["gen_datapack", "gen_headquarters", "gen_quests"], "audit_loot": ["gen_datapack"], "gen_assets": ["gen_quests"],
+        "gen_datapack": ["gen_headquarters", "gen_quests"], "gen_headquarters": ["hq_sim", "gen_quests"], "gen_quests": ["audit_quests"]}
 RULES = [  # changed source path -> generators that read it (docs/BUILDING.md table)
     (r"^manifests/roster\.json$", ["gen_docs", "gen_checklist"]),
     (r"^manifests/lock\.json$", ["check_deps", "index_ids", "audit_loot", "gen_datapack", "gen_docs", "gen_checklist"]),
     (r"^manifests/(loot_families|expeditions|loot_calibration)\.json$", ["gen_datapack"]),
-    (r"^manifests/legends\.json$", ["gen_assets", "gen_datapack"]),
+    (r"^manifests/legends\.json$", ["gen_assets", "gen_datapack", "gen_headquarters"]),
+    (r"^manifests/headquarters\.json$", ["gen_assets", "gen_headquarters"]),
+    (r"^art/horizon/", ["gen_assets"]),
+    (r"^manifests/enchantment_tooltips\.json$", ["gen_enchant_tooltips"]),
+    (r"^kubejs/server_scripts/horizon_headquarters\.js$", ["hq_sim", "kubejs_lint"]),
+    (r"^kubejs/(server|client|startup)_scripts/.*\.js$", ["kubejs_lint"]),
+    (r"^tests/hq_sim\.js$", ["hq_sim"]),
+    (r"^scripts/quest_campaign\.py$", ["gen_quests"]),
     (r"^manifests/(ports_lock|expansion_audit|validation|baseline_slugs)\.json$", ["gen_checklist"]),
     (r"^profiles/(?!shader_options)[^/]+\.json$", ["gen_profiles"]),
 ]
-OUTPUT_RX = re.compile(r"^(config/heracles/|kubejs/(assets|startup_scripts|client_scripts)/|kubejs/\.generated|resourcepacks/|"
-                       r"datapacks/\.generated|docs/(LOOT_BUDGET|MODLIST|EXPANSION_CHECKLIST)\.md$|"
+OUTPUT_RX = re.compile(r"^(config/heracles/|kubejs/(assets|startup_scripts|client_scripts)/|kubejs/\.generated|resourcepacks/|schematics/|"
+                       r"datapacks/\.generated|docs/(LOOT_BUDGET|MODLIST|EXPANSION_CHECKLIST|HEADQUARTERS|HQ_PLANS|HQ_GRAPH)\.md$|"
                        r"manifests/(ids|loot_audit|loot_report|salvage_report|deps_report|config_changes|a3d_report|expansion_probe)\.|"
                        r"profiles/shader_options\.json$|\.horizon/)")
 
@@ -176,7 +183,14 @@ def run_steps(steps, log):
     res = []
     for s in steps:
         t0 = time.time()
-        rc, tail = sh([sys.executable, f"scripts/{s}.py"] + (["--frozen"] if s == "resolve" else []), log)
+        if s in ("hq_sim", "kubejs_lint"):   # node tests: headquarters ledger core, KubeJS EventExit lint
+            nodeexe = shutil.which("node")
+            if not nodeexe:
+                res.append(f"SKIP {s} (node not installed: NOT run)")
+                continue
+            rc, tail = sh([nodeexe, f"tests/{s}.js"], log)
+        else:
+            rc, tail = sh([sys.executable, f"scripts/{s}.py"] + (["--frozen"] if s == "resolve" else []), log)
         res.append(f"{'ok  ' if rc == 0 else 'FAIL'} {s} ({time.time() - t0:.0f}s)")
         if rc:
             return rc, res + ["  " + t[:160] for t in tail[-4:]]
@@ -185,7 +199,7 @@ def run_steps(steps, log):
 
 def plan_quick(files, net=False, configs=False):
     owned = set()
-    for rel in ("datapacks/.generated.json", "kubejs/.generated-assets.json"):
+    for rel in ("datapacks/.generated.json", "datapacks/.generated-hq.json", "kubejs/.generated-assets.json", "kubejs/.generated-hq.json"):
         p = ROOT / rel
         if p.exists():
             d = json.loads(p.read_text(encoding="utf-8"))

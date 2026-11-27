@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/conservatory",
+  "display": {
+    "icon": {
+      "id": "occultism:golden_sacrificial_bowl"
+    },
+    "title": {
+      "text": "Spirit Circle (Occultism)"
+    },
+    "description": {
+      "text": "Spirits and rituals: a golden sacrificial bowl and a working summoning."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

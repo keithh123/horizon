@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/hall",
+  "display": {
+    "icon": {
+      "id": "horizon:tidebound_doubloon"
+    },
+    "title": {
+      "text": "The Drowned Coast"
+    },
+    "description": {
+      "text": "Wrecks, sunken ruins and monuments. Bring a boat, Respiration and night vision."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

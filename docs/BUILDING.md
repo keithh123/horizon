@@ -11,6 +11,7 @@ python scripts/build_all.py --mrpack   # ...then dist/ProjectHorizon-<version>.m
 ```
 
 `--offline` skips `resolve.py`; `--no-configs` skips `patch_configs.py` (which needs a dev instance that has launched once).
+`build_ports.py` repacks support `nested_edits` (exact edits inside a jar-in-jar entry), used by `ports/terracurio`.
 
 ## Pipeline and file ownership
 
@@ -24,14 +25,18 @@ deleted the whole `datapacks/` directory (taking the structure tag written by `g
 | `check_deps.py` | lock + every jar's `neoforge.mods.toml` (incl. jar-in-jar) | `manifests/deps_report.json` |
 | `index_ids.py` | jars | `manifests/ids.json` (lang/model/data inferred - a validation aid, not runtime proof) |
 | `audit_loot.py` | jars (structure `.nbt`, loot tables, processors, GLMs) | `manifests/loot_audit.json` |
-| `gen_assets.py` | `manifests/legends.json` + item table in the script | files listed in `kubejs/.generated-assets.json` (textures, trophy model, lang, `startup_scripts/horizon_items.js`, `startup_scripts/horizon_data.js`, `client_scripts/horizon_tooltips.js`) |
+| `gen_assets.py` | `manifests/legends.json`, `manifests/headquarters.json`, `art/horizon/*.txt` (pixel masters) + item table in the script | files listed in `kubejs/.generated-assets.json` (textures, trophy model, lang, `startup_scripts/horizon_items.js`, `startup_scripts/horizon_data.js`, `client_scripts/horizon_tooltips.js`) |
 | `gen_datapack.py` | `loot_families.json`, `legends.json`, `expeditions.json`, `loot_audit.json`, `loot_calibration.json`, ids | files listed in `datapacks/.generated.json`; `manifests/loot_report.json`, `manifests/salvage_report.json`, `docs/LOOT_BUDGET.md` |
-| `gen_quests.py` | families, legends, expeditions, generated datapack/asset manifests, ids | `config/heracles/quests/`, `config/heracles/groups.txt` |
+| `gen_headquarters.py` | `manifests/headquarters.json`, legends, families, expeditions, ids, generated family tags | files in `datapacks/.generated-hq.json` (hq mirrors, realm facts, hq recipes incl. Create pressing, service loot, chart tags); `kubejs/startup_scripts/horizon_hq_data.js` + `schematics/horizon_*.nbt` + `docs/HEADQUARTERS.md`, `docs/HQ_PLANS.md`, `docs/HQ_GRAPH.md` (listed in `kubejs/.generated-hq.json`) |
+| `tests/hq_sim.js` (Node) | the core section of `kubejs/server_scripts/horizon_headquarters.js` + `horizon_hq_data.js` | nothing (71 ledger state checks; skipped with a printed warning if Node is missing) |
+| `gen_quests.py` | families, legends, expeditions, headquarters.json, generated datapack/asset/hq manifests, ids | `config/heracles/quests/`, `config/heracles/groups.txt` |
 | `patch_configs.py` | dev instance configs (`PH_INSTANCE`, default `ProjectHorizon-dev`) | exactly the files in its `EDITS` table; `manifests/config_changes.md` |
 | `gen_profiles.py` | `profiles/*.json`, shader zips | `profiles/shader_options.json` |
 | `gen_docs.py` | lock, roster | `docs/MODLIST.md` |
 
-Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_events.js`,
+Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_events.js`, `kubejs/server_scripts/horizon_headquarters.js`,
+`kubejs/client_scripts/horizon_charter_client.js`, `manifests/visual_catalogue.json` (via `scripts/visual_catalogue.py`), `tests/kubejs_lint.js`, `tests/client_qa/*`,
+`config/constructionstick-startup.toml`, `art/horizon/*.txt`, `tests/hq_sim.js`, `tests/server_hq*.txt`,
 `kubejs/server_scripts/horizon_recipes.js`, everything in `manifests/*.json` that is listed as an input above,
 `profiles/*.json`, `profiles/apply-profile.ps1`, `profiles/effects.json`, `options/options.txt`, `tests/*.txt`.
 
@@ -47,6 +52,17 @@ Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_e
    structures (jigsaw repeats included) into `manifests/loot_calibration.json`, which the budget solver then uses.
 4. **Client / gameplay:** see `docs/VALIDATION_REPORT.md` for what was played by hand and what was not.
 
+## Headquarters checks
+
+- `node tests/hq_sim.js` - ledger state paths (double clicks, replays, parties, offline credit, independent stations,
+  dormant/moved charters, services, fixtures, migration, full campaign) against the real core code.
+- Dedicated server (Linux or Windows): `python scripts/build.py server <dir> --accept-eula` (an installed NeoForge server;
+  `run.sh` or `run.bat`), then `python scripts/server_test.py <dir> hqtest <seed> tests/server_hq.txt` on a **disposable**
+  world; `tests/server_hq_restart.txt` on the same world afterwards checks persistence. `/horizon hqadmin selftest` drives
+  Outpost -> Workshop with a FakePlayer (fixture evidence, not a playthrough).
+- Rhino in KubeJS 2101 rejects block-scoped `const`/`let` inside function bodies at run time; the headquarters script uses
+  function-scoped `var` there (Node accepts both, so `hq_sim.js` cannot catch this - the server test does).
+
 ## Test instances
 
 - `python scripts/build.py instance --name ProjectHorizon-expansion` builds/updates a Prism instance. Updating an
@@ -58,3 +74,18 @@ Hand-written sources that no generator touches: `kubejs/server_scripts/horizon_e
 - `python scripts/patch_micimmptl.py <orig.jar> <patched.jar>` disables the Voxy mixins of Make it Compatible: Immersive Portals
   (incompatible with Voxy 0.2.16-beta). Instance-only: the add-on is not shipped.
 - `python scripts/patch_visualoverhaul.py <orig.jar> <patched.jar>` removes Visual Overhaul's first-launch resource-pack mixin (NPE in `MidnightConfig.write` when the main thread beats mod construction; seeding `visualoverhaul.json` does not prevent it). Built-in packs must be enabled once by hand.
+
+## Client QA harness (0.6.1)
+
+`tests/client_qa/` drives a **disposable copy** of an instance through the real client, without mouse/keyboard input:
+`zz_horizon_qa.js` (copied into the clone's `kubejs/client_scripts/`, never shipped) polls `horizon_qa/cmd.json` and runs
+chat commands, the use/attack keys (`KeyMapping.click`, the same path a mouse click takes), screen widget dumps and clicks,
+GUI scale, render distance, Iris shader toggles, FPS sampling and screenshots. `qa.py` sends a batch and waits;
+`render_matrix.py` (shader/weather/LOD scenes), `fp_matrix.py` (first-person equipment), `thumbs.py` (review images) and
+`restart_vtest.ps1` (stops ONLY the clone's game, verified by its log lock, restores the test save from the backup).
+Limits: Rhino cannot see some methods (`getGameTime`, `setYRot`; use `/tp` rotations), `java.lang.Runtime` is class-filtered,
+and owo-lib layer buttons (Accessories) do not receive `Screen.mouseClicked` calls.
+
+`python scripts/build.py instance --name <existing>` keeps the instance's `instance.cfg` (UUID, name, Java, memory),
+`options.txt` (only the resource-pack lines change; render distance below 3 is reported, not changed) and `config/iris.properties`; it is idempotent
+(second run changes nothing) and removes `.jar.disabled` twins of mods that are now enabled by default.

@@ -1,5 +1,66 @@
 # Changelog
 
+## 0.6.1 - visual, interaction and rendering repair (2026-11-26)
+
+Installed in place into the existing `ProjectHorizon-0.6.0` Prism instance (same name/UUID); the artifact is 0.6.1.
+
+**Fixed (each reproduced first in a real client on a copy of the affected world; docs/VALIDATION_REPORT.md 0.6.1).**
+- Survey Charter right-click did nothing: KubeJS 2101 `event.cancel()` throws `EventExit`; it was the handler's first
+  statement. `cancel()` is now last; the off-hand pass is consumed (an off-hand torch used to be placed against the charter);
+  new `tests/kubejs_lint.js` guards every KubeJS exit call.
+- Attributes and Accessories inventory buttons overlapped: Apothic's button moves to the preview's top-left corner (28,10).
+- Shaders OFF + rain/thunder hid the whole landscape: caused by Weather Glass 0.6.2 (client bisection); it moves to the lab
+  variant. Rain, splashes and ripples stay with Particle Rain.
+- Render distance 2 (Voxy warns about LOD culling below 3): the updater warns below 3 but keeps the player's setting.
+- Updater (`build.py instance`): keeps instance.cfg identity/Java/memory, options.txt and the shader choice; UTF-8 pack names
+  (0.6.0 duplicated "Vocal Villagers" as mojibake); keeps the player's accepted-incompatible packs; removes stale
+  `.jar.disabled` twins; idempotent.
+
+**First person and animation.** First-person Model + Not Enough Animations + FPM x Compat now ship ON. FA Player Extension owns
+player movement, blended with Better Combat and Iron's casting by Entity Player Compat 2.2.3; Punchy! keeps first-person hands.
+Punchy! Moves and Fluid & Foolish are removed (Punchy Moves flags every FA Player pack as conflicting).
+
+**Visual stack.** Mandala's GUI Dark Mode + mod compatibility packs; Fresh Animations Objects, Player, V&V patch, Fresh Compats
+enabled; Fancy Crops, 3D Default, Remodeled Doors, 3D Rails, Better Leaves, Fresh Flower Pots (+compats), Just 3D Potions.
+Modefite added so a player-enabled Fresh Food works. Every one of the 73 researched projects has a recorded disposition:
+`manifests/visual_catalogue.json` (docs/RESOURCE_PACKS.md).
+
+## 0.6.0 - the headquarters campaign (2026-11-26)
+
+**Campaign.** A Meridian Survey Charter, placed anywhere in the open world, anchors six stations commissioned in order:
+I. Outpost, II. Workshop, III. Expedition Hall (2 of 3 regions), IV. Arcane Conservatory (1 of Ars / Iron's / Occultism),
+V. Foundry and Logistics (1 of Mekanism / MI / Powah), VI. Observatory and Horizon Beacon (3 of 7 realms, 2 of 13 great
+legends, 1 of 3 trials). Source of truth: `manifests/headquarters.json`; generator `scripts/gen_headquarters.py`; server
+ledger `kubejs/server_scripts/horizon_headquarters.js` (authoritative, idempotent, party-aware, migration-versioned).
+- Charter panel (chat-based screen with clickable, server-revalidated buttons): status, ticks/crosses per requirement,
+  alternatives, contribution counts, next unlock, [Commission], [Contribute], services, members, invite/leave.
+- Proof without borrowed machines: bounded room scan around the charter, builtin "machine ran" advancements, and receipts that
+  exist only as machine output (Survey Plate = Create pressing; enriched iron; energized steel).
+- Services: Supply Crate (daily, per headquarters; Foundry upgrades it), Tide/Archive/Landmark/Lair/Horizon charts (per
+  player, cost a map + Wayfarer Shards), Ward of Passage (resistance + fire resistance, daily). No service mints relics.
+- New items/blocks (original art, `art/horizon/*.txt`): Founding Kit (given once per player, old saves too), Survey Charter,
+  Survey Blank/Plate, Discovery Case, Observatory Lens (one Starforged Heart), Horizon Beacon, six Station Emblems.
+- Quests: new main spine `0 - Headquarters Campaign` (19 quests, mirrors of the ledger, XP-only rewards). The 0.5 acts chapter
+  is now `0b - The Expedition Road (branch)` with the same folder and ids; all 214 old ids preserved. Atlas quests gain a
+  "Brings home" line per structure family. Quest audit now rejects overlapping icons and non-mirror stage quests.
+- Optional plans: 7 Create schematics (`schematics/`, incl. a ruined-outpost restoration) with material bills (docs/HQ_PLANS.md).
+- Progression graph with alternatives per requirement; the build fails on a luck-only bottleneck (docs/HQ_GRAPH.md).
+- Cues: `cue.commission`, `cue.contribution`, `cue.finale` (vanilla events, subtitled; subtitles now also in KubeJS lang).
+
+**Mods.** Added Construction Sticks 1.5.0, FramedBlocks 10.6.3, Handcrafted 4.0.3, Create Deco 2.1.3, Comforts 9.0.5;
+First-person Model 2.7.3 + Not Enough Animations 1.12.7 + FPM Compat 1.2.1 as a disabled optional preset; Fresh Compats v1.6
+shipped but not enabled. Deferred with reasons: AStages, Open Parties and Claims, Exposure and the other conditional
+candidates (docs/HQ_BASELINE.md). No mod upgraded or removed.
+
+**Server fixes (the dedicated server did not boot in 0.5).** Controlify marked client-only; Terra Curio replaced by
+`ports/terracurio` (LGPL repack moving its embedded ParticleStorm's GeckoLib mixins to the client list). `build.py server`
+and `server_test.py` run on Linux. `build_ports.py` gains `nested_edits`.
+
+**Build.** `gen_headquarters.py` and the Node ledger tests (`tests/hq_sim.js`) are in `build_all.py` and in the
+quick-check routing; generated outputs regenerated from the real lock (the committed ones came from a partial jar index);
+`.gitattributes` keeps generated files LF on every platform; new `scripts/mrpack_install.py` (headless .mrpack install + verify).
+
+
 ## 0.5 quest-book fixes and accessory/zoom mods (2026-11-23, not yet built or launched)
 
 - **Trophy icons (chapters 0, 12):** the `ProjectHorizon-0.5` instance still had the pre-0.3.1 `horizon_items.js`

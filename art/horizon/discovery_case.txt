@@ -1,0 +1,26 @@
+@ block
+W 5a3b22
+w 7a5230
+B a9822f
+b d9b24a
+g cfeef0
+G 9fd6dc
+S 35a37a
+s 9cf5cf
+---
+BBBBBBBBBBBBBBBB
+Bg............gB
+B.g...........GB
+B..............B
+B..............B
+B.......s......B
+B......sSs.....B
+B......SsS.....B
+B.....sSSSs....B
+B......SSS.....B
+B.......S......B
+B..............B
+bbbbbbbbbbbbbbbb
+wwwwwwwwwwwwwwww
+WwwwwwWwwwwwwWww
+WWWWWWWWWWWWWWWW

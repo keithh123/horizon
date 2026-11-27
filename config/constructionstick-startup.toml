@@ -1,0 +1,6 @@
+# Project Horizon 0.6 (hand-written; FML fills every other key with the mod default).
+# Sticks may not place blocks that carry block entities (chests, barrels, machines, shulker boxes): a whitelist with no
+# entries. Containers are placed by hand, so the stick can never create, empty or duplicate a container's contents.
+[blockentity]
+	BEList = []
+	BEWhitelist = true

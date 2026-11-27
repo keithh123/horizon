@@ -11,7 +11,8 @@ A = lambda s: ("adv", s)
 L = lambda b: ("adv", "horizon:legend/" + b)
 ATL = lambda f: ("adv", "horizon:atlas/" + f)
 
-CAMPAIGN = "0 - The Horizon Campaign"
+CAMPAIGN = "0b - The Expedition Road (branch)"
+CAMPAIGN_FOLDER = "0thehorizoncampaign"   # 0.5 chapter name; the folder (and so every quest id) is kept stable
 BOUNTY = "14 - Bounties and Hunts"
 DISCOVER = "15 - Discoveries and Relics"
 
@@ -22,7 +23,7 @@ C[CAMPAIGN] = [
     ("c_begin", "Act I: The Horizon Calls", "minecraft:compass",
      ["&6ACT I - THE BEGINNING&r",
       "Something lies past the edge of every map: old ruins, sleeping giants, doors in the sky. You have a pack, a pickaxe",
-      "and a long road. This chapter is the recommended path through Project Horizon; every other chapter is a side road."],
+      "and a long road. The Headquarters Campaign is the main path; this road is the expedition checklist that runs beside it."],
      [], [("check",)], [("item", "minecraft:cooked_beef", 12), ("item", "minecraft:torch", 16)]),
     ("c_iron", "Iron Age", "minecraft:iron_pickaxe", ["Iron is the first real upgrade: armour, a shield and a bucket."],
      ["c_begin"], [A("minecraft:story/smelt_iron")], [("item", "minecraft:shield", 1), ("item", "minecraft:coal", 16)]),
@@ -228,7 +229,7 @@ C[DISCOVER] = [
 ]
 
 GUIDE = {
-    "c_begin": ("Click Check.", "Opens the campaign. Everything else is optional."),
+    "c_begin": ("Click Check.", "Opens the expedition road: the adventures each headquarters stage sends you on."),
     "c_iron": ("Smelt an iron ingot.", "Iron armour and a shield make early fights survivable."),
     "c_bed": ("Sleep through a night.", "Sets your spawn point."),
     "c_diamond": ("Mine a diamond.", "Unlocks enchanting and the first gem tiers."),

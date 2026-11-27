@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "gateways:gate_pearl"
+      }
+    },
+    "title": "{\"text\": \"Beyond the Line\"}",
+    "description": [
+      "The Lantern Line is open. What remains is optional mastery: every legend in the Hall of Legends, every realm,",
+      "the third region and the other research routes, and the Horizon Gauntlet.",
+      "",
+      "&aDo:&r Click Check.",
+      "&6You get:&r Opens the post-campaign goals; nothing here gates anything."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          560,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_observatory"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:check"
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 10
+    }
+  }
+}

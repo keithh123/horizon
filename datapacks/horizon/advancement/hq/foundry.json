@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/conservatory",
+  "display": {
+    "icon": {
+      "id": "horizon:emblem_foundry"
+    },
+    "title": {
+      "text": "V. Foundry and Logistics"
+    },
+    "description": {
+      "text": "Assemble precision mechanisms, run one electrical processing route and network your storage."
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

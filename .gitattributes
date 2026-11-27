@@ -1,0 +1,7 @@
+# Generated files are written with LF on every platform; keep the repository EOL-stable (0.6, docs/HQ_BASELINE.md).
+* text=auto eol=lf
+*.png binary
+*.zip binary
+*.jar binary
+*.nbt binary
+*.mrpack binary

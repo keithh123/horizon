@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#horizon:family/landmark",
+      "required": false
+    },
+    {
+      "id": "#horizon:family/boss_lair",
+      "required": false
+    },
+    {
+      "id": "#horizon:family/ocean",
+      "required": false
+    }
+  ]
+}

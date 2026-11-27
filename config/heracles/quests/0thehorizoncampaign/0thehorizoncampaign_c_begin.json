@@ -10,13 +10,13 @@
     "description": [
       "&6ACT I - THE BEGINNING&r",
       "Something lies past the edge of every map: old ruins, sleeping giants, doors in the sky. You have a pack, a pickaxe",
-      "and a long road. This chapter is the recommended path through Project Horizon; every other chapter is a side road.",
+      "and a long road. The Headquarters Campaign is the main path; this road is the expedition checklist that runs beside it.",
       "",
       "&aDo:&r Click Check.",
-      "&6You get:&r Opens the campaign. Everything else is optional."
+      "&6You get:&r Opens the expedition road: the adventures each headquarters stage sends you on."
     ],
     "groups": {
-      "0 - The Horizon Campaign": {
+      "0b - The Expedition Road (branch)": {
         "position": [
           0,
           120

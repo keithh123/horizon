@@ -11,6 +11,7 @@ Fabric jars loaded by Roxy (voxy) are reported separately: FML never sees them.
 """
 import io, json, os, re, sys, tomllib, zipfile
 from pathlib import Path
+import sys as _sys; _sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 LONG = chr(92) * 2 + '?' + chr(92)
@@ -120,6 +121,7 @@ def scan(z, owner, mods, deps, fabric):
 
 def main():
     lock = json.loads((ROOT / "manifests/lock.json").read_text())
+    lock = __import__('shipped', fromlist=['with_ports']).with_ports(lock)   # + shipped port jars (scripts/shipped.py)
     mods, deps, fabric = {}, [], []
     for m in lock["mods"]:
         scan(zipfile.ZipFile(CACHE / m["file"]), m["slug"], mods, deps, fabric)

@@ -1,0 +1,25 @@
+@ item
+K 2b1d12
+B 7a5a1f
+b a9822f
+y d9b24a
+w f2d27a
+T 2aa9a0
+t 6ee6d8
+---
+................
+................
+..KKKKKKKKKKKK..
+..KwyyyyyyyyyK..
+..KyybbbTbbbyK..
+..KybbbbTbbbbK..
+..KybTttTttTbK..
+..KyTbbbtbbbTK..
+..KybTttTttTbK..
+..KybbbbTbbbbK..
+..KybbbbTbbbyK..
+..KyybbbbbbbyK..
+..KyBBBBBBBBBK..
+..KKKKKKKKKKKK..
+................
+................

@@ -25,12 +25,15 @@ IDS = {k: set(v) for k, v in json.loads((ROOT / "manifests/ids.json").read_text(
 FAM = json.loads((ROOT / "manifests/loot_families.json").read_text(encoding="utf-8"))
 LEG = json.loads((ROOT / "manifests/legends.json").read_text(encoding="utf-8"))
 EXP = json.loads((ROOT / "manifests/expeditions.json").read_text(encoding="utf-8"))
-GEN = json.loads((ROOT / "datapacks/.generated.json").read_text())["files"]
+GEN = json.loads((ROOT / "datapacks/.generated.json").read_text())["files"] + \
+    json.loads((ROOT / "datapacks/.generated-hq.json").read_text())["files"]   # headquarters mirrors/recipes (gen_headquarters.py)
+HQ = json.loads((ROOT / "manifests/headquarters.json").read_text(encoding="utf-8"))
 HORIZON_ADV = {"horizon:" + f.split("horizon/advancement/")[1][:-5] for f in GEN if f.startswith("horizon/advancement/")}
 HORIZON_LOOT = {"horizon:" + f.split("horizon/loot_table/")[1][:-5] for f in GEN if f.startswith("horizon/loot_table/")}
 HORIZON_RECIPES = {"horizon:" + f.split("horizon/recipe/")[1][:-5] for f in GEN if f.startswith("horizon/recipe/")}
 ASSETS = json.loads((ROOT / "kubejs/.generated-assets.json").read_text())["files"]
-HORIZON_ITEMS = {"horizon:" + f.rsplit("/", 1)[1][:-4] for f in ASSETS if "/textures/item/" in f} | \
+HORIZON_ITEMS = set(HQ["items"]) | set(HQ["blocks"]) | {f"horizon:emblem_{s['id']}" for s in HQ["stages"]} | \
+                {"horizon:" + f.rsplit("/", 1)[1][:-4] for f in ASSETS if "/textures/item/" in f} | \
                 {"horizon:" + f.rsplit("/", 1)[1][:-4] for f in ASSETS if "/textures/block/trophy_" in f}
 OUT = ROOT / "config" / "heracles"
 VANILLA_DIMS = {"minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"}
@@ -41,7 +44,7 @@ F = FAM["families"]
 def fam_desc(f):
     d = F[f]
     return [d["identity"], "", "&ePrepare:&r " + d["prep"], "&eSignature rewards:&r " + d["signature"],
-            "&eComing back:&r " + d["repeat"], "&eFeeds into:&r " + d["connects"]]
+            "&eComing back:&r " + d["repeat"], "&eFeeds into:&r " + d["connects"], "&eBrings home:&r " + d["home"]]
 
 
 C = {}
@@ -393,12 +396,80 @@ mastery.append(("perfect_gem", "Gem Cutter's Bench", "apotheosis:gem_cutting_tab
                 ["builds"], [("item", "apotheosis:gem_cutting_table", 1)], [("xp", 20)]))
 C["13 - Mastery and Trials"] = mastery
 
+# ---------------------------------------------------------------- 0.6 headquarters campaign (main spine)
+# Every quest here completes on a horizon:hq/* advancement that the server grants only after recording the stage in its
+# ledger (kubejs/server_scripts/horizon_headquarters.js). The quests explain; the charter commissions. Rewards are XP only:
+# each station's real rewards are paid once per headquarters by the charter, so a party never multiplies them.
+HQ_CHAPTER = "0 - Headquarters Campaign"
+HQ_POS = {}
+HQ_GUIDE = {}
+
+
+def hq_chapter():
+    out, prev = [], "hq_charter"
+    prem = HQ["fiction"]["premise"]
+    out.append(("hq_charter", "The Last Charter", "horizon:survey_charter",
+                ["&6THE LANTERN LINE&r", *prem, "",
+                 "Unpack the &eFounding Kit&r, place the &eSurvey Charter&r where your base will grow and right-click it.",
+                 "The charter's panel shows what each station needs; its &a[Commission]&r button does the work. Friends join by invitation."],
+                [], [("adv", "horizon:hq/root")], [("xp", 2)]))
+    HQ_POS["hq_charter"] = (0, 2)
+    HQ_GUIDE["hq_charter"] = ("Place a Survey Charter and click Found a headquarters on its panel.",
+                           "Your station exists: the charter is its anchor, and every stage below is commissioned there.")
+    for i, s in enumerate(HQ["stages"]):
+        qid = f"hq_{s['id']}"
+        reqs = [f"&7- {r['text']}&r" for r in s["requirements"]]
+        if s.get("choices"):
+            reqs.append(f"&7- {s['choices']['title']}: {s['choices']['min']} of {len(s['choices']['options'])} (see the branches)&r")
+        cost = ", ".join(f"{n}x {c.split(':')[1].replace('_', ' ')}" for c, n in s["cost"])
+        out.append((qid, f"{s['numeral']}. {s['title']}", f"horizon:emblem_{s['id']}",
+                    [f"&6STATION {s['numeral']}&r  {s['summary']}", "", f"&eWhy:&r {s['why']}", "", "&eNeeds at the station:&r", *reqs,
+                     f"&eContribution (consumed once):&r {cost}", f"&eUnlocks:&r {s['unlocks']}",
+                     "&7Commission it from the charter panel. This quest completes by itself when the station records it.&r"],
+                    [prev], [("adv", f"horizon:hq/{s['id']}")], [("xp", 3 + 2 * i)]))
+        HQ_GUIDE[qid] = (f"Commission {s['title']} at your charter.", s["next"])
+        HQ_POS[qid] = (2 + 2 * i, 2)
+        for j, o in enumerate((s.get("choices") or {}).get("options", [])):
+            oid = f"hq_{s['id']}_{o['id']}"
+            out.append((oid, o["title"], o["icon"], [o["summary"], "", "&eCounts:&r " + "; ".join(r["text"] for r in o["requirements"]),
+                        "&eContribution:&r " + ", ".join(f"{n}x {c.split(':')[1].replace('_', ' ')}" for c, n in o["cost"]),
+                        "&eAdds to the station:&r " + o["contribution"]],
+                        [prev], [("adv", f"horizon:hq/{s['id']}/{o['id']}")], [("xp", 2)]))
+            HQ_GUIDE[oid] = (f"Contribute {o['title']} at the charter panel.", o["contribution"])
+            HQ_POS[oid] = (1 + 2 * i + j, 4 + (i % 2))   # branches under their stage; alternate rows so neighbours never overlap
+        prev = qid
+    # guidance for the two crafted proofs (item tasks only explain; the charter consumes the real thing)
+    out.append(("hq_plates", "Pressed True", "horizon:survey_plate",
+                ["Craft Survey Blanks (andesite alloy, copper ingot, iron nugget) and put them under a Create &eMechanical Press&r",
+                 "on a depot or belt. Only a press makes Survey Plates. The Workshop consumes four."],
+                ["hq_outpost"], [("item", "horizon:survey_plate", 4)], [("xp", 2)]))
+    HQ_GUIDE["hq_plates"] = ("Hold 4 Survey Plates pressed by a Mechanical Press.", "Proof that your press line runs; the Workshop needs them.")
+    HQ_POS["hq_plates"] = (3, 0)
+    out.append(("hq_lens", "The Great Lens", "horizon:observatory_lens",
+                ["Brass, tinted glass, a spyglass and one &dStarforged Heart&r make the Observatory Lens.",
+                 "Place it at the station: the Observatory needs to see it there."],
+                ["hq_foundry"], [("item", "horizon:observatory_lens", 1)], [("xp", 5)]))
+    HQ_GUIDE["hq_lens"] = ("Craft the Observatory Lens.", "The capstone's centrepiece: the only late relic gate of the campaign.")
+    HQ_POS["hq_lens"] = (11, 0)
+    out.append(("hq_beyond", "Beyond the Line", "gateways:gate_pearl",
+                ["The Lantern Line is open. What remains is optional mastery: every legend in the Hall of Legends, every realm,",
+                 "the third region and the other research routes, and the Horizon Gauntlet."],
+                ["hq_observatory"], [("check",)], [("xp", 10)]))
+    HQ_GUIDE["hq_beyond"] = ("Click Check.", "Opens the post-campaign goals; nothing here gates anything.")
+    HQ_POS["hq_beyond"] = (14, 2)
+    return out
+
+
+C[HQ_CHAPTER] = hq_chapter()
+
 # ---------------------------------------------------------------- 0.5 campaign / bounty / discovery chapters
 import quest_campaign as _qc
 _rest = dict(C)
 C.clear()
+C[HQ_CHAPTER] = _rest.pop(HQ_CHAPTER)
 C[_qc.CAMPAIGN] = _qc.C[_qc.CAMPAIGN]
 C.update(_rest)
+FOLDERS = {_qc.CAMPAIGN: _qc.CAMPAIGN_FOLDER}   # renamed chapters keep their 0.5 folder so quest ids and progress survive
 C[_qc.BOUNTY] = _qc.C[_qc.BOUNTY]
 C[_qc.DISCOVER] = _qc.C[_qc.DISCOVER]
 
@@ -499,6 +570,7 @@ GUIDE = {
 
 
 GUIDE.update(_qc.GUIDE)
+GUIDE.update(HQ_GUIDE)
 
 
 def objective_why(qid, title):
@@ -633,6 +705,8 @@ def layout(chapter, quests):
         pos["perfect_gem"] = [6 * 40, 0]
         grid([trials], pos, y0=y + 10, wrap=6)
         return pos
+    if chapter == HQ_CHAPTER:
+        return {k: [v[0] * 40, v[1] * 38] for k, v in HQ_POS.items()}
     if chapter in _qc.POS:
         return {k: [v[0] * 44, v[1] * 40] for k, v in _qc.POS[chapter].items()} |                {i: [0, 0] for i in ids if i not in _qc.POS[chapter]}
     # default: columns by depth; the longest prerequisite chain stays on row 0 as the main path, side branches fall below it
@@ -669,7 +743,7 @@ def main():
     for chapter, quests in C.items():
         ids = {q[0] for q in quests}
         pos = layout(chapter, quests)
-        folder = "".join(ch for ch in chapter.lower() if ch.isalnum())
+        folder = FOLDERS.get(chapter) or "".join(ch for ch in chapter.lower() if ch.isalnum())
         for qid, title, icon, desc, deps, tasks, rewards in quests:
             for dep in deps:
                 assert dep in ids, f"{qid}: dependency {dep} not in chapter"

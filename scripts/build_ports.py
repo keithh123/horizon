@@ -4,6 +4,7 @@ exact hashes in manifests/ports_lock.json (consumed by build.py for instances, s
 Kinds:
   repack  - download an upstream jar (pinned URL + sha512), apply exact text edits to named entries,
             and write a deterministic jar (sorted entries, fixed timestamps) so the hash is reproducible.
+            "nested_edits" applies the same exact edits inside a jar-in-jar entry (re-zipped deterministically).
   wrap    - turn an upstream datapack/resource zip into a NeoForge mod jar by adding a neoforge.mods.toml
             (+ pack.mcmeta untouched). Deterministic like repack.
   gradle  - compile a source port in ports/<name>/src with its Gradle wrapper (ModDevGradle) and copy
@@ -80,6 +81,21 @@ def build(name, spec):
                     raise SystemExit(f"{name}: edit {old!r} matched {text.count(old)} times in {path}")
                 text = text.replace(old, new)
             entries[path] = text.encode("utf-8")
+        for inner, files in spec.get("nested_edits", {}).items():   # edits inside an embedded (jar-in-jar) jar
+            nested = {i.filename: zipfile.ZipFile(io.BytesIO(entries[inner])).read(i) for i in zipfile.ZipFile(io.BytesIO(entries[inner])).infolist() if not i.is_dir()}
+            for path, edits in files.items():
+                text = nested[path].decode("utf-8")
+                for old, new in edits:
+                    if text.count(old) != 1:
+                        raise SystemExit(f"{name}: nested edit {old!r} matched {text.count(old)} times in {inner}!{path}")
+                    text = text.replace(old, new)
+                nested[path] = text.encode("utf-8")
+            buf = io.BytesIO()
+            with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as z:
+                for n in sorted(nested):
+                    info = zipfile.ZipInfo(n, EPOCH); info.compress_type = zipfile.ZIP_DEFLATED; info.external_attr = 0o644 << 16
+                    z.writestr(info, nested[n])
+            entries[inner] = buf.getvalue()
         for path, rel in {**spec.get("add", {}), **gen.get("add", {})}.items():
             entries[path] = (PORTS / name / rel).read_bytes()
         metadata = "META-INF/neoforge.mods.toml"

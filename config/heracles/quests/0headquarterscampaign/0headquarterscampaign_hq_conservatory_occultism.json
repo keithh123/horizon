@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "occultism:golden_sacrificial_bowl"
+      }
+    },
+    "title": "{\"text\": \"Spirit Circle (Occultism)\"}",
+    "description": [
+      "Spirits and rituals: a golden sacrificial bowl and a working summoning.",
+      "",
+      "&eCounts:&r Complete a spirit summoning ritual; A golden sacrificial bowl at the station",
+      "&eContribution:&r 2x chalk white",
+      "&eAdds to the station:&r Spirit ledgers on the archive shelves.",
+      "",
+      "&aDo:&r Contribute Spirit Circle (Occultism) at the charter panel.",
+      "&6You get:&r Spirit ledgers on the archive shelves."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          360,
+          190
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_hall"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/conservatory/occultism"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

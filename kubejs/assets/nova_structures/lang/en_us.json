@@ -1,0 +1,18 @@
+{
+  "enchantment.nova_structures.antidote.desc": "Immune to magic damage (e.g. potions); poison wears down the chestplate.",
+  "enchantment.nova_structures.boss_behaviour.desc": "Boss-only marker for Dungeons and Taverns bosses. Not obtainable gear.",
+  "enchantment.nova_structures.conductivity_curse.desc": "During thunderstorms under open sky, lightning may strike you.",
+  "enchantment.nova_structures.ghasted.desc": "Crossbow arrows explode in fire on impact (can break blocks); slower charge.",
+  "enchantment.nova_structures.gravity.desc": "Crossbow arrow impacts pull nearby entities in; stronger per level.",
+  "enchantment.nova_structures.illagers_bane.desc": "+2.5 damage per level against illagers and related mobs.",
+  "enchantment.nova_structures.multishot.desc": "Tri-Shot: bow fires 3 arrows in a spread.",
+  "enchantment.nova_structures.outreach.desc": "+0.5 block-interaction reach per level (not attack reach).",
+  "enchantment.nova_structures.photosynthesis.desc": "Slowly repairs itself in clear daylight under open sky.",
+  "enchantment.nova_structures.piercing.desc": "Bow arrows pass through multiple entities.",
+  "enchantment.nova_structures.power.desc": "Might: crossbow arrows deal more damage.",
+  "enchantment.nova_structures.shulker_boss.desc": "Boss-only marker: victims get Levitation II for 15 s. Not obtainable gear.",
+  "enchantment.nova_structures.shulker_miniboss.desc": "Boss-only marker: victims get Levitation III for 5 s. Not obtainable gear.",
+  "enchantment.nova_structures.traveler.desc": "Sprinting on ground: faster and steps up small ledges; occasional boot wear.",
+  "enchantment.nova_structures.wax_wings.desc": "Elytra no longer wears normally, but fast flight (worst in high, sunny skies) damages it.",
+  "enchantment.nova_structures.wither_coated.desc": "Hits inflict Wither for 8-10 s; extra weapon wear."
+}

@@ -1,0 +1,23 @@
+{
+  "parent": "horizon:hq/hall",
+  "display": {
+    "icon": {
+      "id": "horizon:ancient_core"
+    },
+    "title": {
+      "text": "The High Landmarks"
+    },
+    "description": {
+      "text": "Great landmarks and the mini-bosses that keep them. Bring rare gear, healing and a way home."
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "ledger": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

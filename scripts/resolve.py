@@ -121,7 +121,9 @@ def main():
         proj = get(f"/project/{v['project_id']}")
         packs.append({"slug": s["slug"], "title": proj["title"], "project_id": v["project_id"], "version": v["version_number"],
                       "version_id": v["id"], "file": f["filename"], "url": f["url"], "size": f["size"], "hashes": f["hashes"],
-                      "license": proj["license"]["id"], "pack_format_note": s.get("note", ""), "why": s["why"]})
+                      "license": proj["license"]["id"], "pack_format_note": s.get("note", ""), "why": s["why"],
+                      "enabled_by_default": s.get("enabled_by_default", True),
+                      "accept_newer_format": s.get("accept_newer_format", False)})
 
     mods = sorted(resolved.values(), key=lambda m: (m["group"], m["slug"]))
     lock = {"minecraft": mc, "loader": loader, "loader_version": roster["loader_version"],

@@ -76,5 +76,38 @@
         "pitch": 1.35
       }
     ]
+  },
+  "cue.commission": {
+    "subtitle": "horizon.subtitle.commission",
+    "sounds": [
+      {
+        "name": "minecraft:block.beacon.activate",
+        "type": "event",
+        "volume": 0.55,
+        "pitch": 1.25
+      }
+    ]
+  },
+  "cue.contribution": {
+    "subtitle": "horizon.subtitle.contribution",
+    "sounds": [
+      {
+        "name": "minecraft:ui.cartography_table.take_result",
+        "type": "event",
+        "volume": 0.8,
+        "pitch": 0.9
+      }
+    ]
+  },
+  "cue.finale": {
+    "subtitle": "horizon.subtitle.finale",
+    "sounds": [
+      {
+        "name": "minecraft:ui.toast.challenge_complete",
+        "type": "event",
+        "volume": 0.7,
+        "pitch": 0.85
+      }
+    ]
   }
 }

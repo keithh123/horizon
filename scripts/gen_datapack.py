@@ -21,6 +21,7 @@ Every id is checked against manifests/ids.json; unknown ids abort the build.
 import json, math, os, re, statistics, zipfile
 from collections import defaultdict
 from pathlib import Path
+import sys as _sys; _sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 ROOT = Path(__file__).resolve().parent.parent
 LONG = chr(92) * 2 + '?' + chr(92)  # Windows long-path prefix \?\ - the repo may live deep on disk
@@ -31,6 +32,7 @@ OWNED = OUT / ".generated.json"
 CACHE = Path(os.environ.get("PH_CACHE", Path.home() / ".cache" / "project-horizon" / "jars"))
 IDS = json.loads((ROOT / "manifests/ids.json").read_text())
 LOCK = json.loads((ROOT / "manifests/lock.json").read_text())
+LOCK = __import__('shipped', fromlist=['with_ports']).with_ports(LOCK)   # + shipped port jars (scripts/shipped.py)
 FAM = json.loads((ROOT / "manifests/loot_families.json").read_text(encoding="utf-8"))
 LEG = json.loads((ROOT / "manifests/legends.json").read_text(encoding="utf-8"))
 AUDIT = json.loads((ROOT / "manifests/loot_audit.json").read_text())

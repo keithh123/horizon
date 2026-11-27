@@ -9,6 +9,9 @@ Order (each step owns disjoint outputs, see docs/BUILDING.md):
   audit_loot         manifests/loot_audit.json
   gen_assets         kubejs/assets, kubejs/startup_scripts, kubejs/client_scripts (listed in kubejs/.generated-assets.json)
   gen_datapack       datapacks/** listed in datapacks/.generated.json, docs/LOOT_BUDGET.md, loot/salvage reports
+  gen_headquarters   datapacks/** in datapacks/.generated-hq.json, kubejs/startup_scripts/horizon_hq_data.js, schematics/,
+                     docs/HEADQUARTERS.md, docs/HQ_PLANS.md (manifests/headquarters.json)
+  hq_sim (node)      tests/hq_sim.js: headquarters ledger state paths against the generated data
   gen_quests         config/heracles/quests, config/heracles/groups.txt
   patch_configs      the config files listed in its EDITS (needs a launched dev instance; --no-configs skips)
   gen_profiles       profiles/shader_options.json
@@ -17,14 +20,15 @@ Order (each step owns disjoint outputs, see docs/BUILDING.md):
 Then the whole pipeline runs a second time and every owned output is hashed before/after: any difference
 means a generator is not deterministic and the build fails.
 """
-import hashlib, os, subprocess, sys
+import hashlib, os, shutil, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 LONG = chr(92) * 2 + '?' + chr(92)
 if os.name == "nt" and not str(ROOT).startswith(LONG):
     ROOT = Path(LONG + str(ROOT))
-OWNED_DIRS = ["datapacks", "kubejs", "config", "manifests", "profiles", "resourcepacks", "docs/LOOT_BUDGET.md", "docs/MODLIST.md", "docs/EXPANSION_CHECKLIST.md"]
+OWNED_DIRS = ["datapacks", "kubejs", "config", "manifests", "profiles", "resourcepacks", "schematics", "docs/LOOT_BUDGET.md", "docs/MODLIST.md",
+              "docs/EXPANSION_CHECKLIST.md", "docs/HEADQUARTERS.md", "docs/HQ_PLANS.md", "docs/HQ_GRAPH.md"]
 SKIP = {"lock.json", "deps_report.json", "ports_lock.json"}   # lock carries a date; resolve is network-dependent
 
 
@@ -32,6 +36,15 @@ def step(*args):
     r = subprocess.run([sys.executable, *args], cwd=ROOT)
     if r.returncode:
         raise SystemExit(f"step failed: {' '.join(args)}")
+
+
+def node(script):
+    exe = shutil.which("node")
+    if not exe:
+        print(f"SKIPPED {script}: node not found (headquarters ledger tests not run; install Node 18+)")
+        return
+    if subprocess.run([exe, script], cwd=ROOT).returncode:
+        raise SystemExit(f"step failed: {script}")
 
 
 def snapshot():
@@ -53,7 +66,11 @@ def pipeline(offline, configs):
     step("scripts/index_ids.py")
     step("scripts/audit_loot.py")
     step("scripts/gen_assets.py")
+    step("scripts/gen_enchant_tooltips.py")
     step("scripts/gen_datapack.py")
+    step("scripts/gen_headquarters.py")
+    node("tests/hq_sim.js")
+    node("tests/kubejs_lint.js")
     step("scripts/gen_quests.py")
     step("scripts/audit_quests.py")
     step("scripts/gen_resourcepack.py")

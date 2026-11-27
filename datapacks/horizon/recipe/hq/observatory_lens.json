@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "BGB",
+    "GHG",
+    "BSB"
+  ],
+  "key": {
+    "B": {
+      "item": "create:brass_ingot"
+    },
+    "G": {
+      "item": "minecraft:tinted_glass"
+    },
+    "H": {
+      "item": "horizon:starforged_heart"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "result": {
+    "id": "horizon:observatory_lens",
+    "count": 1
+  }
+}

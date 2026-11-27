@@ -14,5 +14,6 @@
     "version": "0.6.2 (release) for 1.21.1 NeoForge"
   },
   "attribution": "Weather Glass by duffopuffo, PolyForm Shield 1.0.0 (license text ships inside the jar). CurseForge-only; shipped unmodified in client-overrides because the license permits redistribution with its notice.",
-  "changes": "None (verbatim). Audit listed 0.6.0 beta; 0.6.2 is now a release explicitly for 1.21.1 NeoForge (rechecked 2026-11-21)."
+  "changes": "None (verbatim). Audit listed 0.6.0 beta; 0.6.2 is now a release explicitly for 1.21.1 NeoForge (rechecked 2026-11-21). 0.6.1: moved to the lab variant: with shaders OFF it hides the whole landscape in rain/thunder (bisected in a client: disabling only Weather Glass restores terrain; Particle Rain, Cool Rain, Windy, Better Clouds, Atmospherics, Roxy fog were each cleared).",
+  "variant": "lab"
 }

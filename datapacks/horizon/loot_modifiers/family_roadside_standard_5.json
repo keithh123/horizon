@@ -7,6 +7,10 @@
         {
           "condition": "neoforge:loot_table_id",
           "loot_table_id": "homesteads:loot/prospector_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/igloo_chest"
         }
       ]
     }

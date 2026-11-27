@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:survey_charter"
+      }
+    },
+    "title": "{\"text\": \"The Last Charter\"}",
+    "description": [
+      "&6THE LANTERN LINE&r",
+      "Long before the villages, a frontier survey company strung a line of observatories across the continent: the Lantern Line.",
+      "Each station watched one horizon and sent what it saw to the next. The line went dark, the stations fell, and the maps were scattered.",
+      "You carry the last charter of the Meridian Survey. Plant it anywhere, restore a station around it, and relight the line one horizon at a time.",
+      "",
+      "Unpack the &eFounding Kit&r, place the &eSurvey Charter&r where your base will grow and right-click it.",
+      "The charter's panel shows what each station needs; its &a[Commission]&r button does the work. Friends join by invitation.",
+      "",
+      "&aDo:&r Place a Survey Charter and click Found a headquarters on its panel.",
+      "&6You get:&r Your station exists: the charter is its anchor, and every stage below is commissioned there."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          0,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/root"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

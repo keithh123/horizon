@@ -7,6 +7,7 @@ Used by gen_content.py to validate every id it references.
 """
 import io, json, re, zipfile
 from pathlib import Path
+import sys as _sys; _sys.path.insert(0, str(Path(__file__).resolve().parent))
 import os
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -59,6 +60,7 @@ def scan(z, out):
 
 def main():
     lock = json.loads((ROOT / "manifests/lock.json").read_text())
+    lock = __import__('shipped', fromlist=['with_ports']).with_ports(lock)   # + shipped port jars (scripts/shipped.py)
     out = {k: set() for k in ["item", "block", "entity", *DATA_KINDS.values()]}
     per_mod = {}
     for m in lock["mods"]:

@@ -69,6 +69,24 @@
       }
     },
     {
+      "name": "horizonenchtips",
+      "file": "horizon_enchtips-1.0.0-neoforge.1.21.1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": null,
+      "variant": null,
+      "upstream": "ports/horizonenchtips/src (written for Project Horizon)",
+      "size": 7124,
+      "hashes": {
+        "sha1": "4f4c9d7160ad7b475f6b722a0580d3584d287e57",
+        "sha512": "13b6dbb3c2fc96306933e5e217758a5671f0e2156eec5efe5529e1c9dcbf33a22bcfb29eb20d4497e43c56dcf21a1b6202f68ff7534bd539c0a40d1d97538ec2"
+      }
+    },
+    {
       "name": "horizonquestbook",
       "file": "horizon_questbook-1.0.0-neoforge.1.21.1.jar",
       "kind": "gradle",
@@ -175,6 +193,24 @@
       }
     },
     {
+      "name": "terracurio",
+      "file": "terra_curio-1.1.1-horizon1.jar",
+      "kind": "repack",
+      "side": {
+        "client": "required",
+        "server": "required"
+      },
+      "license": "LGPL-3.0",
+      "replaces_slug": "terra-curio",
+      "variant": null,
+      "upstream": "https://modrinth.com/mod/terra-curio/version/mCth2g0T",
+      "size": 1796734,
+      "hashes": {
+        "sha1": "5a49974842a4f2e68be35f462ac36d8511dcf661",
+        "sha512": "6ca029e9ba6103c07e4d711caac6de676621c41d241cf342d0b36aa8d73fde46fcb8267114144e21bc26477a1e869952665b499bddeb2ae2cf8c67acc215514f"
+      }
+    },
+    {
       "name": "weatherglass",
       "file": "weatherglass-0.6.2-1.21.1-neoforge.jar",
       "kind": "verbatim",
@@ -189,7 +225,8 @@
       "hashes": {
         "sha1": "3d62931b46a993bfdb58f99e3de1f11530dc5bc4",
         "sha512": "5c95620c73512355103743625636d5f912aecd95619f4453fd501f6d2141b1067b6d46905e4c77707aadabc1ad39d229761973d44ff280ff36cde16eeb9e8c01"
-      }
+      },
+      "variant": "lab"
     }
   ]
 }

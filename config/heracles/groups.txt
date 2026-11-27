@@ -1,4 +1,5 @@
-0 - The Horizon Campaign
+0 - Headquarters Campaign
+0b - The Expedition Road (branch)
 1 - The First Steps
 2 - The Wild Frontier
 3 - Forged in Adventure

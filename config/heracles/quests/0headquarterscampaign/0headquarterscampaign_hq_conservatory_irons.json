@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "irons_spellbooks:arcane_anvil"
+      }
+    },
+    "title": "{\"text\": \"Spell Forge (Iron's Spells)\"}",
+    "description": [
+      "Combat magic: an Arcane Anvil and an Inscription Table at the station.",
+      "",
+      "&eCounts:&r Craft an Arcane Anvil; Arcane Anvil and Inscription Table at the station",
+      "&eContribution:&r 16x arcane essence",
+      "&eAdds to the station:&r Inscription records on the archive shelves.",
+      "",
+      "&aDo:&r Contribute Spell Forge (Iron's Spells) at the charter panel.",
+      "&6You get:&r Inscription records on the archive shelves."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          320,
+          190
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_hall"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/conservatory/irons"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

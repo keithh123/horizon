@@ -1,0 +1,58 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "horizon:emblem_observatory"
+      }
+    },
+    "title": "{\"text\": \"VI. Observatory and Horizon Beacon\"}",
+    "description": [
+      "&6STATION VI&r  Set an Observatory Lens at the station, chart three realms, defeat two great legends and pass one Horizon Trial.",
+      "",
+      "&eWhy:&r The capstone: the Horizon Beacon, the full survey desk and the post-campaign Gauntlet.",
+      "",
+      "&eNeeds at the station:&r",
+      "&7- An Observatory Lens placed at the station&r",
+      "&7- Members have entered 3 of 7 realms (Nether, Aether, Undergarden, Otherside, End, Bumblezone, Moon)&r",
+      "&7- Members have defeated 2 great legends (any)&r",
+      "&7- Pass one Horizon Trial (Tides, Cinders or Void) at a Gateway&r",
+      "&eContribution (consumed once):&r 8x amethyst block, 4x gold block, 32x brass ingot, 32x glass",
+      "&eUnlocks:&r The Horizon Beacon (a light the whole valley can see), the explorer's hat, and full survey charts. Post-campaign: the Horizon Gauntlet.",
+      "&7Commission it from the charter panel. This quest completes by itself when the station records it.&r",
+      "",
+      "&aDo:&r Commission Observatory and Horizon Beacon at your charter.",
+      "&6You get:&r Beyond the line: every legend, every realm, and the Horizon Gauntlet."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          480,
+          76
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_foundry"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/observatory"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 13
+    }
+  }
+}

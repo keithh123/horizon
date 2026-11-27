@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "type": "heracles:item",
+      "item": {
+        "id": "modern_industrialization:electric_blast_furnace"
+      }
+    },
+    "title": "{\"text\": \"Modern Industrialization\"}",
+    "description": [
+      "Multiblock heavy industry. The Electric Blast Furnace is the gate.",
+      "",
+      "&eCounts:&r Build the Electric Blast Furnace",
+      "&eContribution:&r 16x steel ingot",
+      "&eAdds to the station:&r Steel and alloys for the observatory frame.",
+      "",
+      "&aDo:&r Contribute Modern Industrialization at the charter panel.",
+      "&6You get:&r Steel and alloys for the observatory frame."
+    ],
+    "groups": {
+      "0 - Headquarters Campaign": {
+        "position": [
+          400,
+          152
+        ]
+      }
+    }
+  },
+  "settings": {
+    "hidden": "LOCKED",
+    "unlockNotification": true
+  },
+  "dependencies": [
+    "0headquarterscampaign_hq_conservatory"
+  ],
+  "tasks": {
+    "t0": {
+      "type": "heracles:advancement",
+      "advancements": [
+        "horizon:hq/foundry/mi"
+      ]
+    }
+  },
+  "rewards": {
+    "r0": {
+      "type": "heracles:xp",
+      "xptype": "LEVEL",
+      "amount": 2
+    }
+  }
+}

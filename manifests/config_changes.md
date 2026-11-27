@@ -12,6 +12,9 @@
 | `particlerain/config.json` | `"rainVolume": 0.0` | Cool Rain owns rain audio (Particle Rain stays visual); avoids three layered rain loops. |
 | `particlerain/config.json` | `"snowVolume": 0.0` | Same: one owner for precipitation audio. |
 | `punchy_moves/camera.json` | `"elytraCamera": false` | Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state. |
+| `apotheosis/apothic_enchanting.cfg` | `B:"Enable Inlined Enchantment Descriptions"=false` | 0.6.1: kept OFF and shipped so updates reset it: Horizon Enchantment Tooltips (ports/horizonenchtips) owns descriptions (shown while Shift is held, with incompatible enchantments). |
+| `apotheosis/apothic_attributes.cfg` | `S:"GUI Button Offset Anchor Point"=top_left` | Attributes button moves to the preview's top-left corner (guiLeft+28, guiTop+10); Accessories keeps the top-right one. |
+| `apotheosis/apothic_attributes.cfg` | `I:"GUI Button Offset X Offset"=3` | Same: 3 px inside the preview frame. |
 | `visualoverhaul.json` | (seed file) | Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib registers it (NPE at Options.loadSelectedResourcePacks; client crash, tested). Its built-in packs still load (visualoverhaul:rounddiscs seen in the pack list). |
 | `apotheosis/apotheosis.cfg` | `B:"Restrict Charms to Curios"=true` | Potion charms only work from curio slots - stops 20 charms in an inventory stacking buffs. |
 | `apotheosis/apotheosis.cfg` | `I:"Boss Spawn Cooldown"=6000` | Apotheosis bosses stay special next to Mowzie's/Cataclysm encounters. |
@@ -25,3 +28,4 @@
 | `simplyswords/loot.toml` | `uniqueHardPity = 100` | uniques are milestone finds |
 | `voxy-config.json` | `"service_threads": 3` | Balanced: leave CPU for worldgen + factories (6-core target). |
 | `iris.properties` | `shaderPack=ComplementaryReimagined_r5.9.3.zip` | Complementary Reimagined (Voxy-aware since r5.8.1) is the default look. |
+| `iris.properties` | `enableShaders=true` | Balanced default has shaders on; pinned so a source instance's test state cannot leak into the pack (0.6.1). |
