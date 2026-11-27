@@ -6,7 +6,7 @@ with the game closed:
 
 - Kept: instance name/UUID/Java/memory (`instance.cfg`), every `options.txt` key except the ones below, your shader choice
   (`config/iris.properties`), jars you added yourself, resource packs you enabled yourself (they stay on top).
-- Changed in `options.txt`: `renderDistance` raised to 8 if it was lower; the Horizon pack list and order; Mandala's GUI added
+- Changed in `options.txt`: the Horizon pack list and order; Mandala's GUI added
   to `incompatibleResourcePacks` (packs you had accepted there stay).
 - Mods: First-person Model, Not Enough Animations and FPM x Compat are enabled (their `.disabled` copies are removed); Entity
   Player Compat and Modefite are added; Punchy! Moves and Weather Glass are removed.

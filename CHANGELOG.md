@@ -11,7 +11,7 @@ Installed in place into the existing `ProjectHorizon-0.6.0` Prism instance (same
 - Attributes and Accessories inventory buttons overlapped: Apothic's button moves to the preview's top-left corner (28,10).
 - Shaders OFF + rain/thunder hid the whole landscape: caused by Weather Glass 0.6.2 (client bisection); it moves to the lab
   variant. Rain, splashes and ripples stay with Particle Rain.
-- Render distance 2 (Voxy warns about LOD culling below 3): existing instances are raised to at least 8 on update.
+- Render distance 2 (Voxy warns about LOD culling below 3): the updater warns below 3 but keeps the player's setting.
 - Updater (`build.py instance`): keeps instance.cfg identity/Java/memory, options.txt and the shader choice; UTF-8 pack names
   (0.6.0 duplicated "Vocal Villagers" as mojibake); keeps the player's accepted-incompatible packs; removes stale
   `.jar.disabled` twins; idempotent.

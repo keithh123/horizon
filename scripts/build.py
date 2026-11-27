@@ -281,22 +281,18 @@ def instance(name, groups, variant=None):
     print(f"instance {name}: {len(mods)} mods -> {inst}")
 
 
-MIN_RENDER_DISTANCE = 8   # see docs/KNOWN_ISSUES.md #29 (0.6.1): Voxy needs vanilla chunks around the camera
+VOXY_MIN_RENDER_DISTANCE = 3   # Voxy warns in chat below this (LOD culling at the screen edge); docs/KNOWN_ISSUES.md #32
 
 
 def migrate_options(options: Path):
-    """Targeted, documented options.txt changes for an existing instance; every other key is the player's."""
-    lines = options.read_text(encoding="utf-8").splitlines()
-    out, changed = [], []
-    for l in lines:
+    """Targeted options.txt notes for an existing instance. Render distance is the player's choice: never changed, only
+    reported when it is below Voxy's own minimum. Returns the lines to print."""
+    notes = []
+    for l in options.read_text(encoding="utf-8").splitlines():
         k, _, v = l.partition(":")
-        if k == "renderDistance" and v.isdigit() and int(v) < MIN_RENDER_DISTANCE:
-            changed.append(f"renderDistance {v} -> {MIN_RENDER_DISTANCE} (Voxy LOD culling holes below this)")
-            l = f"renderDistance:{MIN_RENDER_DISTANCE}"
-        out.append(l)
-    if changed:
-        options.write_text("\n".join(out) + "\n", encoding="utf-8")
-    return changed
+        if k == "renderDistance" and v.isdigit() and int(v) < VOXY_MIN_RENDER_DISTANCE:
+            notes.append(f"renderDistance {v} kept (your setting); Voxy recommends {VOXY_MIN_RENDER_DISTANCE}+ to avoid LOD culling holes")
+    return notes
 
 
 def write_pack_json(inst: Path, L):

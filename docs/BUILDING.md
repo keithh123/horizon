@@ -87,5 +87,5 @@ Limits: Rhino cannot see some methods (`getGameTime`, `setYRot`; use `/tp` rotat
 and owo-lib layer buttons (Accessories) do not receive `Screen.mouseClicked` calls.
 
 `python scripts/build.py instance --name <existing>` keeps the instance's `instance.cfg` (UUID, name, Java, memory),
-`options.txt` (only `migrate_options` and the resource-pack lines change) and `config/iris.properties`; it is idempotent
+`options.txt` (only the resource-pack lines change; render distance below 3 is reported, not changed) and `config/iris.properties`; it is idempotent
 (second run changes nothing) and removes `.jar.disabled` twins of mods that are now enabled by default.
