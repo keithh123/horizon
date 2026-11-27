@@ -1,0 +1,5 @@
+{
+  "enchantment.undergarden.longevity.desc": "Slingshot has more maximum durability.",
+  "enchantment.undergarden.ricochet.desc": "Slingshot ammo bounces off blocks. Not with Self Sling.",
+  "enchantment.undergarden.self_sling.desc": "Slingshot launches you instead of ammo (must stand on ground). Not with Ricochet."
+}

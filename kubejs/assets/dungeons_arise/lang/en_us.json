@@ -1,0 +1,7 @@
+{
+  "enchantment.dungeons_arise.discharge.desc": "Hits stack Speed; at max stacks the next hit releases a lightning burst that can also hurt you.",
+  "enchantment.dungeons_arise.ensnaring.desc": "Hits may heavily slow the target and summon evoker fangs; chance per level.",
+  "enchantment.dungeons_arise.lolths_curse.desc": "Hits may give Regeneration but spawn cave spiders; hitting arthropods hurts you; Darkness on players. Curse.",
+  "enchantment.dungeons_arise.purification.desc": "When poisoned or withered, may cleanse it and release a damaging burst; chance per level.",
+  "enchantment.dungeons_arise.voltaic_shot.desc": "Crossbow arrows fly straight and burst with electric explosions (no block damage)."
+}

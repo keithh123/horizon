@@ -66,6 +66,7 @@ def pipeline(offline, configs):
     step("scripts/index_ids.py")
     step("scripts/audit_loot.py")
     step("scripts/gen_assets.py")
+    step("scripts/gen_enchant_tooltips.py")
     step("scripts/gen_datapack.py")
     step("scripts/gen_headquarters.py")
     node("tests/hq_sim.js")

@@ -12,6 +12,7 @@
 | `particlerain/config.json` | `"rainVolume": 0.0` | Cool Rain owns rain audio (Particle Rain stays visual); avoids three layered rain loops. |
 | `particlerain/config.json` | `"snowVolume": 0.0` | Same: one owner for precipitation audio. |
 | `punchy_moves/camera.json` | `"elytraCamera": false` | Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state. |
+| `apotheosis/apothic_enchanting.cfg` | `B:"Enable Inlined Enchantment Descriptions"=true` | 0.6.1: each enchantment shows a one-line description under its name (texts: manifests/enchantment_tooltips.json). |
 | `apotheosis/apothic_attributes.cfg` | `S:"GUI Button Offset Anchor Point"=top_left` | Attributes button moves to the preview's top-left corner (guiLeft+28, guiTop+10); Accessories keeps the top-right one. |
 | `apotheosis/apothic_attributes.cfg` | `I:"GUI Button Offset X Offset"=3` | Same: 3 px inside the preview frame. |
 | `visualoverhaul.json` | (seed file) | Visual Overhaul's first-launch hook writes its config from a PackRepository mixin before MidnightLib registers it (NPE at Options.loadSelectedResourcePacks; client crash, tested). Its built-in packs still load (visualoverhaul:rounddiscs seen in the pack list). |

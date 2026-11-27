@@ -1,0 +1,5 @@
+{
+  "enchantment.ars_nouveau.mana_boost.desc": "+25 max mana per level per armor piece.",
+  "enchantment.ars_nouveau.mana_regen.desc": "+2 mana regeneration per level per armor piece.",
+  "enchantment.ars_nouveau.reactive.desc": "Chance to cast the item's inscribed spell when used or when you are hurt. Needs a spell inscribed."
+}

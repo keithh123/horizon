@@ -1,0 +1,6 @@
+{
+  "enchantment.the_bumblezone.comb_cutter.desc": "Breaks combs, hives and wax blocks faster and gets more from bee nests.",
+  "enchantment.the_bumblezone.hive_lifeline.desc": "A nearby bee (16 blocks) takes an attack for you; 4 s cooldown.",
+  "enchantment.the_bumblezone.neurotoxins.desc": "Stinger Spear hits can paralyze (not undead or golems; harder on high-health mobs); extra wear.",
+  "enchantment.the_bumblezone.potent_poison.desc": "Spear/trident hits poison the target; stronger and longer per level (not undead)."
+}
