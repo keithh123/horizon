@@ -88,8 +88,8 @@ EXPANSION_EDITS = {
         ('"elytraCamera": true', '"elytraCamera": false', "Auto Third Person owns the elytra/vehicle camera switch; one camera owner per state."),
     ],
     "apotheosis/apothic_enchanting.cfg": [
-        ('B:"Enable Inlined Enchantment Descriptions"=false', 'B:"Enable Inlined Enchantment Descriptions"=true',
-         "0.6.1: each enchantment shows a one-line description under its name (texts: manifests/enchantment_tooltips.json)."),
+        ('B:"Enable Inlined Enchantment Descriptions"=false', 'B:"Enable Inlined Enchantment Descriptions"=false',
+         "0.6.1: kept OFF and shipped so updates reset it: Horizon Enchantment Tooltips (ports/horizonenchtips) owns descriptions (shown while Shift is held, with incompatible enchantments)."),
     ],
     # 0.6.1 visual repair: both inventory buttons defaulted to the top-right corner of the player preview and stacked
     # (Apothic: x = guiLeft+25+(51-10)+X, y = guiTop+7+Y -> (63,10); Accessories: guiLeft+66, guiTop+8; from the jars).

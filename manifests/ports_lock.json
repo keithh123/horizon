@@ -69,6 +69,24 @@
       }
     },
     {
+      "name": "horizonenchtips",
+      "file": "horizon_enchtips-1.0.0-neoforge.1.21.1.jar",
+      "kind": "gradle",
+      "side": {
+        "client": "required",
+        "server": "unsupported"
+      },
+      "license": "MIT",
+      "replaces_slug": null,
+      "variant": null,
+      "upstream": "ports/horizonenchtips/src (written for Project Horizon)",
+      "size": 6704,
+      "hashes": {
+        "sha1": "94a6b8567c0150ad2f9fddf79a1ba41bad2b9c9a",
+        "sha512": "6431a64cd62705cea1889265cfc6424449c14eade12ea40b4933ae42e9fb0510acbc7cba6f859cab0acd57fa12ea8d556bfbed530bf473b817a2f331bed142bb"
+      }
+    },
+    {
       "name": "horizonquestbook",
       "file": "horizon_questbook-1.0.0-neoforge.1.21.1.jar",
       "kind": "gradle",

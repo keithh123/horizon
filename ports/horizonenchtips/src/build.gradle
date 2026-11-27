@@ -1,0 +1,5 @@
+plugins { id 'net.neoforged.moddev' }
+ext { modId = 'horizon_enchtips'; modVersion = '1.0.0-neoforge.1.21.1' }
+group = 'dev.horizon'
+apply from: '../../_gradle/port.gradle'
+repositories { mavenCentral(); maven { url = 'https://maven.neoforged.net/releases' } }

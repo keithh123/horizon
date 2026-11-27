@@ -66,6 +66,11 @@ function hqaRun(a) {
   if (k === 'particles') { var PS = Java.loadClass('net.minecraft.client.ParticleStatus'); mc.options.particles().set(PS.values()[Number(v)]); hqaLog('particles=' + mc.options.particles().get()); return }
   if (k === 'fog') { var RS = Java.loadClass('com.mojang.blaze3d.systems.RenderSystem'); hqaLog('fog ' + v + ' start=' + RS.getShaderFogStart() + ' end=' + RS.getShaderFogEnd() + ' shape=' + RS.getShaderFogShape() + ' rain=' + mc.level.rainLevel + ' rd=' + mc.options.renderDistance().get()); return }
   if (k === 'rebuild') { mc.levelRenderer.allChanged(); hqaLog('allChanged'); return }
+  if (k === 'tip') {   // tooltip lines of the main-hand item, built through the normal ItemTooltipEvent path
+    var TC = Java.loadClass('net.minecraft.world.item.Item$TooltipContext'), TF = Java.loadClass('net.minecraft.world.item.TooltipFlag')
+    p.getMainHandItem().getTooltipLines(TC.of(mc.level), p, TF.NORMAL).forEach(c => hqaLog('  tip| ' + c.getString()))
+    return
+  }
   if (k === 'hud') { mc.options.hideGui = (v === 'off'); return }
   if (k === 'f3') { mc.getDebugOverlay().toggleOverlay(); return }
   if (k === 'quit') { mc.level.disconnect(); mc.disconnect(); hqaLog('disconnected'); return }
