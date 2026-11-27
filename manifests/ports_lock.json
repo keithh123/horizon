@@ -80,10 +80,10 @@
       "replaces_slug": null,
       "variant": null,
       "upstream": "ports/horizonenchtips/src (written for Project Horizon)",
-      "size": 6704,
+      "size": 7124,
       "hashes": {
-        "sha1": "94a6b8567c0150ad2f9fddf79a1ba41bad2b9c9a",
-        "sha512": "6431a64cd62705cea1889265cfc6424449c14eade12ea40b4933ae42e9fb0510acbc7cba6f859cab0acd57fa12ea8d556bfbed530bf473b817a2f331bed142bb"
+        "sha1": "4f4c9d7160ad7b475f6b722a0580d3584d287e57",
+        "sha512": "13b6dbb3c2fc96306933e5e217758a5671f0e2156eec5efe5529e1c9dcbf33a22bcfb29eb20d4497e43c56dcf21a1b6202f68ff7534bd539c0a40d1d97538ec2"
       }
     },
     {

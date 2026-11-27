@@ -65,6 +65,15 @@ public final class HorizonEnchTips {
         all.addAll(stack.getOrDefault(DataComponents.STORED_ENCHANTMENTS, ItemEnchantments.EMPTY).entrySet());
         if (all.isEmpty()) return;
         List<Component> lines = e.getToolTip();
+        // Another mod prints the raw .desc line on enchanted books (always on, unstyled): drop it, this mod owns descriptions.
+        java.util.Set<String> descs = new java.util.HashSet<>();
+        for (Object2IntMap.Entry<Holder<Enchantment>> en : all) {
+            en.getKey().unwrapKey().ifPresent(k -> {
+                String dk = "enchantment." + k.location().getNamespace() + "." + k.location().getPath() + ".desc";
+                if (I18n.exists(dk)) descs.add(I18n.get(dk));
+            });
+        }
+        lines.removeIf(c -> descs.contains(c.getString()));
         boolean expand = held();
         int last = -1;
         for (Object2IntMap.Entry<Holder<Enchantment>> en : all) {
@@ -94,10 +103,9 @@ public final class HorizonEnchTips {
             last = at + add.size() - 1;
         }
         if (!expand && last >= 0) {
-            int at = last + 1;
-            if (at < lines.size() && lines.get(at).getString().trim().equalsIgnoreCase("Placeable")) at++;
-            lines.add(at, Component.empty());
-            lines.add(at + 1, Component.translatable("tooltip.horizon_enchtips.more", keyName()).withStyle(ChatFormatting.YELLOW));
+            int at = last + 1;   // directly under the enchantments; a following "Placeable" line moves below a blank line
+            lines.add(at, Component.translatable("tooltip.horizon_enchtips.more", keyName()).withStyle(ChatFormatting.YELLOW));
+            if (at + 1 < lines.size() && lines.get(at + 1).getString().trim().equalsIgnoreCase("Placeable")) lines.add(at + 1, Component.empty());
         }
     }
 
